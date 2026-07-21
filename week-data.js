@@ -17,7 +17,7 @@ const WEEK = {
       time: "~20 min total across the weekend",
       equipment: ["Chamber sealer", "Sous vide"],
       summary:
-        "Two jobs, ~25 minutes, no deboning. (1) SEAL SESSION: 2 boneless breasts get fajita rub → sealed → freezer bank; the pork belly gets its soy–brown sugar rub and is sealed NOW (shelf-life rule — it waits sealed in the fridge until Wednesday); the chuck gets salt + pepper, sealed, fridge until Tuesday night. (2) SUNDAY ~8 PM: toss the pre-cut boneless carnitas chunks in pork rub, seal, drop at 165°F. The circulator then runs a relay: carnitas out Monday, chuck in Tuesday night, belly in Wednesday — every later drop is just bag-into-water.",
+        "Two jobs, ~25 minutes, no deboning. (1) SEAL SESSION: 2 boneless breasts get fajita rub → sealed → freezer bank; the pork belly gets its soy–brown sugar rub and is sealed NOW (shelf-life rule — it waits sealed in the fridge until Wednesday); the chuck gets salt + pepper, sealed, fridge until Tuesday. (2) SUNDAY ~8 PM: toss the pre-cut boneless carnitas chunks in pork rub, seal, drop at 165°F. The circulator then runs a relay: carnitas out Monday, chuck in Tuesday 5 PM alongside the shrimp (same 135°F bath), belly in right after Wednesday's dinner — every later drop is just bag-into-water.",
       links: [
         { label: "Anova — Food Lab sous vide carnitas guide (temp options + crisping)", url: "https://anovaculinary.com/blogs/blog/sous-vide-carnitas-guide", tag: "primary" },
         { label: "r/sousvide — pork shoulder threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20shoulder", tag: "reddit" }
@@ -36,7 +36,7 @@ const WEEK = {
           "chamber vacuum bags"
         ],
         steps: [
-          "SEAL SESSION (everything at once, one sealer wipe-down): (a) 2 boneless breasts in fajita seasoning, 1 per bag → FREEZER bank. (b) Pork belly rubbed with soy + brown sugar, sealed → FRIDGE (drops Wednesday). (c) Chuck slabs salted + peppered, sealed → FRIDGE (drops Tuesday 9 PM). Sealed raw meat keeps 3–4 days easily — every later cook is now just bag-into-water.",
+          "SEAL SESSION (everything at once, one sealer wipe-down): (a) 2 boneless breasts in fajita seasoning, 1 per bag → FREEZER bank. (b) Pork belly rubbed with soy + brown sugar, sealed → FRIDGE (drops Wednesday). (c) Chuck slabs salted + peppered, sealed → FRIDGE (drops Tuesday 5 PM, sharing the shrimp's 135°F bath). Sealed raw meat keeps 3–4 days easily — every later cook is now just bag-into-water.",
           "SUNDAY ~8 PM: toss the carnitas chunks with pork rub, seal, drop at 165°F. Cover the bath; top up water Monday morning.",
           "Cleanup: sealer wipe. That's it."
         ]
@@ -86,15 +86,14 @@ const WEEK = {
       daytime: [
         "TUE morning (2 min): pour ~1.5 lb shrimp into a fridge bowl to thaw; chamber-reseal the rest → freezer",
         "TUE ~4:30 PM (2 min): rice cooker on",
-        "TUE 5 PM (2 min): bath to 135°F, drop the shrimp bag — 30 min, holds up to an hour",
-        "TUE 9 PM (30 sec): drop the chuck bag (bath stays 135°F)"
+        "TUE 5 PM (2 min): bath to 135°F, drop BOTH bags — shrimp (out in 30 min) AND the chuck (same temp; it rides ~24 hr to Wednesday dinner)"
       ],
       title: "Camarones a la Diabla with Jasmine Rice",
       slot: "Dinner 2 · Tue",
       time: "~25 min at dinner (shrimp sous vide beforehand)",
       equipment: ["Sous vide", "Stove", "NutriBullet", "Rice cooker"],
       summary:
-        "Deviled shrimp, done properly — and sous vide, the house shrimp method: bagged P&D shrimp at 135°F for 30 min come out snappy-tender and physically can't overcook, then fold into the brick-red guajillo–árbol sauce (the NutriBullet earns its wash — there's no non-blender version of this dish). Genuinely spicy — the week's don't-soften night. Kids: their shrimp come straight from the bag before the sauce, or they self-serve. TONIGHT ~9 PM: the bath switches to the chuck for tomorrow.",
+        "Deviled shrimp, done properly — and sous vide, the house shrimp method: bagged P&D shrimp at 135°F for 30 min come out snappy-tender and physically can't overcook, then fold into the brick-red guajillo–árbol sauce (the NutriBullet earns its wash — there's no non-blender version of this dish). Genuinely spicy — the week's don't-soften night. Kids: their shrimp come straight from the bag before the sauce, or they self-serve. Bath efficiency: the chuck shares the same 135°F water — both bags drop at 5 PM, shrimp out in 30, chuck rides to tomorrow.",
       links: [
         { label: "Isabel Eats — Camarones a la Diabla (the sauce reference)", url: "https://www.isabeleats.com/camarones-a-la-diabla/", tag: "primary" },
         { label: "The Kitchn — diabla version (backup)", url: "https://www.thekitchn.com/camarones-a-la-diabla-recipe-23735936", tag: "alt" },
@@ -115,14 +114,13 @@ const WEEK = {
         ],
         steps: [
           "TUESDAY MORNING: pour ~1.5 lb (30–36 jumbos) from the IQF bag into a bowl in the fridge — thawed by dinner. Forgot? Cold-water bath 20–30 min at 5 PM. CHAMBER-RESEAL the bag's remaining ~0.5 lb right now — that's the freezer bank (IQF quality, no freezer burn).",
-          "MIDDAY: rice cooker on late afternoon. ~5 PM: bath to 135°F; seal the thawed shrimp flat with the canola and a pinch of salt, drop for 30 min (they hold fine up to an hour).",
+          "~4:30 PM: rice cooker on. 5 PM: bath to 135°F; seal the thawed shrimp flat with the canola and a pinch of salt, then drop BOTH bags — the shrimp (30 min; holds up to an hour) and the chuck bag that's been sealed since Sunday (same temp — it stays in ~24 hr, until tomorrow's dinner).",
           "Soak the stemmed chiles in just-boiled water 10 min (a mug works).",
           "NutriBullet: soaked chiles, tomatoes, onion, garlic, ½ tsp salt, splash of soak water. Blend smooth — this is the whole sauce.",
           "Skillet, olive oil, medium-high: pour in the sauce — it should sizzle. Simmer 5 min until it darkens a shade. Salt to taste.",
           "Open the shrimp bag. KID CHECKPOINT: their shrimp go straight from bag to plate — perfectly cooked, sauce-free, with rice and cheese if wanted. Or they self-serve; either way no second dish.",
           "Fold the rest of the shrimp (and bag juices) into the sauce — 60 seconds to coat and warm, no more. They're already cooked; the sauce is just dressing them.",
-          "Over rice, lime squeeze, cilantro. Cleanup: skillet, NutriBullet cup, rice pot, trash the bag.",
-          "TONIGHT ~9 PM (30 seconds): bath to 135°F — drop the chuck bag that's been sealed and waiting since Sunday."
+          "Over rice, lime squeeze, cilantro. The chuck stays in the bath overnight — nothing more to do tonight. Cleanup: skillet, NutriBullet cup, rice pot, trash the shrimp bag."
         ]
       }
     },
@@ -130,7 +128,7 @@ const WEEK = {
       id: "chucksteak",
       cost: { est: 23.0, servings: 4, note: "~2.75 lb Prime 1 chuck @ $5.99/lb (33% off) + potatoes, chimichurri — splurge night, ~$5.75/serving" },
       nutrition: { serving: "~8 oz sliced chuck 'steak' + chimichurri + crispy potatoes", calories: 950, protein: 55, carbs: 60, fat: 55 },
-      daytime: ["WED daytime: nothing — the chuck's been riding since last night", "WED after dinner (30 sec): bath to 165°F, drop the pork belly bag for Thursday"],
+      daytime: ["WED daytime: nothing — the chuck's been riding since Tuesday 5 PM (~24 hr at dinner)", "WED right after dinner (30 sec): bath to 165°F, drop the pork belly bag for Thursday"],
       title: "24-Hour Chuck 'Steak' with Chimichurri & Crispy Potatoes",
       slot: "Dinner 3 · Wed",
       time: "~25 min at dinner",
@@ -143,10 +141,10 @@ const WEEK = {
       ],
       swapNote: "131°F = medium-rare-plus; 135°F = family medium. Same 24 hr either way.",
       recipe: {
-        activeTime: "~25 min at dinner (chuck dropped Tuesday ~9 PM)",
-        cookTime: "chuck 20–24 hr at 135°F; potatoes ~20 min air fryer",
+        activeTime: "~25 min at dinner (chuck dropped Tuesday 5 PM — a true 24 hr by dinner)",
+        cookTime: "chuck ~24 hr at 135°F; potatoes ~20 min air fryer",
         ingredients: [
-          "~2.75 lb H-E-B Prime 1 beef chuck roast, 2 slabs (in the bath since Tuesday)",
+          "~2.75 lb H-E-B Prime 1 beef chuck roast, 2 slabs (in the bath since Tuesday 5 PM)",
           "3 lb baby gold potatoes, halved",
           "CHIMICHURRI: 1 bunch parsley (finely chopped), 3 garlic cloves (minced), 3 tbsp red wine vinegar, ½ cup olive oil, ½ tsp crushed red pepper, ½ tsp kosher salt, ½ tsp Mexican oregano",
           "1½ tbsp canola oil, kosher salt, black pepper",
