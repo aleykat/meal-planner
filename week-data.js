@@ -79,7 +79,7 @@ const WEEK = {
     },
     {
       id: "diabla",
-      cost: { est: 15.0, servings: 4, note: "1.5 lb peeled & deveined shrimp (~$8/lb — the $5.97 ad price is shell-on; P&D per shrimp rule) + dried-chile sauce, romas" },
+      cost: { est: 14.5, servings: 4, note: "1.5 lb of the 2 lb IQF P&D bag (~$11.25 consumed; ~$3.75 banks) + dried-chile sauce, romas" },
       nutrition: { serving: "~6 oz shrimp in diabla sauce over 1½ cups rice", calories: 520, protein: 30, carbs: 68, fat: 12 },
       title: "Camarones a la Diabla with Jasmine Rice",
       slot: "Dinner 2 · Tue",
@@ -97,7 +97,7 @@ const WEEK = {
         activeTime: "~25 min at dinner (+2 min bagging the shrimp at ~5 PM)",
         cookTime: "shrimp 30 min at 135°F; sauce ~15 min incl. chile soak",
         ingredients: [
-          "1.5 lb FROZEN peeled & deveined raw jumbo shrimp (thawed today — see step 1)",
+          "~1.5 lb from the 2 lb frozen IQF P&D bag (thawed today — see step 1; roughly 30–36 jumbos)",
           "4 dried guajillo chiles + 2–3 chiles de árbol (stemmed, seeds shaken out)",
           "2 Roma tomatoes, rough-chopped",
           "½ yellow onion + 3 garlic cloves",
@@ -106,7 +106,7 @@ const WEEK = {
           "lime + cilantro to finish"
         ],
         steps: [
-          "TUESDAY MORNING: shrimp bag from freezer to fridge (thawed by dinner). Forgot? Cold-water bath 20–30 min at 5 PM works too.",
+          "TUESDAY MORNING: pour ~1.5 lb (30–36 jumbos) from the IQF bag into a bowl in the fridge — thawed by dinner. Forgot? Cold-water bath 20–30 min at 5 PM. CHAMBER-RESEAL the bag's remaining ~0.5 lb right now — that's the freezer bank (IQF quality, no freezer burn).",
           "MIDDAY: rice cooker on late afternoon. ~5 PM: bath to 135°F; seal the thawed shrimp flat with the canola and a pinch of salt, drop for 30 min (they hold fine up to an hour).",
           "Soak the stemmed chiles in just-boiled water 10 min (a mug works).",
           "NutriBullet: soaked chiles, tomatoes, onion, garlic, ½ tsp salt, splash of soak water. Blend smooth — this is the whole sauce.",
@@ -235,7 +235,7 @@ const WEEK = {
     {
       section: "H-E-B — Meat & Seafood",
       items: [
-        { name: "H-E-B FROZEN Peeled & Deveined Raw Jumbo Shrimp, bag (~$8/lb — frozen on purpose: bought Sunday, cooked Tuesday; counter shrimp is previously-frozen anyway)", qty: "1.5 lb — diabla; thaws Tuesday", est: 12.0 },
+        { name: "H-E-B Frozen Peeled & Deveined Raw Jumbo Shrimp, 2 lb IQF bag (~$7.50/lb — bags beat counter per-lb, and IQF portions pour out as needed)", qty: "use ~1.5 lb Tuesday; remaining ~0.5 lb chamber-reseals into the freezer bank", est: 15.0 },
         { name: "H-E-B Prime 1 Beef Chuck Roast (ad item @ $5.99/lb, 33% off)", qty: "~2.75 lb — the 24-hr steak play", est: 16.5 },
         { name: "FRESH! H-E-B Natural Pork Belly (ad item @ $4.99/lb)", qty: "~2 lb — Thursday's flagship", est: 10.0 },
         { name: "H-E-B Boneless Skinless Chicken Breasts", qty: "~1.5 lb — the 2 freezer drop-in bags", est: 5.0 }
