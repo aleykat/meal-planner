@@ -207,7 +207,7 @@
       const id = `${sec.section}|${it.name}`;
       rows += `<tr data-id="${id}" class="${got.has(id) ? "got" : ""}">
         <td><input type="checkbox" ${got.has(id) ? "checked" : ""}></td>
-        <td>${it.name}</td><td>${it.qty}</td>
+        <td>${it.name}${it.aisle ? ` <span class="chip" style="font-size:.7rem;padding:1px 8px">aisle ${it.aisle}</span>` : ""}</td><td>${it.qty}</td>
         <td class="est">${it.est ? money(it.est) : "—"}</td></tr>`;
     });
   });
