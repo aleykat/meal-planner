@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Family Meal Planner</title>
+<style>
+  :root {
+    --bg: #faf7f2; --card: #ffffff; --ink: #2b2420; --muted: #7a6f66;
+    --accent: #c0392b; --accent-soft: #fdeae7; --line: #e8e0d6;
+    --good: #2e7d32; --tag: #f0e9df;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #191512; --card: #221d19; --ink: #ede6de; --muted: #a3968a;
+      --accent: #e26d5c; --accent-soft: #3a2521; --line: #362e27; --tag: #2e2822;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.5; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 80px; }
+  header h1 { font-size: 1.7rem; margin-bottom: 2px; }
+  header .sub { color: var(--muted); font-size: .95rem; }
+  .adnote { background: var(--accent-soft); border-left: 4px solid var(--accent); padding: 10px 14px; border-radius: 6px; margin: 16px 0 28px; font-size: .9rem; }
+  h2 { font-size: 1.25rem; margin: 34px 0 14px; border-bottom: 2px solid var(--line); padding-bottom: 6px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 14px; }
+  .slot { font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+  .card h3 { font-size: 1.1rem; margin: 2px 0 6px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .chip { background: var(--tag); border-radius: 999px; padding: 2px 10px; font-size: .78rem; color: var(--muted); }
+  .chip.time { color: var(--ink); font-weight: 600; }
+  .chip.cost { color: var(--good); font-weight: 600; cursor: help; }
+  .cost-input { width: 90px; border: 1px solid var(--line); border-radius: 8px; padding: 5px 8px; font: inherit; font-size: .88rem; background: var(--bg); color: var(--ink); }
+  .summary { font-size: .95rem; margin-bottom: 10px; }
+  .swap { font-size: .85rem; color: var(--muted); font-style: italic; margin-bottom: 10px; }
+  .links a { display: inline-block; margin: 2px 8px 2px 0; font-size: .88rem; color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  .links a:hover { border-bottom-style: solid; }
+  .links .ltag { font-size: .7rem; color: var(--muted); margin-left: 3px; }
+  table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); }
+  th { font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  td.est, th.est { text-align: right; white-space: nowrap; }
+  .section-row td { font-weight: 700; background: var(--tag); font-size: .85rem; }
+  .total-row td { font-weight: 700; font-size: 1rem; border-top: 2px solid var(--ink); }
+  .got { text-decoration: line-through; color: var(--muted); }
+  input[type=checkbox] { transform: scale(1.15); accent-color: var(--accent); }
+  .fb-controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+  .rate { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 5px 14px; cursor: pointer; font-size: .88rem; }
+  .rate.sel { background: var(--accent); border-color: var(--accent); color: #fff; }
+  textarea { width: 100%; min-height: 60px; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font: inherit; font-size: .9rem; background: var(--bg); color: var(--ink); resize: vertical; }
+  .savebtn { margin-top: 8px; background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 8px 18px; font: inherit; font-weight: 600; cursor: pointer; }
+  .savebtn:disabled { opacity: .5; cursor: default; }
+  .saved-note { color: var(--good); font-size: .85rem; margin-left: 10px; }
+  .history { margin-top: 10px; font-size: .85rem; }
+  .history .entry { border-left: 3px solid var(--line); padding: 4px 10px; margin: 6px 0; color: var(--muted); }
+  .history .entry b { color: var(--ink); }
+  .offline { color: var(--accent); font-size: .85rem; display: none; }
+  details.recipe { margin-top: 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+  details.recipe summary { cursor: pointer; padding: 8px 12px; font-weight: 600; font-size: .9rem; color: var(--accent); list-style: none; }
+  details.recipe summary::before { content: "▸ "; }
+  details.recipe[open] summary::before { content: "▾ "; }
+  details.recipe .r-body { padding: 0 14px 12px; font-size: .9rem; }
+  details.recipe .r-times { color: var(--muted); font-size: .84rem; margin-bottom: 8px; }
+  details.recipe h4 { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 10px 0 4px; }
+  details.recipe ul { margin: 0 0 4px 18px; padding: 0; }
+  details.recipe ol { margin: 0 0 4px 18px; padding: 0; }
+  details.recipe li { margin: 3px 0; }
+  .inv-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  .inv-row:last-child { border-bottom: 0; }
+  .inv-main { flex: 1 1 260px; }
+  .inv-name { font-weight: 600; }
+  .inv-note { font-size: .8rem; color: var(--muted); }
+  .days { border-radius: 999px; padding: 2px 10px; font-size: .78rem; font-weight: 700; white-space: nowrap; }
+  .days.red { background: #c0392b22; color: #c0392b; }
+  .days.amber { background: #e67e2222; color: #b9640f; }
+  .days.green { background: #2e7d3222; color: var(--good); }
+  .inv-btn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 4px 10px; cursor: pointer; font-size: .8rem; }
+  .inv-btn:hover { border-color: var(--accent); }
+  .inv-add { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; align-items: center; }
+  .inv-add input, .inv-add select { border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; font: inherit; font-size: .85rem; background: var(--bg); color: var(--ink); }
+  footer { margin-top: 40px; color: var(--muted); font-size: .82rem; border-top: 1px solid var(--line); padding-top: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🍳 Family Meal Planner</h1>
+    <div class="sub" id="week-label"></div>
+    <div class="sub" id="store-label"></div>
+  </header>
+  <div class="adnote" id="ad-note"></div>
+
+  <h2>This Week's Menu</h2>
+  <div id="menu"></div>
+
+  <h2>Grocery List
+    <span style="float:right">
+      <button class="inv-btn" id="copy-list" style="font-size:.8rem;vertical-align:middle">📋 Copy list</button>
+      <button class="inv-btn" id="copy-keep" style="font-size:.8rem;vertical-align:middle" title="One clean line per item — paste into a Google Keep checklist note and each line becomes a checkbox">📱 Copy for Keep</button>
+      <span id="grand-total" style="margin-left:8px"></span>
+    </span>
+  </h2>
+  <div class="card"><table id="grocery"></table></div>
+
+  <h2 id="inv-h2">Use It Up — On Hand</h2>
+  <div class="card" id="inv-card">
+    <p style="font-size:.85rem;color:var(--muted);margin-bottom:8px">
+      Leftovers and banked extras, soonest-expiring first. Mark items <b>Used</b> or <b>Tossed</b> as they go —
+      Claude reads this when planning and builds next week's meals around whatever is about to turn.
+      Add anything already in your fridge below.
+    </p>
+    <div id="inventory"></div>
+    <div class="inv-add">
+      <input id="inv-name" placeholder="Item (e.g. half a bag of spinach)" style="flex:1 1 200px">
+      <input id="inv-qty" placeholder="Qty" style="width:90px">
+      <select id="inv-loc"><option>fridge</option><option>freezer</option><option>pantry</option></select>
+      <input id="inv-days" type="number" min="1" value="5" style="width:70px" title="days until it goes bad">
+      <span style="font-size:.8rem;color:var(--muted)">days left</span>
+      <button class="inv-btn" id="inv-addbtn">+ Add</button>
+    </div>
+  </div>
+
+  <h2>Cost per Meal</h2>
+  <div class="card">
+    <table id="costs"></table>
+    <p style="font-size:.82rem;color:var(--muted);margin-top:8px">
+      Meal totals count only what each meal consumes — the grocery total is higher because it
+      includes banked extras (frozen beef, lunch chicken) and restocked staples. Record the real
+      spend per meal in the feedback form and estimates will improve over time.
+    </p>
+  </div>
+
+  <h2 id="fb-h2">Family Feedback</h2>
+  <p id="fb-intro" style="font-size:.9rem;color:var(--muted);margin-bottom:12px">
+    After each meal: pick a verdict, jot a line about the family's reaction (who loved it, what to tweak),
+    and hit save. This lands in <code>feedback/feedback.jsonl</code> and Claude reads it when planning future weeks.
+  </p>
+  <div class="offline" id="offline-warn">⚠ Feedback server not reachable — start it with <code>node server.js</code> (or the Start Meal Planner shortcut), then reload.</div>
+  <div id="feedback"></div>
+
+  <footer>
+    Recipes: Serious Eats first for sous vide times &amp; temps, Reddit as sanity check.
+    New HEB ad flips every Wednesday — ask Claude for next week's plan then.
+  </footer>
+</div>
+
+<script src="week-data.js"></script>
+<script>
+  const $ = (s, el = document) => el.querySelector(s);
+  const money = (n) => "$" + n.toFixed(2);
+
+  // Header
+  $("#week-label").textContent = WEEK.label;
+  $("#store-label").textContent = WEEK.store;
+  $("#ad-note").textContent = WEEK.adNote;
+
+  // Menu
+  const tagLabel = { primary: "recipe", alt: "backup", reddit: "reddit" };
+  $("#menu").innerHTML = WEEK.meals.map(m => `
+    <div class="card">
+      <div class="slot">${m.slot}</div>
+      <h3>${m.title}</h3>
+      <div class="meta">
+        <span class="chip time">⏱ ${m.time}</span>
+        ${m.cost ? `<span class="chip cost" title="${m.cost.note}">💲 ~${money(m.cost.est)} · ${money(m.cost.est / m.cost.servings)}/serving</span>` : ""}
+        ${m.nutrition ? `<span class="chip" title="${m.nutrition.serving}">🍽 serves ${m.cost?.servings ?? 4} · ~${m.nutrition.calories} cal</span>` : ""}
+        ${m.equipment.map(e => `<span class="chip">${e}</span>`).join("")}
+      </div>
+      <div class="summary">${m.summary}</div>
+      ${m.swapNote ? `<div class="swap">↔ ${m.swapNote}</div>` : ""}
+      <div class="links">${m.links.map(l =>
+        `<a href="${l.url}" target="_blank" rel="noopener">${l.label}<span class="ltag">(${tagLabel[l.tag] || l.tag})</span></a>`).join("")}
+      </div>
+      ${m.recipe ? `<details class="recipe"><summary>Recipe card</summary><div class="r-body">
+        <div class="r-times">⏱ Active: ${m.recipe.activeTime} &nbsp;·&nbsp; 🔥 Cook: ${m.recipe.cookTime}</div>
+        ${m.nutrition ? `<h4>Per serving</h4>
+        <div style="font-size:.88rem;margin-bottom:2px"><b>Serving:</b> ${m.nutrition.serving}</div>
+        <div style="font-size:.88rem"><b>~${m.nutrition.calories} cal</b> · protein ${m.nutrition.protein} g · carbs ${m.nutrition.carbs} g · fat ${m.nutrition.fat} g
+        <span style="color:var(--muted);font-size:.78rem"> (estimate from standard nutrition data)</span></div>` : ""}
+        <h4>Ingredients</h4><ul>${m.recipe.ingredients.map(i => `<li>${i}</li>`).join("")}</ul>
+        <h4>Instructions</h4><ol>${m.recipe.steps.map(s => `<li>${s}</li>`).join("")}</ol>
+      </div></details>` : ""}
+    </div>`).join("");
+
+  // Grocery list with costs + checkbox persistence
+  const gotKey = `got-${WEEK.id}`;
+  const got = new Set(JSON.parse(localStorage.getItem(gotKey) || "[]"));
+  let total = 0, rows = `<tr><th></th><th>Item</th><th>Qty / note</th><th class="est">Est.</th></tr>`;
+  WEEK.grocery.forEach(sec => {
+    rows += `<tr class="section-row"><td colspan="4">${sec.section}</td></tr>`;
+    sec.items.forEach(it => {
+      total += it.est;
+      const id = `${sec.section}|${it.name}`;
+      rows += `<tr data-id="${id}" class="${got.has(id) ? "got" : ""}">
+        <td><input type="checkbox" ${got.has(id) ? "checked" : ""}></td>
+        <td>${it.name}</td><td>${it.qty}</td>
+        <td class="est">${it.est ? money(it.est) : "—"}</td></tr>`;
+    });
+  });
+  rows += `<tr class="total-row"><td></td><td colspan="2">Estimated total (before coupons)</td><td class="est">${money(total)}</td></tr>`;
+  $("#grocery").innerHTML = rows;
+  $("#grand-total").textContent = "est. " + money(total);
+  $("#copy-list").addEventListener("click", async () => {
+    const lines = [`${WEEK.label} — grocery list (est. ${money(total)})`];
+    WEEK.grocery.forEach(sec => {
+      lines.push("", sec.section.toUpperCase());
+      sec.items.forEach(it => lines.push(`[ ] ${it.name}${it.qty ? " — " + it.qty : ""}${it.est ? ` (~${money(it.est)})` : ""}`));
+    });
+    try {
+      await navigator.clipboard.writeText(lines.join("\n"));
+      const b = $("#copy-list"); b.textContent = "✓ Copied"; setTimeout(() => b.textContent = "📋 Copy list", 2500);
+    } catch { alert("Clipboard blocked — select and copy manually:\n\n" + lines.join("\n")); }
+  });
+  $("#copy-keep").addEventListener("click", async () => {
+    const lines = [];
+    WEEK.grocery.forEach(sec => {
+      lines.push(`—— ${sec.section.replace(/\(.*\)/, "").trim().toUpperCase()} ——`);
+      sec.items.forEach(it => {
+        const qty = (it.qty || "").split("—")[0].split("(")[0].trim();
+        lines.push(`${it.name.split("(")[0].split("—")[0].trim()}${qty ? " · " + qty : ""}`);
+      });
+    });
+    try {
+      await navigator.clipboard.writeText(lines.join("\n"));
+      const b = $("#copy-keep"); b.textContent = "✓ Copied — paste into a Keep checklist"; setTimeout(() => b.textContent = "📱 Copy for Keep", 4000);
+    } catch { alert("Clipboard blocked — copy manually:\n\n" + lines.join("\n")); }
+  });
+  $("#grocery").addEventListener("change", e => {
+    const tr = e.target.closest("tr"); if (!tr?.dataset.id) return;
+    tr.classList.toggle("got", e.target.checked);
+    e.target.checked ? got.add(tr.dataset.id) : got.delete(tr.dataset.id);
+    localStorage.setItem(gotKey, JSON.stringify([...got]));
+  });
+
+  // Cost per meal table
+  const costMeals = WEEK.meals.filter(m => m.cost);
+  const costTotal = costMeals.reduce((s, m) => s + m.cost.est, 0);
+  $("#costs").innerHTML =
+    `<tr><th>Meal</th><th>What's counted</th><th class="est">Est. total</th><th class="est">Per serving</th></tr>` +
+    costMeals.map(m => `<tr><td>${m.title}</td><td style="color:var(--muted);font-size:.85rem">${m.cost.note}</td>
+      <td class="est">${money(m.cost.est)}</td><td class="est">${money(m.cost.est / m.cost.servings)}</td></tr>`).join("") +
+    `<tr class="total-row"><td colspan="2">Week of cooked dinners (${costMeals.length} meals)</td>
+      <td class="est">${money(costTotal)}</td><td class="est">${money(costTotal / costMeals.reduce((s, m) => s + m.cost.servings, 0))}</td></tr>`;
+
+  // Feedback
+  const RATINGS = ["🎯 Hit", "👍 Solid", "😐 Meh", "👎 Miss"];
+  const fbMeals = WEEK.meals.filter(m => m.id !== "prep");
+  $("#feedback").innerHTML = fbMeals.map(m => `
+    <div class="card" data-meal="${m.id}">
+      <h3>${m.title}</h3>
+      <div class="fb-controls">${RATINGS.map(r => `<button class="rate" data-r="${r}">${r}</button>`).join("")}</div>
+      <textarea placeholder="Family reaction — who loved it, what to change, make again?"></textarea>
+      <div style="margin-top:8px;font-size:.88rem">
+        Actual cost (optional): $<input class="cost-input" type="number" min="0" step="0.01"
+          placeholder="${m.cost ? m.cost.est.toFixed(2) : ""}">
+      </div>
+      <button class="savebtn" disabled>Save feedback</button><span class="saved-note"></span>
+      <div class="history"></div>
+    </div>`).join("");
+
+  document.querySelectorAll("#feedback .card").forEach(card => {
+    const btn = $(".savebtn", card), note = $(".saved-note", card), ta = $("textarea", card);
+    const costIn = $(".cost-input", card);
+    const meal = WEEK.meals.find(m => m.id === card.dataset.meal);
+    let rating = null;
+    const ready = () => { btn.disabled = !(rating || ta.value.trim() || costIn.value); };
+    costIn.addEventListener("input", ready);
+    card.querySelectorAll(".rate").forEach(b => b.addEventListener("click", () => {
+      card.querySelectorAll(".rate").forEach(x => x.classList.remove("sel"));
+      b.classList.add("sel"); rating = b.dataset.r; ready();
+    }));
+    ta.addEventListener("input", ready);
+    btn.addEventListener("click", async () => {
+      btn.disabled = true; note.textContent = "saving…";
+      try {
+        const res = await fetch("/api/feedback", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            week: WEEK.id, mealId: card.dataset.meal, rating, notes: ta.value.trim(),
+            actualCost: costIn.value ? Number(costIn.value) : undefined,
+            estCost: meal?.cost?.est
+          })
+        });
+        if (!res.ok) throw 0;
+        note.textContent = "✓ saved"; ta.value = ""; costIn.value = ""; ready(); loadHistory();
+        setTimeout(() => note.textContent = "", 3000);
+      } catch { note.textContent = "save failed — is the server running?"; btn.disabled = false; }
+    });
+  });
+
+  // Remote mode: on GitHub Pages (or any non-local host) the server API doesn't exist —
+  // hide the interactive sections instead of showing errors. Menu, recipes, grocery
+  // checklist (localStorage), and copy buttons all still work.
+  const IS_LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname) || location.protocol === "file:";
+  function remoteMode() {
+    ["inv-h2", "inv-card", "fb-h2", "fb-intro", "offline-warn", "feedback"].forEach(id => {
+      const el = document.getElementById(id); if (el) el.style.display = "none";
+    });
+  }
+
+  // Inventory — Use It Up
+  const locIcon = { fridge: "🧊", freezer: "❄️", pantry: "🥫" };
+  async function loadInventory() {
+    try {
+      const inv = await (await fetch("/api/inventory")).json();
+      const items = (inv.items || []).filter(i => i.status === "on-hand")
+        .sort((a, b) => (a.useBy || "9999").localeCompare(b.useBy || "9999"));
+      const today = new Date();
+      $("#inventory").innerHTML = items.length ? items.map(i => {
+        let badge = `<span class="days green">no date</span>`;
+        if (i.useBy) {
+          const d = Math.ceil((new Date(i.useBy + "T12:00") - today) / 86400000);
+          const cls = d <= 2 ? "red" : d <= 6 ? "amber" : "green";
+          badge = `<span class="days ${cls}">${d < 0 ? "past date" : d + "d left"}</span>`;
+        }
+        return `<div class="inv-row" data-id="${i.id}">
+          <span title="${i.location}">${locIcon[i.location] || "🧊"}</span>
+          <div class="inv-main">
+            <div class="inv-name">${i.name}${i.qty ? ` <span style="font-weight:400;color:var(--muted)">· ${i.qty}</span>` : ""}</div>
+            ${i.note ? `<div class="inv-note">${i.note}</div>` : ""}
+          </div>
+          ${badge}
+          <button class="inv-btn" data-act="used">✓ Used</button>
+          <button class="inv-btn" data-act="tossed">🗑 Tossed</button>
+        </div>`;
+      }).join("") : `<div style="color:var(--muted);font-size:.9rem">Nothing tracked right now — add items below.</div>`;
+    } catch {
+      if (!IS_LOCAL) { remoteMode(); return; }
+      $("#inventory").innerHTML = `<div style="color:var(--accent);font-size:.9rem">Server not reachable — start it to see inventory.</div>`;
+    }
+  }
+  $("#inventory").addEventListener("click", async e => {
+    const btn = e.target.closest("[data-act]"); if (!btn) return;
+    const id = btn.closest(".inv-row").dataset.id;
+    await fetch("/api/inventory", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "status", id, status: btn.dataset.act }) });
+    loadInventory();
+  });
+  $("#inv-addbtn").addEventListener("click", async () => {
+    const name = $("#inv-name").value.trim(); if (!name) return;
+    const days = parseInt($("#inv-days").value, 10) || 5;
+    const useBy = new Date(Date.now() + days * 86400000).toISOString().slice(0, 10);
+    await fetch("/api/inventory", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "add", item: { name, qty: $("#inv-qty").value.trim(), location: $("#inv-loc").value, useBy } }) });
+    $("#inv-name").value = ""; $("#inv-qty").value = "";
+    loadInventory();
+  });
+  loadInventory();
+
+  async function loadHistory() {
+    try {
+      const entries = await (await fetch("/api/feedback")).json();
+      $("#offline-warn").style.display = "none";
+      document.querySelectorAll("#feedback .card").forEach(card => {
+        const mine = entries.filter(e => e.mealId === card.dataset.meal);
+        $(".history", card).innerHTML = mine.map(e =>
+          `<div class="entry"><b>${e.rating || ""}</b> ${e.notes || ""}${e.actualCost != null ? ` <b>· spent $${Number(e.actualCost).toFixed(2)}</b>${e.estCost != null ? ` (est. $${Number(e.estCost).toFixed(2)})` : ""}` : ""} <span style="font-size:.75rem">(${(e.savedAt || "").slice(0, 10)}${e.week !== WEEK.id ? " · " + e.week : ""})</span></div>`
+        ).join("");
+      });
+    } catch { if (!IS_LOCAL) { remoteMode(); return; } $("#offline-warn").style.display = "block"; }
+  }
+  loadHistory();
+</script>
+</body>
+</html>

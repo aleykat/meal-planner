@@ -1,0 +1,288 @@
+// Week data — regenerated each week by Claude. Loaded by index.html.
+// LIVE WEEK v3 — from-scratch rerun, all rules current. Kids' self-serve escape hatch means
+// the menu no longer softens for anyone: proper diabla, pork belly, chimichurri. One
+// circulator runs a relay: carnitas (Sun→Mon), chuck (Tue→Wed), pork belly (Wed→Thu).
+const WEEK = {
+  id: "2026-07-22",
+  label: "Week of July 22–28, 2026 · LIVE v3 (full-bold rerun)",
+  store: "H-E-B Irving #817 + optional Joe V's Smart Shop (2407 W Airport Fwy)",
+  adNote: "Prices from the actual 7/22–7/28 flyers (fetch-ad.js) + the digital-coupon page. ⚠ Pizza→free ice cream Combo Loco expired 7/21 — check Wednesday whether it renewed; buy only if so. Fresh Hatch assumed unavailable. Joe V's items carry HEB subs. ⚠ No bagged salads — Taylor Farms Cyclospora recall active (rechecked 7/21).",
+  meals: [
+    {
+      id: "prep",
+      cost: null,
+      title: "Weekend: Seal Session + Sunday Pork Drop",
+      slot: "Weekend",
+      time: "~20 min total across the weekend",
+      equipment: ["Chamber sealer", "Sous vide"],
+      summary:
+        "Two jobs, ~20 minutes, no deboning. (1) SEAL SESSION: 2 boneless breasts get fajita rub → sealed → freezer bank. (2) SUNDAY ~8 PM: toss the pre-cut boneless carnitas chunks in pork rub, seal, drop at 165°F. The circulator then runs a relay all week: carnitas out Monday, chuck in Tuesday night, pork belly in Wednesday after the chuck comes out.",
+      links: [
+        { label: "Anova — Food Lab sous vide carnitas guide (temp options + crisping)", url: "https://anovaculinary.com/blogs/blog/sous-vide-carnitas-guide", tag: "primary" },
+        { label: "r/sousvide — pork shoulder threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20shoulder", tag: "reddit" }
+      ],
+      swapNote: "165°F/18–24 hr = shreddable but moist — right for griddle crisping.",
+      recipe: {
+        activeTime: "~20 min total (15 seal session, 5 Sunday drop)",
+        cookTime: "pork: ~21 hr unattended overnight",
+        ingredients: [
+          "~4 lb Joe V's boneless pork carnitas (pre-cut shoulder chunks, $2.47/lb)",
+          "3 tbsp Bolner's Fiesta pork rub",
+          "~1.5 lb boneless skinless chicken breasts (2 pieces)",
+          "2 tbsp Bolner's Fiesta fajita seasoning",
+          "chamber vacuum bags"
+        ],
+        steps: [
+          "SEAL SESSION: coat the 2 boneless breasts in fajita seasoning, seal 1 per bag, label, freeze. Drop frozen into a 150°F bath (+1 hr) any future week.",
+          "SUNDAY ~8 PM: toss the carnitas chunks with pork rub, seal, drop at 165°F. Cover the bath; top up water Monday morning.",
+          "Cleanup: sealer wipe. That's it."
+        ]
+      }
+    },
+    {
+      id: "carnitas",
+      cost: { est: 10.8, servings: 4, note: "half the boneless carnitas, crisped + La Ranchera tortillas, salsa verde, toppings" },
+      nutrition: { serving: "3 tacos: ~5 oz crispy pork, salsa verde, onion-cilantro", calories: 650, protein: 35, carbs: 45, fat: 35 },
+      title: "Crispy Carnitas Tacos with Salsa Verde",
+      slot: "Dinner 1 · Mon",
+      time: "~20 min at dinner",
+      equipment: ["Sous vide", "Blackstone"],
+      summary:
+        "The 21-hour pork hits a ripping Blackstone in its own fat until the edges shatter. La Ranchera tortillas, jarred salsa verde, onion-cilantro, lime. Half the pork gets sealed with juices for Friday's nachos. Kids: crispy pork + cheese tacos, salsa stays on the side — same dish.",
+      links: [
+        { label: "Anova — Food Lab carnitas guide (the crisping method)", url: "https://anovaculinary.com/blogs/blog/sous-vide-carnitas-guide", tag: "primary" },
+        { label: "Serious Eats — Sous Vide Carnitas (Kenji; SE blocks fetch — search if 404)", url: "https://www.seriouseats.com/sous-vide-carnitas-for-tacos-recipe", tag: "alt" }
+      ],
+      swapNote: "Doctor the verde with a spoon of Tuesday's diabla sauce if the adults want heat.",
+      recipe: {
+        activeTime: "~20 min at dinner",
+        cookTime: "pork already done; crisping ~8 min",
+        ingredients: [
+          "the sous vide pork (in since Sunday) — HALF tonight, with bag juices",
+          "12 La Ranchera white corn tortillas",
+          "1 jar H-E-B salsa verde",
+          "½ yellow onion (fine dice) + cilantro, mixed",
+          "2 limes, quartered; shredded cheese for kid tacos",
+          "1 tbsp canola oil (if the pork runs lean)"
+        ],
+        steps: [
+          "Pull the bag; pour juices into a cup, skim — 2 tbsp of the fat goes straight onto the Blackstone.",
+          "SEAL THE OTHER HALF of the pork with a splash of juices → fridge (Friday nachos + bank).",
+          "Griddle on high. Pork on, pressed flat-ish; leave it 3 min for crust, then break apart, toss, crisp 3 more. Splash of juices at the end.",
+          "Warm tortillas on the open griddle space; stack under a towel.",
+          "Kid tacos first (pork + cheese), then adult build: pork, salsa verde, onion-cilantro, lime.",
+          "Cleanup: griddle scrape, one cutting board, trash the bag."
+        ]
+      }
+    },
+    {
+      id: "diabla",
+      cost: { est: 15.0, servings: 4, note: "1.5 lb peeled & deveined shrimp (~$8/lb — the $5.97 ad price is shell-on; P&D per shrimp rule) + dried-chile sauce, romas" },
+      nutrition: { serving: "~6 oz shrimp in diabla sauce over 1½ cups rice", calories: 520, protein: 30, carbs: 68, fat: 12 },
+      title: "Camarones a la Diabla with Jasmine Rice",
+      slot: "Dinner 2 · Tue",
+      time: "~25 min at dinner (shrimp sous vide beforehand)",
+      equipment: ["Sous vide", "Stove", "NutriBullet", "Rice cooker"],
+      summary:
+        "Deviled shrimp, done properly — and sous vide, the house shrimp method: bagged P&D shrimp at 135°F for 30 min come out snappy-tender and physically can't overcook, then fold into the brick-red guajillo–árbol sauce (the NutriBullet earns its wash — there's no non-blender version of this dish). Genuinely spicy — the week's don't-soften night. Kids: their shrimp come straight from the bag before the sauce, or they self-serve. TONIGHT ~9 PM: the bath switches to the chuck for tomorrow.",
+      links: [
+        { label: "Isabel Eats — Camarones a la Diabla (the sauce reference)", url: "https://www.isabeleats.com/camarones-a-la-diabla/", tag: "primary" },
+        { label: "The Kitchn — diabla version (backup)", url: "https://www.thekitchn.com/camarones-a-la-diabla-recipe-23735936", tag: "alt" },
+        { label: "r/sousvide — shrimp time/temp threads (sanity check)", url: "https://www.reddit.com/r/sousvide/search/?q=shrimp%20temp", tag: "reddit" }
+      ],
+      swapNote: "Heat dial: 2 árbol = hot-but-civil, 4+ = weapons-grade. Guajillos carry flavor, árbol carries fire.",
+      recipe: {
+        activeTime: "~25 min at dinner (+2 min bagging the shrimp at ~5 PM)",
+        cookTime: "shrimp 30 min at 135°F; sauce ~15 min incl. chile soak",
+        ingredients: [
+          "1.5 lb PEELED & DEVEINED raw jumbo shrimp (Fish Market counter — no knife work, no shells)",
+          "4 dried guajillo chiles + 2–3 chiles de árbol (stemmed, seeds shaken out)",
+          "2 Roma tomatoes, rough-chopped",
+          "½ yellow onion + 3 garlic cloves",
+          "1 tbsp olive oil, ½ tbsp canola (bag), kosher salt",
+          "2 cups (dry) jasmine rice — rice cooker, started midday",
+          "lime + cilantro to finish"
+        ],
+        steps: [
+          "MIDDAY: rice cooker on late afternoon. ~5 PM: bath to 135°F; seal the shrimp flat with the canola and a pinch of salt, drop for 30 min (they hold fine up to an hour).",
+          "Soak the stemmed chiles in just-boiled water 10 min (a mug works).",
+          "NutriBullet: soaked chiles, tomatoes, onion, garlic, ½ tsp salt, splash of soak water. Blend smooth — this is the whole sauce.",
+          "Skillet, olive oil, medium-high: pour in the sauce — it should sizzle. Simmer 5 min until it darkens a shade. Salt to taste.",
+          "Open the shrimp bag. KID CHECKPOINT: their shrimp go straight from bag to plate — perfectly cooked, sauce-free, with rice and cheese if wanted. Or they self-serve; either way no second dish.",
+          "Fold the rest of the shrimp (and bag juices) into the sauce — 60 seconds to coat and warm, no more. They're already cooked; the sauce is just dressing them.",
+          "Over rice, lime squeeze, cilantro. Cleanup: skillet, NutriBullet cup, rice pot, trash the bag.",
+          "TONIGHT ~9 PM (2 min): bath to 135°F stays — salt + pepper the chuck, 2 slabs, seal, drop."
+        ]
+      }
+    },
+    {
+      id: "chucksteak",
+      cost: { est: 23.0, servings: 4, note: "~2.75 lb Prime 1 chuck @ $5.99/lb (33% off) + potatoes, chimichurri — splurge night, ~$5.75/serving" },
+      nutrition: { serving: "~8 oz sliced chuck 'steak' + chimichurri + crispy potatoes", calories: 950, protein: 55, carbs: 60, fat: 55 },
+      title: "24-Hour Chuck 'Steak' with Chimichurri & Crispy Potatoes",
+      slot: "Dinner 3 · Wed",
+      time: "~25 min at dinner",
+      equipment: ["Sous vide", "Blackstone", "Air fryer"],
+      summary:
+        "Prime 1 chuck (33% off) held at 135°F since last night eats like ribeye at a third the price. Hard Blackstone sear, chimichurri over the slices, air-fryer gold potatoes. Kids: sauce on the side — it's steak. AFTER DINNER: the pork belly goes into the same bath for tomorrow.",
+      links: [
+        { label: "DadCooksDinner — Sous Vide Chuck Steak (24 hours to tenderness)", url: "https://www.dadcooksdinner.com/sous-vide-chuck-steak-recipe/", tag: "primary" },
+        { label: "Love and Lemons — chimichurri sauce", url: "https://www.loveandlemons.com/chimichurri-sauce/", tag: "alt" }
+      ],
+      swapNote: "131°F = medium-rare-plus; 135°F = family medium. Same 24 hr either way.",
+      recipe: {
+        activeTime: "~25 min at dinner (chuck dropped Tuesday ~9 PM)",
+        cookTime: "chuck 20–24 hr at 135°F; potatoes ~20 min air fryer",
+        ingredients: [
+          "~2.75 lb H-E-B Prime 1 beef chuck roast, 2 slabs (in the bath since Tuesday)",
+          "3 lb baby gold potatoes, halved",
+          "CHIMICHURRI: 1 bunch parsley (finely chopped), 3 garlic cloves (minced), 3 tbsp red wine vinegar, ½ cup olive oil, ½ tsp crushed red pepper, ½ tsp kosher salt, ½ tsp Mexican oregano",
+          "1½ tbsp canola oil, kosher salt, black pepper",
+          "FOR TOMORROW: the pork belly + 2 tbsp soy + 1 tbsp brown sugar (its bag seasoning)"
+        ],
+        steps: [
+          "Chimichurri first (10 min, one bowl): chop, mince, stir. It blooms while everything else cooks.",
+          "Potatoes: halved golds, canola, salt; air fryer 400°F ~20 min, shake at 10.",
+          "Pull the chuck, pat VERY dry, light salt. Blackstone on maximum: 90 sec per side + fat edges.",
+          "Rest 5 min under foil; slice against the grain, ½-inch planks. Kids' portions before saucing; chimichurri over the rest.",
+          "AFTER DINNER (3 min): reset the bath to 165°F. Season the pork belly with soy + brown sugar rubbed on, seal, drop — it rides ~24 hr to Thursday.",
+          "Cleanup: griddle scrape, air fryer basket, two bowls, trash the bag."
+        ]
+      }
+    },
+    {
+      id: "porkbelly",
+      cost: { est: 12.0, servings: 4, note: "~2 lb pork belly @ $4.99/lb feature + cucumber salad; glaze + rice from staples" },
+      nutrition: { serving: "1 bowl: ~5 oz glazed crispy belly over 1½ cups rice + cucumber salad", calories: 850, protein: 25, carbs: 70, fat: 50 },
+      title: "Crispy Glazed Pork Belly Bowls with Cucumber Salad",
+      slot: "Dinner 4 · Thu",
+      time: "~25 min at dinner",
+      equipment: ["Sous vide", "Blackstone", "Rice cooker"],
+      summary:
+        "The ad's boldest cut ($4.99/lb): 24-hour belly cubed and seared shattering-crisp on the Blackstone, tossed in a soy–brown sugar–garlic–ginger glaze that goes sticky on contact. Rice underneath, sharp quick cucumber salad to cut the richness. Kids: crispy belly cubes pulled before the glaze (basically pork candy) — or self-serve. This is restaurant food at $3/serving.",
+      links: [
+        { label: "Anova — Crispy Pork Belly (sous vide method)", url: "https://recipes.anovaculinary.com/recipe/crispy-pork-belly-4", tag: "primary" },
+        { label: "Amazing Food Made Easy — pork belly times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/belly", tag: "alt" },
+        { label: "r/sousvide — pork belly threads (sanity check)", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20belly", tag: "reddit" }
+      ],
+      swapNote: "165°F/24 hr = tender with structure for cubing (Stefan's and AFME's tested range). Dry HARD before searing — wet belly steams instead of crisping.",
+      recipe: {
+        activeTime: "~25 min at dinner",
+        cookTime: "belly 24 hr at 165°F (in since Wednesday night)",
+        ingredients: [
+          "~2 lb H-E-B pork belly (in the bath since Wednesday, soy–brown sugar in the bag)",
+          "GLAZE: 3 tbsp soy sauce + 2 tbsp brown sugar + 2 garlic cloves (minced) + 1 tbsp grated ginger + splash of bag juices",
+          "CUCUMBER SALAD: 2 cucumbers (thin half-moons), 2 tbsp red wine vinegar, 1 tsp brown sugar, pinch of salt, pinch of crushed red pepper",
+          "2 cups (dry) jasmine rice — rice cooker, started midday",
+          "green tops from the onions if any survive, or cilantro"
+        ],
+        steps: [
+          "MIDDAY: rice cooker on. Mix the cucumber salad — it improves in the fridge all afternoon.",
+          "Pull the belly, pat VERY dry (this is the whole game), cut into 1-inch cubes.",
+          "Blackstone on high: cubes fat-side down first, 2–3 min per side until deeply browned and crackling. Kids' share out now — plain crispy cubes on rice.",
+          "Kill the heat to medium. Glaze ingredients onto the griddle over the cubes — it bubbles to sticky in ~60 seconds. Toss to coat, off immediately (sugar burns fast).",
+          "Bowls: rice, glazed belly, cucumber salad on the side, herbs over.",
+          "Cleanup: griddle scrape while warm (sugar!), rice pot, one bowl, trash the bag."
+        ]
+      }
+    },
+    {
+      id: "flex",
+      cost: { est: 4.5, servings: 4, note: "kids self-serve ($1 mac in their stash); adults: carnitas nachos from Monday's reserved half + $2.50 chips" },
+      nutrition: { serving: "adults: carnitas nachos share (~600 cal); kids: whatever they pick", calories: 600, protein: 22, carbs: 55, fat: 30 },
+      title: "Flex Night — Carnitas Nachos (Kids Self-Serve)",
+      slot: "Flex · Fri",
+      time: "~10 min",
+      equipment: ["Oven"],
+      summary:
+        "Adults: foil-lined sheet-pan nachos — Monday's reserved carnitas, cheese, salsa verde, broiler, 4 minutes, eat off the foil. Kids: self-serve night from their own stash (the $1 mac boxes restocked this week are in the pantry; what they make is their call). If the pizza Combo Loco renewed, the pizza banks as the bad-day dinner.",
+      links: [
+        { label: "HEB coupon page — recheck the Combo Loco Wednesday", url: "https://www.heb.com/digital-coupon/coupon-selection", tag: "alt" }
+      ],
+      swapNote: "Leftover diabla sauce drizzled on the nachos: correct.",
+      recipe: {
+        activeTime: "~10 min (adults only — kids run their own night)",
+        cookTime: "nachos 3–4 min broil",
+        ingredients: [
+          "H-E-B tortilla chips (~half bag)",
+          "Monday's reserved carnitas, rewarmed 2 min in the microwave",
+          "remaining shredded cheese, salsa verde, sour cream, cilantro, lime",
+          "kids: their pantry/freezer stash, their choice, their cleanup"
+        ],
+        steps: [
+          "Broiler high, rack 6 inches down. Foil-lined sheet: chips, carnitas, cheese, two thin layers.",
+          "Broil 3–4 min — do not walk away.",
+          "Off-heat: salsa verde, sour cream, cilantro, lime. Serve on the foil.",
+          "Cleanup: balled-up foil. The kids wash whatever they used."
+        ]
+      }
+    }
+  ],
+  grocery: [
+    {
+      section: "Joe V's Smart Shop (optional trip, ~$17 — HEB subs noted on every line)",
+      items: [
+        { name: "Boneless Pork Carnitas (ad item @ $2.47/lb — pre-cut shoulder, zero deboning)", qty: "~4 lb — 2 meals + bank (HEB sub: boneless pork butt ~$2.79/lb)", est: 9.9 },
+        { name: "La Ranchera White Corn Tortillas (ad item)", qty: "big pack — carnitas night (HEB sub: Mi Tienda ~$2.50)", est: 1.9 },
+        { name: "Cucumbers (ad item @ $1)", qty: "2 — pork belly night salad", est: 2.0 },
+        { name: "Yellow Onions (ad item @ $0.97/lb)", qty: "4 medium — tacos, diabla, aromatics", est: 2.5 },
+        { name: "Garlic (ad item)", qty: "1 head", est: 1.0 }
+      ]
+    },
+    {
+      section: "H-E-B — Meat & Seafood",
+      items: [
+        { name: "H-E-B Fish Market PEELED & DEVEINED Raw Jumbo Shrimp (~$8/lb — the $5.97 ad price is shell-on; P&D per house shrimp rule)", qty: "1.5 lb — diabla", est: 12.0 },
+        { name: "H-E-B Prime 1 Beef Chuck Roast (ad item @ $5.99/lb, 33% off)", qty: "~2.75 lb — the 24-hr steak play", est: 16.5 },
+        { name: "FRESH! H-E-B Natural Pork Belly (ad item @ $4.99/lb)", qty: "~2 lb — Thursday's flagship", est: 10.0 },
+        { name: "H-E-B Boneless Skinless Chicken Breasts", qty: "~1.5 lb — the 2 freezer drop-in bags", est: 5.0 }
+      ]
+    },
+    {
+      section: "H-E-B — Produce",
+      items: [
+        { name: "H-E-B Baby Gold Potatoes", qty: "2 × 1.5 lb bags (regular price this week)", est: 4.5 },
+        { name: "Roma tomatoes", qty: "2 — diabla sauce", est: 1.0 },
+        { name: "Fresh ginger", qty: "~2 inch knob — belly glaze", est: 1.5 },
+        { name: "Limes", qty: "5 — tacos, diabla, nachos", est: 1.6 },
+        { name: "Cilantro", qty: "1 bunch", est: 0.7 },
+        { name: "Flat-leaf parsley", qty: "1 bunch — chimichurri", est: 1.0 }
+      ]
+    },
+    {
+      section: "H-E-B — Dairy",
+      items: [
+        { name: "H-E-B Mexican Style Shredded Cheese, 16 oz", qty: "1 bag — kid tacos, nachos", est: 4.7 },
+        { name: "Daisy Sour Cream", qty: "16 oz tub", est: 1.8 }
+      ]
+    },
+    {
+      section: "H-E-B — Pantry & Frozen",
+      items: [
+        { name: "H-E-B Salsa Verde", qty: "1 jar — carnitas tacos + nachos", est: 2.5 },
+        { name: "Kraft Mac & Cheese (ad item @ $1)", qty: "3 boxes — straight into the kids' self-serve stash", est: 3.0 },
+        { name: "H-E-B Restaurant Style Tortilla Chips", qty: "1 bag — Friday nachos", est: 2.5 },
+        { name: "H-E-B frozen pizza — CONDITIONAL: buy if the Combo Loco renewed for 7/22–7/28 (check Wednesday)", qty: "Combo Locos auto-apply when they fit; banks as the bad-day dinner", est: 6.0 },
+        { name: "H-E-B Creamy Creations — FREE only via that Combo Loco", qty: "rides along if the deal renewed (deals-only dessert rule)", est: 0 }
+      ]
+    },
+    {
+      section: "Staples Stock-Up (first real purchase — everything this menu needs, owned afterward)",
+      items: [
+        { name: "Mahatma Jasmine Rice", qty: "2 lb bag", est: 2.8 },
+        { name: "Bolner's Fiesta Brand Pork Rub", qty: "1 shaker", est: 3.0 },
+        { name: "Bolner's Fiesta Brand Fajita Seasoning", qty: "1 shaker", est: 2.0 },
+        { name: "Fiesta Ground Cumin + Fiesta Mexican Oregano", qty: "1 each", est: 3.0 },
+        { name: "Fiesta Crushed Red Pepper", qty: "1 shaker", est: 1.5 },
+        { name: "Fiesta Dried Guajillo Chiles + Chile de Árbol", qty: "1 bag each — diabla now, pantry heat forever", est: 4.0 },
+        { name: "Kikkoman Soy Sauce", qty: "10 oz — belly glaze", est: 2.5 },
+        { name: "Imperial Light Brown Sugar (Texas brand)", qty: "1 lb — glaze + cucumber salad", est: 2.5 },
+        { name: "Morton Coarse Kosher Salt (3 lb) + McCormick Black Pepper Grinder", qty: "1 each", est: 6.0 },
+        { name: "H-E-B Canola Oil", qty: "48 oz", est: 4.0 },
+        { name: "H-E-B Olive Oil", qty: "500 ml — chimichurri + diabla", est: 6.0 },
+        { name: "Red wine vinegar", qty: "1 bottle — chimichurri + cucumber salad", est: 2.5 },
+        { name: "Falfurrias Salted Butter (Texas brand)", qty: "1 lb — general (and the kids' mac)", est: 4.5 }
+      ]
+    }
+  ]
+};
