@@ -17,7 +17,12 @@
     }
   }
   * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
   body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.5; }
+  nav.quicknav { position: sticky; top: 0; z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); margin: 16px -16px 0; padding: 8px 16px; display: flex; gap: 8px; flex-wrap: wrap; }
+  nav.quicknav a, nav.quicknav button { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 5px 14px; font-size: .85rem; font-weight: 600; color: var(--ink); text-decoration: none; cursor: pointer; font-family: inherit; }
+  nav.quicknav a:hover, nav.quicknav button:hover { border-color: var(--accent); color: var(--accent); }
+  h2, #menu { scroll-margin-top: 58px; }
   .wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 80px; }
   header h1 { font-size: 1.7rem; margin-bottom: 2px; }
   header .sub { color: var(--muted); font-size: .95rem; }
@@ -90,10 +95,19 @@
   </header>
   <div class="adnote" id="ad-note"></div>
 
-  <h2>This Week's Menu</h2>
+  <nav class="quicknav">
+    <a href="#menu">🍽 Menu</a>
+    <button id="nav-recipes">📖 Recipes</button>
+    <a href="#grocery-h2">🛒 Shopping List</a>
+    <a href="#costs-h2">💲 Costs</a>
+    <a href="#inv-h2" id="nav-inv">🥕 Pantry</a>
+    <a href="#fb-h2" id="nav-fb">⭐ Feedback</a>
+  </nav>
+
+  <h2 id="menu-h2">This Week's Menu</h2>
   <div id="menu"></div>
 
-  <h2>Grocery List
+  <h2 id="grocery-h2">Grocery List
     <span style="float:right">
       <button class="inv-btn" id="copy-list" style="font-size:.8rem;vertical-align:middle">📋 Copy list</button>
       <button class="inv-btn" id="copy-keep" style="font-size:.8rem;vertical-align:middle" title="One clean line per item — paste into a Google Keep checklist note and each line becomes a checkbox">📱 Copy for Keep</button>
@@ -120,7 +134,7 @@
     </div>
   </div>
 
-  <h2>Cost per Meal</h2>
+  <h2 id="costs-h2">Cost per Meal</h2>
   <div class="card">
     <table id="costs"></table>
     <p style="font-size:.82rem;color:var(--muted);margin-top:8px">
@@ -293,10 +307,16 @@
   // checklist (localStorage), and copy buttons all still work.
   const IS_LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname) || location.protocol === "file:";
   function remoteMode() {
-    ["inv-h2", "inv-card", "fb-h2", "fb-intro", "offline-warn", "feedback"].forEach(id => {
+    ["inv-h2", "inv-card", "fb-h2", "fb-intro", "offline-warn", "feedback", "nav-inv", "nav-fb"].forEach(id => {
       const el = document.getElementById(id); if (el) el.style.display = "none";
     });
   }
+
+  // Quick-nav: Recipes = expand every recipe card, then scroll to the menu
+  $("#nav-recipes").addEventListener("click", () => {
+    document.querySelectorAll("details.recipe").forEach(d => d.open = true);
+    document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+  });
 
   // Inventory — Use It Up
   const locIcon = { fridge: "🧊", freezer: "❄️", pantry: "🥫" };
