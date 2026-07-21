@@ -16,7 +16,7 @@ const WEEK = {
       time: "~20 min total across the weekend",
       equipment: ["Chamber sealer", "Sous vide"],
       summary:
-        "Two jobs, ~20 minutes, no deboning. (1) SEAL SESSION: 2 boneless breasts get fajita rub → sealed → freezer bank. (2) SUNDAY ~8 PM: toss the pre-cut boneless carnitas chunks in pork rub, seal, drop at 165°F. The circulator then runs a relay all week: carnitas out Monday, chuck in Tuesday night, pork belly in Wednesday after the chuck comes out.",
+        "Two jobs, ~25 minutes, no deboning. (1) SEAL SESSION: 2 boneless breasts get fajita rub → sealed → freezer bank; the pork belly gets its soy–brown sugar rub and is sealed NOW (shelf-life rule — it waits sealed in the fridge until Wednesday); the chuck gets salt + pepper, sealed, fridge until Tuesday night. (2) SUNDAY ~8 PM: toss the pre-cut boneless carnitas chunks in pork rub, seal, drop at 165°F. The circulator then runs a relay: carnitas out Monday, chuck in Tuesday night, belly in Wednesday — every later drop is just bag-into-water.",
       links: [
         { label: "Anova — Food Lab sous vide carnitas guide (temp options + crisping)", url: "https://anovaculinary.com/blogs/blog/sous-vide-carnitas-guide", tag: "primary" },
         { label: "r/sousvide — pork shoulder threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20shoulder", tag: "reddit" }
@@ -30,10 +30,12 @@ const WEEK = {
           "3 tbsp Bolner's Fiesta pork rub",
           "~1.5 lb boneless skinless chicken breasts (2 pieces)",
           "2 tbsp Bolner's Fiesta fajita seasoning",
+          "~2 lb pork belly + 2 tbsp soy + 1 tbsp brown sugar (its Wednesday bag)",
+          "~2.75 lb chuck roast + kosher salt + pepper (its Tuesday bag)",
           "chamber vacuum bags"
         ],
         steps: [
-          "SEAL SESSION: coat the 2 boneless breasts in fajita seasoning, seal 1 per bag, label, freeze. Drop frozen into a 150°F bath (+1 hr) any future week.",
+          "SEAL SESSION (everything at once, one sealer wipe-down): (a) 2 boneless breasts in fajita seasoning, 1 per bag → FREEZER bank. (b) Pork belly rubbed with soy + brown sugar, sealed → FRIDGE (drops Wednesday). (c) Chuck slabs salted + peppered, sealed → FRIDGE (drops Tuesday 9 PM). Sealed raw meat keeps 3–4 days easily — every later cook is now just bag-into-water.",
           "SUNDAY ~8 PM: toss the carnitas chunks with pork rub, seal, drop at 165°F. Cover the bath; top up water Monday morning.",
           "Cleanup: sealer wipe. That's it."
         ]
@@ -95,7 +97,7 @@ const WEEK = {
         activeTime: "~25 min at dinner (+2 min bagging the shrimp at ~5 PM)",
         cookTime: "shrimp 30 min at 135°F; sauce ~15 min incl. chile soak",
         ingredients: [
-          "1.5 lb PEELED & DEVEINED raw jumbo shrimp (Fish Market counter — no knife work, no shells)",
+          "1.5 lb FROZEN peeled & deveined raw jumbo shrimp (thawed today — see step 1)",
           "4 dried guajillo chiles + 2–3 chiles de árbol (stemmed, seeds shaken out)",
           "2 Roma tomatoes, rough-chopped",
           "½ yellow onion + 3 garlic cloves",
@@ -104,14 +106,15 @@ const WEEK = {
           "lime + cilantro to finish"
         ],
         steps: [
-          "MIDDAY: rice cooker on late afternoon. ~5 PM: bath to 135°F; seal the shrimp flat with the canola and a pinch of salt, drop for 30 min (they hold fine up to an hour).",
+          "TUESDAY MORNING: shrimp bag from freezer to fridge (thawed by dinner). Forgot? Cold-water bath 20–30 min at 5 PM works too.",
+          "MIDDAY: rice cooker on late afternoon. ~5 PM: bath to 135°F; seal the thawed shrimp flat with the canola and a pinch of salt, drop for 30 min (they hold fine up to an hour).",
           "Soak the stemmed chiles in just-boiled water 10 min (a mug works).",
           "NutriBullet: soaked chiles, tomatoes, onion, garlic, ½ tsp salt, splash of soak water. Blend smooth — this is the whole sauce.",
           "Skillet, olive oil, medium-high: pour in the sauce — it should sizzle. Simmer 5 min until it darkens a shade. Salt to taste.",
           "Open the shrimp bag. KID CHECKPOINT: their shrimp go straight from bag to plate — perfectly cooked, sauce-free, with rice and cheese if wanted. Or they self-serve; either way no second dish.",
           "Fold the rest of the shrimp (and bag juices) into the sauce — 60 seconds to coat and warm, no more. They're already cooked; the sauce is just dressing them.",
           "Over rice, lime squeeze, cilantro. Cleanup: skillet, NutriBullet cup, rice pot, trash the bag.",
-          "TONIGHT ~9 PM (2 min): bath to 135°F stays — salt + pepper the chuck, 2 slabs, seal, drop."
+          "TONIGHT ~9 PM (30 seconds): bath to 135°F — drop the chuck bag that's been sealed and waiting since Sunday."
         ]
       }
     },
@@ -138,14 +141,14 @@ const WEEK = {
           "3 lb baby gold potatoes, halved",
           "CHIMICHURRI: 1 bunch parsley (finely chopped), 3 garlic cloves (minced), 3 tbsp red wine vinegar, ½ cup olive oil, ½ tsp crushed red pepper, ½ tsp kosher salt, ½ tsp Mexican oregano",
           "1½ tbsp canola oil, kosher salt, black pepper",
-          "FOR TOMORROW: the pork belly + 2 tbsp soy + 1 tbsp brown sugar (its bag seasoning)"
+          "FOR TOMORROW: the pork belly bag (sealed with its soy–brown sugar rub since Sunday)"
         ],
         steps: [
           "Chimichurri first (10 min, one bowl): chop, mince, stir. It blooms while everything else cooks.",
           "Potatoes: halved golds, canola, salt; air fryer 400°F ~20 min, shake at 10.",
           "Pull the chuck, pat VERY dry, light salt. Blackstone on maximum: 90 sec per side + fat edges.",
           "Rest 5 min under foil; slice against the grain, ½-inch planks. Kids' portions before saucing; chimichurri over the rest.",
-          "AFTER DINNER (3 min): reset the bath to 165°F. Season the pork belly with soy + brown sugar rubbed on, seal, drop — it rides ~24 hr to Thursday.",
+          "AFTER DINNER (30 seconds): reset the bath to 165°F and drop the pork belly bag (sealed since Sunday) — it rides ~24 hr to Thursday.",
           "Cleanup: griddle scrape, air fryer basket, two bowls, trash the bag."
         ]
       }
@@ -232,7 +235,7 @@ const WEEK = {
     {
       section: "H-E-B — Meat & Seafood",
       items: [
-        { name: "H-E-B Fish Market PEELED & DEVEINED Raw Jumbo Shrimp (~$8/lb — the $5.97 ad price is shell-on; P&D per house shrimp rule)", qty: "1.5 lb — diabla", est: 12.0 },
+        { name: "H-E-B FROZEN Peeled & Deveined Raw Jumbo Shrimp, bag (~$8/lb — frozen on purpose: bought Sunday, cooked Tuesday; counter shrimp is previously-frozen anyway)", qty: "1.5 lb — diabla; thaws Tuesday", est: 12.0 },
         { name: "H-E-B Prime 1 Beef Chuck Roast (ad item @ $5.99/lb, 33% off)", qty: "~2.75 lb — the 24-hr steak play", est: 16.5 },
         { name: "FRESH! H-E-B Natural Pork Belly (ad item @ $4.99/lb)", qty: "~2 lb — Thursday's flagship", est: 10.0 },
         { name: "H-E-B Boneless Skinless Chicken Breasts", qty: "~1.5 lb — the 2 freezer drop-in bags", est: 5.0 }
