@@ -37,6 +37,10 @@
   .chip.cost { color: var(--good); font-weight: 600; cursor: help; }
   .cost-input { width: 90px; border: 1px solid var(--line); border-radius: 8px; padding: 5px 8px; font: inherit; font-size: .88rem; background: var(--bg); color: var(--ink); }
   .summary { font-size: .95rem; margin-bottom: 10px; }
+  .daytime { background: #e67e2218; border-left: 4px solid #e67e22; border-radius: 6px; padding: 8px 12px; margin-bottom: 10px; font-size: .88rem; }
+  .daytime .dt-title { font-weight: 700; color: #b9640f; font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 3px; }
+  .daytime ul { margin: 0 0 0 18px; padding: 0; }
+  .daytime li { margin: 2px 0; }
   .swap { font-size: .85rem; color: var(--muted); font-style: italic; margin-bottom: 10px; }
   .links a { display: inline-block; margin: 2px 8px 2px 0; font-size: .88rem; color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
   .links a:hover { border-bottom-style: solid; }
@@ -180,6 +184,7 @@
         ${m.nutrition ? `<span class="chip" title="${m.nutrition.serving}">🍽 serves ${m.cost?.servings ?? 4} · ~${m.nutrition.calories} cal</span>` : ""}
         ${m.equipment.map(e => `<span class="chip">${e}</span>`).join("")}
       </div>
+      ${m.daytime?.length ? `<div class="daytime"><div class="dt-title">⏰ Earlier that day</div><ul>${m.daytime.map(t => `<li>${t}</li>`).join("")}</ul></div>` : ""}
       <div class="summary">${m.summary}</div>
       ${m.swapNote ? `<div class="swap">↔ ${m.swapNote}</div>` : ""}
       <div class="links">${m.links.map(l =>
