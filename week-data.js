@@ -1,12 +1,13 @@
 // Week data — regenerated each week by Claude. Loaded by index.html.
-// LIVE WEEK v3 — from-scratch rerun, all rules current. Kids' self-serve escape hatch means
-// the menu no longer softens for anyone: proper diabla, pork belly, chimichurri. One
-// circulator runs a relay: carnitas (Sun→Mon), chuck (Tue→Wed), pork belly (Wed→Thu).
+// THE REAL WEEK — dinners Mon Jul 27 – Thu Jul 30, shopped Sunday Jul 26. Built 7/22 on the
+// live ad + clean coupon read. One circulator relay: carnitas (Sun→Mon), chuck (Tue→Wed,
+// shares the shrimp's 135°F bath), pork belly (Wed→Thu). Mi Tienda Meal Deal approved by
+// Jason: free sides feed Monday, entrees bank as the zero-effort backup dinner.
 const WEEK = {
   id: "2026-07-22",
-  label: "Week of July 22–28, 2026 · LIVE v3 (full-bold rerun)",
+  label: "Dinners Mon Jul 27 – Thu Jul 30 · shopped Sun Jul 26 (ad cycle 7/22–28) · REAL",
   store: "H-E-B Irving #817 + optional Joe V's Smart Shop (2407 W Airport Fwy)",
-  adNote: "Prices from the actual 7/22–7/28 flyers (fetch-ad.js) + the digital-coupon page. ⚠ Pizza→free ice cream Combo Loco expired 7/21 — check Wednesday whether it renewed; buy only if so. Fresh Hatch assumed unavailable. Joe V's items carry HEB subs. ⚠ No bagged salads — Taylor Farms Cyclospora recall active (rechecked 7/21).",
+  adNote: "Live 7/22–7/28 flyer + coupon data (pulled 7/22, clean Wednesday read). Meal Deal INCLUDED per Jason: 2 Mi Tienda entrees → free chips + charro beans + corn (CLIP ALL 3 COUPONS). No fitting Combo Locos this cycle (pizza→ice cream is gone). ⚠ No bagged salads — Taylor Farms Cyclospora recall still active (rechecked 7/22).",
   meals: [
     {
       id: "prep",
@@ -44,15 +45,15 @@ const WEEK = {
     },
     {
       id: "carnitas",
-      cost: { est: 10.8, servings: 4, note: "half the boneless carnitas, crisped + La Ranchera tortillas, salsa verde, toppings" },
+      cost: { est: 10.8, servings: 4, note: "half the boneless carnitas + tortillas, salsa verde, toppings; charro beans + corn sides are FREE (Meal Deal)" },
       nutrition: { serving: "3 tacos: ~5 oz crispy pork, salsa verde, onion-cilantro", calories: 650, protein: 35, carbs: 45, fat: 35 },
       daytime: ["MON morning (1 min): top up the bath water — 21-hr cooks evaporate"],
-      title: "Crispy Carnitas Tacos with Salsa Verde",
-      slot: "Dinner 1 · Mon",
+      title: "Crispy Carnitas Tacos with Charro Beans & Sweet Corn",
+      slot: "Dinner 1 · Mon Jul 27",
       time: "~20 min at dinner",
       equipment: ["Sous vide", "Blackstone"],
       summary:
-        "The 21-hour pork hits a ripping Blackstone in its own fat until the edges shatter. La Ranchera tortillas, jarred salsa verde, onion-cilantro, lime. Half the pork gets sealed with juices for Friday's nachos. Kids: crispy pork + cheese tacos, salsa stays on the side — same dish.",
+        "The 21-hour pork hits a ripping Blackstone in its own fat until the edges shatter. La Ranchera tortillas, jarred salsa verde, onion-cilantro, lime — and the Meal Deal's FREE sides make it a full spread: charro beans warmed in a small pot, the sweet-corn tray charred on the open griddle space. Half the pork gets sealed with juices → freezer bank. Kids: crispy pork + cheese tacos, salsa on the side — same dish.",
       links: [
         { label: "Anova — Food Lab carnitas guide (the crisping method)", url: "https://anovaculinary.com/blogs/blog/sous-vide-carnitas-guide", tag: "primary" },
         { label: "Serious Eats — Sous Vide Carnitas (Kenji; SE blocks fetch — search if 404)", url: "https://www.seriouseats.com/sous-vide-carnitas-for-tacos-recipe", tag: "alt" }
@@ -65,13 +66,15 @@ const WEEK = {
           "the sous vide pork (in since Sunday) — HALF tonight, with bag juices",
           "12 La Ranchera white corn tortillas",
           "1 jar H-E-B salsa verde",
+          "1 can H-E-B charro beans + the 4-ct sweet corn tray (both FREE via the Meal Deal)",
           "½ yellow onion (fine dice) + cilantro, mixed",
           "2 limes, quartered; shredded cheese for kid tacos",
           "1 tbsp canola oil (if the pork runs lean)"
         ],
         steps: [
           "Pull the bag; pour juices into a cup, skim — 2 tbsp of the fat goes straight onto the Blackstone.",
-          "SEAL THE OTHER HALF of the pork with a splash of juices → fridge (Friday nachos + bank).",
+          "SEAL THE OTHER HALF of the pork with a splash of juices → FREEZER bank (a future taco/burrito night for ~$5).",
+          "Charro beans into a small pot on low (or microwave). Corn tray onto the griddle's open space to char while the pork crisps.",
           "Griddle on high. Pork on, pressed flat-ish; leave it 3 min for crust, then break apart, toss, crisp 3 more. Splash of juices at the end.",
           "Warm tortillas on the open griddle space; stack under a towel.",
           "Kid tacos first (pork + cheese), then adult build: pork, salsa verde, onion-cilantro, lime.",
@@ -89,7 +92,7 @@ const WEEK = {
         "TUE 5 PM (2 min): bath to 135°F, drop BOTH bags — shrimp (out in 30 min) AND the chuck (same temp; it rides ~24 hr to Wednesday dinner)"
       ],
       title: "Camarones a la Diabla with Jasmine Rice",
-      slot: "Dinner 2 · Tue",
+      slot: "Dinner 2 · Tue Jul 28",
       time: "~25 min at dinner (shrimp sous vide beforehand)",
       equipment: ["Sous vide", "Stove", "NutriBullet", "Rice cooker"],
       summary:
@@ -130,7 +133,7 @@ const WEEK = {
       nutrition: { serving: "~8 oz sliced chuck 'steak' + chimichurri + crispy potatoes", calories: 950, protein: 55, carbs: 60, fat: 55 },
       daytime: ["WED daytime: nothing — the chuck's been riding since Tuesday 5 PM (~24 hr at dinner)", "WED right after dinner (30 sec): bath to 165°F, drop the pork belly bag for Thursday"],
       title: "24-Hour Chuck 'Steak' with Chimichurri & Crispy Potatoes",
-      slot: "Dinner 3 · Wed",
+      slot: "Dinner 3 · Wed Jul 29",
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Air fryer"],
       summary:
@@ -166,7 +169,7 @@ const WEEK = {
       nutrition: { serving: "1 bowl: ~5 oz glazed crispy belly over 1½ cups rice + cucumber salad", calories: 850, protein: 25, carbs: 70, fat: 50 },
       daytime: ["THU ~12:30 PM (5 min): rice cooker on + mix the cucumber salad — it improves all afternoon"],
       title: "Crispy Glazed Pork Belly Bowls with Cucumber Salad",
-      slot: "Dinner 4 · Thu",
+      slot: "Dinner 4 · Thu Jul 30",
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Rice cooker"],
       summary:
@@ -197,39 +200,17 @@ const WEEK = {
         ]
       }
     },
-    {
-      id: "flex",
-      cost: { est: 4.5, servings: 4, note: "kids self-serve ($1 mac in their stash); adults: carnitas nachos from Monday's reserved half + $2.50 chips" },
-      nutrition: { serving: "adults: carnitas nachos share (~600 cal); kids: whatever they pick", calories: 600, protein: 22, carbs: 55, fat: 30 },
-      title: "Flex Night — Carnitas Nachos (Kids Self-Serve)",
-      slot: "Flex · Fri",
-      time: "~10 min",
-      equipment: ["Oven"],
-      summary:
-        "Adults: foil-lined sheet-pan nachos — Monday's reserved carnitas, cheese, salsa verde, broiler, 4 minutes, eat off the foil. Kids: self-serve night from their own stash (the $1 mac boxes restocked this week are in the pantry; what they make is their call). If the pizza Combo Loco renewed, the pizza banks as the bad-day dinner.",
-      links: [
-        { label: "HEB coupon page — recheck the Combo Loco Wednesday", url: "https://www.heb.com/digital-coupon/coupon-selection", tag: "alt" }
-      ],
-      swapNote: "Leftover diabla sauce drizzled on the nachos: correct.",
-      recipe: {
-        activeTime: "~10 min (adults only — kids run their own night)",
-        cookTime: "nachos 3–4 min broil",
-        ingredients: [
-          "H-E-B tortilla chips (~half bag)",
-          "Monday's reserved carnitas, rewarmed 2 min in the microwave",
-          "remaining shredded cheese, salsa verde, sour cream, cilantro, lime",
-          "kids: their pantry/freezer stash, their choice, their cleanup"
-        ],
-        steps: [
-          "Broiler high, rack 6 inches down. Foil-lined sheet: chips, carnitas, cheese, two thin layers.",
-          "Broil 3–4 min — do not walk away.",
-          "Off-heat: salsa verde, sour cream, cilantro, lime. Serve on the foil.",
-          "Cleanup: balled-up foil. The kids wash whatever they used."
-        ]
-      }
-    }
   ],
   grocery: [
+    {
+      section: "Meal Deal (approved — CLIP ALL 3 COUPONS in the app before checkout)",
+      items: [
+        { name: "H-E-B Mi Tienda Fully Cooked Mexican Entrees, 12–16 oz", qty: "2 (any varieties) — the anchor purchase; both bank as the zero-effort backup dinner", est: 14.0 },
+        { name: "H-E-B Tortilla Chips, 14 oz", qty: "FREE with the entrees (coupon 1)", est: 0 },
+        { name: "H-E-B Charro or Spicy Charro Beans, 15 oz", qty: "FREE (coupon 2) — Monday taco-night side", est: 0 },
+        { name: "H-E-B Sweet or Texas Roots Corn, 4-ct tray", qty: "FREE (coupon 3) — chars on the griddle Monday", est: 0 }
+      ]
+    },
     {
       section: "Joe V's Smart Shop (optional trip, ~$17 — HEB subs noted on every line)",
       items: [
@@ -271,10 +252,7 @@ const WEEK = {
       section: "H-E-B — Pantry & Frozen",
       items: [
         { name: "H-E-B Salsa Verde", qty: "1 jar — carnitas tacos + nachos", est: 2.5 },
-        { name: "Kraft Mac & Cheese (ad item @ $1)", qty: "3 boxes — straight into the kids' self-serve stash", est: 3.0 },
-        { name: "H-E-B Restaurant Style Tortilla Chips", qty: "1 bag — Friday nachos", est: 2.5 },
-        { name: "H-E-B frozen pizza — CONDITIONAL: buy if the Combo Loco renewed for 7/22–7/28 (check Wednesday)", qty: "Combo Locos auto-apply when they fit; banks as the bad-day dinner", est: 6.0 },
-        { name: "H-E-B Creamy Creations — FREE only via that Combo Loco", qty: "rides along if the deal renewed (deals-only dessert rule)", est: 0 }
+        { name: "Kraft Mac & Cheese (ad item @ $1)", qty: "3 boxes — straight into the kids' self-serve stash", est: 3.0 }
       ]
     },
     {
