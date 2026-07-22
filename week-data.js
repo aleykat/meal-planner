@@ -153,15 +153,16 @@ const WEEK = {
           "~2.75 lb H-E-B Prime 1 beef chuck roast, 2 slabs (in the bath since Tuesday 5 PM)",
           "3 lb baby gold potatoes, halved",
           "Monday's reserved chimichurri (the jar in the fridge)",
-          "1 H-E-B bakery baguette, sliced thick",
+          "1 H-E-B Take & Bake French bread (par-baked — it waited sealed since Sunday on purpose)",
           "1½ tbsp canola oil, kosher salt, black pepper"
         ],
         steps: [
+          "Oven to 400°F; the take & bake loaf goes in for 10–12 min (per its package) while everything else runs — fresh-baked bread, zero staleness, and the air fryer has the potatoes so the oven was free anyway.",
           "Potatoes: toss halved golds with oil and salt; air fryer 400°F ~20 min, shake at 10.",
           "Pull the chuck slabs, pat VERY dry (wet meat won't crust). Light salt.",
           "Blackstone on maximum: 90 sec per side plus the fat edges — dark crust fast; the inside is already perfect.",
           "Rest 5 min under foil. Slice against the grain, ½-inch planks.",
-          "Kids' portions plain; chimichurri spooned generously over the rest. Baguette slices go around the board — steak juices + chimichurri puddles are what bread is for.",
+          "Kids' portions plain; chimichurri spooned generously over the rest. Warm bread sliced thick around the board — steak juices + chimichurri puddles are what it's for.",
           "AFTER DINNER (30 sec): bath to 165°F, drop the belly bag (sealed Sunday) — ~23 hr to Thursday dinner.",
           "Cleanup: griddle scrape, air fryer basket, trash the bag."
         ]
@@ -233,7 +234,7 @@ const WEEK = {
     {
       section: "Bakery & Frozen",
       items: [
-        { name: "H-E-B Bakery French Baguette (full-catalog add — not on sale, just correct)", qty: "1 — Wednesday, for mopping chimichurri", est: 2.0 },
+        { name: "H-E-B Bakery Take & Bake French Bread (par-baked — keeps sealed until Wednesday, bakes fresh in 10 min)", qty: "1 — Wednesday's board bread", est: 2.5 },
         { name: "H-E-B Steamable Broccoli Florets, 12 oz", qty: "2 bags — Monday", est: 4.0 }
       ]
     },
