@@ -12,13 +12,13 @@ const WEEK = {
     {
       id: "prep",
       cost: null,
-      daytime: ["SUN afternoon (~25 min): seal session — chicken bags, chops, chuck, belly. No evening drop this week; the first bath run is Monday midday."],
-      title: "Sunday: One Seal Session, Four Bags",
+      daytime: ["SUN afternoon (~20 min): seal session — chicken bags, chuck, belly (the chops are already bagged in your freezer). No evening drop; the first bath run is Monday midday."],
+      title: "Sunday: One Seal Session, Three Bags",
       slot: "Weekend",
       time: "~25 min once",
       equipment: ["Chamber sealer"],
       summary:
-        "Everything gets sealed in one sitting, one wipe-down — then every cook this week is bag-into-water. (1) 2 boneless breasts, fajita rub → FREEZER bank. (2) The pork chops, Bolner's pork rub → fridge (drop Monday midday). (3) Chuck slabs, salt + pepper → fridge (drop Tuesday 5 PM). (4) Pork belly, soy + brown sugar rub → fridge (drop Wednesday after dinner). Shelf-life rule satisfied: everything sealed on shop day.",
+        "Everything gets sealed in one sitting, one wipe-down — then every cook this week is bag-into-water. (1) 2 boneless breasts, fajita rub → FREEZER bank. (2) Chuck slabs, salt + pepper → fridge (drop Tuesday 5 PM). (3) Pork belly, soy + brown sugar rub → fridge (drop Wednesday after dinner). Monday's chops are ALREADY bagged and frozen — nothing to do for them until the Monday drop. Shelf-life rule satisfied.",
       links: [
         { label: "Anova — sous vide time & temp guide", url: "https://anovaculinary.com/pages/sous-vide-time-and-temperature-guide", tag: "primary" },
         { label: "r/sousvide — general technique threads", url: "https://www.reddit.com/r/sousvide/", tag: "reddit" }
@@ -29,34 +29,33 @@ const WEEK = {
         cookTime: "none — sealing only",
         ingredients: [
           "~1.5 lb boneless skinless chicken breasts + 2 tbsp Bolner's Fiesta fajita seasoning",
-          "~2.5 lb bone-in assorted pork chops + 2 tbsp Bolner's Fiesta pork rub",
           "~2.75 lb Prime 1 chuck roast (cut into 2 slabs) + kosher salt + pepper",
           "~2 lb pork belly + 2 tbsp soy sauce + 1 tbsp brown sugar",
           "chamber vacuum bags + painter's tape for labels"
         ],
         steps: [
           "Chicken: fajita rub, 1 breast per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr).",
-          "Chops: pork rub both sides, seal flat in one bag, label, FRIDGE.",
           "Chuck: cut into 2 thick slabs (simple knife work — no bones involved), salt + pepper, seal, label, FRIDGE.",
           "Belly: rub with the soy + brown sugar, seal, label, FRIDGE.",
+          "Monday's chops: already bagged in your freezer — leave them there until the 12:30 Monday drop.",
           "Cleanup: sealer wipe. Done — the week is now four bag-drops and four dinners."
         ]
       }
     },
     {
       id: "chops",
-      cost: { est: 11.5, servings: 4, note: "2.5 lb of the $1.77/lb chop feature ($4.43 of protein!) + broccoli, cantaloupe; chimichurri double-batch splits with Wednesday" },
+      cost: { est: 7.0, servings: 4, note: "protein is FREE — Jason's already-bagged frozen chops; broccoli + cantaloupe + chimichurri share only" },
       nutrition: { serving: "1 large chop with chimichurri + broccoli + cantaloupe", calories: 630, protein: 45, carbs: 20, fat: 42 },
       daytime: [
-        "MON ~1:30 PM (2 min): bath to 140°F, drop the chops bag — 3–4 hr to dinner is the sweet spot, holds fine past that",
+        "MON ~12:30 PM (2 min): bath to 140°F, drop your frozen chops bag straight from the freezer — from-frozen adds ~1 hr, so ~5 hr to dinner is right in the zone",
         "MON ~5 PM (10 min): make the DOUBLE batch of chimichurri — half for tonight, half jarred for Wednesday's steak"
       ],
-      title: "Sous Vide Pork Chops with Chimichurri, Broccoli & Cantaloupe",
+      title: "Cowboy Butter Pork Chops with Broccoli & Cantaloupe",
       slot: "Dinner 1 · Mon Jul 27",
       time: "~20 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Microwave"],
       summary:
-        "The ad's quiet star: assorted bone-in chops at $1.77/lb — four people's protein for under $5. Sealed since Sunday, dropped at 140°F while you work, hard-seared at dinner, and dressed with chimichurri (made tonight as a double batch — Wednesday's chuck uses the other half, and it only gets better sitting). Steam-bag broccoli, cold cantaloupe wedges from the $1.97 feature. Kids: chop + sides, sauce on the side — it's a pork chop.",
+        "Cheapest dinner of the week — the protein is already in your freezer, bagged and seasoned (Kinder's Cowboy Butter): drop it at 140°F straight from frozen around 12:30 (sous vide doesn't care), hard-sear at dinner — no extra seasoning needed. Make the chimichurri tonight anyway (double batch): it's Wednesday's steak sauce, and a spoonful on a cowboy-butter chop is optional but not wrong. Steam-bag broccoli, cold cantaloupe wedges from the $1.97 feature. Kids: chop + sides — it's a pork chop.",
       links: [
         { label: "Serious Eats — sous vide pork chop guide (Kenji; SE blocks fetch — search if 404)", url: "https://www.seriouseats.com/sous-vide-pork-chops-recipe", tag: "primary" },
         { label: "Love and Lemons — chimichurri sauce", url: "https://www.loveandlemons.com/chimichurri-sauce/", tag: "alt" },
@@ -67,7 +66,7 @@ const WEEK = {
         activeTime: "~20 min at dinner (+2 min midday drop, +10 min chimichurri)",
         cookTime: "chops 3–4 hr at 140°F (unattended)",
         ingredients: [
-          "2.5 lb bone-in assorted pork chops (in the bath since ~1:30, rubbed + sealed Sunday)",
+          "your already-bagged frozen pork chops, pre-seasoned with Kinder's Cowboy Butter (in the bath since ~12:30, straight from the freezer)",
           "DOUBLE CHIMICHURRI: 2 bunches parsley (finely chopped), 6 garlic cloves (minced), 6 tbsp red wine vinegar, 1 cup olive oil, 1 tsp crushed red pepper, 1 tsp kosher salt, 1 tsp Mexican oregano",
           "2 bags H-E-B steamable broccoli florets",
           "½ cantaloupe ($1.97 feature), cut into wedges",
@@ -77,8 +76,8 @@ const WEEK = {
           "~5 PM: chimichurri — chop, mince, stir, done in 10. Pour HALF into a jar → fridge (Wednesday's steak sauce; it improves for days).",
           "Cut the cantaloupe into wedges; fridge until plating.",
           "DINNER: pull the chops, pat VERY dry. Microwave broccoli bag 1 per package directions; bag 2 right after.",
-          "Blackstone on maximum, film of canola: sear chops 60–90 sec per side — crust only, they're already perfectly cooked inside.",
-          "Rest 3 min. Kids' chops plated plain; chimichurri spooned over the rest.",
+          "Blackstone on maximum, film of canola: pat the chops VERY dry (the seasoning stays put), sear 60–90 sec per side — crust only, they're already perfectly cooked and fully seasoned inside.",
+          "Rest 3 min. The cowboy butter carries the chop — chimichurri on the side for whoever wants both.",
           "Cleanup: griddle scrape, one bowl, one jar, trash the bag."
         ]
       }
@@ -209,7 +208,6 @@ const WEEK = {
     {
       section: "Meat & Seafood",
       items: [
-        { name: "H-E-B Assorted Bone-In Pork Chops (ad item @ $1.77/lb)", qty: "~2.5 lb — Monday (cooked bone-in, no deboning)", est: 4.4 },
         { name: "H-E-B Frozen Peeled & Deveined Raw Jumbo Shrimp, 2 lb IQF bag (~$7.50/lb)", qty: "use ~1.5 lb Tuesday; ~0.5 lb chamber-reseals into the freezer bank", est: 15.0 },
         { name: "H-E-B Prime 1 Beef Chuck Roast (ad item @ $5.99/lb, 33% off)", qty: "~2.75 lb — the 24-hr steak play", est: 16.5 },
         { name: "FRESH! H-E-B Natural Pork Belly (ad item @ $4.99/lb)", qty: "~2 lb — Thursday's flagship", est: 10.0 },
@@ -248,7 +246,6 @@ const WEEK = {
       section: "Staples Stock-Up (first real purchase — everything this menu needs, owned afterward)",
       items: [
         { name: "Mahatma Jasmine Rice", qty: "2 lb bag — Tue + Thu", est: 2.8 },
-        { name: "Bolner's Fiesta Brand Pork Rub", qty: "1 shaker — chops", est: 3.0 },
         { name: "Bolner's Fiesta Brand Fajita Seasoning", qty: "1 shaker — the chicken bags", est: 2.0 },
         { name: "Fiesta Mexican Oregano", qty: "1 — chimichurri", est: 1.5 },
         { name: "Fiesta Crushed Red Pepper", qty: "1 shaker — chimichurri + cucumber salad", est: 1.5 },
