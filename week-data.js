@@ -243,7 +243,7 @@ const WEEK = {
       ]
     },
     {
-      section: "Staples Stock-Up (first real purchase — everything this menu needs, owned afterward)",
+      section: "Staples Stock-Up (already owned, NOT on the list: brown sugar, kosher salt, canola oil, olive oil, Kerrygold butter, Kinder's Cowboy Butter seasoning)",
       items: [
         { name: "Mahatma Jasmine Rice", qty: "2 lb bag — Tue + Thu", est: 2.8 },
         { name: "Bolner's Fiesta Brand Fajita Seasoning", qty: "1 shaker — the chicken bags", est: 2.0 },
@@ -251,12 +251,8 @@ const WEEK = {
         { name: "Fiesta Crushed Red Pepper", qty: "1 shaker — chimichurri + cucumber salad", est: 1.5 },
         { name: "Fiesta Dried Guajillo Chiles + Chile de Árbol", qty: "1 bag each — diabla now, pantry heat for a year", est: 4.0 },
         { name: "Kikkoman Soy Sauce", qty: "10 oz — belly", est: 2.5 },
-        { name: "Imperial Light Brown Sugar (Texas brand)", qty: "1 lb — glaze + cucumber salad", est: 2.5 },
-        { name: "Morton Coarse Kosher Salt (3 lb) + McCormick Black Pepper Grinder", qty: "1 each", est: 6.0 },
-        { name: "H-E-B Canola Oil", qty: "48 oz — griddle work", est: 4.0 },
-        { name: "H-E-B Olive Oil", qty: "500 ml — chimichurri ×2 + diabla", est: 6.0 },
-        { name: "Red wine vinegar", qty: "1 bottle — chimichurri + cucumber salad", est: 2.5 },
-        { name: "Falfurrias Salted Butter (Texas brand)", qty: "1 lb — kids' mac + general", est: 4.5 }
+        { name: "McCormick Black Pepper Grinder", qty: "1 (kosher salt already owned)", est: 3.0 },
+        { name: "Red wine vinegar", qty: "1 bottle — chimichurri + cucumber salad", est: 2.5 }
       ]
     }
   ]
