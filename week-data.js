@@ -129,13 +129,13 @@ const WEEK = {
     },
     {
       id: "chucksteak",
-      cost: { est: 21.5, servings: 4, note: "~2.75 lb Prime 1 chuck @ $5.99/lb (33% off) + potatoes; chimichurri already made Monday — splurge night, ~$5.40/serving" },
-      nutrition: { serving: "~8 oz sliced chuck 'steak' + chimichurri + crispy potatoes", calories: 950, protein: 55, carbs: 60, fat: 55 },
+      cost: { est: 23.5, servings: 4, note: "~2.75 lb Prime 1 chuck @ $5.99/lb (33% off) + potatoes + baguette; chimichurri already made Monday — splurge night, ~$5.90/serving" },
+      nutrition: { serving: "~8 oz sliced chuck 'steak' + chimichurri + crispy potatoes + baguette", calories: 1070, protein: 58, carbs: 82, fat: 56 },
       daytime: [
         "WED daytime: nothing — the chuck's been riding since Tuesday 5 PM (~24 hr at dinner)",
         "WED right after dinner (30 sec): bath to 165°F, drop the pork belly bag for Thursday"
       ],
-      title: "24-Hour Chuck 'Steak' with Chimichurri & Crispy Potatoes",
+      title: "24-Hour Chuck 'Steak' with Chimichurri, Crispy Potatoes & Baguette",
       slot: "Dinner 3 · Wed Jul 29",
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Air fryer"],
@@ -153,6 +153,7 @@ const WEEK = {
           "~2.75 lb H-E-B Prime 1 beef chuck roast, 2 slabs (in the bath since Tuesday 5 PM)",
           "3 lb baby gold potatoes, halved",
           "Monday's reserved chimichurri (the jar in the fridge)",
+          "1 H-E-B bakery baguette, sliced thick",
           "1½ tbsp canola oil, kosher salt, black pepper"
         ],
         steps: [
@@ -160,7 +161,7 @@ const WEEK = {
           "Pull the chuck slabs, pat VERY dry (wet meat won't crust). Light salt.",
           "Blackstone on maximum: 90 sec per side plus the fat edges — dark crust fast; the inside is already perfect.",
           "Rest 5 min under foil. Slice against the grain, ½-inch planks.",
-          "Kids' portions plain; chimichurri spooned generously over the rest.",
+          "Kids' portions plain; chimichurri spooned generously over the rest. Baguette slices go around the board — steak juices + chimichurri puddles are what bread is for.",
           "AFTER DINNER (30 sec): bath to 165°F, drop the belly bag (sealed Sunday) — ~23 hr to Thursday dinner.",
           "Cleanup: griddle scrape, air fryer basket, trash the bag."
         ]
@@ -230,22 +231,23 @@ const WEEK = {
       ]
     },
     {
-      section: "Frozen",
+      section: "Bakery & Frozen",
       items: [
+        { name: "H-E-B Bakery French Baguette (full-catalog add — not on sale, just correct)", qty: "1 — Wednesday, for mopping chimichurri", est: 2.0 },
         { name: "H-E-B Steamable Broccoli Florets, 12 oz", qty: "2 bags — Monday", est: 4.0 }
       ]
     },
     {
       section: "Staples Stock-Up (already owned, NOT on the list: brown sugar, kosher salt, canola oil, olive oil, Kerrygold butter, Kinder's Cowboy Butter seasoning)",
       items: [
-        { name: "Mahatma Jasmine Rice", qty: "2 lb bag — Tue + Thu", est: 2.8 },
+        { name: "H-E-B Thai Hom Mali Jasmine Rice, 5 lb — $7.88 VERIFIED (premium-staples rule: real Thai fragrant rice; 2 nights this week + months ahead)", qty: "1 bag", est: 7.9 },
         { name: "Bolner's Fiesta Brand Fajita Seasoning", qty: "1 shaker — the chicken bags", est: 2.0 },
         { name: "Fiesta Mexican Oregano", qty: "1 — chimichurri", est: 1.5 },
         { name: "Fiesta Crushed Red Pepper", qty: "1 shaker — chimichurri + cucumber salad", est: 1.5 },
         { name: "Fiesta Dried Guajillo Chiles + Chile de Árbol", qty: "1 bag each — diabla now, pantry heat for a year", est: 4.0 },
         { name: "Kikkoman Soy Sauce", qty: "10 oz — belly", est: 2.5 },
         { name: "McCormick Black Pepper Grinder", qty: "1 (kosher salt already owned)", est: 3.0 },
-        { name: "Red wine vinegar", qty: "1 bottle — chimichurri + cucumber salad", est: 2.5 }
+        { name: "Colavita Aged Red Wine Vinegar (premium-staples rule — chimichurri drinks 6 tbsp of it; Pompeian Gourmet if unstocked)", qty: "1 bottle (est. price)", est: 4.0 }
       ]
     }
   ]
