@@ -230,16 +230,9 @@ const WEEK = {
       ]
     },
     {
-      section: "Dairy & Frozen",
+      section: "Frozen",
       items: [
-        { name: "H-E-B Steamable Broccoli Florets, 12 oz", qty: "2 bags — Monday", est: 4.0 },
-        { name: "Hill Country Fare Milk, ½ gal", qty: "kids' mac prep (their stash needs it)", est: 2.0 }
-      ]
-    },
-    {
-      section: "Pantry",
-      items: [
-        { name: "Kraft Mac & Cheese (ad item @ $1)", qty: "3 boxes — straight into the kids' self-serve stash", est: 3.0 }
+        { name: "H-E-B Steamable Broccoli Florets, 12 oz", qty: "2 bags — Monday", est: 4.0 }
       ]
     },
     {
