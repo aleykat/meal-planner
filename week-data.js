@@ -12,13 +12,13 @@ const WEEK = {
     {
       id: "prep",
       cost: null,
-      daytime: ["SUN afternoon (~20 min): seal session — chicken bags, chuck, belly (the chops are already bagged in your freezer). No evening drop; the first bath run is Monday midday."],
-      title: "Sunday: One Seal Session, Three Bags",
+      daytime: ["SUN afternoon (~25 min): put-away with storage rules (below) + seal session — chicken bags, chuck, belly (the chops are already bagged in your freezer). No evening drop; the first bath run is Monday midday."],
+      title: "Sunday: Put-Away, Storage & One Seal Session",
       slot: "Weekend",
       time: "~25 min once",
       equipment: ["Chamber sealer"],
       summary:
-        "Everything gets sealed in one sitting, one wipe-down — then every cook this week is bag-into-water. (1) 2 boneless breasts, fajita rub → FREEZER bank. (2) Chuck slabs, salt + pepper → fridge (drop Tuesday 5 PM). (3) Pork belly, soy + brown sugar rub → fridge (drop Wednesday after dinner). Monday's chops are ALREADY bagged and frozen — nothing to do for them until the Monday drop. Shelf-life rule satisfied.",
+        "Put-away first — the handful of storage moves that actually matter (shrimp straight to the freezer, ginger frozen whole, herbs in water jars, tomatoes and cantaloupe on the counter, onions away from potatoes) — then the seal session: (1) 2 boneless breasts, fajita rub → FREEZER bank. (2) Chuck slabs, salt + pepper → fridge (drop Tuesday 5 PM). (3) Pork belly, soy + brown sugar rub → fridge (drop Wednesday after dinner). Monday's chops are ALREADY bagged and frozen. Shelf-life rule satisfied.",
       links: [
         { label: "Anova — sous vide time & temp guide", url: "https://anovaculinary.com/pages/sous-vide-time-and-temperature-guide", tag: "primary" },
         { label: "r/sousvide — general technique threads", url: "https://www.reddit.com/r/sousvide/", tag: "reddit" }
@@ -34,7 +34,9 @@ const WEEK = {
           "chamber vacuum bags + painter's tape for labels"
         ],
         steps: [
-          "Chicken: fajita rub, 1 breast per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr).",
+          "IN THE CAR (it's July in Texas): the IQF shrimp bag rides home in a cooler bag or wedged against the A/C — it must hit your freezer still fully frozen.",
+          "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Cilantro + parsley → trimmed stems in a jar of water, loose bag over the tops, fridge — turns 3 days of life into 10. Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Take & bake bread → pantry, sealed as-is. Everything else is normal.",
+          "SEAL SESSION — Chicken: fajita rub, 1 breast per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr).",
           "Chuck: cut into 2 thick slabs (simple knife work — no bones involved), salt + pepper, seal, label, FRIDGE.",
           "Belly: rub with the soy + brown sugar, seal, label, FRIDGE.",
           "Monday's chops: already bagged in your freezer — leave them there until the 12:30 Monday drop.",
