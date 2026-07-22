@@ -7,7 +7,7 @@ const WEEK = {
   id: "2026-07-22",
   label: "Dinners Mon Jul 27 – Thu Jul 30 · shopped Sun Jul 26 (ad cycle 7/22–28) · REAL",
   store: "H-E-B Irving #817 + optional Joe V's Smart Shop (2407 W Airport Fwy)",
-  adNote: "Live 7/22–7/28 flyer + coupon data (pulled 7/22, clean Wednesday read). Meal Deal INCLUDED per Jason: 2 Mi Tienda entrees → free chips + charro beans + corn (CLIP ALL 3 COUPONS). No fitting Combo Locos this cycle (pizza→ice cream is gone). ⚠ No bagged salads — Taylor Farms Cyclospora recall still active (rechecked 7/22).",
+  adNote: "Live 7/22–7/28 flyer + coupon data (pulled 7/22, clean Wednesday read). Meal Deal (Mi Tienda entrees) surfaced and DECLINED — the anchor entrees had no real consumption slot. No fitting Combo Locos this cycle. ⚠ No bagged salads — Taylor Farms Cyclospora recall still active (rechecked 7/22).",
   meals: [
     {
       id: "prep",
@@ -45,15 +45,15 @@ const WEEK = {
     },
     {
       id: "carnitas",
-      cost: { est: 10.8, servings: 4, note: "half the boneless carnitas + tortillas, salsa verde, toppings; charro beans + corn sides are FREE (Meal Deal)" },
+      cost: { est: 10.8, servings: 4, note: "half the boneless carnitas + tortillas, salsa verde, toppings" },
       nutrition: { serving: "3 tacos: ~5 oz crispy pork, salsa verde, onion-cilantro", calories: 650, protein: 35, carbs: 45, fat: 35 },
       daytime: ["MON morning (1 min): top up the bath water — 21-hr cooks evaporate"],
-      title: "Crispy Carnitas Tacos with Charro Beans & Sweet Corn",
+      title: "Crispy Carnitas Tacos with Salsa Verde",
       slot: "Dinner 1 · Mon Jul 27",
       time: "~20 min at dinner",
       equipment: ["Sous vide", "Blackstone"],
       summary:
-        "The 21-hour pork hits a ripping Blackstone in its own fat until the edges shatter. La Ranchera tortillas, jarred salsa verde, onion-cilantro, lime — and the Meal Deal's FREE sides make it a full spread: charro beans warmed in a small pot, the sweet-corn tray charred on the open griddle space. Half the pork gets sealed with juices → freezer bank. Kids: crispy pork + cheese tacos, salsa on the side — same dish.",
+        "The 21-hour pork hits a ripping Blackstone in its own fat until the edges shatter. La Ranchera tortillas, jarred salsa verde, onion-cilantro, lime. Half the pork gets sealed with juices → freezer bank. Kids: crispy pork + cheese tacos, salsa on the side — same dish.",
       links: [
         { label: "Anova — Food Lab carnitas guide (the crisping method)", url: "https://anovaculinary.com/blogs/blog/sous-vide-carnitas-guide", tag: "primary" },
         { label: "Serious Eats — Sous Vide Carnitas (Kenji; SE blocks fetch — search if 404)", url: "https://www.seriouseats.com/sous-vide-carnitas-for-tacos-recipe", tag: "alt" }
@@ -66,7 +66,6 @@ const WEEK = {
           "the sous vide pork (in since Sunday) — HALF tonight, with bag juices",
           "12 La Ranchera white corn tortillas",
           "1 jar H-E-B salsa verde",
-          "1 can H-E-B charro beans + the 4-ct sweet corn tray (both FREE via the Meal Deal)",
           "½ yellow onion (fine dice) + cilantro, mixed",
           "2 limes, quartered; shredded cheese for kid tacos",
           "1 tbsp canola oil (if the pork runs lean)"
@@ -74,7 +73,6 @@ const WEEK = {
         steps: [
           "Pull the bag; pour juices into a cup, skim — 2 tbsp of the fat goes straight onto the Blackstone.",
           "SEAL THE OTHER HALF of the pork with a splash of juices → FREEZER bank (a future taco/burrito night for ~$5).",
-          "Charro beans into a small pot on low (or microwave). Corn tray onto the griddle's open space to char while the pork crisps.",
           "Griddle on high. Pork on, pressed flat-ish; leave it 3 min for crust, then break apart, toss, crisp 3 more. Splash of juices at the end.",
           "Warm tortillas on the open griddle space; stack under a towel.",
           "Kid tacos first (pork + cheese), then adult build: pork, salsa verde, onion-cilantro, lime.",
@@ -202,15 +200,6 @@ const WEEK = {
     },
   ],
   grocery: [
-    {
-      section: "Meal Deal (approved — CLIP ALL 3 COUPONS in the app before checkout)",
-      items: [
-        { name: "H-E-B Mi Tienda Fully Cooked Mexican Entrees, 12–16 oz", qty: "2 (any varieties) — the anchor purchase; both bank as the zero-effort backup dinner", est: 14.0 },
-        { name: "H-E-B Tortilla Chips, 14 oz", qty: "FREE with the entrees (coupon 1)", est: 0 },
-        { name: "H-E-B Charro or Spicy Charro Beans, 15 oz", qty: "FREE (coupon 2) — Monday taco-night side", est: 0 },
-        { name: "H-E-B Sweet or Texas Roots Corn, 4-ct tray", qty: "FREE (coupon 3) — chars on the griddle Monday", est: 0 }
-      ]
-    },
     {
       section: "Joe V's Smart Shop (optional trip, ~$17 — HEB subs noted on every line)",
       items: [
