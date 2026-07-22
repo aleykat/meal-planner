@@ -35,7 +35,7 @@ const WEEK = {
         ],
         steps: [
           "IN THE CAR (it's July in Texas): the IQF shrimp bag rides home in a cooler bag or wedged against the A/C — it must hit your freezer still fully frozen.",
-          "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Cilantro + parsley → trimmed stems in a jar of water, loose bag over the tops, fridge — turns 3 days of life into 10. Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Take & bake bread → pantry, sealed as-is. Everything else is normal.",
+          "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Cilantro + parsley → trimmed stems in a jar of water, loose bag over the tops, fridge — turns 3 days of life into 10. Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Take & bake bread (sold frozen) → FREEZER, sealed as-is — it bakes straight from frozen Wednesday. Everything else is normal.",
           "SEAL SESSION — Chicken: fajita rub, 1 breast per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr).",
           "Chuck: cut into 2 thick slabs (simple knife work — no bones involved), salt + pepper, seal, label, FRIDGE.",
           "Belly: rub with the soy + brown sugar, seal, label, FRIDGE.",
@@ -155,11 +155,11 @@ const WEEK = {
           "~2.75 lb H-E-B Prime 1 beef chuck roast, 2 slabs (in the bath since Tuesday 5 PM)",
           "3 lb baby gold potatoes, halved",
           "Monday's reserved chimichurri (the jar in the fridge)",
-          "1 H-E-B Take & Bake French bread (par-baked — it waited sealed since Sunday on purpose)",
+          "1 H-E-B Take & Bake French bread (from the freezer — bakes straight from frozen)",
           "1½ tbsp canola oil, kosher salt, black pepper"
         ],
         steps: [
-          "Oven to 400°F; the take & bake loaf goes in for 10–12 min (per its package) while everything else runs — fresh-baked bread, zero staleness, and the air fryer has the potatoes so the oven was free anyway.",
+          "Oven per the loaf's package (~400°F); the take & bake goes in STRAIGHT FROM THE FROZEN — no thaw, just the package's bake time (frozen usually adds a few minutes). The air fryer has the potatoes, so the oven was free anyway.",
           "Potatoes: toss halved golds with oil and salt; air fryer 400°F ~20 min, shake at 10.",
           "Pull the chuck slabs, pat VERY dry (wet meat won't crust). Light salt.",
           "Blackstone on maximum: 90 sec per side plus the fat edges — dark crust fast; the inside is already perfect.",
@@ -236,7 +236,7 @@ const WEEK = {
     {
       section: "Bakery & Frozen",
       items: [
-        { name: "H-E-B Bakery Take & Bake French Bread (par-baked — keeps sealed until Wednesday, bakes fresh in 10 min)", qty: "1 — Wednesday's board bread", est: 2.5 },
+        { name: "H-E-B Take & Bake French Bread (sold frozen — freezer until Wednesday, bakes fresh from frozen)", qty: "1 — Wednesday's board bread", est: 2.5 },
         { name: "H-E-B Steamable Broccoli Florets, 12 oz", qty: "2 bags — Monday", est: 4.0 }
       ]
     },
