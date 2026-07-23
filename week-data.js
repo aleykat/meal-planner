@@ -29,7 +29,7 @@ const WEEK = {
         cookTime: "none — sealing only",
         ingredients: [
           "~1.5 lb boneless skinless chicken breasts + 2 tbsp Bolner's Fiesta fajita seasoning",
-          "~2.75 lb Prime 1 chuck roast (cut into 2 slabs) + kosher salt + pepper",
+          "~3.5 lb Prime 1 chuck roast (cut into 2–3 slabs) + kosher salt + pepper",
           "~2 lb pork belly + 2 tbsp soy sauce + 1 tbsp brown sugar",
           "chamber vacuum bags + painter's tape for labels"
         ],
@@ -131,7 +131,7 @@ const WEEK = {
     },
     {
       id: "chucksteak",
-      cost: { est: 23.0, servings: 4, note: "~2.75 lb Prime 1 chuck @ $5.99/lb (33% off) + potatoes + baguette ($1.98 verified); chimichurri already made Monday — splurge night, ~$5.75/serving" },
+      cost: { est: 29.8, servings: 5, note: "GUEST NIGHT (5 adults-worth): ~3.5 lb Prime 1 chuck @ $5.99/lb + 3 potato bags + baguette; chimichurri already made Monday — ~$5.95/serving" },
       nutrition: { serving: "~8 oz sliced chuck 'steak' + chimichurri + crispy potatoes + baguette", calories: 1070, protein: 58, carbs: 82, fat: 56 },
       daytime: [
         "WED daytime: nothing — the chuck's been riding since Tuesday 5 PM (~24 hr at dinner)",
@@ -142,7 +142,7 @@ const WEEK = {
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Air fryer"],
       summary:
-        "Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, Monday's chimichurri (better now than the day it was made) over the slices, air-fryer gold potatoes. Kids: sauce on the side — it's steak. After dinner the belly takes the bath.",
+        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: ~3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, Monday's chimichurri (better now than the day it was made) over the slices, three bags of gold potatoes in the air fryer. Kids: sauce on the side — it's steak. After dinner the belly takes the bath.",
       links: [
         { label: "DadCooksDinner — Sous Vide Chuck Steak (24 hours to tenderness)", url: "https://www.dadcooksdinner.com/sous-vide-chuck-steak-recipe/", tag: "primary" },
         { label: "Amazing Food Made Easy — chuck roast times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/chuck-roast", tag: "alt" }
@@ -152,15 +152,15 @@ const WEEK = {
         activeTime: "~25 min at dinner (chuck dropped Tuesday 5 PM — a true 24 hr)",
         cookTime: "chuck ~24 hr at 135°F; potatoes ~20 min air fryer",
         ingredients: [
-          "~2.75 lb H-E-B Prime 1 beef chuck roast, 2 slabs (in the bath since Tuesday 5 PM)",
-          "3 lb baby gold potatoes, halved",
+          "~3.5 lb H-E-B Prime 1 beef chuck roast, 2–3 slabs (in the bath since Tuesday 5 PM)",
+          "4.5 lb baby gold potatoes (3 bags), halved",
           "Monday's reserved chimichurri (the jar in the fridge)",
           "1 pkg H-E-B Bake Shop Ready to Bake French Baguettes (from the pantry, shelf-stable)",
           "1½ tbsp canola oil, kosher salt, black pepper"
         ],
         steps: [
           "Oven per the baguette package (~400°F, ~10 min); it's been waiting shelf-stable since Sunday and bakes to fresh. The air fryer has the potatoes, so the oven was free anyway.",
-          "Potatoes: toss halved golds with oil and salt; air fryer 400°F ~20 min, shake at 10.",
+          "Potatoes: toss halved golds with oil and salt; air fryer 400°F ~20 min, shake at 10 — three bags means TWO batches (first batch holds fine in a low oven with the bread).",
           "Pull the chuck slabs, pat VERY dry (wet meat won't crust). Light salt.",
           "Blackstone on maximum: 90 sec per side plus the fat edges — dark crust fast; the inside is already perfect.",
           "Rest 5 min under foil. Slice against the grain, ½-inch planks.",
@@ -213,7 +213,7 @@ const WEEK = {
       section: "Meat & Seafood",
       items: [
         { name: "H-E-B Frozen Peeled & Deveined Raw Jumbo Shrimp, 2 lb IQF bag (~$7.50/lb)", qty: "use ~1.5 lb Tuesday; ~0.5 lb chamber-reseals into the freezer bank", est: 15.0 },
-        { name: "H-E-B Prime 1 Beef Chuck Roast (ad item @ $5.99/lb, 33% off)", qty: "~2.75 lb — the 24-hr steak play", est: 16.5 },
+        { name: "H-E-B Prime 1 Beef Chuck Roast (ad item @ $5.99/lb, 33% off)", qty: "~3.5 lb — the 24-hr steak play, scaled for Wednesday's guest", est: 21.0 },
         { name: "FRESH! H-E-B Natural Pork Belly (ad item @ $4.99/lb)", qty: "~2 lb — Thursday's flagship", est: 10.0 },
         { name: "H-E-B Boneless Skinless Chicken Breasts", qty: "~1.5 lb — the 2 freezer drop-in bags", est: 5.0 }
       ]
@@ -221,7 +221,7 @@ const WEEK = {
     {
       section: "Produce",
       items: [
-        { name: "H-E-B Baby Gold Potatoes", qty: "2 × 1.5 lb bags — Wednesday", est: 4.5 },
+        { name: "H-E-B Baby Gold Potatoes", qty: "3 × 1.5 lb bags — Wednesday (guest night)", est: 6.8 },
         { name: "Cantaloupe (ad item @ $1.97)", qty: "1 — Monday's fruit side (other half = breakfasts)", est: 2.0 },
         { name: "Flat-leaf parsley", qty: "2 bunches — the double chimichurri", est: 2.0 },
         { name: "Roma tomatoes", qty: "2 — diabla sauce", est: 1.0 },
