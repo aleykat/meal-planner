@@ -7,7 +7,7 @@ const WEEK = {
   id: "2026-07-22",
   label: "Dinners Mon Jul 27 – Thu Jul 30 · HEB Irving only · shopped Sun Jul 26 · REAL",
   store: "H-E-B Irving #817 (single store — Joe V's dropped)",
-  adNote: "Live 7/22–7/28 flyer + coupon data (pulled 7/22). Meal Deal check (new rule): the Mi Tienda bundle doesn't reduce this plan's cost — and Jason already declined it this cycle — skipped. No fitting Combo Locos. ⚠ No bagged salads — Taylor Farms Cyclospora recall still active (rechecked 7/22).",
+  adNote: "Fresh-validated 7/23: flyer unchanged (cycle runs through 7/28 — Sunday's shop is covered). Meal Deal (Mi Tienda) previously declined; today's new Combo Locos (breakfast skillet→cheese, chips→soft drinks, tea BOGO) don't fit the menu. ⚠ Bagged-salad ban CONTINUES — Cyclospora outbreak investigation still open AND Fresh Express just expanded its own salad recall for cyclospora risk.",
   meals: [
     {
       id: "prep",
