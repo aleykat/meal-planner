@@ -2,7 +2,7 @@
 // THE REAL WEEK v2 — HEB-only from-scratch rerun (Joe V's dropped per Jason 7/22).
 // Dinners Mon Jul 27 – Thu Jul 30, shopped Sunday Jul 26, dinner window 5:30–6.
 // Bath relay: chops Mon midday (140°F) → shrimp + chuck Tue 5 PM (135°F) → belly Wed
-// after dinner (165°F). One chimichurri batch Monday feeds Monday AND Wednesday.
+// after dinner (165°F). One salsa macha batch Monday feeds Monday AND Wednesday (raw-herb ban).
 const WEEK = {
   id: "2026-07-22",
   label: "Dinners Mon Jul 27 – Thu Jul 30 · HEB Irving only · shopped Sun Jul 26 · REAL",
@@ -35,7 +35,7 @@ const WEEK = {
         ],
         steps: [
           "IN THE CAR (it's July in Texas): the IQF shrimp bag rides home in a cooler bag or wedged against the A/C — it must hit your freezer still fully frozen.",
-          "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Cilantro + parsley → trimmed stems in a jar of water, loose bag over the tops, fridge — turns 3 days of life into 10. Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Ready-to-bake baguettes (shelf-stable, verified) → PANTRY sealed as-is until Wednesday's bake. Everything else is normal.",
+          "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Ready-to-bake baguettes (shelf-stable, verified) → PANTRY sealed as-is until Wednesday's bake. Everything else is normal.",
           "SEAL SESSION — Chicken: fajita rub, 1 breast per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr).",
           "Chuck: cut into 2 thick slabs (simple knife work — no bones involved), salt + pepper, seal, label, FRIDGE.",
           "Belly: rub with the soy + brown sugar, seal, label, FRIDGE.",
@@ -46,40 +46,40 @@ const WEEK = {
     },
     {
       id: "chops",
-      cost: { est: 7.0, servings: 4, note: "protein is FREE — Jason's already-bagged frozen chops; broccoli + cantaloupe + chimichurri share only" },
-      nutrition: { serving: "1 large chop with chimichurri + broccoli + cantaloupe", calories: 630, protein: 45, carbs: 20, fat: 42 },
+      cost: { est: 6.5, servings: 4, note: "protein is FREE — Jason's already-bagged frozen chops; broccoli + cantaloupe (salsa macha comes from owned staples)" },
+      nutrition: { serving: "1 large chop (+ optional salsa macha) with broccoli + cantaloupe", calories: 630, protein: 45, carbs: 20, fat: 42 },
       daytime: [
         "MON ~12:30 PM (2 min): bath to 140°F, drop your frozen chops bag straight from the freezer — from-frozen adds ~1 hr, so ~5 hr to dinner is right in the zone",
-        "MON ~5 PM (10 min): make the DOUBLE batch of chimichurri — half for tonight, half jarred for Wednesday's steak"
+        "MON ~5 PM (12 min): make the DOUBLE batch of SALSA MACHA (chiles + garlic toasted in oil — fully cooked, herb-free) — some for tonight, the jar for Wednesday's steak"
       ],
       title: "Cowboy Butter Pork Chops with Broccoli & Cantaloupe",
       slot: "Dinner 1 · Mon Jul 27",
       time: "~20 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Microwave"],
       summary:
-        "Cheapest dinner of the week — the protein is already in your freezer, bagged and seasoned (Kinder's Cowboy Butter): drop it at 140°F straight from frozen around 12:30 (sous vide doesn't care), hard-sear at dinner — no extra seasoning needed. Make the chimichurri tonight anyway (double batch): it's Wednesday's steak sauce, and a spoonful on a cowboy-butter chop is optional but not wrong. Steam-bag broccoli, cold cantaloupe wedges from the $1.97 feature. Kids: chop + sides — it's a pork chop.",
+        "Cheapest dinner of the week — the protein is already in your freezer, bagged and seasoned (Kinder's Cowboy Butter): drop it at 140°F straight from frozen around 12:30 (sous vide doesn't care), hard-sear at dinner — no extra seasoning needed. Tonight's sauce project is a double batch of SALSA MACHA (raw-herb ban replaced the chimichurri — this is chiles and garlic toasted in oil, fully cooked, and frankly an upgrade on steak): a drizzle on the chops is optional heat, the jar is Wednesday's. Steam-bag broccoli, cold cantaloupe wedges. Kids: chop + sides — it's a pork chop.",
       links: [
         { label: "Serious Eats — sous vide pork chop guide (Kenji; SE blocks fetch — search if 404)", url: "https://www.seriouseats.com/sous-vide-pork-chops-recipe", tag: "primary" },
-        { label: "Love and Lemons — chimichurri sauce", url: "https://www.loveandlemons.com/chimichurri-sauce/", tag: "alt" },
+        { label: "r/SalsaSnobs — salsa macha technique threads (sanity check)", url: "https://www.reddit.com/r/SalsaSnobs/search/?q=salsa%20macha", tag: "reddit" },
         { label: "r/sousvide — pork chop temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20chop%20temp", tag: "reddit" }
       ],
       swapNote: "140°F = juicy blush-pink (safe and correct); 145°F if the family's squeamish about pink pork. Assorted packs mix loin/rib chops — thicker ones to the bigger appetites.",
       recipe: {
-        activeTime: "~20 min at dinner (+2 min midday drop, +10 min chimichurri)",
+        activeTime: "~20 min at dinner (+2 min midday drop, +12 min salsa macha)",
         cookTime: "chops 3–4 hr at 140°F (unattended)",
         ingredients: [
           "your already-bagged frozen pork chops, pre-seasoned with Kinder's Cowboy Butter (in the bath since ~12:30, straight from the freezer)",
-          "DOUBLE CHIMICHURRI: 2 bunches parsley (finely chopped), 6 garlic cloves (minced), 6 tbsp red wine vinegar, 1 cup olive oil, 1 tsp crushed red pepper, 1 tsp kosher salt, 1 tsp Mexican oregano",
+          "DOUBLE SALSA MACHA: 8 guajillos + 4 chiles de árbol (stemmed, seeded, snipped small with scissors), 6 garlic cloves (sliced thin), 1 cup canola or olive oil, 1 tsp kosher salt, 1 tsp Mexican oregano, splash of red wine vinegar",
           "2 bags H-E-B steamable broccoli florets",
           "½ cantaloupe ($1.97 feature), cut into wedges",
           "1 tbsp canola oil, kosher salt"
         ],
         steps: [
-          "~5 PM: chimichurri — chop, mince, stir, done in 10. Pour HALF into a jar → fridge (Wednesday's steak sauce; it improves for days).",
+          "~5 PM: salsa macha — oil in a small pot over medium-low, garlic in until pale gold (~3 min), snipped chiles in for 60–90 sec until fragrant and brick-red (they burn fast — pull early), off heat, salt + oregano + a splash of vinegar. Rough-blitz in the NutriBullet or leave chunky. Pour MOST into a jar → fridge (Wednesday's steak sauce; it keeps for weeks and improves).",
           "Cut the cantaloupe into wedges; fridge until plating.",
           "DINNER: pull the chops, pat VERY dry. Microwave broccoli bag 1 per package directions; bag 2 right after.",
           "Blackstone on maximum, film of canola: pat the chops VERY dry (the seasoning stays put), sear 60–90 sec per side — crust only, they're already perfectly cooked and fully seasoned inside.",
-          "Rest 3 min. The cowboy butter carries the chop — chimichurri on the side for whoever wants both.",
+          "Rest 3 min. The cowboy butter carries the chop — salsa macha on the side for whoever wants heat.",
           "Cleanup: griddle scrape, one bowl, one jar, trash the bag."
         ]
       }
@@ -115,7 +115,7 @@ const WEEK = {
           "½ yellow onion + 3 garlic cloves",
           "1 tbsp olive oil, ½ tbsp canola (bag), kosher salt",
           "2 cups (dry) jasmine rice — rice cooker, started midday",
-          "lime + cilantro to finish"
+          "lime to finish"
         ],
         steps: [
           "TUESDAY MORNING: pour ~1.5 lb from the IQF bag into a fridge bowl — thawed by dinner. Forgot? Cold-water bath 20–30 min at 5 PM. CHAMBER-RESEAL the remaining ~0.5 lb now → freezer bank.",
@@ -125,24 +125,24 @@ const WEEK = {
           "Skillet, olive oil, medium-high: pour in the sauce — it should sizzle. Simmer 5 min until it darkens a shade. Salt to taste.",
           "Open the shrimp bag. KID CHECKPOINT: their shrimp go straight from bag to plate — perfectly cooked, sauce-free. Or they self-serve; either way no second dish.",
           "Fold the rest of the shrimp (and bag juices) into the sauce — 60 seconds to coat and warm, no more.",
-          "Over rice, lime squeeze, cilantro. The chuck stays in overnight. Cleanup: skillet, NutriBullet cup, rice pot, trash the shrimp bag."
+          "Over rice, big lime squeeze. The chuck stays in overnight. Cleanup: skillet, NutriBullet cup, rice pot, trash the shrimp bag."
         ]
       }
     },
     {
       id: "chucksteak",
-      cost: { est: 29.8, servings: 5, note: "GUEST NIGHT (5 adults-worth): ~3.5 lb Prime 1 chuck @ $5.99/lb + 3 potato bags + baguette; chimichurri already made Monday — ~$5.95/serving" },
-      nutrition: { serving: "~8 oz sliced chuck 'steak' + chimichurri + crispy potatoes + baguette", calories: 1070, protein: 58, carbs: 82, fat: 56 },
+      cost: { est: 29.8, servings: 5, note: "GUEST NIGHT (5 adults-worth): ~3.5 lb Prime 1 chuck @ $5.99/lb + 3 potato bags + baguette; salsa macha already made Monday — ~$5.95/serving" },
+      nutrition: { serving: "~8 oz sliced chuck 'steak' + salsa macha + crispy potatoes + baguette", calories: 1070, protein: 58, carbs: 82, fat: 56 },
       daytime: [
         "WED daytime: nothing — the chuck's been riding since Tuesday 5 PM (~24 hr at dinner)",
         "WED right after dinner (30 sec): bath to 165°F, drop the pork belly bag for Thursday"
       ],
-      title: "24-Hour Chuck 'Steak' with Chimichurri, Crispy Potatoes & Baguette",
+      title: "24-Hour Chuck 'Steak' with Salsa Macha, Crispy Potatoes & Baguette",
       slot: "Dinner 3 · Wed Jul 29",
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Air fryer"],
       summary:
-        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: ~3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, Monday's chimichurri (better now than the day it was made) over the slices, three bags of gold potatoes in the air fryer. Kids: sauce on the side — it's steak. After dinner the belly takes the bath.",
+        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: ~3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, Monday's salsa macha (deeper now than the day it was made) spooned over the slices, three bags of gold potatoes in the air fryer, warm baguette for the board. Kids: sauce on the side — it's steak. After dinner the belly takes the bath.",
       links: [
         { label: "DadCooksDinner — Sous Vide Chuck Steak (24 hours to tenderness)", url: "https://www.dadcooksdinner.com/sous-vide-chuck-steak-recipe/", tag: "primary" },
         { label: "Amazing Food Made Easy — chuck roast times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/chuck-roast", tag: "alt" }
@@ -154,7 +154,7 @@ const WEEK = {
         ingredients: [
           "~3.5 lb H-E-B Prime 1 beef chuck roast, 2–3 slabs (in the bath since Tuesday 5 PM)",
           "4.5 lb baby gold potatoes (3 bags), halved",
-          "Monday's reserved chimichurri (the jar in the fridge)",
+          "Monday's salsa macha (the jar in the fridge)",
           "1 pkg H-E-B Bake Shop Ready to Bake French Baguettes (from the pantry, shelf-stable)",
           "1½ tbsp canola oil, kosher salt, black pepper"
         ],
@@ -164,7 +164,7 @@ const WEEK = {
           "Pull the chuck slabs, pat VERY dry (wet meat won't crust). Light salt.",
           "Blackstone on maximum: 90 sec per side plus the fat edges — dark crust fast; the inside is already perfect.",
           "Rest 5 min under foil. Slice against the grain, ½-inch planks.",
-          "Kids' portions plain; chimichurri spooned generously over the rest. Warm bread sliced thick around the board — steak juices + chimichurri puddles are what it's for.",
+          "Kids' portions plain; salsa macha spooned over the rest (stir the jar first — the good stuff settles). Warm bread sliced thick around the board — steak juices + macha oil are what it's for.",
           "AFTER DINNER (30 sec): bath to 165°F, drop the belly bag (sealed Sunday) — ~23 hr to Thursday dinner.",
           "Cleanup: griddle scrape, air fryer basket, trash the bag."
         ]
@@ -195,14 +195,14 @@ const WEEK = {
           "GLAZE: 3 tbsp soy sauce + 2 tbsp brown sugar + 2 garlic cloves (minced) + 1 tbsp grated ginger + splash of bag juices",
           "CUCUMBER SALAD: 2 cucumbers (thin half-moons), 2 tbsp red wine vinegar, 1 tsp brown sugar, pinch of salt, pinch of crushed red pepper",
           "2 cups (dry) jasmine rice — rice cooker, started midday",
-          "cilantro to finish"
+          "a small spoon of the salsa macha jar to finish (optional — it's great on the belly too)"
         ],
         steps: [
           "MIDDAY: rice cooker on. Mix the cucumber salad → fridge.",
           "Pull the belly, pat VERY dry (this is the whole game), cut into 1-inch cubes.",
           "Blackstone on high: cubes fat-side down first, 2–3 min per side until deeply browned and crackling. Kids' share out now — plain crispy cubes on rice.",
           "Kill the heat to medium. Glaze ingredients onto the griddle over the cubes — bubbles to sticky in ~60 seconds. Toss to coat, off immediately (sugar burns fast).",
-          "Bowls: rice, glazed belly, cucumber salad on the side, cilantro over.",
+          "Bowls: rice, glazed belly, cucumber salad on the side, a thread of salsa macha over if wanted.",
           "Cleanup: griddle scrape while warm (sugar!), rice pot, one bowl, trash the bag."
         ]
       }
@@ -223,14 +223,12 @@ const WEEK = {
       items: [
         { name: "H-E-B Baby Gold Potatoes", qty: "3 × 1.5 lb bags — Wednesday (guest night)", est: 6.8 },
         { name: "Cantaloupe (ad item @ $1.97)", qty: "1 — Monday's fruit side (other half = breakfasts)", est: 2.0 },
-        { name: "Flat-leaf parsley", qty: "2 bunches — the double chimichurri", est: 2.0 },
         { name: "Roma tomatoes", qty: "2 — diabla sauce", est: 1.0 },
         { name: "Cucumbers", qty: "2 — Thursday's salad", est: 1.6 },
         { name: "Yellow onions", qty: "2 medium — diabla + aromatics", est: 1.7 },
-        { name: "Garlic", qty: "2 heads — chimichurri, diabla, glaze", est: 1.6 },
+        { name: "Garlic", qty: "2 heads — salsa macha, diabla, glaze", est: 1.6 },
         { name: "Fresh ginger", qty: "~2 inch knob — belly glaze", est: 1.5 },
         { name: "Limes", qty: "3 — diabla + finishing", est: 1.0 },
-        { name: "Cilantro", qty: "1 bunch — diabla + belly bowls", est: 0.7 }
       ]
     },
     {
@@ -250,12 +248,12 @@ const WEEK = {
       items: [
         { name: "H-E-B Thai Hom Mali Jasmine Rice, 5 lb — $7.88 VERIFIED (premium-staples rule: real Thai fragrant rice; 2 nights this week + months ahead)", qty: "1 bag", est: 7.9 },
         { name: "Bolner's Fiesta Brand Fajita Seasoning", qty: "1 shaker — the chicken bags", est: 2.0 },
-        { name: "Fiesta Mexican Oregano", qty: "1 — chimichurri", est: 1.5 },
-        { name: "Fiesta Crushed Red Pepper", qty: "1 shaker — chimichurri + cucumber salad", est: 1.5 },
+        { name: "Fiesta Mexican Oregano", qty: "1 — salsa macha + general", est: 1.5 },
+        { name: "Fiesta Crushed Red Pepper", qty: "1 shaker — cucumber salad + general", est: 1.5 },
         { name: "Fiesta Dried Guajillo Chiles + Chile de Árbol", qty: "1 bag each — diabla now, pantry heat for a year", est: 4.0 },
         { name: "Kikkoman Soy Sauce", qty: "10 oz — belly", est: 2.5 },
         { name: "McCormick Black Pepper Grinder", qty: "1 (kosher salt already owned)", est: 3.0 },
-        { name: "Colavita Aged Red Wine Vinegar (premium-staples rule — chimichurri drinks 6 tbsp of it; Pompeian Gourmet if unstocked)", qty: "1 bottle (est. price)", est: 4.0 }
+        { name: "Colavita Aged Red Wine Vinegar (premium-staples rule — cucumber salad + salsa macha splash; Pompeian Gourmet if unstocked)", qty: "1 bottle (est. price)", est: 4.0 }
       ]
     }
   ]
