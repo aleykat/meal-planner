@@ -46,7 +46,7 @@ const WEEK = {
     },
     {
       id: "chops",
-      cost: { est: 6.5, servings: 4, note: "protein is FREE — the already-bagged frozen chops from the freezer bank; broccoli + cantaloupe (salsa macha comes from owned staples)" },
+      cost: { est: 4.8, servings: 4, note: "RECEIPT-TRUED: protein is FREE — the already-bagged frozen chops from the freezer bank; broccoli $2.32 actual + ½ cantaloupe + salsa macha from owned staples" },
       nutrition: { serving: "1 large chop (+ optional salsa macha) with broccoli + cantaloupe", calories: 630, protein: 45, carbs: 20, fat: 42 },
       daytime: [
         "MON ~12:30 PM (2 min): bath to 140°F, drop your frozen chops bag straight from the freezer — from-frozen adds ~1 hr, so ~5 hr to dinner is right in the zone",
@@ -69,7 +69,7 @@ const WEEK = {
         cookTime: "chops 3–4 hr at 140°F (unattended)",
         ingredients: [
           "your already-bagged frozen pork chops, pre-seasoned with Kinder's Cowboy Butter (in the bath since ~12:30, straight from the freezer)",
-          "DOUBLE SALSA MACHA: 8 guajillos + 4 chiles de árbol (stemmed, seeded, snipped small with scissors), 6 garlic cloves (sliced thin), 1 cup canola or olive oil, 1 tsp kosher salt, 1 tsp Mexican oregano, splash of red wine vinegar",
+          "DOUBLE SALSA MACHA: 10–12 cascabels + 4 chiles de árbol (stemmed, seeded, snipped small with scissors — cascabels sub for the out-of-stock guajillos; nuttier, works great in macha), 6 garlic cloves (sliced thin), 1 cup canola or olive oil, 1 tsp kosher salt, 1 tsp oregano (crushed between fingers), splash of red wine vinegar",
           "2 bags H-E-B steamable broccoli florets",
           "½ cantaloupe ($1.97 feature), cut into wedges",
           "1 tbsp canola oil, kosher salt"
@@ -86,7 +86,7 @@ const WEEK = {
     },
     {
       id: "diabla",
-      cost: { est: 14.5, servings: 4, note: "1.5 lb of the 2 lb IQF P&D bag (~$11.25 consumed; ~$3.75 banks) + dried-chile sauce, romas" },
+      cost: { est: 15.1, servings: 4, note: "RECEIPT-TRUED: 1.5 lb of the 2 lb Gulf 50/70 P&D shrimp ($11.96 consumed; ~$4 banks) + dried-chile sauce, romas, limes" },
       nutrition: { serving: "~6 oz shrimp in diabla sauce over 1½ cups rice", calories: 520, protein: 30, carbs: 68, fat: 12 },
       daytime: [
         "TUE morning (2 min): pour ~1.5 lb shrimp into a fridge bowl to thaw; chamber-reseal the rest → freezer",
@@ -98,19 +98,19 @@ const WEEK = {
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Stove", "NutriBullet", "Rice cooker"],
       summary:
-        "Deviled shrimp, done properly — and sous vide, the house shrimp method: bagged P&D shrimp at 135°F for 30 min come out snappy-tender and physically can't overcook, then fold into the brick-red guajillo–árbol sauce (the NutriBullet earns its wash — there's no non-blender version of this dish). Genuinely spicy — the week's don't-soften night. Kids: their shrimp come straight from the bag before the sauce, or they self-serve. The chuck shares the same 135°F water — both bags drop at 5 PM.",
+        "Deviled shrimp, done properly — and sous vide, the house shrimp method: bagged P&D shrimp at 135°F for 30 min come out snappy-tender and physically can't overcook, then fold into the brick-red cascabel–árbol sauce (the NutriBullet earns its wash — there's no non-blender version of this dish). Genuinely spicy — the week's don't-soften night. Kids: their shrimp come straight from the bag before the sauce, or they self-serve. The chuck shares the same 135°F water — both bags drop at 5 PM.",
       links: [
         { label: "Isabel Eats — Camarones a la Diabla (the sauce reference)", url: "https://www.isabeleats.com/camarones-a-la-diabla/", tag: "primary" },
         { label: "The Kitchn — diabla version (backup)", url: "https://www.thekitchn.com/camarones-a-la-diabla-recipe-23735936", tag: "alt" },
         { label: "r/sousvide — shrimp time/temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=shrimp%20temp", tag: "reddit" }
       ],
-      swapNote: "Heat dial: 2 árbol = hot-but-civil, 4+ = weapons-grade. Guajillos carry flavor, árbol carries fire.",
+      swapNote: "Heat dial: 2 árbol = hot-but-civil, 4+ = weapons-grade. Cascabels carry the flavor (nutty, mild — guajillos were out 7/26), árbol carries fire.",
       recipe: {
         activeTime: "~25 min at dinner (+2 min bagging shrimp at 5 PM)",
         cookTime: "shrimp 30 min at 135°F; sauce ~15 min incl. chile soak",
         ingredients: [
-          "~1.5 lb from the 2 lb frozen IQF P&D bag (thawed today; roughly 30–36 jumbos)",
-          "4 dried guajillo chiles + 2–3 chiles de árbol (stemmed, seeds shaken out)",
+          "~1.5 lb from the two 1 lb frozen Gulf 50/70 P&D bags (thawed today — smaller count than jumbo, so more pieces per plate; same weight, same 135°F/30 min)",
+          "6 dried cascabel chiles + 2–3 chiles de árbol (stemmed, seeds shaken out — cascabels are smaller than the planned guajillos, hence 6 not 4)",
           "2 Roma tomatoes, rough-chopped",
           "½ yellow onion + 3 garlic cloves",
           "1 tbsp olive oil, ½ tbsp canola (bag), kosher salt",
@@ -118,7 +118,7 @@ const WEEK = {
           "lime to finish"
         ],
         steps: [
-          "TUESDAY MORNING: pour ~1.5 lb from the IQF bag into a fridge bowl — thawed by dinner. Forgot? Cold-water bath 20–30 min at 5 PM. CHAMBER-RESEAL the remaining ~0.5 lb now → freezer bank.",
+          "TUESDAY MORNING: pour 1 full bag + half the second into a fridge bowl (~1.5 lb) — thawed by dinner. Forgot? Cold-water bath 20–30 min at 5 PM. CHAMBER-RESEAL the remaining ~0.5 lb now → freezer bank.",
           "~4:30 PM: rice cooker on. 5 PM: bath to 135°F; seal the thawed shrimp flat with the canola and a pinch of salt, then drop BOTH bags — shrimp (30 min; holds an hour) and the chuck bag sealed Sunday (stays in ~24 hr).",
           "Soak the stemmed chiles in just-boiled water 10 min (a mug works).",
           "NutriBullet: soaked chiles, tomatoes, onion, garlic, ½ tsp salt, splash of soak water. Blend smooth — this is the whole sauce.",
@@ -131,7 +131,7 @@ const WEEK = {
     },
     {
       id: "chucksteak",
-      cost: { est: 29.7, servings: 5, note: "GUEST NIGHT (5 adults-worth): 3.36 lb Prime 1 chuck @ $5.99/lb ($20.13 actual) + 3 potato bags + garlic bread; salsa macha already made Monday — ~$5.95/serving" },
+      cost: { est: 33.0, servings: 5, note: "GUEST NIGHT (5 adults-worth), RECEIPT-TRUED: 3.36 lb Prime 1 chuck $20.13 + potatoes $10.44 + garlic bread $2.38; salsa macha already made Monday — ~$6.60/serving" },
       nutrition: { serving: "~8 oz sliced chuck 'steak' + salsa macha + crispy potatoes + garlic bread", calories: 1100, protein: 58, carbs: 80, fat: 60 },
       daytime: [
         "WED daytime: nothing — the chuck's been riding since Tuesday 5 PM (~24 hr at dinner)",
@@ -172,7 +172,7 @@ const WEEK = {
     },
     {
       id: "porkbelly",
-      cost: { est: 12.0, servings: 4, note: "~2 lb pork belly @ $4.99/lb feature + cucumber salad; glaze + rice from staples" },
+      cost: { est: 13.3, servings: 4, note: "RECEIPT-TRUED: 2.27 lb pork belly @ $4.99/lb = $11.34 actual + cucumber salad; glaze + rice from staples" },
       nutrition: { serving: "1 bowl: ~5 oz glazed crispy belly over 1½ cups rice + cucumber salad", calories: 850, protein: 25, carbs: 70, fat: 50 },
       daytime: ["THU ~12:30 PM (5 min): rice cooker on + mix the cucumber salad — it improves all afternoon"],
       title: "Crispy Glazed Pork Belly Bowls with Cucumber Salad",
@@ -212,48 +212,48 @@ const WEEK = {
     {
       section: "Meat & Seafood",
       items: [
-        { name: "H-E-B Frozen Peeled & Deveined Raw Jumbo Shrimp, 2 lb IQF bag (~$7.50/lb)", qty: "use ~1.5 lb Tuesday; ~0.5 lb chamber-reseals into the freezer bank", est: 15.0 },
-        { name: "H-E-B Prime 1 Beef Chuck Roast (ad item @ $5.99/lb, 33% off)", qty: "3.36 lb ACTUAL (weighed 7/26) — the 24-hr steak play, scaled for Wednesday's guest", est: 20.1 },
-        { name: "FRESH! H-E-B Natural Pork Belly (ad item @ $4.99/lb)", qty: "~2 lb — Thursday's flagship", est: 10.0 },
-        { name: "H-E-B Boneless Skinless Chicken Breasts", qty: "2.15 lb ACTUAL (weighed 7/26) — the freezer drop-in bags", est: 7.2 }
+        { name: "H-E-B Gulf Shrimp 50/70 P&D — 2 bags @ $7.97 = $15.94 ACTUAL (smaller count than the planned jumbo; fine for diabla)", qty: "use ~1.5 lb Tuesday; ~0.5 lb chamber-reseals into the freezer bank", est: 15.9 },
+        { name: "H-E-B Prime 1 Beef Chuck Roast (ad item @ $5.99/lb, 33% off)", qty: "3.36 lb — $20.13 RECEIPT — the 24-hr steak play, scaled for Wednesday's guest", est: 20.1 },
+        { name: "FRESH! H-E-B Natural Pork Belly (ad item @ $4.99/lb)", qty: "2.27 lb — $11.34 RECEIPT — Thursday's flagship", est: 11.3 },
+        { name: "Hill Country Fare Boneless Skinless Chicken Breasts", qty: "2.15 lb — $7.50 RECEIPT ($3.49/lb) — the freezer drop-in bags", est: 7.5 }
       ]
     },
     {
       section: "Produce",
       items: [
-        { name: "H-E-B Baby Gold Potatoes", qty: "3 × 1.5 lb bags — Wednesday (guest night)", est: 6.8 },
-        { name: "Cantaloupe (ad item @ $1.97)", qty: "1 — Monday's fruit side (other half = breakfasts)", est: 2.0 },
-        { name: "Roma tomatoes", qty: "2 — diabla sauce", est: 1.0 },
-        { name: "Cucumbers", qty: "2 — Thursday's salad", est: 1.6 },
-        { name: "Yellow onions", qty: "2 medium — diabla + aromatics", est: 1.7 },
-        { name: "Garlic", qty: "2 heads — salsa macha, diabla, glaze", est: 1.6 },
-        { name: "Fresh ginger", qty: "~2 inch knob — belly glaze", est: 1.5 },
-        { name: "Limes", qty: "3 — diabla + finishing", est: 1.0 },
+        { name: "H-E-B Baby Gold Potatoes", qty: "3 bags @ $3.48 = $10.44 RECEIPT — Wednesday (guest night)", est: 10.4 },
+        { name: "Cantaloupe (ad item)", qty: "1 — $1.97 RECEIPT — Monday's fruit side (other half = breakfasts)", est: 2.0 },
+        { name: "Roma tomatoes", qty: "0.46 lb — $0.39 RECEIPT — diabla sauce", est: 0.4 },
+        { name: "Cucumbers", qty: "2 — $0.90 RECEIPT — Thursday's salad", est: 0.9 },
+        { name: "Yellow onion", qty: "1 jumbo (1.72 lb) — $1.70 RECEIPT — diabla + aromatics", est: 1.7 },
+        { name: "Bulk garlic", qty: "2 — $1.00 RECEIPT — salsa macha, diabla, glaze", est: 1.0 },
+        { name: "Fresh ginger", qty: "0.48 lb knob — $1.86 RECEIPT — belly glaze", est: 1.9 },
+        { name: "Organic limes, 1 lb bag", qty: "1 bag — $2.98 RECEIPT — diabla + finishing (extras keep)", est: 3.0 },
       ]
     },
     {
       section: "Bakery",
       items: [
-        { name: "H-E-B Frozen Garlic Bread, 16 oz — BOUGHT 7/26 (ready-to-bake baguettes out of stock)", qty: "1 — freezer until Wednesday, bakes from frozen", est: 2.8 }
+        { name: "H-E-B Garlic Bread Loaf, 16 oz — $2.38 RECEIPT (ready-to-bake baguettes out of stock)", qty: "1 — freezer until Wednesday, bakes from frozen", est: 2.4 }
       ]
     },
     {
       section: "Frozen",
       items: [
-        { name: "H-E-B Steamable Broccoli Florets, 12 oz", qty: "2 bags — Monday", est: 4.0 }
+        { name: "H-E-B Steamable Broccoli Florets, 12 oz", qty: "2 bags @ $1.16 = $2.32 RECEIPT — Monday", est: 2.3 }
       ]
     },
     {
       section: "Staples Stock-Up (already owned, NOT on the list: brown sugar, kosher salt, canola oil, olive oil, Kerrygold butter, Kinder's Cowboy Butter seasoning)",
       items: [
-        { name: "H-E-B Thai Hom Mali Jasmine Rice, 5 lb — $7.88 VERIFIED (premium-staples rule: real Thai fragrant rice; 2 nights this week + months ahead)", qty: "1 bag", est: 7.9 },
-        { name: "Bolner's Fiesta Brand Fajita Seasoning", qty: "1 shaker — the chicken bags", est: 2.0 },
-        { name: "Fiesta Mexican Oregano", qty: "1 — salsa macha + general", est: 1.5 },
-        { name: "Fiesta Crushed Red Pepper", qty: "1 shaker — cucumber salad + general", est: 1.5 },
-        { name: "Fiesta Dried Guajillo Chiles + Chile de Árbol", qty: "1 bag each — diabla now, pantry heat for a year", est: 4.0 },
-        { name: "Kikkoman Soy Sauce", qty: "10 oz — belly", est: 2.5 },
-        { name: "McCormick Black Pepper Grinder", qty: "1 (kosher salt already owned)", est: 3.0 },
-        { name: "Colavita Aged Red Wine Vinegar (premium-staples rule — cucumber salad + salsa macha splash; Pompeian Gourmet if unstocked)", qty: "1 bottle (est. price)", est: 4.0 }
+        { name: "H-E-B Jasmine Rice, 5 lb — $7.23 RECEIPT (premium-staples rule: 2 nights this week + months ahead)", qty: "1 bag", est: 7.2 },
+        { name: "Bolner's Fiesta Brand Fajita Seasoning (jumbo jar)", qty: "1 — $4.38 RECEIPT — the chicken bags + future", est: 4.4 },
+        { name: "Central Market Whole Mediterranean Oregano — $3.98 RECEIPT (Fiesta Mexican oregano out of stock)", qty: "1 — salsa macha + general", est: 4.0 },
+        { name: "Fiesta Crushed Red Pepper", qty: "1 shaker — $2.16 RECEIPT — cucumber salad + general", est: 2.2 },
+        { name: "Fiesta Dried Cascabel Chiles + Chile de Árbol — $2.16 each (guajillo out of stock; cascabel subs in both recipes)", qty: "1 bag each — diabla + macha now, pantry heat for a year", est: 4.3 },
+        { name: "Kikkoman Soy Sauce, 20 oz", qty: "1 — $4.98 RECEIPT — belly + months of future use", est: 5.0 },
+        { name: "McCormick Black Pepper Grinder ⚠ NOT ON THE 7/26 RECEIPT — verify it made it home (needed for tonight's chuck seal)", qty: "1 (kosher salt already owned)", est: 3.0 },
+        { name: "H-E-B Red Wine Vinegar, 16.9 oz — $2.98 RECEIPT (Colavita out of stock)", qty: "1 bottle", est: 3.0 }
       ]
     }
   ]
