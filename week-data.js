@@ -1,5 +1,5 @@
 // Week data — regenerated each week by Claude. Loaded by index.html.
-// THE REAL WEEK v2 — HEB-only from-scratch rerun (Joe V's dropped per Jason 7/22).
+// THE REAL WEEK v2 — HEB-only from-scratch rerun (Joe V's dropped 7/22).
 // Dinners Mon Jul 27 – Thu Jul 30, shopped Sunday Jul 26, dinner window 5:30–6.
 // Bath relay: chops Mon midday (140°F) → shrimp + chuck Tue 5 PM (135°F) → belly Wed
 // after dinner (165°F). One salsa macha batch Monday feeds Monday AND Wednesday (raw-herb ban).
@@ -35,7 +35,7 @@ const WEEK = {
         ],
         steps: [
           "IN THE CAR (it's July in Texas): the IQF shrimp bag rides home in a cooler bag or wedged against the A/C — it must hit your freezer still fully frozen.",
-          "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Ready-to-bake baguettes (shelf-stable, verified) → PANTRY sealed as-is until Wednesday's bake. Everything else is normal.",
+          "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Frozen garlic bread → FREEZER (rides home in the cooler bag with the shrimp) until Wednesday's bake — it bakes straight from frozen. Everything else is normal.",
           "SEAL SESSION — Chicken: fajita rub, 1 breast per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr).",
           "Chuck: cut into 2 thick slabs (simple knife work — no bones involved), salt + pepper, seal, label, FRIDGE.",
           "Belly: rub with the soy + brown sugar, seal, label, FRIDGE.",
@@ -46,7 +46,7 @@ const WEEK = {
     },
     {
       id: "chops",
-      cost: { est: 6.5, servings: 4, note: "protein is FREE — Jason's already-bagged frozen chops; broccoli + cantaloupe (salsa macha comes from owned staples)" },
+      cost: { est: 6.5, servings: 4, note: "protein is FREE — the already-bagged frozen chops from the freezer bank; broccoli + cantaloupe (salsa macha comes from owned staples)" },
       nutrition: { serving: "1 large chop (+ optional salsa macha) with broccoli + cantaloupe", calories: 630, protein: 45, carbs: 20, fat: 42 },
       daytime: [
         "MON ~12:30 PM (2 min): bath to 140°F, drop your frozen chops bag straight from the freezer — from-frozen adds ~1 hr, so ~5 hr to dinner is right in the zone",
@@ -131,18 +131,18 @@ const WEEK = {
     },
     {
       id: "chucksteak",
-      cost: { est: 29.8, servings: 5, note: "GUEST NIGHT (5 adults-worth): ~3.5 lb Prime 1 chuck @ $5.99/lb + 3 potato bags + baguette; salsa macha already made Monday — ~$5.95/serving" },
-      nutrition: { serving: "~8 oz sliced chuck 'steak' + salsa macha + crispy potatoes + baguette", calories: 1070, protein: 58, carbs: 82, fat: 56 },
+      cost: { est: 30.6, servings: 5, note: "GUEST NIGHT (5 adults-worth): ~3.5 lb Prime 1 chuck @ $5.99/lb + 3 potato bags + garlic bread; salsa macha already made Monday — ~$6.10/serving" },
+      nutrition: { serving: "~8 oz sliced chuck 'steak' + salsa macha + crispy potatoes + garlic bread", calories: 1100, protein: 58, carbs: 80, fat: 60 },
       daytime: [
         "WED daytime: nothing — the chuck's been riding since Tuesday 5 PM (~24 hr at dinner)",
         "WED right after dinner (30 sec): bath to 165°F, drop the pork belly bag for Thursday"
       ],
-      title: "24-Hour Chuck 'Steak' with Salsa Macha, Crispy Potatoes & Baguette",
+      title: "24-Hour Chuck 'Steak' with Salsa Macha, Crispy Potatoes & Garlic Bread",
       slot: "Dinner 3 · Wed Jul 29",
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Air fryer"],
       summary:
-        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: ~3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, Monday's salsa macha (deeper now than the day it was made) spooned over the slices, three bags of gold potatoes in the air fryer, warm baguette for the board. Kids: sauce on the side — it's steak. After dinner the belly takes the bath.",
+        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: ~3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, Monday's salsa macha (deeper now than the day it was made) spooned over the slices, three bags of gold potatoes in the air fryer, warm garlic bread for the board. Kids: sauce on the side — it's steak. After dinner the belly takes the bath.",
       links: [
         { label: "DadCooksDinner — Sous Vide Chuck Steak (24 hours to tenderness)", url: "https://www.dadcooksdinner.com/sous-vide-chuck-steak-recipe/", tag: "primary" },
         { label: "Amazing Food Made Easy — chuck roast times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/chuck-roast", tag: "alt" }
@@ -155,11 +155,11 @@ const WEEK = {
           "~3.5 lb H-E-B Prime 1 beef chuck roast, 2–3 slabs (in the bath since Tuesday 5 PM)",
           "4.5 lb baby gold potatoes (3 bags), halved",
           "Monday's salsa macha (the jar in the fridge)",
-          "1 pkg H-E-B Bake Shop Ready to Bake French Baguettes (from the pantry, shelf-stable)",
+          "1 pkg H-E-B frozen garlic bread, 16 oz (from the freezer — bakes straight from frozen)",
           "1½ tbsp canola oil, kosher salt, black pepper"
         ],
         steps: [
-          "Oven per the baguette package (~400°F, ~10 min); it's been waiting shelf-stable since Sunday and bakes to fresh. The air fryer has the potatoes, so the oven was free anyway.",
+          "Oven per the garlic bread package (~425°F, ~10–12 min, straight from the freezer — no thaw). The air fryer has the potatoes, so the oven was free anyway.",
           "Potatoes: toss halved golds with oil and salt; air fryer 400°F ~20 min, shake at 10 — three bags means TWO batches (first batch holds fine in a low oven with the bread).",
           "Pull the chuck slabs, pat VERY dry (wet meat won't crust). Light salt.",
           "Blackstone on maximum: 90 sec per side plus the fat edges — dark crust fast; the inside is already perfect.",
@@ -234,7 +234,7 @@ const WEEK = {
     {
       section: "Bakery",
       items: [
-        { name: "H-E-B Bake Shop Ready to Bake French Baguettes — $1.98 VERIFIED, 10.58 oz, shelf-stable", qty: "1 — pantry until Wednesday, bakes fresh per package", est: 2.0 }
+        { name: "H-E-B Frozen Garlic Bread, 16 oz — BOUGHT 7/26 (ready-to-bake baguettes out of stock)", qty: "1 — freezer until Wednesday, bakes from frozen", est: 2.8 }
       ]
     },
     {
