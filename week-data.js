@@ -69,7 +69,7 @@ const WEEK = {
         cookTime: "chops 3–4 hr at 140°F (unattended)",
         ingredients: [
           "your already-bagged frozen pork chops, pre-seasoned with Kinder's Cowboy Butter (in the bath since ~12:30, straight from the freezer)",
-          "DOUBLE SALSA MACHA: 10–12 cascabels + 4 chiles de árbol (stemmed, seeded, snipped small with scissors — cascabels sub for the out-of-stock guajillos; nuttier, works great in macha), 6 garlic cloves (sliced thin), 1 cup canola or olive oil, 1 tsp kosher salt, 1 tsp oregano (crushed between fingers), splash of red wine vinegar",
+          "DOUBLE SALSA MACHA: guajillos + 4 chiles de árbol (stemmed, seeded, snipped small with scissors), 6 garlic cloves (sliced thin), 1 cup canola or olive oil, 1 tsp kosher salt, 1 tsp oregano (crushed between fingers), splash of red wine vinegar. ⚠ COUNT THE GUAJILLO BAG FIRST (1.5 oz ≈ 6–8 chiles): Tuesday's diabla needs 4, so use whatever's left over here — 4 guajillos + 2 extra árbol makes a great (hotter) macha if the bag runs short",
           "2 bags H-E-B steamable broccoli florets",
           "½ cantaloupe ($1.97 feature), cut into wedges",
           "1 tbsp canola oil, kosher salt"
@@ -98,19 +98,19 @@ const WEEK = {
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Stove", "NutriBullet", "Rice cooker"],
       summary:
-        "Deviled shrimp, done properly — and sous vide, the house shrimp method: bagged P&D shrimp at 135°F for 30 min come out snappy-tender and physically can't overcook, then fold into the brick-red cascabel–árbol sauce (the NutriBullet earns its wash — there's no non-blender version of this dish). Genuinely spicy — the week's don't-soften night. Kids: their shrimp come straight from the bag before the sauce, or they self-serve. The chuck shares the same 135°F water — both bags drop at 5 PM.",
+        "Deviled shrimp, done properly — and sous vide, the house shrimp method: bagged P&D shrimp at 135°F for 30 min come out snappy-tender and physically can't overcook, then fold into the brick-red guajillo–árbol sauce (the NutriBullet earns its wash — there's no non-blender version of this dish). Genuinely spicy — the week's don't-soften night. Kids: their shrimp come straight from the bag before the sauce, or they self-serve. The chuck shares the same 135°F water — both bags drop at 5 PM.",
       links: [
         { label: "Isabel Eats — Camarones a la Diabla (the sauce reference)", url: "https://www.isabeleats.com/camarones-a-la-diabla/", tag: "primary" },
         { label: "The Kitchn — diabla version (backup)", url: "https://www.thekitchn.com/camarones-a-la-diabla-recipe-23735936", tag: "alt" },
         { label: "r/sousvide — shrimp time/temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=shrimp%20temp", tag: "reddit" }
       ],
-      swapNote: "Heat dial: 2 árbol = hot-but-civil, 4+ = weapons-grade. Cascabels carry the flavor (nutty, mild — guajillos were out 7/26), árbol carries fire.",
+      swapNote: "Heat dial: 2 árbol = hot-but-civil, 4+ = weapons-grade. Guajillos carry flavor, árbol carries fire. (The Fiesta bag says 'Chili Cascavel (Guajillo)' — label quirk; they're guajillos.)",
       recipe: {
         activeTime: "~25 min at dinner (+2 min bagging shrimp at 5 PM)",
         cookTime: "shrimp 30 min at 135°F; sauce ~15 min incl. chile soak",
         ingredients: [
           "~1.5 lb from the two 1 lb frozen Gulf 50/70 P&D bags (thawed today — smaller count than jumbo, so more pieces per plate; same weight, same 135°F/30 min)",
-          "6 dried cascabel chiles + 2–3 chiles de árbol (stemmed, seeds shaken out — cascabels are smaller than the planned guajillos, hence 6 not 4)",
+          "4 dried guajillo chiles (saved from Monday — the Fiesta 'Chili Cascavel (Guajillo)' bag) + 2–3 chiles de árbol (stemmed, seeds shaken out)",
           "2 Roma tomatoes, rough-chopped",
           "½ yellow onion + 3 garlic cloves",
           "1 tbsp olive oil, ½ tbsp canola (bag), kosher salt",
@@ -244,15 +244,14 @@ const WEEK = {
       ]
     },
     {
-      section: "Staples Stock-Up (already owned, NOT on the list: brown sugar, kosher salt, canola oil, olive oil, Kerrygold butter, Kinder's Cowboy Butter seasoning)",
+      section: "Staples Stock-Up (already owned, NOT on the list: brown sugar, kosher salt, black pepper in a grinder, canola oil, olive oil, Kerrygold butter, Kinder's Cowboy Butter seasoning)",
       items: [
         { name: "H-E-B Jasmine Rice, 5 lb — $7.23 RECEIPT (premium-staples rule: 2 nights this week + months ahead)", qty: "1 bag", est: 7.2 },
-        { name: "Bolner's Fiesta Brand Fajita Seasoning (jumbo jar)", qty: "1 — $4.38 RECEIPT — the chicken bags + future", est: 4.4 },
+        { name: "Bolner's Fiesta Brand Fajita Seasoning, 7 oz jar", qty: "1 — $4.38 RECEIPT — the chicken bags + future", est: 4.4 },
         { name: "Central Market Whole Mediterranean Oregano — $3.98 RECEIPT (Fiesta Mexican oregano out of stock)", qty: "1 — salsa macha + general", est: 4.0 },
-        { name: "Fiesta Crushed Red Pepper", qty: "1 shaker — $2.16 RECEIPT — cucumber salad + general", est: 2.2 },
-        { name: "Fiesta Dried Cascabel Chiles + Chile de Árbol — $2.16 each (guajillo out of stock; cascabel subs in both recipes)", qty: "1 bag each — diabla + macha now, pantry heat for a year", est: 4.3 },
-        { name: "Kikkoman Soy Sauce, 20 oz", qty: "1 — $4.98 RECEIPT — belly + months of future use", est: 5.0 },
-        { name: "McCormick Black Pepper Grinder ⚠ NOT ON THE 7/26 RECEIPT — verify it made it home (needed for tonight's chuck seal)", qty: "1 (kosher salt already owned)", est: 3.0 },
+        { name: "Fiesta Crushed Red Pepper (big jar)", qty: "1 — $4.98 RECEIPT — cucumber salad + general", est: 5.0 },
+        { name: "Fiesta 'Chili Cascavel (Guajillo)' + Chile de Árbol — $2.16 each (Fiesta's label quirk: the cascavel bag IS guajillos)", qty: "1.5 oz bag each (≈6–8 guajillos — count before Monday's macha; diabla needs 4)", est: 4.3 },
+        { name: "Kikkoman Soy Sauce, 10 oz", qty: "1 — $2.94 RECEIPT — belly", est: 2.9 },
         { name: "H-E-B Red Wine Vinegar, 16.9 oz — $2.98 RECEIPT (Colavita out of stock)", qty: "1 bottle", est: 3.0 }
       ]
     }
