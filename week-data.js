@@ -28,8 +28,8 @@ const WEEK = {
         activeTime: "~25 min",
         cookTime: "none — sealing only",
         ingredients: [
-          "~1.5 lb boneless skinless chicken breasts + 2 tbsp Bolner's Fiesta fajita seasoning",
-          "~3.5 lb Prime 1 chuck roast (cut into 2–3 slabs) + kosher salt + pepper",
+          "2.15 lb boneless skinless chicken breasts + 2 tbsp Bolner's Fiesta fajita seasoning",
+          "3.36 lb Prime 1 chuck roast (cut into 2–3 slabs) + kosher salt + pepper",
           "~2 lb pork belly + 2 tbsp soy sauce + 1 tbsp brown sugar",
           "chamber vacuum bags + painter's tape for labels"
         ],
@@ -131,7 +131,7 @@ const WEEK = {
     },
     {
       id: "chucksteak",
-      cost: { est: 30.6, servings: 5, note: "GUEST NIGHT (5 adults-worth): ~3.5 lb Prime 1 chuck @ $5.99/lb + 3 potato bags + garlic bread; salsa macha already made Monday — ~$6.10/serving" },
+      cost: { est: 29.7, servings: 5, note: "GUEST NIGHT (5 adults-worth): 3.36 lb Prime 1 chuck @ $5.99/lb ($20.13 actual) + 3 potato bags + garlic bread; salsa macha already made Monday — ~$5.95/serving" },
       nutrition: { serving: "~8 oz sliced chuck 'steak' + salsa macha + crispy potatoes + garlic bread", calories: 1100, protein: 58, carbs: 80, fat: 60 },
       daytime: [
         "WED daytime: nothing — the chuck's been riding since Tuesday 5 PM (~24 hr at dinner)",
@@ -142,7 +142,7 @@ const WEEK = {
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Air fryer"],
       summary:
-        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: ~3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, Monday's salsa macha (deeper now than the day it was made) spooned over the slices, three bags of gold potatoes in the air fryer, warm garlic bread for the board. Kids: sauce on the side — it's steak. After dinner the belly takes the bath.",
+        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: nearly 3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, Monday's salsa macha (deeper now than the day it was made) spooned over the slices, three bags of gold potatoes in the air fryer, warm garlic bread for the board. Kids: sauce on the side — it's steak. After dinner the belly takes the bath.",
       links: [
         { label: "DadCooksDinner — Sous Vide Chuck Steak (24 hours to tenderness)", url: "https://www.dadcooksdinner.com/sous-vide-chuck-steak-recipe/", tag: "primary" },
         { label: "Amazing Food Made Easy — chuck roast times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/chuck-roast", tag: "alt" }
@@ -152,7 +152,7 @@ const WEEK = {
         activeTime: "~25 min at dinner (chuck dropped Tuesday 5 PM — a true 24 hr)",
         cookTime: "chuck ~24 hr at 135°F; potatoes ~20 min air fryer",
         ingredients: [
-          "~3.5 lb H-E-B Prime 1 beef chuck roast, 2–3 slabs (in the bath since Tuesday 5 PM)",
+          "3.36 lb H-E-B Prime 1 beef chuck roast, 2–3 slabs (in the bath since Tuesday 5 PM)",
           "4.5 lb baby gold potatoes (3 bags), halved",
           "Monday's salsa macha (the jar in the fridge)",
           "1 pkg H-E-B frozen garlic bread, 16 oz (from the freezer — bakes straight from frozen)",
@@ -213,9 +213,9 @@ const WEEK = {
       section: "Meat & Seafood",
       items: [
         { name: "H-E-B Frozen Peeled & Deveined Raw Jumbo Shrimp, 2 lb IQF bag (~$7.50/lb)", qty: "use ~1.5 lb Tuesday; ~0.5 lb chamber-reseals into the freezer bank", est: 15.0 },
-        { name: "H-E-B Prime 1 Beef Chuck Roast (ad item @ $5.99/lb, 33% off)", qty: "~3.5 lb — the 24-hr steak play, scaled for Wednesday's guest", est: 21.0 },
+        { name: "H-E-B Prime 1 Beef Chuck Roast (ad item @ $5.99/lb, 33% off)", qty: "3.36 lb ACTUAL (weighed 7/26) — the 24-hr steak play, scaled for Wednesday's guest", est: 20.1 },
         { name: "FRESH! H-E-B Natural Pork Belly (ad item @ $4.99/lb)", qty: "~2 lb — Thursday's flagship", est: 10.0 },
-        { name: "H-E-B Boneless Skinless Chicken Breasts", qty: "~1.5 lb — the 2 freezer drop-in bags", est: 5.0 }
+        { name: "H-E-B Boneless Skinless Chicken Breasts", qty: "2.15 lb ACTUAL (weighed 7/26) — the freezer drop-in bags", est: 7.2 }
       ]
     },
     {
