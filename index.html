@@ -105,6 +105,7 @@
     <a href="#grocery-h2">🛒 Shopping List</a>
     <a href="#costs-h2">💲 Costs</a>
     <a href="#inv-h2" id="nav-inv">🥕 Pantry</a>
+    <a href="#bank-h2" id="nav-bank">🧺 On Hand</a>
     <a href="#fb-h2" id="nav-fb">⭐ Feedback</a>
   </nav>
 
@@ -136,6 +137,15 @@
       <span style="font-size:.8rem;color:var(--muted)">days left</span>
       <button class="inv-btn" id="inv-addbtn">+ Add</button>
     </div>
+  </div>
+
+  <h2 id="bank-h2">On Hand — Freezer Bank &amp; Use-It-Up</h2>
+  <div class="card" id="bank-card">
+    <p style="font-size:.85rem;color:var(--muted);margin-bottom:8px">
+      Read-only snapshot from this week's plan — leftovers and banked extras to build future
+      meals around, soonest-expiring first. Live tracking (Used / Tossed) happens on the home page.
+    </p>
+    <div id="bank"></div>
   </div>
 
   <h2 id="costs-h2">Cost per Meal</h2>
@@ -349,6 +359,7 @@
           <button class="inv-btn" data-act="tossed">🗑 Tossed</button>
         </div>`;
       }).join("") : `<div style="color:var(--muted);font-size:.9rem">Nothing tracked right now — add items below.</div>`;
+      hideBank(); // live tracker is up — the static snapshot would be a stale duplicate
     } catch {
       if (!IS_LOCAL) { remoteMode(); return; }
       $("#inventory").innerHTML = `<div style="color:var(--accent);font-size:.9rem">Server not reachable — start it to see inventory.</div>`;
@@ -371,6 +382,32 @@
     loadInventory();
   });
   loadInventory();
+
+  // On Hand — read-only bank snapshot from week-data.js (shown wherever the live tracker isn't)
+  function daysBadge(useBy, today) {
+    if (!useBy) return `<span class="days green">no date</span>`;
+    const d = Math.ceil((new Date(useBy + "T12:00") - today) / 86400000);
+    const cls = d <= 2 ? "red" : d <= 6 ? "amber" : "green";
+    return `<span class="days ${cls}">${d < 0 ? "past date" : d + "d left"}</span>`;
+  }
+  function hideBank() {
+    ["bank-h2", "bank-card", "nav-bank"].forEach(id => {
+      const el = document.getElementById(id); if (el) el.style.display = "none";
+    });
+  }
+  (function renderBank() {
+    const items = (WEEK.bank || []).slice()
+      .sort((a, b) => (a.useBy || "9999").localeCompare(b.useBy || "9999"));
+    if (!items.length) { hideBank(); return; }
+    const today = new Date();
+    $("#bank").innerHTML = items.map(i => `<div class="inv-row">
+      <span title="${i.location}">${locIcon[i.location] || "🧊"}</span>
+      <div class="inv-main">
+        <div class="inv-name">${i.name}${i.qty ? ` <span style="font-weight:400;color:var(--muted)">· ${i.qty}</span>` : ""}</div>
+        ${i.note ? `<div class="inv-note">${i.note}</div>` : ""}
+      </div>
+      ${daysBadge(i.useBy, today)}</div>`).join("");
+  })();
 
   async function loadHistory() {
     try {

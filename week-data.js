@@ -208,6 +208,18 @@ const WEEK = {
       }
     }
   ],
+  // Read-only "On Hand" snapshot for the public page (no live tracking). Regenerated with
+  // each weekly plan from pantry/inventory.json — sanitized: no staples ledger, no names.
+  bank: [
+    { name: "Cantaloupe (second half, cut)", qty: "~½ melon", location: "fridge", useBy: "2026-07-31", note: "Breakfasts/snacks this week — short clock once cut" },
+    { name: "Organic limes (extras from the 1 lb bag)", qty: "~3–5", location: "fridge", useBy: "2026-08-09", note: "Tacos, drinks, dressings — or juice + freeze in cubes" },
+    { name: "Fresh ginger (partial knob)", qty: "~1 inch", location: "fridge", useBy: "2026-08-20", note: "Freeze it — grates from frozen better than fresh" },
+    { name: "Salsa macha jar (made Monday)", qty: "~1 cup", location: "fridge", useBy: "2026-08-24", note: "Wednesday's steak sauce; keeps weeks — eggs, bowls, nachos, everything" },
+    { name: "Pork chop bags, pre-seasoned (Cowboy Butter) + frozen", qty: "4+ servings", location: "freezer", useBy: "2026-10-22", note: "Monday's protein — drop frozen at 140°F ~12:30, sear at dinner" },
+    { name: "Gulf 50/70 shrimp, chamber-resealed portion (after Tuesday)", qty: "~0.5 lb", location: "freezer", useBy: "2026-10-28", note: "Garlic-butter night or fried-rice add-in — sous vide from frozen" },
+    { name: "Fajita-rubbed chicken breast bags, sealed raw", qty: "2.15 lb (1 breast per bag)", location: "freezer", useBy: "2026-11-26", note: "Zero-prep future dinners — frozen straight into a 150°F bath +1 hr" },
+    { name: "Dried guajillo + árbol chiles (partial bags)", qty: "most of both", location: "pantry", useBy: "2027-07-28", note: "Enchilada sauce, birria, next salsa macha — pantry heat for a year" }
+  ],
   grocery: [
     {
       section: "Meat & Seafood",
