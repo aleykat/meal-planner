@@ -36,7 +36,7 @@ const WEEK = {
         steps: [
           "IN THE CAR (it's July in Texas): the IQF shrimp bag rides home in a cooler bag or wedged against the A/C — it must hit your freezer still fully frozen.",
           "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Frozen garlic bread → FREEZER (rides home in the cooler bag with the shrimp) until Wednesday's bake — it bakes straight from frozen. Everything else is normal.",
-          "SEAL SESSION — Chicken: fajita rub, 1 breast per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr).",
+          "SEAL SESSION — Chicken: fajita rub, 2 breasts per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr). ✓ DONE 7/26.",
           "Chuck: cut into 2 thick slabs (simple knife work — no bones involved), salt + pepper, seal, label, FRIDGE.",
           "Belly: rub with the soy + brown sugar, seal, label, FRIDGE.",
           "Monday's chops: already bagged in your freezer — leave them there until the 12:30 Monday drop.",
@@ -217,7 +217,7 @@ const WEEK = {
     { name: "Salsa macha jar (made Monday)", qty: "~1 cup", location: "fridge", useBy: "2026-08-24", note: "Wednesday's steak sauce; keeps weeks — eggs, bowls, nachos, everything" },
     { name: "Pork chop bags, pre-seasoned (Cowboy Butter) + frozen", qty: "4+ servings", location: "freezer", useBy: "2026-10-22", note: "Monday's protein — drop frozen at 140°F ~12:30, sear at dinner" },
     { name: "Gulf 50/70 shrimp, chamber-resealed portion (after Tuesday)", qty: "~0.5 lb", location: "freezer", useBy: "2026-10-28", note: "Garlic-butter night or fried-rice add-in — sous vide from frozen" },
-    { name: "Fajita-rubbed chicken breast bags, sealed raw", qty: "2.15 lb (1 breast per bag)", location: "freezer", useBy: "2026-11-26", note: "Zero-prep future dinners — frozen straight into a 150°F bath +1 hr" },
+    { name: "Fajita-rubbed chicken breast bags, sealed raw — DONE, in the freezer", qty: "2.15 lb (2 breasts per bag)", location: "freezer", useBy: "2026-11-26", note: "Zero-prep future dinners — frozen straight into a 150°F bath +1 hr" },
     { name: "Dried guajillo + árbol chiles (partial bags)", qty: "most of both", location: "pantry", useBy: "2027-07-28", note: "Enchilada sauce, birria, next salsa macha — pantry heat for a year" }
   ],
   grocery: [
