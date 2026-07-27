@@ -38,7 +38,7 @@ const WEEK = {
           "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Frozen garlic bread → FREEZER (rides home in the cooler bag with the shrimp) until Wednesday's bake — it bakes straight from frozen. Everything else is normal.",
           "SEAL SESSION — Chicken: fajita rub, 2 breasts per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr). ✓ DONE 7/26.",
           "Chuck: cut into 2 thick slabs (simple knife work — no bones involved), salt + pepper, seal, label, FRIDGE. ✓ DONE 7/26.",
-          "Belly: cut into 1.25–1.5″ cubes NOW (easy on raw cold belly; impossible-ish on hot tender cooked belly — they shrink to ~1″ in the bath), toss with the soy + brown sugar so every face gets rub, seal, label, FRIDGE.",
+          "Belly (came as ½″-thick strips): cut the strips crosswise into ~2″ pieces, toss with the soy + brown sugar so every face gets rub, seal, label, FRIDGE.",
           "Monday's chops: already bagged in your freezer — leave them there until the 12:30 Monday drop.",
           "Cleanup: sealer wipe. Done — the week is now four bag-drops and four dinners."
         ]
@@ -180,13 +180,13 @@ const WEEK = {
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Rice cooker"],
       summary:
-        "The ad's boldest cut ($4.99/lb): ~23-hour belly cubed and seared shattering-crisp on the Blackstone, tossed in a soy–brown sugar–garlic–ginger glaze that goes sticky on contact. Rice underneath, sharp quick cucumber salad to cut the richness. Kids: crispy cubes pulled before the glaze (pork candy) — or self-serve. Restaurant food at $3/serving.",
+        "The ad's boldest cut ($4.99/lb): ~23-hour belly pieces seared shattering-crisp on the Blackstone, tossed in a soy–brown sugar–garlic–ginger glaze that goes sticky on contact. Rice underneath, sharp quick cucumber salad to cut the richness. Kids: crispy cubes pulled before the glaze (pork candy) — or self-serve. Restaurant food at $3/serving.",
       links: [
         { label: "Anova — Crispy Pork Belly (sous vide method)", url: "https://recipes.anovaculinary.com/recipe/crispy-pork-belly-4", tag: "primary" },
         { label: "Amazing Food Made Easy — pork belly times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/belly", tag: "alt" },
         { label: "r/sousvide — pork belly threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20belly", tag: "reddit" }
       ],
-      swapNote: "165°F/~23 hr = tender with structure. Cubed raw at the seal (cuts clean cold; smears when hot and tender). Dry HARD before searing — wet belly steams instead of crisping.",
+      swapNote: "Belly came as ½″ strips — cut to 2″ pieces at the seal. 165°F/~23 hr makes them melting-tender; the thin profile sears extra fast. Dry HARD before searing — wet belly steams instead of crisping.",
       recipe: {
         activeTime: "~25 min at dinner",
         cookTime: "belly ~23 hr at 165°F (in since Wednesday after dinner)",
@@ -199,8 +199,8 @@ const WEEK = {
         ],
         steps: [
           "MIDDAY: rice cooker on. Mix the cucumber salad → fridge.",
-          "Pull the cubes (pre-cut at Sunday's seal — they'll be lightly stuck together; they pull apart easily), pat VERY dry (this is the whole game).",
-          "Blackstone on high: cubes fat-side down first, 2–3 min per side until deeply browned and crackling. Kids' share out now — plain crispy cubes on rice.",
+          "Pull the pieces (pre-cut ½″ strip segments from Sunday's seal — lightly stuck together; they pull apart easily), pat VERY dry (this is the whole game).",
+          "Blackstone on high: pieces on their flat faces, ~2 min per side — at ½″ thick they brown FAST, so stay on them. Deeply browned and crackling. Kids' share out now — plain crispy pieces on rice.",
           "Kill the heat to medium. Glaze ingredients onto the griddle over the cubes — bubbles to sticky in ~60 seconds. Toss to coat, off immediately (sugar burns fast).",
           "Bowls: rice, glazed belly, cucumber salad on the side, a thread of salsa macha over if wanted.",
           "Cleanup: griddle scrape while warm (sugar!), rice pot, one bowl, trash the bag."
