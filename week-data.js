@@ -38,7 +38,7 @@ const WEEK = {
           "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Frozen garlic bread → FREEZER (rides home in the cooler bag with the shrimp) until Wednesday's bake — it bakes straight from frozen. Everything else is normal.",
           "SEAL SESSION — Chicken: fajita rub, 2 breasts per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr). ✓ DONE 7/26.",
           "Chuck: cut into 2 thick slabs (simple knife work — no bones involved), salt + pepper, seal, label, FRIDGE. ✓ DONE 7/26.",
-          "Belly: rub with the soy + brown sugar, seal, label, FRIDGE.",
+          "Belly: cut into 1.25–1.5″ cubes NOW (easy on raw cold belly; impossible-ish on hot tender cooked belly — they shrink to ~1″ in the bath), toss with the soy + brown sugar so every face gets rub, seal, label, FRIDGE.",
           "Monday's chops: already bagged in your freezer — leave them there until the 12:30 Monday drop.",
           "Cleanup: sealer wipe. Done — the week is now four bag-drops and four dinners."
         ]
@@ -186,7 +186,7 @@ const WEEK = {
         { label: "Amazing Food Made Easy — pork belly times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/belly", tag: "alt" },
         { label: "r/sousvide — pork belly threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20belly", tag: "reddit" }
       ],
-      swapNote: "165°F/~23 hr = tender with structure for cubing. Dry HARD before searing — wet belly steams instead of crisping.",
+      swapNote: "165°F/~23 hr = tender with structure. Cubed raw at the seal (cuts clean cold; smears when hot and tender). Dry HARD before searing — wet belly steams instead of crisping.",
       recipe: {
         activeTime: "~25 min at dinner",
         cookTime: "belly ~23 hr at 165°F (in since Wednesday after dinner)",
@@ -199,7 +199,7 @@ const WEEK = {
         ],
         steps: [
           "MIDDAY: rice cooker on. Mix the cucumber salad → fridge.",
-          "Pull the belly, pat VERY dry (this is the whole game), cut into 1-inch cubes.",
+          "Pull the cubes (pre-cut at Sunday's seal — they'll be lightly stuck together; they pull apart easily), pat VERY dry (this is the whole game).",
           "Blackstone on high: cubes fat-side down first, 2–3 min per side until deeply browned and crackling. Kids' share out now — plain crispy cubes on rice.",
           "Kill the heat to medium. Glaze ingredients onto the griddle over the cubes — bubbles to sticky in ~60 seconds. Toss to coat, off immediately (sugar burns fast).",
           "Bowls: rice, glazed belly, cucumber salad on the side, a thread of salsa macha over if wanted.",
