@@ -212,7 +212,7 @@ const WEEK = {
   // each weekly plan from pantry/inventory.json — sanitized: no staples ledger, no names.
   bank: [
     { name: "Cantaloupe (second half, cut)", qty: "~½ melon", location: "fridge", useBy: "2026-07-31", note: "Breakfasts/snacks this week — short clock once cut" },
-    { name: "Steamable broccoli florets, unopened bag", qty: "1 × 12 oz", location: "freezer", useBy: "2027-01-27", note: "Bag 2 from Monday — kids weren't fans, so it's slotted for an adult side or fried rice" },
+    { name: "Steamable broccoli florets, unopened bag", qty: "1 × 12 oz", location: "freezer", useBy: "2027-01-27", note: "Bag 2 from Monday — free side for any night, or a fried-rice mix-in" },
     { name: "Organic limes (extras from the 1 lb bag)", qty: "~3–5", location: "fridge", useBy: "2026-08-09", note: "Tacos, drinks, dressings — or juice + freeze in cubes" },
     { name: "Fresh ginger (partial knob)", qty: "~1 inch", location: "fridge", useBy: "2026-08-20", note: "Freeze it — grates from frozen better than fresh" },
     { name: "Salsa macha jar — PENDING (deferred Monday, needs 2 more guajillo bags)", qty: "~1 cup when made", location: "fridge", useBy: "2026-08-24", note: "Make Tue evening or Wed ~5 PM. Wednesday's steak sauce; keeps weeks — eggs, bowls, nachos" },
