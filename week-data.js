@@ -131,10 +131,10 @@ const WEEK = {
     },
     {
       id: "chucksteak",
-      cost: { est: 33.0, servings: 5, note: "GUEST NIGHT (5 adults-worth), RECEIPT-TRUED: 3.36 lb Prime 1 chuck $20.13 + potatoes $10.44 + garlic bread $2.38; served plain — family favorite that way (salsa macha skipped, not enough guajillos) — ~$6.60/serving" },
+      cost: { est: 33.0, servings: 5, note: "GUEST NIGHT (5 adults-worth), RECEIPT-TRUED: 3.36 lb Prime 1 chuck $20.13 + potatoes $10.44 + garlic bread $2.38; served plain — a reliable everyone-likes-it dinner (salsa macha skipped, not enough guajillos) — ~$6.60/serving" },
       nutrition: { serving: "~8 oz sliced chuck 'steak' + crispy potatoes + garlic bread", calories: 1080, protein: 58, carbs: 80, fat: 58 },
       daytime: [
-        "WED daytime: nothing — the chuck rides since Tuesday 5 PM (~24 hr at dinner). Salsa macha skipped this week (guajillo shortage; the chuck is a family favorite plain)",
+        "WED daytime: nothing — the chuck rides since Tuesday 5 PM (~24 hr at dinner). Salsa macha skipped this week (guajillo shortage; plain chuck is a reliable everyone-likes-it dinner)",
         "WED right after dinner (30 sec): bath to 165°F, drop the pork belly bag for Thursday"
       ],
       title: "24-Hour Chuck 'Steak' with Crispy Potatoes & Garlic Bread",
@@ -142,7 +142,7 @@ const WEEK = {
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Air fryer"],
       summary:
-        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: nearly 3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, served plain — the family's favorite way with this cut — three bags of gold potatoes in the air fryer, warm garlic bread for the board. After dinner the belly takes the bath.",
+        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: nearly 3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, served plain — a proven, everyone-likes-it preparation — three bags of gold potatoes in the air fryer, warm garlic bread for the board. After dinner the belly takes the bath.",
       links: [
         { label: "DadCooksDinner — Sous Vide Chuck Steak (24 hours to tenderness)", url: "https://www.dadcooksdinner.com/sous-vide-chuck-steak-recipe/", tag: "primary" },
         { label: "Amazing Food Made Easy — chuck roast times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/chuck-roast", tag: "alt" }
@@ -154,7 +154,7 @@ const WEEK = {
         ingredients: [
           "3.36 lb H-E-B Prime 1 beef chuck roast, 2–3 slabs (in the bath since Tuesday 5 PM)",
           "4.5 lb baby gold potatoes (3 bags), halved",
-          "(salsa macha skipped this week — guajillo shortage; the chuck is great plain)",
+          "(salsa macha skipped this week — guajillo shortage; the chuck holds up plain)",
           "1 pkg H-E-B frozen garlic bread, 16 oz (from the freezer — bakes straight from frozen)",
           "1.5 tbsp canola oil, kosher salt, black pepper"
         ],
