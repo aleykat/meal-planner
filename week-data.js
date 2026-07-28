@@ -38,7 +38,7 @@ const WEEK = {
           "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Frozen garlic bread → FREEZER (rides home in the cooler bag with the shrimp) until Wednesday's bake — it bakes straight from frozen. Everything else is normal.",
           "SEAL SESSION — Chicken: fajita rub, 2 breasts per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr). ✓ DONE 7/26.",
           "Chuck: cut into 2 thick slabs (simple knife work — no bones involved), salt + pepper, seal, label, FRIDGE. ✓ DONE 7/26.",
-          "Belly (came as ½″-thick strips): cut the strips crosswise into ~2″ pieces, toss with the soy + brown sugar so every face gets rub, seal, label, FRIDGE.",
+          "Belly (came as 0.5-inch-thick strips): cut the strips crosswise into ~2-inch pieces, toss with the soy + brown sugar so every face gets rub, seal, label, FRIDGE.",
           "Monday's chops: already bagged in your freezer — leave them there until the 12:30 Monday drop.",
           "Cleanup: sealer wipe. Done — the week is now four bag-drops and four dinners."
         ]
@@ -46,7 +46,7 @@ const WEEK = {
     },
     {
       id: "chops",
-      cost: { est: 4.8, servings: 4, note: "RECEIPT-TRUED: protein is FREE — the already-bagged frozen chops from the freezer bank; broccoli $2.32 actual + ½ cantaloupe + salsa macha from owned staples" },
+      cost: { est: 4.8, servings: 4, note: "RECEIPT-TRUED: protein is FREE — the already-bagged frozen chops from the freezer bank; broccoli $2.32 actual + half cantaloupe + salsa macha from owned staples" },
       nutrition: { serving: "1 large chop (+ optional salsa macha) with broccoli + cantaloupe", calories: 630, protein: 45, carbs: 20, fat: 42 },
       daytime: [
         "MON ~12:30 PM (2 min): bath to 140°F, drop your frozen chops bag straight from the freezer — from-frozen adds ~1 hr, so ~5 hr to dinner is right in the zone",
@@ -71,7 +71,7 @@ const WEEK = {
           "your already-bagged frozen pork chops, pre-seasoned with Kinder's Cowboy Butter (in the bath since ~12:30, straight from the freezer)",
           "DOUBLE SALSA MACHA: guajillos + 4 chiles de árbol (stemmed, seeded, snipped small with scissors), 6 garlic cloves (sliced thin), 1 cup canola or olive oil, 1 tsp kosher salt, 1 tsp oregano (crushed between fingers), splash of red wine vinegar. ⚠ COUNT THE GUAJILLO BAG FIRST (1.5 oz ≈ 6–8 chiles): Tuesday's diabla needs 4, so use whatever's left over here — 4 guajillos + 2 extra árbol makes a great (hotter) macha if the bag runs short",
           "2 bags H-E-B steamable broccoli florets",
-          "½ cantaloupe ($1.97 feature), cut into wedges",
+          "half the cantaloupe ($1.97 feature), cut into wedges",
           "1 tbsp canola oil, kosher salt"
         ],
         steps: [
@@ -87,7 +87,7 @@ const WEEK = {
     {
       id: "diabla",
       cost: { est: 15.1, servings: 4, note: "RECEIPT-TRUED: 1.5 lb of the 2 lb Gulf 50/70 P&D shrimp ($11.96 consumed; ~$4 banks) + dried-chile sauce, romas, limes" },
-      nutrition: { serving: "~6 oz shrimp in diabla sauce over 1½ cups rice", calories: 520, protein: 30, carbs: 68, fat: 12 },
+      nutrition: { serving: "~6 oz shrimp in diabla sauce over 1.5 cups rice", calories: 520, protein: 30, carbs: 68, fat: 12 },
       daytime: [
         "TUE morning (2 min): pour ~1.5 lb shrimp into a fridge bowl to thaw; chamber-reseal the rest → freezer",
         "TUE ~4:30 PM (2 min): rice cooker on",
@@ -112,8 +112,8 @@ const WEEK = {
           "~1.5 lb from the two 1 lb frozen Gulf 50/70 P&D bags (thawed today — smaller count than jumbo, so more pieces per plate; same weight, same 135°F/30 min)",
           "4 dried guajillo chiles (saved from Monday — the Fiesta 'Chili Cascavel (Guajillo)' bag) + 2–3 chiles de árbol (stemmed, seeds shaken out)",
           "2 Roma tomatoes, rough-chopped",
-          "½ yellow onion + 3 garlic cloves",
-          "1 tbsp olive oil, ½ tbsp canola (bag), kosher salt",
+          "half the yellow onion + 3 garlic cloves",
+          "1 tbsp olive oil, 0.5 tbsp canola (bag), kosher salt",
           "2 cups (dry) jasmine rice — rice cooker, started midday",
           "lime to finish"
         ],
@@ -121,7 +121,7 @@ const WEEK = {
           "TUESDAY MORNING: pour 1 full bag + half the second into a fridge bowl (~1.5 lb) — thawed by dinner. Forgot? Cold-water bath 20–30 min at 5 PM. CHAMBER-RESEAL the remaining ~0.5 lb now → freezer bank.",
           "~4:30 PM: rice cooker on. 5 PM: bath to 135°F; seal the thawed shrimp flat with the canola and a pinch of salt, then drop BOTH bags — shrimp (30 min; holds an hour) and the chuck bag sealed Sunday (stays in ~24 hr).",
           "Soak the stemmed chiles in just-boiled water 10 min (a mug works).",
-          "NutriBullet: soaked chiles, tomatoes, onion, garlic, ½ tsp salt, splash of soak water. Blend smooth — this is the whole sauce.",
+          "NutriBullet: soaked chiles, tomatoes, onion, garlic, 0.5 tsp salt, splash of soak water. Blend smooth — this is the whole sauce.",
           "Skillet, olive oil, medium-high: pour in the sauce — it should sizzle. Simmer 5 min until it darkens a shade. Salt to taste.",
           "Open the shrimp bag. KID CHECKPOINT: their shrimp go straight from bag to plate — perfectly cooked, sauce-free. Or they self-serve; either way no second dish.",
           "Fold the rest of the shrimp (and bag juices) into the sauce — 60 seconds to coat and warm, no more.",
@@ -156,14 +156,14 @@ const WEEK = {
           "4.5 lb baby gold potatoes (3 bags), halved",
           "the salsa macha jar (made Tuesday evening, or Wednesday ~5 PM — needs the restocked guajillos: 8 guajillos + 4 árbol for the double batch)",
           "1 pkg H-E-B frozen garlic bread, 16 oz (from the freezer — bakes straight from frozen)",
-          "1½ tbsp canola oil, kosher salt, black pepper"
+          "1.5 tbsp canola oil, kosher salt, black pepper"
         ],
         steps: [
           "Oven per the garlic bread package (~425°F, ~10–12 min, straight from the freezer — no thaw). The air fryer has the potatoes, so the oven was free anyway.",
           "Potatoes: toss halved golds with oil and salt; air fryer 400°F ~20 min, shake at 10 — three bags means TWO batches (first batch holds fine in a low oven with the bread).",
           "Pull the chuck slabs, pat VERY dry (wet meat won't crust). Light salt.",
           "Blackstone on maximum: 90 sec per side plus the fat edges — dark crust fast; the inside is already perfect.",
-          "Rest 5 min under foil. Slice against the grain, ½-inch planks.",
+          "Rest 5 min under foil. Slice against the grain, 0.5-inch planks.",
           "Kids' portions plain; salsa macha spooned over the rest (stir the jar first — the good stuff settles). Warm bread sliced thick around the board — steak juices + macha oil are what it's for.",
           "AFTER DINNER (30 sec): bath to 165°F, drop the belly bag (sealed Sunday) — ~23 hr to Thursday dinner.",
           "Cleanup: griddle scrape, air fryer basket, trash the bag."
@@ -173,7 +173,7 @@ const WEEK = {
     {
       id: "porkbelly",
       cost: { est: 13.3, servings: 4, note: "RECEIPT-TRUED: 2.27 lb pork belly @ $4.99/lb = $11.34 actual + cucumber salad; glaze + rice from staples" },
-      nutrition: { serving: "1 bowl: ~5 oz glazed crispy belly over 1½ cups rice + cucumber salad", calories: 850, protein: 25, carbs: 70, fat: 50 },
+      nutrition: { serving: "1 bowl: ~5 oz glazed crispy belly over 1.5 cups rice + cucumber salad", calories: 850, protein: 25, carbs: 70, fat: 50 },
       daytime: ["THU ~12:30 PM (5 min): rice cooker on + mix the cucumber salad — it improves all afternoon"],
       title: "Crispy Glazed Pork Belly Bowls with Cucumber Salad",
       slot: "Dinner 4 · Thu Jul 30",
@@ -186,7 +186,7 @@ const WEEK = {
         { label: "Amazing Food Made Easy — pork belly times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/belly", tag: "alt" },
         { label: "r/sousvide — pork belly threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20belly", tag: "reddit" }
       ],
-      swapNote: "Belly came as ½″ strips — cut to 2″ pieces at the seal. 165°F/~23 hr makes them melting-tender; the thin profile sears extra fast. Dry HARD before searing — wet belly steams instead of crisping.",
+      swapNote: "Belly came as 0.5-inch strips — cut to 2-inch pieces at the seal. 165°F/~23 hr makes them melting-tender; the thin profile sears extra fast. Dry HARD before searing — wet belly steams instead of crisping.",
       recipe: {
         activeTime: "~25 min at dinner",
         cookTime: "belly ~23 hr at 165°F (in since Wednesday after dinner)",
@@ -199,8 +199,8 @@ const WEEK = {
         ],
         steps: [
           "MIDDAY: rice cooker on. Mix the cucumber salad → fridge.",
-          "Pull the pieces (pre-cut ½″ strip segments from Sunday's seal — lightly stuck together; they pull apart easily), pat VERY dry (this is the whole game).",
-          "Blackstone on high: pieces on their flat faces, ~2 min per side — at ½″ thick they brown FAST, so stay on them. Deeply browned and crackling. Kids' share out now — plain crispy pieces on rice.",
+          "Pull the pieces (pre-cut 0.5-inch strip segments from Sunday's seal — lightly stuck together; they pull apart easily), pat VERY dry (this is the whole game).",
+          "Blackstone on high: pieces on their flat faces, ~2 min per side — at 0.5-inch thick they brown FAST, so stay on them. Deeply browned and crackling. Kids' share out now — plain crispy pieces on rice.",
           "Kill the heat to medium. Glaze ingredients onto the griddle over the cubes — bubbles to sticky in ~60 seconds. Toss to coat, off immediately (sugar burns fast).",
           "Bowls: rice, glazed belly, cucumber salad on the side, a thread of salsa macha over if wanted.",
           "Cleanup: griddle scrape while warm (sugar!), rice pot, one bowl, trash the bag."
@@ -211,7 +211,7 @@ const WEEK = {
   // Read-only "On Hand" snapshot for the public page (no live tracking). Regenerated with
   // each weekly plan from pantry/inventory.json — sanitized: no staples ledger, no names.
   bank: [
-    { name: "Cantaloupe (second half, cut)", qty: "~½ melon", location: "fridge", useBy: "2026-07-31", note: "Breakfasts/snacks this week — short clock once cut" },
+    { name: "Cantaloupe (second half, cut)", qty: "~half melon", location: "fridge", useBy: "2026-07-31", note: "Breakfasts/snacks this week — short clock once cut" },
     { name: "Steamable broccoli florets, unopened bag", qty: "1 × 12 oz", location: "freezer", useBy: "2027-01-27", note: "Bag 2 from Monday — free side for any night, or a fried-rice mix-in" },
     { name: "Organic limes (extras from the 1 lb bag)", qty: "~3–5", location: "fridge", useBy: "2026-08-09", note: "Tacos, drinks, dressings — or juice + freeze in cubes" },
     { name: "Fresh ginger (partial knob)", qty: "~1 inch", location: "fridge", useBy: "2026-08-20", note: "Freeze it — grates from frozen better than fresh" },
