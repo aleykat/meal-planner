@@ -131,18 +131,18 @@ const WEEK = {
     },
     {
       id: "chucksteak",
-      cost: { est: 33.0, servings: 5, note: "GUEST NIGHT (5 adults-worth), RECEIPT-TRUED: 3.36 lb Prime 1 chuck $20.13 + potatoes $10.44 + garlic bread $2.38; salsa macha from pantry staples — ~$6.60/serving" },
-      nutrition: { serving: "~8 oz sliced chuck 'steak' + salsa macha + crispy potatoes + garlic bread", calories: 1100, protein: 58, carbs: 80, fat: 60 },
+      cost: { est: 33.0, servings: 5, note: "GUEST NIGHT (5 adults-worth), RECEIPT-TRUED: 3.36 lb Prime 1 chuck $20.13 + potatoes $10.44 + garlic bread $2.38; served plain — family favorite that way (salsa macha skipped, not enough guajillos) — ~$6.60/serving" },
+      nutrition: { serving: "~8 oz sliced chuck 'steak' + crispy potatoes + garlic bread", calories: 1080, protein: 58, carbs: 80, fat: 58 },
       daytime: [
-        "WED daytime: chuck rides since Tuesday 5 PM (~24 hr at dinner). If the salsa macha didn't happen Tuesday evening: make it ~5 PM (15 min — needs the restocked guajillos)",
+        "WED daytime: nothing — the chuck rides since Tuesday 5 PM (~24 hr at dinner). Salsa macha skipped this week (guajillo shortage; the chuck is a family favorite plain)",
         "WED right after dinner (30 sec): bath to 165°F, drop the pork belly bag for Thursday"
       ],
-      title: "24-Hour Chuck 'Steak' with Salsa Macha, Crispy Potatoes & Garlic Bread",
+      title: "24-Hour Chuck 'Steak' with Crispy Potatoes & Garlic Bread",
       slot: "Dinner 3 · Wed Jul 29",
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Air fryer"],
       summary:
-        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: nearly 3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, the salsa macha (made Tuesday evening — deferred from Monday for a pepper restock) spooned over the slices, three bags of gold potatoes in the air fryer, warm garlic bread for the board. Kids: sauce on the side — it's steak. After dinner the belly takes the bath.",
+        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: nearly 3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, served plain — the family's favorite way with this cut — three bags of gold potatoes in the air fryer, warm garlic bread for the board. After dinner the belly takes the bath.",
       links: [
         { label: "DadCooksDinner — Sous Vide Chuck Steak (24 hours to tenderness)", url: "https://www.dadcooksdinner.com/sous-vide-chuck-steak-recipe/", tag: "primary" },
         { label: "Amazing Food Made Easy — chuck roast times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/chuck-roast", tag: "alt" }
@@ -154,7 +154,7 @@ const WEEK = {
         ingredients: [
           "3.36 lb H-E-B Prime 1 beef chuck roast, 2–3 slabs (in the bath since Tuesday 5 PM)",
           "4.5 lb baby gold potatoes (3 bags), halved",
-          "the salsa macha jar (made Tuesday evening, or Wednesday ~5 PM — needs the restocked guajillos: 8 guajillos + 4 árbol for the double batch)",
+          "(salsa macha skipped this week — guajillo shortage; the chuck is great plain)",
           "1 pkg H-E-B frozen garlic bread, 16 oz (from the freezer — bakes straight from frozen)",
           "1.5 tbsp canola oil, kosher salt, black pepper"
         ],
@@ -164,7 +164,7 @@ const WEEK = {
           "Pull the chuck slabs, pat VERY dry (wet meat won't crust). Light salt.",
           "Blackstone on maximum: 90 sec per side plus the fat edges — dark crust fast; the inside is already perfect.",
           "Rest 5 min under foil. Slice against the grain, 0.5-inch planks.",
-          "Kids' portions plain; salsa macha spooned over the rest (stir the jar first — the good stuff settles). Warm bread sliced thick around the board — steak juices + macha oil are what it's for.",
+          "Warm bread sliced thick around the board — steak juices are what it's for.",
           "AFTER DINNER (30 sec): bath to 165°F, drop the belly bag (sealed Sunday) — ~23 hr to Thursday dinner.",
           "Cleanup: griddle scrape, air fryer basket, trash the bag."
         ]
@@ -195,14 +195,14 @@ const WEEK = {
           "GLAZE: 3 tbsp soy sauce + 2 tbsp brown sugar + 2 garlic cloves (minced) + 1 tbsp grated ginger + splash of bag juices",
           "CUCUMBER SALAD: 2 cucumbers (thin half-moons), 2 tbsp red wine vinegar, 1 tsp brown sugar, pinch of salt, pinch of crushed red pepper",
           "2 cups (dry) jasmine rice — rice cooker, started midday",
-          "a small spoon of the salsa macha jar to finish (optional — it's great on the belly too)"
+          "(salsa macha finisher dropped — not made this week)"
         ],
         steps: [
           "MIDDAY: rice cooker on. Mix the cucumber salad → fridge.",
           "Pull the pieces (pre-cut 0.5-inch strip segments from Sunday's seal — lightly stuck together; they pull apart easily), pat VERY dry (this is the whole game).",
           "Blackstone on high: pieces on their flat faces, ~2 min per side — at 0.5-inch thick they brown FAST, so stay on them. Deeply browned and crackling. Kids' share out now — plain crispy pieces on rice.",
           "Kill the heat to medium. Glaze ingredients onto the griddle over the cubes — bubbles to sticky in ~60 seconds. Toss to coat, off immediately (sugar burns fast).",
-          "Bowls: rice, glazed belly, cucumber salad on the side, a thread of salsa macha over if wanted.",
+          "Bowls: rice, glazed belly, cucumber salad on the side.",
           "Cleanup: griddle scrape while warm (sugar!), rice pot, one bowl, trash the bag."
         ]
       }
@@ -215,7 +215,6 @@ const WEEK = {
     { name: "Steamable broccoli florets, unopened bag", qty: "1 × 12 oz", location: "freezer", useBy: "2027-01-27", note: "Bag 2 from Monday — free side for any night, or a fried-rice mix-in" },
     { name: "Organic limes (extras from the 1 lb bag)", qty: "~3–5", location: "fridge", useBy: "2026-08-09", note: "Tacos, drinks, dressings — or juice + freeze in cubes" },
     { name: "Fresh ginger (partial knob)", qty: "~1 inch", location: "fridge", useBy: "2026-08-20", note: "Freeze it — grates from frozen better than fresh" },
-    { name: "Salsa macha jar — PENDING (deferred Monday, needs 2 more guajillo bags)", qty: "~1 cup when made", location: "fridge", useBy: "2026-08-24", note: "Make Tue evening or Wed ~5 PM. Wednesday's steak sauce; keeps weeks — eggs, bowls, nachos" },
     { name: "Pork chop bags, pre-seasoned (Cowboy Butter) + frozen", qty: "4+ servings", location: "freezer", useBy: "2026-10-22", note: "Monday's protein — drop frozen at 140°F ~12:30, sear at dinner" },
     { name: "Gulf 50/70 shrimp, chamber-resealed portion (after Tuesday)", qty: "~0.5 lb", location: "freezer", useBy: "2026-10-28", note: "Garlic-butter night or fried-rice add-in — sous vide from frozen" },
     { name: "Fajita-rubbed chicken breast bags, sealed raw — DONE, in the freezer", qty: "2.15 lb (2 breasts per bag)", location: "freezer", useBy: "2026-11-26", note: "Zero-prep future dinners — frozen straight into a 150°F bath +1 hr" },
