@@ -217,7 +217,8 @@ const WEEK = {
     { name: "Fajita-rubbed chicken breast bags, sealed raw", qty: "2.15 lb (2 per bag)", location: "freezer", useBy: "2026-11-26", note: "MONDAY'S PROTEIN — both bags drop frozen at 150°F ~3:30" },
     { name: "Gulf 50/70 shrimp, chamber-resealed", qty: "~0.5 lb", location: "freezer", useBy: "2026-10-28", note: "WEDNESDAY'S PROTEIN — fried rice; freezer → fridge Wednesday morning" },
     { name: "Steamable broccoli florets", qty: "1 x 12 oz bag", location: "freezer", useBy: "2027-01-27", note: "Wednesday's fried rice vegetable — planned in" },
-    { name: "Dried chiles", qty: "~2-4 guajillos + most of the arbol bag", location: "pantry", useBy: "2027-07-28", note: "Thursday's salsa uses 2 guajillos + 1-2 arbol; the 3-bag restock on this week's list covers salsa macha and the next diabla" }
+    { name: "Dried chiles", qty: "~2-4 guajillos + most of the arbol bag", location: "pantry", useBy: "2027-07-28", note: "Thursday's salsa uses 2 guajillos + 1-2 arbol; the 3-bag restock on this week's list covers salsa macha and the next diabla" },
+    { name: "H-E-B Breaded Shrimp (Meal Deal anchor, arriving Sunday)", qty: "2 boxes, 10-14 oz", location: "freezer", useBy: "2027-02-02", note: "Assigned: shrimp po'boy night in a future week — air fryer + rolls + quick remoulade + shredded cabbage" }
   ],
   grocery: [
     {
@@ -254,6 +255,16 @@ const WEEK = {
       items: [
         { name: "H-E-B Bakery Flour Tortillas, 10 ct (or Guerrero if the case is out)", qty: "1 pack — Monday (day-1 fresh ✓)", est: 3.0 },
         { name: "Corn tortillas, 20-30 ct (Mi Tienda or La Ranchera style)", qty: "1 pack — Thursday (shelf-stable, day-5 safe ✓)", est: 2.5 }
+      ]
+    },
+    {
+      section: "Meal Deal (CLIPPED in app — anchor + 4 free items ring up together)",
+      items: [
+        { name: "H-E-B Breaded Shrimp, 10-14 oz — MEAL DEAL ANCHOR, buy 2 (future po'boy night base, keeps frozen)", qty: "2 boxes", est: 12.0 },
+        { name: "FREE: Hill Country Fare Cookie Bears 6-ct (dessert rule: free-with-purchase ✓)", qty: "1", est: 0.0 },
+        { name: "FREE: Clorox Disinfecting Wipes, 35 ct", qty: "1", est: 0.0 },
+        { name: "FREE: H-E-B Macaroni & Cheese Dinner (→ kid stash)", qty: "1", est: 0.0 },
+        { name: "FREE: H-E-B Green Beans, 12 oz bag", qty: "1", est: 0.0 }
       ]
     },
     {
