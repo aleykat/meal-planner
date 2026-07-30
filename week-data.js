@@ -25,14 +25,14 @@ const WEEK = {
         activeTime: "~20 min",
         cookTime: "none today — first bath run is Monday 3:30",
         ingredients: [
-          "~4 lb HCF boneless skinless split chicken breast ($1.97/lb — the banking deal)",
+          "2 packs HCF boneless skinless split chicken breast (~5.6 lb total, $1.97/lb verified — the banking deal)",
           "~3.5 lb pork butt country style ribs ($2.29/lb — Thursday's carnitas)",
           "rubs from the pantry: fajita seasoning, Kinder's Cowboy Butter, NEW Fiesta cumin, oregano, kosher salt + pepper",
           "2 garlic cloves (banked heads) + 1 tangelo"
         ],
         steps: [
           "PUT-AWAY, the ones that matter: peaches → COUNTER until ripe (Tuesday's). Roma tomatoes → COUNTER, never the fridge. Corn → fridge in husks. Flour tortillas → counter sealed (Monday); corn tortillas → pantry (Thursday, shelf-stable). Tangelos → counter bowl. Everything else is normal.",
-          "SEAL SESSION 1 — Chicken bank, 3 bags with 3 DIFFERENT jobs (~1.3 lb each): bag 1 = fajita rub (proven), bag 2 = Kinder's Cowboy Butter (proven on the chops), bag 3 = plain salt + pepper — the wild card that takes ANY direction at cook time (Stubb's BBQ glaze, lemon butter, parm crust, soy-ginger). Seal, label each with its rub, FREEZE. Three future dinners at $2.60 each, no two alike.",
+          "SEAL SESSION 1 — Chicken bank, 4 bags with 4 DIFFERENT jobs (2 packs = ~5.6 lb, ~1.4 lb per bag): bag 1 = fajita rub (proven), bag 2 = Kinder's Cowboy Butter (proven on the chops), bag 3 = plain salt + pepper (the wild card — Stubb's glaze, lemon butter, parm crust at cook time), bag 4 = soy-ginger (2 tbsp soy + 1 tbsp brown sugar + grated ginger — all owned). Seal, label each with its rub, FREEZE. Four future dinners at ~$2.75 each, no two alike.",
           "SEAL SESSION 2 — Thursday's carnitas: rub the rib strips all over with 1 tbsp cumin + 1 tsp oregano (crushed) + 1.5 tsp kosher salt + black pepper, drop in 2 sliced garlic cloves, squeeze in the juice of 1 tangelo (peel strips in too). Seal flat, label, FREEZE — they're cooked day 4, so the shelf-life rule says freeze; the bag drops frozen into Wednesday night's bath.",
           "Cleanup: sealer wipe. Done."
         ]
@@ -225,15 +225,15 @@ const WEEK = {
       section: "Meat & Seafood",
       items: [
         { name: "H-E-B Simply Seasoned BBQ Boneless Pork Loin Chops (ad item @ $2.99/lb, 33% off)", qty: "~2.5 lb — Tuesday, pre-seasoned", est: 7.5 },
-        { name: "H-E-B Pork Butt Country Style Ribs (ad item @ $2.29/lb) — Thursday's CARNITAS (boneless butt strips, zero bone work; Boston butt @ $1.47/lb is the knife-work-optional cheaper route)", qty: "~3.5 lb", est: 8.0 },
-        { name: "Hill Country Fare Boneless Skinless Split Chicken Breast (ad item @ $1.97/lb, 34% OFF — the freezer-banking trigger)", qty: "~4 lb — NOT this week's dinners: 3 bags, 3 preps, Sunday", est: 7.9 }
+        { name: "H-E-B Pork Butt Country Style Ribs (ad @ $2.29/lb — online shows $2.72/lb Texas pack; trust the shelf tag) — Thursday's CARNITAS", qty: "~3.5 lb", est: 8.5 },
+        { name: "Hill Country Fare Boneless Skinless Split Chicken Breast — $1.97/lb VERIFIED, packs avg 2.79 lb ($5.50/pack)", qty: "2 packs (~5.6 lb, $11) — NOT this week's dinners: 4 bags, 4 preps, Sunday", est: 11.0 }
       ]
     },
     {
       section: "Produce",
       items: [
-        { name: "Bell peppers, mixed colors", qty: "3 — Monday's fajitas", est: 3.6 },
-        { name: "Corn on the cob", qty: "5 ears — Tuesday", est: 3.0 },
+        { name: "Bell peppers — 1 green ($0.76) + 2 color ($1.53 ea), prices VERIFIED", qty: "3 — Monday's fajitas", est: 3.8 },
+        { name: "H-E-B Sweet Corn on the Cob, 4 ct — $3.44 VERIFIED", qty: "1 pack (1 ear each) — Tuesday", est: 3.4 },
         { name: "Yellow peaches (ad item @ $1.47/lb)", qty: "~2 lb, firm-ripe — Tuesday's fruit side", est: 3.0 },
         { name: "Green onions", qty: "1 bunch — Wednesday's fried rice", est: 1.0 },
         { name: "Roma tomatoes", qty: "2 — Thursday's salsa", est: 0.8 },
@@ -245,22 +245,22 @@ const WEEK = {
     {
       section: "Dairy & Eggs",
       items: [
-        { name: "H-E-B Grade A Large Eggs, dozen — STAPLE first-buy (fried rice now, breakfasts after)", qty: "1 dozen", est: 3.5 },
-        { name: "H-E-B Colby Jack block, 8 oz (grate at home — cheaper than pre-shredded)", qty: "1 block — fajitas Monday, kid quesadillas Thursday", est: 4.0 },
+        { name: "H-E-B Grade AA Cage Free Large Brown Eggs, 12 ct — $2.79 VERIFIED (price cut) — STAPLE first-buy", qty: "1 dozen", est: 2.8 },
+        { name: "H-E-B Colby & Monterey Jack, 8 oz block — $3.13 VERIFIED (grate at home)", qty: "1 block — fajitas Monday, kid quesadillas Thursday", est: 3.1 },
         { name: "H-E-B Sour Cream, 16 oz", qty: "1 — fajitas", est: 2.5 }
       ]
     },
     {
       section: "Tortillas & Bakery",
       items: [
-        { name: "H-E-B Bakery Flour Tortillas, 10 ct (or Guerrero if the case is out)", qty: "1 pack — Monday (day-1 fresh ✓)", est: 3.0 },
+        { name: "H-E-B Bakery Flour Tortillas, 10 ct — $2.08 VERIFIED (price cut; the Butter version is $2.59 if it tempts)", qty: "1 pack — Monday (day-1 fresh ✓)", est: 2.1 },
         { name: "Corn tortillas, 20-30 ct (Mi Tienda or La Ranchera style)", qty: "1 pack — Thursday (shelf-stable, day-5 safe ✓)", est: 2.5 }
       ]
     },
     {
       section: "Meal Deal (CLIPPED in app — anchor + 4 free items ring up together)",
       items: [
-        { name: "H-E-B Breaded Shrimp, 10-14 oz — MEAL DEAL ANCHOR, buy 2 (future po'boy night base, keeps frozen)", qty: "2 boxes", est: 12.0 },
+        { name: "H-E-B Frozen Breaded Wild Popcorn Shrimp, 14 oz — $7.32 each VERIFIED — MEAL DEAL ANCHOR, buy 2 (po'boy night base, waiting on the ban lift)", qty: "2 boxes", est: 14.6 },
         { name: "FREE: Hill Country Fare Cookie Bears 6-ct (dessert rule: free-with-purchase ✓)", qty: "1", est: 0.0 },
         { name: "FREE: Clorox Disinfecting Wipes, 35 ct", qty: "1", est: 0.0 },
         { name: "FREE: H-E-B Macaroni & Cheese Dinner (→ kid stash)", qty: "1", est: 0.0 },
@@ -270,9 +270,9 @@ const WEEK = {
     {
       section: "Staples Stock-Up (already owned, NOT on the list: jasmine rice, fajita seasoning, soy, red wine vinegar, crushed red pepper, oregano, both oils, Kerrygold, brown sugar, kosher salt, pepper grinder, mustard)",
       items: [
-        { name: "Kadoya Toasted Sesame Oil, 5.5 oz — STAPLE INVESTMENT (premium-staples rule names this exact bottle; makes Wednesday's fried rice and every one after it)", qty: "1 bottle", est: 5.5 },
-        { name: "Bolner's Fiesta Ground Cumin — STAPLE first-buy (Thursday's carnitas + all future Mexican weeks)", qty: "1 shaker", est: 2.5 },
-        { name: "Stubb's Original Bar-B-Q Sauce, 18 oz — STAPLE INVESTMENT (no slot this week; unlocks the S&P wild-card chicken bag's BBQ direction + months ahead)", qty: "1 bottle", est: 4.5 },
+        { name: "Kadoya Pure Sesame Oil, 5.5 oz — $5.23 VERIFIED — STAPLE INVESTMENT (premium-staples rule names this exact bottle)", qty: "1 bottle", est: 5.2 },
+        { name: "Bolner's Fiesta Ground Comino (cumin), 3.5 oz — $3.65 VERIFIED — STAPLE first-buy (carnitas Thursday + all future Mexican weeks)", qty: "1 shaker", est: 3.7 },
+        { name: "Stubb's Original Bar-B-Q Sauce, 36 oz — $5.53 VERIFIED (half the per-oz of the 18 oz — premium-staples math says big bottle)", qty: "1 bottle", est: 5.5 },
         { name: "Fiesta 'Chili Cascavel (Guajillo)' — RESTOCK x3 (label quirk: these ARE guajillos; $2.16 each receipt-learned)", qty: "3 x 1.5 oz bags — Thursday's salsa now; salsa macha + next diabla ahead", est: 6.5 }
       ]
     }
