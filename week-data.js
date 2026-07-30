@@ -215,7 +215,8 @@ const WEEK = {
     { name: "Steamable broccoli florets, unopened bag", qty: "1 × 12 oz", location: "freezer", useBy: "2027-01-27", note: "Bag 2 from Monday — free side for any night, or a fried-rice mix-in" },
     { name: "Organic limes (extras from the 1 lb bag)", qty: "~3–5", location: "fridge", useBy: "2026-08-09", note: "Tacos, drinks, dressings — or juice + freeze in cubes" },
     { name: "Fresh ginger (partial knob)", qty: "~1 inch", location: "fridge", useBy: "2026-08-20", note: "Freeze it — grates from frozen better than fresh" },
-    { name: "Pork chop bags, pre-seasoned (Cowboy Butter) + frozen", qty: "4+ servings", location: "freezer", useBy: "2026-10-22", note: "Monday's protein — drop frozen at 140°F ~12:30, sear at dinner" },
+    { name: "Jumbo yellow onion, whole", qty: "1 (1.72 lb)", location: "pantry", useBy: "2026-08-26", note: "Accidentally skipped in the diabla (which was a hit anyway) — free aromatics for next week" },
+    { name: "Bulk garlic", qty: "~1.5 heads", location: "pantry", useBy: "2026-09-26", note: "Keeps for months — free aromatics" },
     { name: "Gulf 50/70 shrimp, chamber-resealed portion (after Tuesday)", qty: "~0.5 lb", location: "freezer", useBy: "2026-10-28", note: "Garlic-butter night or fried-rice add-in — sous vide from frozen" },
     { name: "Fajita-rubbed chicken breast bags, sealed raw — DONE, in the freezer", qty: "2.15 lb (2 breasts per bag)", location: "freezer", useBy: "2026-11-26", note: "Zero-prep future dinners — frozen straight into a 150°F bath +1 hr" },
     { name: "Dried guajillo + árbol chiles (partial bags)", qty: "most of both", location: "pantry", useBy: "2027-07-28", note: "Enchilada sauce, birria, next salsa macha — pantry heat for a year" }
