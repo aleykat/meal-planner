@@ -250,7 +250,7 @@ const WEEK = {
       items: [
         { name: "H-E-B Grade AA Cage Free Large Brown Eggs, 12 ct — $2.66 IN-STORE VERIFIED (price cut) — STAPLE first-buy", qty: "1 dozen", est: 2.7, aisle: "Dairy right wall" },
         { name: "H-E-B Colby & Monterey Jack, 8 oz block — $2.98 IN-STORE VERIFIED (grate at home)", qty: "1 block — fajitas Monday, kid quesadillas Thursday", est: 3.0, aisle: "Meat Mkt back wall (cheese case)" },
-        { name: "H-E-B Regular Sour Cream, 16 oz — $2.40 IN-STORE VERIFIED", qty: "1 — fajitas", est: 2.4, aisle: "Dairy back wall" }
+        { name: "Daisy Squeeze Sour Cream, 14 oz — $2.94 IN-STORE VERIFIED (squeeze format preferred for table service)", qty: "1 — fajita toppings bar", est: 2.9, aisle: "Dairy" }
       ]
     },
     {
