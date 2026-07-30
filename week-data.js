@@ -167,7 +167,7 @@ const WEEK = {
     },
     {
       id: "carnitas",
-      cost: { est: 15.6, servings: 5, note: "~3.5 lb country-style ribs @ $2.29/lb (boneless butt strips = carnitas without the bone work) + corn tortillas, quick guajillo salsa, white onion, limes, tangelos. Kids' quesadilla cheese carries over from Monday's block" },
+      cost: { est: 15.6, servings: 5, note: "~3.5 lb country-style ribs @ $2.29/lb (boneless butt strips = carnitas without the bone work) + corn tortillas, quick guajillo salsa, white onion, limes, tangelos, FREE refried beans (Combo Loco). Kids' quesadilla cheese carries over from Monday's block" },
       nutrition: { serving: "3 tacos (crispy carnitas, salsa, onion) + tangelo", calories: 690, protein: 40, carbs: 58, fat: 34 },
       daytime: ["THU ~12:30 PM (10 min): quick guajillo-arbol salsa (fully cooked — ban-safe) → fridge jar. Carnitas ride since last night — nothing else"],
       title: "Blackstone Carnitas Tacos with Guajillo Salsa",
@@ -189,6 +189,7 @@ const WEEK = {
           "SALSA (midday): 2 guajillos + 1-2 arbol (stemmed, seeded), 2 roma tomatoes, 1 garlic clove, 0.25 tsp salt — soak chiles 10 min in just-boiled water, blend all with a splash of soak water, simmer 5 min in 1 tsp oil until darkened. Jar → fridge",
           "12-16 corn tortillas",
           "1 white onion: half in thick slabs for charring, half diced raw for the table",
+          "Mi Tienda refried beans, 17.6 oz (the Combo Loco freebie) — warmed in a small pot with a splash of water",
           "3 limes in wedges + 4-5 tangelos on the side",
           "kids: leftover colby jack from Monday's block"
         ],
@@ -200,7 +201,8 @@ const WEEK = {
           "Splash the meat with a few spoons of bag juices right at the end — steam + glaze in one move.",
           "Tortillas: 20 seconds per side on the griddle edge, stack in a towel.",
           "KID CHECKPOINT: crispy plain carnitas out first — tacos or quesadillas with Monday's cheese on the cool corner. No second dish.",
-          "Table: carnitas, warm tortillas, salsa jar, charred + raw onion, lime wedges, tangelos. Build your own.",
+          "Warm the refried beans in a small pot (splash of water, medium-low, stir) while the meat crisps — free side from the Combo Loco.",
+          "Table: carnitas, warm tortillas, beans, salsa jar, charred + raw onion, lime wedges, tangelos. Build your own.",
           "Cleanup: griddle scrape while warm, one bowl, trash the bag. Leftover carnitas reseal for Friday — they reheat crispy."
         ]
       }
@@ -224,7 +226,7 @@ const WEEK = {
     {
       section: "Meat & Seafood",
       items: [
-        { name: "H-E-B Simply Seasoned BBQ Boneless Pork Loin Chops (ad item @ $2.99/lb, 33% off)", qty: "~2.5 lb — Tuesday, pre-seasoned", est: 7.5 },
+        { name: "H-E-B Simply Seasoned BBQ Boneless Pork Loin Chops (ad item @ $2.99/lb, 33% off)", qty: "2 PACKAGES (~2.5 lb) — Tuesday; 2 packages triggers the clipped Combo Loco (free Mi Tienda beans)", est: 7.5 },
         { name: "H-E-B Pork Butt Country Style Ribs (ad @ $2.29/lb — online shows $2.72/lb Texas pack; trust the shelf tag) — Thursday's CARNITAS", qty: "~3.5 lb", est: 8.5 },
         { name: "Hill Country Fare Boneless Skinless Split Chicken Breast — $1.97/lb VERIFIED, packs avg 2.79 lb ($5.50/pack)", qty: "2 packs (~5.6 lb, $11) — NOT this week's dinners: 4 bags, 4 preps, Sunday", est: 11.0 }
       ]
@@ -264,7 +266,13 @@ const WEEK = {
         { name: "FREE: Hill Country Fare Cookie Bears 6-ct (dessert rule: free-with-purchase ✓)", qty: "1", est: 0.0 },
         { name: "FREE: Clorox Disinfecting Wipes, 35 ct", qty: "1", est: 0.0 },
         { name: "FREE: H-E-B Macaroni & Cheese Dinner (→ kid stash)", qty: "1", est: 0.0 },
-        { name: "FREE: H-E-B Green Beans, 12 oz bag", qty: "1", est: 0.0 }
+        { name: "FREE: H-E-B Steamable Green Beans, 12 oz (frozen — choose green beans over broccoli; a bag's already banked)", qty: "1", est: 0.0 }
+      ]
+    },
+    {
+      section: "Combo Loco (CLIPPED — rings free with Tuesday's 2 chop packages)",
+      items: [
+        { name: "FREE: H-E-B Mi Tienda Refried Beans, 17.6 oz (choose beans over rice — jasmine's stocked)", qty: "1 — Thursday's taco side", est: 0.0 }
       ]
     },
     {
