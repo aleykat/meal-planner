@@ -1,271 +1,258 @@
-// Week data — regenerated each week by Claude. Loaded by index.html.
-// THE REAL WEEK v2 — HEB-only from-scratch rerun (Joe V's dropped 7/22).
-// Dinners Mon Jul 27 – Thu Jul 30, shopped Sunday Jul 26, dinner window 5:30–6.
-// Bath relay: chops Mon midday (140°F) → shrimp + chuck Tue 5 PM (135°F) → belly Wed
-// after dinner (165°F). One salsa macha batch Monday feeds Monday AND Wednesday (raw-herb ban).
+// Week of 2026-08-03 — WEEK 2, HEB-only. Two free-protein nights from last week's
+// freezer bank; chicken banked at $1.97/lb (34% off — the deal-trigger rule's first win).
+// Bath relay: chicken Mon 3:30 (150°F) → chops Tue 1:30 (140°F) → ribs Wed after
+// dinner (160°F, ~23 hr) → Thu glaze night. Bans continue: no bagged salads, no raw herbs.
 const WEEK = {
-  id: "2026-07-22",
-  label: "Dinners Mon Jul 27 – Thu Jul 30 · HEB Irving only · shopped Sun Jul 26 · REAL",
-  store: "H-E-B Irving #817 (single store — Joe V's dropped)",
-  adNote: "Fresh-validated 7/23: flyer unchanged (cycle runs through 7/28 — Sunday's shop is covered). Meal Deal (Mi Tienda) previously declined; today's new Combo Locos (breakfast skillet→cheese, chips→soft drinks, tea BOGO) don't fit the menu. ⚠ Bagged-salad ban CONTINUES — Cyclospora outbreak investigation still open AND Fresh Express just expanded its own salad recall for cyclospora risk.",
+  id: "2026-08-03",
+  label: "Dinners Mon Aug 3 – Thu Aug 6 · HEB Irving only · shop Sun Aug 2",
+  store: "H-E-B Irving #817 (single store)",
+  adNote: "Ad cycle 7/29–8/4, pulled 7/30. Anchors used: HCF chicken breast $1.97/lb (34% off — freezer-banking trigger), BBQ boneless pork loin chops $2.99/lb (33% off), pork country-style ribs $2.29/lb, peaches $1.47/lb. ⚠ Outbreak check 7/30: cyclospora/iceberg now 9 states & 1,947 cases — bagged-salad AND raw-herb bans CONTINUE (skip the ad's BrightFarms salad kits). Combo Loco to eyeball in the app: breakfast skillet → free shredded cheese (only worth it if the skillet becomes a breakfast — cheese is on the list regardless).",
   meals: [
     {
       id: "prep",
-      cost: null,
-      daytime: ["SUN afternoon (~25 min): put-away with storage rules (below) + seal session — chicken bags, chuck, belly (the chops are already bagged in your freezer). No evening drop; the first bath run is Monday midday."],
-      title: "Sunday: Put-Away, Storage & One Seal Session",
-      slot: "Weekend",
-      time: "~25 min once",
+      title: "Sunday: Shop + 15-Minute Seal Session",
+      slot: "Prep · Sun Aug 2",
+      time: "~15 min after put-away",
       equipment: ["Chamber sealer"],
       summary:
-        "Put-away first — the handful of storage moves that actually matter (shrimp straight to the freezer, ginger frozen whole, herbs in water jars, tomatoes and cantaloupe on the counter, onions away from potatoes) — then the seal session: (1) 2 boneless breasts, fajita rub → FREEZER bank. (2) Chuck slabs, salt + pepper → fridge (drop Tuesday 5 PM). (3) Pork belly, soy + brown sugar rub → fridge (drop Wednesday after dinner). Monday's chops are ALREADY bagged and frozen. Shelf-life rule satisfied.",
+        "Light week for prep — Monday's protein is already sealed in the freezer from last week. Today just banks the chicken deal and stages Thursday's ribs. Two jobs, one wipe-down.",
       links: [
-        { label: "Anova — sous vide time & temp guide", url: "https://anovaculinary.com/pages/sous-vide-time-and-temperature-guide", tag: "primary" },
-        { label: "r/sousvide — general technique threads", url: "https://www.reddit.com/r/sousvide/", tag: "reddit" }
+        { label: "Serious Eats — sous vide chicken breast guide (times & temps)", url: "https://www.seriouseats.com/food-lab-complete-guide-to-sous-vide-chicken-breast", tag: "primary" },
+        { label: "r/sousvide — country style ribs threads", url: "https://www.reddit.com/r/sousvide/search/?q=country%20style%20ribs", tag: "reddit" }
       ],
-      swapNote: "Label the bags with painter's tape — four identical vacuum bags in a fridge is a Tuesday-night mystery otherwise.",
       recipe: {
-        activeTime: "~25 min",
-        cookTime: "none — sealing only",
+        activeTime: "~15 min",
+        cookTime: "none today — no bath run",
         ingredients: [
-          "2.15 lb boneless skinless chicken breasts + 2 tbsp Bolner's Fiesta fajita seasoning",
-          "3.36 lb Prime 1 chuck roast (cut into 2–3 slabs) + kosher salt + pepper",
-          "~2 lb pork belly + 2 tbsp soy sauce + 1 tbsp brown sugar",
-          "chamber vacuum bags + painter's tape for labels"
+          "~4 lb HCF boneless skinless split chicken breast ($1.97/lb — the banking deal)",
+          "Bolner's Fiesta fajita seasoning (owned)",
+          "~3 lb pork butt country style ribs ($2.29/lb)",
+          "kosher salt + black pepper (owned)"
         ],
         steps: [
-          "IN THE CAR (it's July in Texas): the IQF shrimp bag rides home in a cooler bag or wedged against the A/C — it must hit your freezer still fully frozen.",
-          "PUT-AWAY, the ones that matter: shrimp → FREEZER immediately, unopened. Ginger → FREEZER whole in a zip bag (grates better frozen than fresh, keeps months). Roma tomatoes → COUNTER, never the fridge (cold kills their flavor). Cantaloupe → counter, whole, until Monday's cut. Potatoes + onions → dark pantry but NOT touching (onions sprout potatoes). Cucumbers → fridge crisper. Frozen garlic bread → FREEZER (rides home in the cooler bag with the shrimp) until Wednesday's bake — it bakes straight from frozen. Everything else is normal.",
-          "SEAL SESSION — Chicken: fajita rub, 2 breasts per bag, seal, label, FREEZE (future zero-prep dinners — drop frozen at 150°F +1 hr). ✓ DONE 7/26.",
-          "Chuck: cut into 2 thick slabs (simple knife work — no bones involved), salt + pepper, seal, label, FRIDGE. ✓ DONE 7/26.",
-          "Belly (came as 0.5-inch-thick strips): cut the strips crosswise into ~2-inch pieces, toss with the soy + brown sugar so every face gets rub, seal, label, FRIDGE.",
-          "Monday's chops: already bagged in your freezer — leave them there until the 12:30 Monday drop.",
-          "Cleanup: sealer wipe. Done — the week is now four bag-drops and four dinners."
+          "PUT-AWAY, the ones that matter: peaches → COUNTER (they're Tuesday's — firm-ripe finishes on the counter, never the fridge until ripe). Corn → fridge in husks. Tortillas → counter, sealed. Everything else is normal.",
+          "SEAL SESSION 1 — Chicken bank: cut the split breasts into 3 portions of ~1.3 lb, dust every side with fajita rub, 1 portion per bag, seal, label with painter's tape, FREEZE. That's 3 future zero-prep dinners at $2.60 each — the deal-trigger rule paying out.",
+          "SEAL SESSION 2 — Thursday's ribs: salt + pepper all over (the Stubb's glaze comes Thursday — sauce in the bag for 23 hr goes muddy), seal flat, label, FREEZE (they're cooked day 4 — the shelf-life rule says freeze, and frozen drops straight into Wednesday's bath).",
+          "Cleanup: sealer wipe. Done — no bath tonight, nothing drops until Monday 3:30."
         ]
       }
     },
     {
-      id: "chops",
-      cost: { est: 4.8, servings: 4, note: "RECEIPT-TRUED: protein is FREE — the already-bagged frozen chops from the freezer bank; broccoli $2.32 actual + half cantaloupe + salsa macha from owned staples" },
-      nutrition: { serving: "1 large chop (+ optional salsa macha) with broccoli + cantaloupe", calories: 630, protein: 45, carbs: 20, fat: 42 },
-      daytime: [
-        "MON ~12:30 PM (2 min): bath to 140°F, drop your frozen chops bag straight from the freezer — from-frozen adds ~1 hr, so ~5 hr to dinner is right in the zone",
-        "MON ~5 PM (12 min): make the DOUBLE batch of SALSA MACHA (chiles + garlic toasted in oil — fully cooked, herb-free) — some for tonight, the jar for Wednesday's steak"
-      ],
-      title: "Cowboy Butter Pork Chops with Broccoli & Cantaloupe",
-      slot: "Dinner 1 · Mon Jul 27",
-      time: "~20 min at dinner",
-      equipment: ["Sous vide", "Blackstone", "Microwave"],
+      id: "fajitas",
+      cost: { est: 10.0, servings: 4, note: "protein is FREE — last week's fajita-rubbed chicken bags ($7.50 already spent); new money is tortillas, peppers, cheese block, sour cream. Banked onion + limes close it out" },
+      nutrition: { serving: "3 fajitas (chicken, peppers, cheese, sour cream)", calories: 720, protein: 48, carbs: 62, fat: 30 },
+      daytime: ["MON ~3:30 PM (1 min): bath to 150°F, both frozen chicken bags in — they ride ~2.5 hr and hold happily past that"],
+      title: "Blackstone Chicken Fajitas with Charred Peppers & Onions",
+      slot: "Dinner 1 · Mon Aug 3",
+      time: "~25 min at dinner",
+      equipment: ["Sous vide", "Blackstone"],
       summary:
-        "Cheapest dinner of the week — the protein is already in your freezer, bagged and seasoned (Kinder's Cowboy Butter): drop it at 140°F straight from frozen around 12:30 (sous vide doesn't care), hard-sear at dinner — no extra seasoning needed. Tonight's sauce project is a double batch of SALSA MACHA (raw-herb ban replaced the chimichurri — this is chiles and garlic toasted in oil, fully cooked, and frankly an upgrade on steak): a drizzle on the chops is optional heat, the jar is Wednesday's. Steam-bag broccoli, cold cantaloupe wedges. Kids: chop + sides — it's a pork chop.",
+        "The freezer bank's first payout: fajita-rubbed breasts sealed 7/26 go from frozen to perfectly cooked with one bag drop, then hit the Blackstone hard for color alongside charred peppers and the banked onion. Warm tortillas, hand-grated cheese, sour cream, lime. Kids: same components, their way — quesadillas or plain chicken tacos, zero extra cooking.",
       links: [
-        { label: "Serious Eats — sous vide pork chop guide (Kenji; SE blocks fetch — search if 404)", url: "https://www.seriouseats.com/sous-vide-pork-chops-recipe", tag: "primary" },
-        { label: "r/SalsaSnobs — salsa macha technique threads (sanity check)", url: "https://www.reddit.com/r/SalsaSnobs/search/?q=salsa%20macha", tag: "reddit" },
-        { label: "r/sousvide — pork chop temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20chop%20temp", tag: "reddit" }
+        { label: "Serious Eats — sous vide chicken breast guide", url: "https://www.seriouseats.com/food-lab-complete-guide-to-sous-vide-chicken-breast", tag: "primary" },
+        { label: "r/blackstonegriddle — fajita threads", url: "https://www.reddit.com/r/blackstonegriddle/search/?q=fajitas", tag: "reddit" }
       ],
-      swapNote: "140°F = juicy blush-pink (safe and correct); 145°F if the family's squeamish about pink pork. Assorted packs mix loin/rib chops — thicker ones to the bigger appetites.",
+      swapNote: "Bags were sealed raw with the rub on 7/26 — frozen straight into the bath is the designed move (150°F, add ~1 hr vs thawed).",
       recipe: {
-        activeTime: "~20 min at dinner (+2 min midday drop, +12 min salsa macha)",
-        cookTime: "chops 3–4 hr at 140°F (unattended)",
+        activeTime: "~25 min at dinner",
+        cookTime: "chicken ~2.5 hr at 150°F from frozen (unattended)",
         ingredients: [
-          "your already-bagged frozen pork chops, pre-seasoned with Kinder's Cowboy Butter (in the bath since ~12:30, straight from the freezer)",
-          "DOUBLE SALSA MACHA: guajillos + 4 chiles de árbol (stemmed, seeded, snipped small with scissors), 6 garlic cloves (sliced thin), 1 cup canola or olive oil, 1 tsp kosher salt, 1 tsp oregano (crushed between fingers), splash of red wine vinegar. ⚠ COUNT THE GUAJILLO BAG FIRST (1.5 oz ≈ 6–8 chiles): Tuesday's diabla needs 4, so use whatever's left over here — 4 guajillos + 2 extra árbol makes a great (hotter) macha if the bag runs short",
-          "2 bags H-E-B steamable broccoli florets",
-          "half the cantaloupe ($1.97 feature), cut into wedges",
+          "both fajita-rubbed chicken bags from the freezer (2.15 lb total, sealed 7/26)",
+          "3 bell peppers (mixed colors), sliced into strips",
+          "the banked jumbo yellow onion, sliced into strips",
+          "10-12 flour tortillas",
+          "8 oz block colby jack, grated (hand grater — small batch, skip the processor)",
+          "sour cream, banked limes in wedges",
           "1 tbsp canola oil, kosher salt"
         ],
         steps: [
-          "~5 PM: salsa macha — oil in a small pot over medium-low, garlic in until pale gold (~3 min), snipped chiles in for 60–90 sec until fragrant and brick-red (they burn fast — pull early), off heat, salt + oregano + a splash of vinegar. Rough-blitz in the NutriBullet or leave chunky. Pour MOST into a jar → fridge (Wednesday's steak sauce; it keeps for weeks and improves).",
-          "Cut the cantaloupe into wedges; fridge until plating.",
-          "DINNER: pull the chops, pat VERY dry. Microwave broccoli bag 1 per package directions; bag 2 right after.",
-          "Blackstone on maximum, film of canola: pat the chops VERY dry (the seasoning stays put), sear 60–90 sec per side — crust only, they're already perfectly cooked and fully seasoned inside.",
-          "Rest 3 min. The cowboy butter carries the chop — salsa macha on the side for whoever wants heat.",
-          "Cleanup: griddle scrape, one bowl, one jar, trash the bag."
+          "~3:30 PM: bath to 150°F, both frozen bags in. Nothing else until dinner.",
+          "Dinner: grate the cheese, wedge 2 limes, set out sour cream — the toppings bar is done.",
+          "Blackstone on high, oil: peppers + onion down first with a pinch of salt — char 6-8 min, pushing them around. Shove to the cool side.",
+          "Pull the chicken, pat dry (keep the bag juices). Slice into strips — it's fully cooked; you're only building color.",
+          "Strips onto the hot side ~2 min, hard sear, then toss with the vegetables and a splash of the bag juices.",
+          "Tortillas: 20 seconds per side on the griddle edge, stack in a towel.",
+          "KID CHECKPOINT: plain chicken + cheese + tortillas out before anything gets mixed — quesadillas on the cool corner if they want them melted. No second dish.",
+          "Platter the rest. Build at the table. Cleanup: griddle scrape, one platter, trash the bags."
         ]
       }
     },
     {
-      id: "diabla",
-      cost: { est: 15.1, servings: 4, note: "RECEIPT-TRUED: 1.5 lb of the 2 lb Gulf 50/70 P&D shrimp ($11.96 consumed; ~$4 banks) + dried-chile sauce, romas, limes" },
-      nutrition: { serving: "~6 oz shrimp in diabla sauce over 1.5 cups rice", calories: 520, protein: 30, carbs: 68, fat: 12 },
+      id: "bbqchops",
+      cost: { est: 13.5, servings: 4, note: "~2.5 lb pre-seasoned BBQ chops @ $2.99/lb (33% off) + 5 ears corn + ~2 lb peaches ($1.47 feature)" },
+      nutrition: { serving: "1 large chop + 1 ear buttered corn + sliced peaches", calories: 640, protein: 44, carbs: 48, fat: 28 },
       daytime: [
-        "TUE morning (2 min): pour ~1.5 lb shrimp into a fridge bowl to thaw; chamber-reseal the rest → freezer",
-        "TUE ~4:30 PM (2 min): rice cooker on",
-        "TUE 5 PM (2 min): bath to 135°F, drop BOTH bags — shrimp (out in 30 min) AND the chuck (same temp; ~24 hr to Wednesday dinner)"
+        "TUE ~1:30 PM (1 min): bath to 140°F, chops in (they hold until dinner, no rush)",
+        "TUE after dinner (5 min): rice cooker — 2 cups jasmine for tomorrow's fried rice → spread on a plate, fridge uncovered once cool. Fried rice NEEDS day-old rice"
       ],
-      title: "Camarones a la Diabla with Jasmine Rice",
-      slot: "Dinner 2 · Tue Jul 28",
-      time: "~25 min at dinner",
-      equipment: ["Sous vide", "Stove", "NutriBullet", "Rice cooker"],
+      title: "Texas BBQ Pork Chops with Griddled Corn & Fresh Peaches",
+      slot: "Dinner 2 · Tue Aug 4",
+      time: "~20 min at dinner",
+      equipment: ["Sous vide", "Blackstone", "Rice cooker (evening, for Wed)"],
       summary:
-        "Deviled shrimp, done properly — and sous vide, the house shrimp method: bagged P&D shrimp at 135°F for 30 min come out snappy-tender and physically can't overcook, then fold into the brick-red guajillo–árbol sauce (the NutriBullet earns its wash — there's no non-blender version of this dish). Genuinely spicy — the week's don't-soften night. Kids: their shrimp come straight from the bag before the sauce, or they self-serve. The chuck shares the same 135°F water — both bags drop at 5 PM.",
+        "The ad does the seasoning work: Simply Seasoned BBQ chops at 33% off go bag-to-bath at 1:30, then take a hard sear next to corn rolling in Kerrygold on the flat top. Peaches at $1.47/lb are dessert masquerading as a side. The quiet job tonight: an evening rice batch that makes tomorrow's fried rice possible.",
       links: [
-        { label: "Isabel Eats — Camarones a la Diabla (the sauce reference)", url: "https://www.isabeleats.com/camarones-a-la-diabla/", tag: "primary" },
-        { label: "The Kitchn — diabla version (backup)", url: "https://www.thekitchn.com/camarones-a-la-diabla-recipe-23735936", tag: "alt" },
-        { label: "r/sousvide — shrimp time/temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=shrimp%20temp", tag: "reddit" }
+        { label: "Serious Eats — sous vide pork chops guide", url: "https://www.seriouseats.com/sous-vide-pork-chops-recipe", tag: "primary" },
+        { label: "r/sousvide — pork chop time/temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20chops", tag: "reddit" }
       ],
-      swapNote: "Heat dial: 2 árbol = hot-but-civil, 4+ = weapons-grade. Guajillos carry flavor, árbol carries fire. (The Fiesta bag says 'Chili Cascavel (Guajillo)' — label quirk; they're guajillos.)",
+      swapNote: "140°F = juicy with a touch of blush, safe and ideal for lean loin chops. Corn griddles in the husk-off style: butter, salt, rolling sear.",
       recipe: {
-        activeTime: "~25 min at dinner (+2 min bagging shrimp at 5 PM)",
-        cookTime: "shrimp 30 min at 135°F; sauce ~15 min incl. chile soak",
+        activeTime: "~20 min at dinner",
+        cookTime: "chops 2-4 hr at 140°F (in since 1:30, unattended)",
         ingredients: [
-          "~1.5 lb from the two 1 lb frozen Gulf 50/70 P&D bags (thawed today — smaller count than jumbo, so more pieces per plate; same weight, same 135°F/30 min)",
-          "4 dried guajillo chiles (saved from Monday — the Fiesta 'Chili Cascavel (Guajillo)' bag) + 2–3 chiles de árbol (stemmed, seeds shaken out)",
-          "2 Roma tomatoes, rough-chopped",
-          "half the yellow onion + 3 garlic cloves",
-          "1 tbsp olive oil, 0.5 tbsp canola (bag), kosher salt",
-          "2 cups (dry) jasmine rice — rice cooker, started midday",
-          "lime to finish"
+          "~2.5 lb H-E-B Simply Seasoned BBQ boneless pork loin chops (bag them as-bought, 1 layer)",
+          "5 ears corn, shucked",
+          "2 tbsp Kerrygold butter + kosher salt",
+          "~2 lb yellow peaches, sliced at dinner",
+          "1 tbsp canola oil"
         ],
         steps: [
-          "TUESDAY MORNING: pour 1 full bag + half the second into a fridge bowl (~1.5 lb) — thawed by dinner. Forgot? Cold-water bath 20–30 min at 5 PM. CHAMBER-RESEAL the remaining ~0.5 lb now → freezer bank.",
-          "~4:30 PM: rice cooker on. 5 PM: bath to 135°F; seal the thawed shrimp flat with the canola and a pinch of salt, then drop BOTH bags — shrimp (30 min; holds an hour) and the chuck bag sealed Sunday (stays in ~24 hr).",
-          "Soak the stemmed chiles in just-boiled water 10 min (a mug works).",
-          "NutriBullet: soaked chiles, tomatoes, onion, garlic, 0.5 tsp salt, splash of soak water. Blend smooth — this is the whole sauce.",
-          "Skillet, olive oil, medium-high: pour in the sauce — it should sizzle. Simmer 5 min until it darkens a shade. Salt to taste.",
-          "Open the shrimp bag. KID CHECKPOINT: their shrimp go straight from bag to plate — perfectly cooked, sauce-free. Or they self-serve; either way no second dish.",
-          "Fold the rest of the shrimp (and bag juices) into the sauce — 60 seconds to coat and warm, no more.",
-          "Over rice, big lime squeeze. The chuck stays in overnight. Cleanup: skillet, NutriBullet cup, rice pot, trash the shrimp bag."
+          "~1:30 PM: seal the chops flat (they come pre-seasoned — nothing added), bath to 140°F, in they go.",
+          "Dinner: Blackstone on high. Corn first: film of oil, roll the ears 8-10 min until charred in spots; finish with butter + salt.",
+          "Pull the chops, pat VERY dry.",
+          "Sear 60-90 seconds per side — crust only, they're already perfectly cooked.",
+          "Rest 3 min while you slice the peaches.",
+          "Plate: chop, ear of corn, pile of peaches. Kids: everything here is already kid-food.",
+          "AFTER DINNER (5 min): rice cooker on — 2 cups jasmine, rinsed, 2.25 cups water. When it flips to warm, spread the rice on a plate to cool, then fridge UNCOVERED. Dry, cold rice is tomorrow's whole game.",
+          "Cleanup: griddle scrape, tongs, trash the bag."
         ]
       }
     },
     {
-      id: "chucksteak",
-      cost: { est: 33.0, servings: 5, note: "GUEST NIGHT (5 adults-worth), RECEIPT-TRUED: 3.36 lb Prime 1 chuck $20.13 + potatoes $10.44 + garlic bread $2.38; served plain — a reliable everyone-likes-it dinner (salsa macha skipped, not enough guajillos) — ~$6.60/serving" },
-      nutrition: { serving: "~8 oz sliced chuck 'steak' + crispy potatoes + garlic bread", calories: 1080, protein: 58, carbs: 80, fat: 58 },
+      id: "friedrice",
+      cost: { est: 3.5, servings: 4, note: "the bank eats: shrimp ($0), broccoli ($0), day-old rice, banked garlic + ginger + soy. New money is 4 eggs + green onions. Cheapest dinner this system has produced" },
+      nutrition: { serving: "~2 cups shrimp fried rice", calories: 540, protein: 26, carbs: 66, fat: 18 },
       daytime: [
-        "WED daytime: nothing — the chuck rides since Tuesday 5 PM (~24 hr at dinner). Salsa macha skipped this week (guajillo shortage; plain chuck is a reliable everyone-likes-it dinner)",
-        "WED right after dinner (30 sec): bath to 165°F, drop the pork belly bag for Thursday"
+        "WED morning (10 sec): shrimp bag freezer → fridge bowl",
+        "WED after dinner (1 min): bath to 160°F, FROZEN rib bag in — ~23 hr to Thursday dinner"
       ],
-      title: "24-Hour Chuck 'Steak' with Crispy Potatoes & Garlic Bread",
-      slot: "Dinner 3 · Wed Jul 29",
-      time: "~25 min at dinner",
+      title: "Blackstone Shrimp Fried Rice",
+      slot: "Dinner 3 · Wed Aug 5",
+      time: "~20 min at dinner",
+      equipment: ["Blackstone"],
+      summary:
+        "Clean-out-the-bank night, and it eats like a hibachi order: yesterday's chilled rice crisped on the flat top with eggs, the banked Gulf shrimp, broccoli, and a soy-ginger-garlic finish. Adults can hit theirs with crushed red pepper or snipped arbol. Kids: theirs plates before the sauce gets loud. After dinner, the rib bag starts Thursday's dinner with one drop.",
+      links: [
+        { label: "The Woks of Life — Shrimp Fried Rice (the reference)", url: "https://thewoksoflife.com/shrimp-fried-rice/", tag: "primary" },
+        { label: "r/blackstonegriddle — fried rice threads", url: "https://www.reddit.com/r/blackstonegriddle/search/?q=fried%20rice", tag: "reddit" }
+      ],
+      swapNote: "Day-old fridge rice only — fresh rice steams and clumps. The 50/70 shrimp are small: 60-90 seconds on the griddle, done.",
+      recipe: {
+        activeTime: "~20 min at dinner",
+        cookTime: "all griddle, no bath tonight (the bath's job starts AFTER dinner: ribs in at 160°F)",
+        ingredients: [
+          "banked Gulf 50/70 shrimp, ~0.5 lb (thawed in the fridge since morning), patted dry",
+          "yesterday's rice, cold from the fridge (~6 cups), clumps broken up",
+          "banked steamable broccoli bag — microwave 3 min, drain well",
+          "4 eggs, beaten",
+          "1 bunch green onions, sliced (whites and greens separate)",
+          "3 garlic cloves minced + 1 tbsp grated ginger (the banked knob, grated frozen or fridge-cold)",
+          "3 tbsp soy sauce + 1 tbsp butter",
+          "2 tbsp canola oil · adults: crushed red pepper or 1-2 snipped arbol chiles"
+        ],
+        steps: [
+          "MORNING: shrimp bag into a fridge bowl. (Forgot? 10 min in cold water at 5:30 — they're small.)",
+          "Microwave the broccoli bag 3 min, drain HARD — wet broccoli kills crisp rice. Rough-chop the big florets.",
+          "Blackstone on high, half the oil: shrimp 60-90 seconds until just pink, push to the cool side.",
+          "Rest of the oil: garlic, ginger, green onion whites — 30 seconds until loud and fragrant.",
+          "Rice on, spread thin. Let it SIT 60 seconds untouched to crisp, then flip-and-spread. Repeat twice — 4-5 min total.",
+          "Clear a spot, pour the eggs, scramble ragged, then chop everything together.",
+          "Broccoli + shrimp back in, soy around the edges (it should hiss), butter, toss.",
+          "KID CHECKPOINT: their plates now — mild, everything in it already approved. Then green onion tops + heat (crushed red pepper or snipped arbol) for the adults.",
+          "AFTER DINNER (1 min): bath to 160°F, frozen rib bag in. Tomorrow is already cooking. Cleanup: griddle scrape, one bowl."
+        ]
+      }
+    },
+    {
+      id: "ribs",
+      cost: { est: 13.7, servings: 4, note: "~3 lb country-style ribs @ $2.29/lb + about a third of the Stubb's bottle + 1 bag baby golds + 2 cucumbers" },
+      nutrition: { serving: "~7 oz glazed ribs + potatoes + cucumber salad", calories: 780, protein: 42, carbs: 58, fat: 40 },
+      daytime: ["THU ~12:30 PM (5 min): cucumber salad → fridge (it improves all afternoon). Ribs are riding since last night — nothing else"],
+      title: "Stubb's-Glazed Country Ribs with Crispy Potatoes & Cucumber Salad",
+      slot: "Dinner 4 · Thu Aug 6",
+      time: "~30 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Air fryer"],
       summary:
-        "GUEST NIGHT — an extra adult joins, so everything's scaled to five: nearly 3.5 lb of Prime 1 chuck (33% off) held at 135°F since Tuesday 5 PM eats like ribeye at a third the price — a true 24 hours by dinner. Hard Blackstone sear, served plain — a proven, everyone-likes-it preparation — three bags of gold potatoes in the air fryer, warm garlic bread for the board. After dinner the belly takes the bath.",
+        "Country-style ribs are pork-butt strips — 23 hours at 160°F makes them fall-apart tender while staying sliceable, then Stubb's Original goes sticky on the Blackstone. Air-fryer baby golds (last week's proven hit) and the sharp cucumber salad from the belly-bowl playbook round it out. BBQ night for about $13.70.",
       links: [
-        { label: "DadCooksDinner — Sous Vide Chuck Steak (24 hours to tenderness)", url: "https://www.dadcooksdinner.com/sous-vide-chuck-steak-recipe/", tag: "primary" },
-        { label: "Amazing Food Made Easy — chuck roast times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/chuck-roast", tag: "alt" }
+        { label: "Amazing Food Made Easy — country style ribs times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/pork", tag: "primary" },
+        { label: "r/sousvide — country style ribs threads", url: "https://www.reddit.com/r/sousvide/search/?q=country%20style%20ribs", tag: "reddit" }
       ],
-      swapNote: "131°F = medium-rare-plus; 135°F = family medium. Same 24 hr either way.",
+      swapNote: "160°F/~23 hr from frozen = shreddable-but-sliceable. Glaze ON the griddle, not in the bag — 23 hours cooks BBQ sauce muddy.",
       recipe: {
-        activeTime: "~25 min at dinner (chuck dropped Tuesday 5 PM — a true 24 hr)",
-        cookTime: "chuck ~24 hr at 135°F; potatoes ~20 min air fryer",
+        activeTime: "~30 min at dinner",
+        cookTime: "ribs ~23 hr at 160°F (in since Wednesday night, from frozen)",
         ingredients: [
-          "3.36 lb H-E-B Prime 1 beef chuck roast, 2–3 slabs (in the bath since Tuesday 5 PM)",
-          "4.5 lb baby gold potatoes (3 bags), halved",
-          "(salsa macha skipped this week — guajillo shortage; the chuck holds up plain)",
-          "1 pkg H-E-B frozen garlic bread, 16 oz (from the freezer — bakes straight from frozen)",
-          "1.5 tbsp canola oil, kosher salt, black pepper"
+          "~3 lb country-style ribs (in the bath since Wednesday after dinner)",
+          "Stubb's Original Bar-B-Q sauce, about a third of the bottle",
+          "1 bag baby gold potatoes (1.5 lb), halved",
+          "CUCUMBER SALAD: 2 cucumbers in thin half-moons, 2 tbsp red wine vinegar, 1 tsp brown sugar, pinch of salt, pinch of crushed red pepper",
+          "1 tbsp canola oil + kosher salt"
         ],
         steps: [
-          "Oven per the garlic bread package (~425°F, ~10–12 min, straight from the freezer — no thaw). The air fryer has the potatoes, so the oven was free anyway.",
-          "Potatoes: toss halved golds with oil and salt; air fryer 400°F ~20 min, shake at 10 — three bags means TWO batches (first batch holds fine in a low oven with the bread).",
-          "Pull the chuck slabs, pat VERY dry (wet meat won't crust). Light salt.",
-          "Blackstone on maximum: 90 sec per side plus the fat edges — dark crust fast; the inside is already perfect.",
-          "Rest 5 min under foil. Slice against the grain, 0.5-inch planks.",
-          "Warm bread sliced thick around the board — steak juices are what it's for.",
-          "AFTER DINNER (30 sec): bath to 165°F, drop the belly bag (sealed Sunday) — ~23 hr to Thursday dinner.",
-          "Cleanup: griddle scrape, air fryer basket, trash the bag."
-        ]
-      }
-    },
-    {
-      id: "porkbelly",
-      cost: { est: 13.3, servings: 4, note: "RECEIPT-TRUED: 2.27 lb pork belly @ $4.99/lb = $11.34 actual + cucumber salad; glaze + rice from staples" },
-      nutrition: { serving: "1 bowl: ~5 oz glazed crispy belly over 1.5 cups rice + cucumber salad", calories: 850, protein: 25, carbs: 70, fat: 50 },
-      daytime: ["THU ~12:30 PM (5 min): rice cooker on + mix the cucumber salad — it improves all afternoon"],
-      title: "Crispy Glazed Pork Belly Bowls with Cucumber Salad",
-      slot: "Dinner 4 · Thu Jul 30",
-      time: "~25 min at dinner",
-      equipment: ["Sous vide", "Blackstone", "Rice cooker"],
-      summary:
-        "The ad's boldest cut ($4.99/lb): ~23-hour belly pieces seared shattering-crisp on the Blackstone, tossed in a soy–brown sugar–garlic–ginger glaze that goes sticky on contact. Rice underneath, sharp quick cucumber salad to cut the richness. Kids: crispy cubes pulled before the glaze (pork candy) — or self-serve. Restaurant food at $3/serving.",
-      links: [
-        { label: "Anova — Crispy Pork Belly (sous vide method)", url: "https://recipes.anovaculinary.com/recipe/crispy-pork-belly-4", tag: "primary" },
-        { label: "Amazing Food Made Easy — pork belly times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/belly", tag: "alt" },
-        { label: "r/sousvide — pork belly threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20belly", tag: "reddit" }
-      ],
-      swapNote: "Belly came as 0.5-inch strips — cut to 2-inch pieces at the seal. 165°F/~23 hr makes them melting-tender; the thin profile sears extra fast. Dry HARD before searing — wet belly steams instead of crisping.",
-      recipe: {
-        activeTime: "~25 min at dinner",
-        cookTime: "belly ~23 hr at 165°F (in since Wednesday after dinner)",
-        ingredients: [
-          "~2 lb H-E-B pork belly (in the bath since Wednesday, soy–brown sugar in the bag)",
-          "GLAZE: 3 tbsp soy sauce + 2 tbsp brown sugar + 2 garlic cloves (minced) + 1 tbsp grated ginger + splash of bag juices",
-          "CUCUMBER SALAD: 2 cucumbers (thin half-moons), 2 tbsp red wine vinegar, 1 tsp brown sugar, pinch of salt, pinch of crushed red pepper",
-          "2 cups (dry) jasmine rice — rice cooker, started midday",
-          "(salsa macha finisher dropped — not made this week)"
-        ],
-        steps: [
-          "MIDDAY: rice cooker on. Mix the cucumber salad → fridge.",
-          "Pull the pieces (pre-cut 0.5-inch strip segments from Sunday's seal — lightly stuck together; they pull apart easily), pat VERY dry (this is the whole game).",
-          "Blackstone on high: pieces on their flat faces, ~2 min per side — at 0.5-inch thick they brown FAST, so stay on them. Deeply browned and crackling. Kids' share out now — plain crispy pieces on rice.",
-          "Kill the heat to medium. Glaze ingredients onto the griddle over the cubes — bubbles to sticky in ~60 seconds. Toss to coat, off immediately (sugar burns fast).",
-          "Bowls: rice, glazed belly, cucumber salad on the side.",
-          "Cleanup: griddle scrape while warm (sugar!), rice pot, one bowl, trash the bag."
+          "~12:30 PM: mix the cucumber salad → fridge.",
+          "~5:15: potatoes — halve, toss with oil + salt, air fryer 400°F ~20 min, shake at 10.",
+          "~5:40: pull the rib bag, pat the pieces VERY dry. Save 2 tbsp bag juices.",
+          "Blackstone on medium-high: ribs 2 min per side for color first.",
+          "Heat to medium-low: brush Stubb's (loosened with the bag juices) on all sides — 2-3 min, turning, until sticky and lacquered. Sugar burns; keep it moving.",
+          "KID CHECKPOINT: BBQ ribs and potatoes are already the kid plate. Sauce-light pieces off first if anyone objects to sticky.",
+          "Plate: ribs, potatoes, cold cucumber salad. Cleanup: griddle scrape while warm (sauce sugar!), air fryer basket, trash the bag."
         ]
       }
     }
   ],
-  // Read-only "On Hand" snapshot for the public page (no live tracking). Regenerated with
-  // each weekly plan from pantry/inventory.json — sanitized: no staples ledger, no names.
+  // Read-only "On Hand" snapshot for the public page. Regenerated with each weekly plan
+  // from pantry/inventory.json — sanitized: no staples ledger, no names.
   bank: [
-    { name: "Cantaloupe (second half, cut)", qty: "~half melon", location: "fridge", useBy: "2026-07-31", note: "Breakfasts/snacks this week — short clock once cut" },
-    { name: "Steamable broccoli florets, unopened bag", qty: "1 × 12 oz", location: "freezer", useBy: "2027-01-27", note: "Bag 2 from Monday — free side for any night, or a fried-rice mix-in" },
-    { name: "Organic limes (extras from the 1 lb bag)", qty: "~3–5", location: "fridge", useBy: "2026-08-09", note: "Tacos, drinks, dressings — or juice + freeze in cubes" },
-    { name: "Fresh ginger (partial knob)", qty: "~1 inch", location: "fridge", useBy: "2026-08-20", note: "Freeze it — grates from frozen better than fresh" },
-    { name: "Jumbo yellow onion, whole", qty: "1 (1.72 lb)", location: "pantry", useBy: "2026-08-26", note: "Accidentally skipped in the diabla (which was a hit anyway) — free aromatics for next week" },
-    { name: "Bulk garlic", qty: "~1.5 heads", location: "pantry", useBy: "2026-09-26", note: "Keeps for months — free aromatics" },
-    { name: "Gulf 50/70 shrimp, chamber-resealed portion (after Tuesday)", qty: "~0.5 lb", location: "freezer", useBy: "2026-10-28", note: "Garlic-butter night or fried-rice add-in — sous vide from frozen" },
-    { name: "Fajita-rubbed chicken breast bags, sealed raw — DONE, in the freezer", qty: "2.15 lb (2 breasts per bag)", location: "freezer", useBy: "2026-11-26", note: "Zero-prep future dinners — frozen straight into a 150°F bath +1 hr" },
-    { name: "Dried guajillo + árbol chiles (partial bags)", qty: "most of both", location: "pantry", useBy: "2027-07-28", note: "Enchilada sauce, birria, next salsa macha — pantry heat for a year" }
+    { name: "Cantaloupe (second half, cut)", qty: "~half melon", location: "fridge", useBy: "2026-07-31", note: "Finish as breakfasts by Friday — short clock" },
+    { name: "Organic limes", qty: "~3-5", location: "fridge", useBy: "2026-08-09", note: "Monday's fajita wedges — planned in" },
+    { name: "Fresh ginger (partial knob)", qty: "~1 inch", location: "fridge", useBy: "2026-08-20", note: "Wednesday's fried rice — planned in" },
+    { name: "Jumbo yellow onion, whole", qty: "1 (1.72 lb)", location: "pantry", useBy: "2026-08-26", note: "Monday's fajita onion — planned in" },
+    { name: "Bulk garlic", qty: "~1.5 heads", location: "pantry", useBy: "2026-09-26", note: "Fajitas + fried rice — planned in" },
+    { name: "Fajita-rubbed chicken breast bags, sealed raw", qty: "2.15 lb (2 per bag)", location: "freezer", useBy: "2026-11-26", note: "MONDAY'S PROTEIN — both bags drop frozen at 150°F ~3:30" },
+    { name: "Gulf 50/70 shrimp, chamber-resealed", qty: "~0.5 lb", location: "freezer", useBy: "2026-10-28", note: "WEDNESDAY'S PROTEIN — fried rice; freezer → fridge Wednesday morning" },
+    { name: "Steamable broccoli florets", qty: "1 x 12 oz bag", location: "freezer", useBy: "2027-01-27", note: "Wednesday's fried rice vegetable — planned in" },
+    { name: "Dried chiles", qty: "~2-4 guajillos + most of the arbol bag", location: "pantry", useBy: "2027-07-28", note: "Arbol = fried-rice heat option. Guajillo restock is on this week's list (3 bags) — salsa macha and the next diabla come back into play" }
   ],
   grocery: [
     {
       section: "Meat & Seafood",
       items: [
-        { name: "H-E-B Gulf Shrimp 50/70 P&D — 2 bags @ $7.97 = $15.94 ACTUAL (smaller count than the planned jumbo; fine for diabla)", qty: "use ~1.5 lb Tuesday; ~0.5 lb chamber-reseals into the freezer bank", est: 15.9 },
-        { name: "H-E-B Prime 1 Beef Chuck Roast (ad item @ $5.99/lb, 33% off)", qty: "3.36 lb — $20.13 RECEIPT — the 24-hr steak play, scaled for Wednesday's guest", est: 20.1 },
-        { name: "FRESH! H-E-B Natural Pork Belly (ad item @ $4.99/lb)", qty: "2.27 lb — $11.34 RECEIPT — Thursday's flagship", est: 11.3 },
-        { name: "Hill Country Fare Boneless Skinless Chicken Breasts", qty: "2.15 lb — $7.50 RECEIPT ($3.49/lb) — the freezer drop-in bags", est: 7.5 }
+        { name: "H-E-B Simply Seasoned BBQ Boneless Pork Loin Chops (ad item @ $2.99/lb, 33% off)", qty: "~2.5 lb — Tuesday, pre-seasoned", est: 7.5 },
+        { name: "H-E-B Pork Butt Country Style Ribs (ad item @ $2.29/lb)", qty: "~3 lb — Thursday's 23-hr BBQ play", est: 6.9 },
+        { name: "Hill Country Fare Boneless Skinless Split Chicken Breast (ad item @ $1.97/lb, 34% OFF — the freezer-banking trigger)", qty: "~4 lb — NOT this week's dinners: 3 fajita-rub bags to the freezer Sunday", est: 7.9 }
       ]
     },
     {
       section: "Produce",
       items: [
-        { name: "H-E-B Baby Gold Potatoes", qty: "3 bags @ $3.48 = $10.44 RECEIPT — Wednesday (guest night)", est: 10.4 },
-        { name: "Cantaloupe (ad item)", qty: "1 — $1.97 RECEIPT — Monday's fruit side (other half = breakfasts)", est: 2.0 },
-        { name: "Roma tomatoes", qty: "0.46 lb — $0.39 RECEIPT — diabla sauce", est: 0.4 },
-        { name: "Cucumbers", qty: "2 — $0.90 RECEIPT — Thursday's salad", est: 0.9 },
-        { name: "Yellow onion", qty: "1 jumbo (1.72 lb) — $1.70 RECEIPT — diabla + aromatics", est: 1.7 },
-        { name: "Bulk garlic", qty: "2 — $1.00 RECEIPT — salsa macha, diabla, glaze", est: 1.0 },
-        { name: "Fresh ginger", qty: "0.48 lb knob — $1.86 RECEIPT — belly glaze", est: 1.9 },
-        { name: "Organic limes, 1 lb bag", qty: "1 bag — $2.98 RECEIPT — diabla + finishing (extras keep)", est: 3.0 },
+        { name: "Bell peppers, mixed colors", qty: "3 — Monday's fajitas", est: 3.6 },
+        { name: "Corn on the cob", qty: "5 ears — Tuesday", est: 3.0 },
+        { name: "Yellow peaches (ad item @ $1.47/lb)", qty: "~2 lb, firm-ripe — Tuesday's fruit side", est: 3.0 },
+        { name: "Green onions", qty: "1 bunch — Wednesday's fried rice", est: 1.0 },
+        { name: "Cucumbers", qty: "2 — Thursday's salad", est: 1.3 },
+        { name: "H-E-B Baby Gold Potatoes", qty: "1 x 1.5 lb bag — Thursday (receipt-learned: $3.48/bag)", est: 3.5 }
       ]
     },
     {
-      section: "Bakery",
+      section: "Dairy & Eggs",
       items: [
-        { name: "H-E-B Garlic Bread Loaf, 16 oz — $2.38 RECEIPT (ready-to-bake baguettes out of stock)", qty: "1 — freezer until Wednesday, bakes from frozen", est: 2.4 }
+        { name: "H-E-B Grade A Large Eggs, dozen — STAPLE first-buy (fried rice now, breakfasts after)", qty: "1 dozen", est: 3.5 },
+        { name: "H-E-B Colby Jack block, 8 oz (grate at home — cheaper than pre-shredded)", qty: "1 block — fajitas", est: 4.0 },
+        { name: "H-E-B Sour Cream, 16 oz", qty: "1 — fajitas", est: 2.5 }
       ]
     },
     {
-      section: "Frozen",
+      section: "Tortillas & Bakery",
       items: [
-        { name: "H-E-B Steamable Broccoli Florets, 12 oz", qty: "2 bags @ $1.16 = $2.32 RECEIPT — Monday", est: 2.3 }
+        { name: "H-E-B Bakery Flour Tortillas, 10 ct (or Guerrero if the bakery case is out)", qty: "1 pack — Monday (day-1 fresh, inside the bread rule)", est: 3.0 }
       ]
     },
     {
-      section: "Staples Stock-Up (already owned, NOT on the list: brown sugar, kosher salt, black pepper in a grinder, canola oil, olive oil, Kerrygold butter, Kinder's Cowboy Butter seasoning)",
+      section: "Staples Stock-Up (already owned, NOT on the list: jasmine rice, fajita seasoning, soy, red wine vinegar, crushed red pepper, oregano, both oils, Kerrygold, brown sugar, kosher salt, pepper grinder, mustard)",
       items: [
-        { name: "H-E-B Jasmine Rice, 5 lb — $7.23 RECEIPT (premium-staples rule: 2 nights this week + months ahead)", qty: "1 bag", est: 7.2 },
-        { name: "Bolner's Fiesta Brand Fajita Seasoning, 7 oz jar", qty: "1 — $4.38 RECEIPT — the chicken bags + future", est: 4.4 },
-        { name: "Central Market Whole Mediterranean Oregano — $3.98 RECEIPT (Fiesta Mexican oregano out of stock)", qty: "1 — salsa macha + general", est: 4.0 },
-        { name: "Fiesta Crushed Red Pepper (big jar)", qty: "1 — $4.98 RECEIPT — cucumber salad + general", est: 5.0 },
-        { name: "Fiesta 'Chili Cascavel (Guajillo)' + Chile de Árbol — $2.16 each (Fiesta's label quirk: the cascavel bag IS guajillos)", qty: "1.5 oz bag each (≈6–8 guajillos — count before Monday's macha; diabla needs 4)", est: 4.3 },
-        { name: "Kikkoman Soy Sauce, 10 oz", qty: "1 — $2.94 RECEIPT — belly", est: 2.9 },
-        { name: "H-E-B Red Wine Vinegar, 16.9 oz — $2.98 RECEIPT (Colavita out of stock)", qty: "1 bottle", est: 3.0 }
+        { name: "Stubb's Original Bar-B-Q Sauce, 18 oz — STAPLE first-buy (Texas staple; Thursday's glaze + months ahead)", qty: "1 bottle", est: 4.5 },
+        { name: "Fiesta 'Chili Cascavel (Guajillo)' — RESTOCK x3 (label quirk: these ARE guajillos; $2.16 each receipt-learned)", qty: "3 x 1.5 oz bags — reopens salsa macha, enchilada sauce, the next diabla", est: 6.5 }
       ]
     }
   ]
