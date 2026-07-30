@@ -34,6 +34,7 @@ const WEEK = {
           "PUT-AWAY, the ones that matter: peaches → COUNTER until ripe (Tuesday's). Roma tomatoes → COUNTER, never the fridge. Corn → fridge in husks. Flour tortillas → counter sealed (Monday); corn tortillas → pantry (Thursday, shelf-stable). Tangelos → counter bowl. Everything else is normal.",
           "SEAL SESSION 1 — Chicken bank, 4 bags with 4 DIFFERENT jobs (2 packs = ~5.6 lb, ~1.4 lb per bag): bag 1 = fajita rub (proven), bag 2 = Kinder's Cowboy Butter (proven on the chops), bag 3 = plain salt + pepper (the wild card — Stubb's glaze, lemon butter, parm crust at cook time), bag 4 = soy-ginger (2 tbsp soy + 1 tbsp brown sugar + grated ginger — all owned). Seal, label each with its rub, FREEZE. Four future dinners at ~$2.75 each, no two alike.",
           "SEAL SESSION 2 — Thursday's carnitas: rub the rib strips all over with 1 tbsp cumin + 1 tsp oregano (crushed) + 1.5 tsp kosher salt + black pepper, drop in 2 sliced garlic cloves, squeeze in the juice of 1 tangelo (peel strips in too). Seal flat, label, FREEZE — they're cooked day 4, so the shelf-life rule says freeze; the bag drops frozen into Wednesday night's bath.",
+          "SEAL SESSION 3 (30 sec) — the BRAZILIAN BBQ chop pack: seal as-bought, label, FREEZE. It's the Combo Loco's second package and a future zero-prep dinner in a different flavor — the varied-prep rule at work.",
           "Cleanup: sealer wipe. Done."
         ]
       }
@@ -226,62 +227,62 @@ const WEEK = {
     {
       section: "Meat & Seafood",
       items: [
-        { name: "H-E-B Simply Seasoned BBQ Boneless Pork Loin Chops (ad item @ $2.99/lb, 33% off)", qty: "2 PACKAGES (~2.5 lb) — Tuesday; 2 packages triggers the clipped Combo Loco (free Mi Tienda beans)", est: 7.5 },
-        { name: "H-E-B Pork Butt Country Style Ribs (ad @ $2.29/lb — online shows $2.72/lb Texas pack; trust the shelf tag) — Thursday's CARNITAS", qty: "~3.5 lb", est: 8.5 },
-        { name: "Hill Country Fare Boneless Skinless Split Chicken Breast — $1.97/lb VERIFIED, packs avg 2.79 lb ($5.50/pack)", qty: "2 packs (~5.6 lb, $11) — NOT this week's dinners: 4 bags, 4 preps, Sunday", est: 11.0 }
+        { name: "H-E-B Simply Seasoned Boneless Pork Loin Chops — $6.88/pack IN-STORE VERIFIED ($2.99/lb, 2.3 lb avg): 1 TEXAS BBQ (Tuesday) + 1 BRAZILIAN BBQ (seals to freezer Sunday — varied-prep bank)", qty: "2 packages — triggers the clipped Combo Loco (free Mi Tienda beans)", est: 13.8, aisle: "Meat Mkt back wall" },
+        { name: "H-E-B Boneless Country-Style Boston Butt Pork Ribs, Texas-Size Pack — $10.54 IN-STORE VERIFIED ($2.59/lb, 4.07 lb avg; ad tag may say $2.29) — Thursday's CARNITAS, extra banks", qty: "1 pack", est: 10.5, aisle: "Meat Market" },
+        { name: "Hill Country Fare Boneless Skinless Split Chicken Breast — $5.50/pack IN-STORE VERIFIED ($1.97/lb, 2.79 lb avg)", qty: "2 packs (~5.6 lb, $11) — NOT this week's dinners: 4 bags, 4 preps, Sunday", est: 11.0, aisle: "Meat Mkt back wall" }
       ]
     },
     {
       section: "Produce",
       items: [
-        { name: "Bell peppers — 1 green ($0.76) + 2 color ($1.53 ea), prices VERIFIED", qty: "3 — Monday's fajitas", est: 3.8 },
-        { name: "H-E-B Sweet Corn on the Cob, 4 ct — $3.44 VERIFIED", qty: "1 pack (1 ear each) — Tuesday", est: 3.4 },
-        { name: "Yellow peaches (ad item @ $1.47/lb)", qty: "~2 lb, firm-ripe — Tuesday's fruit side", est: 3.0 },
-        { name: "Green onions", qty: "1 bunch — Wednesday's fried rice", est: 1.0 },
-        { name: "Roma tomatoes", qty: "2 — Thursday's salsa", est: 0.8 },
-        { name: "White onion", qty: "1 — Thursday: half charred, half raw for the table", est: 1.0 },
-        { name: "Limes", qty: "3 loose — Thursday (Monday uses the banked ones)", est: 1.0 },
-        { name: "Minneola tangelos (ad item @ $0.97/lb)", qty: "~2 lb — 1 into Sunday's carnitas bag, the rest Thursday's side + snacking", est: 2.0 }
+        { name: "Bell peppers — 1 green ($0.72) + red ($1.48) + yellow ($1.46), IN-STORE VERIFIED", qty: "3 — Monday's fajitas", est: 3.7, aisle: "Produce left wall" },
+        { name: "H-E-B Sweet Corn on the Cob, 4 ct — $3.28 IN-STORE VERIFIED", qty: "1 pack (1 ear each) — Tuesday", est: 3.3, aisle: "15" },
+        { name: "Yellow peaches — $1.47/lb VERIFIED (⚠ 'out of stock' online 7/30 — ad item, check the table; plums are the ad's stated backup)", qty: "~5 peaches (~2 lb), firm-ripe — Tuesday", est: 3.0, aisle: "Produce" },
+        { name: "Green onions — $0.67 IN-STORE VERIFIED", qty: "1 bunch — Wednesday's fried rice", est: 0.7, aisle: "Produce left wall" },
+        { name: "Roma tomatoes — $0.85/lb IN-STORE VERIFIED (~$0.25 each)", qty: "2 — Thursday's salsa", est: 0.5, aisle: "Produce" },
+        { name: "White onion — $1.19/lb IN-STORE VERIFIED", qty: "1 — Thursday: half charred, half raw for the table", est: 1.1, aisle: "Produce" },
+        { name: "Limes — $0.20 each IN-STORE VERIFIED", qty: "3 loose — Thursday (Monday uses the banked ones)", est: 0.6, aisle: "Produce" },
+        { name: "Minneola tangelos — SALE $0.97/lb IN-STORE VERIFIED (~$0.59 each)", qty: "~4 — 1 into Sunday's carnitas bag, rest Thursday + snacking", est: 2.4, aisle: "Produce" }
       ]
     },
     {
       section: "Dairy & Eggs",
       items: [
-        { name: "H-E-B Grade AA Cage Free Large Brown Eggs, 12 ct — $2.79 VERIFIED (price cut) — STAPLE first-buy", qty: "1 dozen", est: 2.8 },
-        { name: "H-E-B Colby & Monterey Jack, 8 oz block — $3.13 VERIFIED (grate at home)", qty: "1 block — fajitas Monday, kid quesadillas Thursday", est: 3.1 },
-        { name: "H-E-B Sour Cream, 16 oz", qty: "1 — fajitas", est: 2.5 }
+        { name: "H-E-B Grade AA Cage Free Large Brown Eggs, 12 ct — $2.66 IN-STORE VERIFIED (price cut) — STAPLE first-buy", qty: "1 dozen", est: 2.7, aisle: "Dairy right wall" },
+        { name: "H-E-B Colby & Monterey Jack, 8 oz block — $2.98 IN-STORE VERIFIED (grate at home)", qty: "1 block — fajitas Monday, kid quesadillas Thursday", est: 3.0, aisle: "Meat Mkt back wall (cheese case)" },
+        { name: "H-E-B Regular Sour Cream, 16 oz — $2.40 IN-STORE VERIFIED", qty: "1 — fajitas", est: 2.4, aisle: "Dairy back wall" }
       ]
     },
     {
       section: "Tortillas & Bakery",
       items: [
-        { name: "H-E-B Bakery Flour Tortillas, 10 ct — $2.08 VERIFIED (price cut; the Butter version is $2.59 if it tempts)", qty: "1 pack — Monday (day-1 fresh ✓)", est: 2.1 },
-        { name: "Corn tortillas, 20-30 ct (Mi Tienda or La Ranchera style)", qty: "1 pack — Thursday (shelf-stable, day-5 safe ✓)", est: 2.5 }
+        { name: "H-E-B Bakery Flour Tortillas, 10 ct — $1.98 IN-STORE VERIFIED (price cut)", qty: "1 pack — Monday (day-1 fresh ✓)", est: 2.0, aisle: "Bakery right edge" },
+        { name: "H-E-B Mi Tienda Ready to Cook Yellow Corn Tortillas, 20 ct — $2.38 IN-STORE VERIFIED (cook 30 sec/side on the Blackstone — fresher than shelf tortillas)", qty: "1 pack — Thursday (refrigerated, day-5 fine ✓)", est: 2.4, aisle: "Dairy right wall" }
       ]
     },
     {
       section: "Meal Deal (CLIPPED in app — anchor + 4 free items ring up together)",
       items: [
-        { name: "H-E-B Frozen Breaded Wild Popcorn Shrimp, 14 oz — $7.32 each VERIFIED — MEAL DEAL ANCHOR, buy 2 (po'boy night base, waiting on the ban lift)", qty: "2 boxes", est: 14.6 },
-        { name: "FREE: Hill Country Fare Cookie Bears 6-ct (dessert rule: free-with-purchase ✓)", qty: "1", est: 0.0 },
-        { name: "FREE: Clorox Disinfecting Wipes, 35 ct", qty: "1", est: 0.0 },
-        { name: "FREE: H-E-B Macaroni & Cheese Dinner (→ kid stash)", qty: "1", est: 0.0 },
-        { name: "FREE: H-E-B Steamable Green Beans, 12 oz (frozen — choose green beans over broccoli; a bag's already banked)", qty: "1", est: 0.0 }
+        { name: "H-E-B Frozen Breaded Wild Popcorn Shrimp, 14 oz — $6.97 each IN-STORE VERIFIED — MEAL DEAL ANCHOR, buy 2 (po'boy night base, waiting on the ban lift)", qty: "2 boxes", est: 13.9, aisle: "Seafood left wall" },
+        { name: "FREE: Hill Country Fare Cookie Bears 6-ct (dessert rule: free-with-purchase ✓)", qty: "1", est: 0.0, aisle: "21" },
+        { name: "FREE: Clorox Disinfecting Wipes, 35 ct", qty: "1", est: 0.0, aisle: "29" },
+        { name: "FREE: H-E-B Macaroni & Cheese 7.25 oz (→ kid stash)", qty: "1", est: 0.0, aisle: "7" },
+        { name: "FREE: H-E-B Frozen Steamable Whole Green Beans, 12 oz", qty: "1", est: 0.0, aisle: "15" }
       ]
     },
     {
       section: "Combo Loco (CLIPPED — rings free with Tuesday's 2 chop packages)",
       items: [
-        { name: "FREE: H-E-B Mi Tienda Refried Beans, 17.6 oz (choose beans over rice — jasmine's stocked)", qty: "1 — Thursday's taco side", est: 0.0 }
+        { name: "FREE: H-E-B Mi Tienda Refried Beans, 17.6 oz (choose beans over rice — jasmine's stocked)", qty: "1 — Thursday's taco side", est: 0.0, aisle: "Meal Simple right edge" }
       ]
     },
     {
       section: "Staples Stock-Up (already owned, NOT on the list: jasmine rice, fajita seasoning, soy, red wine vinegar, crushed red pepper, oregano, both oils, Kerrygold, brown sugar, kosher salt, pepper grinder, mustard)",
       items: [
-        { name: "Kadoya Pure Sesame Oil, 5.5 oz — $5.23 VERIFIED — STAPLE INVESTMENT (premium-staples rule names this exact bottle)", qty: "1 bottle", est: 5.2 },
-        { name: "Bolner's Fiesta Ground Comino (cumin), 3.5 oz — $3.65 VERIFIED — STAPLE first-buy (carnitas Thursday + all future Mexican weeks)", qty: "1 shaker", est: 3.7 },
-        { name: "Stubb's Original Bar-B-Q Sauce, 36 oz — $5.53 VERIFIED (half the per-oz of the 18 oz — premium-staples math says big bottle)", qty: "1 bottle", est: 5.5 },
-        { name: "Fiesta 'Chili Cascavel (Guajillo)' — RESTOCK x3 (label quirk: these ARE guajillos; $2.16 each receipt-learned)", qty: "3 x 1.5 oz bags — Thursday's salsa now; salsa macha + next diabla ahead", est: 6.5 }
+        { name: "Kadoya Pure Sesame Oil, 5.5 oz — $4.98 IN-STORE VERIFIED — STAPLE INVESTMENT (premium-staples rule names this exact bottle)", qty: "1 bottle", est: 5.0, aisle: "6" },
+        { name: "Bolner's Fiesta Ground Comino (cumin), 3.5 oz — $3.48 IN-STORE VERIFIED — STAPLE first-buy (carnitas + future Mexican weeks)", qty: "1 shaker", est: 3.5, aisle: "8" },
+        { name: "Stubb's Original Bar-B-Q Sauce, 36 oz — $5.27 IN-STORE VERIFIED (half the per-oz of the 18 oz)", qty: "1 bottle", est: 5.3, aisle: "6" },
+        { name: "Fiesta 'Chili Cascavel (Guajillo)' — $2.16 IN-STORE VERIFIED (label quirk: these ARE guajillos)", qty: "3 x 1.5 oz bags — Thursday's salsa now; salsa macha + next diabla ahead", est: 6.5, aisle: "8" }
       ]
     }
   ]
