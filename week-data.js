@@ -31,7 +31,7 @@ const WEEK = {
         ],
         steps: [
           "PUT-AWAY, the ones that matter: peaches → COUNTER (they're Tuesday's — firm-ripe finishes on the counter, never the fridge until ripe). Corn → fridge in husks. Tortillas → counter, sealed. Everything else is normal.",
-          "SEAL SESSION 1 — Chicken bank: cut the split breasts into 3 portions of ~1.3 lb, dust every side with fajita rub, 1 portion per bag, seal, label with painter's tape, FREEZE. That's 3 future zero-prep dinners at $2.60 each — the deal-trigger rule paying out.",
+          "SEAL SESSION 1 — Chicken bank, 3 bags with 3 DIFFERENT jobs (~1.3 lb each): bag 1 = fajita rub (proven), bag 2 = Kinder's Cowboy Butter (proven on the chops), bag 3 = plain salt + pepper — the wild card that takes ANY direction at cook time (BBQ glaze, lemon butter, parm crust, soy-ginger). Seal, label each with its rub, FREEZE. Three future dinners at $2.60 each, no two alike.",
           "SEAL SESSION 2 — Thursday's ribs: salt + pepper all over (the Stubb's glaze comes Thursday — sauce in the bag for 23 hr goes muddy), seal flat, label, FREEZE (they're cooked day 4 — the shelf-life rule says freeze, and frozen drops straight into Wednesday's bath).",
           "Cleanup: sealer wipe. Done — no bath tonight, nothing drops until Monday 3:30."
         ]
