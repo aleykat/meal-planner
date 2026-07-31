@@ -115,7 +115,7 @@ const WEEK = {
           "Sear 60-90 seconds per side — crust only, they're already perfectly cooked.",
           "Rest 3 min while you slice the peaches.",
           "Plate: chop, ear of corn, pile of peaches. Kids: everything here is already kid-food.",
-          "AFTER DINNER (5 min): rice cooker on — 2 cups jasmine, rinsed, 2.25 cups water. When it flips to warm, spread the rice on a plate to cool, then fridge UNCOVERED. Dry, cold rice is tomorrow's whole game.",
+          "AFTER DINNER (5 min): rice cooker on — 2 cups jasmine, rinsed until the water runs clear, 2.5 cups water (bumped from 2.25 after last attempt ran sticky AND undercooked). When it flips to warm, spread the rice on a plate to cool, then fridge UNCOVERED. Dry, cold rice is tomorrow's whole game.",
           "Cleanup: griddle scrape, tongs, trash the bag."
         ]
       }
