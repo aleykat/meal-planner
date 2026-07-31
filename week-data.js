@@ -1,7 +1,9 @@
-// Week of 2026-08-03 — WEEK 2 v3, HEB-only. Rerun 7/31: Jessica joins Tuesday (3
+// Week of 2026-08-03 — WEEK 2 v4, HEB-only. Rerun 7/31: Jessica joins Tuesday (3
 // adults + 2 kids) — swapped carnitas (already sized for 5) onto Tuesday as GUEST
 // NIGHT and moved BBQ chops to Thursday, at zero extra purchase cost. Wednesday's
-// fried rice DOUBLED its shrimp per feedback (+1 lb fresh, $7.97 in-store).
+// fried rice DOUBLED its shrimp per feedback (+1 lb fresh, $7.97 in-store). Mayela
+// joins Thursday (2 adults + 2 kids — matches the normal size); peaches swapped for
+// cantaloupe on her request.
 // Bath relay: chicken Mon 3:30 (150°F) → carnitas Mon after dinner (165°F, ~23-24 hr,
 // fridge-cold — only 1 day out, no freezing needed) → chops Thu 1:30 (140°F).
 // Bans continue: no bagged salads, no raw herbs.
@@ -9,7 +11,7 @@ const WEEK = {
   id: "2026-08-03",
   label: "Dinners Mon Aug 3 – Thu Aug 6 · HEB Irving only · shop Sun Aug 2",
   store: "H-E-B Irving #817 (single store)",
-  adNote: "Ad cycle 7/29–8/4, pulled 7/30; rerun 7/31 for the Tuesday guest + shrimp fix. Anchors: HCF chicken breast $1.97/lb (34% off — banked as 4 bags, 4 different preps), BBQ boneless pork loin chops $2.99/lb (33% off), pork butt country-style ribs $2.29/lb (now Tuesday's GUEST NIGHT carnitas — Jessica joins, 3 adults + 2 kids), peaches $1.47/lb, tangelos $0.97/lb. Staple investments this week (~$19, amortizes): Kadoya sesame oil, Fiesta cumin, Stubb's, guajillo restock x3. Wednesday's fried rice shrimp DOUBLED per feedback (+1 lb fresh Gulf 50/70, $7.97 in-store). ⚠ Outbreak check 7/30: cyclospora now 9 states / 1,947 cases — bagged-salad AND raw-herb bans CONTINUE (no cilantro garnish on taco night; skip the ad's salad kits). App check before Sunday: the Meal Deal's contents + the skillet→free-cheese Combo Loco.",
+  adNote: "Ad cycle 7/29–8/4, pulled 7/30; rerun 7/31 for the Tuesday guest + shrimp fix. Anchors: HCF chicken breast $1.97/lb (34% off — banked as 4 bags, 4 different preps), BBQ boneless pork loin chops $2.99/lb (33% off), pork butt country-style ribs $2.29/lb (now Tuesday's GUEST NIGHT carnitas — Jessica joins, 3 adults + 2 kids), tangelos $0.97/lb. Thursday: Mayela joins (2 adults + 2 kids, matches the normal size) — swapped peaches for cantaloupe ($1.97 sale) per her preference. Staple investments this week (~$19, amortizes): Kadoya sesame oil, Fiesta cumin, Stubb's, guajillo restock x3. Wednesday's fried rice shrimp DOUBLED per feedback (+1 lb fresh Gulf 50/70, $7.97 in-store). ⚠ Outbreak check 7/30: cyclospora now 9 states / 1,947 cases — bagged-salad AND raw-herb bans CONTINUE (no cilantro garnish on taco night; skip the ad's salad kits). App check before Sunday: the Meal Deal's contents + the skillet→free-cheese Combo Loco.",
   meals: [
     {
       id: "prep",
@@ -171,15 +173,15 @@ const WEEK = {
     },
     {
       id: "bbqchops",
-      cost: { est: 13.5, servings: 4, note: "~2.5 lb pre-seasoned BBQ chops @ $2.99/lb (33% off) + 5 ears corn + ~2 lb peaches ($1.47 feature)" },
-      nutrition: { serving: "1 large chop + 1 ear buttered corn + sliced peaches", calories: 640, protein: 44, carbs: 48, fat: 28 },
+      cost: { est: 12.4, servings: 4, note: "Mayela joins (2 adults + 2 kids — matches the standard 4-serving size, no scale-up needed): ~2.5 lb pre-seasoned BBQ chops @ $2.99/lb (33% off) + 5 ears corn + 1 cantaloupe ($1.97 sale — swapped for peaches, Mayela's dislike)" },
+      nutrition: { serving: "1 large chop + 1 ear buttered corn + cantaloupe wedges", calories: 610, protein: 44, carbs: 42, fat: 28 },
       daytime: ["THU ~1:30 PM (1 min): bath to 140°F, chops in (they hold until dinner, no rush)"],
       title: "Texas BBQ Pork Chops with Griddled Corn & Fresh Peaches",
       slot: "Dinner 4 · Thu Aug 6",
       time: "~20 min at dinner",
       equipment: ["Sous vide", "Blackstone"],
       summary:
-        "The ad does the seasoning work: Simply Seasoned BBQ chops at 33% off go bag-to-bath at 1:30, then take a hard sear next to corn rolling in Kerrygold on the flat top. Peaches at $1.47/lb are dessert masquerading as a side. The easiest night of the week — nothing to prep for tomorrow, this is the last dinner.",
+        "Mayela joins tonight (2 adults + 2 kids — the normal family size, so nothing to scale up). The ad does the seasoning work: Simply Seasoned BBQ chops at 33% off go bag-to-bath at 1:30, then take a hard sear next to corn rolling in Kerrygold on the flat top. Cantaloupe swaps in for peaches (Mayela doesn't care for them) — same easy cut-and-serve side. The easiest night of the week — nothing to prep for tomorrow, this is the last dinner.",
       links: [
         { label: "Serious Eats — sous vide pork chops guide", url: "https://www.seriouseats.com/sous-vide-pork-chops-recipe", tag: "primary" },
         { label: "r/sousvide — pork chop time/temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20chops", tag: "reddit" }
@@ -192,7 +194,7 @@ const WEEK = {
           "~2.5 lb H-E-B Simply Seasoned BBQ boneless pork loin chops (bag as-bought, 1 layer)",
           "5 ears corn, shucked",
           "2 tbsp Kerrygold butter + kosher salt",
-          "~2 lb yellow peaches, sliced at dinner",
+          "1 whole cantaloupe, cut into wedges at dinner (swapped for peaches — Mayela's dislike)",
           "1 tbsp canola oil"
         ],
         steps: [
@@ -200,8 +202,8 @@ const WEEK = {
           "Dinner: Blackstone on high. Corn first: film of oil, roll the ears 8-10 min until charred in spots; finish with butter + salt.",
           "Pull the chops, pat VERY dry.",
           "Sear 60-90 seconds per side — crust only, they're already perfectly cooked.",
-          "Rest 3 min while you slice the peaches.",
-          "Plate: chop, ear of corn, pile of peaches. Kids: everything here is already kid-food.",
+          "Rest 3 min while you cut the cantaloupe into wedges.",
+          "Plate: chop, ear of corn, cantaloupe wedges. Kids: everything here is already kid-food.",
           "Cleanup: griddle scrape, tongs, trash the bag. Nothing to prep for tomorrow — the week's done."
         ]
       }
@@ -236,7 +238,7 @@ const WEEK = {
       items: [
         { name: "Bell peppers — 1 green ($0.72) + red ($1.48) + yellow ($1.46), IN-STORE VERIFIED", qty: "3 — Monday's fajitas", est: 3.7, aisle: "Produce left wall" },
         { name: "H-E-B Sweet Corn on the Cob, 4 ct — $3.28 IN-STORE VERIFIED", qty: "1 pack (1 ear each) — Thursday", est: 3.3, aisle: "15" },
-        { name: "Yellow peaches — $1.47/lb VERIFIED (⚠ 'out of stock' online 7/30 — ad item, check the table; plums are the ad's stated backup)", qty: "~5 peaches (~2 lb), firm-ripe — Thursday", est: 3.0, aisle: "Produce" },
+        { name: "H-E-B Texas Roots Fresh Pecos Cantaloupe — $1.97 IN-STORE VERIFIED (sale, reg $3.48) — swapped for peaches (Mayela joins Thursday, doesn't care for peaches)", qty: "1 whole — Thursday", est: 2.0, aisle: "Produce" },
         { name: "Green onions — $0.67 IN-STORE VERIFIED", qty: "1 bunch — Wednesday's fried rice", est: 0.7, aisle: "Produce left wall" },
         { name: "Roma tomatoes — $0.85/lb IN-STORE VERIFIED (~$0.25 each)", qty: "2 — Tuesday's GUEST NIGHT salsa", est: 0.5, aisle: "Produce" },
         { name: "White onion — $1.19/lb IN-STORE VERIFIED", qty: "1 — Tuesday: half charred, half raw for the table", est: 1.1, aisle: "Produce" },
