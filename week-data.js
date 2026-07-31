@@ -82,39 +82,47 @@ const WEEK = {
       }
     },
     {
-      id: "bbqchops",
-      cost: { est: 13.5, servings: 4, note: "~2.5 lb pre-seasoned BBQ chops @ $2.99/lb (33% off) + 5 ears corn + ~2 lb peaches ($1.47 feature)" },
-      nutrition: { serving: "1 large chop + 1 ear buttered corn + sliced peaches", calories: 640, protein: 44, carbs: 48, fat: 28 },
-      daytime: ["THU ~1:30 PM (1 min): bath to 140°F, chops in (they hold until dinner, no rush)"],
-      title: "Texas BBQ Pork Chops with Griddled Corn & Fresh Peaches",
-      slot: "Dinner 4 · Thu Aug 6",
-      time: "~20 min at dinner",
-      equipment: ["Sous vide", "Blackstone"],
-      summary:
-        "The ad does the seasoning work: Simply Seasoned BBQ chops at 33% off go bag-to-bath at 1:30, then take a hard sear next to corn rolling in Kerrygold on the flat top. Peaches at $1.47/lb are dessert masquerading as a side. The easiest night of the week — nothing to prep for tomorrow, this is the last dinner.",
-      links: [
-        { label: "Serious Eats — sous vide pork chops guide", url: "https://www.seriouseats.com/sous-vide-pork-chops-recipe", tag: "primary" },
-        { label: "r/sousvide — pork chop time/temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20chops", tag: "reddit" }
+      id: "carnitas",
+      cost: { est: 15.6, servings: 5, note: "GUEST NIGHT — Jessica joins (3 adults + 2 kids, 5 servings): ~3.5 lb country-style ribs @ $2.29/lb (boneless butt strips = carnitas without the bone work) + corn tortillas, quick guajillo salsa, white onion, limes, tangelos, FREE refried beans (Combo Loco). Kids' quesadilla cheese carries over from Monday's block" },
+      nutrition: { serving: "3 tacos (crispy carnitas, salsa, onion) + tangelo", calories: 690, protein: 40, carbs: 58, fat: 34 },
+      daytime: [
+        "TUE ~12:30 PM (10 min): quick guajillo-arbol salsa (fully cooked — ban-safe) → fridge jar. Carnitas have been riding since Monday evening — nothing else needed",
+        "TUE after dinner (5 min): rice cooker on — 2 cups jasmine, rinsed until the water runs clear, 2.5 cups water. When it flips to warm, spread on a plate to cool, then fridge UNCOVERED — tomorrow's fried rice needs day-old rice"
       ],
-      swapNote: "140°F = juicy with a touch of blush, safe and ideal for lean loin chops. Corn griddles husk-off: butter, salt, rolling sear.",
+      title: "Blackstone Carnitas Tacos with Guajillo Salsa",
+      slot: "Dinner 2 · Tue Aug 4",
+      time: "~25 min at dinner",
+      equipment: ["Sous vide", "Blackstone", "Rice cooker (evening, for Wed)"],
+      summary:
+        "GUEST NIGHT — Jessica joins: pork butt strips (the same cut as carnitas, pre-boned at $2.29/lb) ride 23-24 hours at 165°F with cumin, oregano, garlic, and tangelo — dropped fridge-cold Monday evening, only 1 day out so no freezing needed — then shred and CRISP hard on the Blackstone. Warm corn tortillas, a quick cooked guajillo salsa from the restocked bags, charred white onion, lime, tangelos on the side, FREE refried beans from the clipped Combo Loco. No cilantro — outbreak ban — and honestly the charred onion + lime don't miss it. Kids: plain crispy carnitas or quesadillas with Monday's cheese.",
+      links: [
+        { label: "Serious Eats — sous vide carnitas (Kenji's method)", url: "https://www.seriouseats.com/sous-vide-carnitas-for-tacos-recipe", tag: "primary" },
+        { label: "r/sousvide — carnitas threads", url: "https://www.reddit.com/r/sousvide/search/?q=carnitas", tag: "reddit" }
+      ],
+      swapNote: "165°F/~23-24 hr from fridge-cold (only 1 day out — no freezing needed this time) = shreddable with structure. Crisp in the rendered bag fat — that's confit economics from a $2.29/lb cut.",
       recipe: {
-        activeTime: "~20 min at dinner",
-        cookTime: "chops 2-4 hr at 140°F (in since 1:30, unattended)",
+        activeTime: "~25 min at dinner (+10 min salsa at midday)",
+        cookTime: "carnitas ~23-24 hr at 165°F (in since Monday evening, fridge-cold start)",
         ingredients: [
-          "~2.5 lb H-E-B Simply Seasoned BBQ boneless pork loin chops (bag as-bought, 1 layer)",
-          "5 ears corn, shucked",
-          "2 tbsp Kerrygold butter + kosher salt",
-          "~2 lb yellow peaches, sliced at dinner",
-          "1 tbsp canola oil"
+          "~3.5 lb country-style ribs (in the bath since Monday evening — cumin, oregano, garlic, tangelo in the bag)",
+          "SALSA (midday): 2 guajillos + 1-2 arbol (stemmed, seeded), 2 roma tomatoes, 1 garlic clove, 0.25 tsp salt — soak chiles 10 min in just-boiled water, blend all with a splash of soak water, simmer 5 min in 1 tsp oil until darkened. Jar → fridge",
+          "12-16 corn tortillas",
+          "1 white onion: half in thick slabs for charring, half diced raw for the table",
+          "Mi Tienda refried beans, 17.6 oz (the Combo Loco freebie) — warmed in a small pot with a splash of water",
+          "3 limes in wedges + 4-5 tangelos on the side",
+          "kids: leftover colby jack from Monday's block"
         ],
         steps: [
-          "~1:30 PM: seal the chops flat (pre-seasoned — nothing added), bath to 140°F, in they go.",
-          "Dinner: Blackstone on high. Corn first: film of oil, roll the ears 8-10 min until charred in spots; finish with butter + salt.",
-          "Pull the chops, pat VERY dry.",
-          "Sear 60-90 seconds per side — crust only, they're already perfectly cooked.",
-          "Rest 3 min while you slice the peaches.",
-          "Plate: chop, ear of corn, pile of peaches. Kids: everything here is already kid-food.",
-          "Cleanup: griddle scrape, tongs, trash the bag. Nothing to prep for tomorrow — the week's done."
+          "~12:30 PM: make the salsa (above). It's fully cooked — ban-safe — and better by dinner.",
+          "Dinner: pull the bag, pour the juices into a bowl and skim the fat — keep BOTH.",
+          "Shred the pork into rough chunks — it falls apart on contact.",
+          "Blackstone on high with 2 tbsp of the bag fat: carnitas spread thin, DON'T TOUCH for 2-3 min until the bottom is deep brown and crackly, flip once, 2 more min. Char the onion slabs alongside.",
+          "Splash the meat with a few spoons of bag juices right at the end — steam + glaze in one move.",
+          "Tortillas: 20 seconds per side on the griddle edge, stack in a towel.",
+          "KID CHECKPOINT: crispy plain carnitas out first — tacos or quesadillas with Monday's cheese on the cool corner. No second dish.",
+          "Warm the refried beans in a small pot (splash of water, medium-low, stir) while the meat crisps — free side from the Combo Loco.",
+          "Table: carnitas, warm tortillas, beans, salsa jar, charred + raw onion, lime wedges, tangelos. Build your own.",
+          "Cleanup: griddle scrape while warm, one bowl, trash the bag. Leftover carnitas reseal for Friday — they reheat crispy."
         ]
       }
     },
@@ -162,47 +170,39 @@ const WEEK = {
       }
     },
     {
-      id: "carnitas",
-      cost: { est: 15.6, servings: 5, note: "GUEST NIGHT — Jessica joins (3 adults + 2 kids, 5 servings): ~3.5 lb country-style ribs @ $2.29/lb (boneless butt strips = carnitas without the bone work) + corn tortillas, quick guajillo salsa, white onion, limes, tangelos, FREE refried beans (Combo Loco). Kids' quesadilla cheese carries over from Monday's block" },
-      nutrition: { serving: "3 tacos (crispy carnitas, salsa, onion) + tangelo", calories: 690, protein: 40, carbs: 58, fat: 34 },
-      daytime: [
-        "TUE ~12:30 PM (10 min): quick guajillo-arbol salsa (fully cooked — ban-safe) → fridge jar. Carnitas have been riding since Monday evening — nothing else needed",
-        "TUE after dinner (5 min): rice cooker on — 2 cups jasmine, rinsed until the water runs clear, 2.5 cups water. When it flips to warm, spread on a plate to cool, then fridge UNCOVERED — tomorrow's fried rice needs day-old rice"
-      ],
-      title: "Blackstone Carnitas Tacos with Guajillo Salsa",
-      slot: "Dinner 2 · Tue Aug 4",
-      time: "~25 min at dinner",
-      equipment: ["Sous vide", "Blackstone", "Rice cooker (evening, for Wed)"],
+      id: "bbqchops",
+      cost: { est: 13.5, servings: 4, note: "~2.5 lb pre-seasoned BBQ chops @ $2.99/lb (33% off) + 5 ears corn + ~2 lb peaches ($1.47 feature)" },
+      nutrition: { serving: "1 large chop + 1 ear buttered corn + sliced peaches", calories: 640, protein: 44, carbs: 48, fat: 28 },
+      daytime: ["THU ~1:30 PM (1 min): bath to 140°F, chops in (they hold until dinner, no rush)"],
+      title: "Texas BBQ Pork Chops with Griddled Corn & Fresh Peaches",
+      slot: "Dinner 4 · Thu Aug 6",
+      time: "~20 min at dinner",
+      equipment: ["Sous vide", "Blackstone"],
       summary:
-        "GUEST NIGHT — Jessica joins: pork butt strips (the same cut as carnitas, pre-boned at $2.29/lb) ride 23-24 hours at 165°F with cumin, oregano, garlic, and tangelo — dropped fridge-cold Monday evening, only 1 day out so no freezing needed — then shred and CRISP hard on the Blackstone. Warm corn tortillas, a quick cooked guajillo salsa from the restocked bags, charred white onion, lime, tangelos on the side, FREE refried beans from the clipped Combo Loco. No cilantro — outbreak ban — and honestly the charred onion + lime don't miss it. Kids: plain crispy carnitas or quesadillas with Monday's cheese.",
+        "The ad does the seasoning work: Simply Seasoned BBQ chops at 33% off go bag-to-bath at 1:30, then take a hard sear next to corn rolling in Kerrygold on the flat top. Peaches at $1.47/lb are dessert masquerading as a side. The easiest night of the week — nothing to prep for tomorrow, this is the last dinner.",
       links: [
-        { label: "Serious Eats — sous vide carnitas (Kenji's method)", url: "https://www.seriouseats.com/sous-vide-carnitas-for-tacos-recipe", tag: "primary" },
-        { label: "r/sousvide — carnitas threads", url: "https://www.reddit.com/r/sousvide/search/?q=carnitas", tag: "reddit" }
+        { label: "Serious Eats — sous vide pork chops guide", url: "https://www.seriouseats.com/sous-vide-pork-chops-recipe", tag: "primary" },
+        { label: "r/sousvide — pork chop time/temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20chops", tag: "reddit" }
       ],
-      swapNote: "165°F/~23-24 hr from fridge-cold (only 1 day out — no freezing needed this time) = shreddable with structure. Crisp in the rendered bag fat — that's confit economics from a $2.29/lb cut.",
+      swapNote: "140°F = juicy with a touch of blush, safe and ideal for lean loin chops. Corn griddles husk-off: butter, salt, rolling sear.",
       recipe: {
-        activeTime: "~25 min at dinner (+10 min salsa at midday)",
-        cookTime: "carnitas ~23-24 hr at 165°F (in since Monday evening, fridge-cold start)",
+        activeTime: "~20 min at dinner",
+        cookTime: "chops 2-4 hr at 140°F (in since 1:30, unattended)",
         ingredients: [
-          "~3.5 lb country-style ribs (in the bath since Monday evening — cumin, oregano, garlic, tangelo in the bag)",
-          "SALSA (midday): 2 guajillos + 1-2 arbol (stemmed, seeded), 2 roma tomatoes, 1 garlic clove, 0.25 tsp salt — soak chiles 10 min in just-boiled water, blend all with a splash of soak water, simmer 5 min in 1 tsp oil until darkened. Jar → fridge",
-          "12-16 corn tortillas",
-          "1 white onion: half in thick slabs for charring, half diced raw for the table",
-          "Mi Tienda refried beans, 17.6 oz (the Combo Loco freebie) — warmed in a small pot with a splash of water",
-          "3 limes in wedges + 4-5 tangelos on the side",
-          "kids: leftover colby jack from Monday's block"
+          "~2.5 lb H-E-B Simply Seasoned BBQ boneless pork loin chops (bag as-bought, 1 layer)",
+          "5 ears corn, shucked",
+          "2 tbsp Kerrygold butter + kosher salt",
+          "~2 lb yellow peaches, sliced at dinner",
+          "1 tbsp canola oil"
         ],
         steps: [
-          "~12:30 PM: make the salsa (above). It's fully cooked — ban-safe — and better by dinner.",
-          "Dinner: pull the bag, pour the juices into a bowl and skim the fat — keep BOTH.",
-          "Shred the pork into rough chunks — it falls apart on contact.",
-          "Blackstone on high with 2 tbsp of the bag fat: carnitas spread thin, DON'T TOUCH for 2-3 min until the bottom is deep brown and crackly, flip once, 2 more min. Char the onion slabs alongside.",
-          "Splash the meat with a few spoons of bag juices right at the end — steam + glaze in one move.",
-          "Tortillas: 20 seconds per side on the griddle edge, stack in a towel.",
-          "KID CHECKPOINT: crispy plain carnitas out first — tacos or quesadillas with Monday's cheese on the cool corner. No second dish.",
-          "Warm the refried beans in a small pot (splash of water, medium-low, stir) while the meat crisps — free side from the Combo Loco.",
-          "Table: carnitas, warm tortillas, beans, salsa jar, charred + raw onion, lime wedges, tangelos. Build your own.",
-          "Cleanup: griddle scrape while warm, one bowl, trash the bag. Leftover carnitas reseal for Friday — they reheat crispy."
+          "~1:30 PM: seal the chops flat (pre-seasoned — nothing added), bath to 140°F, in they go.",
+          "Dinner: Blackstone on high. Corn first: film of oil, roll the ears 8-10 min until charred in spots; finish with butter + salt.",
+          "Pull the chops, pat VERY dry.",
+          "Sear 60-90 seconds per side — crust only, they're already perfectly cooked.",
+          "Rest 3 min while you slice the peaches.",
+          "Plate: chop, ear of corn, pile of peaches. Kids: everything here is already kid-food.",
+          "Cleanup: griddle scrape, tongs, trash the bag. Nothing to prep for tomorrow — the week's done."
         ]
       }
     }
