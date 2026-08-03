@@ -99,7 +99,7 @@ const WEEK = {
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Blackstone", "Rice cooker (evening, for Wed)"],
       summary:
-        "GUEST NIGHT — Jessica joins: pork butt strips (the same cut as carnitas, pre-boned at $2.29/lb) ride 23-24 hours at 165°F with cumin, oregano, garlic, and tangelo — dropped fridge-cold Monday evening, only 1 day out so no freezing needed — then shred and CRISP hard on the Blackstone. Warm corn tortillas, a quick cooked guajillo salsa from the restocked bags, charred white onion, lime, tangelos on the side, FREE refried beans from the clipped Combo Loco. No cilantro — outbreak ban — and honestly the charred onion + lime don't miss it. Kids: plain crispy carnitas or quesadillas with Monday's cheese.",
+        "GUEST NIGHT — Jessica joins: pork butt strips (the same cut as carnitas, pre-boned at $2.29/lb) ride 23-24 hours at 165°F with cumin, oregano, garlic, and tangelo — dropped fridge-cold Monday evening, only 1 day out so no freezing needed — then shred and CRISP hard on the Blackstone. Warm corn tortillas, a quick cooked guajillo salsa from the restocked bags, charred white onion, lime, tangelos on the side, FREE refried beans from the clipped Combo Loco. No cilantro — outbreak ban — and honestly the charred onion + lime don't miss it. Kids: crispy carnitas tacos, same as the table — no separate dish tonight.",
       links: [
         { label: "Serious Eats — sous vide carnitas (Kenji's method)", url: "https://www.seriouseats.com/sous-vide-carnitas-for-tacos-recipe", tag: "primary" },
         { label: "r/sousvide — carnitas threads", url: "https://www.reddit.com/r/sousvide/search/?q=carnitas", tag: "reddit" }
@@ -115,7 +115,7 @@ const WEEK = {
           "1 white onion: half in thick slabs for charring, half diced raw for the table",
           "Mi Tienda CHORIZO refried beans, 17.6 oz (the Combo Loco freebie rang chorizo-flavor, not plain pinto — arguably better with carnitas) — warmed in a small pot with a splash of water",
           "limes in wedges (bought as a 4-ct XL sleeved pack, $2.98) + 4-5 tangelos on the side",
-          "kids: cheese for quesadillas — ⚠ NOT on the 8/3 receipt, need to grab a block before Tuesday (banked colby jack plan fell through when fajitas got cut)"
+          "kids eat carnitas tacos same as everyone else — no quesadilla track needed tonight"
         ],
         steps: [
           "~12:30 PM: make the salsa (above). It's fully cooked — ban-safe — and better by dinner.",
@@ -124,7 +124,7 @@ const WEEK = {
           "Blackstone on high with 2 tbsp of the bag fat: carnitas spread thin, DON'T TOUCH for 2-3 min until the bottom is deep brown and crackly, flip once, 2 more min. Char the onion slabs alongside.",
           "Splash the meat with a few spoons of bag juices right at the end — steam + glaze in one move.",
           "Tortillas: 20 seconds per side on the griddle edge, stack in a towel.",
-          "KID CHECKPOINT: crispy plain carnitas out first — tacos or quesadillas (if cheese made it into the house by tonight) on the cool corner. No second dish.",
+          "KID CHECKPOINT: crispy plain carnitas out first, straight into tacos with them. No second dish.",
           "Warm the refried beans in a small pot (splash of water, medium-low, stir) while the meat crisps — free side from the Combo Loco.",
           "Table: carnitas, warm tortillas, beans, salsa jar, charred + raw onion, lime wedges, tangelos. Build your own.",
           "Cleanup: griddle scrape while warm, one bowl, trash the bag. Leftover carnitas reseal for Friday — they reheat crispy."
@@ -214,8 +214,7 @@ const WEEK = {
     {
       section: "Dairy & Eggs",
       items: [
-        { name: "H-E-B Grade AA Cage Free Large Brown Eggs, 12 ct — $2.66 IN-STORE VERIFIED (price cut) — STAPLE first-buy", qty: "1 dozen", est: 2.7, aisle: "Dairy right wall" },
-        { name: "H-E-B Colby & Monterey Jack, 8 oz block — $2.98 IN-STORE VERIFIED (grate at home)", qty: "1 block — Tuesday's carnitas kid quesadillas", est: 3.0, aisle: "Meat Mkt back wall (cheese case)" }
+        { name: "H-E-B Grade AA Cage Free Large Brown Eggs, 12 ct — $2.66 IN-STORE VERIFIED (price cut) — STAPLE first-buy", qty: "1 dozen", est: 2.7, aisle: "Dairy right wall" }
       ]
     },
     {
