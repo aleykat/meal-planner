@@ -47,7 +47,7 @@ const WEEK = {
     },
     {
       id: "bbqchops",
-      cost: { est: 12.4, servings: 4, note: "~2.5 lb pre-seasoned BBQ chops @ $2.99/lb (33% off) + 5 ears corn + 1 cantaloupe ($1.97 sale — a proven family favorite, fills the fruit slot)" },
+      cost: { est: 12.4, servings: 4, note: "Mayela joins tonight (2 adults + 2 kids — matches the standard 4-serving size, no scale-up needed): ~2.5 lb pre-seasoned BBQ chops @ $2.99/lb (33% off) + 5 ears corn + 1 cantaloupe ($1.97 sale — a proven family favorite, fills the fruit slot)" },
       nutrition: { serving: "1 large chop + 1 ear buttered corn + cantaloupe wedges", calories: 610, protein: 44, carbs: 42, fat: 28 },
       daytime: [
         "MON ~1:30 PM (1 min): bath to 140°F, chops in (they hold until dinner, no rush)",
@@ -58,7 +58,7 @@ const WEEK = {
       time: "~20 min at dinner",
       equipment: ["Sous vide", "Blackstone"],
       summary:
-        "Rerun 8/2 (shop day): Thursday dropped off the cook week (meet the teacher, dinner on the run), but the family wants to KEEP chops rather than lose it — so it moves to Monday and fajitas gets bumped to a future week instead (the banked chicken keeps fine in the freezer). The ad does the seasoning work: Simply Seasoned BBQ chops at 33% off go bag-to-bath at 1:30, then take a hard sear next to corn rolling in Kerrygold on the flat top. Cantaloupe — a proven favorite — fills the fruit side. After dinner: bump the bath to 165°F and drop the carnitas bag, which is what sets up Tuesday's guest dinner.",
+        "Mayela joins tonight (2 adults + 2 kids — the normal family size, so nothing to scale up). Rerun 8/2 (shop day): Thursday dropped off the cook week (meet the teacher, dinner on the run), but the family wants to KEEP chops rather than lose it — so it moves to Monday and fajitas gets bumped to a future week instead (the banked chicken keeps fine in the freezer). The ad does the seasoning work: Simply Seasoned BBQ chops at 33% off go bag-to-bath at 1:30, then take a hard sear next to corn rolling in Kerrygold on the flat top. Cantaloupe — a proven favorite — fills the fruit side, and it's a happy coincidence for Mayela too. After dinner: bump the bath to 165°F and drop the carnitas bag, which is what sets up Tuesday's guest dinner.",
       links: [
         { label: "Serious Eats — sous vide pork chops guide", url: "https://www.seriouseats.com/sous-vide-pork-chops-recipe", tag: "primary" },
         { label: "r/sousvide — pork chop time/temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20chops", tag: "reddit" }
