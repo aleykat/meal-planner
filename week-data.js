@@ -24,7 +24,7 @@ const WEEK = {
       summary:
         "Two seal jobs, neither for Monday: bank the chicken deal as four DIFFERENT future dinners (new rule — no more one-rub-fits-all; this is pure freezer bank now that fajitas got bumped to a future week), and stage Tuesday's GUEST NIGHT carnitas (Jessica joins) — only 1 day out this time, so it's a simple fridge seal, no freezing. Monday's chops need zero advance prep — pre-seasoned, straight from the fridge tomorrow. No bath run tonight.",
       links: [
-        { label: "Serious Eats — sous vide chicken breast guide (times & temps)", url: "https://www.seriouseats.com/food-lab-complete-guide-to-sous-vide-chicken-breast", tag: "primary" },
+        { label: "Serious Eats — sous vide chicken breast guide (times & temps)", url: "https://www.seriouseats.com/the-food-lab-complete-guide-to-sous-vide-chicken-breast", tag: "primary" },
         { label: "r/sousvide — carnitas threads", url: "https://www.reddit.com/r/sousvide/search/?q=carnitas", tag: "reddit" }
       ],
       recipe: {
@@ -51,7 +51,8 @@ const WEEK = {
       nutrition: { serving: "1 large chop + 1 ear buttered corn + Dream Melon wedges", calories: 620, protein: 44, carbs: 44, fat: 28 },
       daytime: [
         "MON ~1:30 PM (1 min): bath to 140°F, chops in (they hold until dinner, no rush)",
-        "MON after dinner (1 min): bump the bath to 165°F, drop the fridge-cold carnitas bag — rides ~23-24 hr to Tuesday's guest dinner"
+        "MON after dinner (1 min): bump the bath to 165°F, drop the fridge-cold carnitas bag — rides ~23-24 hr to Tuesday's guest dinner",
+        "MON after dinner (5 min): rice cooker on — 2 cups jasmine, rinsed until the water runs clear, 2.5 cups water. When it flips to warm, spread on a plate to cool, then fridge UNCOVERED — moved up a day from the original Tuesday-night plan, so it's two-day-old by Wednesday's fried rice instead of one — if anything drier and less clump-prone"
       ],
       title: "Texas BBQ Pork Chops with Griddled Corn & Dream Melon",
       slot: "Dinner 1 · Mon Aug 3",
@@ -91,17 +92,16 @@ const WEEK = {
       cost: { est: 15.6, servings: 5, note: "GUEST NIGHT — Jessica joins (3 adults + 2 kids, 5 servings): ~3.5 lb country-style ribs @ $2.29/lb (boneless butt strips = carnitas without the bone work) + corn tortillas, quick guajillo salsa, white onion, limes, tangelos, FREE refried beans (Combo Loco). Kids' quesadilla cheese carries over from Monday's block" },
       nutrition: { serving: "3 tacos (crispy carnitas, salsa, onion) + tangelo", calories: 690, protein: 40, carbs: 58, fat: 34 },
       daytime: [
-        "TUE ~12:30 PM (10 min): quick guajillo-arbol salsa (fully cooked — ban-safe) → fridge jar. Carnitas have been riding since Monday evening — nothing else needed",
-        "TUE after dinner (5 min): rice cooker on — 2 cups jasmine, rinsed until the water runs clear, 2.5 cups water. When it flips to warm, spread on a plate to cool, then fridge UNCOVERED — tomorrow's fried rice needs day-old rice"
+        "TUE ~12:30 PM (10 min): quick guajillo-arbol salsa (fully cooked — ban-safe) → fridge jar. Carnitas have been riding since Monday evening — nothing else needed. Rice already done Monday night — nothing to start tonight"
       ],
       title: "Blackstone Carnitas Tacos with Guajillo Salsa",
       slot: "Dinner 2 · Tue Aug 4",
       time: "~25 min at dinner",
-      equipment: ["Sous vide", "Blackstone", "Rice cooker (evening, for Wed)"],
+      equipment: ["Sous vide", "Blackstone"],
       summary:
         "GUEST NIGHT — Jessica joins: pork butt strips (the same cut as carnitas, pre-boned at $2.29/lb) ride 23-24 hours at 165°F with cumin, oregano, garlic, and tangelo — dropped fridge-cold Monday evening, only 1 day out so no freezing needed — then shred and CRISP hard on the Blackstone. Warm corn tortillas, a quick cooked guajillo salsa from the restocked bags, charred white onion, lime, tangelos on the side, FREE refried beans from the clipped Combo Loco. No cilantro — outbreak ban — and honestly the charred onion + lime don't miss it. Kids: crispy carnitas tacos, same as the table — no separate dish tonight.",
       links: [
-        { label: "Serious Eats — sous vide carnitas (Kenji's method)", url: "https://www.seriouseats.com/sous-vide-carnitas-for-tacos-recipe", tag: "primary" },
+        { label: "Serious Eats — sous vide carnitas (Kenji's method)", url: "https://www.seriouseats.com/sous-vide-carnitas-crispy-mexican-style-pulled-pork-recipe", tag: "primary" },
         { label: "r/sousvide — carnitas threads", url: "https://www.reddit.com/r/sousvide/search/?q=carnitas", tag: "reddit" }
       ],
       swapNote: "165°F/~23-24 hr from fridge-cold (only 1 day out — no freezing needed this time) = shreddable with structure. Crisp in the rendered bag fat — that's confit economics from a $2.29/lb cut.",
@@ -141,18 +141,18 @@ const WEEK = {
       time: "~20 min at dinner",
       equipment: ["Blackstone"],
       summary:
-        "Rerun per feedback: DOUBLED the shrimp (0.5 lb banked + 1 lb fresh = 1.5 lb) so this finally eats like a proper shrimp fried rice, not rice with a few shrimp in it. Yesterday's chilled rice crisped on the flat top with eggs, broccoli, and a soy-garlic-ginger finish — plus a thread of Kadoya toasted sesame oil off the heat. Kids plate before the finishers get loud. Last dinner of the week — nothing to prep for tomorrow.",
+        "Rerun per feedback: DOUBLED the shrimp (0.5 lb banked + 1 lb fresh = 1.5 lb) so this finally eats like a proper shrimp fried rice, not rice with a few shrimp in it. Monday night's chilled rice (made a day early this week, so it's two days old rather than one) crisped on the flat top with eggs, broccoli, and a soy-garlic-ginger finish — plus a thread of Kadoya toasted sesame oil off the heat. Kids plate before the finishers get loud. Last dinner of the week — nothing to prep for tomorrow.",
       links: [
         { label: "The Woks of Life — Shrimp Fried Rice (the reference)", url: "https://thewoksoflife.com/shrimp-fried-rice/", tag: "primary" },
         { label: "r/blackstonegriddle — fried rice threads", url: "https://www.reddit.com/r/blackstonegriddle/search/?q=fried%20rice", tag: "reddit" }
       ],
-      swapNote: "Day-old fridge rice only — fresh rice steams and clumps. Sesame oil is a FINISHER, never a cooking oil — it burns. The 50/70 shrimp are small and there's 1.5 lb of them now — work in two batches so the griddle doesn't overcrowd and steam instead of sear.",
+      swapNote: "Fridge-cold rice only, at least a day old — fresh rice steams and clumps. This week it's two days old (made Monday night instead of Tuesday), which if anything dries it out more. Sesame oil is a FINISHER, never a cooking oil — it burns. The 50/70 shrimp are small and there's 1.5 lb of them now — work in two batches so the griddle doesn't overcrowd and steam instead of sear.",
       recipe: {
         activeTime: "~20 min at dinner",
         cookTime: "all griddle, no bath tonight — nothing to start for tomorrow",
         ingredients: [
           "banked Gulf 50/70 shrimp (~0.5 lb) PLUS a fresh 1 lb bag, same style — 1.5 lb total, doubled per feedback — thawed in the fridge since morning, patted dry",
-          "yesterday's rice, cold from the fridge (~6 cups), clumps broken up",
+          "Monday night's rice, cold from the fridge (~6 cups, two days old), clumps broken up",
           "banked steamable broccoli bag — microwave 3 min, drain HARD",
           "4 eggs, beaten",
           "1 bunch green onions, sliced (whites and greens separate)",
