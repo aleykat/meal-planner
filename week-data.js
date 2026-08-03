@@ -47,18 +47,18 @@ const WEEK = {
     },
     {
       id: "bbqchops",
-      cost: { est: 12.4, servings: 4, note: "Mayela joins tonight (2 adults + 2 kids — matches the standard 4-serving size, no scale-up needed): ~2.5 lb pre-seasoned BBQ chops @ $2.99/lb (33% off) + 5 ears corn + 1 cantaloupe ($1.97 sale — a proven family favorite, fills the fruit slot)" },
-      nutrition: { serving: "1 large chop + 1 ear buttered corn + cantaloupe wedges", calories: 610, protein: 44, carbs: 42, fat: 28 },
+      cost: { est: 14.86, servings: 4, note: "RECEIPT-TRUED 8/3: Mayela joins tonight (2 adults + 2 kids — matches the standard 4-serving size). Chops rang $9.88 (bigger pack than the 2.3 lb avg checked online), corn $1.00 (cheaper than expected), and the melon rang as H-E-B Summer Gem Dream Melon $3.98 — NOT the $1.97 Pecos cantaloupe planned (different product grabbed at the store; same prep)" },
+      nutrition: { serving: "1 large chop + 1 ear buttered corn + Dream Melon wedges", calories: 620, protein: 44, carbs: 44, fat: 28 },
       daytime: [
         "MON ~1:30 PM (1 min): bath to 140°F, chops in (they hold until dinner, no rush)",
         "MON after dinner (1 min): bump the bath to 165°F, drop the fridge-cold carnitas bag — rides ~23-24 hr to Tuesday's guest dinner"
       ],
-      title: "Texas BBQ Pork Chops with Griddled Corn & Cantaloupe",
+      title: "Texas BBQ Pork Chops with Griddled Corn & Dream Melon",
       slot: "Dinner 1 · Mon Aug 3",
       time: "~20 min at dinner",
       equipment: ["Sous vide", "Blackstone"],
       summary:
-        "Mayela joins tonight (2 adults + 2 kids — the normal family size, so nothing to scale up). Rerun 8/2 (shop day): Thursday dropped off the cook week (meet the teacher, dinner on the run), but the family wants to KEEP chops rather than lose it — so it moves to Monday and fajitas gets bumped to a future week instead (the banked chicken keeps fine in the freezer). The ad does the seasoning work: Simply Seasoned BBQ chops at 33% off go bag-to-bath at 1:30, then take a hard sear next to corn rolling in Kerrygold on the flat top. Cantaloupe — a proven favorite — fills the fruit side, and it's a happy coincidence for Mayela too. After dinner: bump the bath to 165°F and drop the carnitas bag, which is what sets up Tuesday's guest dinner.",
+        "Mayela joins tonight (2 adults + 2 kids — the normal family size, so nothing to scale up). Rerun 8/2 (shop day): Thursday dropped off the cook week (meet the teacher, dinner on the run), but the family wants to KEEP chops rather than lose it — so it moves to Monday and fajitas gets bumped to a future week instead (the banked chicken keeps fine in the freezer). The ad does the seasoning work: Simply Seasoned BBQ chops at 33% off go bag-to-bath at 1:30, then take a hard sear next to corn rolling in Kerrygold on the flat top. H-E-B Summer Gem Dream Melon ended up in the cart instead of the planned Pecos cantaloupe — same easy wedge prep, still a fresh melon side (peaches were never a risk for Mayela either way). After dinner: bump the bath to 165°F and drop the carnitas bag, which is what sets up Tuesday's guest dinner.",
       links: [
         { label: "Serious Eats — sous vide pork chops guide", url: "https://www.seriouseats.com/sous-vide-pork-chops-recipe", tag: "primary" },
         { label: "r/sousvide — pork chop time/temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20chops", tag: "reddit" }
@@ -68,10 +68,10 @@ const WEEK = {
         activeTime: "~20 min at dinner",
         cookTime: "chops 2-4 hr at 140°F (in since 1:30, unattended)",
         ingredients: [
-          "~2.5 lb H-E-B Simply Seasoned BBQ boneless pork loin chops (bag as-bought, 1 layer)",
+          "H-E-B Simply Seasoned BBQ boneless pork loin chops, 1 pack as-bought (bag as-bought, 1 layer)",
           "5 ears corn, shucked",
           "2 tbsp Kerrygold butter + kosher salt",
-          "1 whole cantaloupe, cut into wedges at dinner",
+          "1 whole H-E-B Summer Gem Dream Melon, cut into wedges at dinner",
           "1 tbsp canola oil"
         ],
         steps: [
@@ -79,8 +79,8 @@ const WEEK = {
           "Dinner: Blackstone on high. Corn first: film of oil, roll the ears 8-10 min until charred in spots; finish with butter + salt.",
           "Pull the chops, pat VERY dry.",
           "Sear 60-90 seconds per side — crust only, they're already perfectly cooked.",
-          "Rest 3 min while you cut the cantaloupe into wedges.",
-          "Plate: chop, ear of corn, cantaloupe wedges. Kids: everything here is already kid-food.",
+          "Rest 3 min while you cut the melon into wedges.",
+          "Plate: chop, ear of corn, melon wedges. Kids: everything here is already kid-food.",
           "AFTER DINNER (1 min): bump the bath to 165°F, drop the fridge-cold carnitas bag — it rides ~23-24 hr to Tuesday's guest dinner.",
           "Cleanup: griddle scrape, tongs, trash the bag."
         ]
@@ -113,9 +113,9 @@ const WEEK = {
           "SALSA (midday): 2 guajillos + 1-2 arbol (stemmed, seeded), 2 roma tomatoes, 1 garlic clove, 0.25 tsp salt — soak chiles 10 min in just-boiled water, blend all with a splash of soak water, simmer 5 min in 1 tsp oil until darkened. Jar → fridge",
           "12-16 corn tortillas",
           "1 white onion: half in thick slabs for charring, half diced raw for the table",
-          "Mi Tienda refried beans, 17.6 oz (the Combo Loco freebie) — warmed in a small pot with a splash of water",
-          "3 limes in wedges + 4-5 tangelos on the side",
-          "kids: leftover colby jack from Monday's block"
+          "Mi Tienda CHORIZO refried beans, 17.6 oz (the Combo Loco freebie rang chorizo-flavor, not plain pinto — arguably better with carnitas) — warmed in a small pot with a splash of water",
+          "limes in wedges (bought as a 4-ct XL sleeved pack, $2.98) + 4-5 tangelos on the side",
+          "kids: cheese for quesadillas — ⚠ NOT on the 8/3 receipt, need to grab a block before Tuesday (banked colby jack plan fell through when fajitas got cut)"
         ],
         steps: [
           "~12:30 PM: make the salsa (above). It's fully cooked — ban-safe — and better by dinner.",
@@ -124,7 +124,7 @@ const WEEK = {
           "Blackstone on high with 2 tbsp of the bag fat: carnitas spread thin, DON'T TOUCH for 2-3 min until the bottom is deep brown and crackly, flip once, 2 more min. Char the onion slabs alongside.",
           "Splash the meat with a few spoons of bag juices right at the end — steam + glaze in one move.",
           "Tortillas: 20 seconds per side on the griddle edge, stack in a towel.",
-          "KID CHECKPOINT: crispy plain carnitas out first — tacos or quesadillas with Monday's cheese on the cool corner. No second dish.",
+          "KID CHECKPOINT: crispy plain carnitas out first — tacos or quesadillas (if cheese made it into the house by tonight) on the cool corner. No second dish.",
           "Warm the refried beans in a small pot (splash of water, medium-low, stir) while the meat crisps — free side from the Combo Loco.",
           "Table: carnitas, warm tortillas, beans, salsa jar, charred + raw onion, lime wedges, tangelos. Build your own.",
           "Cleanup: griddle scrape while warm, one bowl, trash the bag. Leftover carnitas reseal for Friday — they reheat crispy."
