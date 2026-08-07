@@ -1,179 +1,214 @@
-// Week of 2026-08-03 — WEEK 2 v5, HEB-only. Rerun 8/2 (shop day): Thursday is now
-// meet-the-teacher night, dinner on the run — dropped from the cook week entirely.
-// Family wants to KEEP chops rather than drop it, so chops moved to Monday and
-// fajitas got bumped to a future week instead (banked chicken keeps fine). Only 3
-// dinners this week: chops (Mon), GUEST NIGHT carnitas (Tue, guest), shrimp night
-// (Wed, shrimp doubled per feedback). A second guest's visit was tied to the
-// now-cancelled Thursday — cantaloupe stays as the fruit side (proven favorite
-// either way); she ended up joining Monday instead.
-// Bath relay: chops Mon 1:30 (140°F) → carnitas Mon after dinner (165°F, ~23-24 hr,
-// fridge-cold) → shrimp & broccoli Wed (no bath — last dinner of the week).
-// PROPANE OUT (8/4, until Mon 8/10): carnitas crisp moved to the broiler (Kenji's
-// alternate method); Wednesday pivoted from Blackstone fried rice to stovetop
-// garlic-ginger shrimp & broccoli over the same rice. Same groceries, zero waste.
-// Bans continue: no bagged salads, no raw herbs.
+// Week of 2026-08-10 — WEEK 3, HEB-only. Blackstone is BACK IN SERVICE (propane
+// swapped Monday) — no more stovetop/broiler pivots needed. Anchor this week: Aiden's
+// requested pork belly, sized up per 7/30 feedback ("wants more meat per serving").
+// Two of four proteins are ALREADY BANKED from prior weeks' deal-buying (fajita
+// chicken from the 8/2 $1.97/lb buy, Brazilian BBQ chops from the 8/2 Combo Loco) —
+// both finally get cooked this week at $0 marginal cost.
+// Outbreak recheck 8/7: BOTH bans continue, situation WORSE — iceberg lettuce outbreak
+// now 10,468 cases / 41-45+ states / 2 deaths (was 1,644 / 5 states); cilantro/parsley
+// (NC) now 867 cases, still unconfirmed/open. No bagged salads, no raw cilantro/parsley.
+// Meal Deal / Combo Loco / coupon page checked — nothing found applies to this plan.
+// Joe V's checked — doesn't clear the $10 threshold this cycle, staying HEB-only.
 const WEEK = {
-  id: "2026-08-03",
-  label: "Dinners Mon Aug 3 – Wed Aug 5 · HEB Irving only · shop Sun Aug 2",
+  id: "2026-08-10",
+  label: "Dinners Mon Aug 10 – Thu Aug 13 · HEB Irving only · shop Sun Aug 9",
   store: "H-E-B Irving #817 (single store)",
-  adNote: "Ad cycle 7/29–8/4, pulled 7/30; rerun 8/2 (shop day) — Thursday dropped (meet the teacher, dinner on the run), chops kept and moved to Monday, fajitas deferred to a future week. Anchors: BBQ boneless pork loin chops $2.99/lb (33% off, 2 packages — one for Monday, one banked), pork butt country-style ribs $2.29/lb (Tuesday's GUEST NIGHT carnitas — our guest joins, 3 adults + 2 kids), HCF chicken breast $1.97/lb (34% off — banked as 4 bags, 4 different preps for a FUTURE week), cantaloupe $1.97 sale. Staple investments this week (~$19, amortizes): Kadoya sesame oil, Fiesta cumin, Stubb's, guajillo restock x3. Wednesday's shrimp DOUBLED per feedback (+1 lb fresh Gulf 50/70, $7.97 in-store). ⚠ Outbreak check 8/2: cyclospora now 45 states / 11,000+ cases (worse, not better) plus a second unrelated cyclospora outbreak under investigation — bagged-salad AND raw-herb bans CONTINUE. Meal Deal + Simply Seasoned Combo Loco already clipped.",
+  adNote: "Ad cycle 8/5–8/11, pulled 8/6. Anchors: H-E-B Wagyu Ground Beef $6.99/lb, H-E-B Hatch Chile Pepper Shredded Cheese $5.00, Organic Yellow Potatoes $4.00. Pork belly (Aiden's request) isn't a flyer feature this cycle — H-E-B Pork Belly Portion (non-natural) $4.71/lb verified live via Chrome, chosen over the H-E-B Natural line ($5.97-6.50/lb, a labeling premium that doesn't clearly pay off for a glazed dish) and sized to land right at the 'more meat per serving' feedback target. Two proteins this week are already-banked from prior weeks' deals at $0 marginal cost: Brazilian BBQ pork chops (8/2 Combo Loco) and fajita-rubbed chicken (8/2 $1.97/lb buy) — both finally get their dinner slot. Checked Meal Deal/Combo Loco/coupon page: nothing applies to this plan (mostly outgoing-cycle offers on unrelated items). Checked Joe V's: doesn't clear the $10-cheaper threshold, staying HEB-only. Outbreak recheck 8/7: both bans continue, situation worse not better (iceberg lettuce outbreak now 10,468 cases/41-45+ states/2 deaths; cilantro/parsley NC 867 cases) — no bagged salads, no raw cilantro/parsley.",
   meals: [
     {
       id: "prep",
-      title: "Sunday: Shop + 20-Minute Seal Session",
-      slot: "Prep · Sun Aug 2",
-      time: "~20 min after put-away",
+      title: "Sunday: Shop + Quick Seal (Belly Only)",
+      slot: "Prep · Sun Aug 9",
+      time: "~5 min after put-away",
       equipment: ["Chamber sealer"],
       summary:
-        "Two seal jobs, neither for Monday: bank the chicken deal as four DIFFERENT future dinners (new rule — no more one-rub-fits-all; this is pure freezer bank now that fajitas got bumped to a future week), and stage Tuesday's GUEST NIGHT carnitas (our guest joins) — only 1 day out this time, so it's a simple fridge seal, no freezing. Monday's chops need zero advance prep — pre-seasoned, straight from the fridge tomorrow. No bath run tonight.",
+        "Much lighter prep than usual — Tuesday's chops and Wednesday's chicken are ALREADY banked and frozen from prior weeks' deal-buying, so they go straight from freezer to bath with no advance work. The only real job today is rubbing and sealing the new pork belly purchase for Wednesday's drop. Monday's burgers need zero advance prep — straight griddle cook.",
       links: [
-        { label: "Serious Eats — sous vide chicken breast guide (times & temps)", url: "https://www.seriouseats.com/the-food-lab-complete-guide-to-sous-vide-chicken-breast", tag: "primary" },
-        { label: "r/sousvide — carnitas threads", url: "https://www.reddit.com/r/sousvide/search/?q=carnitas", tag: "reddit" }
+        { label: "Serious Eats — sous vide pork belly guide", url: "https://www.seriouseats.com/sous-vide-pork-belly-recipe", tag: "primary" },
+        { label: "r/sousvide — pork belly threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20belly", tag: "reddit" }
       ],
       recipe: {
-        activeTime: "~20 min",
-        cookTime: "none today — first bath run is Monday 3:30",
+        activeTime: "~5 min",
+        cookTime: "none today — first bath run is Tuesday ~1:30 PM",
         ingredients: [
-          "2 packs HCF boneless skinless split chicken breast (~5.6 lb total, $1.97/lb verified — the banking deal)",
-          "~3.5 lb pork butt country style ribs ($2.29/lb — Tuesday's GUEST NIGHT carnitas)",
-          "rubs from the pantry: fajita seasoning, Kinder's Cowboy Butter, NEW Fiesta cumin, oregano, kosher salt + pepper",
-          "2 garlic cloves (banked heads) + 1 tangelo"
+          "H-E-B Pork Belly Portion, 4.75 lb avg (non-natural line, $4.71/lb)",
+          "kosher salt + black pepper (owned)",
+          "2 garlic cloves, smashed (banked heads)"
         ],
         steps: [
-          "PUT-AWAY, the ones that matter: cantaloupe → COUNTER until Monday. Roma tomatoes → COUNTER, never the fridge. Corn → fridge in husks. Corn tortillas → dairy case fridge (Tuesday, refrigerated — fine either way). Tangelos → counter bowl. Everything else is normal.",
-          "SEAL SESSION 1 — Chicken bank, 4 bags with 4 DIFFERENT jobs (2 packs = ~5.6 lb, ~1.4 lb per bag): bag 1 = fajita rub (proven), bag 2 = Kinder's Cowboy Butter (proven on the chops), bag 3 = plain salt + pepper (the wild card — Stubb's glaze, lemon butter, parm crust at cook time), bag 4 = soy-ginger (2 tbsp soy + 1 tbsp brown sugar + grated ginger — all owned). Seal, label each with its rub, FREEZE. Four future dinners at ~$2.75 each, no two alike — none of them this week.",
-          "SEAL SESSION 2 — Tuesday's GUEST NIGHT carnitas (our guest joins): rub the rib strips all over with 1 tbsp cumin + 1 tsp oregano (crushed) + 1.5 tsp kosher salt + black pepper, drop in 2 sliced garlic cloves, squeeze in the juice of 1 tangelo (peel strips in too). Seal flat, label, FRIDGE — only 1 day out this time, so no freezing needed; the bag drops fridge-cold into Monday night's bath once the chop dinner clears the pot.",
-          "SEAL SESSION 3 (30 sec) — the BRAZILIAN BBQ chop pack: seal as-bought, label, FREEZE. It's the Combo Loco's second package and a future zero-prep dinner in a different flavor — the varied-prep rule at work.",
+          "PUT-AWAY: cucumbers + bell peppers + roma tomatoes → fridge crisper. Fresh ginger → fridge (small piece, freeze whatever's left over after Thursday). Limes, sour cream, cheese → fridge. Buns → pantry until Monday. Rice vinegar, salsa jar → pantry.",
+          "SEAL SESSION (5 min): rub the pork belly all over with 1.5 tbsp kosher salt, a generous grind of black pepper, and 2 smashed garlic cloves. Seal flat, label, FRIDGE — cooks Wednesday evening (3 days out — same-day chamber-seal covers the shelf-life rule, no freezing needed).",
+          "Tuesday's Brazilian BBQ chops and Wednesday's fajita chicken bag stay in the freezer — both drop straight from frozen, no thaw step.",
           "Cleanup: sealer wipe. Done."
         ]
       }
     },
     {
-      id: "bbqchops",
-      cost: { est: 14.86, servings: 4, note: "RECEIPT-TRUED 8/3: our guest joins tonight (2 adults + 2 kids — matches the standard 4-serving size). Chops rang $9.88 (bigger pack than the 2.3 lb avg checked online), corn $1.00 (cheaper than expected), and the melon rang as H-E-B Summer Gem Dream Melon $3.98 — NOT the $1.97 Pecos cantaloupe planned (different product grabbed at the store; same prep)" },
-      nutrition: { serving: "1 large chop + 1 ear buttered corn + Dream Melon wedges", calories: 620, protein: 44, carbs: 44, fat: 28 },
-      daytime: [
-        "MON ~1:30 PM (1 min): bath to 140°F, chops in (they hold until dinner, no rush)",
-        "MON after dinner (1 min): bump the bath to 165°F, drop the fridge-cold carnitas bag — rides ~23-24 hr to Tuesday's guest dinner",
-        "MON after dinner (5 min): rice cooker on — 2 cups jasmine, rinsed until the water runs clear, 2.5 cups water. When it flips to warm, spread on a plate to cool, then fridge UNCOVERED — moved up a day from the original Tuesday-night plan, so it's two-day-old by Wednesday's dinner instead of one — keeps fine"
-      ],
-      title: "Texas BBQ Pork Chops with Griddled Corn & Dream Melon",
-      slot: "Dinner 1 · Mon Aug 3",
+      id: "smashburgers",
+      cost: { est: 28.06, servings: 5, note: "ESTIMATED (pre-shop): Wagyu ground beef 2 lb @ $6.99/lb ad = $13.98, Hatch Chile cheese $5.00 (ad), buns $2.60, iceberg lettuce $2.08, roma tomatoes ~$1.00, Best Maid hamburger pickle slices $3.40. Onion is banked ($0). All new spend, no banked protein this meal." },
+      nutrition: { serving: "1 double-smash burger (5-6 oz cooked) + bun + toppings", calories: 640, protein: 36, carbs: 32, fat: 40 },
+      daytime: [],
+      title: "Hatch Chile Wagyu Smash Burgers with Crispy Lettuce & Tomato",
+      slot: "Dinner 1 · Mon Aug 10",
       time: "~20 min at dinner",
-      equipment: ["Sous vide", "Blackstone"],
+      equipment: ["Blackstone"],
       summary:
-        "our guest joins tonight (2 adults + 2 kids — the normal family size, so nothing to scale up). Rerun 8/2 (shop day): Thursday dropped off the cook week (meet the teacher, dinner on the run), but the family wants to KEEP chops rather than lose it — so it moves to Monday and fajitas gets bumped to a future week instead (the banked chicken keeps fine in the freezer). The ad does the seasoning work: Simply Seasoned BBQ chops at 33% off go bag-to-bath at 1:30, then take a hard sear next to corn rolling in Kerrygold on the flat top. H-E-B Summer Gem Dream Melon ended up in the cart instead of the planned Pecos cantaloupe — same easy wedge prep, still a fresh melon side (peaches were never a risk for our guest either way). After dinner: bump the bath to 165°F and drop the carnitas bag, which is what sets up Tuesday's guest dinner.",
+        "Blackstone's back in service (propane swapped today) — first thing back on it is smash burgers. H-E-B Wagyu ground beef at $6.99/lb (ad) smashed hard and fast for maximum crust, melted under this week's other ad feature (Hatch Chile shredded cheese — also doing double duty in Wednesday's fajitas). Toppings go out separately so everyone builds their own — kids get a plain patty and bun with no extra steps needed.",
+      links: [
+        { label: "Serious Eats — The Food Lab's Smash Burger technique", url: "https://www.seriouseats.com/the-food-labs-complete-guide-to-making-the-best-hamburgers", tag: "primary" },
+        { label: "r/burgers — smash burger technique threads", url: "https://www.reddit.com/r/burgers/search/?q=smash%20technique", tag: "reddit" }
+      ],
+      swapNote: "Don't compact the beef into balls — loose and light so the smash creates maximum crusty surface area (that's where the flavor is). Two smaller patties beat one thick one for a true smash burger.",
+      recipe: {
+        activeTime: "~20 min at dinner",
+        cookTime: "none — single griddle session",
+        ingredients: [
+          "2 lb H-E-B Wagyu Ground Beef ($6.99/lb ad)",
+          "H-E-B Enriched Hamburger Buns, 8 ct",
+          "H-E-B Hatch Chile Pepper Shredded Cheese, 1 bag (half for tonight, half banked for Wednesday's fajitas)",
+          "1 whole fresh iceberg lettuce, leaves separated",
+          "3 roma tomatoes, sliced",
+          "banked yellow onion, thin sliced (a few rings)",
+          "Best Maid Hamburger Dill Pickle Slices, 24 oz",
+          "smash sauce: 4 tbsp Duke's mayo (owned) + 1 tbsp French's mustard (owned) + pinch crushed red pepper (owned)",
+          "kosher salt (owned)"
+        ],
+        steps: [
+          "Blackstone on high, thin film of oil.",
+          "Whisk the smash sauce ingredients together, fridge until serving.",
+          "Divide the beef into 5-6 loose 4-5 oz balls — do NOT compact them.",
+          "Balls onto the hot griddle spaced well apart, smash flat hard and fast with a stiff spatula, salt generously.",
+          "Sear ~90 seconds untouched until a deep brown crust forms, flip, top immediately with Hatch cheese, another 60-90 seconds.",
+          "Toast the buns cut-side down on the griddle's cooler edge, 30-60 seconds.",
+          "KID CHECKPOINT: plain patty + cheese + bun, no sauce/toppings needed unless they want them — toppings go out separately so this is automatic.",
+          "Toppings bar: buns, smash sauce, patties, lettuce, tomato, pickles, onion — everyone builds their own.",
+          "Cleanup: griddle scrape."
+        ]
+      }
+    },
+    {
+      id: "brazilianchops",
+      cost: { est: 13.34, servings: 5, note: "ESTIMATED (pre-shop): chops already banked/paid ($9.34, 8/2 Combo Loco 2nd package) = $0 marginal this week. Organic Yellow Potatoes $4.00 (ad). Green beans banked (Meal Deal freebie, $0). New spend this meal: $4.00." },
+      nutrition: { serving: "1 chop + air-fryer potatoes + green beans", calories: 560, protein: 42, carbs: 36, fat: 24 },
+      daytime: [
+        "TUE ~1:30 PM (1 min): bath to 140°F, drop the frozen Brazilian BBQ chop bag — no thaw needed, dropping frozen adds ~1 hr to the cook, still ready well before dinner"
+      ],
+      title: "Brazilian BBQ Pork Chops with Air-Fryer Potatoes & Green Beans",
+      slot: "Dinner 2 · Tue Aug 11",
+      time: "~20 min at dinner (+20 min air fryer, unattended)",
+      equipment: ["Sous vide", "Air fryer"],
+      summary:
+        "The second half of the 8/2 Combo Loco finally gets cooked — a different flavor from the Texas BBQ pack (Monday 8/3's dinner), banked frozen and paid for two weeks ago, so tonight's only new spend is the sides. Pre-seasoned, so it's a straight drop-and-sear. Air-fryer potatoes sized to the corrected portion math (~0.4-0.5 lb raw potato per adult, not the old over-sized batch) and the banked Meal Deal green beans round it out for free.",
       links: [
         { label: "Serious Eats — sous vide pork chops guide", url: "https://www.seriouseats.com/sous-vide-pork-chops-recipe", tag: "primary" },
         { label: "r/sousvide — pork chop time/temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20chops", tag: "reddit" }
       ],
-      swapNote: "140°F = juicy with a touch of blush, safe and ideal for lean loin chops. Corn griddles husk-off: butter, salt, rolling sear.",
+      swapNote: "140°F = juicy with a touch of blush, safe and ideal for lean loin chops. Dropping from frozen just adds ~1 hr to the bath time — no thaw step needed.",
       recipe: {
         activeTime: "~20 min at dinner",
-        cookTime: "chops 2-4 hr at 140°F (in since 1:30, unattended)",
+        cookTime: "chops ~3-4 hr at 140°F from frozen (in since 1:30, unattended); potatoes 18-20 min air fryer",
         ingredients: [
-          "H-E-B Simply Seasoned BBQ boneless pork loin chops, 1 pack as-bought (bag as-bought, 1 layer)",
-          "5 ears corn, shucked",
-          "2 tbsp Kerrygold butter + kosher salt",
-          "1 whole H-E-B Summer Gem Dream Melon, cut into wedges at dinner",
-          "1 tbsp canola oil"
+          "banked H-E-B Simply Seasoned Boneless Pork Loin Chops - Brazilian Style BBQ, 1 pack as-sealed (~3.1 lb)",
+          "H-E-B Organic Yellow Potatoes, 1 bag (~2.5 lb, $4.00 ad)",
+          "banked H-E-B Steamable Green Beans, 12 oz",
+          "1 tbsp olive oil + kosher salt (owned, for potatoes)",
+          "1 tbsp Kerrygold butter (owned, for green beans)"
         ],
         steps: [
-          "~1:30 PM: seal the chops flat (pre-seasoned — nothing added), bath to 140°F, in they go.",
-          "Dinner: Blackstone on high. Corn first: film of oil, roll the ears 8-10 min until charred in spots; finish with butter + salt.",
-          "Pull the chops, pat VERY dry.",
-          "Sear 60-90 seconds per side — crust only, they're already perfectly cooked.",
-          "Rest 3 min while you cut the melon into wedges.",
-          "Plate: chop, ear of corn, melon wedges. Kids: everything here is already kid-food.",
-          "AFTER DINNER (1 min): bump the bath to 165°F, drop the fridge-cold carnitas bag — it rides ~23-24 hr to Tuesday's guest dinner.",
-          "Cleanup: griddle scrape, tongs, trash the bag."
+          "~1:30 PM: bath to 140°F, drop the frozen chop bag straight in — no thaw needed.",
+          "~30 min before dinner: cube the potatoes skin-on (~3/4 inch), toss with olive oil + salt, air fry 400°F for 18-20 min, shaking the basket halfway.",
+          "At dinner: microwave the green beans bag 4-5 min, drain, toss with butter + salt.",
+          "Pull the chops, pat very dry, sear 60-90 seconds per side on the Blackstone or a hot skillet for color — they're already fully cooked and seasoned.",
+          "KID CHECKPOINT: plain chop + potatoes + green beans — already kid-food as-is, no deconstruction needed.",
+          "Plate and serve.",
+          "Cleanup: air fryer basket, one skillet."
         ]
       }
     },
     {
-      id: "carnitas",
-      cost: { est: 15.6, servings: 5, note: "GUEST NIGHT — our guest joins (3 adults + 2 kids, 5 servings): ~3.5 lb country-style ribs @ $2.29/lb (boneless butt strips = carnitas without the bone work) + corn tortillas, quick guajillo salsa, white onion, limes, tangelos, FREE refried beans (Combo Loco). Kids' quesadilla cheese carries over from Monday's block" },
-      nutrition: { serving: "3 tacos (crispy carnitas, salsa, onion) + tangelo", calories: 690, protein: 40, carbs: 58, fat: 34 },
+      id: "fajitas",
+      cost: { est: 25.38, servings: 5, note: "ESTIMATED (pre-shop): fajita-rubbed chicken bag already banked/paid (~$2.75, part of the 8/2 $1.97/lb buy) = $0 marginal this week. New: peppers ~$3.84, tortillas $1.30, Daisy Squeeze sour cream $3.09, 2nd Hatch Chile cheese bag $5.00, salsa $4.17, limes $5.23 (2 lb bag — old bag's past its useBy, buying fresh). New spend this meal: $22.63." },
+      nutrition: { serving: "2 fajita tacos with toppings", calories: 540, protein: 32, carbs: 44, fat: 24 },
       daytime: [
-        "TUE ~12:30 PM (10 min): quick guajillo-arbol salsa (fully cooked — ban-safe) → fridge jar. Carnitas have been riding since Monday evening — nothing else needed. Rice already done Monday night — nothing to start tonight"
+        "WED ~1:30 PM (1 min): bath to 150°F, drop the frozen fajita-rubbed chicken bag — no thaw needed, +1 hr for frozen start",
+        "WED after dinner (1 min): bump the bath to 165°F, drop the fridge-cold pork belly bag (sealed Sunday) — rides ~23 hr to Thursday's dinner"
       ],
-      title: "Crispy Carnitas Tacos with Guajillo Salsa",
-      slot: "Dinner 2 · Tue Aug 4",
+      title: "Blackstone Chicken Fajitas with Peppers & Onions",
+      slot: "Dinner 3 · Wed Aug 12",
+      time: "~20 min at dinner",
+      equipment: ["Sous vide", "Blackstone"],
+      summary:
+        "Fajitas finally happen — this bag has been sitting banked in the freezer since 7/26, bumped twice by busier weeks. Pre-rubbed with Bolner's fajita seasoning, it drops straight from frozen at 150°F and finishes with a hard sear alongside charred peppers and onion. Second bag of this week's Hatch Chile cheese joins the toppings bar (dual-purpose with Monday's burgers). After dinner, the bath goes straight to 165°F for Thursday's pork belly.",
+      links: [
+        { label: "Serious Eats — sous vide chicken breast guide (times & temps)", url: "https://www.seriouseats.com/the-food-lab-complete-guide-to-sous-vide-chicken-breast", tag: "primary" },
+        { label: "The Kitchn — classic chicken fajitas technique", url: "https://www.thekitchn.com/how-to-make-chicken-fajitas-256499", tag: "alt" }
+      ],
+      swapNote: "Dropping the chicken frozen just adds ~1 hr to the bath — no morning thaw step to remember. Peppers and onion want real char, not just softening: let them sit untouched for a couple minutes at a time rather than constant stirring.",
+      recipe: {
+        activeTime: "~20 min at dinner",
+        cookTime: "chicken ~2-3 hr at 150°F from frozen (in since 1:30, unattended)",
+        ingredients: [
+          "banked fajita-rubbed chicken bag, 1 (~1.4 lb, Bolner's fajita seasoning already in the bag)",
+          "3-4 bell peppers, mixed colors, sliced",
+          "banked yellow onion, sliced (remainder from Monday)",
+          "H-E-B Original Fajita Flour Tortillas, 10 ct",
+          "Daisy Squeeze Sour Cream, 14 oz",
+          "H-E-B Hatch Chile Pepper Shredded Cheese, 1 bag (2nd bag this week)",
+          "Julio's Fresh Home Style Mild Salsa, 16 oz",
+          "H-E-B Fresh Limes, 2 lb bag, cut into wedges"
+        ],
+        steps: [
+          "~1:30 PM: bath to 150°F, drop the frozen chicken bag — no thaw needed.",
+          "At dinner: Blackstone on high, oil the surface.",
+          "Peppers and onion first — hard sear 6-8 min, letting them sit untouched in stretches for real char, not just steam.",
+          "Pull the chicken, slice against the grain, back onto the griddle with the veg for a final 2-3 min sear together.",
+          "Warm tortillas on the griddle's cooler edge, 20 seconds per side, stack in a towel.",
+          "KID CHECKPOINT: plain chicken + tortilla for the kids before toppings go out — easy deconstruction.",
+          "Toppings bar: sour cream, cheese, salsa, lime wedges — build your own.",
+          "AFTER DINNER (1 min): bump the bath to 165°F, drop the fridge-cold pork belly bag — rides ~23 hr to Thursday's dinner.",
+          "Cleanup: griddle scrape."
+        ]
+      }
+    },
+    {
+      id: "porkbelly",
+      cost: { est: 28.21, servings: 5, note: "ESTIMATED (pre-shop): H-E-B Pork Belly Portion (non-natural), 4.75 lb avg @ $4.71/lb VERIFIED live via Chrome = $22.37. Cucumbers 2 @ $0.42 = $0.84. Fresh ginger ~$1.50. Rice vinegar (new staple, first buy) ~$3.50. Rice is owned (Thai Hom Mali jasmine)." },
+      nutrition: { serving: "1 bowl: glazed pork belly + jasmine rice + cucumber salad", calories: 780, protein: 30, carbs: 46, fat: 52 },
+      daytime: [
+        "THU ~12:30 PM (10 min): quick cucumber salad → fridge to marinate; rice cooker on (2 cups jasmine, rinsed until the water runs clear, 2.5 cups water)"
+      ],
+      title: "Crispy Glazed Pork Belly Bowls with Cucumber Salad & Jasmine Rice",
+      slot: "Dinner 4 · Thu Aug 13",
       time: "~25 min at dinner",
       equipment: ["Sous vide", "Broiler"],
       summary:
-        "GUEST NIGHT — our guest joins: pork butt strips (the same cut as carnitas, pre-boned at $2.29/lb) ride 23-24 hours at 165°F with cumin, oregano, garlic, and tangelo — dropped fridge-cold Monday evening, only 1 day out so no freezing needed — then shred and CRISP hard under the broiler (propane ran out — this is Kenji's alternate finish, same crackly edges). Warm corn tortillas, a quick cooked guajillo salsa from the restocked bags, charred white onion, lime, tangelos on the side, FREE refried beans from the clipped Combo Loco. No cilantro — outbreak ban — and honestly the charred onion + lime don't miss it. Kids: crispy carnitas tacos, same as the table — no separate dish tonight.",
+        "Aiden's request, and a rerun of the 7/30 dish that scored a 🎯 Hit — sized up per that feedback (family wanted more meat per serving). ~23 hr at 165°F from a fridge-cold Wednesday-evening drop renders the fat and tenderizes, then a hard broiler crisp (the same method that proved out on carnitas while the Blackstone was down) gets crackly edges before a quick soy-ginger glaze. Kids ate the glazed version straight last time — no deconstruction needed. Rice ratio corrected to 2.5 cups water per the calibration note; cucumber salad returns since adults specifically liked it.",
       links: [
-        { label: "Serious Eats — sous vide carnitas (Kenji's method)", url: "https://www.seriouseats.com/sous-vide-carnitas-crispy-mexican-style-pulled-pork-recipe", tag: "primary" },
-        { label: "r/sousvide — carnitas threads", url: "https://www.reddit.com/r/sousvide/search/?q=carnitas", tag: "reddit" }
+        { label: "Serious Eats — sous vide pork belly guide", url: "https://www.seriouseats.com/sous-vide-pork-belly-recipe", tag: "primary" },
+        { label: "The Woks of Life — quick Asian cucumber salad", url: "https://thewoksoflife.com/smashed-cucumber-salad/", tag: "alt" }
       ],
-      swapNote: "165°F/~23-24 hr from fridge-cold (only 1 day out — no freezing needed this time) = shreddable with structure. Crisp in the rendered bag fat — that's confit economics from a $2.29/lb cut. Broiler finish tonight (no propane): it's the method Kenji's recipe actually leads with.",
+      swapNote: "165°F/~23 hr from fridge-cold = fully tender with the fat rendered but not falling apart — the same window that worked last time. Broiler crisp is a proven fallback (carnitas, 8/4) even with the Blackstone back in service; either works, broiler's less cleanup.",
       recipe: {
-        activeTime: "~25 min at dinner (+10 min salsa at midday)",
-        cookTime: "carnitas ~23-24 hr at 165°F (in since Monday evening, fridge-cold start)",
+        activeTime: "~25 min at dinner (+10 min cucumber salad at midday)",
+        cookTime: "belly ~23 hr at 165°F (in since Wednesday evening, fridge-cold start)",
         ingredients: [
-          "~3.5 lb country-style ribs (in the bath since Monday evening — cumin, oregano, garlic, tangelo in the bag)",
-          "SALSA (midday): 2 guajillos + 1-2 arbol (stemmed, seeded), 2 roma tomatoes, 1 garlic clove, 0.25 tsp salt — soak chiles 10 min in just-boiled water, blend all with a splash of soak water, simmer 5 min in 1 tsp oil until darkened. Jar → fridge",
-          "12-16 corn tortillas",
-          "1 white onion: half in thick slabs for charring, half diced raw for the table",
-          "Mi Tienda CHORIZO refried beans, 17.6 oz (the Combo Loco freebie rang chorizo-flavor, not plain pinto — arguably better with carnitas) — warmed in a small pot with a splash of water",
-          "limes in wedges (bought as a 4-ct XL sleeved pack, $2.98) + 4-5 tangelos on the side",
-          "kids eat carnitas tacos same as everyone else — no quesadilla track needed tonight"
+          "H-E-B Pork Belly Portion, 4.75 lb avg (non-natural, seasoned + sealed Sunday: salt, pepper, 2 smashed garlic cloves)",
+          "2 cups H-E-B Thai Hom Mali jasmine rice (owned) + 2.5 cups water",
+          "2 fresh cucumbers, thin sliced",
+          "CUCUMBER SALAD: 3 tbsp rice vinegar (new) + 1 tbsp brown sugar (owned) + 0.5 tsp salt",
+          "GLAZE: 3 tbsp Kikkoman soy sauce (owned) + 2 tbsp brown sugar (owned) + 1 tbsp grated fresh ginger + 1 minced garlic clove + a few tbsp reserved bag juices",
+          "1 tsp Kadoya sesame oil (owned, finisher)"
         ],
         steps: [
-          "~12:30 PM: make the salsa (above). It's fully cooked — ban-safe — and better by dinner.",
-          "Dinner: pull the bag, pour the juices into a bowl and skim the fat — keep BOTH.",
-          "Shred the pork into rough chunks — it falls apart on contact.",
-          "Broiler on HIGH, rack ~3 inches below the element. Shredded pork on a rimmed sheet pan, tossed with 2 tbsp of the bag fat, spread in one layer. Onion slabs on the pan's edge. Broil ~10 min total, flipping the pieces once with a spoon, until deep brown and crackly (the onions char right alongside).",
-          "Splash the meat with a few spoons of bag juices right at the end — steam + glaze in one move.",
-          "Tortillas: 20 seconds per side in a dry skillet on high, stack in a towel.",
-          "KID CHECKPOINT: crispy plain carnitas out first, straight into tacos with them. No second dish.",
-          "Warm the refried beans in a small pot (splash of water, medium-low, stir) while the meat crisps — free side from the Combo Loco.",
-          "Table: carnitas, warm tortillas, beans, salsa jar, charred + raw onion, lime wedges, tangelos. Build your own.",
-          "Cleanup: sheet pan soaks, one bowl, trash the bag. Leftover carnitas reseal for Friday — they reheat crispy."
-        ]
-      }
-    },
-    {
-      id: "friedrice",
-      cost: { est: 11.9, servings: 4, note: "PIVOTED 8/4 (propane out): same groceries as the planned fried rice, now a stovetop shrimp & broccoli over rice. DOUBLED THE SHRIMP per feedback: banked 0.5 lb (free) + 1 lb fresh Gulf 50/70 P&D ($7.97 in-store) = 1.5 lb total, ~6 oz/serving raw. Broccoli ($0 banked), Monday's rice, banked garlic + ginger + soy. New money: the fresh shrimp, 4 eggs, green onions, Kadoya sesame oil (staple investment)" },
-      nutrition: { serving: "~1.5 cups saucy shrimp & broccoli + ~1.5 cups rice", calories: 650, protein: 50, carbs: 64, fat: 20 },
-      daytime: ["WED morning (2 min): banked shrimp bag freezer → fridge bowl; the fresh 1 lb bag goes in the fridge too so both are fully thawed by dinner"],
-      title: "Garlic-Ginger Shrimp & Broccoli over Rice",
-      slot: "Dinner 3 · Wed Aug 5",
-      time: "~20 min at dinner",
-      equipment: ["Stove — large skillet"],
-      summary:
-        "PIVOT (propane ran out — griddle's back Monday): the planned fried rice becomes a saucy garlic-ginger-soy shrimp and broccoli served OVER Monday night's rice instead of fried into it. Same doubled shrimp (0.5 lb banked + 1 lb fresh = 1.5 lb, per feedback), same broccoli, same aromatics, same Kadoya sesame-oil finish — different pan technique, zero new groceries, nothing wasted. The eggs stay in as a quick soft scramble folded through the rice. Kids plate before the heat goes on. Last dinner of the week — nothing to prep for tomorrow.",
-      links: [
-        { label: "The Woks of Life — Shrimp and Broccoli with Brown Sauce (the reference)", url: "https://thewoksoflife.com/shrimp-and-broccoli/", tag: "primary" },
-        { label: "The Woks of Life — Shrimp Fried Rice (the original plan, for when propane's back)", url: "https://thewoksoflife.com/shrimp-fried-rice/", tag: "alt" }
-      ],
-      swapNote: "The fried-rice version needs the griddle's dry heat — a skillet steams a 6-cup batch instead of crisping it, so don't force it. This shape (sauce + rice separate) is actually the better skillet dish. Sesame oil is still a FINISHER, never a cooking oil. Rice reheats covered in the microwave with a splash of water — two-day-old is fine.",
-      recipe: {
-        activeTime: "~20 min at dinner",
-        cookTime: "all stovetop, no bath tonight — nothing to start for tomorrow",
-        ingredients: [
-          "banked Gulf 50/70 shrimp (~0.5 lb) PLUS a fresh 1 lb bag, same style — 1.5 lb total, doubled per feedback — thawed in the fridge since morning, patted dry",
-          "Monday night's rice, cold from the fridge (~6 cups)",
-          "banked steamable broccoli bag — microwave 3 min, drain HARD",
-          "4 eggs, beaten",
-          "1 bunch green onions, sliced (whites and greens separate)",
-          "3 garlic cloves minced + 1 tbsp grated ginger (the banked knob)",
-          "3 tbsp soy sauce + 2 tbsp water + 1 tbsp butter + 1 tsp Kadoya toasted sesame oil (off heat, at the end)",
-          "2 tbsp canola oil · adults: crushed red pepper or 1-2 snipped arbol chiles"
-        ],
-        steps: [
-          "MORNING: both shrimp bags (banked + fresh) into a fridge bowl to thaw together. (Forgot? 10 min in cold water at 5:30 — they're small.)",
-          "Microwave the broccoli bag 3 min, drain HARD, rough-chop the big florets.",
-          "Rice into a covered microwave bowl with a good splash of water — reheat until steaming while the skillet works, then fluff.",
-          "Largest skillet on medium-high, half the canola: eggs in first — soft ragged scramble, 45 seconds, out onto the rice.",
-          "Skillet back up to heat, rest of the canola: shrimp in two batches, 60-90 seconds each until just pink, out to a bowl.",
-          "Garlic, ginger, green onion whites — 30 seconds until loud and fragrant.",
-          "Broccoli in with the soy + water, then the butter and the shrimp back in — toss ~1 min until everything's glossed in a light pan sauce.",
-          "OFF the heat: 1 tsp sesame oil, toss once. Same hibachi-smell finish as the fried rice would've had.",
-          "KID CHECKPOINT: their plates now — shrimp, broccoli, eggy rice, all approved components. Then green onion tops + heat (crushed red pepper or snipped arbol) for the adults.",
-          "Cleanup: one skillet, one bowl. Nothing to prep for tomorrow — the week's done after this."
+          "~12:30 PM: cucumber salad — toss sliced cucumbers with rice vinegar, brown sugar, salt. Fridge to marinate.",
+          "Rice cooker on: rinse 2 cups jasmine until the water runs clear, 2.5 cups water, start.",
+          "At dinner: pull the belly bag, pour off and reserve the juices. Slice the belly into thick batons.",
+          "Broiler on HIGH, rack ~3 inches below the element. Belly batons on a rimmed sheet pan in one layer, broil ~10-12 min, flipping once, until deep brown and crispy at the edges.",
+          "Glaze: small pot, soy + brown sugar + ginger + garlic + a few tbsp reserved bag juices, simmer 3-4 min until syrupy.",
+          "Toss the hot crispy belly in the glaze.",
+          "KID CHECKPOINT: glazed belly straight to the kids — proven Hit last time, no deconstruction needed.",
+          "Bowls: rice, glazed belly, cucumber salad, a drizzle of sesame oil.",
+          "Cleanup: sheet pan soak, one small pot."
         ]
       }
     }
@@ -181,74 +216,58 @@ const WEEK = {
   // Read-only "On Hand" snapshot for the public page. Regenerated with each weekly plan
   // from pantry/inventory.json — sanitized: no staples ledger, no names.
   bank: [
-    { name: "Cantaloupe (second half, cut, from last week)", qty: "~half melon", location: "fridge", useBy: "2026-07-31", note: "Past its clock — check before eating" },
-    { name: "Organic limes", qty: "~3-5", location: "fridge", useBy: "2026-08-09", note: "No slot this week (fajitas deferred) — Tuesday's carnitas buys fresh limes separately" },
-    { name: "Fresh ginger (partial knob)", qty: "~1 inch", location: "fridge", useBy: "2026-08-20", note: "Wednesday's shrimp & broccoli — planned in" },
-    { name: "Jumbo yellow onion, whole", qty: "1 (1.72 lb)", location: "pantry", useBy: "2026-08-26", note: "No slot this week (fajitas deferred) — free aromatics whenever fajitas land" },
-    { name: "Bulk garlic", qty: "~1.5 heads", location: "pantry", useBy: "2026-09-26", note: "Carnitas bag + salsa Tue, shrimp & broccoli Wed — planned in (fajitas' portion deferred)" },
-    { name: "Fajita-rubbed chicken breast bags, sealed raw", qty: "2.15 lb (2 per bag)", location: "freezer", useBy: "2026-11-26", note: "DEFERRED to a future week (fajitas bumped) — keeps fine frozen" },
-    { name: "Gulf 50/70 shrimp, chamber-resealed", qty: "~0.5 lb", location: "freezer", useBy: "2026-10-28", note: "WEDNESDAY'S PROTEIN — DOUBLED per feedback with a fresh 1 lb bag bought Sunday (1.5 lb total); freezer → fridge Wednesday morning" },
-    { name: "Steamable broccoli florets", qty: "1 x 12 oz bag", location: "freezer", useBy: "2027-01-27", note: "Wednesday's shrimp & broccoli vegetable — planned in" },
-    { name: "Dried chiles", qty: "~2-4 guajillos + most of the arbol bag", location: "pantry", useBy: "2027-07-28", note: "Tuesday's GUEST NIGHT salsa uses 2 guajillos + 1-2 arbol; the 3-bag restock on this week's list covers salsa macha and the next diabla" },
-    { name: "H-E-B Breaded Shrimp (Meal Deal anchor, arriving Sunday)", qty: "2 boxes, 10-14 oz", location: "freezer", useBy: "2027-02-02", note: "Assigned: shrimp po'boy night — waiting for the outbreak bans to lift so bagged slaw is back in play; scheduled automatically that week" }
+    { name: "Fajita-rubbed chicken bags, sealed raw", qty: "4 bags (1.4 lb each) — 1 planned this week", location: "freezer", useBy: "2026-12-02", note: "WEDNESDAY'S PROTEIN (1 bag) — drops frozen at 150°F, no thaw needed. 3 bags remain for future weeks (Cowboy Butter / plain S&P wild card / soy-ginger)" },
+    { name: "Brazilian BBQ pork chops, sealed", qty: "1 pack (~3.1 lb)", location: "freezer", useBy: "2026-12-02", note: "TUESDAY'S PROTEIN — drops frozen at 140°F, no thaw needed" },
+    { name: "H-E-B Steamable Green Beans, 12 oz", qty: "1 bag", location: "freezer", useBy: "2027-02-02", note: "TUESDAY'S SIDE — free Meal Deal side, planned in" },
+    { name: "Jumbo yellow onion, whole", qty: "1 (1.72 lb)", location: "pantry", useBy: "2026-08-26", note: "PLANNED IN — Monday's burgers (thin rings) + Wednesday's fajitas (sliced), plenty for both" },
+    { name: "Bulk garlic", qty: "~1.5 heads", location: "pantry", useBy: "2026-09-26", note: "PLANNED IN — Sunday's belly rub + Thursday's glaze, light use" },
+    { name: "H-E-B Breaded Shrimp (Meal Deal anchor)", qty: "2 boxes, 10-14 oz", location: "freezer", useBy: "2027-02-02", note: "Still on hold — assigned to shrimp po'boy night once the bagged-salad ban lifts (still active as of 8/7 — situation worse, not better)" }
   ],
   grocery: [
     {
       section: "Meat & Seafood",
       items: [
-        { name: "H-E-B Simply Seasoned Boneless Pork Loin Chops — $6.88/pack IN-STORE VERIFIED ($2.99/lb, 2.3 lb avg): 1 TEXAS BBQ (Monday — the keeper) + 1 BRAZILIAN BBQ (seals to freezer Sunday — varied-prep bank)", qty: "2 packages — triggers the clipped Combo Loco (free Mi Tienda beans)", est: 13.8, aisle: "Meat Mkt back wall" },
-        { name: "H-E-B Boneless Country-Style Boston Butt Pork Ribs, Texas-Size Pack — $10.54 IN-STORE VERIFIED ($2.59/lb, 4.07 lb avg; ad tag may say $2.29) — Tuesday's GUEST NIGHT CARNITAS (already sized for 5 — no extra needed for the guest)", qty: "1 pack", est: 10.5, aisle: "Meat Market" },
-        { name: "Hill Country Fare Boneless Skinless Split Chicken Breast — $5.50/pack IN-STORE VERIFIED ($1.97/lb, 2.79 lb avg)", qty: "2 packs (~5.6 lb, $11) — NOT this week's dinners: 4 bags, 4 preps, Sunday", est: 11.0, aisle: "Meat Mkt back wall" },
-        { name: "H-E-B Wild Caught Frozen Peeled Large Texas Gulf Raw Shrimp, 50-70 ct/lb — $7.97/lb IN-STORE VERIFIED — DOUBLING Wednesday's shrimp per feedback", qty: "1 lb bag — combines with the banked 0.5 lb for 1.5 lb total", est: 8.0, aisle: "Seafood left wall" }
+        { name: "H-E-B Wagyu Ground Beef — $6.99/lb AD PRICE", qty: "2 lb — Monday's burgers", est: 13.98, aisle: "" },
+        { name: "H-E-B Pork Belly Portion (non-natural), Avg. 4.75 lbs — $4.71/lb VERIFIED live 8/7 (chose over the H-E-B Natural line at $5.97-6.50/lb — labeling premium, not a clear quality upgrade for a glazed dish)", qty: "1 portion", est: 22.37, aisle: "" }
       ]
     },
     {
       section: "Produce",
       items: [
-        { name: "H-E-B Sweet Corn on the Cob, 4 ct — $3.28 IN-STORE VERIFIED", qty: "1 pack (1 ear each) — Monday", est: 3.3, aisle: "15" },
-        { name: "H-E-B Texas Roots Fresh Pecos Cantaloupe — $1.97 IN-STORE VERIFIED (sale, reg $3.48) — a proven family favorite, fills this week's fruit slot", qty: "1 whole — Monday", est: 2.0, aisle: "Produce" },
-        { name: "Green onions — $0.67 IN-STORE VERIFIED", qty: "1 bunch — Wednesday's shrimp & broccoli", est: 0.7, aisle: "Produce left wall" },
-        { name: "Roma tomatoes — $0.85/lb IN-STORE VERIFIED (~$0.25 each)", qty: "2 — Tuesday's GUEST NIGHT salsa", est: 0.5, aisle: "Produce" },
-        { name: "White onion — $1.19/lb IN-STORE VERIFIED", qty: "1 — Tuesday: half charred, half raw for the table", est: 1.1, aisle: "Produce" },
-        { name: "Limes — $0.20 each IN-STORE VERIFIED", qty: "3 loose — Tuesday (Monday uses the banked ones)", est: 0.6, aisle: "Produce" },
-        { name: "Minneola tangelos — SALE $0.97/lb IN-STORE VERIFIED (~$0.59 each)", qty: "~4 — 1 into Sunday's carnitas bag, rest Tuesday + snacking", est: 2.4, aisle: "Produce" }
+        { name: "Bell peppers, mixed colors", qty: "3-4 — Wednesday's fajitas", est: 4.5, aisle: "" },
+        { name: "Fresh Roma Tomatoes", qty: "3 — Monday's burgers", est: 1.0, aisle: "" },
+        { name: "Fresh Iceberg Lettuce, whole head", qty: "1 — Monday's burgers (whole head, not bagged — ban-safe)", est: 2.08, aisle: "" },
+        { name: "H-E-B Organic Yellow Potatoes", qty: "1 bag (~2.5 lb) — Tuesday's side", est: 4.0, aisle: "" },
+        { name: "Fresh Cucumbers", qty: "2 — Thursday's cucumber salad", est: 0.84, aisle: "" },
+        { name: "Fresh ginger", qty: "1 small knob — Thursday's glaze", est: 1.5, aisle: "" },
+        { name: "H-E-B Fresh Limes, 2 lb bag", qty: "1 bag — Wednesday's fajitas (old bag past its useBy)", est: 5.23, aisle: "" }
       ]
     },
     {
-      section: "Dairy & Eggs",
+      section: "Dairy & Cheese",
       items: [
-        { name: "H-E-B Grade AA Cage Free Large Brown Eggs, 12 ct — $2.66 IN-STORE VERIFIED (price cut) — STAPLE first-buy", qty: "1 dozen", est: 2.7, aisle: "Dairy right wall" }
+        { name: "H-E-B Hatch Chile Pepper Shredded Cheese — $5.00 AD PRICE", qty: "2 bags — Monday's burgers + Wednesday's fajitas", est: 10.0, aisle: "" },
+        { name: "Daisy Squeeze Sour Cream, 14 oz", qty: "1 — Wednesday's fajitas (served at the table, squeeze format per the standing rule)", est: 3.09, aisle: "" }
       ]
     },
     {
       section: "Tortillas & Bakery",
       items: [
-        { name: "H-E-B Mi Tienda Ready to Cook Yellow Corn Tortillas, 20 ct — $2.38 IN-STORE VERIFIED (cook 30 sec/side in a dry skillet — fresher than shelf tortillas)", qty: "1 pack — Tuesday (refrigerated, day-3 fine ✓)", est: 2.4, aisle: "Dairy right wall" }
+        { name: "H-E-B Enriched Hamburger Buns, 8 ct", qty: "1 pack — Monday's burgers", est: 2.6, aisle: "" },
+        { name: "H-E-B Original Fajita Flour Tortillas, 10 ct", qty: "1 pack — Wednesday's fajitas", est: 1.3, aisle: "" }
       ]
     },
     {
-      section: "Meal Deal (CLIPPED in app — anchor + 4 free items ring up together)",
+      section: "Condiments & Pantry",
       items: [
-        { name: "H-E-B Frozen Breaded Wild Popcorn Shrimp, 14 oz — $6.97 each IN-STORE VERIFIED — MEAL DEAL ANCHOR, buy 2 (po'boy night base, waiting on the ban lift)", qty: "2 boxes", est: 13.9, aisle: "Seafood left wall" },
-        { name: "FREE: Hill Country Fare Cookie Bears 6-ct (dessert rule: free-with-purchase ✓)", qty: "1", est: 0.0, aisle: "21" },
-        { name: "FREE: Clorox Disinfecting Wipes, 35 ct", qty: "1", est: 0.0, aisle: "29" },
-        { name: "FREE: H-E-B Macaroni & Cheese 7.25 oz (→ kid stash)", qty: "1", est: 0.0, aisle: "7" },
-        { name: "FREE: H-E-B Frozen Steamable Whole Green Beans, 12 oz", qty: "1", est: 0.0, aisle: "15" }
+        { name: "Best Maid Hamburger Dill Pickle Slices, 24 oz", qty: "1 jar — Monday's burgers", est: 3.4, aisle: "" },
+        { name: "Julio's Fresh Home Style Mild Salsa, 16 oz", qty: "1 jar — Wednesday's fajitas", est: 4.17, aisle: "" }
       ]
     },
     {
-      section: "Combo Loco (CLIPPED — rings free with the 2 Simply Seasoned chop packages)",
+      section: "Staples Stock-Up (first buy — new pantry staple this week)",
       items: [
-        { name: "FREE: H-E-B Mi Tienda Refried Beans, 17.6 oz (choose beans over rice — jasmine's stocked)", qty: "1 — Tuesday's GUEST NIGHT taco side", est: 0.0, aisle: "Meal Simple right edge" }
-      ]
-    },
-    {
-      section: "Staples Stock-Up (already owned, NOT on the list: jasmine rice, fajita seasoning, soy, red wine vinegar, crushed red pepper, oregano, both oils, Kerrygold, brown sugar, kosher salt, pepper grinder, mustard)",
-      items: [
-        { name: "Kadoya Pure Sesame Oil, 5.5 oz — $4.98 IN-STORE VERIFIED — STAPLE INVESTMENT (premium-staples rule names this exact bottle)", qty: "1 bottle", est: 5.0, aisle: "6" },
-        { name: "Bolner's Fiesta Ground Comino (cumin), 3.5 oz — $3.48 IN-STORE VERIFIED — STAPLE first-buy (carnitas + future Mexican weeks)", qty: "1 shaker", est: 3.5, aisle: "8" },
-        { name: "Stubb's Original Bar-B-Q Sauce, 36 oz — $5.27 IN-STORE VERIFIED (half the per-oz of the 18 oz)", qty: "1 bottle", est: 5.3, aisle: "6" },
-        { name: "Fiesta 'Chili Cascavel (Guajillo)' — $2.16 IN-STORE VERIFIED (label quirk: these ARE guajillos)", qty: "3 x 1.5 oz bags — Tuesday's GUEST NIGHT salsa now; salsa macha + next diabla ahead", est: 6.5, aisle: "8" }
+        { name: "Rice vinegar — NEW STAPLE (amortizes into future Asian-leaning dishes; everything else in the belly glaze — soy, brown sugar, Kadoya sesame oil, garlic — is already owned)", qty: "1 bottle", est: 3.5, aisle: "" }
       ]
     }
   ]
