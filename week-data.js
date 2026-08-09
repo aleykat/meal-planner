@@ -90,7 +90,7 @@ const WEEK = {
     },
     {
       id: "smashburgers",
-      cost: { est: 30.54, servings: 5, note: "ESTIMATED (pre-shop, revised again 8/9 — swapped to Kraft Deli Deluxe American cheese slices per Jason's preference, added tater tots, dropped tomatoes): 1.5 lb Wagyu ground beef @ $6.99/lb ad = $10.49 (2x 16oz packs), 5 buns needed (buying the 8ct pack, 3 spare), Kraft Deli Deluxe Cheese Slices 24ct $7.28, iceberg lettuce $2.08, Best Maid hamburger pickle slices $3.40, Ore-Ida Crispy Tater Tots 32oz $4.69. Onion is banked ($0)." },
+      cost: { est: 27.14, servings: 5, note: "ESTIMATED (pre-shop, revised again 8/9 — swapped to Kraft Deli Deluxe American cheese slices per Jason's preference, added tater tots, dropped tomatoes, dropped pickles (already have some on hand)): 1.5 lb Wagyu ground beef @ $6.99/lb ad = $10.49 (2x 16oz packs), 5 buns needed (buying the 8ct pack, 3 spare), Kraft Deli Deluxe Cheese Slices 24ct $7.28, iceberg lettuce $2.08, Ore-Ida Crispy Tater Tots 32oz $4.69. Onion is banked ($0)." },
       nutrition: { serving: "1 smash burger (scaled: full patty for adults, smaller for kids) + bun + toppings + tater tots", calories: 750, protein: 33, carbs: 55, fat: 42 },
       daytime: [],
       title: "Wagyu Smash Burgers with Tater Tots",
@@ -113,7 +113,7 @@ const WEEK = {
           "Kraft Deli Deluxe Cheese Slices, American Cheese, 24 ct",
           "1 whole fresh iceberg lettuce, leaves separated",
           "banked yellow onion, thin sliced (a few rings)",
-          "Best Maid Hamburger Dill Pickle Slices, 24 oz",
+          "pickles (Jason's own, on hand — not on the grocery list)",
           "Ore-Ida Crispy Tater Tots, 32 oz",
           "smash sauce: 4 tbsp Duke's mayo (owned) + 1 tbsp French's mustard (owned) + pinch crushed red pepper (owned)",
           "kosher salt (owned)"
@@ -213,12 +213,6 @@ const WEEK = {
       section: "Tortillas & Bakery",
       items: [
         { name: "H-E-B Enriched Hamburger Buns, 8 ct (only need 5, buying the pack)", qty: "1 pack — Tuesday's burgers", est: 2.6, aisle: "" }
-      ]
-    },
-    {
-      section: "Condiments & Pantry",
-      items: [
-        { name: "Best Maid Hamburger Dill Pickle Slices, 24 oz", qty: "1 jar — Tuesday's burgers", est: 3.4, aisle: "" }
       ]
     },
     {
