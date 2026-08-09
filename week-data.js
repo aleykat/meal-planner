@@ -90,44 +90,45 @@ const WEEK = {
     },
     {
       id: "smashburgers",
-      cost: { est: 24.57, servings: 5, note: "ESTIMATED (pre-shop, revised 8/9 to Tuesday GUEST NIGHT — Jessica joins, 3 adults + 2 kids): Jason specified exact quantities — 1.5 lb Wagyu ground beef @ $6.99/lb ad = $10.49 (buying 2x 16oz packs, closest to the 1.5 lb target), 5 buns needed (buying the 8ct pack, 3 spare), Hatch Chile cheese $5.00 (ad), iceberg lettuce $2.08, roma tomatoes ~$1.00, Best Maid hamburger pickle slices $3.40. Onion is banked ($0)." },
-      nutrition: { serving: "1 smash burger (scaled: full patty for adults, smaller for kids) + bun + toppings", calories: 580, protein: 32, carbs: 32, fat: 34 },
+      cost: { est: 30.54, servings: 5, note: "ESTIMATED (pre-shop, revised again 8/9 — swapped to Kraft Deli Deluxe American cheese slices per Jason's preference, added tater tots, dropped tomatoes): 1.5 lb Wagyu ground beef @ $6.99/lb ad = $10.49 (2x 16oz packs), 5 buns needed (buying the 8ct pack, 3 spare), Kraft Deli Deluxe Cheese Slices 24ct $7.28, iceberg lettuce $2.08, Best Maid hamburger pickle slices $3.40, Ore-Ida Crispy Tater Tots 32oz $4.69. Onion is banked ($0)." },
+      nutrition: { serving: "1 smash burger (scaled: full patty for adults, smaller for kids) + bun + toppings + tater tots", calories: 750, protein: 33, carbs: 55, fat: 42 },
       daytime: [],
-      title: "Hatch Chile Wagyu Smash Burgers with Crispy Lettuce & Tomato",
+      title: "Wagyu Smash Burgers with Tater Tots",
       slot: "Dinner 2 · Tue Aug 11 — GUEST NIGHT (Jessica, 3 adults + 2 kids)",
-      time: "~20 min at dinner",
-      equipment: ["Blackstone"],
+      time: "~25 min at dinner",
+      equipment: ["Blackstone", "Air fryer"],
       summary:
-        "GUEST NIGHT — Jessica joins. Blackstone's back in service (propane swapped Monday). H-E-B Wagyu ground beef at $6.99/lb (ad) smashed hard and fast for maximum crust, melted under this week's Hatch Chile shredded cheese. Sized down from the original per-family estimate to Jason's exact guest-night numbers (1.5 lb beef, 5 buns) — 3 adults + 2 kids eat less total meat than the original 4-person full-portion estimate assumed. Toppings go out separately so everyone builds their own — kids get a plain patty and bun with no extra steps needed.",
+        "GUEST NIGHT — Jessica joins. Blackstone's back in service (propane swapped Monday). H-E-B Wagyu ground beef at $6.99/lb (ad) smashed hard and fast for maximum crust, melted under classic diner-style American cheese slices. Sized down from the original per-family estimate to Jason's exact guest-night numbers (1.5 lb beef, 5 buns) — 3 adults + 2 kids eat less total meat than the original 4-person full-portion estimate assumed. Tater tots added as the kid-easy side (air fryer, hands-off). Toppings go out separately so everyone builds their own — kids get a plain patty and bun with no extra steps needed.",
       links: [
         { label: "Serious Eats — The Food Lab's Smash Burger technique", url: "https://www.seriouseats.com/the-food-labs-complete-guide-to-making-the-best-hamburgers", tag: "primary" },
         { label: "r/burgers — smash burger technique threads", url: "https://www.reddit.com/r/burgers/search/?q=smash%20technique", tag: "reddit" }
       ],
-      swapNote: "Don't compact the beef into balls — loose and light so the smash creates maximum crusty surface area. With 1.5 lb across 5 people, make the adult patties a bit bigger (5-6 oz) and the kid patties smaller (3-4 oz) rather than splitting evenly.",
+      swapNote: "Don't compact the beef into balls — loose and light so the smash creates maximum crusty surface area. With 1.5 lb across 5 people, make the adult patties a bit bigger (5-6 oz) and the kid patties smaller (3-4 oz) rather than splitting evenly. American cheese slices melt faster and more evenly than shredded — classic smash-burger pairing.",
       recipe: {
-        activeTime: "~20 min at dinner",
-        cookTime: "none — single griddle session",
+        activeTime: "~25 min at dinner",
+        cookTime: "tater tots 12-15 min air fryer, unattended alongside the griddle work",
         ingredients: [
           "1.5 lb H-E-B Wagyu Ground Beef ($6.99/lb ad — buy 2x 16 oz packs, use 1.5 lb, bank the rest or size patties generously)",
           "H-E-B Enriched Hamburger Buns, 8 ct (only need 5 — 3 spare)",
-          "H-E-B Hatch Chile Pepper Shredded Cheese, 1 bag",
+          "Kraft Deli Deluxe Cheese Slices, American Cheese, 24 ct",
           "1 whole fresh iceberg lettuce, leaves separated",
-          "3 roma tomatoes, sliced",
           "banked yellow onion, thin sliced (a few rings)",
           "Best Maid Hamburger Dill Pickle Slices, 24 oz",
+          "Ore-Ida Crispy Tater Tots, 32 oz",
           "smash sauce: 4 tbsp Duke's mayo (owned) + 1 tbsp French's mustard (owned) + pinch crushed red pepper (owned)",
           "kosher salt (owned)"
         ],
         steps: [
+          "Air fryer 400°F: tater tots in a single layer, 12-15 min, shaking the basket halfway — start these first so they finish alongside the burgers.",
           "Blackstone on high, thin film of oil.",
           "Whisk the smash sauce ingredients together, fridge until serving.",
           "Divide the beef into 5 portions — bigger (5-6 oz) for the 3 adults, smaller (3-4 oz) for the 2 kids. Keep loose, do NOT compact.",
           "Balls onto the hot griddle spaced well apart, smash flat hard and fast with a stiff spatula, salt generously.",
-          "Sear ~90 seconds untouched until a deep brown crust forms, flip, top immediately with Hatch cheese, another 60-90 seconds.",
+          "Sear ~90 seconds untouched until a deep brown crust forms, flip, top immediately with a cheese slice, another 60-90 seconds until melted.",
           "Toast the buns cut-side down on the griddle's cooler edge, 30-60 seconds.",
-          "KID CHECKPOINT: plain patty + cheese + bun, no sauce/toppings needed unless they want them — toppings go out separately so this is automatic.",
-          "Toppings bar: buns, smash sauce, patties, lettuce, tomato, pickles, onion — everyone builds their own.",
-          "Cleanup: griddle scrape."
+          "KID CHECKPOINT: plain patty + cheese + bun + tots, no sauce/toppings needed unless they want them — toppings go out separately so this is automatic.",
+          "Toppings bar: buns, smash sauce, patties, lettuce, pickles, onion — everyone builds their own. Tots served alongside.",
+          "Cleanup: griddle scrape, air fryer basket."
         ]
       }
     },
@@ -197,7 +198,6 @@ const WEEK = {
     {
       section: "Produce",
       items: [
-        { name: "Fresh Roma Tomatoes", qty: "3 — Tuesday's burgers", est: 1.0, aisle: "" },
         { name: "Fresh Iceberg Lettuce, whole head", qty: "1 — Tuesday's burgers (whole head, not bagged — ban-safe)", est: 2.08, aisle: "" },
         { name: "H-E-B Organic Yellow Potatoes", qty: "1 bag (~2.5 lb) — Monday's side", est: 4.0, aisle: "" },
         { name: "Fresh Cucumbers", qty: "2 — Thursday's cucumber salad", est: 0.84, aisle: "" }
@@ -206,7 +206,7 @@ const WEEK = {
     {
       section: "Dairy & Cheese",
       items: [
-        { name: "H-E-B Hatch Chile Pepper Shredded Cheese — $5.00 AD PRICE", qty: "1 bag — Tuesday's burgers", est: 5.0, aisle: "" }
+        { name: "Kraft Deli Deluxe Cheese Slices, American Cheese, 24 ct", qty: "1 pack — Tuesday's burgers", est: 7.28, aisle: "" }
       ]
     },
     {
@@ -219,6 +219,12 @@ const WEEK = {
       section: "Condiments & Pantry",
       items: [
         { name: "Best Maid Hamburger Dill Pickle Slices, 24 oz", qty: "1 jar — Tuesday's burgers", est: 3.4, aisle: "" }
+      ]
+    },
+    {
+      section: "Frozen",
+      items: [
+        { name: "Ore-Ida Crispy Tater Tots, 32 oz — VERIFIED $4.69", qty: "1 bag — Tuesday's burgers", est: 4.69, aisle: "" }
       ]
     },
     {
