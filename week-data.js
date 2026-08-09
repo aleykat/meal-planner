@@ -90,7 +90,7 @@ const WEEK = {
     },
     {
       id: "smashburgers",
-      cost: { est: 28.03, servings: 5, note: "ESTIMATED (pre-shop, revised again 8/9 — swapped to Kraft Deli Deluxe American cheese slices + H-E-B Fresh Burger Leaf Lettuce Leaves per Jason's preference, added tater tots, dropped tomatoes, dropped pickles (already have some on hand)): 1.5 lb Wagyu ground beef @ $6.99/lb ad = $10.49 (2x 16oz packs), 5 buns needed (buying the 8ct pack, 3 spare), Kraft Deli Deluxe Cheese Slices 24ct $7.28, Burger Leaf Lettuce Leaves 5oz $2.97, Ore-Ida Crispy Tater Tots 32oz $4.69. Onion is banked ($0). NOTE: the lettuce leaves are a pre-washed/pre-cut packaged product — technically inside the active bagged/pre-cut leafy-greens cyclospora ban; Jason explicitly approved this one exception 8/9." },
+      cost: { est: 36.66, servings: 5, note: "VERIFIED via Jason's HEB.com list 8/9: 2x 16oz Wagyu beef packs = $13.98 (2 lb — 1.5 lb isn't a clean pack size), H-E-B Bakery Brioche Hamburger Buns 4ct x2 = $7.96 (8 buns total, only need 5 — list auto-matched brioche over the plain Enriched pack, still covers the count fine), Kraft Deli Deluxe Cheese Slices 24ct $7.28, Burger Leaf Lettuce Leaves 5oz $2.97, Ore-Ida Crispy Tater Tots 32oz $4.47. Onion is banked ($0). NOTE: the lettuce leaves are a pre-washed/pre-cut packaged product — technically inside the active bagged/pre-cut leafy-greens cyclospora ban; Jason explicitly approved this one exception 8/9." },
       nutrition: { serving: "1 smash burger (scaled: full patty for adults, smaller for kids) + bun + toppings + tater tots", calories: 750, protein: 33, carbs: 55, fat: 42 },
       daytime: [],
       title: "Wagyu Smash Burgers with Tater Tots",
@@ -108,8 +108,8 @@ const WEEK = {
         activeTime: "~25 min at dinner",
         cookTime: "tater tots 12-15 min air fryer, unattended alongside the griddle work",
         ingredients: [
-          "1.5 lb H-E-B Wagyu Ground Beef ($6.99/lb ad — buy 2x 16 oz packs, use 1.5 lb, bank the rest or size patties generously)",
-          "H-E-B Enriched Hamburger Buns, 8 ct (only need 5 — 3 spare)",
+          "2 lb H-E-B Wagyu Ground Beef ($6.99/lb ad — 2x 16 oz packs; ~1.5 lb needed, size patties generously with the rest)",
+          "H-E-B Bakery Brioche Hamburger Buns, 4 ct x2 (8 buns total, only need 5 — 3 spare)",
           "Kraft Deli Deluxe Cheese Slices, American Cheese, 24 ct",
           "H-E-B Fresh Burger Leaf Lettuce Leaves, 5 oz",
           "banked yellow onion, thin sliced (a few rings)",
@@ -191,7 +191,7 @@ const WEEK = {
     {
       section: "Meat & Seafood",
       items: [
-        { name: "H-E-B Wagyu Ground Beef — $6.99/lb AD PRICE (buy 2x 16 oz packs, ~2 lb; only need 1.5 lb but sold in 1-lb packs — use the extra generously on adult patties or bank it)", qty: "1.5 lb (2 packs)", est: 10.49, aisle: "" },
+        { name: "H-E-B Wagyu Ground Beef — $6.99/lb AD PRICE VERIFIED via Jason's HEB list 8/9 (2x 16 oz packs, ~2 lb; only need 1.5 lb but sold in 1-lb packs — use the extra generously on adult patties or bank it)", qty: "2 lb (2 packs)", est: 13.98, aisle: "" },
         { name: "H-E-B Pork Belly Portion (non-natural), Avg. 4.75 lbs — $4.71/lb VERIFIED live 8/7 (chose over the H-E-B Natural line at $5.97-6.50/lb — labeling premium, not a clear quality upgrade for a glazed dish)", qty: "1 portion", est: 22.37, aisle: "" }
       ]
     },
@@ -212,13 +212,13 @@ const WEEK = {
     {
       section: "Tortillas & Bakery",
       items: [
-        { name: "H-E-B Enriched Hamburger Buns, 8 ct (only need 5, buying the pack)", qty: "1 pack — Tuesday's burgers", est: 2.6, aisle: "" }
+        { name: "H-E-B Bakery Brioche Hamburger Buns, 4 ct — VERIFIED via Jason's HEB list 8/9 (auto-matched to brioche over plain Enriched; buying 2 packs = 8 buns, only need 5)", qty: "2 packs — Tuesday's burgers", est: 7.96, aisle: "" }
       ]
     },
     {
       section: "Frozen",
       items: [
-        { name: "Ore-Ida Crispy Tater Tots, 32 oz — VERIFIED $4.69", qty: "1 bag — Tuesday's burgers", est: 4.69, aisle: "" }
+        { name: "Ore-Ida Crispy Tater Tots, 32 oz — VERIFIED $4.47 via Jason's HEB list 8/9", qty: "1 bag — Tuesday's burgers", est: 4.47, aisle: "" }
       ]
     },
     {
