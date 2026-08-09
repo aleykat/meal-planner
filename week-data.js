@@ -90,7 +90,7 @@ const WEEK = {
     },
     {
       id: "smashburgers",
-      cost: { est: 27.14, servings: 5, note: "ESTIMATED (pre-shop, revised again 8/9 — swapped to Kraft Deli Deluxe American cheese slices per Jason's preference, added tater tots, dropped tomatoes, dropped pickles (already have some on hand)): 1.5 lb Wagyu ground beef @ $6.99/lb ad = $10.49 (2x 16oz packs), 5 buns needed (buying the 8ct pack, 3 spare), Kraft Deli Deluxe Cheese Slices 24ct $7.28, iceberg lettuce $2.08, Ore-Ida Crispy Tater Tots 32oz $4.69. Onion is banked ($0)." },
+      cost: { est: 28.03, servings: 5, note: "ESTIMATED (pre-shop, revised again 8/9 — swapped to Kraft Deli Deluxe American cheese slices + H-E-B Fresh Burger Leaf Lettuce Leaves per Jason's preference, added tater tots, dropped tomatoes, dropped pickles (already have some on hand)): 1.5 lb Wagyu ground beef @ $6.99/lb ad = $10.49 (2x 16oz packs), 5 buns needed (buying the 8ct pack, 3 spare), Kraft Deli Deluxe Cheese Slices 24ct $7.28, Burger Leaf Lettuce Leaves 5oz $2.97, Ore-Ida Crispy Tater Tots 32oz $4.69. Onion is banked ($0). NOTE: the lettuce leaves are a pre-washed/pre-cut packaged product — technically inside the active bagged/pre-cut leafy-greens cyclospora ban; Jason explicitly approved this one exception 8/9." },
       nutrition: { serving: "1 smash burger (scaled: full patty for adults, smaller for kids) + bun + toppings + tater tots", calories: 750, protein: 33, carbs: 55, fat: 42 },
       daytime: [],
       title: "Wagyu Smash Burgers with Tater Tots",
@@ -111,7 +111,7 @@ const WEEK = {
           "1.5 lb H-E-B Wagyu Ground Beef ($6.99/lb ad — buy 2x 16 oz packs, use 1.5 lb, bank the rest or size patties generously)",
           "H-E-B Enriched Hamburger Buns, 8 ct (only need 5 — 3 spare)",
           "Kraft Deli Deluxe Cheese Slices, American Cheese, 24 ct",
-          "1 whole fresh iceberg lettuce, leaves separated",
+          "H-E-B Fresh Burger Leaf Lettuce Leaves, 5 oz",
           "banked yellow onion, thin sliced (a few rings)",
           "pickles (Jason's own, on hand — not on the grocery list)",
           "Ore-Ida Crispy Tater Tots, 32 oz",
@@ -198,7 +198,7 @@ const WEEK = {
     {
       section: "Produce",
       items: [
-        { name: "Fresh Iceberg Lettuce, whole head", qty: "1 — Tuesday's burgers (whole head, not bagged — ban-safe)", est: 2.08, aisle: "" },
+        { name: "H-E-B Fresh Burger Leaf Lettuce Leaves, 5 oz — Jason's pick; NOTE: pre-washed/pre-cut packaged product, technically inside the active bagged-leafy-greens cyclospora ban, exception explicitly approved 8/9", qty: "1 — Tuesday's burgers", est: 2.97, aisle: "" },
         { name: "H-E-B Organic Yellow Potatoes", qty: "1 bag (~2.5 lb) — Monday's side", est: 4.0, aisle: "" },
         { name: "Fresh Cucumbers", qty: "2 — Thursday's cucumber salad", est: 0.84, aisle: "" }
       ]
