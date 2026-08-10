@@ -180,10 +180,10 @@ const WEEK = {
   // from pantry/inventory.json — sanitized: no staples ledger, no names.
   bank: [
     { name: "FAJITA chicken bag #1, sealed raw (the older one — use first)", qty: "1 bag, 2.15 lb (2 breasts), sealed 7/26", location: "freezer", useBy: "2026-11-26", note: "Deferred 3x — no slot this week. Drops frozen at 150°F +~1 hr" },
-    { name: "FAJITA chicken bag #2, sealed raw", qty: "1 bag, ~2.5 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Second fajita bag — bag #1 goes first (FIFO)" },
-    { name: "COWBOY BUTTER chicken bag, sealed raw", qty: "1 bag, ~2.5 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Proven flavor. Drops frozen at 150°F +~1 hr" },
-    { name: "PLAIN S&P WILD CARD chicken bag, sealed raw", qty: "1 bag, ~2.5 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Takes any direction at cook time — Stubb's glaze, lemon butter, parm crust" },
-    { name: "SOY-GINGER chicken bag, sealed raw", qty: "1 bag, ~2.5 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Drops frozen at 150°F +~1 hr" },
+    { name: "FAJITA chicken bag #2, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Second fajita bag — bag #1 goes first (FIFO)" },
+    { name: "COWBOY BUTTER chicken bag, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Proven flavor. Drops frozen at 150°F +~1 hr" },
+    { name: "PLAIN S&P WILD CARD chicken bag, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Takes any direction at cook time — Stubb's glaze, lemon butter, parm crust" },
+    { name: "SOY-GINGER chicken bag, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Drops frozen at 150°F +~1 hr" },
     { name: "Brazilian BBQ pork chops, sealed", qty: "1 pack (~3.1 lb)", location: "freezer", useBy: "2026-12-02", note: "MONDAY'S PROTEIN — drops frozen at 140°F, no thaw needed" },
     { name: "H-E-B Steamable Green Beans, 12 oz", qty: "1 bag", location: "freezer", useBy: "2027-02-02", note: "MONDAY'S SIDE — free Meal Deal side, planned in" },
     { name: "Jumbo yellow onion, whole", qty: "1 (1.72 lb)", location: "pantry", useBy: "2026-08-26", note: "PLANNED IN — Tuesday's burgers (thin rings only), most of it carries to a future week" },
