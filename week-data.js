@@ -189,7 +189,7 @@ const WEEK = {
     { name: "Jumbo yellow onion, whole", qty: "1 (1.72 lb)", location: "pantry", useBy: "2026-08-26", note: "PLANNED IN — Tuesday's burgers (thin rings only), most of it carries to a future week" },
     { name: "Bulk garlic", qty: "~1.5 heads", location: "pantry", useBy: "2026-09-26", note: "PLANNED IN — Sunday's belly rub + Thursday's glaze, light use" },
     { name: "Fresh ginger, frozen knob", qty: "~1 inch", location: "freezer", useBy: "2026-08-20", note: "PLANNED IN — Thursday's belly glaze (thaw before grating) — saves a fresh-ginger buy this week" },
-    { name: "H-E-B Breaded Shrimp (Meal Deal anchor)", qty: "2 boxes, 10-14 oz", location: "freezer", useBy: "2027-02-02", note: "Still on hold — assigned to shrimp po'boy night once the bagged-salad ban lifts (still active as of 8/7 — situation worse, not better)" }
+    { name: "H-E-B Breaded Shrimp (Meal Deal anchor)", qty: "1 box, 10-14 oz (was 2 — one got eaten)", location: "freezer", useBy: "2027-02-02", note: "Still on hold — assigned to shrimp po'boy night once the bagged-salad ban lifts (still active as of 8/7 — situation worse, not better)" }
   ],
   grocery: [
     {
