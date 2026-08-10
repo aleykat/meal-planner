@@ -85,6 +85,12 @@
   .days.green { background: #2e7d3222; color: var(--good); }
   .inv-btn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 4px 10px; cursor: pointer; font-size: .8rem; }
   .inv-btn:hover { border-color: var(--accent); }
+  .staples-acc { margin-top: 10px; border-top: 2px solid var(--line); }
+  .staples-acc summary { cursor: pointer; padding: 10px 0 6px; font-weight: 700; list-style: none; }
+  .staples-acc summary::before { content: "▸ "; }
+  .staples-acc[open] summary::before { content: "▾ "; }
+  .staples-acc summary:hover { color: var(--accent); }
+  .staples-acc .inv-row { padding-left: 18px; }
   .inv-add { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; align-items: center; }
   .inv-add input, .inv-add select { border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; font: inherit; font-size: .85rem; background: var(--bg); color: var(--ink); }
   footer { margin-top: 40px; color: var(--muted); font-size: .82rem; border-top: 1px solid var(--line); padding-top: 14px; }
@@ -338,15 +344,21 @@
   async function loadInventory() {
     try {
       const inv = await (await fetch("/api/inventory")).json();
-      const items = (inv.items || []).filter(i => i.status === "on-hand")
+      const onHand = (inv.items || []).filter(i => i.status === "on-hand");
+      const staples = onHand.filter(i => i.category === "staple")
+        .sort((a, b) => a.name.localeCompare(b.name));
+      const items = onHand.filter(i => i.category !== "staple")
         .sort((a, b) => (a.useBy || "9999").localeCompare(b.useBy || "9999"));
       const today = new Date();
-      $("#inventory").innerHTML = items.length ? items.map(i => {
-        let badge = `<span class="days green">no date</span>`;
-        if (i.useBy) {
-          const d = Math.ceil((new Date(i.useBy + "T12:00") - today) / 86400000);
-          const cls = d <= 2 ? "red" : d <= 6 ? "amber" : "green";
-          badge = `<span class="days ${cls}">${d < 0 ? "past date" : d + "d left"}</span>`;
+      const row = (i, withBadge) => {
+        let badge = "";
+        if (withBadge) {
+          badge = `<span class="days green">no date</span>`;
+          if (i.useBy) {
+            const d = Math.ceil((new Date(i.useBy + "T12:00") - today) / 86400000);
+            const cls = d <= 2 ? "red" : d <= 6 ? "amber" : "green";
+            badge = `<span class="days ${cls}">${d < 0 ? "past date" : d + "d left"}</span>`;
+          }
         }
         return `<div class="inv-row" data-id="${i.id}">
           <span title="${i.location}">${locIcon[i.location] || "🧊"}</span>
@@ -358,7 +370,18 @@
           <button class="inv-btn" data-act="used">✓ Used</button>
           <button class="inv-btn" data-act="tossed">🗑 Tossed</button>
         </div>`;
-      }).join("") : `<div style="color:var(--muted);font-size:.9rem">Nothing tracked right now — add items below.</div>`;
+      };
+      // keep the accordion open across the re-render that follows every Used/Tossed click
+      const wasOpen = !!document.querySelector("#inventory .staples-acc[open]");
+      let html = items.length ? items.map(i => row(i, true)).join("")
+        : `<div style="color:var(--muted);font-size:.9rem">Nothing tracked right now — add items below.</div>`;
+      if (staples.length) {
+        html += `<details class="staples-acc"${wasOpen ? " open" : ""}>
+          <summary>🧂 Staples Owned · ${staples.length} — expand to mark individual items used</summary>
+          ${staples.map(i => row(i, false)).join("")}
+        </details>`;
+      }
+      $("#inventory").innerHTML = html;
       hideBank(); // live tracker is up — the static snapshot would be a stale duplicate
     } catch {
       if (!IS_LOCAL) { remoteMode(); return; }
