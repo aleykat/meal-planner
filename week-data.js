@@ -1,177 +1,191 @@
-// Week of 2026-08-10 — WEEK 3, HEB-only. REVISED 8/9 (shop day) TWICE: first down to
-// 3 meals (Mon/Tue/Fri), then reordered again once Jason confirmed Jessica joins
-// Tuesday AND Thursday. Final order: Brazilian BBQ chops Monday (family only), Wagyu
-// smash burgers Tuesday (GUEST NIGHT — Jessica, 3 adults + 2 kids, Jason specified
-// exact quantities: 1.5 lb beef, 5 buns), pork belly Thursday (GUEST NIGHT — same
-// headcount, already sized for 5). Fajitas deferred a 3rd time — banked chicken keeps
-// fine frozen. Blackstone is BACK IN SERVICE (propane swapped Monday).
-// Belly reverts to the ORIGINAL fridge-seal timing (not frozen) since Thursday's cook
-// day is back to 3 days out from Sunday's shop/seal — drops Wednesday evening, fridge-
-// cold, ~23-24 hr to Thursday dinner.
-// Outbreak recheck 8/7: BOTH bans continue, situation WORSE — iceberg lettuce outbreak
-// now 10,468 cases / 41-45+ states / 2 deaths (was 1,644 / 5 states); cilantro/parsley
-// (NC) now 867 cases, still unconfirmed/open. No bagged salads, no raw cilantro/parsley.
-// Meal Deal checked in detail 8/8: same "Look what's free for your meals" shrimp deal
-// already clipped 7/30 — nothing new, doesn't apply to this week's menu. Joe V's
-// checked — doesn't clear the $10 threshold this cycle, staying HEB-only.
+// Week of 2026-08-17 — WEEK 4, HEB-only. Our guest is confirmed Tuesday, maybe Thursday —
+// Thursday's chicken is sized for 5 either way (extra banks as leftover if she's not
+// there). Pork belly (8/13) was a 🎯 Hit again, confirming the ~4.75 lb sizing —
+// logged to feedback this run. Lightest prep week in a while: no same-day Sunday
+// seal jobs except freezing the marinated Thursday chicken (4 days out — the
+// shelf-life rule requires freezing, not just chamber-sealing, at that distance) and
+// buying the Friday shrimp FROZEN (5 days out, counter shrimp can't be re-frozen at
+// home). Rice restock trigger hit (2 cooks left after 8/13) — 5 lb bag back on this
+// week's list. Outbreak recheck 8/15: both bans continue, situation still active
+// (iceberg lettuce outbreak still expanding per trackers, 2 deaths; cilantro/parsley
+// NC cluster still open/unresolved) — no bagged salads, no raw cilantro/parsley.
+// Coupons not checked this week (MCP session unauthenticated, WebFetch fallback to
+// heb.com's coupon page returned nothing usable — JS-rendered, needs login). Joe V's
+// checked — nothing clears the $10-cheaper threshold, staying HEB-only.
 const WEEK = {
-  id: "2026-08-10",
-  label: "Dinners Mon Aug 10, Tue Aug 11 (guest) & Thu Aug 13 (guest) · HEB Irving only · shop Sun Aug 9",
+  id: "2026-08-17",
+  label: "Dinners Mon Aug 17, Tue Aug 18 (guest), Thu Aug 20 (maybe guest) & Fri Aug 21 · HEB Irving only · shop Sun Aug 16",
   store: "H-E-B Irving #817 (single store)",
-  adNote: "Ad cycle 8/5–8/11, pulled 8/6. Anchors: H-E-B Wagyu Ground Beef $6.99/lb, Organic Yellow Potatoes $4.00. Pork belly (Aiden's request) isn't a flyer feature this cycle — H-E-B Pork Belly Portion (non-natural) $4.71/lb verified live via Chrome, chosen over the H-E-B Natural line ($5.97-6.50/lb, a labeling premium that doesn't clearly pay off for a glazed dish). One protein this week is already-banked from a prior week's deal at $0 marginal cost: Brazilian BBQ pork chops (8/2 Combo Loco). REVISED 8/9 (twice): down to 3 meals, then reordered when Jessica's Tue+Thu visits were confirmed — chops moved to Monday (family only), burgers moved to Tuesday and rescaled down for the guest headcount per Jason's exact numbers (1.5 lb beef, 5 buns — 3 adults + 2 kids eat less meat per person than the original 4-person family estimate assumed), belly moved to Thursday (same guest headcount, already sized for 5, no change needed). Meal Deal reviewed in full 8/8 (same shrimp anchor already clipped 7/30) — doesn't apply here. Checked Joe V's: doesn't clear the $10-cheaper threshold, staying HEB-only. Outbreak recheck 8/7: both bans continue, situation worse not better (iceberg lettuce outbreak now 10,468 cases/41-45+ states/2 deaths; cilantro/parsley NC 867 cases) — no bagged salads, no raw cilantro/parsley.",
+  adNote: "Ad cycle 8/12–8/18, pulled 8/16. Anchors touched by this menu: H-E-B Wild Caught Jumbo Texas Gulf Shrimp $8.97/lb (31% off — Friday's protein, buy the FROZEN bag not the fresh case), Hill Country Fare Boneless Skinless Chicken Breast $1.77/lb (Thursday's protein — double-checked this is genuinely the HCF value tier at this price, not a mislabeled H-E-B Natural pack), Valentina Mexican Hot Red Salsa $1.18 (Monday's fajita salsa). Two of the four proteins are already-banked from prior weeks at their true paid price: fajita chicken bag #1 (~$4.66, sealed 7/26, finally used after 3 deferrals) and the full Wagyu smash burger kit (~$33.69, bought 8/9, deferred once already). Checked Joe V's — nothing beats the HEB-only plan by the $10 threshold, staying HEB-only. Outbreak recheck 8/15: both bans continue — no bagged salads, no raw cilantro/parsley.",
   meals: [
     {
-      id: "prep",
-      title: "Sunday: Shop + Quick Seal (Belly Only)",
-      slot: "Prep · Sun Aug 9",
-      time: "~5 min after put-away",
-      equipment: ["Chamber sealer"],
-      summary:
-        "Light prep — Monday's chops are ALREADY banked and frozen from a prior week's deal-buying, so they go straight from freezer to bath with no advance work. The only real job today is rubbing and sealing the pork belly for Thursday — this time it's a FRIDGE seal (not frozen), since Thursday's cook day is back to 3 days out. Tuesday's burgers need zero advance prep — fresh ground beef, straight griddle cook.",
-      links: [
-        { label: "Serious Eats — sous vide pork belly guide", url: "https://www.seriouseats.com/sous-vide-pork-belly-recipe", tag: "primary" },
-        { label: "r/sousvide — pork belly threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20belly", tag: "reddit" }
-      ],
-      recipe: {
-        activeTime: "~5 min",
-        cookTime: "none today — first bath run is Monday ~1:30 PM",
-        ingredients: [
-          "H-E-B Pork Belly Portion, 4.75 lb avg (non-natural line, $4.71/lb)",
-          "kosher salt + black pepper (owned)",
-          "2 garlic cloves, smashed (banked heads)"
-        ],
-        steps: [
-          "PUT-AWAY: cucumbers + roma tomatoes → fridge crisper. Buns → pantry until Tuesday. Rice vinegar → pantry.",
-          "SEAL SESSION (5 min): rub the pork belly all over with 1.5 tbsp kosher salt, a generous grind of black pepper, and 2 smashed garlic cloves. Seal flat, label, FRIDGE — cooks Wednesday evening (3 days out — same-day chamber-seal covers the shelf-life rule, no freezing needed this time).",
-          "Monday's Brazilian BBQ chop bag stays in the freezer — drops straight from frozen, no thaw step.",
-          "Cleanup: sealer wipe. Done."
-        ]
-      }
-    },
-    {
-      id: "brazilianchops",
-      cost: { est: 13.34, servings: 5, note: "ESTIMATED (pre-shop, revised 8/9 to Monday — family only, no guest): chops already banked/paid ($9.34, 8/2 Combo Loco 2nd package) = $0 marginal. Organic Yellow Potatoes $4.00 (ad). Green beans banked (Meal Deal freebie, $0). New spend this meal: $4.00." },
-      nutrition: { serving: "1 chop + air-fryer potatoes + green beans", calories: 560, protein: 42, carbs: 36, fat: 24 },
+      id: "fajitas",
+      cost: { est: 21.63, servings: 5, note: "Banked fajita chicken bag #1 counted at its ~$4.66 true paid price (7/26 buy, no itemized receipt line). Bell peppers $4.50, tortillas $3.50, shredded cheese $3.50, Daisy Squeeze sour cream $3.79, Valentina salsa $1.18 (ad), lime $0.50. Banked onion + banked green beans side = $0 marginal. New spend this meal: ~$16.97." },
+      nutrition: { serving: "2 tortillas + fajita chicken/peppers/onion + toppings + green beans side", calories: 550, protein: 36, carbs: 45, fat: 24 },
       daytime: [
-        "MON ~1:30 PM (1 min): bath to 140°F, drop the frozen Brazilian BBQ chop bag — no thaw needed, dropping frozen adds ~1 hr to the cook, still ready well before dinner"
+        "MON ~4:00 PM (1 min): sous vide bath to 150°F, drop the frozen fajita chicken bag — no thaw, frozen start adds time, still ready well before dinner"
       ],
-      title: "Brazilian BBQ Pork Chops with Air-Fryer Potatoes & Green Beans",
-      slot: "Dinner 1 · Mon Aug 10",
-      time: "~20 min at dinner (+20 min air fryer, unattended)",
-      equipment: ["Sous vide", "Air fryer"],
+      title: "Blackstone Chicken Fajitas with Charred Peppers & Onions & Steamed Green Beans",
+      slot: "Dinner 1 · Mon Aug 17",
+      time: "~20 min at dinner",
+      equipment: ["Sous vide", "Blackstone"],
       summary:
-        "Family night — the second half of the 8/2 Combo Loco finally gets cooked, a different flavor from the Texas BBQ pack (Monday 8/3's dinner), banked frozen and paid for two weeks ago, so tonight's only new spend is the sides. Pre-seasoned, so it's a straight drop-and-sear. Air-fryer potatoes sized to the corrected portion math (~0.4-0.5 lb raw potato per adult) and the banked Meal Deal green beans round it out for free.",
+        "Family night — fajita chicken bag #1 (Bolner's fajita rub, sealed 7/26) finally gets cooked after being deferred three separate weeks. Sous vide to temp, then a hot Blackstone sear with peppers and onion for real char. Banked steamable green beans round out the plate for free. Cilantro stays off the toppings bar — the raw-herb ban is still active — lime and salsa carry the brightness instead.",
       links: [
-        { label: "Serious Eats — sous vide pork chops guide", url: "https://www.seriouseats.com/sous-vide-pork-chops-recipe", tag: "primary" },
-        { label: "r/sousvide — pork chop time/temp threads", url: "https://www.reddit.com/r/sousvide/search/?q=pork%20chops", tag: "reddit" }
+        { label: "Serious Eats — sous vide chicken breast guide", url: "https://www.seriouseats.com/sous-vide-chicken-breast-recipe", tag: "primary" },
+        { label: "r/sousvide — chicken fajita threads", url: "https://www.reddit.com/r/sousvide/search/?q=chicken%20fajitas", tag: "reddit" }
       ],
-      swapNote: "140°F = juicy with a touch of blush, safe and ideal for lean loin chops. Dropping from frozen just adds ~1 hr to the bath time — no thaw step needed.",
+      swapNote: "150°F holds the chicken juicy without drying out on the griddle sear after. Dropping from frozen just extends the bath — no separate thaw step needed.",
       recipe: {
         activeTime: "~20 min at dinner",
-        cookTime: "chops ~3-4 hr at 140°F from frozen (in since 1:30, unattended); potatoes 18-20 min air fryer",
+        cookTime: "chicken ~2 hr at 150°F from frozen (in since 4:00 PM, unattended)",
         ingredients: [
-          "banked H-E-B Simply Seasoned Boneless Pork Loin Chops - Brazilian Style BBQ, 1 pack as-sealed (~3.1 lb)",
-          "H-E-B Organic Yellow Potatoes, 1 bag (~2.5 lb, $4.00 ad)",
-          "banked H-E-B Steamable Green Beans, 12 oz",
-          "1 tbsp olive oil + kosher salt (owned, for potatoes)",
-          "1 tbsp Kerrygold butter (owned, for green beans)"
+          "banked FAJITA chicken bag #1, sealed raw (2.15 lb, Bolner's fajita rub)",
+          "3 bell peppers, sliced",
+          "banked jumbo yellow onion (partial), sliced",
+          "10 ct flour tortillas",
+          "8 oz shredded Mexican blend cheese",
+          "Daisy Squeeze sour cream",
+          "Valentina Mexican Hot Red Salsa (ad, $1.18)",
+          "1-2 limes, wedged",
+          "banked H-E-B Steamable Green Beans, 12 oz"
         ],
         steps: [
-          "~1:30 PM: bath to 140°F, drop the frozen chop bag straight in — no thaw needed.",
-          "~30 min before dinner: cube the potatoes skin-on (~3/4 inch), toss with olive oil + salt, air fry 400°F for 18-20 min, shaking the basket halfway.",
-          "At dinner: microwave the green beans bag 4-5 min, drain, toss with butter + salt.",
-          "Pull the chops, pat very dry, sear 60-90 seconds per side on the Blackstone or a hot skillet for color — they're already fully cooked and seasoned.",
-          "KID CHECKPOINT: plain chop + potatoes + green beans — already kid-food as-is, no deconstruction needed.",
-          "Plate and serve.",
-          "Cleanup: air fryer basket, one skillet.",
-          "AFTER DINNER: bath's free until Wednesday evening — nothing else running until the belly drops."
+          "~4:00 PM: sous vide bath to 150°F, drop the frozen chicken bag straight in.",
+          "At dinner: pull chicken, pat dry, slice into strips.",
+          "Blackstone on HIGH: sear chicken + peppers + onion together ~8-10 min until charred at the edges.",
+          "Warm tortillas on the griddle edge, 20-30 sec per side.",
+          "Microwave the green beans 4-5 min, drain, salt.",
+          "KID CHECKPOINT: plain chicken + peppers + tortilla + cheese, no salsa — same dish, just build their own before the salsa comes out.",
+          "Build the toppings bar: cheese, sour cream, salsa, lime.",
+          "Cleanup: Blackstone scrape, one bowl for toppings."
         ]
       }
     },
     {
       id: "smashburgers",
-      cost: { est: 36.66, servings: 5, note: "VERIFIED via Jason's HEB.com list 8/9: 2x 16oz Wagyu beef packs = $13.98 (2 lb — 1.5 lb isn't a clean pack size), H-E-B Bakery Brioche Hamburger Buns 4ct x2 = $7.96 (8 buns total, only need 5 — list auto-matched brioche over the plain Enriched pack, still covers the count fine), Kraft Deli Deluxe Cheese Slices 24ct $7.28, Burger Leaf Lettuce Leaves 5oz $2.97, Ore-Ida Crispy Tater Tots 32oz $4.47. Onion is banked ($0). NOTE: the lettuce leaves are a pre-washed/pre-cut packaged product — technically inside the active bagged/pre-cut leafy-greens cyclospora ban; Jason explicitly approved this one exception 8/9." },
-      nutrition: { serving: "1 smash burger (scaled: full patty for adults, smaller for kids) + bun + toppings + tater tots", calories: 750, protein: 33, carbs: 55, fat: 42 },
+      cost: { est: 42.19, servings: 5, note: "All big-ticket items already banked from 8/9's deferred burger night, counted at their true paid price: Wagyu beef $13.98, brioche buns $7.96, Kraft American cheese $7.28, Ore-Ida tots $4.47 ($33.69 sunk). New buys: whole-head lettuce $1.50, tomato $2.00, ketchup $2.50, pickles $2.50. New spend this meal: ~$8.50. ⚠ This is the week's one $25+ meal — no second one this week, so no check-in needed." },
+      nutrition: { serving: "1 smash burger + tots", calories: 780, protein: 38, carbs: 52, fat: 46 },
       daytime: [],
       title: "Wagyu Smash Burgers with Tater Tots",
-      slot: "Dinner 2 · Tue Aug 11 — GUEST NIGHT (Jessica, 3 adults + 2 kids)",
-      time: "~25 min at dinner",
-      equipment: ["Blackstone", "Air fryer"],
+      slot: "Dinner 2 · Tue Aug 18 — GUEST NIGHT (our guest, 3 adults + 2 kids)",
+      time: "~20 min at dinner",
+      equipment: ["Blackstone"],
       summary:
-        "GUEST NIGHT — Jessica joins. Blackstone's back in service (propane swapped Monday). H-E-B Wagyu ground beef at $6.99/lb (ad) smashed hard and fast for maximum crust, melted under classic diner-style American cheese slices. Sized down from the original per-family estimate to Jason's exact guest-night numbers (1.5 lb beef, 5 buns) — 3 adults + 2 kids eat less total meat than the original 4-person full-portion estimate assumed. Tater tots added as the kid-easy side (air fryer, hands-off). Toppings go out separately so everyone builds their own — kids get a plain patty and bun with no extra steps needed.",
+        "GUEST NIGHT — our guest joins. This is the burger night that got bumped to pizza on 8/11 for lack of cook time; the beef, buns, cheese, and tots have been sitting banked in the freezer/fridge ever since (sell-by 8/27, plenty of room). Whole-head lettuce this time instead of the pre-cut package — that was a one-time approved exception to the bagged-greens ban, not a standing pass to rebuy.",
       links: [
-        { label: "Serious Eats — The Food Lab's Smash Burger technique", url: "https://www.seriouseats.com/the-food-labs-complete-guide-to-making-the-best-hamburgers", tag: "primary" },
-        { label: "r/burgers — smash burger technique threads", url: "https://www.reddit.com/r/burgers/search/?q=smash%20technique", tag: "reddit" }
+        { label: "Serious Eats — smash burger technique", url: "https://www.seriouseats.com/how-to-make-smash-burgers-recipe", tag: "primary" }
       ],
-      swapNote: "Don't compact the beef into balls — loose and light so the smash creates maximum crusty surface area. With 1.5 lb across 5 people, make the adult patties a bit bigger (5-6 oz) and the kid patties smaller (3-4 oz) rather than splitting evenly. American cheese slices melt faster and more evenly than shredded — classic smash-burger pairing.",
+      swapNote: "Whole-head iceberg or romaine, washed and torn to leaf, replaces the pre-cut Burger Leaf Lettuce Leaves from 8/9 — cheaper and clear of the bagged-greens ban entirely, no exception needed.",
       recipe: {
-        activeTime: "~25 min at dinner",
-        cookTime: "tater tots 12-15 min air fryer, unattended alongside the griddle work",
+        activeTime: "~20 min at dinner",
+        cookTime: "smash patties ~3-4 min per side on the Blackstone; tots per bag instructions",
         ingredients: [
-          "2 lb H-E-B Wagyu Ground Beef ($6.99/lb ad — 2x 16 oz packs; ~1.5 lb needed, size patties generously with the rest)",
-          "H-E-B Bakery Brioche Hamburger Buns, 4 ct x2 (8 buns total, only need 5 — 3 spare)",
-          "Kraft Deli Deluxe Cheese Slices, American Cheese, 24 ct",
-          "H-E-B Fresh Burger Leaf Lettuce Leaves, 5 oz",
-          "banked yellow onion, thin sliced (a few rings)",
-          "pickles (Jason's own, on hand — not on the grocery list)",
-          "Ore-Ida Crispy Tater Tots, 32 oz",
-          "smash sauce: 4 tbsp Duke's mayo (owned) + 1 tbsp French's mustard (owned) + pinch crushed red pepper (owned)",
-          "kosher salt (owned)"
+          "banked H-E-B Wagyu Ground Beef, 2 lb",
+          "banked H-E-B Bakery Brioche Hamburger Buns, 5 of 8",
+          "banked Kraft Deli Deluxe American Cheese Slices",
+          "banked Ore-Ida Crispy Tater Tots, 32 oz",
+          "banked jumbo yellow onion (partial), thin sliced",
+          "1 whole-head iceberg or romaine lettuce, leaves separated",
+          "2-3 tomatoes, sliced",
+          "ketchup, mustard (owned), pickles"
         ],
         steps: [
-          "Air fryer 400°F: tater tots in a single layer, 12-15 min, shaking the basket halfway — start these first so they finish alongside the burgers.",
-          "Blackstone on high, thin film of oil.",
-          "Whisk the smash sauce ingredients together, fridge until serving.",
-          "Divide the beef into 5 portions — bigger (5-6 oz) for the 3 adults, smaller (3-4 oz) for the 2 kids. Keep loose, do NOT compact.",
-          "Balls onto the hot griddle spaced well apart, smash flat hard and fast with a stiff spatula, salt generously.",
-          "Sear ~90 seconds untouched until a deep brown crust forms, flip, top immediately with a cheese slice, another 60-90 seconds until melted.",
-          "Toast the buns cut-side down on the griddle's cooler edge, 30-60 seconds.",
-          "KID CHECKPOINT: plain patty + cheese + bun + tots, no sauce/toppings needed unless they want them — toppings go out separately so this is automatic.",
-          "Toppings bar: buns, smash sauce, patties, lettuce, pickles, onion — everyone builds their own. Tots served alongside.",
-          "Cleanup: griddle scrape, air fryer basket."
+          "Tots into the air fryer or oven per package, timed to land with the burgers.",
+          "Portion beef into 5 balls (~6 oz each). Blackstone screaming hot.",
+          "Smash each ball flat with a spatula, salt and pepper. Sear ~3 min, flip, cheese on immediately, ~2-3 min more.",
+          "Toast the buns cut-side down on the griddle, 30-60 sec.",
+          "KID CHECKPOINT: plain patty + cheese + bun, toppings on the side to build themselves.",
+          "Build the toppings bar: lettuce, tomato, onion, pickles, ketchup, mustard.",
+          "Cleanup: Blackstone scrape, one air fryer basket."
         ]
       }
     },
     {
-      id: "porkbelly",
-      cost: { est: 28.21, servings: 5, note: "ESTIMATED (pre-shop, revised 8/9 to Thursday GUEST NIGHT — Jessica joins, 3 adults + 2 kids, same headcount already sized for): H-E-B Pork Belly Portion (non-natural), 4.75 lb avg @ $4.71/lb VERIFIED live via Chrome = $22.37. Cucumbers 2 @ $0.42 = $0.84. Marukan Genuine Brewed Rice Vinegar (new staple, verified $2.97). Ginger comes from the banked frozen knob (no new buy). Rice is owned (Thai Hom Mali jasmine)." },
-      nutrition: { serving: "1 bowl: glazed pork belly + jasmine rice + cucumber salad", calories: 780, protein: 30, carbs: 46, fat: 52 },
+      id: "gochujangchicken",
+      cost: { est: 17.14, servings: 5, note: "Hill Country Fare chicken breast (~3.75 lb @ $1.77/lb) $6.64. Gochujang paste, new pantry staple, $6.50. Fresh ginger $1.00, scallions $1.50, cucumbers $1.50. Sized for 5 whether or not our guest joins — extra chicken banks as leftover if not." },
+      nutrition: { serving: "1 bowl: gochujang chicken + jasmine rice + cucumber salad", calories: 560, protein: 40, carbs: 58, fat: 16 },
       daytime: [
-        "WED ~6:30 PM (1 min): bath to 165°F, drop the fridge-cold pork belly bag (sealed Sunday) — rides ~23-24 hr to Thursday's dinner",
-        "THU ~12:30 PM (10 min): quick cucumber salad → fridge to marinate; rice cooker on (2 cups jasmine, rinsed until the water runs clear, 2.5 cups water)"
+        "SUN (any time, 10 min): mix the gochujang marinade, seal the raw chicken in it, FREEZE — Thursday's cook day is 4 days out, the shelf-life rule requires freezing (not just chamber-sealing) at that distance",
+        "TUE (any time, 1 min): move the chicken bag from freezer to fridge — 2 days to thaw before Thursday",
+        "THU ~5:15 PM (10 min): quick-pickle the cucumbers, fridge to chill while the chicken cooks"
       ],
-      title: "Crispy Glazed Pork Belly Bowls with Cucumber Salad & Jasmine Rice",
-      slot: "Dinner 3 · Thu Aug 13 — GUEST NIGHT (Jessica, 3 adults + 2 kids)",
-      time: "~25 min at dinner",
-      equipment: ["Sous vide", "Broiler"],
+      title: "Gochujang-Glazed Chicken Rice Bowls with Quick Cucumber Salad",
+      slot: "Dinner 3 · Thu Aug 20 — GUEST NIGHT? (our guest maybe)",
+      time: "~20 min at dinner",
+      equipment: ["Rice cooker"],
       summary:
-        "Aiden's request, and GUEST NIGHT — Jessica joins again. A rerun of the 7/30 dish that scored a 🎯 Hit, sized up per that feedback (family wanted more meat per serving) — and that same 4.75 lb sizing already lands right at the 3-adults-plus-2-kids headcount, so no further scaling needed. Sealed fridge-cold Sunday, drops Wednesday evening for a ~23-24 hr cook to Thursday dinner. A hard broiler crisp (the same method that proved out on carnitas) gets crackly edges before a quick soy-ginger glaze. Kids ate the glazed version straight last time — no deconstruction needed.",
+        "Our guest may or may not join Thursday — chicken's bought and sized for 5 either way, so nothing changes if she's not there, it just banks as leftover. New pantry staple: gochujang, a genuine Korean-flavor lane the family hasn't tried yet, picked at the premium-brand tier since it amortizes into future dishes. The cucumber salad repeats the side from 8/13's pork belly bowls — adults liked it there too.",
       links: [
-        { label: "Serious Eats — sous vide pork belly guide", url: "https://www.seriouseats.com/sous-vide-pork-belly-recipe", tag: "primary" },
+        { label: "The Woks of Life — gochujang chicken", url: "https://thewoksoflife.com/gochujang-chicken/", tag: "primary" },
         { label: "The Woks of Life — quick Asian cucumber salad", url: "https://thewoksoflife.com/smashed-cucumber-salad/", tag: "alt" }
       ],
-      swapNote: "165°F/~23-24 hr from fridge-cold = fully tender with the fat rendered but not falling apart, the same window that worked last time. Broiler crisp is a proven fallback (carnitas, 8/4) even with the Blackstone back in service; either works, broiler's less cleanup.",
+      swapNote: "Pre-marinating on the shelf-life-mandated freeze does double duty — the chicken gets 4 days of marinade time by the time it's cooked, more flavor than a same-day marinade would give.",
       recipe: {
-        activeTime: "~25 min at dinner (+10 min cucumber salad at midday)",
-        cookTime: "belly ~23-24 hr at 165°F (in since Wednesday evening, fridge-cold start)",
+        activeTime: "~20 min at dinner (+10 min cucumber salad earlier)",
+        cookTime: "chicken ~10-12 min pan-sear",
         ingredients: [
-          "H-E-B Pork Belly Portion, 4.75 lb avg (non-natural, seasoned + sealed Sunday: salt, pepper, 2 smashed garlic cloves)",
+          "Hill Country Fare boneless skinless chicken breast, ~3.75 lb, cubed",
+          "MARINADE/GLAZE: 3 tbsp gochujang (new) + 2 tbsp Kikkoman soy sauce (owned) + 1 tbsp brown sugar (owned) + 1 tbsp grated fresh ginger + 2 cloves banked garlic, minced",
           "2 cups H-E-B Thai Hom Mali jasmine rice (owned) + 2.5 cups water",
-          "2 fresh cucumbers, thin sliced",
-          "CUCUMBER SALAD: 3 tbsp Marukan rice vinegar (new) + 1 tbsp brown sugar (owned) + 0.5 tsp salt",
-          "GLAZE: 3 tbsp Kikkoman soy sauce (owned) + 2 tbsp brown sugar (owned) + 1 tbsp grated ginger (banked frozen knob, thawed) + 1 minced garlic clove + a few tbsp reserved bag juices",
+          "2 cucumbers, thin sliced",
+          "CUCUMBER SALAD: 3 tbsp Marukan rice vinegar (owned) + 1 tbsp brown sugar (owned) + 0.5 tsp salt",
+          "2-3 scallions, sliced (green parts, cooked into the glaze or scattered raw as a cooked-adjacent garnish)",
           "1 tsp Kadoya sesame oil (owned, finisher)"
         ],
         steps: [
-          "~12:30 PM: cucumber salad — toss sliced cucumbers with rice vinegar, brown sugar, salt. Fridge to marinate.",
+          "Sun: whisk the marinade, toss with cubed chicken, seal, FREEZE.",
+          "Tue: move to the fridge to thaw.",
+          "Thu ~5:15 PM: cucumber salad — toss sliced cucumbers with rice vinegar, brown sugar, salt. Fridge to chill.",
           "Rice cooker on: rinse 2 cups jasmine until the water runs clear, 2.5 cups water, start.",
-          "At dinner: pull the belly bag, pour off and reserve the juices. Slice the belly into thick batons.",
-          "Broiler on HIGH, rack ~3 inches below the element. Belly batons on a rimmed sheet pan in one layer, broil ~10-12 min, flipping once, until deep brown and crispy at the edges.",
-          "Glaze: small pot, soy + brown sugar + ginger + garlic + a few tbsp reserved bag juices, simmer 3-4 min until syrupy.",
-          "Toss the hot crispy belly in the glaze.",
-          "KID CHECKPOINT: glazed belly straight to the kids — proven Hit last time, no deconstruction needed.",
-          "Bowls: rice, glazed belly, cucumber salad, a drizzle of sesame oil.",
-          "Cleanup: sheet pan soak, one small pot."
+          "At dinner: pan-sear the marinated chicken over medium-high, 10-12 min, until the glaze reduces and clings, tossing occasionally so it doesn't scorch.",
+          "KID CHECKPOINT: pull a portion of chicken before it hits the pan, pan-sear plain with just salt for the kids' bowls.",
+          "Bowls: rice, glazed chicken, cucumber salad, scallions, a drizzle of sesame oil.",
+          "Cleanup: one skillet, rice cooker pot."
+        ]
+      }
+    },
+    {
+      id: "shrimpscampi",
+      cost: { est: 22.94, servings: 5, note: "H-E-B Wild Caught Jumbo Texas Gulf Shrimp, FROZEN bag, 1.25 lb @ $8.97/lb (31% off) = $11.21. Linguine $1.98, take & bake garlic bread $3.50, Kerrygold butter restock $5.50, lemon $0.75." },
+      nutrition: { serving: "shrimp + linguine in garlic butter sauce + garlic bread", calories: 620, protein: 32, carbs: 62, fat: 24 },
+      daytime: [
+        "FRI ~5:30 PM (15-20 min): cold-water thaw the frozen shrimp bag before the sous vide bath"
+      ],
+      title: "Garlic Butter Sous Vide Shrimp Scampi with Linguine & Garlic Bread",
+      slot: "Dinner 4 · Fri Aug 21",
+      time: "~25 min at dinner",
+      equipment: ["Sous vide"],
+      summary:
+        "Family night, closes out the week. Jumbo Gulf shrimp is 31% off this cycle — buying the FROZEN bag specifically (not the fresh/counter case), since Friday is 5 days out from Sunday's shop and counter shrimp can't be re-frozen at home without turning to mush. Take & bake garlic bread instead of fresh bakery, since a Sunday baguette wouldn't survive to Friday. Butter restock — the Kerrygold ran out after 8/10.",
+      links: [
+        { label: "Serious Eats — sous vide shrimp guide", url: "https://www.seriouseats.com/sous-vide-shrimp-recipe", tag: "primary" },
+        { label: "r/sousvide — shrimp scampi threads", url: "https://www.reddit.com/r/sousvide/search/?q=shrimp%20scampi", tag: "reddit" }
+      ],
+      swapNote: "135°F/20-30 min sous vide keeps the shrimp from going rubbery — pull straight into the hot garlic butter sauce to finish, no separate pan-sear needed.",
+      recipe: {
+        activeTime: "~25 min at dinner",
+        cookTime: "shrimp 20-30 min at 135°F; pasta ~10-11 min boil",
+        ingredients: [
+          "H-E-B Wild Caught Jumbo Texas Gulf Shrimp, FROZEN bag, 1.25 lb, peeled + deveined",
+          "1 lb linguine",
+          "1 loaf frozen take & bake garlic bread",
+          "4 tbsp Kerrygold salted butter",
+          "1 lemon, juiced",
+          "banked garlic, minced (2-3 cloves)",
+          "crushed red pepper (owned), to taste"
+        ],
+        steps: [
+          "~5:30 PM: cold-water thaw the shrimp bag, 15-20 min.",
+          "Sous vide bath to 135°F, shrimp in, 20-30 min.",
+          "Boil the linguine per package, reserve 0.5 cup pasta water before draining.",
+          "Garlic bread into the oven per package timing to land with dinner.",
+          "Skillet: melt butter, garlic, crushed red pepper, 1-2 min until fragrant.",
+          "Pull shrimp from the bath, add to the skillet with lemon juice and a splash of reserved pasta water.",
+          "Toss in the drained linguine, coat well.",
+          "KID CHECKPOINT: plain buttered linguine + a few shrimp on the side, held back before the red pepper goes in.",
+          "Plate with garlic bread.",
+          "Cleanup: one skillet, one pasta pot."
         ]
       }
     }
@@ -179,57 +193,77 @@ const WEEK = {
   // Read-only "On Hand" snapshot for the public page. Regenerated with each weekly plan
   // from pantry/inventory.json — sanitized: no staples ledger, no names.
   bank: [
-    { name: "FAJITA chicken bag #1, sealed raw (the older one — use first)", qty: "1 bag, 2.15 lb (2 breasts), sealed 7/26", location: "freezer", useBy: "2026-11-26", note: "Deferred 3x — no slot this week. Drops frozen at 150°F +~1 hr" },
-    { name: "FAJITA chicken bag #2, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Second fajita bag — bag #1 goes first (FIFO)" },
+    { name: "FAJITA chicken bag #2, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Second fajita bag — no slot this week, bag #1 finally used" },
     { name: "COWBOY BUTTER chicken bag, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Proven flavor. Drops frozen at 150°F +~1 hr" },
-    { name: "PLAIN S&P WILD CARD chicken bag, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Takes any direction at cook time — Stubb's glaze, lemon butter, parm crust" },
+    { name: "PLAIN S&P WILD CARD chicken bag, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Takes any direction at cook time" },
     { name: "SOY-GINGER chicken bag, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Drops frozen at 150°F +~1 hr" },
-    { name: "Brazilian BBQ pork chops, sealed", qty: "1 pack (~3.1 lb)", location: "freezer", useBy: "2026-12-02", note: "MONDAY'S PROTEIN — drops frozen at 140°F, no thaw needed" },
+    { name: "Brazilian BBQ pork chop, single leftover", qty: "1 chop, sealed", location: "freezer", useBy: "2026-12-02", note: "No dinner slot — good for a quick lunch, single portion" },
+    { name: "H-E-B Breaded Shrimp (Meal Deal anchor)", qty: "1 box, 10-14 oz", location: "freezer", useBy: "2027-02-02", note: "Still on hold — assigned to shrimp po'boy night once the bagged-salad ban lifts (still active as of 8/15)" },
     { name: "H-E-B Steamable Green Beans, 12 oz", qty: "1 bag", location: "freezer", useBy: "2027-02-02", note: "MONDAY'S SIDE — free Meal Deal side, planned in" },
-    { name: "Jumbo yellow onion, whole", qty: "1 (1.72 lb)", location: "pantry", useBy: "2026-08-26", note: "PLANNED IN — Tuesday's burgers (thin rings only), most of it carries to a future week" },
-    { name: "Bulk garlic", qty: "~1.5 heads", location: "pantry", useBy: "2026-09-26", note: "PLANNED IN — Sunday's belly rub + Thursday's glaze, light use" },
-    { name: "Fresh ginger, frozen knob", qty: "~1 inch", location: "freezer", useBy: "2026-08-20", note: "PLANNED IN — Thursday's belly glaze (thaw before grating) — saves a fresh-ginger buy this week" },
-    { name: "Thai Hom Mali jasmine rice, 5 lb bag (tracked per 2-cup cook)", qty: "~6.25 cups (~2.55 lb) left — ~3 cooks", location: "pantry", useBy: null, note: "PLANNED IN — Thursday's belly bowls use 2 cups (~2 cooks left after). Restock triggers at 2 cooks left — Thursday hits that, so it goes on next week's list" },
-    { name: "H-E-B Breaded Shrimp (Meal Deal anchor)", qty: "1 box, 10-14 oz (was 2 — one got eaten)", location: "freezer", useBy: "2027-02-02", note: "Still on hold — assigned to shrimp po'boy night once the bagged-salad ban lifts (still active as of 8/7 — situation worse, not better)" }
+    { name: "Jumbo yellow onion, whole (partial)", qty: "~1 whole, less this week's use", location: "pantry", useBy: "2026-08-26", note: "PLANNED IN — Monday's fajitas + Tuesday's burgers" },
+    { name: "Bulk garlic", qty: "~1.5 heads", location: "pantry", useBy: "2026-09-26", note: "PLANNED IN — Thursday's marinade + Friday's scampi, light use" },
+    { name: "Thai Hom Mali jasmine rice, 5 lb bag (tracked per 2-cup cook)", qty: "~4.25 cups left — ~2 cooks, RESTOCK ON THIS WEEK'S LIST", location: "pantry", useBy: null, note: "PLANNED IN — Thursday's rice bowls use the last cook; 5 lb restock is on this week's grocery list" }
   ],
   grocery: [
     {
       section: "Meat & Seafood",
       items: [
-        { name: "H-E-B Wagyu Ground Beef — $6.99/lb AD PRICE VERIFIED via Jason's HEB list 8/9 (2x 16 oz packs, ~2 lb; only need 1.5 lb but sold in 1-lb packs — use the extra generously on adult patties or bank it)", qty: "2 lb (2 packs)", est: 13.98, aisle: "" },
-        { name: "H-E-B Pork Belly Portion (non-natural), Avg. 4.75 lbs — $4.71/lb VERIFIED live 8/7 (chose over the H-E-B Natural line at $5.97-6.50/lb — labeling premium, not a clear quality upgrade for a glazed dish)", qty: "1 portion", est: 22.37, aisle: "" }
+        { name: "H-E-B Wild Caught Jumbo Texas Gulf Shrimp — $8.97/lb AD PRICE (31% off), buy the FROZEN bag (freezer case, not fresh/counter — Friday's cook is 5 days out)", qty: "1.25 lb — Friday's scampi", est: 11.21, aisle: "" },
+        { name: "Hill Country Fare Boneless Skinless Chicken Breast — $1.77/lb AD PRICE (double-checked genuine HCF value tier, not H-E-B Natural)", qty: "~3.75 lb — Thursday's gochujang bowls", est: 6.64, aisle: "" }
       ]
     },
     {
       section: "Produce",
       items: [
-        { name: "H-E-B Fresh Burger Leaf Lettuce Leaves, 5 oz — Jason's pick; NOTE: pre-washed/pre-cut packaged product, technically inside the active bagged-leafy-greens cyclospora ban, exception explicitly approved 8/9", qty: "1 — Tuesday's burgers", est: 2.97, aisle: "" },
-        { name: "H-E-B Organic Yellow Potatoes", qty: "1 bag (~2.5 lb) — Monday's side", est: 4.0, aisle: "" },
-        { name: "Fresh Cucumbers", qty: "2 — Thursday's cucumber salad", est: 0.84, aisle: "" }
+        { name: "Bell peppers", qty: "3 — Monday's fajitas", est: 4.5, aisle: "" },
+        { name: "Fresh cucumbers", qty: "2 — Thursday's cucumber salad", est: 1.5, aisle: "" },
+        { name: "Fresh ginger", qty: "1 small knob — Thursday's marinade", est: 1.0, aisle: "" },
+        { name: "Scallions", qty: "1 bunch — Thursday's garnish", est: 1.5, aisle: "" },
+        { name: "Limes", qty: "1-2 — Monday's fajita toppings", est: 0.5, aisle: "" },
+        { name: "Lettuce, whole head (iceberg or romaine)", qty: "1 — Tuesday's burgers", est: 1.5, aisle: "" },
+        { name: "Tomatoes", qty: "2-3 — Tuesday's burgers", est: 2.0, aisle: "" },
+        { name: "Lemon", qty: "1 — Friday's scampi", est: 0.75, aisle: "" }
       ]
     },
     {
       section: "Dairy & Cheese",
       items: [
-        { name: "Kraft Deli Deluxe Cheese Slices, American Cheese, 24 ct", qty: "1 pack — Tuesday's burgers", est: 7.28, aisle: "" }
+        { name: "Shredded Mexican blend cheese, 8 oz", qty: "1 bag — Monday's fajitas", est: 3.5, aisle: "" },
+        { name: "Daisy Squeeze sour cream", qty: "1 bottle — Monday's fajitas (served at the table)", est: 3.79, aisle: "" },
+        { name: "Kerrygold salted butter", qty: "1 pack — restock, Friday's scampi", est: 5.5, aisle: "" }
       ]
     },
     {
       section: "Tortillas & Bakery",
       items: [
-        { name: "H-E-B Bakery Brioche Hamburger Buns, 4 ct — VERIFIED via Jason's HEB list 8/9 (auto-matched to brioche over plain Enriched; buying 2 packs = 8 buns, only need 5)", qty: "2 packs — Tuesday's burgers", est: 7.96, aisle: "" }
+        { name: "Flour tortillas, 10 ct", qty: "1 pack — Monday's fajitas", est: 3.5, aisle: "" }
       ]
     },
     {
       section: "Frozen",
       items: [
-        { name: "Ore-Ida Crispy Tater Tots, 32 oz — VERIFIED $4.47 via Jason's HEB list 8/9", qty: "1 bag — Tuesday's burgers", est: 4.47, aisle: "" }
+        { name: "Take & bake garlic bread", qty: "1 loaf — Friday's scampi", est: 3.5, aisle: "" }
+      ]
+    },
+    {
+      section: "Pantry & Condiments",
+      items: [
+        { name: "Valentina Mexican Hot Red Salsa — $1.18 AD PRICE", qty: "1 bottle — Monday's fajitas", est: 1.18, aisle: "" },
+        { name: "Ketchup", qty: "1 bottle — Tuesday's burgers", est: 2.5, aisle: "" },
+        { name: "Pickles", qty: "1 jar — Tuesday's burgers (check if already on hand first)", est: 2.5, aisle: "" },
+        { name: "Linguine, 1 lb", qty: "1 box — Friday's scampi", est: 1.98, aisle: "" }
       ]
     },
     {
       section: "Staples Stock-Up (first buy — new pantry staple this week)",
       items: [
-        { name: "Marukan Genuine Brewed Rice Vinegar, 12 oz — VERIFIED $2.97 (picked over cheaper Kikkoman — genuine-brewed quality tier for a staple that amortizes into future Asian-leaning dishes)", qty: "1 bottle", est: 2.97, aisle: "" }
+        { name: "Gochujang paste (premium brand) — new staple, amortizes into future Korean-leaning dishes", qty: "1 jar — Thursday's chicken", est: 6.5, aisle: "" }
+      ]
+    },
+    {
+      section: "Restock",
+      items: [
+        { name: "H-E-B Thai Hom Mali jasmine rice, 5 lb — restock trigger hit (2 cooks left after 8/13)", qty: "1 bag", est: 8.5, aisle: "" }
       ]
     }
   ]
