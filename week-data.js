@@ -28,9 +28,15 @@
 // on hand (frozen) — dropped from Thursday's marinade buy. Cheese switched from the
 // out-of-stock Hatch Pepper pick to a plain H-E-B Mexican Style Shredded Cheese
 // Blend, $2.98 (live-matched in the HEB.com list, cheaper than the general search
-// price). Tuesday's burgers drop lettuce and tomato entirely this time —
-// tomato specifically is a standing skip for burgers going forward, not just this
-// week. Totals below are final.
+// price). Limes dropped too — not needed for fajitas this time. Tuesday's burgers
+// drop lettuce and tomato entirely this time — tomato specifically is a standing
+// skip for burgers going forward, not just this week. TORTILLAS REVISED BACK: a
+// fresh packaged (non-bakery, shelf-stable) 20 ct bag is now on the list after all —
+// sized to cover both fajita night and a new "The Teen's Lunches" grocery section
+// (flour tortillas, bananas, thin-sliced turkey lunch meat, sliced cheddar, extra
+// cucumbers, green grapes) added at explicit request this week. This is a one-off
+// addition, not a change to the standing rule that kid staples stay off the system
+// by default. Totals below are final.
 // Joe V's checked — nothing clears the $10-cheaper threshold, staying HEB-only.
 const WEEK = {
   id: "2026-08-17",
@@ -40,7 +46,7 @@ const WEEK = {
   meals: [
     {
       id: "fajitas",
-      cost: { est: 12.94, servings: 5, note: "REVISED 8/16 (pantry check): tortillas and salsa are already on hand, dropped from the grocery list ($0 marginal). Cheese switched to a plain H-E-B Mexican Style Shredded Cheese Blend, 8 oz, $2.98 live-matched (the Hatch Pepper pick was out of stock anyway). Banked fajita chicken bag #1 at its ~$4.66 true paid price (7/26 buy). Bell peppers $2.16, Daisy Squeeze sour cream $2.94, lime $0.20. Banked onion + banked green beans side = $0 marginal." },
+      cost: { est: 14.86, servings: 5, note: "REVISED 8/16 twice: salsa is already on hand ($0 marginal); limes dropped (not needed for fajitas this time); tortillas REVISED BACK to a fresh buy — H-E-B Original Fajita Flour Tortillas, 20 ct, $2.12 (packaged/shelf-stable, not bakery) — sized to cover both fajita night and the teen's lunches, see the Teen's Lunches section. Cheese switched to a plain H-E-B Mexican Style Shredded Cheese Blend, 8 oz, $2.98 live-matched (the Hatch Pepper pick was out of stock anyway). Banked fajita chicken bag #1 at its ~$4.66 true paid price (7/26 buy). Bell peppers $2.16, Daisy Squeeze sour cream $2.94. Banked onion + banked green beans side = $0 marginal." },
       nutrition: { serving: "2 tortillas + fajita chicken/peppers/onion + toppings + green beans side", calories: 550, protein: 36, carbs: 45, fat: 24 },
       daytime: [
         "MON ~4:00 PM (1 min): sous vide bath to 150°F, drop the frozen fajita chicken bag — no thaw, frozen start adds time, still ready well before dinner"
@@ -50,7 +56,7 @@ const WEEK = {
       time: "~20 min at dinner",
       equipment: ["Sous vide", "Blackstone"],
       summary:
-        "Family night — fajita chicken bag #1 (Bolner's fajita rub, sealed 7/26) finally gets cooked after being deferred three separate weeks. Sous vide to temp, then a hot Blackstone sear with peppers and onion for real char. Banked steamable green beans round out the plate for free. Cilantro stays off the toppings bar — the raw-herb ban is still active — lime and salsa carry the brightness instead.",
+        "Family night — fajita chicken bag #1 (Bolner's fajita rub, sealed 7/26) finally gets cooked after being deferred three separate weeks. Sous vide to temp, then a hot Blackstone sear with peppers and onion for real char. Banked steamable green beans round out the plate for free. Cilantro stays off the toppings bar — the raw-herb ban is still active — salsa carries the brightness instead.",
       links: [
         { label: "Serious Eats — sous vide chicken breast guide", url: "https://www.seriouseats.com/sous-vide-chicken-breast-recipe", tag: "primary" },
         { label: "r/sousvide — chicken fajita threads", url: "https://www.reddit.com/r/sousvide/search/?q=chicken%20fajitas", tag: "reddit" }
@@ -63,11 +69,10 @@ const WEEK = {
           "banked FAJITA chicken bag #1, sealed raw (2.15 lb, Bolner's fajita rub)",
           "3 bell peppers, sliced",
           "banked jumbo yellow onion (partial), sliced",
-          "flour tortillas (already on hand)",
+          "H-E-B Original Fajita Flour Tortillas, 20 ct ($2.12, also covers the teen's lunches)",
           "H-E-B Mexican Style Shredded Cheese Blend, 8 oz ($2.98)",
           "Daisy Squeeze Sour Cream, 14 oz ($2.94)",
           "salsa (already on hand)",
-          "1-2 limes, wedged",
           "banked H-E-B Steamable Green Beans, 12 oz"
         ],
         steps: [
@@ -77,7 +82,7 @@ const WEEK = {
           "Warm tortillas on the griddle edge, 20-30 sec per side.",
           "Microwave the green beans 4-5 min, drain, salt.",
           "KID CHECKPOINT: plain chicken + peppers + tortilla + cheese, no salsa — same dish, just build their own before the salsa comes out.",
-          "Build the toppings bar: cheese, sour cream, salsa, lime.",
+          "Build the toppings bar: cheese, sour cream, salsa.",
           "Cleanup: Blackstone scrape, one bowl for toppings."
         ]
       }
@@ -226,6 +231,12 @@ const WEEK = {
   ],
   grocery: [
     {
+      section: "Bakery & Bread",
+      items: [
+        { name: "H-E-B Original Fajita Flour Tortillas, 20 ct — $2.12 LIVE-MATCHED 8/16, packaged/shelf-stable (not bakery-fresh) — sized to cover Monday's fajitas AND the teen's lunches", qty: "1 pack (20 ct)", est: 2.12, aisle: "Aisle 5" }
+      ]
+    },
+    {
       section: "Meat & Seafood",
       items: [
         { name: "H-E-B Wild Caught Frozen Peeled Large Texas Gulf Raw Shrimp, 50-70 ct/lb — $7.97 LIVE-MATCHED 8/16 (correction: the ad's 'Jumbo 31% off' item was the fresh counter case, not frozen — this pick is genuinely frozen+peeled and cheaper anyway)", qty: "1 lb — Friday's scampi", est: 7.97, aisle: "In Seafood on the Left Wall" },
@@ -236,9 +247,8 @@ const WEEK = {
       section: "Produce",
       items: [
         { name: "Fresh Green Bell Peppers, 3 ct — $2.16 LIVE-MATCHED 8/16", qty: "3 — Monday's fajitas", est: 2.16, aisle: "In Produce on the Left Wall" },
-        { name: "Fresh Cucumber, Each — $0.40 LIVE-MATCHED 8/16", qty: "2 — Thursday's cucumber salad", est: 0.80, aisle: "In Produce" },
+        { name: "Fresh Cucumber, Each — $0.40 LIVE-MATCHED 8/16", qty: "5 total — 2 for Thursday's cucumber salad, 3 for the teen's lunches", est: 2.00, aisle: "In Produce" },
         { name: "Fresh Green Onions, Each — $0.67 LIVE-MATCHED 8/16", qty: "1 bunch — Thursday's garnish", est: 0.67, aisle: "In Produce on the Left Wall" },
-        { name: "Fresh Lime, Each — $0.20 LIVE-MATCHED 8/16", qty: "1-2 — Monday's fajita toppings", est: 0.20, aisle: "In Produce" },
         { name: "Fresh Small Lemon, Each — Price Cut $0.33 LIVE-MATCHED 8/16", qty: "1 — Friday's scampi", est: 0.33, aisle: "In Produce" }
       ]
     },
@@ -272,6 +282,15 @@ const WEEK = {
       section: "Restock",
       items: [
         { name: "H-E-B Thai Hom Mali Jasmine Rice, 5 lbs — $6.99 LIVE-MATCHED 8/16, restock trigger hit (2 cooks left after 8/13)", qty: "1 bag", est: 6.99, aisle: "Aisle 6" }
+      ]
+    },
+    {
+      section: "The Teen's Lunches (one-off addition, requested 8/16)",
+      items: [
+        { name: "Fresh Bunch of Bananas — $1.13/bunch LIVE-MATCHED 8/16, 2 bunches for ~10 bananas", qty: "2 bunches (~10 bananas)", est: 2.26, aisle: "In Produce" },
+        { name: "Hill Country Fare Thin Sliced Oven-Roasted Turkey Breast Lunch Meat, 9 oz — $3.57 LIVE-MATCHED 8/16, packaged (not from the deli counter)", qty: "1 pack", est: 3.57, aisle: "In Meat Market on the Back Wall" },
+        { name: "H-E-B Sharp Cheddar Sliced Cheese, 10 ct — $2.98 LIVE-MATCHED 8/16", qty: "1 pack", est: 2.98, aisle: "In Meat Market on the Back Wall" },
+        { name: "H-E-B Premium Fresh Seedless White Grapes, Avg. 2.0 lbs — Price Cut $5.96 LIVE-MATCHED 8/16 (green grapes)", qty: "1 bag (~2 lb)", est: 5.96, aisle: "In Produce on the Front Wall" }
       ]
     }
   ]
