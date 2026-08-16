@@ -9,18 +9,28 @@
 // week's list. Outbreak recheck 8/15: both bans continue, situation still active
 // (iceberg lettuce outbreak still expanding per trackers, 2 deaths; cilantro/parsley
 // NC cluster still open/unresolved) — no bagged salads, no raw cilantro/parsley.
-// Coupons not checked this week (MCP session unauthenticated, WebFetch fallback to
-// heb.com's coupon page returned nothing usable — JS-rendered, needs login). Joe V's
-// checked — nothing clears the $10-cheaper threshold, staying HEB-only.
+// PRICE-VERIFIED + COUPONS CHECKED 8/16 via Chrome (logged into the HEB account): most items came
+// in CHEAPER than estimated. Two corrections: the ad's "31% off Jumbo shrimp $8.97/lb"
+// turned out to be the FRESH counter case, not a frozen bag — switched to H-E-B Wild
+// Caught Frozen Peeled Large Texas Gulf Shrimp, 50-70 ct/lb, $8.37/lb (actually
+// cheaper, and correctly frozen for a 5-days-out cook per the shrimp rule). The ad's
+// "Valentina salsa $1.18" didn't match any real listing (Valentina is a thin table hot
+// sauce anyway, not a chunky salsa) — switched to H-E-B Mi Tienda Salsa Roja - Hot, 16
+// oz, $3.36. Clipped 3 coupons that apply to this week's list: $2 off Majestic
+// Pickles, 75¢ off H-E-B Mixla Tortillas, 50¢ off H-E-B Natural Hatch Pepper Shredded
+// Cheese (swapped in for the plain Mexican blend — pairs well with fajitas). The
+// H-E-B.com shopping list was empty and is now populated with all 21 new-buy items
+// (plain list entries, no "Find item" auto-match used — avoiding the 8/9 incident).
+// Joe V's checked — nothing clears the $10-cheaper threshold, staying HEB-only.
 const WEEK = {
   id: "2026-08-17",
   label: "Dinners Mon Aug 17, Tue Aug 18 (guest), Thu Aug 20 (maybe guest) & Fri Aug 21 · HEB Irving only · shop Sun Aug 16",
   store: "H-E-B Irving #817 (single store)",
-  adNote: "Ad cycle 8/12–8/18, pulled 8/16. Anchors touched by this menu: H-E-B Wild Caught Jumbo Texas Gulf Shrimp $8.97/lb (31% off — Friday's protein, buy the FROZEN bag not the fresh case), Hill Country Fare Boneless Skinless Chicken Breast $1.77/lb (Thursday's protein — double-checked this is genuinely the HCF value tier at this price, not a mislabeled H-E-B Natural pack), Valentina Mexican Hot Red Salsa $1.18 (Monday's fajita salsa). Two of the four proteins are already-banked from prior weeks at their true paid price: fajita chicken bag #1 (~$4.66, sealed 7/26, finally used after 3 deferrals) and the full Wagyu smash burger kit (~$33.69, bought 8/9, deferred once already). Checked Joe V's — nothing beats the HEB-only plan by the $10 threshold, staying HEB-only. Outbreak recheck 8/15: both bans continue — no bagged salads, no raw cilantro/parsley.",
+  adNote: "Ad cycle 8/12–8/18, pulled 8/16. Anchors touched by this menu: Hill Country Fare Boneless Skinless Split Chicken Breast $1.77/lb VERIFIED (Thursday's protein — a 2.79 lb pack, genuinely boneless despite the 'split' name, genuinely the HCF value tier not a mislabeled H-E-B Natural pack). Friday's shrimp is NOT the ad anchor after all — see correction note above; verified real pick is H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp, 50-70 ct/lb, $8.37/lb. Two of the four proteins are already-banked from prior weeks at their true paid price: fajita chicken bag #1 (~$4.66, sealed 7/26, finally used after 3 deferrals) and the full Wagyu smash burger kit (~$33.69, bought 8/9, deferred once already). Checked Joe V's — nothing beats the HEB-only plan by the $10 threshold, staying HEB-only. Outbreak recheck 8/15: both bans continue — no bagged salads, no raw cilantro/parsley.",
   meals: [
     {
       id: "fajitas",
-      cost: { est: 21.63, servings: 5, note: "Banked fajita chicken bag #1 counted at its ~$4.66 true paid price (7/26 buy, no itemized receipt line). Bell peppers $4.50, tortillas $3.50, shredded cheese $3.50, Daisy Squeeze sour cream $3.79, Valentina salsa $1.18 (ad), lime $0.50. Banked onion + banked green beans side = $0 marginal. New spend this meal: ~$16.97." },
+      cost: { est: 20.65, servings: 5, note: "PRICE-VERIFIED 8/16: banked fajita chicken bag #1 at its ~$4.66 true paid price (7/26 buy, no itemized receipt line). Bell peppers $4.50 (est), H-E-B Mixla tortillas $2.29 - 75¢ coupon = $1.54 net, H-E-B Natural Hatch Pepper shredded cheese ~$3.50 est - 50¢ coupon = $3.00 net, Daisy Squeeze sour cream $3.09 verified, H-E-B Mi Tienda Salsa Roja - Hot $3.36 verified (correction — the ad's '$1.18 Valentina salsa' didn't match any real listing and Valentina is a thin hot sauce, not a chunky salsa anyway), lime $0.50 (est). Banked onion + banked green beans side = $0 marginal." },
       nutrition: { serving: "2 tortillas + fajita chicken/peppers/onion + toppings + green beans side", calories: 550, protein: 36, carbs: 45, fat: 24 },
       daytime: [
         "MON ~4:00 PM (1 min): sous vide bath to 150°F, drop the frozen fajita chicken bag — no thaw, frozen start adds time, still ready well before dinner"
@@ -43,10 +53,10 @@ const WEEK = {
           "banked FAJITA chicken bag #1, sealed raw (2.15 lb, Bolner's fajita rub)",
           "3 bell peppers, sliced",
           "banked jumbo yellow onion (partial), sliced",
-          "10 ct flour tortillas",
-          "8 oz shredded Mexican blend cheese",
-          "Daisy Squeeze sour cream",
-          "Valentina Mexican Hot Red Salsa (ad, $1.18)",
+          "H-E-B Mixla Corn & Flour Blend Tortillas, 12 ct ($2.29, 75¢ coupon clipped)",
+          "H-E-B Natural Hatch Pepper Shredded Cheese, 8 oz (50¢ coupon clipped)",
+          "Daisy Squeeze Sour Cream, 14 oz ($3.09 verified)",
+          "H-E-B Mi Tienda Salsa Roja - Hot, 16 oz ($3.36 verified)",
           "1-2 limes, wedged",
           "banked H-E-B Steamable Green Beans, 12 oz"
         ],
@@ -64,7 +74,7 @@ const WEEK = {
     },
     {
       id: "smashburgers",
-      cost: { est: 42.19, servings: 5, note: "All big-ticket items already banked from 8/9's deferred burger night, counted at their true paid price: Wagyu beef $13.98, brioche buns $7.96, Kraft American cheese $7.28, Ore-Ida tots $4.47 ($33.69 sunk). New buys: whole-head lettuce $1.50, tomato $2.00, ketchup $2.50, pickles $2.50. New spend this meal: ~$8.50. ⚠ This is the week's one $25+ meal — no second one this week, so no check-in needed." },
+      cost: { est: 41.69, servings: 5, note: "All big-ticket items already banked from 8/9's deferred burger night, counted at their true paid price: Wagyu beef $13.98, brioche buns $7.96, Kraft American cheese $7.28, Ore-Ida tots $4.47 ($33.69 sunk). New buys: whole-head lettuce $1.50 (est), tomato $2.00 (est), ketchup $2.50 (est), Majestic Pickles ~$2.00 net (coupon clipped 8/16, $2 off). New spend this meal: ~$8.00. ⚠ This is the week's one $25+ meal — no second one this week, so no check-in needed." },
       nutrition: { serving: "1 smash burger + tots", calories: 780, protein: 38, carbs: 52, fat: 46 },
       daytime: [],
       title: "Wagyu Smash Burgers with Tater Tots",
@@ -88,7 +98,7 @@ const WEEK = {
           "banked jumbo yellow onion (partial), thin sliced",
           "1 whole-head iceberg or romaine lettuce, leaves separated",
           "2-3 tomatoes, sliced",
-          "ketchup, mustard (owned), pickles"
+          "ketchup, mustard (owned), Majestic Pickles ($2 coupon clipped)"
         ],
         steps: [
           "Tots into the air fryer or oven per package, timed to land with the burgers.",
@@ -103,7 +113,7 @@ const WEEK = {
     },
     {
       id: "gochujangchicken",
-      cost: { est: 17.14, servings: 5, note: "Hill Country Fare chicken breast (~3.75 lb @ $1.77/lb) $6.64. Gochujang paste, new pantry staple, $6.50. Fresh ginger $1.00, scallions $1.50, cucumbers $1.50. Sized for 5 whether or not our guest joins — extra chicken banks as leftover if not." },
+      cost: { est: 15.22, servings: 5, note: "PRICE-VERIFIED 8/16: Hill Country Fare Boneless Skinless Split Chicken Breast, 2.79 lb pack @ $1.77/lb (sale) = $4.94 verified — the single sale-size pack, plenty for 5 servings in a rice bowl (revised down from an earlier 3.75 lb guess). O'Food Gochujang Brown Rice Red Pepper Paste, 17.6 oz, new staple, $6.28 verified. Fresh ginger $1.00 (est), scallions $1.50 (est), cucumbers $1.50 (est). Sized for 5 whether or not our guest joins — extra chicken banks as leftover if not." },
       nutrition: { serving: "1 bowl: gochujang chicken + jasmine rice + cucumber salad", calories: 560, protein: 40, carbs: 58, fat: 16 },
       daytime: [
         "SUN (any time, 10 min): mix the gochujang marinade, seal the raw chicken in it, FREEZE — Thursday's cook day is 4 days out, the shelf-life rule requires freezing (not just chamber-sealing) at that distance",
@@ -126,8 +136,8 @@ const WEEK = {
         activeTime: "~15 min at dinner (+10 min cucumber salad earlier)",
         cookTime: "chicken ~1-1.5 hr at 145°F sous vide (in since ~4:00 PM), then ~5 min skillet reduce",
         ingredients: [
-          "Hill Country Fare boneless skinless chicken breast, ~3.75 lb, cubed",
-          "MARINADE/GLAZE: 3 tbsp gochujang (new) + 2 tbsp Kikkoman soy sauce (owned) + 1 tbsp brown sugar (owned) + 1 tbsp grated fresh ginger + 2 cloves banked garlic, minced",
+          "Hill Country Fare Boneless Skinless Split Chicken Breast, 2.79 lb pack ($4.94 verified), cubed",
+          "MARINADE/GLAZE: 3 tbsp O'Food Gochujang Brown Rice Red Pepper Paste (new, $6.28) + 2 tbsp Kikkoman soy sauce (owned) + 1 tbsp brown sugar (owned) + 1 tbsp grated fresh ginger + 2 cloves banked garlic, minced",
           "2 cups H-E-B Thai Hom Mali jasmine rice (owned) + 2.5 cups water",
           "2 cucumbers, thin sliced",
           "CUCUMBER SALAD: 3 tbsp Marukan rice vinegar (owned) + 1 tbsp brown sugar (owned) + 0.5 tsp salt",
@@ -149,7 +159,7 @@ const WEEK = {
     },
     {
       id: "shrimpscampi",
-      cost: { est: 22.94, servings: 5, note: "H-E-B Wild Caught Jumbo Texas Gulf Shrimp, FROZEN bag, 1.25 lb @ $8.97/lb (31% off) = $11.21. Linguine $1.98, take & bake garlic bread $3.50, Kerrygold butter restock $5.50, lemon $0.75." },
+      cost: { est: 19.80, servings: 5, note: "PRICE-VERIFIED 8/16 + CORRECTED: the ad's 'Jumbo shrimp $8.97/lb, 31% off' turned out to be the FRESH counter case, not frozen — swapped to H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp, 50-70 ct/lb, $8.37/lb verified (actually cheaper, and correctly frozen for a 5-days-out cook). 1.25 lb = $10.46. H-E-B Linguine Pasta Noodles $1.18 verified, H-E-B Frozen Garlic Bread - Traditional 16 oz $2.50 verified, Kerrygold Grass-Fed Salted Butter 8 oz $4.91 verified, lemon $0.75 (est)." },
       nutrition: { serving: "shrimp + linguine in garlic butter sauce + garlic bread", calories: 620, protein: 32, carbs: 62, fat: 24 },
       daytime: [
         "FRI ~5:30 PM (15-20 min): cold-water thaw the frozen shrimp bag before the sous vide bath"
@@ -159,7 +169,7 @@ const WEEK = {
       time: "~25 min at dinner",
       equipment: ["Sous vide"],
       summary:
-        "Family night, closes out the week. Jumbo Gulf shrimp is 31% off this cycle — buying the FROZEN bag specifically (not the fresh/counter case), since Friday is 5 days out from Sunday's shop and counter shrimp can't be re-frozen at home without turning to mush. Take & bake garlic bread instead of fresh bakery, since a Sunday baguette wouldn't survive to Friday. Butter restock — the Kerrygold ran out after 8/10.",
+        "Family night, closes out the week. The ad's 'Jumbo shrimp 31% off' anchor turned out to be the fresh counter case when checked in-store 8/16, not a frozen bag — swapped to a genuinely FROZEN peeled/deveined pick since Friday is 5 days out from Sunday's shop and counter shrimp can't be re-frozen at home without turning to mush. It came in cheaper than the ad price anyway. Take & bake garlic bread instead of fresh bakery, since a Sunday baguette wouldn't survive to Friday. Butter restock — the Kerrygold ran out after 8/10.",
       links: [
         { label: "Serious Eats — sous vide shrimp guide", url: "https://www.seriouseats.com/sous-vide-shrimp-recipe", tag: "primary" },
         { label: "r/sousvide — shrimp scampi threads", url: "https://www.reddit.com/r/sousvide/search/?q=shrimp%20scampi", tag: "reddit" }
@@ -169,10 +179,10 @@ const WEEK = {
         activeTime: "~25 min at dinner",
         cookTime: "shrimp 20-30 min at 135°F; pasta ~10-11 min boil",
         ingredients: [
-          "H-E-B Wild Caught Jumbo Texas Gulf Shrimp, FROZEN bag, 1.25 lb, peeled + deveined",
-          "1 lb linguine",
-          "1 loaf frozen take & bake garlic bread",
-          "4 tbsp Kerrygold salted butter",
+          "H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp, 50-70 ct/lb, 1.25 lb ($8.37/lb verified)",
+          "H-E-B Linguine Pasta Noodles, 16 oz ($1.18 verified)",
+          "H-E-B Frozen Garlic Bread - Traditional, 16 oz ($2.50 verified)",
+          "4 tbsp Kerrygold Grass-Fed Pure Irish Salted Butter, 8 oz ($4.91 verified)",
           "1 lemon, juiced",
           "banked garlic, minced (2-3 cloves)",
           "crushed red pepper (owned), to taste"
@@ -210,8 +220,8 @@ const WEEK = {
     {
       section: "Meat & Seafood",
       items: [
-        { name: "H-E-B Wild Caught Jumbo Texas Gulf Shrimp — $8.97/lb AD PRICE (31% off), buy the FROZEN bag (freezer case, not fresh/counter — Friday's cook is 5 days out)", qty: "1.25 lb — Friday's scampi", est: 11.21, aisle: "" },
-        { name: "Hill Country Fare Boneless Skinless Chicken Breast — $1.77/lb AD PRICE (double-checked genuine HCF value tier, not H-E-B Natural)", qty: "~3.75 lb — Thursday's gochujang bowls", est: 6.64, aisle: "" }
+        { name: "H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp, 50-70 ct/lb — $8.37/lb VERIFIED 8/16 (correction: the ad's 'Jumbo 31% off' item was the fresh counter case, not frozen — this pick is genuinely frozen+peeled and cheaper anyway)", qty: "1.25 lb — Friday's scampi", est: 10.46, aisle: "" },
+        { name: "Hill Country Fare Boneless Skinless Split Chicken Breast — $1.77/lb VERIFIED 8/16 (2.79 lb sale pack, genuinely boneless, genuine HCF value tier not H-E-B Natural)", qty: "1 pack, ~2.79 lb — Thursday's gochujang bowls", est: 4.94, aisle: "" }
       ]
     },
     {
@@ -230,42 +240,42 @@ const WEEK = {
     {
       section: "Dairy & Cheese",
       items: [
-        { name: "Shredded Mexican blend cheese, 8 oz", qty: "1 bag — Monday's fajitas", est: 3.5, aisle: "" },
-        { name: "Daisy Squeeze sour cream", qty: "1 bottle — Monday's fajitas (served at the table)", est: 3.79, aisle: "" },
-        { name: "Kerrygold salted butter", qty: "1 pack — restock, Friday's scampi", est: 5.5, aisle: "" }
+        { name: "H-E-B Natural Hatch Pepper Shredded Cheese, 8 oz — 50¢ coupon clipped 8/16", qty: "1 bag — Monday's fajitas", est: 3.0, aisle: "" },
+        { name: "Daisy Squeeze Sour Cream, 14 oz — $3.09 VERIFIED", qty: "1 bottle — Monday's fajitas (served at the table)", est: 3.09, aisle: "" },
+        { name: "Kerrygold Grass-Fed Pure Irish Salted Butter, 8 oz — $4.91 VERIFIED", qty: "1 pack — restock, Friday's scampi", est: 4.91, aisle: "" }
       ]
     },
     {
       section: "Tortillas & Bakery",
       items: [
-        { name: "Flour tortillas, 10 ct", qty: "1 pack — Monday's fajitas", est: 3.5, aisle: "" }
+        { name: "H-E-B Mixla Corn & Flour Blend Tortillas, 12 ct — $2.29 VERIFIED, 75¢ coupon clipped 8/16", qty: "1 pack — Monday's fajitas", est: 1.54, aisle: "" }
       ]
     },
     {
       section: "Frozen",
       items: [
-        { name: "Take & bake garlic bread", qty: "1 loaf — Friday's scampi", est: 3.5, aisle: "" }
+        { name: "H-E-B Frozen Garlic Bread - Traditional, 16 oz — $2.50 VERIFIED", qty: "1 loaf — Friday's scampi", est: 2.5, aisle: "" }
       ]
     },
     {
       section: "Pantry & Condiments",
       items: [
-        { name: "Valentina Mexican Hot Red Salsa — $1.18 AD PRICE", qty: "1 bottle — Monday's fajitas", est: 1.18, aisle: "" },
+        { name: "H-E-B Mi Tienda Salsa Roja - Hot, 16 oz — $3.36 VERIFIED (correction: the ad's 'Valentina salsa $1.18' didn't match any real listing, and Valentina is a thin table hot sauce, not a chunky salsa anyway)", qty: "1 jar — Monday's fajitas", est: 3.36, aisle: "" },
         { name: "Ketchup", qty: "1 bottle — Tuesday's burgers", est: 2.5, aisle: "" },
-        { name: "Pickles", qty: "1 jar — Tuesday's burgers (check if already on hand first)", est: 2.5, aisle: "" },
-        { name: "Linguine, 1 lb", qty: "1 box — Friday's scampi", est: 1.98, aisle: "" }
+        { name: "Majestic Pickles, 24 oz — $2 coupon clipped 8/16 (check if already on hand first)", qty: "1 jar — Tuesday's burgers", est: 2.0, aisle: "" },
+        { name: "H-E-B Linguine Pasta Noodles, 16 oz — $1.18 VERIFIED", qty: "1 box — Friday's scampi", est: 1.18, aisle: "" }
       ]
     },
     {
       section: "Staples Stock-Up (first buy — new pantry staple this week)",
       items: [
-        { name: "Gochujang paste (premium brand) — new staple, amortizes into future Korean-leaning dishes", qty: "1 jar — Thursday's chicken", est: 6.5, aisle: "" }
+        { name: "O'Food Gochujang Brown Rice Red Pepper Paste, 17.6 oz — $6.28 VERIFIED, amortizes into future Korean-leaning dishes", qty: "1 jar — Thursday's chicken", est: 6.28, aisle: "" }
       ]
     },
     {
       section: "Restock",
       items: [
-        { name: "H-E-B Thai Hom Mali jasmine rice, 5 lb — restock trigger hit (2 cooks left after 8/13)", qty: "1 bag", est: 8.5, aisle: "" }
+        { name: "H-E-B Thai Hom Mali Jasmine Rice, 5 lbs — $7.34 VERIFIED, restock trigger hit (2 cooks left after 8/13)", qty: "1 bag", est: 7.34, aisle: "" }
       ]
     }
   ]
