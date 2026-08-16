@@ -23,10 +23,14 @@
 // entries, then each one matched to a real product one at a time via "Find item"
 // (chosen deliberately, not bulk/automatic — avoiding the 8/9 incident). That match
 // pass gave LIVE prices + real aisle/wall locations for every item (used to refine
-// pantry/aisle-map.json) and surfaced one flag: H-E-B Hatch Chile Pepper Monterey
-// Jack Shredded Cheese is showing OUT OF STOCK online as of 8/16 — plain Mexican
-// blend is the fallback if it's not on the shelf in store either. Live prices came in
-// even cheaper than the first price-check pass; totals below are final.
+// pantry/aisle-map.json). PANTRY CHECK 8/16: flour tortillas, salsa,
+// ketchup, and pickles are already on hand — dropped from the list. Ginger is also
+// on hand (frozen) — dropped from Thursday's marinade buy. Cheese switched from the
+// out-of-stock Hatch Pepper pick to a plain H-E-B Mexican Style Shredded Cheese
+// Blend, $2.98 (live-matched in the HEB.com list, cheaper than the general search
+// price). Tuesday's burgers drop lettuce and tomato entirely this time —
+// tomato specifically is a standing skip for burgers going forward, not just this
+// week. Totals below are final.
 // Joe V's checked — nothing clears the $10-cheaper threshold, staying HEB-only.
 const WEEK = {
   id: "2026-08-17",
@@ -36,7 +40,7 @@ const WEEK = {
   meals: [
     {
       id: "fajitas",
-      cost: { est: 18.32, servings: 5, note: "LIVE-MATCHED 8/16 via the HEB.com list: banked fajita chicken bag #1 at its ~$4.66 true paid price (7/26 buy, no itemized receipt line). Bell peppers $2.16, Mixla tortillas $2.18 (coupon-adjusted), Hatch Pepper shredded cheese $2.98 (⚠ showing out of stock online, plain Mexican blend is the fallback), Daisy Squeeze sour cream $2.94, H-E-B Mi Tienda Salsa Roja - Hot $3.20 (correction — the ad's '$1.18 Valentina salsa' didn't match any real listing and Valentina is a thin hot sauce, not a chunky salsa anyway), lime $0.20. Banked onion + banked green beans side = $0 marginal." },
+      cost: { est: 12.94, servings: 5, note: "REVISED 8/16 (pantry check): tortillas and salsa are already on hand, dropped from the grocery list ($0 marginal). Cheese switched to a plain H-E-B Mexican Style Shredded Cheese Blend, 8 oz, $2.98 live-matched (the Hatch Pepper pick was out of stock anyway). Banked fajita chicken bag #1 at its ~$4.66 true paid price (7/26 buy). Bell peppers $2.16, Daisy Squeeze sour cream $2.94, lime $0.20. Banked onion + banked green beans side = $0 marginal." },
       nutrition: { serving: "2 tortillas + fajita chicken/peppers/onion + toppings + green beans side", calories: 550, protein: 36, carbs: 45, fat: 24 },
       daytime: [
         "MON ~4:00 PM (1 min): sous vide bath to 150°F, drop the frozen fajita chicken bag — no thaw, frozen start adds time, still ready well before dinner"
@@ -59,10 +63,10 @@ const WEEK = {
           "banked FAJITA chicken bag #1, sealed raw (2.15 lb, Bolner's fajita rub)",
           "3 bell peppers, sliced",
           "banked jumbo yellow onion (partial), sliced",
-          "H-E-B Mixla Corn & Flour Blend Tortillas, 12 ct ($2.29, 75¢ coupon clipped)",
-          "H-E-B Natural Hatch Pepper Shredded Cheese, 8 oz (50¢ coupon clipped)",
-          "Daisy Squeeze Sour Cream, 14 oz ($3.09 verified)",
-          "H-E-B Mi Tienda Salsa Roja - Hot, 16 oz ($3.36 verified)",
+          "flour tortillas (already on hand)",
+          "H-E-B Mexican Style Shredded Cheese Blend, 8 oz ($2.98)",
+          "Daisy Squeeze Sour Cream, 14 oz ($2.94)",
+          "salsa (already on hand)",
           "1-2 limes, wedged",
           "banked H-E-B Steamable Green Beans, 12 oz"
         ],
@@ -80,7 +84,7 @@ const WEEK = {
     },
     {
       id: "smashburgers",
-      cost: { est: 44.72, servings: 5, note: "All big-ticket items already banked from 8/9's deferred burger night, counted at their true paid price: Wagyu beef $13.98, brioche buns $7.96, Kraft American cheese $7.28, Ore-Ida tots $4.47 ($33.69 sunk). New buys, LIVE-MATCHED 8/16: whole-head iceberg lettuce $1.77, tomatoes on the vine $2.50, H-E-B ketchup $3.28, H-E-B Pickle Me Dilley dill pickles $3.48 (Majestic brand from the coupon isn't carried at this store, switched to a real dill pickle). New spend this meal: ~$11.03. ⚠ This is the week's one $25+ meal — no second one this week, so no check-in needed." },
+      cost: { est: 33.69, servings: 5, note: "REVISED 8/16: no lettuce or tomato on the burgers this time (standing preference — tomato specifically never wanted on burgers). Ketchup and pickles already on hand, dropped from the grocery list. All big-ticket items banked from 8/9's deferred burger night at true paid price: Wagyu beef $13.98, brioche buns $7.96, Kraft American cheese $7.28, Ore-Ida tots $4.47 ($33.69 sunk). New spend this meal: $0. ⚠ This is the week's one $25+ meal (true cost, banked ingredients at paid price) — no second one this week, so no check-in needed." },
       nutrition: { serving: "1 smash burger + tots", calories: 780, protein: 38, carbs: 52, fat: 46 },
       daytime: [],
       title: "Wagyu Smash Burgers with Tater Tots",
@@ -88,11 +92,11 @@ const WEEK = {
       time: "~20 min at dinner",
       equipment: ["Blackstone"],
       summary:
-        "GUEST NIGHT — our guest joins. This is the burger night that got bumped to pizza on 8/11 for lack of cook time; the beef, buns, cheese, and tots have been sitting banked in the freezer/fridge ever since (sell-by 8/27, plenty of room). Whole-head lettuce this time instead of the pre-cut package — that was a one-time approved exception to the bagged-greens ban, not a standing pass to rebuy.",
+        "GUEST NIGHT — our guest joins. This is the burger night that got bumped to pizza on 8/11 for lack of cook time; the beef, buns, cheese, and tots have been sitting banked in the freezer/fridge ever since (sell-by 8/27, plenty of room). No lettuce or tomato on the burgers this time — tomato is a standing skip for burgers going forward.",
       links: [
         { label: "Serious Eats — smash burger technique", url: "https://www.seriouseats.com/how-to-make-smash-burgers-recipe", tag: "primary" }
       ],
-      swapNote: "Whole-head iceberg or romaine, washed and torn to leaf, replaces the pre-cut Burger Leaf Lettuce Leaves from 8/9 — cheaper and clear of the bagged-greens ban entirely, no exception needed.",
+      swapNote: "",
       recipe: {
         activeTime: "~20 min at dinner",
         cookTime: "smash patties ~3-4 min per side on the Blackstone; tots per bag instructions",
@@ -102,9 +106,7 @@ const WEEK = {
           "banked Kraft Deli Deluxe American Cheese Slices",
           "banked Ore-Ida Crispy Tater Tots, 32 oz",
           "banked jumbo yellow onion (partial), thin sliced",
-          "1 whole-head iceberg or romaine lettuce, leaves separated",
-          "2-3 tomatoes, sliced",
-          "ketchup, mustard (owned), Majestic Pickles ($2 coupon clipped)"
+          "ketchup, mustard, pickles (all already on hand)"
         ],
         steps: [
           "Tots into the air fryer or oven per package, timed to land with the burgers.",
@@ -112,14 +114,14 @@ const WEEK = {
           "Smash each ball flat with a spatula, salt and pepper. Sear ~3 min, flip, cheese on immediately, ~2-3 min more.",
           "Toast the buns cut-side down on the griddle, 30-60 sec.",
           "KID CHECKPOINT: plain patty + cheese + bun, toppings on the side to build themselves.",
-          "Build the toppings bar: lettuce, tomato, onion, pickles, ketchup, mustard.",
+          "Build the toppings bar: onion, pickles, ketchup, mustard.",
           "Cleanup: Blackstone scrape, one air fryer basket."
         ]
       }
     },
     {
       id: "gochujangchicken",
-      cost: { est: 14.17, servings: 5, note: "LIVE-MATCHED 8/16: Hill Country Fare Boneless Skinless Split Chicken Breast, 2.79 lb pack @ $1.77/lb (sale) = $4.94 — the single sale-size pack, plenty for 5 servings in a rice bowl (revised down from an earlier 3.75 lb guess). O'Food Gochujang Brown Rice Red Pepper Paste, 17.6 oz, new staple, $5.98. Fresh ginger root $1.78, green onions $0.67, cucumbers $0.80 (2 ct). Sized for 5 whether or not our guest joins — extra chicken banks as leftover if not." },
+      cost: { est: 12.39, servings: 5, note: "REVISED 8/16: ginger already on hand (frozen), dropped from the grocery list. Hill Country Fare Boneless Skinless Split Chicken Breast, 2.79 lb pack @ $1.77/lb (sale) = $4.94 — the single sale-size pack, plenty for 5 servings in a rice bowl. O'Food Gochujang Brown Rice Red Pepper Paste, 17.6 oz, new staple, $5.98. Green onions $0.67, cucumbers $0.80 (2 ct). Sized for 5 whether or not our guest joins — extra chicken banks as leftover if not." },
       nutrition: { serving: "1 bowl: gochujang chicken + jasmine rice + cucumber salad", calories: 560, protein: 40, carbs: 58, fat: 16 },
       daytime: [
         "SUN (any time, 10 min): mix the gochujang marinade, seal the raw chicken in it, FREEZE — Thursday's cook day is 4 days out, the shelf-life rule requires freezing (not just chamber-sealing) at that distance",
@@ -143,7 +145,7 @@ const WEEK = {
         cookTime: "chicken ~1-1.5 hr at 145°F sous vide (in since ~4:00 PM), then ~5 min skillet reduce",
         ingredients: [
           "Hill Country Fare Boneless Skinless Split Chicken Breast, 2.79 lb pack ($4.94 verified), cubed",
-          "MARINADE/GLAZE: 3 tbsp O'Food Gochujang Brown Rice Red Pepper Paste (new, $6.28) + 2 tbsp Kikkoman soy sauce (owned) + 1 tbsp brown sugar (owned) + 1 tbsp grated fresh ginger + 2 cloves banked garlic, minced",
+          "MARINADE/GLAZE: 3 tbsp O'Food Gochujang Brown Rice Red Pepper Paste (new, $5.98) + 2 tbsp Kikkoman soy sauce (owned) + 1 tbsp brown sugar (owned) + 1 tbsp grated fresh ginger (already on hand, frozen) + 2 cloves banked garlic, minced",
           "2 cups H-E-B Thai Hom Mali jasmine rice (owned) + 2.5 cups water",
           "2 cucumbers, thin sliced",
           "CUCUMBER SALAD: 3 tbsp Marukan rice vinegar (owned) + 1 tbsp brown sugar (owned) + 0.5 tsp salt",
@@ -235,26 +237,17 @@ const WEEK = {
       items: [
         { name: "Fresh Green Bell Peppers, 3 ct — $2.16 LIVE-MATCHED 8/16", qty: "3 — Monday's fajitas", est: 2.16, aisle: "In Produce on the Left Wall" },
         { name: "Fresh Cucumber, Each — $0.40 LIVE-MATCHED 8/16", qty: "2 — Thursday's cucumber salad", est: 0.80, aisle: "In Produce" },
-        { name: "Fresh Ginger Root, Avg. 0.46 lb — $1.78 LIVE-MATCHED 8/16", qty: "1 knob — Thursday's marinade", est: 1.78, aisle: "In Produce" },
         { name: "Fresh Green Onions, Each — $0.67 LIVE-MATCHED 8/16", qty: "1 bunch — Thursday's garnish", est: 0.67, aisle: "In Produce on the Left Wall" },
         { name: "Fresh Lime, Each — $0.20 LIVE-MATCHED 8/16", qty: "1-2 — Monday's fajita toppings", est: 0.20, aisle: "In Produce" },
-        { name: "Fresh Iceberg Lettuce, Each — Price Cut $1.77 (reg $1.98) LIVE-MATCHED 8/16, whole head clears the bagged-greens ban entirely", qty: "1 — Tuesday's burgers", est: 1.77, aisle: "In Produce on the Left Wall" },
-        { name: "Fresh Tomatoes on the Vine (4-5 tomatoes), Avg. 1.27 lbs — $2.50 LIVE-MATCHED 8/16", qty: "1 pack — Tuesday's burgers", est: 2.50, aisle: "In Produce" },
         { name: "Fresh Small Lemon, Each — Price Cut $0.33 LIVE-MATCHED 8/16", qty: "1 — Friday's scampi", est: 0.33, aisle: "In Produce" }
       ]
     },
     {
       section: "Dairy & Cheese",
       items: [
-        { name: "H-E-B Hatch Chile Pepper Monterey Jack Shredded Cheese, 8 oz — $2.98 LIVE-MATCHED 8/16, 50¢ coupon clipped — ⚠ SHOWING OUT OF STOCK online as of 8/16, may need an in-store substitute (plain Mexican blend as backup)", qty: "1 bag — Monday's fajitas", est: 2.98, aisle: "In Meat Market on the Back Wall" },
+        { name: "H-E-B Mexican Style Shredded Cheese Blend, 8 oz — $2.98 LIVE-MATCHED 8/16 (switched from Hatch Pepper — that pick was out of stock anyway)", qty: "1 bag — Monday's fajitas", est: 2.98, aisle: "In Meat Market on the Back Wall" },
         { name: "Daisy Squeeze Sour Cream, 14 oz — $2.94 LIVE-MATCHED 8/16", qty: "1 bottle — Monday's fajitas (served at the table)", est: 2.94, aisle: "In Dairy on the Back Wall" },
         { name: "Kerrygold Grass-Fed Pure Irish Salted Butter, 8 oz — Price Cut $4.68 (reg $4.84) LIVE-MATCHED 8/16", qty: "1 pack — restock, Friday's scampi", est: 4.68, aisle: "In Dairy on the Right Wall" }
-      ]
-    },
-    {
-      section: "Tortillas & Bakery",
-      items: [
-        { name: "H-E-B Mixla Corn & Flour Blend Tortillas, 12 ct — $2.18 LIVE-MATCHED 8/16 (already coupon-adjusted)", qty: "1 pack — Monday's fajitas", est: 2.18, aisle: "Aisle 5" }
       ]
     },
     {
@@ -266,9 +259,6 @@ const WEEK = {
     {
       section: "Pantry & Condiments",
       items: [
-        { name: "H-E-B Mi Tienda Salsa Roja - Hot, 16 oz — $3.20 LIVE-MATCHED 8/16 (correction: the ad's 'Valentina salsa $1.18' didn't match any real listing, and Valentina is a thin table hot sauce, not a chunky salsa anyway)", qty: "1 jar — Monday's fajitas", est: 3.20, aisle: "In Dairy on the Back Wall" },
-        { name: "H-E-B Tomato Ketchup, 32 oz — $3.28 LIVE-MATCHED 8/16", qty: "1 bottle — Tuesday's burgers", est: 3.28, aisle: "Aisle 6" },
-        { name: "H-E-B Pickle Me Dilley Dill Gherkins Pickles, 16 oz — $3.48 LIVE-MATCHED 8/16 (Majestic brand from the coupon isn't carried at this store — switched to a real dill pickle)", qty: "1 jar — Tuesday's burgers", est: 3.48, aisle: "Aisle 5" },
         { name: "H-E-B Linguine Pasta Noodles, 16 oz — $1.12 LIVE-MATCHED 8/16", qty: "1 box — Friday's scampi", est: 1.12, aisle: "Aisle 6" }
       ]
     },
