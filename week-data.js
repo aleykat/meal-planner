@@ -108,22 +108,23 @@ const WEEK = {
       daytime: [
         "SUN (any time, 10 min): mix the gochujang marinade, seal the raw chicken in it, FREEZE — Thursday's cook day is 4 days out, the shelf-life rule requires freezing (not just chamber-sealing) at that distance",
         "TUE (any time, 1 min): move the chicken bag from freezer to fridge — 2 days to thaw before Thursday",
-        "THU ~5:15 PM (10 min): quick-pickle the cucumbers, fridge to chill while the chicken cooks"
+        "THU ~4:00 PM (1 min): sous vide bath to 145°F, drop the marinated chicken bag straight in — no need to open it",
+        "THU ~5:15 PM (10 min): quick-pickle the cucumbers, fridge to chill while the chicken finishes in the bath"
       ],
       title: "Gochujang-Glazed Chicken Rice Bowls with Quick Cucumber Salad",
       slot: "Dinner 3 · Thu Aug 20 — GUEST NIGHT? (our guest maybe)",
-      time: "~20 min at dinner",
-      equipment: ["Rice cooker"],
+      time: "~15 min at dinner",
+      equipment: ["Sous vide", "Rice cooker"],
       summary:
-        "Our guest may or may not join Thursday — chicken's bought and sized for 5 either way, so nothing changes if she's not there, it just banks as leftover. New pantry staple: gochujang, a genuine Korean-flavor lane the family hasn't tried yet, picked at the premium-brand tier since it amortizes into future dishes. The cucumber salad repeats the side from 8/13's pork belly bowls — adults liked it there too.",
+        "Our guest may or may not join Thursday — chicken's bought and sized for 5 either way, so nothing changes if she's not there, it just banks as leftover. New pantry staple: gochujang, a genuine Korean-flavor lane the family hasn't tried yet, picked at the premium-brand tier since it amortizes into future dishes. The cucumber salad repeats the side from 8/13's pork belly bowls — adults liked it there too. Switched to sous vide for the chicken: cubed breast dries out fast in a hot pan, and the bath was already free that afternoon.",
       links: [
         { label: "The Woks of Life — gochujang chicken", url: "https://thewoksoflife.com/gochujang-chicken/", tag: "primary" },
         { label: "The Woks of Life — quick Asian cucumber salad", url: "https://thewoksoflife.com/smashed-cucumber-salad/", tag: "alt" }
       ],
-      swapNote: "Pre-marinating on the shelf-life-mandated freeze does double duty — the chicken gets 4 days of marinade time by the time it's cooked, more flavor than a same-day marinade would give.",
+      swapNote: "Pre-marinating on the shelf-life-mandated freeze does double duty — the chicken gets 4 days of marinade time by the time it's cooked, more flavor than a same-day marinade would give. Sous vide to 145°F holds the cubes evenly juicy (easy to overcook diced breast in a hot pan); the bag then dumps straight into a hot skillet for a few minutes to reduce and caramelize the glaze — less active time at dinner than a raw pan-sear, not more.",
       recipe: {
-        activeTime: "~20 min at dinner (+10 min cucumber salad earlier)",
-        cookTime: "chicken ~10-12 min pan-sear",
+        activeTime: "~15 min at dinner (+10 min cucumber salad earlier)",
+        cookTime: "chicken ~1-1.5 hr at 145°F sous vide (in since ~4:00 PM), then ~5 min skillet reduce",
         ingredients: [
           "Hill Country Fare boneless skinless chicken breast, ~3.75 lb, cubed",
           "MARINADE/GLAZE: 3 tbsp gochujang (new) + 2 tbsp Kikkoman soy sauce (owned) + 1 tbsp brown sugar (owned) + 1 tbsp grated fresh ginger + 2 cloves banked garlic, minced",
@@ -136,10 +137,11 @@ const WEEK = {
         steps: [
           "Sun: whisk the marinade, toss with cubed chicken, seal, FREEZE.",
           "Tue: move to the fridge to thaw.",
+          "Thu ~4:00 PM: sous vide bath to 145°F, drop the sealed marinated chicken bag straight in.",
           "Thu ~5:15 PM: cucumber salad — toss sliced cucumbers with rice vinegar, brown sugar, salt. Fridge to chill.",
           "Rice cooker on: rinse 2 cups jasmine until the water runs clear, 2.5 cups water, start.",
-          "At dinner: pan-sear the marinated chicken over medium-high, 10-12 min, until the glaze reduces and clings, tossing occasionally so it doesn't scorch.",
-          "KID CHECKPOINT: pull a portion of chicken before it hits the pan, pan-sear plain with just salt for the kids' bowls.",
+          "At dinner: pull the bag, empty chicken + glaze into a hot skillet over medium-high, ~5 min, tossing until the glaze reduces and clings and the edges catch a little color.",
+          "KID CHECKPOINT: pull a portion of chicken from the bag before it hits the skillet, pan-sear plain with just salt for the kids' bowls.",
           "Bowls: rice, glazed chicken, cucumber salad, scallions, a drizzle of sesame oil.",
           "Cleanup: one skillet, rice cooker pot."
         ]
