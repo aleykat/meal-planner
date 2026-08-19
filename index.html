@@ -85,6 +85,21 @@
   .days.green { background: #2e7d3222; color: var(--good); }
   .inv-btn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 4px 10px; cursor: pointer; font-size: .8rem; }
   .inv-btn:hover { border-color: var(--accent); }
+  .count-edit { display: flex; align-items: center; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
+  .count-input { width: 52px; text-align: center; border: 1px solid var(--line); border-radius: 8px; padding: 4px 2px; font: inherit; font-size: .85rem; background: var(--bg); color: var(--ink); -moz-appearance: textfield; }
+  .count-input::-webkit-outer-spin-button, .count-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .count-input.bad { border-color: var(--accent); }
+  .count-step { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; width: 28px; height: 28px; cursor: pointer; font-size: 1rem; line-height: 1; }
+  .count-step:hover { border-color: var(--accent); }
+  .count-meta { font-size: .72rem; color: var(--muted); white-space: nowrap; }
+  .par-chip { font-size: .72rem; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .par-chip.ok { background: #2e7d3222; color: var(--good); }
+  .par-chip.low { background: #e67e2222; color: #b9640f; }
+  .tracker-sec { margin-top: 10px; border-top: 2px solid var(--line); padding-top: 6px; }
+  .tracker-sec h3 { font-size: .95rem; margin: 8px 0 0; }
+  .tracker-cat { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 10px 0 0; }
+  .tracker-summary { margin-top: 10px; padding: 8px 10px; border-radius: 8px; font-size: .85rem; background: #e67e2211; border: 1px solid #e67e2244; }
+  .tracker-summary.allgood { background: #2e7d3211; border-color: #2e7d3244; }
   .staples-acc { margin-top: 10px; border-top: 2px solid var(--line); }
   .staples-acc summary { cursor: pointer; padding: 10px 0 6px; font-weight: 700; list-style: none; }
   .staples-acc summary::before { content: "▸ "; }
@@ -341,30 +356,77 @@
 
   // Inventory — Use It Up
   const locIcon = { fridge: "🧊", freezer: "❄️", pantry: "🥫" };
+  // inflect the unit's noun to match the count ("1 box", "2 boxes", "1 corn dog");
+  // the noun is the LAST word before any parenthetical — "corn dogs" inflects "dogs",
+  // "boxes (10 bags each)" inflects "boxes" and the parenthetical rides along unchanged
+  function inflectUnit(unit, n) {
+    const m = unit.match(/^(.*?)(\s*\(.*\))?$/);
+    const words = m[1].split(" ");
+    const head = words[words.length - 1];
+    const INVARIANT = ["lb", "oz", "kg", "g", "ct"];
+    let word = head;
+    if (!INVARIANT.includes(head.toLowerCase())) {
+      if (n === 1) {
+        if (/(x|ch|sh|ss)es$/i.test(head)) word = head.slice(0, -2);
+        else if (/s$/i.test(head) && !/ss$/i.test(head)) word = head.slice(0, -1);
+      } else {
+        if (/(x|z|ch|sh)$/i.test(head)) word = head + "es";
+        else if (!/s$/i.test(head)) word = head + "s";
+      }
+    }
+    words[words.length - 1] = word;
+    return words.join(" ") + (m[2] || "");
+  }
   async function loadInventory() {
     try {
       const inv = await (await fetch("/api/inventory")).json();
       const onHand = (inv.items || []).filter(i => i.status === "on-hand");
+      const TRACKER_CATS = { "kid-snacks": "Kid Snacks", "kid-alt-meals": "Kid Alt Meals",
+        "heika-lunch": "Heika's Lunches", "adult-snacks": "Adult Snacks", "teen-lunch": "Teen Lunch" };
       const staples = onHand.filter(i => i.category === "staple")
         .sort((a, b) => a.name.localeCompare(b.name));
-      const items = onHand.filter(i => i.category !== "staple")
+      const tracker = onHand.filter(i => i.category in TRACKER_CATS);
+      const items = onHand.filter(i => i.category !== "staple" && !(i.category in TRACKER_CATS))
         .sort((a, b) => (a.useBy || "9999").localeCompare(b.useBy || "9999"));
       const today = new Date();
+      const todayStr = today.toISOString().slice(0, 10);
+      const countEditor = i => {
+        if (!i.unit) return "";
+        let chip = "";
+        if (i.parCount != null && i.count != null) {
+          chip = i.count < i.parCount
+            ? `<span class="par-chip low">⚠ below par</span>`
+            : `<span class="par-chip ok">✓ at par</span>`;
+        }
+        const counted = i.lastCounted
+          ? (i.lastCounted === todayStr ? "counted today" : `counted ${i.lastCounted.slice(5).replace("-", "/")}`)
+          : "not yet counted";
+        return `<span class="count-edit">
+          <button class="count-step" data-step="-1" title="one fewer">−</button>
+          <input type="number" step="any" min="0" class="count-input" value="${i.count ?? ""}" placeholder="?" inputmode="decimal">
+          <button class="count-step" data-step="1" title="one more">+</button>
+          <span class="count-meta">${i.count != null ? inflectUnit(i.unit, i.count) : i.unit}${i.par ? ` · par ${i.par}` : ""}</span>
+          ${chip}
+          <span class="count-meta">· ${counted}</span>
+        </span>`;
+      };
+      // withBadge: true = always show the days-left badge ("no date" if none);
+      // "ifdate" = show it only when the item has a useBy (tracker rows — most
+      // are shelf-stable, so a "no date" badge on every row would be noise)
       const row = (i, withBadge) => {
         let badge = "";
-        if (withBadge) {
-          badge = `<span class="days green">no date</span>`;
-          if (i.useBy) {
-            const d = Math.ceil((new Date(i.useBy + "T12:00") - today) / 86400000);
-            const cls = d <= 2 ? "red" : d <= 6 ? "amber" : "green";
-            badge = `<span class="days ${cls}">${d < 0 ? "past date" : d + "d left"}</span>`;
-          }
+        if (withBadge === true) badge = `<span class="days green">no date</span>`;
+        if (withBadge && i.useBy) {
+          const d = Math.ceil((new Date(i.useBy + "T12:00") - today) / 86400000);
+          const cls = d <= 2 ? "red" : d <= 6 ? "amber" : "green";
+          badge = `<span class="days ${cls}">${d < 0 ? "past date" : d + "d left"}</span>`;
         }
         return `<div class="inv-row" data-id="${i.id}">
           <span title="${i.location}">${locIcon[i.location] || "🧊"}</span>
           <div class="inv-main">
             <div class="inv-name">${i.name}${i.qty ? ` <span style="font-weight:400;color:var(--muted)">· ${i.qty}</span>` : ""}</div>
             ${i.note ? `<div class="inv-note">${i.note}</div>` : ""}
+            ${countEditor(i)}
           </div>
           ${badge}
           <button class="inv-btn" data-act="used">✓ Used</button>
@@ -375,6 +437,22 @@
       const wasOpen = !!document.querySelector("#inventory .staples-acc[open]");
       let html = items.length ? items.map(i => row(i, true)).join("")
         : `<div style="color:var(--muted);font-size:.9rem">Nothing tracked right now — add items below.</div>`;
+      if (tracker.length) {
+        const stale = tracker.filter(i => i.lastCounted !== todayStr).length;
+        const below = tracker.filter(i => i.parCount != null && i.count != null && i.count < i.parCount);
+        html += `<div class="tracker-sec">
+          <h3>🧺 Non-Dinner Tracker · ${tracker.length} items${stale ? ` · ${stale} not counted today` : " · all counted today"}</h3>
+          ${Object.entries(TRACKER_CATS).map(([cat, label]) => {
+            const catItems = tracker.filter(i => i.category === cat);
+            return catItems.length ? `<div class="tracker-cat">${label}</div>` +
+              catItems.map(i => row(i, "ifdate")).join("") : "";
+          }).join("")}
+          ${below.length
+            ? `<div class="tracker-summary">⚠ Below par: ${below.map(i =>
+                `${i.name.split(",")[0]} (${i.count}/${i.parCount})`).join(" · ")} → restock lands on next week's list</div>`
+            : `<div class="tracker-summary allgood">✓ Everything at or above par</div>`}
+        </div>`;
+      }
       if (staples.length) {
         html += `<details class="staples-acc"${wasOpen ? " open" : ""}>
           <summary>🧂 Staples Owned · ${staples.length} — expand to mark individual items used</summary>
@@ -388,12 +466,50 @@
       $("#inventory").innerHTML = `<div style="color:var(--accent);font-size:.9rem">Server not reachable — start it to see inventory.</div>`;
     }
   }
-  $("#inventory").addEventListener("click", async e => {
-    const btn = e.target.closest("[data-act]"); if (!btn) return;
-    const id = btn.closest(".inv-row").dataset.id;
+  async function saveCount(row, count) {
     await fetch("/api/inventory", { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "status", id, status: btn.dataset.act }) });
+      body: JSON.stringify({ action: "count", id: row.dataset.id, count }) });
     loadInventory();
+  }
+  $("#inventory").addEventListener("click", async e => {
+    const btn = e.target.closest("[data-act]");
+    if (btn) {
+      const id = btn.closest(".inv-row").dataset.id;
+      await fetch("/api/inventory", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "status", id, status: btn.dataset.act }) });
+      loadInventory();
+      return;
+    }
+    const step = e.target.closest(".count-step");
+    if (step) {
+      const row = step.closest(".inv-row");
+      const input = row.querySelector(".count-input");
+      const next = Math.max(0, (Number(input.value) || 0) + Number(step.dataset.step));
+      await saveCount(row, next);
+    }
+  });
+  // typing a number directly saves on Enter or when leaving the field
+  const commitTyped = async input => {
+    const count = Number(input.value);
+    if (input.value.trim() === "" || !Number.isFinite(count) || count < 0) {
+      input.classList.add("bad"); return;
+    }
+    input.classList.remove("bad");
+    await saveCount(input.closest(".inv-row"), count);
+  };
+  $("#inventory").addEventListener("keydown", e => {
+    if (e.key === "Enter" && e.target.classList.contains("count-input")) {
+      e.preventDefault();
+      commitTyped(e.target);
+    }
+  });
+  $("#inventory").addEventListener("focusout", e => {
+    if (e.target.classList.contains("count-input") && e.target.value.trim() !== ""
+        && Number(e.target.value) !== undefined) {
+      // only commit if the value actually changed from what's rendered
+      const rendered = e.target.defaultValue;
+      if (e.target.value !== rendered) commitTyped(e.target);
+    }
   });
   $("#inv-addbtn").addEventListener("click", async () => {
     const name = $("#inv-name").value.trim(); if (!name) return;

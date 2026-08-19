@@ -98,7 +98,7 @@ const WEEK = {
     },
     {
       id: "smashburgers",
-      cost: { est: 33.69, servings: 5, note: "RECEIPT-TRUED 8/16: no lettuce or tomato on the burgers this time (standing preference — tomato specifically never wanted on burgers). Ketchup and pickles already on hand, nothing new bought for this meal. All big-ticket items banked from 8/9's deferred burger night at true paid price: Wagyu beef $13.98, brioche buns $7.96, Kraft American cheese $7.28, Ore-Ida tots $4.47 ($33.69 sunk). New spend this meal: $0. ⚠ This is the week's one $25+ meal (true cost, banked ingredients at paid price) — no second one this week, so no check-in needed." },
+      cost: { est: 15.25, servings: 3, note: "REFIGURED 8/19 (cooked for 3, not the planned 5): the meal carries only what was consumed, at true paid price — beef 1 of 2 lb $6.99, buns 3 of 8 $2.99, cheese 10 of 24 slices $3.03 (6 on burgers + 4 on cheesy tots), tots ~half bag ~$2.24 EST = $15.25 (~$5.08/serving). The rest banks forward at paid price for a future burger night: beef $6.99 (1 lb, sell-by 8/27), buns $4.97 (5), cheese $4.25 (14 slices), tots ~$2.23 — $18.44 of the original $33.69 sunk 8/9. No new spend either way; no longer the week's $25+ meal. Ketchup and pickles already on hand; no lettuce or tomato (tomato is a standing skip on burgers)." },
       nutrition: { serving: "1 smash burger + tots", calories: 780, protein: 38, carbs: 52, fat: 46 },
       daytime: [],
       title: "Wagyu Smash Burgers with Tater Tots",
