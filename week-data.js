@@ -181,13 +181,13 @@ const WEEK = {
     },
     {
       id: "shrimpscampi",
-      cost: { est: 17.31, servings: 5, note: "RECEIPT-TRUED 8/16 (curbside pickup) + CORRECTED: the ad's 'Jumbo shrimp $8.97/lb, 31% off' turned out to be the FRESH counter case, not frozen — swapped to H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp, 50-70 ct/lb, $8.37 for the 1 lb bag (correctly frozen for a 5-days-out cook, still cheaper than the ad's fresh-case price). H-E-B Linguine Pasta Noodles $1.18, H-E-B Frozen Garlic Bread - Traditional 16 oz $2.50, Kerrygold Grass-Fed Salted Butter 8 oz $4.91, fresh small lemon $0.35." },
+      cost: { est: 17.31, servings: 5, note: "DEFERRED 8/21 — pizza night instead (a friend treated the family); the whole scampi kit banks forward to a future week. Everything keeps: shrimp never thawed (still sealed frozen, $8.37), linguine $1.18, frozen garlic bread $2.50, butter $4.91, and the lemon ($0.35) is the only perishable — fridge-kept it holds ~3-4 weeks, so it should survive the wait. RECEIPT-TRUED 8/16 pricing retained (shrimp corrected earlier from the ad's fresh-counter case to the genuinely frozen 1 lb bag)." },
       nutrition: { serving: "shrimp + linguine in garlic butter sauce + garlic bread", calories: 620, protein: 32, carbs: 62, fat: 24 },
       daytime: [
         "FRI ~5:30 PM (15-20 min): cold-water thaw the frozen shrimp bag before the sous vide bath"
       ],
       title: "Garlic Butter Sous Vide Shrimp Scampi with Linguine & Garlic Bread",
-      slot: "Dinner 4 · Fri Aug 21",
+      slot: "Dinner 4 · Fri Aug 21 — DEFERRED to a future week (pizza night)",
       time: "~25 min at dinner",
       equipment: ["Sous vide"],
       summary:
