@@ -195,15 +195,45 @@ const WEEK_DATA = {
   groceryNote: "Dinner-side new spend: ~$14.44 — the smallest list this system has produced. Three of four dinners run on banked items. (Household staples and lunch/snack restocks ride on the private tracker list, not this page.)",
   // Read-only "On Hand" snapshot for the public page. Regenerated with each weekly plan
   // from pantry/inventory.json — sanitized: no staples ledger, no names.
+  // Full on-hand snapshot refreshed 8/24 after the 8/23 curbside shop —
+  // dinner bank + this week's meal kits + household/lunch/snack stock (receipt-trued).
   bank: [
+    { name: "COWBOY BUTTER chicken bag, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "TONIGHT (Mon): chicken two ways — drops frozen into the 150°F bath ~3:30 PM" },
+    { name: "PLAIN S&P WILD CARD chicken bag, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "TONIGHT (Mon): same bath — gets the Stubb's BBQ glaze at the sear" },
     { name: "FAJITA chicken bag #2, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Not slotted this week — pairs with the soy-ginger bag for a future two-bag night" },
     { name: "SOY-GINGER chicken bag, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Drops frozen at 150°F +~1 hr" },
-    { name: "Brazilian BBQ pork chop, single leftover", qty: "1 chop, sealed", location: "freezer", useBy: "2026-12-02", note: "Quick single-portion lunch candidate" },
-    { name: "H-E-B Breaded Shrimp (Meal Deal anchor)", qty: "1 box, 10-14 oz", location: "freezer", useBy: "2027-02-02", note: "Po'boy night still on hold — outbreak check 8/21 says the bagged-greens ban stays" },
+    { name: "Wagyu ground beef", qty: "1 lb", location: "freezer", useBy: "2026-08-27", note: "Tue burgers — move to the fridge Monday night" },
+    { name: "Brioche buns", qty: "5 buns", location: "freezer", useBy: "2026-08-25", note: "Tue burgers use 3 — the last 2 hit sell-by 8/25, use quickly or accept the loss" },
+    { name: "Kraft Deli Deluxe American Slices", qty: "12 slices", location: "fridge", useBy: "2026-09-01", note: "Tue burgers use ~6; rest is sandwich stock" },
+    { name: "Pork tenderloins, rubbed + chamber-sealed", qty: "2 (~2.5 lb, $1.99/lb ad)", location: "freezer", useBy: "2026-12-23", note: "Thu guest night — frozen Sunday per the 4-days-out rule; 140°F drop ~2:30 PM Thu" },
+    { name: "Gulf shrimp 50-70 ct, frozen bags", qty: "2 x 1 lb", location: "freezer", useBy: "2027-02-16", note: "Fri scampi — bumped to 2 lb for the table of 5; cold-water thaw BOTH bags ~5:30 PM Fri" },
+    { name: "Frozen garlic bread", qty: "1 loaf, 16 oz", location: "freezer", useBy: "2027-02-16", note: "Fri scampi" },
+    { name: "Linguine", qty: "1 box, 16 oz", location: "pantry", useBy: null, note: "Fri scampi" },
+    { name: "Lemon", qty: "1", location: "fridge", useBy: "2026-09-11", note: "Fri scampi — the kit's only perishable, comfortably inside its date" },
+    { name: "Crinkle-cut fries", qty: "1 bag, 32 oz", location: "freezer", useBy: "2027-02-23", note: "Tue side (~half bag); rest banks" },
+    { name: "Russet potatoes", qty: "5 lb bag", location: "pantry", useBy: "2026-09-24", note: "Thu uses ~2.25 lb; rest banks for next week" },
+    { name: "Baby carrots", qty: "2 x 1 lb", location: "fridge", useBy: "2026-09-07", note: "Thu side — oven-roasted" },
+    { name: "Yellow onion", qty: "1", location: "pantry", useBy: "2026-09-23", note: "Tue burgers — thin rings" },
+    { name: "Jasmine rice", qty: "old bag: 1 last cook + NEW sealed 5 lb bag", location: "pantry", useBy: null, note: "Tonight is the old bag's last 2-cup cook — open the new bag after" },
+    { name: "Steamable green beans", qty: "1 bag, 12 oz", location: "freezer", useBy: "2027-02-02", note: "Tonight's side — $0 Meal Deal freebie" },
     { name: "Ore-Ida Tater Tots (opened)", qty: "~half bag", location: "freezer", useBy: "2027-02-01", note: "Backup side — fries are the default now" },
-    { name: "Kraft Deli Deluxe American Slices", qty: "~8 remaining after Tuesday", location: "fridge", useBy: "2026-09-01", note: "Sandwiches / next burger night" },
-    { name: "Brioche buns", qty: "2 remaining after Tuesday", location: "freezer", useBy: "2026-08-25", note: "Sell-by 8/25 — use quickly or accept the loss" },
-    { name: "Russet potatoes", qty: "~2.75 lb (rest of Thursday's bag)", location: "pantry", useBy: "2026-09-24", note: "Next week's side candidate" }
+    { name: "H-E-B Breaded Shrimp (Meal Deal anchor)", qty: "2 boxes, 10-14 oz", location: "freezer", useBy: "2027-02-02", note: "Po'boy night still on hold — outbreak check 8/21 says the bagged-greens ban stays" },
+    { name: "Chicken nuggets", qty: "3 bags, 24 oz", location: "freezer", useBy: "2027-02-16", note: "Kid fallback meals + adult lunches — restocked to par 8/23 ($1/bag coupon x3)" },
+    { name: "Corn dogs", qty: "15", location: "freezer", useBy: "2027-02-16", note: "Kid self-serve fallback stock" },
+    { name: "Single-serve frozen lunch meals", qty: "5 assorted", location: "freezer", useBy: "2027-02-16", note: "One per workday — restocked to par 8/23 (etouffée, spaghetti & meatballs x2, pesto rigatoni, lasagna)" },
+    { name: "Portioned chip snack bags", qty: "40 (20 Doritos nacho + 20 Pirate's Booty)", location: "pantry", useBy: "2026-09-23", note: "Bulk-snack switch round 1 — portioned 8/23, ~1 oz/bag, zero leftover" },
+    { name: "Portioned sweets snack bags", qty: "40 (20 Chips Ahoy + 20 Oreo, 2 cookies/bag)", location: "pantry", useBy: "2026-09-23", note: "Bulk-snack switch round 1 — portioned 8/23, zero leftover" },
+    { name: "Red seedless grapes (organic)", qty: "2.63 lb", location: "fridge", useBy: "2026-09-02", note: "Lunch stock — switched from white grapes 8/23 (ad price $2.97/lb)" },
+    { name: "Cucumbers", qty: "4", location: "fridge", useBy: "2026-09-02", note: "Lunch stock — above par, no rebuy needed for a bit" },
+    { name: "Mexican-blend shredded cheese", qty: "1 bag, 8 oz", location: "fridge", useBy: "2026-09-13", note: "Tortilla-wrap stock (~3 wks once opened)" },
+    { name: "Flour tortillas", qty: "2 packs (1 open + 1 sealed 20 ct)", location: "pantry", useBy: "2026-09-25", note: "Finish the open pack first — the sealed one was bought 8/23 for freshness" },
+    { name: "Turkey & ham lunchmeat combo tubs", qty: "2 x 16 oz (Meal Deal anchor)", location: "fridge", useBy: "2026-09-13", note: "Open ONE at a time — sealed keeps weeks, opened ~5-7 days" },
+    { name: "Round top white bread", qty: "1 loaf, 16 oz", location: "pantry", useBy: "2026-08-30", note: "Sandwich stock — $0 Meal Deal freebie" },
+    { name: "Chewy granola bars", qty: "1 box, 8 ct", location: "pantry", useBy: "2026-11-23", note: "Kid snacks — $0 Meal Deal freebie" },
+    { name: "Hickory smoked cheddar slices", qty: "10 ct", location: "fridge", useBy: "2026-09-23", note: "General sliced-cheese stock (burgers/sandwiches) — $0 Meal Deal freebie" },
+    { name: "Waffle potato chips", qty: "1 bag, 7 oz", location: "pantry", useBy: "2026-10-23", note: "Adult snacks — $0 Meal Deal freebie" },
+    { name: "Cottage cheese", qty: "1 tub, 24 oz", location: "fridge", useBy: "2026-09-06", note: "Adult snacks — track-only, ad-hoc rebuy" },
+    { name: "Zero-sugar cola", qty: "1 x 12 pk", location: "pantry", useBy: null, note: "Taste-test trial vs Coke Zero ($0.39/can price cut)" }
   ]
 };
 if (typeof module !== "undefined") module.exports = WEEK_DATA;
