@@ -195,6 +195,14 @@
 
 <script src="week-data.js"></script>
 <script>
+  // Normalize the WEEK_DATA schema to what this renderer expects.
+  // (week-data.js evolved: label→title, id→week; store/adNote are new-again fields.)
+  const WEEK = Object.assign({}, WEEK_DATA, {
+    label: WEEK_DATA.label ?? WEEK_DATA.title ?? "",
+    id: WEEK_DATA.id ?? WEEK_DATA.week ?? "",
+    store: WEEK_DATA.store ?? "",
+    adNote: WEEK_DATA.adNote ?? ""
+  });
   const $ = (s, el = document) => el.querySelector(s);
   const money = (n) => "$" + n.toFixed(2);
 
@@ -202,6 +210,7 @@
   $("#week-label").textContent = WEEK.label;
   $("#store-label").textContent = WEEK.store;
   $("#ad-note").textContent = WEEK.adNote;
+  if (!WEEK.adNote) $("#ad-note").style.display = "none";
 
   // Menu
   const tagLabel = { primary: "recipe", alt: "backup", reddit: "reddit" };

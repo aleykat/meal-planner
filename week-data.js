@@ -9,6 +9,8 @@
 const WEEK_DATA = {
   week: "2026-08-24",
   title: "Week of Aug 24 — Banked-Bag Chicken, Burger Night Round 2, $1.99/lb Pork Tenderloin & the Rescheduled Scampi",
+  store: "H-E-B Irving #817 · shopped Sunday Aug 23 (curbside)",
+  adNote: "⚠ Food-safety bans still active (checked 8/21): cyclospora outbreak in iceberg lettuce (9,481 cases, investigation open) — NO bagged greens or salad kits, NO raw cilantro/parsley. Ad cycle 8/19–8/25: pork tenderloin $1.99/lb verified at checkout.",
   shopDay: "Sunday Aug 23",
   meals: [
     {
@@ -135,10 +137,10 @@ const WEEK_DATA = {
     },
     {
       id: "shrimpscampi",
-      cost: { est: 17.31, servings: 5, note: "The fully banked kit from last Friday's rain-check (a friend treated the family to pizza, so the scampi moved here intact): frozen shrimp 1 lb $8.37 (never thawed), linguine $1.18, frozen garlic bread $2.50, Kerrygold butter $4.91, lemon $0.35 (fridge — holds fine to this date). $0 new spend; pricing receipt-trued 8/16." },
+      cost: { est: 25.31, servings: 5, note: "The fully banked kit from last Friday's rain-check (a friend treated the family to pizza, so the scampi moved here intact): frozen shrimp 1 lb $8.37 (never thawed), linguine $1.18, frozen garlic bread $2.50, Kerrygold butter $4.91, lemon $0.35 (fridge — holds fine to this date). PLUS a 2nd 1 lb shrimp bag (~$8, added 8/23) — the original 1 lb wasn't enough for 5 (Jessica + Heika joining, plus Aiden's teen appetite); family feedback from 7/22's diabla night said the same thing about a similarly light shrimp ratio. New spend ~$8; this is the week's one $25+ meal." },
       nutrition: { serving: "shrimp + linguine in garlic butter sauce + garlic bread", calories: 620, protein: 32, carbs: 62, fat: 24 },
       daytime: [
-        "FRI ~5:30 PM (15-20 min): cold-water thaw the frozen shrimp bag; sous vide bath heating to 135°F alongside"
+        "FRI ~5:30 PM (15-20 min): cold-water thaw BOTH frozen shrimp bags; sous vide bath heating to 135°F alongside"
       ],
       title: "Garlic Butter Sous Vide Shrimp Scampi with Linguine & Garlic Bread",
       slot: "Dinner 4 · Fri Aug 28 — family night, closes the week",
@@ -155,7 +157,7 @@ const WEEK_DATA = {
         activeTime: "~25 min at dinner",
         cookTime: "shrimp 20-30 min at 135°F; pasta ~10-11 min boil",
         ingredients: [
-          "banked H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp, 50-70 ct, 1 lb",
+          "banked H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp, 50-70 ct, 1 lb + a 2nd 1 lb bag (2 lb total)",
           "banked H-E-B Linguine, 16 oz",
           "banked H-E-B Frozen Garlic Bread - Traditional, 16 oz",
           "4 tbsp Kerrygold Salted Butter (banked)",
