@@ -203,7 +203,7 @@ const WEEK_DATA = {
     { name: "FAJITA chicken bag #2, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Not slotted this week — pairs with the soy-ginger bag for a future two-bag night" },
     { name: "SOY-GINGER chicken bag, sealed raw", qty: "1 bag, ~1.4 lb, sealed 8/2", location: "freezer", useBy: "2026-12-02", note: "Drops frozen at 150°F +~1 hr" },
     { name: "Wagyu ground beef", qty: "1 lb", location: "freezer", useBy: "2026-08-27", note: "Tue burgers — move to the fridge Monday night" },
-    { name: "Brioche buns", qty: "5 buns", location: "freezer", useBy: "2026-08-25", note: "Tue burgers use 3 — the last 2 hit sell-by 8/25, use quickly or accept the loss" },
+    { name: "Brioche buns", qty: "2 buns (last of the 8)", location: "freezer", useBy: "2026-11-12", note: "Frozen ~2 weeks — the old sell-by only applied fresh, so no rush. Next burger night or sandwiches" },
     { name: "Kraft Deli Deluxe American Slices", qty: "12 slices", location: "fridge", useBy: "2026-09-01", note: "Tue burgers use ~6; rest is sandwich stock" },
     { name: "Pork tenderloins, rubbed + chamber-sealed", qty: "2 (~2.5 lb, $1.99/lb ad)", location: "freezer", useBy: "2026-12-23", note: "Thu guest night — frozen Sunday per the 4-days-out rule; 140°F drop ~2:30 PM Thu" },
     { name: "Gulf shrimp 50-70 ct, frozen bags", qty: "2 x 1 lb", location: "freezer", useBy: "2027-02-16", note: "Fri scampi — bumped to 2 lb for the table of 5; cold-water thaw BOTH bags ~5:30 PM Fri" },
