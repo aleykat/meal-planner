@@ -9,18 +9,19 @@
 // frozen, teriyaki glaze made separately (the gochujang-night lesson). Rice stays plain on
 // Asian plates (no bouillon — the cook's call 8/29). Fri added 8/29: hot dogs — the cook's away, the other
 // adult + kids (3), zero effort; Mrs Baird's buns Combo Loco → free Bush's beans as the side.
-// True cost ~$49 across 4 dinners; new dinner spend ~$62 incl. new staples (mirin, rice
-// vinegar) and belly/thighs that bank forward.
+// Sat added 8/29: guest night (4) — Creamy Cajun Shrimp & Andouille Pasta, the shrimp+pasta
+// lane the family asked for more of; the week's one $25+ meal. True cost ~$85 across 5
+// dinners; new dinner spend ~$123 incl. staples (olive oil, mirin, Cajun) + banking protein.
 const WEEK_DATA = {
   week: "2026-08-31",
-  title: "Week of Aug 31 — $4.49/lb Pork Belly Bowls, Fajita-Bag Tuesday, a Fully Bankable Teriyaki Thursday & Hot Dog Friday",
+  title: "Week of Aug 31 — $4.49/lb Pork Belly Bowls, Fajita-Bag Tuesday, a Fully Bankable Teriyaki Thursday, Hot Dog Friday & a Cajun Shrimp Pasta Saturday",
   store: "H-E-B Irving #817 · shop Sunday Aug 30",
   adNote: "⚠ Food-safety bans still active (checked 8/29): cyclospora outbreak in iceberg lettuce (11,458 cases, 20 states, investigation open) — NO bagged greens or salad kits, NO raw cilantro/parsley. Ad cycle 8/26–9/1: pork belly $4.49/lb, HCF chicken thighs $0.99/lb, red bell peppers $0.97.",
   shopDay: "Sunday Aug 30",
   meals: [
     {
       id: "porkbelly",
-      cost: { est: 17.36, servings: 4, note: "AD ANCHOR: H-E-B Natural Half Cut Pork Belly, avg 4.83 lb @ $4.49/lb = $21.69 VERIFIED — the only cut at the ad price (the smaller 3.13 lb cut is $4.92/lb). Buying the whole piece crosses the $20 Combo Loco anchor → FREE Momofuku Korean BBQ sauce ($10.49, clip it). This meal counts ~3.5 lb ($15.72); the remaining ~1.3 lb banks cooked-and-sealed. Plus 2 cucumbers $0.84, a share of the garlic restock ($0.30) and rice vinegar staple ($0.50). Rice, ginger, soy, brown sugar owned." },
+      cost: { est: 16.86, servings: 4, note: "AD ANCHOR: H-E-B Natural Half Cut Pork Belly, avg 4.83 lb @ $4.49/lb = $21.69 VERIFIED — the only cut at the ad price (the smaller 3.13 lb cut is $4.92/lb). Buying the whole piece crosses the $20 Combo Loco anchor → FREE Momofuku Korean BBQ sauce ($10.49, clip it). This meal counts ~3.5 lb ($15.72); the remaining ~1.3 lb banks cooked-and-sealed. Plus 2 cucumbers $0.84 and a share of the garlic restock ($0.30); rice vinegar owned. Rice, ginger, soy, brown sugar owned." },
       nutrition: { serving: "1 bowl: glazed pork belly + jasmine rice + smashed cucumber salad", calories: 780, protein: 30, carbs: 46, fat: 52 },
       daytime: [
         "SUN ~6 PM (10 min): rub the whole belly (kosher salt, pepper, 3 smashed garlic cloves), chamber-seal, drop into a 165°F bath — ~23 hr to Monday dinner",
@@ -46,7 +47,7 @@ const WEEK_DATA = {
           "kosher salt + black pepper + 3 garlic cloves, smashed (for the bag)",
           "2 cups jasmine rice (owned, new bag) + 2.5 cups water — plain, no bouillon (Asian plate)",
           "GLAZE (proven, make in a small saucepan): 3 tbsp Kikkoman soy sauce + 2 tbsp brown sugar + 1 tbsp grated frozen ginger + 1 minced garlic clove + 2-3 tbsp reserved bag juices",
-          "CUCUMBER SALAD: 2 cucumbers, 1 garlic clove, 1 tbsp rice vinegar, 1 tsp Kadoya sesame oil, 1 tsp soy, pinch sugar + salt, crushed red pepper to taste"
+          "CUCUMBER SALAD: 2 cucumbers, 1 garlic clove, 1 tbsp rice vinegar (owned), 1 tsp Kadoya sesame oil, 1 tsp soy, pinch sugar + salt, crushed red pepper to taste"
         ],
         steps: [
           "SUNDAY: salt/pepper/garlic the belly, chamber-seal flat, into the 165°F bath by ~6 PM. Leave it.",
@@ -63,7 +64,7 @@ const WEEK_DATA = {
     },
     {
       id: "fajitas",
-      cost: { est: 17.53, servings: 3, note: "Banked FAJITA chicken bag #2 at true paid price ($4.91) — weighed 8/29 at 1 lb, not the ~1.4 lb logged, so a ~1 lb FRESH boneless breast top-up joins it (~$3.49 est at regular price; Bolner's rub owned; sealed Sunday, fridge — Tuesday is 2 days out). NEW: 2 red bell peppers @ $0.97 ad = $1.94, 1 yellow onion ~$1.02, H-E-B Original Fajita Flour Tortillas 20 ct $2.23 less the 75¢ digital coupon = $1.48 (CLIP). Table condiments charged at half since they bank: Mexican shredded cheese ~$1.57 of $3.13, Daisy Squeeze sour cream $1.55 of $3.09, H-E-B Thick 'n Chunky Medium salsa $1.57 of $3.13." },
+      cost: { est: 14.41, servings: 3, note: "Banked FAJITA chicken bag #2 at true paid price ($4.91) — weighed 8/29 at 1 lb, not the ~1.4 lb logged, so a ~1 lb FRESH boneless breast top-up joins it (~$3.49 est at regular price; Bolner's rub owned; sealed Sunday, fridge — Tuesday is 2 days out). NEW: 2 red bell peppers @ $0.97 ad = $1.94, 1 yellow onion ~$1.02, H-E-B Original Fajita Flour Tortillas 20 ct $2.23 less the 75¢ digital coupon = $1.48 (CLIP). Shredded cheese charged at half (~$1.57 of $3.13, rest banks). Sour cream and hot sauces OWNED (confirmed 8/29) — no salsa buy." },
       nutrition: { serving: "3 fajitas (chicken, peppers, onion, cheese, sour cream, salsa)", calories: 680, protein: 50, carbs: 52, fat: 27 },
       daytime: [
         "SUN (5 min): rub ~1 lb fresh breast with Bolner's fajita seasoning, chamber-seal, FRIDGE (not freezer — Tuesday is 2 days out)",
@@ -90,8 +91,7 @@ const WEEK_DATA = {
           "1 yellow onion, sliced",
           "H-E-B Original Fajita Flour Tortillas, 20 ct (use ~9; rest banks — teen lunch overflow)",
           "H-E-B Mexican Style Shredded Cheese, 8 oz (use ~half)",
-          "Daisy Squeeze Sour Cream (at the table)",
-          "H-E-B Thick 'n Chunky Medium Salsa (at the table)",
+          "sour cream + hot sauces (owned, at the table)",
           "canola oil, kosher salt (owned)"
         ],
         steps: [
@@ -101,7 +101,7 @@ const WEEK_DATA = {
           "Pull both bags, pat dry, sear on the hot zone ~1-2 min a side for color. Rest 3 min, slice against the grain.",
           "Tortillas on the griddle edge ~20 sec a side to warm.",
           "KID CHECKPOINT: plain chicken + a tortilla + cheese for the kid — same food, no assembly.",
-          "Build at the table: chicken, veg, cheese, sour cream, salsa. Cleanup: griddle scrape, one cutting board."
+          "Build at the table: chicken, veg, cheese, sour cream, hot sauce. Cleanup: griddle scrape, one cutting board."
         ]
       }
     },
@@ -177,12 +177,54 @@ const WEEK_DATA = {
           "Build at the table. Cleanup: air-fryer basket, one pot, one skillet."
         ]
       }
+    },
+    {
+      id: "cajunshrimppasta",
+      cost: { est: 37.15, servings: 4, note: "GUEST NIGHT (a friend joins the cook + kids). The week's ONE $25+ meal. Frozen IQF Gulf shrimp 50-70 ct, 2 x 1 lb @ $8.37 = $16.74 (Saturday is 6 days from the shop, so FROZEN by the shelf-life rule; 2 lb because 1 lb was thin for a table with the teen — 8/28 + 7/22 feedback). Bayou Boil House andouille 12 oz $4.99, Land O Lakes heavy cream 1 pt $3.48, Sartori parmesan wedge 5 oz $4.79, frozen garlic bread $2.50, 3rd red bell pepper $0.97, 2nd onion $0.59, garlic share $0.25, Barilla fettuccine $1.84, Slap Ya Mama Cajun seasoning $3.48 (new staple, charged $1). Kerrygold owned." },
+      nutrition: { serving: "cajun shrimp + andouille + fettuccine in cream sauce + garlic bread", calories: 820, protein: 44, carbs: 62, fat: 42 },
+      daytime: [
+        "SAT ~5:00 PM (15-20 min): cold-water thaw BOTH shrimp bags; sous vide bath heating to 135°F alongside"
+      ],
+      title: "Creamy Cajun Shrimp & Andouille Pasta with Garlic Bread",
+      slot: "Dinner 5 · Sat Sep 5 — guest night (4), added late",
+      time: "~30 min at dinner",
+      equipment: ["Sous vide", "Stove", "Oven"],
+      summary:
+        "The family asked for more shrimp-and-pasta dinners after the scampi, so guest night gets the bold cousin: smoky andouille, charred peppers and onion, a Cajun-spiced cream sauce, and sous-vide shrimp dropped in at the end so they stay snappy. Different flavor lane from the scampi (Cajun cream vs garlic butter). Two things learned last time are built in: 2 lb of shrimp for a table with the teen, and the final toss happens in the big PASTA POT, not the skillet — 2 lb shrimp + a pound of pasta overcrowded the skillet on 8/28. Raw parsley garnish skipped (cyclospora ban).",
+      links: [
+        { label: "The Kitchn — Cajun shrimp pasta (smoky, creamy)", url: "https://www.thekitchn.com/cajun-shrimp-pasta-recipe-23449288", tag: "recipe" }
+      ],
+      swapNote: "Sous vide 135°F/20-30 min is the house shrimp method (technique swap from The Kitchn's pan-sear; the sauce is theirs). Heat is adjustable at the Cajun-seasoning step — kids' portions come out before it goes in.",
+      recipe: {
+        activeTime: "~30 min at dinner",
+        cookTime: "shrimp 20-30 min at 135°F; sauce ~15 min; pasta ~10 min; garlic bread per package",
+        ingredients: [
+          "2 x 1 lb H-E-B Wild Caught Frozen Peeled Gulf Shrimp, 50-70 ct (thawed)",
+          "12 oz Bayou Boil House andouille, sliced into coins",
+          "1 lb fettuccine (or linguine)",
+          "1 red bell pepper + 1 yellow onion, sliced; 3 garlic cloves, minced",
+          "1.5 cups heavy cream (Land O Lakes 1 pt) + 1 cup grated parmesan (Sartori wedge)",
+          "2-3 tsp Cajun seasoning (to taste), kosher salt, black pepper, crushed red pepper (owned)",
+          "2 tbsp Kerrygold butter (owned) + canola oil (owned)",
+          "H-E-B Frozen Garlic Bread, 16 oz"
+        ],
+        steps: [
+          "~5:00 PM: cold-water thaw the shrimp; bath to 135°F. Pat dry, light salt (+ optional pinch of baking soda), bag, into the bath 20-30 min.",
+          "Garlic bread into the oven per package, timed to land with dinner.",
+          "Big pot of salted water for the fettuccine; cook per package, RESERVE 1 cup pasta water, drain, leave the pasta IN the pot.",
+          "Skillet: brown the andouille coins in a little oil, 3-4 min. Add peppers + onion, 5 min until charred at the edges. Garlic + butter, 1 min.",
+          "KID CHECKPOINT: set aside a scoop of plain pasta tossed with a little butter + a few shrimp straight from the bag.",
+          "Cream + Cajun seasoning + a splash of pasta water into the skillet; simmer 3-4 min. Off heat, stir in the parmesan.",
+          "Pour the sauce into the PASTA POT with the fettuccine; add the drained shrimp; toss, loosening with pasta water. (Pot, not skillet — the 8/28 lesson.)",
+          "Plate with garlic bread. Cleanup: one pot, one skillet, one sheet pan."
+        ]
+      }
     }
   ],
   grocery: [
     { section: "Produce", aisle: "Produce (peppers/greens: left wall)", items: [
-      { name: "Red bell peppers, 2 (Tue fajitas) — AD $0.97 each", est: 1.94, note: "$0.97 VERIFIED" },
-      { name: "Yellow onion, 1 (Tue fajitas)", est: 1.02, note: "estimate — last rang $1.02" },
+      { name: "Red bell peppers, 3 (2 Tue fajitas + 1 Sat pasta) — AD $0.97 each", est: 2.91, note: "$0.97 VERIFIED" },
+      { name: "Yellow onions, 2 (Tue fajitas + Sat pasta)", est: 1.18, note: "$0.59 each on the list" },
       { name: "Cucumbers, 2 (Mon cucumber salad — dinner share, separate from the lunch cukes)", est: 0.84, note: "estimate ~$0.42 each" },
       { name: "Fresh garlic, 2 heads (Mon belly rub + glaze + salad; restocks the staple)", est: 1.05, note: "2 for $1.05 VERIFIED" }
     ]},
@@ -194,19 +236,23 @@ const WEEK_DATA = {
       { name: "H-E-B Natural HALF CUT Pork Belly, ~4.83 lb — AD $4.49/lb (Mon; ~1.3 lb banks cooked)", est: 21.69, note: "$4.49/lb VERIFIED online — the Half Cut is the only cut at the ad price. ≥$20 → COMBO LOCO: free Momofuku sauce (clip). ⚠ Check the tag says $4.49/lb, not the $4.92/lb smaller cuts" },
       { name: "Hill Country Fare Bone-in Skin-on Chicken Thighs, Value Pack ~5.18 lb — AD $0.99/lb (Thu bag + 1 bag banks)", est: 5.13, note: "$0.99/lb VERIFIED. Banking trigger met (well under the $1.97 breast threshold). Sunday: split into 2 bags (~2.6 lb each), S&P both, freeze" },
       { name: "Nathan's Bun Length Skinless Beef Franks, 8 ct (Fri hot dogs; extras → lunches)", est: 5.73, note: "$5.73 VERIFIED. Brand-flex: Oscar Mayer Classic Beef 10 ct $5.95, H-E-B Natural Uncured 8 ct $6.81" },
+      { name: "H-E-B Wild Caught Frozen Peeled Gulf Shrimp 50-70 ct, 1 lb x 2 (Sat pasta)", est: 16.74, note: "$8.37 each — FROZEN on purpose: Saturday is 6 days out (shelf-life rule). Cold-water thaw Saturday ~5 PM" },
+      { name: "Bayou Boil House by H-E-B Andouille Smoked Sausage, 12 oz (Sat pasta)", est: 4.99, note: "$4.99 on the list" },
       { name: "Fresh Boneless Skinless Chicken Breasts, Value Pack ~4.85 lb — $2.23/lb (Tue fajita top-up uses ~1 lb; ~3.85 lb BANKS in 3 bags)", est: 10.82, note: "$2.23/lb VERIFIED on the list build — under the $2.49 banking trigger, so the value pack replaces the small $5.59/lb pack. Sunday: 1 lb Bolner's → FRIDGE (Tue); rest into 3 bags (vary preps, one plain wild card) → FREEZE" }
     ]},
     { section: "Dairy", aisle: "Dairy (eggs/Mi Tienda tortillas: right wall; sour cream: back wall)", items: [
-      { name: "Daisy Squeeze Sour Cream, 14 oz (Tue, at the table)", est: 3.09, note: "$3.09 VERIFIED" },
-      { name: "H-E-B Mexican Style Shredded Cheese Blend, 8 oz (Tue fajitas — dinner share; the teen-wrap bag stays untouched)", est: 3.13, note: "estimate — was 2/$5 last week, $3.13 regular" }
+      { name: "H-E-B Mexican Style Shredded Cheese Blend, 8 oz (Tue fajitas — dinner share; the teen-wrap bag stays untouched)", est: 3.13, note: "estimate — was 2/$5 last week, $3.13 regular" },
+      { name: "Land O Lakes Heavy Whipping Cream, 1 pt (Sat pasta)", est: 3.48, note: "$3.48 on the list" },
+      { name: "Sartori Classic Parmesan Cheese Wedge, 5 oz (Sat pasta)", est: 4.79, note: "$4.79 on the list — grate from the wedge" }
     ]},
     { section: "Frozen", aisle: "15", items: [
-      { name: "H-E-B Frozen Steamable Broccoli Florets, 12 oz x 2 (Thu side)", est: 2.44, note: "$1.22 each VERIFIED" }
+      { name: "H-E-B Frozen Steamable Broccoli Florets, 12 oz x 2 (Thu side)", est: 2.44, note: "$1.22 each VERIFIED" },
+      { name: "H-E-B Frozen Garlic Bread - Traditional, 16 oz (Sat pasta)", est: 2.50, note: "$2.50 on the list" }
     ]},
     { section: "Center Store", aisle: "salsa/condiments 5-6 · mirin/vinegar 6", items: [
-      { name: "H-E-B Thick 'n Chunky Medium Salsa, 24 oz (Tue, at the table; banks)", est: 3.13, note: "$3.13 VERIFIED (has a coupon badge — check the app)" },
+      { name: "Barilla Fettuccine, 16 oz (Sat pasta)", est: 1.84, note: "$1.84 on the list" },
+      { name: "Slap Ya Mama Cajun Seasoning - Original Blend, 8 oz — NEW STAPLE (Sat pasta)", est: 3.48, note: "$3.48 on the list. Premium-staples pick (Louisiana-made, the better-tasting one)" },
       { name: "Kikkoman Manjo Aji Mirin, 10 oz — NEW STAPLE (Thu teriyaki glaze; amortizes)", est: 4.49, note: "$4.49 VERIFIED. Premium-staples rule: real teriyaki needs mirin" },
-      { name: "Rice vinegar, ~10 oz (Mon cucumber salad) — SKIP if the bottle from the 8/9 shop is on the shelf", est: 3.50, note: "estimate — 8/10's list bought one but it never got logged to inventory" },
       { name: "California Olive Ranch 100% Extra Virgin Olive Oil, 25.4 oz — NEW STAPLE (premium pick — the cook's call: worth spending more)", est: 20.73, note: "$20.73 VERIFIED. Fresh, harvest-dated California EVOO — the flavor-forward staple. Step-downs if the shelf is bare: COR Everyday 16.9 oz $11.49, Colavita 17 oz $9.86. Canola stays the frying oil" },
       { name: "Momofuku Sweet & Savory Korean BBQ Sauce, 16.3 oz — COMBO LOCO FREEBIE with ≥$20 pork belly (clip; exp 9/8)", est: 0.00, note: "$10.49 value, rings $0 with the belly. Earmarked for the banked belly's next night" },
       { name: "Bush's Best Baked Beans, 21.7-28 oz — COMBO LOCO FREEBIE with Mrs Baird's buns (clip; exp 9/8)", est: 0.00, note: "Rings $0 with the buns. Friday's side" }
@@ -215,7 +261,7 @@ const WEEK_DATA = {
       { name: "Hill Country Fare Purified Drinking Water, 40 pk Bottles, 16.9 oz (Texas-Size Pack) — carried over, not bought last week", est: 5.44, note: "PRICE CUT $5.44 still showing 8/29 (was $5.65); 24 pk is $3.43 if preferred" }
     ]}
   ],
-  groceryNote: "Dinner-side new spend ~$93.72 (plus the $5.44 household water carried over from last week, ~$99.16 on this page), but ~$30 of that is pantry staples that amortize (olive oil, mirin, rice vinegar, garlic) and ~$17 is protein that banks forward (1.3 lb cooked belly, a 2.6 lb thigh bag, ~3.85 lb of $2.23/lb breast). True cost of the 4 dinners: ~$52.20. No $25+ meal this week. (Kid-snack restock and any other tracker items ride on the private list, not this page.)",
+  groceryNote: "Dinner-side new spend ~$123.48 (plus the $5.44 household water carried over from last week, ~$128.92 on this page), but ~$29 of that is pantry staples that amortize (olive oil, mirin, Cajun seasoning, garlic) and ~$17 is protein that banks forward (1.3 lb cooked belly, a 2.6 lb thigh bag, ~3.85 lb of $2.23/lb breast). True cost of the 5 dinners: ~$85.73. One $25+ meal (Saturday's guest-night shrimp pasta) — within the max-one rule. (Kid-snack restock and any other tracker items ride on the private list, not this page.)",
   // Read-only "On Hand" snapshot for the public page. Regenerated with each weekly plan
   // from pantry/inventory.json — sanitized: no staples ledger, no names.
   // Refreshed 8/29 after the 8/24 week fully cooked (all four dinners logged).
