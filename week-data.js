@@ -194,7 +194,7 @@ const WEEK_DATA = {
       { name: "H-E-B Natural HALF CUT Pork Belly, ~4.83 lb — AD $4.49/lb (Mon; ~1.3 lb banks cooked)", est: 21.69, note: "$4.49/lb VERIFIED online — the Half Cut is the only cut at the ad price. ≥$20 → COMBO LOCO: free Momofuku sauce (clip). ⚠ Check the tag says $4.49/lb, not the $4.92/lb smaller cuts" },
       { name: "Hill Country Fare Bone-in Skin-on Chicken Thighs, Value Pack ~5.18 lb — AD $0.99/lb (Thu bag + 1 bag banks)", est: 5.13, note: "$0.99/lb VERIFIED. Banking trigger met (well under the $1.97 breast threshold). Sunday: split into 2 bags (~2.6 lb each), S&P both, freeze" },
       { name: "Nathan's Bun Length Skinless Beef Franks, 8 ct (Fri hot dogs; extras → lunches)", est: 5.73, note: "$5.73 VERIFIED. Brand-flex: Oscar Mayer Classic Beef 10 ct $5.95, H-E-B Natural Uncured 8 ct $6.81" },
-      { name: "Boneless skinless chicken breast, ~1 lb (Tue fajitas top-up — the banked bag weighed only 1 lb)", est: 3.49, note: "estimate at regular ~$2.99-3.49/lb, not on ad this week; smallest pack available. Sunday: Bolner's rub, seal, FRIDGE" }
+      { name: "Fresh Boneless Skinless Chicken Breasts, Value Pack ~4.85 lb — $2.23/lb (Tue fajita top-up uses ~1 lb; ~3.85 lb BANKS in 3 bags)", est: 10.82, note: "$2.23/lb VERIFIED on the list build — under the $2.49 banking trigger, so the value pack replaces the small $5.59/lb pack. Sunday: 1 lb Bolner's → FRIDGE (Tue); rest into 3 bags (vary preps, one plain wild card) → FREEZE" }
     ]},
     { section: "Dairy", aisle: "Dairy (eggs/Mi Tienda tortillas: right wall; sour cream: back wall)", items: [
       { name: "Daisy Squeeze Sour Cream, 14 oz (Tue, at the table)", est: 3.09, note: "$3.09 VERIFIED" },
@@ -215,7 +215,7 @@ const WEEK_DATA = {
       { name: "Hill Country Fare Purified Drinking Water, 40 pk Bottles, 16.9 oz (Texas-Size Pack) — carried over, not bought last week", est: 5.44, note: "PRICE CUT $5.44 still showing 8/29 (was $5.65); 24 pk is $3.43 if preferred" }
     ]}
   ],
-  groceryNote: "Dinner-side new spend ~$86.39 (plus the $5.44 household water carried over from last week, ~$91.83 on this page), but ~$30 of that is pantry staples that amortize (olive oil $20.73, mirin, rice vinegar, garlic) and ~$8.50 is protein that banks forward (1.3 lb cooked belly, a 2.6 lb thigh bag). True cost of the 4 dinners: ~$52.20. No $25+ meal this week. (Kid-snack restock and any other tracker items ride on the private list, not this page.)",
+  groceryNote: "Dinner-side new spend ~$93.72 (plus the $5.44 household water carried over from last week, ~$99.16 on this page), but ~$30 of that is pantry staples that amortize (olive oil, mirin, rice vinegar, garlic) and ~$17 is protein that banks forward (1.3 lb cooked belly, a 2.6 lb thigh bag, ~3.85 lb of $2.23/lb breast). True cost of the 4 dinners: ~$52.20. No $25+ meal this week. (Kid-snack restock and any other tracker items ride on the private list, not this page.)",
   // Read-only "On Hand" snapshot for the public page. Regenerated with each weekly plan
   // from pantry/inventory.json — sanitized: no staples ledger, no names.
   // Refreshed 8/29 after the 8/24 week fully cooked (all four dinners logged).
