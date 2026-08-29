@@ -188,7 +188,7 @@
   <div id="feedback"></div>
 
   <footer>
-    Recipes: Serious Eats first for sous vide times &amp; temps, Reddit as sanity check.
+    Recipes: Serious Eats first for sous vide times &amp; temps; recipe links aim for an actual matching recipe.
     New HEB ad flips every Wednesday — ask Claude for next week's plan then.
   </footer>
 </div>
@@ -213,7 +213,7 @@
   if (!WEEK.adNote) $("#ad-note").style.display = "none";
 
   // Menu
-  const tagLabel = { primary: "recipe", alt: "backup", reddit: "reddit" };
+  const tagLabel = { primary: "recipe", alt: "backup", technique: "technique", reddit: "reddit" };
   $("#menu").innerHTML = WEEK.meals.map(m => `
     <div class="card">
       <div class="slot">${m.slot}</div>
@@ -391,7 +391,7 @@
       const inv = await (await fetch("/api/inventory")).json();
       const onHand = (inv.items || []).filter(i => i.status === "on-hand");
       const TRACKER_CATS = { "kid-snacks": "Kid Snacks", "kid-alt-meals": "Kid Alt Meals",
-        "heika-lunch": "Heika's Lunches", "adult-snacks": "Adult Snacks", "teen-lunch": "Teen Lunch" };
+        "adult-lunch": "Adult Lunches", "adult-snacks": "Adult Snacks", "teen-lunch": "Teen Lunch" };
       const staples = onHand.filter(i => i.category === "staple")
         .sort((a, b) => a.name.localeCompare(b.name));
       const tracker = onHand.filter(i => i.category in TRACKER_CATS);
