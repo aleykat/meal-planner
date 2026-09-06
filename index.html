@@ -92,6 +92,8 @@
   .count-step { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; width: 28px; height: 28px; cursor: pointer; font-size: 1rem; line-height: 1; }
   .count-step:hover { border-color: var(--accent); }
   .count-meta { font-size: .72rem; color: var(--muted); white-space: nowrap; }
+  .count-unit { font: inherit; font-size: .8rem; border: 1px solid var(--line); border-radius: 8px; padding: 4px 2px; background: var(--bg); color: var(--ink); max-width: 10em; }
+  .count-ok { font-weight: 700; }
   .par-chip { font-size: .72rem; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
   .par-chip.ok { background: #2e7d3222; color: var(--good); }
   .par-chip.low { background: #e67e2222; color: #b9640f; }
@@ -372,7 +374,7 @@
     const m = unit.match(/^(.*?)(\s*\(.*\))?$/);
     const words = m[1].split(" ");
     const head = words[words.length - 1];
-    const INVARIANT = ["lb", "oz", "kg", "g", "ct"];
+    const INVARIANT = ["lb", "oz", "kg", "g", "ct", "each"];
     let word = head;
     if (!INVARIANT.includes(head.toLowerCase())) {
       if (n === 1) {
@@ -399,22 +401,42 @@
         .sort((a, b) => (a.useBy || "9999").localeCompare(b.useBy || "9999"));
       const today = new Date();
       const todayStr = today.toISOString().slice(0, 10);
+      // Every on-hand item is count-editable — by number of units (bag, box, each…)
+      // OR by weight (lb, oz), picked in the unit dropdown. Items with no saved
+      // count get a guessed unit + number parsed from their qty text; the guess
+      // stays UNSAVED (nothing is written) until ✓ / Enter / a step button confirms it.
+      const UNITS = ["each", "bag", "box", "pack", "can", "bottle", "jar", "tub", "loaf", "serving", "lb", "oz"];
+      const guessUnit = i => {
+        const m = (i.qty || "").toLowerCase().match(/\b(bags?|boxes|box|packs?|cans?|bottles?|jars?|tubs?|loaves|loaf|servings?|lb|oz)\b/);
+        if (!m) return "each";
+        const w = m[1];
+        return w === "boxes" ? "box" : w === "loaves" ? "loaf" : w.replace(/s$/, "");
+      };
+      const guessCount = i => { const m = (i.qty || "").match(/^\s*~?(\d+(?:\.\d+)?)/); return m ? Number(m[1]) : ""; };
       const countEditor = i => {
-        if (!i.unit) return "";
+        const unit = i.unit || guessUnit(i);
+        const saved = i.count != null;
+        const value = saved ? i.count : guessCount(i);
+        const opts = (UNITS.includes(unit) ? UNITS : [unit, ...UNITS])
+          .map(u => `<option value="${u}"${u === unit ? " selected" : ""}>${u}</option>`).join("");
         let chip = "";
-        if (i.parCount != null && i.count != null) {
+        if (i.parCount != null && saved) {
           chip = i.count < i.parCount
             ? `<span class="par-chip low">⚠ below par</span>`
             : `<span class="par-chip ok">✓ at par</span>`;
         }
-        const counted = i.lastCounted
-          ? (i.lastCounted === todayStr ? "counted today" : `counted ${i.lastCounted.slice(5).replace("-", "/")}`)
-          : "not yet counted";
+        const counted = !saved ? "unsaved guess — tap ✓ to confirm"
+          : i.lastCounted
+            ? (i.lastCounted === todayStr ? "counted today" : `counted ${i.lastCounted.slice(5).replace("-", "/")}`)
+            : "not yet counted";
         return `<span class="count-edit">
           <button class="count-step" data-step="-1" title="one fewer">−</button>
-          <input type="number" step="any" min="0" class="count-input" value="${i.count ?? ""}" placeholder="?" inputmode="decimal">
+          <input type="number" step="any" min="0" class="count-input" value="${value}" placeholder="?" inputmode="decimal">
           <button class="count-step" data-step="1" title="one more">+</button>
-          <span class="count-meta">${i.count != null ? inflectUnit(i.unit, i.count) : i.unit}${i.par ? ` · par ${i.par}` : ""}</span>
+          <select class="count-unit" title="count by units or by weight">${opts}</select>
+          ${saved ? "" : `<button class="count-step count-ok" data-ok="1" title="save this count">✓</button>`}
+          ${saved ? `<span class="count-meta">${inflectUnit(i.unit, i.count)}${i.par ? ` · par ${i.par}` : ""}</span>`
+                  : (i.par ? `<span class="count-meta">par ${i.par}</span>` : "")}
           ${chip}
           <span class="count-meta">· ${counted}</span>
         </span>`;
@@ -476,8 +498,11 @@
     }
   }
   async function saveCount(row, count) {
+    // the unit dropdown rides along with every count save — that's how an item
+    // switches between "2 bags" and "3.4 lb", and how narrative-qty items get a unit
+    const unit = row.querySelector(".count-unit")?.value;
     await fetch("/api/inventory", { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "count", id: row.dataset.id, count }) });
+      body: JSON.stringify({ action: "count", id: row.dataset.id, count, unit }) });
     loadInventory();
   }
   $("#inventory").addEventListener("click", async e => {
@@ -489,6 +514,8 @@
       loadInventory();
       return;
     }
+    const ok = e.target.closest(".count-ok");
+    if (ok) { commitTyped(ok.closest(".inv-row").querySelector(".count-input")); return; }
     const step = e.target.closest(".count-step");
     if (step) {
       const row = step.closest(".inv-row");
@@ -510,6 +537,13 @@
     if (e.key === "Enter" && e.target.classList.contains("count-input")) {
       e.preventDefault();
       commitTyped(e.target);
+    }
+  });
+  // switching the unit (bag ↔ lb etc.) saves right away when there's a number to save with
+  $("#inventory").addEventListener("change", e => {
+    if (e.target.classList.contains("count-unit")) {
+      const input = e.target.closest(".inv-row").querySelector(".count-input");
+      if (input.value.trim() !== "" && Number.isFinite(Number(input.value))) commitTyped(input);
     }
   });
   $("#inventory").addEventListener("focusout", e => {
