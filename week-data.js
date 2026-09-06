@@ -104,7 +104,7 @@ const WEEK_DATA = {
     },
     {
       id: "cajunshrimppasta",
-      cost: { est: 33.94, servings: 5, note: "THE WEEK'S ONE $25+ MEAL (approved over a cheaper scampi repeat). 2 x H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp 50-70 ct, 1 lb — $8.37 each VERIFIED 9/6 less the $1-off coupon (clipped, applies to both) = $14.74 (the ad's $7.97 shrimp are SHELL-ON, fails the always-buy-peeled rule); all 2 lb cook for the 4-5 table — the amount that was right for 5 on 8/28. Bayou Boil House andouille 12 oz $5.24, H-E-B heavy cream 16 oz $3.11, Sartori Classic parmesan wedge $5.03 (premium-staples upgrade, the cook's call 9/6), H-E-B fettuccine $1.18, frozen garlic bread $2.50, 1 red bell pepper $1.02, 1 onion $0.62 (all VERIFIED 9/6). Slap Ya Mama Cajun seasoning is a new staple ($3.65) charged at $0.50. Garlic, butter, olive oil owned." },
+      cost: { est: 33.20, servings: 5, note: "THE WEEK'S ONE $25+ MEAL (approved over a cheaper scampi repeat). 2 x H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp 50-70 ct, 1 lb — $8.37 each VERIFIED 9/6 less the $1-off coupon (clipped, applies to both) = $14.74 (the ad's $7.97 shrimp are SHELL-ON, fails the always-buy-peeled rule); all 2 lb cook for the 4-5 table — the amount that was right for 5 on 8/28. Bayou Boil House andouille 12 oz $5.24, H-E-B heavy cream — the 32 oz ($4.74) went on the list because the pint was out of stock; this meal uses 1 pint, charged $2.37 (the other pint banks), Sartori Classic parmesan wedge $5.03 (premium-staples upgrade, the cook's call 9/6), H-E-B fettuccine $1.18, frozen garlic bread $2.50, 1 red bell pepper $1.02, 1 onion $0.62 (all VERIFIED 9/6). Slap Ya Mama Cajun seasoning is a new staple ($3.65) charged at $0.50. Garlic, butter, olive oil owned." },
       nutrition: { serving: "~1/5 of the pot (shrimp, andouille, fettuccine, cream sauce) + 1 slice garlic bread", calories: 1480, protein: 65, carbs: 112, fat: 80 },
       daytime: [
         "TUE night (1 min): both shrimp bags freezer → fridge to thaw slowly (fallback: cold-water thaw 20 min at 4:30 PM Wed)",
@@ -244,7 +244,7 @@ const WEEK_DATA = {
       { name: "H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp, 50-70 ct, 1 lb x2 (Wed — all 2 lb)", est: 14.74, note: "$8.37 each VERIFIED 9/6, less the $1-off coupon (CLIPPED, unlimited use → both bags) = $7.37 each. The ad's $7.97 'Wild New Harvest' shrimp are SHELL-ON — skip" }
     ]},
     { section: "Dairy", aisle: "Dairy (eggs/Mi Tienda tortillas: right wall; sour cream: back wall)", items: [
-      { name: "H-E-B Heavy Whipping Cream, 16 oz (Wed pasta)", est: 3.11, note: "$3.11 VERIFIED 9/6 — but showing OUT OF STOCK online (Land O Lakes pint too). If the pint shelf is bare: H-E-B 32 oz $4.98" },
+      { name: "H-E-B Heavy Whipping Cream, 32 oz (Wed pasta — use 1 pint; the rest keeps ~2 weeks)", est: 4.74, note: "$4.74 on the HEB list 9/6. The 16 oz ($2.96) flagged OUT OF STOCK on the list, so the 32 oz went on instead — if a pint IS on the shelf in-store, grab that and skip the quart" },
       { name: "Sartori Classic Parmesan Cheese Wedge, 5 oz (Wed pasta)", est: 5.03, note: "$5.03 VERIFIED 9/6 — premium-staples rule (the cook's call 9/6): flavor-forward, so the better wedge, not the $3.14 Mama Francesca. Real Parmigiano Reggiano (Galli, ~$11/0.45 lb) is the step above if the block looks good" },
       { name: "H-E-B Mexican Style Shredded Cheese Blend, 8 oz (Fri tacos — dinner bag)", est: 3.13, note: "$3.13 VERIFIED 9/6" }
     ]},
