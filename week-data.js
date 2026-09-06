@@ -3,12 +3,13 @@
 // (iceberg-lettuce investigation OPEN, 11,458 cases / 20 states; NC cilantro/parsley cluster
 // OPEN) — no bagged greens, no raw cilantro/parsley; breaded-shrimp po'boys still on hold.
 // Week shape (the cook, 9/6): Mon Labor Day, 4-5 people (3 adults + kids), time no issue —
-// the ad's $1.77/lb St. Louis ribs, 3 racks all at once, sous vide overnight. Tue smaller
+// the ad's $1.77/lb St. Louis ribs, 2 racks (sale limited to 2 per order), sous vide overnight. Tue smaller
 // table (3), QUICK after 5 — a banked Cowboy Butter breast bag, $0 to buy. Wed 4-5, QUICK
 // after 5 — the Cajun shrimp & andouille pasta the family asked for (the week's one $25+
 // meal). Thu hot dogs, no side (the cook's call). Fri family (4) — chicken tinga tacos from
-// the banked wild-card thigh bag. HEB-only (Joe V's alt declined). True cost ~$84 across 5
-// dinners; new dinner spend ~$92 on this page incl. two staples that ran out (salt, soy).
+// the banked wild-card thigh bag. HEB-only (Joe V's alt declined). True cost ~$80 across 5
+// dinners; new dinner spend ~$96 on this page incl. two staples that ran out (salt, soy).
+// Curbside order placed by the cook 9/6 from the HEB.com list (49 units, $171.34 in-store est).
 // Prices VERIFIED via heb.com 9/6 (Chrome, logged-in session; MCP unauthenticated). Coupons
 // clipped 9/6: shrimp $1 off (x2), Oreo/Chips Ahoy party-size Combo Loco (free Tex-Itz), plus
 // the still-live tortilla 75¢ and Mrs Baird's→Bush's beans Combo Loco (unlimited use).
@@ -21,11 +22,11 @@ const WEEK_DATA = {
   meals: [
     {
       id: "ribs",
-      cost: { est: 24.85, servings: 7, note: "AD ANCHOR: Previously Frozen St. Louis Style Pork Ribs $1.77/lb VERIFIED 9/6 (avg 3.35 lb rack ≈ $5.93) — 3 racks = $17.79, ALL cooked (the cook's call 9/6: leftovers, not a banked rack). ⚠ The H-E-B Natural St. Louis racks beside them are $4.82/lb — wrong-product trap. Meat Church Honey Hog rub is a new PREMIUM staple ($9.95 VERIFIED, 12.5 oz) charged at a $2.50 share (~1/4 jar for 10 lb of ribs); Stubb's (owned) $0.75 share. Bush's beans = the Combo Loco can already on hand ($0 paid). H-E-B Frozen Texas Toast $2.07 VERIFIED. Watermelon $3.47 AD, half used tonight ($1.74). Under the $25 line; Wednesday is the week's $25+ meal." },
+      cost: { est: 18.17, servings: 5, note: "AD ANCHOR: Previously Frozen St. Louis Style Pork Ribs $1.77/lb VERIFIED 9/6 (avg 3.35 lb rack ≈ $5.93) — 2 racks = $11.86. The cook wanted 3, but the sale is LIMITED TO 2 PER ORDER — curbside order placed 9/6 with 2 (~24 bones for the table of 4-5, fewer leftovers). ⚠ The H-E-B Natural St. Louis racks beside them are $4.82/lb — wrong-product trap. Meat Church Honey Hog rub is a new PREMIUM staple ($9.48 on the list, 12.5 oz) charged at a $1.75 share (~1/6 jar for ~6.7 lb of ribs); Stubb's (owned) $0.75 share. Bush's beans = the Combo Loco can already on hand ($0 paid). H-E-B Frozen Texas Toast $2.07 VERIFIED. Watermelon $3.47 AD, half used tonight ($1.74). Under the $25 line; Wednesday is the week's $25+ meal." },
       nutrition: { serving: "5-6 ribs + 1/2 cup baked beans + 1 slice Texas toast + watermelon", calories: 950, protein: 50, carbs: 72, fat: 50 },
       daytime: [
-        "SUN ~6 PM (15 min): cut each rack into 3 sections (4 bones each), coat with the BBQ rub, chamber-seal 3 bags of 3 pieces in a single layer",
-        "SUN ~7 PM (5 min): 165°F bath — stand the bags ON EDGE side by side, kept apart (wire rack or binder clips on the rim); cover the tub for the 12 hr cook",
+        "SUN ~6 PM (15 min): cut each rack into 3 sections (4 bones each), coat with the rub, chamber-seal 2 bags of 3 pieces in a single layer",
+        "SUN ~7 PM (5 min): 165°F bath — 2 bags stand on edge with room to spare, kept apart; cover the tub for the 12 hr cook",
         "MON ~7-8 AM (5 min): pull the bags (12-13 hr), ice bath 15 min, fridge",
         "MON mid-afternoon (5 min): cut the watermelon — size it to the adults",
         "MON ~5:15 PM: oven 300°F — ribs on a foil-lined sheet, brushed with Stubb's, 25-30 min, then broil 3-5"
@@ -35,25 +36,25 @@ const WEEK_DATA = {
       time: "~20 min at dinner",
       equipment: ["Sous vide", "Oven/broiler", "Air fryer"],
       summary:
-        "Labor Day ribs off the ad's 53%-off St. Louis racks — three of them, so everyone eats and there's a second round for lunches. They go in the bath Sunday evening at Serious Eats' 165°F traditional-BBQ setting, come out Monday morning, and finish at dinner with Stubb's under the broiler. Sides are nearly free: the Bush's can that came with last week's buns, garlic Texas toast in the air fryer, and a whole watermelon cut mid-afternoon. Three racks in a 12-qt tub is the one thing to get right — cut into sections, bags on edge, kept apart; the third bag falls back to a foil-wrapped 275°F oven Monday if it won't fit.",
+        "Labor Day ribs off the ad's 53%-off St. Louis racks — two of them (the sale is limited to 2 per order), about 24 bones for the table of 4-5. They go in the bath Sunday evening at Serious Eats' 165°F traditional-BBQ setting, come out Monday morning, and finish at dinner with Stubb's under the broiler. Sides are nearly free: the Bush's can that came with last week's buns, garlic Texas toast in the air fryer, and a whole watermelon cut mid-afternoon. Two bags of sectioned ribs stand on edge in the 12-qt tub with room to spare — keep them apart and cover the tub.",
       links: [
         { label: "Serious Eats — sous vide barbecue pork ribs (Kenji)", url: "https://www.seriouseats.com/sous-vide-barbecue-pork-ribs-recipe", tag: "technique" }
       ],
-      swapNote: "165°F / 12 hr = SE's traditional fall-apart-adjacent BBQ texture (their 145°F option is a 36 hr steak-like cook — not this week). Bottled rub used as directed. TUB FIT: ~10 lb of ribs displaces ~1.2 gal — the 12-qt takes it with ~6 L of water, but circulation is what matters: bags must not lie flat against each other. If bag #3 won't fit: 275°F oven, foil-wrapped, ~3 hr from ~2:15 PM Monday, then glaze + broil with the rest.",
+      swapNote: "165°F / 12 hr = SE's traditional fall-apart-adjacent BBQ texture (their 145°F option is a 36 hr steak-like cook — not this week). Bottled rub used as directed. TUB FIT: 2 bags (~6.7 lb) fit the 12-qt easily — on edge, kept apart, tub covered. (The 3-rack idea hit the store's 2-per-order sale limit.)",
       recipe: {
         activeTime: "~15 min Sunday prep + ~20 min at dinner Monday",
         cookTime: "ribs 12-13 hr at 165°F (Sunday 7 PM → Monday morning); reheat 25-30 min at 300°F + broil 3-5 min",
         ingredients: [
-          "3 racks Previously Frozen St. Louis Style Pork Ribs (~10 lb total) — each cut into 3 sections",
-          "Meat Church Honey Hog BBQ Rub (~1 tbsp per lb, per label — about a quarter of the jar)",
+          "2 racks Previously Frozen St. Louis Style Pork Ribs (~6.7 lb total) — each cut into 3 sections",
+          "Meat Church Honey Hog BBQ Rub (~1 tbsp per lb, per label — about a sixth of the jar)",
           "Stubb's Original Bar-B-Q Sauce (owned), ~1 cup for glazing + more at the table",
           "Bush's Best Original Baked Beans, 28 oz (owned — Combo Loco can) + 1 tbsp Stubb's",
           "H-E-B Garlic Texas Toast, frozen 8 ct (use 5-6)",
           "1 whole seedless watermelon (use ~half)"
         ],
         steps: [
-          "SUNDAY ~6 PM: pat the racks dry, cut each into 3 sections. Rub all over. Chamber-seal 3 bags, 3 pieces per bag in a single layer.",
-          "SUNDAY ~7 PM: bath to 165°F. Stand the bags on edge side by side and keep them apart — drop a wire cooling rack in vertically as a divider, or binder-clip each bag's top to the rim so they hang separated. Water to just cover, under the circulator's max line. Cover the tub (lid or foil) — 12 hr at 165°F evaporates a lot.",
+          "SUNDAY ~6 PM: pat the racks dry, cut each into 3 sections. Rub all over. Chamber-seal 2 bags, 3 pieces per bag in a single layer.",
+          "SUNDAY ~7 PM: bath to 165°F. Stand the two bags on edge, kept apart (binder-clip each bag's top to the rim if they want to lean together). Water to just cover, under the circulator's max line. Cover the tub (lid or foil) — 12 hr at 165°F evaporates a lot.",
           "MONDAY MORNING (12-13 hr in): pull the bags, ice bath 15 min, fridge.",
           "MONDAY mid-afternoon: cut the watermelon into wedges, fridge.",
           "5:15 PM: oven 300°F. Open the bags over a bowl (save the juices for the beans). Pat dry, lay meat-side up on a foil-lined sheet, brush generously with Stubb's. 25-30 min until hot through.",
@@ -236,7 +237,7 @@ const WEEK_DATA = {
       { name: "Mrs Baird's White Classic Hot Dog Buns, 8 ct (Thu) — COMBO LOCO anchor → a 2nd FREE Bush's beans", est: 3.51, note: "$3.51 VERIFIED 9/6. The buns→beans Combo Loco is still clipped and UNLIMITED USE (exp Tue) — another free can rings with these. Wonder is $2.63 BOGO but forfeits the beans" }
     ]},
     { section: "Meat & Seafood", aisle: "Meat Market (packaged: back wall)", items: [
-      { name: "PREVIOUSLY FROZEN St. Louis Style Pork Ribs, 3 racks (~10 lb) — AD $1.77/lb (Mon)", est: 17.79, note: "$1.77/lb re-VERIFIED 9/6, avg 3.35 lb rack = $5.93 (was $12.70). ⚠ NOT the H-E-B Natural St. Louis at $4.82/lb right beside them — check the label. Baby backs are also $1.77/lb (avg 3.0 lb, $5.31) if St. Louis is picked over" },
+      { name: "PREVIOUSLY FROZEN St. Louis Style Pork Ribs, 2 racks (~6.7 lb) — AD $1.77/lb (Mon) — SALE LIMIT 2 PER ORDER", est: 11.86, note: "$1.77/lb re-VERIFIED 9/6, avg 3.35 lb rack = $5.93 (was $12.70). Store limited the sale to 2 per order — curbside order placed 9/6 with 2 (the cook wanted 3). ⚠ NOT the H-E-B Natural St. Louis at $4.82/lb right beside them — check the label. Baby backs are also $1.77/lb (avg 3.0 lb, $5.31) if St. Louis is picked over" },
       { name: "Bayou Boil House by H-E-B Andouille Smoked Sausage, 12 oz (Wed pasta)", est: 5.24, note: "$5.24 VERIFIED 9/6 (Cajun Hollar 12 oz $5.10 = flex)" },
       { name: "Nathan's Bun Length Skinless Beef Franks, 8 ct (Thu)", est: 5.73, note: "$5.73 VERIFIED 9/6 (an online coupon tag showed on it — check the app). The ad's Oscar Mayer Bun Length 8 ct is $2.98 but it's the classic mixed-meat wiener, not beef (OM Bun-Length BEEF is $5.95)" }
     ]},
@@ -263,7 +264,7 @@ const WEEK_DATA = {
       { name: "Bush's Best Baked Beans, 21.7-28 oz — COMBO LOCO FREEBIE with Mrs Baird's buns (clipped, unlimited use)", est: 0.00, note: "Rings $0 with the buns. Banks as a future side — the can already on hand goes with Monday's ribs" }
     ]}
   ],
-  groceryNote: "Dinner-side new spend ~$101 on this page (every line VERIFIED on heb.com 9/6; $3.50 of coupons already clipped — shrimp $1 x2, tortillas 75¢ x2 — plus a free can of beans), of which ~$22 is staples that amortize (Meat Church rub, Cajun seasoning, salt, soy — premium where flavor-forward, the cook's standing call) and $1.48 is a tortilla pack that restocks the pantry. True cost of the 5 dinners: ~$87 — one $25+ meal (Wednesday's shrimp pasta); Monday's ribs sit just under the line. Tuesday costs nothing new. (Kid-snack restock and other tracker items ride on the private list, not this page.)",
+  groceryNote: "Dinner-side new spend ~$96 on this page (every line VERIFIED on heb.com 9/6; $3.50 of coupons already clipped — shrimp $1 x2, tortillas 75¢ x2 — plus a free can of beans), of which ~$22 is staples that amortize (Meat Church rub, Cajun seasoning, salt, soy — premium where flavor-forward, the cook's standing call) and $1.48 is a tortilla pack that restocks the pantry. True cost of the 5 dinners: ~$80 — one $25+ meal (Wednesday's shrimp pasta). Tuesday costs nothing new. (Kid-snack restock and other tracker items ride on the private list, not this page.)",
   // Read-only "On Hand" snapshot for the public page. Regenerated with each weekly plan
   // from pantry/inventory.json — sanitized: no staples ledger, no names.
   // Refreshed 9/6 after the shop-day count (the 8/31 week fully cooked).
