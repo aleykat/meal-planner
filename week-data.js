@@ -21,7 +21,7 @@ const WEEK_DATA = {
   meals: [
     {
       id: "ribs",
-      cost: { est: 23.85, servings: 7, note: "AD ANCHOR: Previously Frozen St. Louis Style Pork Ribs $1.77/lb VERIFIED 9/6 (avg 3.35 lb rack ≈ $5.93) — 3 racks = $17.79, ALL cooked (the cook's call 9/6: leftovers, not a banked rack). ⚠ The H-E-B Natural St. Louis racks beside them are $4.82/lb — wrong-product trap. H-E-B Texas Originals Rib Rub is a new staple ($3.13 VERIFIED) charged at a $1.50 share; Stubb's (owned) $0.75 share. Bush's beans = the Combo Loco can already on hand ($0 paid). H-E-B Frozen Texas Toast $2.07 VERIFIED. Watermelon $3.47 AD, half used tonight ($1.74). Under the $25 line; Wednesday is the week's $25+ meal." },
+      cost: { est: 24.85, servings: 7, note: "AD ANCHOR: Previously Frozen St. Louis Style Pork Ribs $1.77/lb VERIFIED 9/6 (avg 3.35 lb rack ≈ $5.93) — 3 racks = $17.79, ALL cooked (the cook's call 9/6: leftovers, not a banked rack). ⚠ The H-E-B Natural St. Louis racks beside them are $4.82/lb — wrong-product trap. Meat Church Honey Hog rub is a new PREMIUM staple ($9.95 VERIFIED, 12.5 oz) charged at a $2.50 share (~1/4 jar for 10 lb of ribs); Stubb's (owned) $0.75 share. Bush's beans = the Combo Loco can already on hand ($0 paid). H-E-B Frozen Texas Toast $2.07 VERIFIED. Watermelon $3.47 AD, half used tonight ($1.74). Under the $25 line; Wednesday is the week's $25+ meal." },
       nutrition: { serving: "5-6 ribs + 1/2 cup baked beans + 1 slice Texas toast + watermelon", calories: 950, protein: 50, carbs: 72, fat: 50 },
       daytime: [
         "SUN ~6 PM (15 min): cut each rack into 3 sections (4 bones each), coat with the BBQ rub, chamber-seal 3 bags of 3 pieces in a single layer",
@@ -45,7 +45,7 @@ const WEEK_DATA = {
         cookTime: "ribs 12-13 hr at 165°F (Sunday 7 PM → Monday morning); reheat 25-30 min at 300°F + broil 3-5 min",
         ingredients: [
           "3 racks Previously Frozen St. Louis Style Pork Ribs (~10 lb total) — each cut into 3 sections",
-          "H-E-B Texas Originals Rib Rub (or Bolner's Fiesta Pork Rub — brand-flex; ~1 tbsp per lb, per label)",
+          "Meat Church Honey Hog BBQ Rub (~1 tbsp per lb, per label — about a quarter of the jar)",
           "Stubb's Original Bar-B-Q Sauce (owned), ~1 cup for glazing + more at the table",
           "Bush's Best Original Baked Beans, 28 oz (owned — Combo Loco can) + 1 tbsp Stubb's",
           "H-E-B Garlic Texas Toast, frozen 8 ct (use 5-6)",
@@ -104,7 +104,7 @@ const WEEK_DATA = {
     },
     {
       id: "cajunshrimppasta",
-      cost: { est: 32.05, servings: 5, note: "THE WEEK'S ONE $25+ MEAL (approved over a cheaper scampi repeat). 2 x H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp 50-70 ct, 1 lb — $8.37 each VERIFIED 9/6 less the $1-off coupon (clipped, applies to both) = $14.74 (the ad's $7.97 shrimp are SHELL-ON, fails the always-buy-peeled rule); all 2 lb cook for the 4-5 table — the amount that was right for 5 on 8/28. Bayou Boil House andouille 12 oz $5.24, H-E-B heavy cream 16 oz $3.11, Mama Francesca parmesan wedge $3.14, H-E-B fettuccine $1.18, frozen garlic bread $2.50, 1 red bell pepper $1.02, 1 onion $0.62 (all VERIFIED 9/6). Slap Ya Mama Cajun seasoning is a new staple ($3.65) charged at $0.50. Garlic, butter, olive oil owned." },
+      cost: { est: 33.94, servings: 5, note: "THE WEEK'S ONE $25+ MEAL (approved over a cheaper scampi repeat). 2 x H-E-B Wild Caught Frozen Peeled Large Texas Gulf Shrimp 50-70 ct, 1 lb — $8.37 each VERIFIED 9/6 less the $1-off coupon (clipped, applies to both) = $14.74 (the ad's $7.97 shrimp are SHELL-ON, fails the always-buy-peeled rule); all 2 lb cook for the 4-5 table — the amount that was right for 5 on 8/28. Bayou Boil House andouille 12 oz $5.24, H-E-B heavy cream 16 oz $3.11, Sartori Classic parmesan wedge $5.03 (premium-staples upgrade, the cook's call 9/6), H-E-B fettuccine $1.18, frozen garlic bread $2.50, 1 red bell pepper $1.02, 1 onion $0.62 (all VERIFIED 9/6). Slap Ya Mama Cajun seasoning is a new staple ($3.65) charged at $0.50. Garlic, butter, olive oil owned." },
       nutrition: { serving: "~1/5 of the pot (shrimp, andouille, fettuccine, cream sauce) + 1 slice garlic bread", calories: 1480, protein: 65, carbs: 112, fat: 80 },
       daytime: [
         "TUE night (1 min): both shrimp bags freezer → fridge to thaw slowly (fallback: cold-water thaw 20 min at 4:30 PM Wed)",
@@ -245,7 +245,7 @@ const WEEK_DATA = {
     ]},
     { section: "Dairy", aisle: "Dairy (eggs/Mi Tienda tortillas: right wall; sour cream: back wall)", items: [
       { name: "H-E-B Heavy Whipping Cream, 16 oz (Wed pasta)", est: 3.11, note: "$3.11 VERIFIED 9/6 — but showing OUT OF STOCK online (Land O Lakes pint too). If the pint shelf is bare: H-E-B 32 oz $4.98" },
-      { name: "Mama Francesca Parmesan Cheese Wedge, 5 oz (Wed pasta)", est: 3.14, note: "$3.14 VERIFIED 9/6; Frigo 5 oz $3.02 or Sartori Classic $5.03 — any 5 oz wedge" },
+      { name: "Sartori Classic Parmesan Cheese Wedge, 5 oz (Wed pasta)", est: 5.03, note: "$5.03 VERIFIED 9/6 — premium-staples rule (the cook's call 9/6): flavor-forward, so the better wedge, not the $3.14 Mama Francesca. Real Parmigiano Reggiano (Galli, ~$11/0.45 lb) is the step above if the block looks good" },
       { name: "H-E-B Mexican Style Shredded Cheese Blend, 8 oz (Fri tacos — dinner bag)", est: 3.13, note: "$3.13 VERIFIED 9/6" }
     ]},
     { section: "Frozen", aisle: "12", items: [
@@ -257,13 +257,13 @@ const WEEK_DATA = {
       { name: "H-E-B Fire Roasted Diced Tomatoes, 14.5 oz (Fri tinga)", est: 1.34, note: "$1.34 VERIFIED 9/6" },
       { name: "La Costeña Chipotle Peppers in Adobo Sauce, 7 oz (Fri tinga)", est: 1.87, note: "$1.87 VERIFIED 9/6 (San Marcos 7.5 oz $1.81 = flex)" },
       { name: "Slap Ya Mama Original Cajun Seasoning, 8 oz — NEW STAPLE (Wed; amortizes)", est: 3.65, note: "$3.65 VERIFIED 9/6. Tony Chachere's = the flex" },
-      { name: "H-E-B Texas Originals Rib Rub Coarse Seasoning, 5.11 oz — NEW STAPLE (Mon ribs)", est: 3.13, note: "$3.13 VERIFIED 9/6; Bolner's Fiesta Pork Rub 5.5 oz $3.53 = flex. ~10 lb of ribs uses most of the jar" },
+      { name: "Meat Church Honey Hog BBQ Rub, 12.5 oz — NEW PREMIUM STAPLE (Mon ribs; amortizes over ~4 pork cooks)", est: 9.95, note: "$9.95 VERIFIED 9/6 — premium-staples rule (the cook's call 9/6): the Texas pitmaster pork rub, not the $3.13 H-E-B jar. Flex: Terry Black's Pork Dry Rub $10.37, Fire & Smoke Society Sweet Preacher $6.03" },
       { name: "H-E-B Coarse Kosher Salt, 4.4 lb — STAPLE RESTOCK (counted 0)", est: 3.13, note: "$3.13 VERIFIED 9/6 (Morton 3 lb is $3.68 — salt is flavor-neutral, cheap wins)" },
       { name: "Kikkoman All-Purpose Soy Sauce, 20 oz — STAPLE RESTOCK (counted 0)", est: 5.02, note: "$5.02 VERIFIED 9/6 (naturally brewed; 10 oz is $3.09). Not needed by this week's menu — restocking at the cook's call" },
       { name: "Bush's Best Baked Beans, 21.7-28 oz — COMBO LOCO FREEBIE with Mrs Baird's buns (clipped, unlimited use)", est: 0.00, note: "Rings $0 with the buns. Banks as a future side — the can already on hand goes with Monday's ribs" }
     ]}
   ],
-  groceryNote: "Dinner-side new spend ~$92 on this page (every line VERIFIED on heb.com 9/6; $3.50 of coupons already clipped — shrimp $1 x2, tortillas 75¢ x2 — plus a free can of beans), of which ~$15 is staples that amortize (rib rub, Cajun seasoning, salt, soy) and $1.48 is a tortilla pack that restocks the pantry. True cost of the 5 dinners: ~$84 — one $25+ meal (Wednesday's shrimp pasta). Tuesday costs nothing new. (Kid-snack restock and other tracker items ride on the private list, not this page.)",
+  groceryNote: "Dinner-side new spend ~$101 on this page (every line VERIFIED on heb.com 9/6; $3.50 of coupons already clipped — shrimp $1 x2, tortillas 75¢ x2 — plus a free can of beans), of which ~$22 is staples that amortize (Meat Church rub, Cajun seasoning, salt, soy — premium where flavor-forward, the cook's standing call) and $1.48 is a tortilla pack that restocks the pantry. True cost of the 5 dinners: ~$87 — one $25+ meal (Wednesday's shrimp pasta); Monday's ribs sit just under the line. Tuesday costs nothing new. (Kid-snack restock and other tracker items ride on the private list, not this page.)",
   // Read-only "On Hand" snapshot for the public page. Regenerated with each weekly plan
   // from pantry/inventory.json — sanitized: no staples ledger, no names.
   // Refreshed 9/6 after the shop-day count (the 8/31 week fully cooked).
