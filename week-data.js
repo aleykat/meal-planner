@@ -13,8 +13,8 @@
 // Week shape (the cook, 9/12): last week's Wed tinga and Fri Cajun pasta never got cooked — the thigh bag
 // DID go through the bath and sits cooked in the fridge (use by 9/13), so Sunday = tinga off the cooked
 // bag; Wed (2 adults + 2 kids, can't start until 6 PM, sear-only, no sauce-making) = both banked breast
-// bags + Momofuku from the bottle over rice; Thu = hot dogs, easy for the kids, with the banked Bush's
-// can; Sat = beef finally — the ad's $4.99/lb Texas-style beef ribs (bone-in chuck backup), reslotted
+// bags + Momofuku from the bottle over rice; Thu = hot dogs, easy for the kids (beans dropped 9/16 — just dogs
+// on an easy night); Sat = beef finally — the ad's $4.99/lb Texas-style beef ribs (bone-in chuck backup), reslotted
 // from Tuesday. Fri flex.
 // Prices VERIFIED 9/12 via Chrome on heb.com (store 817; MCP unauthenticated as always — one hCaptcha on the
 // first hit, cleared by going through the homepage). Onion is the only est line.
@@ -70,31 +70,29 @@ const WEEK_DATA = {
     },
     {
       id: "hotdogs",
-      cost: { est: 7.32, servings: 4, note: "RECEIPT-TRUED 9/13: the $1-off Nathan's coupon rang — franks $4.73, buns $2.39 as verified, new spend $7.12. Nathan's Bun Length Skinless Beef Franks 8 ct $5.73 VERIFIED 9/12; H-E-B Enriched Hot Dog Buns 8 ct $2.39 VERIFIED (Hill Country Fare 8 ct $1.55 = the cheaper flex; the Mrs Baird's→Bush's Combo Loco expired 9/8 and Mrs Baird's is $3.51 without it). Bush's Original Baked Beans 28 oz: the banked Combo Loco can, $0 — planned twice, never opened, tonight it gets used. Ketchup, mustard, pickles owned (~$0.20). New spend ~$8.12." },
-      nutrition: { serving: "2 hot dogs with condiments + 1/2 cup baked beans", calories: 745, protein: 27, carbs: 80, fat: 36 },
+      cost: { est: 7.32, servings: 4, note: "RECEIPT-TRUED 9/13: the $1-off Nathan's coupon rang — franks $4.73, buns $2.39 as verified, new spend $7.12. Nathan's Bun Length Skinless Beef Franks 8 ct $5.73 VERIFIED 9/12; H-E-B Enriched Hot Dog Buns 8 ct $2.39 VERIFIED (Hill Country Fare 8 ct $1.55 = the cheaper flex; the Mrs Baird's→Bush's Combo Loco expired 9/8 and Mrs Baird's is $3.51 without it). No beans (dropped 9/16 — an easy night means just the dogs; the Combo Loco can stays banked, $0 either way). Ketchup, mustard, pickles owned (~$0.20). New spend ~$8.12." },
+      nutrition: { serving: "2 hot dogs with condiments", calories: 595, protein: 21, carbs: 51, fat: 35 },
       daytime: [],
-      title: "Hot Dogs with Baked Beans",
+      title: "Hot Dogs",
       slot: "Dinner 2 · Thu Sep 17 — family, easy for the kids",
-      time: "~15 min",
-      equipment: ["Blackstone or skillet", "Saucepan"],
+      time: "~10 min",
+      equipment: ["Blackstone or skillet"],
       summary:
-        "The easy kid night, as asked: franks on the flat-top or in a skillet, buns toasted on the griddle edge, and the can of Bush's beans that came free with buns two weeks ago finally opened — this time with a real spoonful of Stubb's and a pinch of the BBQ rub stirred in, since last week's feedback said the beans wanted more doctoring. Extras go to lunches.",
+        "The easy kid night, as asked: franks on the flat-top or in a skillet, buns toasted on the griddle edge, and nothing else to cook. Extras go to lunches.",
       links: [],
-      swapNote: "Brand-flex on buns: H-E-B or Hill Country Fare 8 ct is the cheap pick; Mrs Baird's only if a Combo Loco comes back. Beans: 2 tbsp Stubb's + 1/2 tsp Honey Hog rub + a squeeze of mustard — the 'more doctoring' from the 9/8 feedback. No fries tonight (the cook's call); the 1/4 bag of tots is there if the kids want them.",
+      swapNote: "Brand-flex on buns: H-E-B or Hill Country Fare 8 ct is the cheap pick; Mrs Baird's only if a Combo Loco comes back. Beans DROPPED 9/16: an easy night means just the dogs, so the Bush's can stays banked (not a taste signal). No fries tonight (the cook's call); the 1/4 bag of tots is there if the kids want them.",
       recipe: {
-        activeTime: "~15 min",
-        cookTime: "dogs 6-8 min; beans 10 min",
+        activeTime: "~10 min",
+        cookTime: "dogs 6-8 min",
         ingredients: [
           "Nathan's Bun Length Skinless Beef Franks, 8 ct (use 6-8; extras → lunches)",
           "H-E-B Enriched Hot Dog Buns, 8 ct",
-          "Bush's Best Original Baked Beans, 28 oz (owned — Combo Loco can) + 2 tbsp Stubb's + 1/2 tsp Meat Church rub + 1 tsp yellow mustard (all owned)",
           "ketchup, mustard, pickles (owned); a few thin onion rings from the spare onion if wanted"
         ],
         steps: [
-          "Beans into a saucepan on low with the Stubb's, rub and mustard; 10 min, stir now and then.",
           "Blackstone (or a dry skillet) medium-high: franks 6-8 min, rolling for color. Or simmer in a skillet of water 5 min.",
           "Buns cut-side down on the griddle edge ~30 sec, or 20 sec in the microwave.",
-          "Build at the table. Cleanup: griddle scrape, one saucepan."
+          "Build at the table. Cleanup: griddle scrape."
         ]
       }
     },
@@ -188,8 +186,8 @@ const WEEK_DATA = {
     { name: "H-E-B Steamable Broccoli Florets", qty: "1 bag (12 oz)", location: "freezer", useBy: "2027-02-28", note: "WEDNESDAY side" },
     { name: "Jasmine rice", qty: "~3 lb ≈ 3-4 cooks", location: "pantry", useBy: null, note: "WEDNESDAY — 1 cook (2 cups)" },
     { name: "Russet potatoes", qty: "3 (the last of the 5 lb bag)", location: "pantry", useBy: "2026-09-24", note: "SATURDAY — air-fryer side, uses them up" },
-    { name: "Bush's Original Baked Beans, 28 oz", qty: "1 can (Combo Loco freebie)", location: "pantry", useBy: "2027-08-30", note: "THURSDAY with the hot dogs — third time planned, first time opened" },
-    { name: "Slap Ya Mama Cajun seasoning 8 oz (unopened) · Meat Church Honey Hog rub · Stubb's · Kinder's Cowboy Butter · Bolner's fajita · gochujang · mirin", qty: "staples", location: "pantry", useBy: null, note: "Cajun → NEXT WEEK; rub + Stubb's → SATURDAY ribs + THURSDAY beans" },
+    { name: "Bush's Original Baked Beans, 28 oz", qty: "1 can (Combo Loco freebie)", location: "pantry", useBy: "2027-08-30", note: "Banked — dropped from Thursday's hot dogs 9/16 (easy night); no slot yet" },
+    { name: "Slap Ya Mama Cajun seasoning 8 oz (unopened) · Meat Church Honey Hog rub · Stubb's · Kinder's Cowboy Butter · Bolner's fajita · gochujang · mirin", qty: "staples", location: "pantry", useBy: null, note: "Cajun → NEXT WEEK; rub + Stubb's → SATURDAY ribs" },
     { name: "Ore-Ida Tater Tots (opened)", qty: "~1/4 bag", location: "freezer", useBy: "2027-02-01", note: "Backup side" },
     { name: "H-E-B Breaded Shrimp", qty: "2 boxes", location: "freezer", useBy: "2027-02-02", note: "Po'boy night — still ON HOLD until the outbreak check clears bagged slaw (checked 9/12: 2 FDA investigations still open)" },
     { name: "Brioche buns", qty: "2 buns", location: "freezer", useBy: "2026-11-12", note: "Next burger night (80/20 beef this time) or sandwiches" },
