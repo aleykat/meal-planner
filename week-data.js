@@ -26,6 +26,79 @@ const WEEK_DATA = {
   shopDay: "Sunday Sep 13",
   meals: [
     {
+      id: "koreanchicken",
+      cost: { est: 11.23, servings: 5, note: "$0 NEW SPEND — both banked breast bags: the SOY-GINGER bag (~1.4 lb, $4.91 paid — last of the 8/2 buy) and the plain S&P wild-card bag (1 lb 11 oz, $3.95 paid at $2.34/lb from the 8/30 pack) — ~3.1 lb raw, plenty for 4 with lunch leftovers. Momofuku Sweet & Savory Korean BBQ Sauce was a Combo Loco freebie ($0). Rice: 2 cups of the jasmine (~$1.00 share of the 5 lb bag); the banked H-E-B Steamable Broccoli bag $1.22. Canola + butter owned (~$0.15)." },
+      nutrition: { serving: "~6 oz sauced chicken + 1 cup jasmine rice + broccoli", calories: 745, protein: 73, carbs: 76, fat: 13 },
+      daytime: [
+        "WED ~1:30 PM (1 min): BOTH frozen breast bags into a 150°F bath (2.5-3 hr incl. in-bath thaw; holds fine to 6:30)",
+        "WED ~5:15 PM (3 min): rice cooker — 2 cups jasmine rinsed clear, 2.5 cups water, plain (Asian plate, no bouillon)"
+      ],
+      title: "Korean BBQ Sous Vide Chicken over Jasmine Rice with Steamed Broccoli",
+      slot: "Dinner 1 · Wed Sep 16 — 2 adults + 2 kids; nothing starts before 6 PM, sear only",
+      time: "~10 min at dinner",
+      equipment: ["Sous vide", "Rice cooker", "Skillet or Blackstone", "Microwave"],
+      summary:
+        "Built for a night when dinner can't start until six and there's no time to make a sauce: the two banked breast bags go into the bath at lunchtime, the rice cooker starts at 5:15, and at six the only work is slicing, a three-minute sear, and a thirty-second toss in Korean BBQ sauce straight from the bottle. Plain slices come out for the kids before the sauce hits the pan. Broccoli steams in its bag. Nothing to buy, and it finally uses the soy-ginger bag and the Momofuku bottle that have been waiting on each other since August.",
+      links: [
+        { label: "Momofuku — Sweet & Savory Korean BBQ Sauce (marinade / glaze, used as directed)", url: "https://shop.momofuku.com/products/sweet-savory-bbq-sauce", tag: "recipe" },
+        { label: "Amazing Food Made Easy — sous vide chicken breast guide", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/chicken-breast", tag: "technique" }
+      ],
+      swapNote: "150°F is the house breast setting. Momofuku's sauce is a finishing glaze — bottled, used as directed, no sauce to build. The soy-ginger bag was sealed with an un-grounded marinade (2 tbsp soy + 1 tbsp brown sugar + ginger) — the bottled glaze carries the flavor, so that doesn't matter tonight. Extra sauce at the table for the adults; a shake of sesame oil (owned) over the rice if wanted. Skip the sear entirely if 6 PM is really 6:20 — slice, toss in the sauce, done.",
+      recipe: {
+        activeTime: "~10 min at dinner",
+        cookTime: "chicken 2.5-3 hr at 150°F from frozen; rice ~25 min in the cooker; sear 3-4 min",
+        ingredients: [
+          "banked SOY-GINGER chicken breast bag, ~1.4 lb (sealed raw 8/2) — owned",
+          "banked PLAIN S&P chicken breast bag, 1 lb 11 oz (sealed raw 8/30) — owned",
+          "~1/2 cup Momofuku Sweet & Savory Korean BBQ Sauce (owned) + more at the table",
+          "1 tbsp canola oil (owned) for the sear",
+          "2 cups jasmine rice (owned) + 2.5 cups water",
+          "1 x H-E-B Frozen Steamable Broccoli Florets, 12 oz (owned)",
+          "1 tbsp butter (owned) for the broccoli; Kadoya sesame oil (owned) optional"
+        ],
+        steps: [
+          "~1:30 PM: both frozen bags straight into the 150°F bath.",
+          "~5:15 PM: rinse 2 cups rice until the water runs clear; 2.5 cups water; start the cooker.",
+          "6:00 PM: pull the bags, pat the breasts VERY dry, slice 1/2-inch thick across the grain. Broccoli bag into the microwave per package (~5 min).",
+          "Skillet or Blackstone ripping hot, film of oil: chicken slices in a single layer, ~1.5 min a side for color. Work in 2 batches if the pan is crowded.",
+          "KID CHECKPOINT: pull plain slices for the kids NOW, before the sauce.",
+          "Off heat or on low: pour ~1/2 cup Momofuku over the rest, toss 30 sec until it clings and glosses.",
+          "Broccoli: butter + a pinch of salt. Plate over rice. Extra sauce at the table; sesame oil over the rice if wanted.",
+          "Leftover chicken → lunches (4 days). Cleanup: one skillet, the rice pot, the bags."
+        ]
+      }
+    },
+    {
+      id: "hotdogs",
+      cost: { est: 7.32, servings: 4, note: "RECEIPT-TRUED 9/13: the $1-off Nathan's coupon rang — franks $4.73, buns $2.39 as verified, new spend $7.12. Nathan's Bun Length Skinless Beef Franks 8 ct $5.73 VERIFIED 9/12; H-E-B Enriched Hot Dog Buns 8 ct $2.39 VERIFIED (Hill Country Fare 8 ct $1.55 = the cheaper flex; the Mrs Baird's→Bush's Combo Loco expired 9/8 and Mrs Baird's is $3.51 without it). Bush's Original Baked Beans 28 oz: the banked Combo Loco can, $0 — planned twice, never opened, tonight it gets used. Ketchup, mustard, pickles owned (~$0.20). New spend ~$8.12." },
+      nutrition: { serving: "2 hot dogs with condiments + 1/2 cup baked beans", calories: 745, protein: 27, carbs: 80, fat: 36 },
+      daytime: [],
+      title: "Hot Dogs with Baked Beans",
+      slot: "Dinner 2 · Thu Sep 17 — family, easy for the kids",
+      time: "~15 min",
+      equipment: ["Blackstone or skillet", "Saucepan"],
+      summary:
+        "The easy kid night, as asked: franks on the flat-top or in a skillet, buns toasted on the griddle edge, and the can of Bush's beans that came free with buns two weeks ago finally opened — this time with a real spoonful of Stubb's and a pinch of the BBQ rub stirred in, since last week's feedback said the beans wanted more doctoring. Extras go to lunches.",
+      links: [],
+      swapNote: "Brand-flex on buns: H-E-B or Hill Country Fare 8 ct is the cheap pick; Mrs Baird's only if a Combo Loco comes back. Beans: 2 tbsp Stubb's + 1/2 tsp Honey Hog rub + a squeeze of mustard — the 'more doctoring' from the 9/8 feedback. No fries tonight (the cook's call); the 1/4 bag of tots is there if the kids want them.",
+      recipe: {
+        activeTime: "~15 min",
+        cookTime: "dogs 6-8 min; beans 10 min",
+        ingredients: [
+          "Nathan's Bun Length Skinless Beef Franks, 8 ct (use 6-8; extras → lunches)",
+          "H-E-B Enriched Hot Dog Buns, 8 ct",
+          "Bush's Best Original Baked Beans, 28 oz (owned — Combo Loco can) + 2 tbsp Stubb's + 1/2 tsp Meat Church rub + 1 tsp yellow mustard (all owned)",
+          "ketchup, mustard, pickles (owned); a few thin onion rings from the spare onion if wanted"
+        ],
+        steps: [
+          "Beans into a saucepan on low with the Stubb's, rub and mustard; 10 min, stir now and then.",
+          "Blackstone (or a dry skillet) medium-high: franks 6-8 min, rolling for color. Or simmer in a skillet of water 5 min.",
+          "Buns cut-side down on the griddle edge ~30 sec, or 20 sec in the microwave.",
+          "Build at the table. Cleanup: griddle scrape, one saucepan."
+        ]
+      }
+    },
+    {
       id: "beefribs",
       cost: { est: 17.46, servings: 3, note: "RECEIPT-TRUED 9/13: the ad's $4.99/lb boneless Texas-Size Pack was OUT OF STOCK at pickup, so this is the backup bought alongside it — Fresh Beef Chuck BBQ Ribs, bone-in, $4.71/lb (regular price) × 2.95 lb = $13.89 (only 2.95 of the 3.81 lb ordered was available). Nothing banks, and ~1.5 lb of meat after the bone feeds the table of 3 with no leftover. Rub: Meat Church Honey Hog (owned) $0.50 share + Stubb's (owned) $0.50 share. Sides: the last 3 russets of the 5 lb bag (~$0.45 share) and 8 oz Fresh Sugar Snap Peas $1.97 (rang as verified). Olive oil, salt, pepper owned (~$0.15). New spend $15.86." },
       nutrition: { serving: "~7 oz cooked rib meat + air-fryer potatoes + snap peas", calories: 840, protein: 58, carbs: 52, fat: 45 },
@@ -71,86 +144,13 @@ const WEEK_DATA = {
           "Cut between the bones, or slice the meat off the bone across the grain into thick pieces. Sized for three — don't count on leftovers. Cleanup: one sheet pan (foil), air-fryer basket, one skillet, the bags."
         ]
       }
-    },
-    {
-      id: "koreanchicken",
-      cost: { est: 11.23, servings: 5, note: "$0 NEW SPEND — both banked breast bags: the SOY-GINGER bag (~1.4 lb, $4.91 paid — last of the 8/2 buy) and the plain S&P wild-card bag (1 lb 11 oz, $3.95 paid at $2.34/lb from the 8/30 pack) — ~3.1 lb raw, plenty for 4 with lunch leftovers. Momofuku Sweet & Savory Korean BBQ Sauce was a Combo Loco freebie ($0). Rice: 2 cups of the jasmine (~$1.00 share of the 5 lb bag); the banked H-E-B Steamable Broccoli bag $1.22. Canola + butter owned (~$0.15)." },
-      nutrition: { serving: "~6 oz sauced chicken + 1 cup jasmine rice + broccoli", calories: 745, protein: 73, carbs: 76, fat: 13 },
-      daytime: [
-        "WED ~1:30 PM (1 min): BOTH frozen breast bags into a 150°F bath (2.5-3 hr incl. in-bath thaw; holds fine to 6:30)",
-        "WED ~5:15 PM (3 min): rice cooker — 2 cups jasmine rinsed clear, 2.5 cups water, plain (Asian plate, no bouillon)"
-      ],
-      title: "Korean BBQ Sous Vide Chicken over Jasmine Rice with Steamed Broccoli",
-      slot: "Dinner 4 · Wed Sep 16 — 2 adults + 2 kids; nothing starts before 6 PM, sear only",
-      time: "~10 min at dinner",
-      equipment: ["Sous vide", "Rice cooker", "Skillet or Blackstone", "Microwave"],
-      summary:
-        "Built for a night when dinner can't start until six and there's no time to make a sauce: the two banked breast bags go into the bath at lunchtime, the rice cooker starts at 5:15, and at six the only work is slicing, a three-minute sear, and a thirty-second toss in Korean BBQ sauce straight from the bottle. Plain slices come out for the kids before the sauce hits the pan. Broccoli steams in its bag. Nothing to buy, and it finally uses the soy-ginger bag and the Momofuku bottle that have been waiting on each other since August.",
-      links: [
-        { label: "Momofuku — Sweet & Savory Korean BBQ Sauce (marinade / glaze, used as directed)", url: "https://shop.momofuku.com/products/sweet-savory-bbq-sauce", tag: "recipe" },
-        { label: "Amazing Food Made Easy — sous vide chicken breast guide", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/chicken-breast", tag: "technique" }
-      ],
-      swapNote: "150°F is the house breast setting. Momofuku's sauce is a finishing glaze — bottled, used as directed, no sauce to build. The soy-ginger bag was sealed with an un-grounded marinade (2 tbsp soy + 1 tbsp brown sugar + ginger) — the bottled glaze carries the flavor, so that doesn't matter tonight. Extra sauce at the table for the adults; a shake of sesame oil (owned) over the rice if wanted. Skip the sear entirely if 6 PM is really 6:20 — slice, toss in the sauce, done.",
-      recipe: {
-        activeTime: "~10 min at dinner",
-        cookTime: "chicken 2.5-3 hr at 150°F from frozen; rice ~25 min in the cooker; sear 3-4 min",
-        ingredients: [
-          "banked SOY-GINGER chicken breast bag, ~1.4 lb (sealed raw 8/2) — owned",
-          "banked PLAIN S&P chicken breast bag, 1 lb 11 oz (sealed raw 8/30) — owned",
-          "~1/2 cup Momofuku Sweet & Savory Korean BBQ Sauce (owned) + more at the table",
-          "1 tbsp canola oil (owned) for the sear",
-          "2 cups jasmine rice (owned) + 2.5 cups water",
-          "1 x H-E-B Frozen Steamable Broccoli Florets, 12 oz (owned)",
-          "1 tbsp butter (owned) for the broccoli; Kadoya sesame oil (owned) optional"
-        ],
-        steps: [
-          "~1:30 PM: both frozen bags straight into the 150°F bath.",
-          "~5:15 PM: rinse 2 cups rice until the water runs clear; 2.5 cups water; start the cooker.",
-          "6:00 PM: pull the bags, pat the breasts VERY dry, slice 1/2-inch thick across the grain. Broccoli bag into the microwave per package (~5 min).",
-          "Skillet or Blackstone ripping hot, film of oil: chicken slices in a single layer, ~1.5 min a side for color. Work in 2 batches if the pan is crowded.",
-          "KID CHECKPOINT: pull plain slices for the kids NOW, before the sauce.",
-          "Off heat or on low: pour ~1/2 cup Momofuku over the rest, toss 30 sec until it clings and glosses.",
-          "Broccoli: butter + a pinch of salt. Plate over rice. Extra sauce at the table; sesame oil over the rice if wanted.",
-          "Leftover chicken → lunches (4 days). Cleanup: one skillet, the rice pot, the bags."
-        ]
-      }
-    },
-    {
-      id: "hotdogs",
-      cost: { est: 7.32, servings: 4, note: "RECEIPT-TRUED 9/13: the $1-off Nathan's coupon rang — franks $4.73, buns $2.39 as verified, new spend $7.12. Nathan's Bun Length Skinless Beef Franks 8 ct $5.73 VERIFIED 9/12; H-E-B Enriched Hot Dog Buns 8 ct $2.39 VERIFIED (Hill Country Fare 8 ct $1.55 = the cheaper flex; the Mrs Baird's→Bush's Combo Loco expired 9/8 and Mrs Baird's is $3.51 without it). Bush's Original Baked Beans 28 oz: the banked Combo Loco can, $0 — planned twice, never opened, tonight it gets used. Ketchup, mustard, pickles owned (~$0.20). New spend ~$8.12." },
-      nutrition: { serving: "2 hot dogs with condiments + 1/2 cup baked beans", calories: 745, protein: 27, carbs: 80, fat: 36 },
-      daytime: [],
-      title: "Hot Dogs with Baked Beans",
-      slot: "Dinner 5 · Thu Sep 17 — family, easy for the kids",
-      time: "~15 min",
-      equipment: ["Blackstone or skillet", "Saucepan"],
-      summary:
-        "The easy kid night, as asked: franks on the flat-top or in a skillet, buns toasted on the griddle edge, and the can of Bush's beans that came free with buns two weeks ago finally opened — this time with a real spoonful of Stubb's and a pinch of the BBQ rub stirred in, since last week's feedback said the beans wanted more doctoring. Extras go to lunches.",
-      links: [],
-      swapNote: "Brand-flex on buns: H-E-B or Hill Country Fare 8 ct is the cheap pick; Mrs Baird's only if a Combo Loco comes back. Beans: 2 tbsp Stubb's + 1/2 tsp Honey Hog rub + a squeeze of mustard — the 'more doctoring' from the 9/8 feedback. No fries tonight (the cook's call); the 1/4 bag of tots is there if the kids want them.",
-      recipe: {
-        activeTime: "~15 min",
-        cookTime: "dogs 6-8 min; beans 10 min",
-        ingredients: [
-          "Nathan's Bun Length Skinless Beef Franks, 8 ct (use 6-8; extras → lunches)",
-          "H-E-B Enriched Hot Dog Buns, 8 ct",
-          "Bush's Best Original Baked Beans, 28 oz (owned — Combo Loco can) + 2 tbsp Stubb's + 1/2 tsp Meat Church rub + 1 tsp yellow mustard (all owned)",
-          "ketchup, mustard, pickles (owned); a few thin onion rings from the spare onion if wanted"
-        ],
-        steps: [
-          "Beans into a saucepan on low with the Stubb's, rub and mustard; 10 min, stir now and then.",
-          "Blackstone (or a dry skillet) medium-high: franks 6-8 min, rolling for color. Or simmer in a skillet of water 5 min.",
-          "Buns cut-side down on the griddle edge ~30 sec, or 20 sec in the microwave.",
-          "Build at the table. Cleanup: griddle scrape, one saucepan."
-        ]
-      }
     }
   ],
   grocery: [
     { section: "Produce", aisle: "Produce (peppers/greens: left wall)", items: [
-      { name: "Fresh Large Hass Avocados, 2 (Sun tacos — eaten tonight, so buy READY, not firm)", est: 3.30, note: "$1.65 each VERIFIED 9/12 (price cut from $1.87). Jumbo is $2.59, the 5-ct bag $7.32 — no. Last week's pair sat 6 days and got tossed; this time they're cut the day they're bought" },
+      { name: "Fresh Large Hass Avocados, 2 (bought for Sunday's tacos — tossed after the AC outage skipped them)", est: 3.30, note: "$1.65 each VERIFIED 9/12 (price cut from $1.87). Jumbo is $2.59, the 5-ct bag $7.32 — no. Last week's pair sat 6 days and got tossed; this time they're cut the day they're bought" },
       { name: "Fresh Sugar Snap Peas, 8 oz (Sat side)", est: 1.97, note: "$1.97 VERIFIED 9/12 (sale from $2.53) + a coupon tag on the product — check the app" },
-      { name: "Yellow onion, 1 (spare — 2 on hand cover Sun + Mon)", est: 0.75, note: "RECEIPT 9/13: 0.76 lb @ $0.99/lb = $0.75" }
+      { name: "Yellow onion, 1 (banked — tinga's reslot + next week's Cajun pasta)", est: 0.75, note: "RECEIPT 9/13: 0.76 lb @ $0.99/lb = $0.75" }
     ]},
     { section: "Bakery", aisle: "Right edge of Bakery", items: [
       { name: "H-E-B Enriched Hot Dog Buns, 8 ct (Thu)", est: 2.39, note: "$2.39 VERIFIED 9/12. Hill Country Fare 8 ct $1.55 = the cheaper flex; Wonder $2.63 (price cut). Mrs Baird's $3.51 only makes sense if its Bush's Combo Loco comes back (it expired 9/8)" }
@@ -160,7 +160,7 @@ const WEEK_DATA = {
       { name: "Nathan's Bun Length Skinless Beef Franks, 8 ct (Thu)", est: 5.73, note: "RECEIPT 9/13: $5.73 − $1 coupon = $4.73. Oscar Mayer Bun-Length BEEF is $5.95; the $2.98 Oscar Mayer is the mixed-meat classic" }
     ]},
     { section: "Dairy", aisle: "Dairy (eggs/Mi Tienda tortillas: right wall; sour cream: back wall)", items: [
-      { name: "Daisy Squeeze Sour Cream, 14 oz (Sun tacos — at the table, so squeeze format)", est: 3.09, note: "$3.09 VERIFIED 9/12. The 9/6 tub got tossed unopened this week" }
+      { name: "Daisy Squeeze Sour Cream, 14 oz (banked unopened — tinga skipped Sunday)", est: 3.09, note: "$3.09 VERIFIED 9/12. The 9/6 tub got tossed unopened this week" }
     ]}
   ],
   groceryNote: "RECEIPT-TRUED 9/13: dinner-side spend on this page came to $30.12 after the $1 franks coupon. The ad's boneless beef pack was out of stock, so the bone-in chuck ribs (2.95 lb, $13.89) were bought as the backup. RESLOTTED 9/16: no AC in the house took out both Sunday's tinga and Monday's Cajun shrimp pasta. Sunday's cooked thigh bag got eaten ad hoc instead (sous vide + air-fried, a hit) — tinga's other ingredients are banked but need a new protein next time. Monday's pasta is fully banked at $0 new spend and moves to next week. Tuesday's ribs were separately skipped (just 2 at the table) and move to Saturday, freezer→bath instead of fridge→bath. Only two dinners land on this page as originally planned (Korean chicken, hot dogs) plus the reslotted Saturday ribs; the pasta's $33.78 (already paid) carries over as next week's one $25+ meal. (Tracker restocks ride on the private list, not this page.)",

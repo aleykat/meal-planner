@@ -196,7 +196,7 @@
   </footer>
 </div>
 
-<script src="week-data.js"></script>
+<script>/* cache-buster: phones otherwise keep last week's data for up to 10 min */document.write('<script src="week-data.js?v=' + Date.now() + '"><\/script>');</script>
 <script>
   // Normalize the WEEK_DATA schema to what this renderer expects.
   // (week-data.js evolved: label→title, id→week; store/adNote are new-again fields.)
