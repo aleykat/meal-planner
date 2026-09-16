@@ -45,6 +45,7 @@
   .links a { display: inline-block; margin: 2px 8px 2px 0; font-size: .88rem; color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
   .links a:hover { border-bottom-style: solid; }
   .links .ltag { font-size: .7rem; color: var(--muted); margin-left: 3px; }
+  .links .ltag-book { display: inline-block; margin: 2px 8px 2px 0; font-size: .88rem; color: var(--ink); }
   table { width: 100%; border-collapse: collapse; font-size: .92rem; }
   th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); }
   th { font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
@@ -215,7 +216,7 @@
   if (!WEEK.adNote) $("#ad-note").style.display = "none";
 
   // Menu
-  const tagLabel = { primary: "recipe", alt: "backup", technique: "technique", reddit: "reddit" };
+  const tagLabel = { primary: "recipe", alt: "backup", technique: "technique", reddit: "reddit", book: "book" };
   $("#menu").innerHTML = WEEK.meals.map(m => `
     <div class="card">
       <div class="slot">${m.slot}</div>
@@ -229,8 +230,9 @@
       ${m.daytime?.length ? `<div class="daytime"><div class="dt-title">⏰ Earlier that day</div><ul>${m.daytime.map(t => `<li>${t}</li>`).join("")}</ul></div>` : ""}
       <div class="summary">${m.summary}</div>
       ${m.swapNote ? `<div class="swap">↔ ${m.swapNote}</div>` : ""}
-      <div class="links">${m.links.map(l =>
-        `<a href="${l.url}" target="_blank" rel="noopener">${l.label}<span class="ltag">(${tagLabel[l.tag] || l.tag})</span></a>`).join("")}
+      <div class="links">${m.links.map(l => l.tag === "book"
+        ? `<span class="ltag-book">${l.label}<span class="ltag">(${tagLabel[l.tag] || l.tag})</span></span>`
+        : `<a href="${l.url}" target="_blank" rel="noopener">${l.label}<span class="ltag">(${tagLabel[l.tag] || l.tag})</span></a>`).join("")}
       </div>
       ${m.recipe ? `<details class="recipe"><summary>Recipe card</summary><div class="r-body">
         <div class="r-times">⏱ Active: ${m.recipe.activeTime} &nbsp;·&nbsp; 🔥 Cook: ${m.recipe.cookTime}</div>
