@@ -12,7 +12,7 @@ const WEEK_DATA = {
   week: "2026-09-20",
   title: "Week of Sep 20 — Smash Burgers, Recycled Beef Ribs, Tinga Tacos, a Banked Cajun Pasta & Saturday Chuck Roast",
   store: "H-E-B Irving #817 · shop Sunday Sep 20",
-  adNote: "Food-safety bans stay lifted (checked 9/20): both the raw-herb ban and the bagged-salad/leafy-greens ban were lifted 9/17 and nothing new has surfaced. Ad cycle 9/16-9/22: H-E-B Prime 1 Chuck Roast $5.99/lb, 80/20 Ground Chuck $6.99/lb, H-E-B Original Thick Cut Bacon $3.99 (sale), pork country-style ribs $1.77/lb, boneless skinless chicken breast $2.99/lb.",
+  adNote: "Food-safety bans stay lifted (checked 9/20): both the raw-herb ban and the bagged-salad/leafy-greens ban were lifted 9/17 and nothing new has surfaced. Ad cycle 9/16-9/22: H-E-B Prime 1 Chuck Roast $5.99/lb, 80/20 Ground Chuck $6.99/lb, pork country-style ribs $1.77/lb, boneless skinless chicken breast $2.99/lb.",
   shopDay: "Sunday Sep 20",
   meals: [
     {
@@ -58,7 +58,7 @@ const WEEK_DATA = {
     },
     {
       id: "beefribs",
-      cost: { est: 18.31, servings: 3, note: "$3.99 NEW SPEND — H-E-B Original Thick Cut Bacon 12 oz $3.99 VERIFIED, sale from $4.39 (only half the pack used tonight, the rest banks). Plus the recycled banked ribs ($13.89 already paid last week), banked Bush's beans ($0, Combo Loco freebie), banked potatoes (~$1.42 value), and owned rub/Stubb's/onion shares (~$1.00)." },
+      cost: { est: 16.31, servings: 3, note: "$0 NEW SPEND — nothing to buy (bacon dropped from the beans 9/20, the cook's call). The recycled banked ribs ($13.89 already paid last week), banked Bush's beans ($0, Combo Loco freebie), banked potatoes (~$1.42 value), and owned rub/Stubb's/onion shares (~$1.00)." },
       nutrition: { serving: "~6 oz cooked rib meat + doctored BBQ beans (3/4 cup) + air-fryer fries (3/4 cup)", calories: 790, protein: 48, carbs: 48, fat: 42 },
       daytime: [
         "TUE ~8 AM (1 min): check the sous vide water level, top up — a covered day at 155°F still evaporates some"
@@ -68,12 +68,12 @@ const WEEK_DATA = {
       time: "~15 min at dinner",
       equipment: ["Sous vide", "Broiler or Blackstone", "Air fryer", "Skillet"],
       summary:
-        "Last week's beef chuck ribs never made it into the bath — the Friday-night drop got missed, so Saturday's dinner didn't happen. The bags stayed sealed and frozen the whole time, so nothing's at risk: they go in Monday evening instead and are ready for tonight. Doctored Bush's beans (bacon, onion, Stubb's, brown sugar, mustard, 15 min simmer) finally give the banked can its own slot, off hot dog night for good. Active time at dinner is short — the long cook already happened.",
+        "Last week's beef chuck ribs never made it into the bath — the Friday-night drop got missed, so Saturday's dinner didn't happen. The bags stayed sealed and frozen the whole time, so nothing's at risk: they go in Monday evening instead and are ready for tonight. Doctored Bush's beans (onion, Stubb's, brown sugar, mustard, 15 min simmer) finally give the banked can its own slot, off hot dog night for good. Active time at dinner is short — the long cook already happened.",
       links: [
         { label: "DadCooksDinner — 48-Hour Sous Vide Grilled Short Ribs", url: "https://www.dadcooksdinner.com/48-hour-sous-vide-grilled-short-ribs-with-sous-vide-qa/", tag: "primary" },
         { label: "Amazing Food Made Easy — sous vide short ribs times & temps", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/short-ribs", tag: "technique" }
       ],
-      swapNote: "155°F/~25hr sits in Amazing Food Made Easy's 150-156°F 1-2 day band for a tender, still-sliceable braise. Beans are doctored per the 9/8 feedback and given their own slot — standing rule now, no more pairing with hot dogs.",
+      swapNote: "155°F/~25hr sits in Amazing Food Made Easy's 150-156°F 1-2 day band for a tender, still-sliceable braise. Beans are doctored per the 9/8 feedback (minus the bacon — skipped this week rather than buy a pack for three slices) and given their own slot — standing rule now, no more pairing with hot dogs.",
       recipe: {
         activeTime: "~15 min at dinner (rib bags already in the bath since Monday)",
         cookTime: "ribs ~25 hr at 155°F (Mon ~5 PM → Tue ~6 PM); beans 15 min simmer; fries ~20-22 min air fryer; broil/glaze 4-6 min",
@@ -81,8 +81,7 @@ const WEEK_DATA = {
           "2.95 lb sous vide beef chuck ribs, bagged (banked, recycled from last week — already salted/peppered/Honey Hog-dusted)",
           "~1/2 cup Stubb's Original BBQ Sauce (owned), for glazing",
           "1 can Bush's Original Baked Beans, 28 oz (banked)",
-          "2-3 slices H-E-B Original Thick Cut Bacon, diced",
-          "1/4 spare yellow onion, diced",
+          "1/4 spare yellow onion, diced + 1 tsp oil",
           "1 tbsp Stubb's + 1 tbsp brown sugar + 1 tsp mustard (owned)",
           "the last 3 russet potatoes (banked), diced 3/4 inch",
           "1 tbsp olive oil, salt, pepper (potatoes)"
@@ -90,7 +89,7 @@ const WEEK_DATA = {
         steps: [
           "~8 AM: check the bath water level, top up.",
           "~5:15 PM: dice the potatoes, toss with oil/salt/pepper, air fryer 400°F 20-22 min, shake once.",
-          "Skillet: bacon crisps 3-4 min, onion in 3 min, then the beans + Stubb's + brown sugar + mustard, simmer 15 min.",
+          "Skillet: a film of oil, onion 3-4 min until soft, then the beans + Stubb's + brown sugar + mustard, simmer 15 min.",
           "~5:35 PM: pull the rib bags (~25 hr). Pat VERY dry, onto a foil-lined sheet, brush with Stubb's.",
           "Broil 4-6 min until it bubbles and chars (or Blackstone, 2-3 min a side). Rest 5 min.",
           "KID CHECKPOINT: n/a — the teen eats it as the adults do.",
@@ -243,7 +242,6 @@ const WEEK_DATA = {
     ]},
     { section: "Meat & Seafood", aisle: "Meat Market", items: [
       { name: "H-E-B Natural Boneless Skinless Chicken Thighs, avg 2.0 lb (Wed)", est: 8.98, note: "$8.98 VERIFIED, $4.49/lb — the ad's $2.99/lb was breast, not thighs" },
-      { name: "H-E-B Original Thick Cut Bacon, 12 oz (Tue beans)", est: 3.99, note: "$3.99 VERIFIED, sale from $4.39 — matches the ad" },
       { name: "H-E-B Prime 1 Beef Boneless Chuck Roast, avg 2.51 lb (Sat)", est: 15.03, note: "$15.03 VERIFIED, $5.99/lb ad price. Coupon tag present but its Combo Loco needs $20+ of this SKU — not reached, declined" },
       { name: "H-E-B Prime 1 Ground Beef Chuck, 80% Lean, 2 lb (Mon)", est: 13.98, note: "$13.98 VERIFIED, $6.99/lb" }
     ]},
@@ -258,12 +256,12 @@ const WEEK_DATA = {
       { name: "Silver Spring Prepared Horseradish, 5 oz (NEW STAPLE — Sat cream sauce, amortizes)", est: 1.98, note: "$1.98 VERIFIED" }
     ]}
   ],
-  groceryNote: "New dinner spend $63.48, matching the heb.com list exactly (12 new lines + 1 free cucumber added to the existing 11-line snacks/lunches list). Recycled from last week: the beef chuck ribs (bagged, sealed, frozen since 9/16) never got their Friday drop, so they carry forward to Tuesday this week instead of going to waste. Thursday's Cajun shrimp pasta is almost entirely banked from the week of 9/7 (an AC outage skipped its first two slots) — this week's one $25+ meal. Saturday's chuck roast stays just under $25 true cost once its two new staple jars (garlic powder, horseradish) are charged only their per-meal share.",
+  groceryNote: "New dinner spend $59.49, matching the heb.com list exactly (11 new lines + 1 free cucumber added to the existing 11-line snacks/lunches list). Recycled from last week: the beef chuck ribs (bagged, sealed, frozen since 9/16) never got their Friday drop, so they carry forward to Tuesday this week instead of going to waste. Thursday's Cajun shrimp pasta is almost entirely banked from the week of 9/7 (an AC outage skipped its first two slots) — this week's one $25+ meal. Saturday's chuck roast stays just under $25 true cost once its two new staple jars (garlic powder, horseradish) are charged only their per-meal share.",
   // Read-only "On Hand" snapshot for the public page. Regenerated with each weekly plan
   // from pantry/inventory.json — sanitized: no staples ledger, no names.
   bank: [
     { name: "Sous vide beef chuck ribs, bone-in, chamber-sealed + rubbed", qty: "2.95 lb", location: "freezer", useBy: "2026-12-16", note: "TUESDAY — recycled from last week; drops into the bath Monday ~5 PM" },
-    { name: "Bush's Original Baked Beans, 28 oz", qty: "1 can", location: "pantry", useBy: "2027-08-30", note: "TUESDAY — doctored with bacon, onion, Stubb's, brown sugar, mustard" },
+    { name: "Bush's Original Baked Beans, 28 oz", qty: "1 can", location: "pantry", useBy: "2027-08-30", note: "TUESDAY — doctored with onion, Stubb's, brown sugar, mustard" },
     { name: "Russet potatoes", qty: "3 (the last of the 5 lb bag)", location: "pantry", useBy: "2026-09-24", note: "TUESDAY — air-fryer side, uses them up" },
     { name: "H-E-B Bakery Brioche Hamburger Buns", qty: "2 buns", location: "freezer", useBy: "2026-11-12", note: "MONDAY — 2 adult burgers; the kids go bunless" },
     { name: "H-E-B Natural Hickory Smoked Cheddar slices", qty: "1 pack (10 slices)", location: "fridge", useBy: "2026-09-23", note: "MONDAY — burger cheese, Meal Deal freebie" },
