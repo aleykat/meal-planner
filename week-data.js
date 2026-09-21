@@ -17,8 +17,8 @@ const WEEK_DATA = {
   meals: [
     {
       id: "smashburgers",
-      cost: { est: 21.32, servings: 4, note: "$18.93 NEW SPEND — 2 lb 80/20 ground chuck $13.98 VERIFIED, Hill Country Fare Frozen Crinkle Cut Fries 32 oz $2.97 VERIFIED (coupon available but required an unrelated Tyson buy, declined), Fresh Green Leaf Lettuce $1.98 VERIFIED (coupon clipped — Combo Loco anchor for a free cucumber). Plus 2 banked H-E-B Bakery Brioche buns (~$1.99 value), free hickory cheddar slices (Meal Deal, $0), and owned onion/pickles/condiments (~$0.40 share)." },
-      nutrition: { serving: "1 double-smash burger (2 patties, bun, cheese, lettuce, onion, pickles) + ~1 cup fries", calories: 870, protein: 44, carbs: 58, fat: 52 },
+      cost: { est: 19.34, servings: 4, note: "REVISED 9/20 — LETTUCE OUT OF STOCK AT PICKUP, not substituted, $0 charged. $16.95 NEW SPEND — 2 lb 80/20 ground chuck $15.26 RECEIPT-TRUED ($7.34/lb, ad was $6.99/lb), Hill Country Fare Frozen Crinkle Cut Fries 32 oz $3.12 RECEIPT-TRUED. Plus 2 banked H-E-B Bakery Brioche buns (~$1.99 value), free hickory cheddar slices (Meal Deal, $0), and owned onion/pickles/condiments (~$0.40 share). The lettuce Combo Loco (free cucumber) still applied at checkout despite the lettuce not being fulfilled." },
+      nutrition: { serving: "1 double-smash burger (2 patties, bun, cheese, onion, pickles) + ~1 cup fries", calories: 850, protein: 44, carbs: 56, fat: 51 },
       daytime: [
         "MON ~5:00 PM (2 min): drop the recycled frozen beef chuck rib bags into a 155°F bath — no thaw step needed, ~25 hr to Tuesday dinner"
       ],
@@ -31,7 +31,7 @@ const WEEK_DATA = {
       links: [
         { label: "Once Upon a Chef — Smash Burgers", url: "https://www.onceuponachef.com/recipes/smash-burgers.html", tag: "primary" }
       ],
-      swapNote: "Only 2 buns are banked for 4 servings — the kids get a plain patty on the spare sandwich bread or open-face rather than triggering a bun buy for one night. No tomato (standing preference); lettuce, onion, pickles, condiments all default in.",
+      swapNote: "Only 2 buns are banked for 4 servings — the kids get a plain patty on the spare sandwich bread or open-face rather than triggering a bun buy for one night. No tomato (standing preference); onion, pickles, condiments all default in. Lettuce was out of stock at pickup and not substituted, so there's no lettuce on these burgers this week.",
       recipe: {
         activeTime: "~20 min at dinner (+ 2 min mid-afternoon rib drop)",
         cookTime: "patties ~4 min total on the griddle; fries ~18-20 min at 425°F",
@@ -39,7 +39,6 @@ const WEEK_DATA = {
           "2 lb 80/20 ground chuck (8 smash patties, ~4 oz raw each)",
           "2 banked H-E-B Bakery Brioche Hamburger Buns, frozen (thaw ~15 min counter)",
           "H-E-B Natural Hickory Smoked Cheddar slices (banked)",
-          "Fresh Green Leaf Lettuce, a few leaves",
           "1/4 spare yellow onion, thin sliced",
           "Pickles, ketchup, mustard (owned) — NO tomato",
           "1 bag Hill Country Fare Frozen Crinkle Cut Fries, 32 oz",
@@ -51,7 +50,7 @@ const WEEK_DATA = {
           "Blackstone or cast-iron ripping hot. Portion the ground chuck into 8 loose 4 oz balls, salt.",
           "Working in batches: smash each ball thin, ~1.5-2 min undisturbed for the crust, flip, cheese on immediately, ~1 min more.",
           "KID CHECKPOINT: only 2 buns are banked — build the kids' burgers as a single plain patty on the spare sandwich bread or open-face, no bun needed.",
-          "Adult burgers: 2 patties stacked on a toasted brioche bun with lettuce, onion, pickles, condiments.",
+          "Adult burgers: 2 patties stacked on a toasted brioche bun with onion, pickles, condiments (no lettuce — out of stock at pickup).",
           "Plate with fries. Cleanup: griddle scrape, one sheet pan/basket."
         ]
       }
@@ -236,9 +235,9 @@ const WEEK_DATA = {
     { section: "Produce", aisle: "In Produce", items: [
       { name: "Fresh Baby Gold Potatoes, 1.5 lb bag (Sat side)", est: 3.48, note: "$3.48 VERIFIED" },
       { name: "Fresh Cilantro, 1 bunch (Wed garnish)", est: 0.46, note: "$0.46 VERIFIED" },
-      { name: "Fresh Green Leaf Lettuce, each (Mon burger topping)", est: 1.98, note: "$1.98 VERIFIED — Combo Loco anchor, coupon clipped for a free cucumber" },
-      { name: "Fresh Red Bell Pepper, each (Thu)", est: 0.97, note: "$0.97 VERIFIED, on sale from $1.48" },
-      { name: "Fresh Cucumber, each (free — Combo Loco freebie off the lettuce)", est: 0.53, note: "Should ring $0 at checkout with the lettuce in cart" }
+      { name: "Fresh Green Leaf Lettuce, each (Mon burger topping)", est: 0, note: "OUT OF STOCK at pickup 9/20 — not substituted, $0 charged. No lettuce on Monday's burgers this week." },
+      { name: "Fresh Red Bell Pepper, each (Thu)", est: 1.02, note: "$1.02 RECEIPT-TRUED, on sale from $1.48" },
+      { name: "Fresh Seedless Cucumber, each (free — Combo Loco freebie)", est: 0, note: "RECEIPT-TRUED: rang $0 — the Combo Loco still applied even though the lettuce wasn't fulfilled. Extra, unassigned to any recipe (works as burger crunch in place of the missing lettuce, or on the Caesar)." }
     ]},
     { section: "Meat & Seafood", aisle: "Meat Market", items: [
       { name: "H-E-B Natural Boneless Skinless Chicken Thighs, avg 2.0 lb (Wed)", est: 8.98, note: "$8.98 VERIFIED, $4.49/lb — the ad's $2.99/lb was breast, not thighs" },
