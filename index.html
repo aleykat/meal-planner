@@ -445,9 +445,12 @@
       const onHand = (inv.items || []).filter(i => i.status === "on-hand");
       const TRACKER_CATS = { "kid-snacks": "Kid Snacks", "kid-alt-meals": "Kid Alt Meals",
         "adult-lunch": "Adult Lunches", "adult-snacks": "Adult Snacks", "teen-lunch": "Teen Lunch" };
-      const staples = onHand.filter(i => i.category === "staple")
+      // A staple with a par is restocked by count, so it belongs in the count walk,
+      // not in the collapsed accordion that count mode hides.
+      const isParStaple = i => i.category === "staple" && (i.parCount != null || i.par);
+      const staples = onHand.filter(i => i.category === "staple" && !isParStaple(i))
         .sort((a, b) => a.name.localeCompare(b.name));
-      const tracker = onHand.filter(i => i.category in TRACKER_CATS);
+      const tracker = onHand.filter(i => i.category in TRACKER_CATS || isParStaple(i));
       const items = onHand.filter(i => i.category !== "staple" && !(i.category in TRACKER_CATS))
         .sort((a, b) => (a.useBy || "9999").localeCompare(b.useBy || "9999"));
       const today = new Date();
@@ -526,7 +529,7 @@
         const below = tracker.filter(i => i.parCount != null && i.count != null && i.count < i.parCount);
         html += `<div class="tracker-sec">
           <h3>🧺 Non-Dinner Tracker · ${tracker.length} items${stale ? ` · ${stale} not counted today` : " · all counted today"}</h3>
-          ${Object.entries(TRACKER_CATS).map(([cat, label]) => {
+          ${Object.entries({ ...TRACKER_CATS, staple: "Household Stock" }).map(([cat, label]) => {
             const catItems = tracker.filter(i => i.category === cat);
             return catItems.length ? `<div class="tracker-cat">${label}</div>` +
               catItems.map(i => row(i, "ifdate")).join("") : "";
