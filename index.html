@@ -57,6 +57,13 @@
   .fb-controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
   .rate { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 5px 14px; cursor: pointer; font-size: .88rem; }
   .rate.sel { background: var(--accent); border-color: var(--accent); color: #fff; }
+  /* 2026-10-05: cook-outcome row on each menu card (local page only) */
+  .cook-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 8px 0 2px; font-size: .8rem; color: var(--muted); }
+  .cook-btn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 3px 11px; cursor: pointer; font-size: .8rem; }
+  .cook-btn:hover { border-color: var(--accent); }
+  .cook-btn.sel { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .cook-btn.sel[data-o="cooked"] { background: var(--good); border-color: var(--good); }
+  .weekly-chip { font-size: .72rem; padding: 2px 8px; border-radius: 999px; white-space: nowrap; background: #1565c022; color: #1565c0; }
   textarea { width: 100%; min-height: 60px; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font: inherit; font-size: .9rem; background: var(--bg); color: var(--ink); resize: vertical; }
   .savebtn { margin-top: 8px; background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 8px 18px; font: inherit; font-weight: 600; cursor: pointer; }
   .savebtn:disabled { opacity: .5; cursor: default; }
@@ -265,6 +272,20 @@
 
   // Menu
   const tagLabel = { primary: "recipe", alt: "backup", technique: "technique", reddit: "reddit", book: "book" };
+  // 2026-10-05: the night a meal is planned for, as YYYY-MM-DD, for the cook log.
+  // Prefer an explicit m.night; otherwise parse "Mon Oct 5" out of the slot text,
+  // taking the year from the week id (and rolling it when a January night follows
+  // a December week). Falls back to the week id itself.
+  const MONTHS = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };
+  function nightOf(m) {
+    if (m.night) return m.night;
+    const mt = (m.slot || "").match(/\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*\.?\s+([A-Za-z]{3})\w*\.?\s+(\d{1,2})\b/);
+    if (!mt || !(mt[1].toLowerCase() in MONTHS)) return WEEK.id;
+    let year = Number(WEEK.id.slice(0, 4));
+    const mon = MONTHS[mt[1].toLowerCase()];
+    if (mon === 0 && Number(WEEK.id.slice(5, 7)) === 12) year += 1;
+    return `${year}-${String(mon + 1).padStart(2, "0")}-${String(mt[2]).padStart(2, "0")}`;
+  }
   $("#menu").innerHTML = WEEK.meals.map(m => `
     <div class="card">
       <div class="slot">${m.slot}</div>
@@ -278,6 +299,13 @@
       ${m.daytime?.length ? `<div class="daytime"><div class="dt-title">⏰ Earlier that day</div><ul>${m.daytime.map(t => `<li>${t}</li>`).join("")}</ul></div>` : ""}
       <div class="summary">${m.summary}</div>
       ${m.swapNote ? `<div class="swap">↔ ${m.swapNote}</div>` : ""}
+      ${m.id !== "prep" ? `<div class="cook-row" data-meal="${m.id}" data-night="${nightOf(m)}">
+        <span>Did it happen?</span>
+        <button class="cook-btn" data-o="cooked">✓ Cooked</button>
+        <button class="cook-btn" data-o="slipped">↷ Slipped</button>
+        <button class="cook-btn" data-o="skipped">✕ Skipped</button>
+        <span class="cook-note"></span>
+      </div>` : ""}
       <div class="links">${m.links.map(l => l.tag === "book"
         ? `<span class="ltag-book">${l.label}<span class="ltag">(${tagLabel[l.tag] || l.tag})</span></span>`
         : `<a href="${l.url}" target="_blank" rel="noopener">${l.label}<span class="ltag">(${tagLabel[l.tag] || l.tag})</span></a>`).join("")}
@@ -408,7 +436,37 @@
     ["inv-h2", "inv-card", "fb-h2", "fb-intro", "offline-warn", "feedback", "nav-inv", "nav-fb", "nav-count"].forEach(id => {
       const el = document.getElementById(id); if (el) el.style.display = "none";
     });
+    document.querySelectorAll(".cook-row").forEach(el => el.style.display = "none"); // writes to the cook log need the server
   }
+
+  // Cook log (2026-10-05): one tap per menu card the night it happens — "did the
+  // planned dinner happen on its night" used to reach the log a week late through
+  // chat relays. Same file cooklog.py writes; last row per meal wins.
+  const OUTCOME_TXT = { cooked: "cooked", slipped: "slipped to another night", skipped: "skipped" };
+  async function loadCookLog() {
+    try {
+      const rows = await (await fetch("/api/cooklog")).json();
+      document.querySelectorAll("#menu .cook-row").forEach(rowEl => {
+        const mine = rows.filter(r => r.week === WEEK.id && r.mealId === rowEl.dataset.meal);
+        const last = mine[mine.length - 1];
+        rowEl.querySelectorAll(".cook-btn").forEach(b => b.classList.toggle("sel", !!last && b.dataset.o === last.outcome));
+        $(".cook-note", rowEl).textContent = last ? `${OUTCOME_TXT[last.outcome] || last.outcome} · ${(last.reason || "").replace(/^page /, "")}` : "";
+      });
+    } catch { if (!IS_LOCAL) remoteMode(); }
+  }
+  $("#menu").addEventListener("click", async e => {
+    const b = e.target.closest(".cook-btn"); if (!b) return;
+    const rowEl = b.closest(".cook-row");
+    const note = $(".cook-note", rowEl);
+    note.textContent = "saving…";
+    try {
+      const res = await fetch("/api/cooklog", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ week: WEEK.id, mealId: rowEl.dataset.meal, date: rowEl.dataset.night, outcome: b.dataset.o }) });
+      if (!res.ok) throw 0;
+      loadCookLog();
+    } catch { note.textContent = "save failed — is the server running?"; }
+  });
+  loadCookLog();
 
   // Quick-nav: Recipes = expand every recipe card, then scroll to the menu
   $("#nav-recipes").addEventListener("click", () => {
@@ -499,23 +557,29 @@
       // "ifdate" = show it only when the item has a useBy (tracker rows — most
       // are shelf-stable, so a "no date" badge on every row would be noise)
       const row = (i, withBadge) => {
-        let badge = "";
+        let badge = "", past = false;
         if (withBadge === true) badge = `<span class="days green">no date</span>`;
         if (withBadge && i.useBy) {
           const d = Math.ceil((new Date(i.useBy + "T12:00") - today) / 86400000);
           const cls = d <= 2 ? "red" : d <= 6 ? "amber" : "green";
-          badge = `<span class="days ${cls}">${d < 0 ? "past date" : d + "d left"}</span>`;
+          past = d < 0;
+          badge = `<span class="days ${cls}">${past ? "past date" : d + "d left"}</span>`;
         }
-        // counted-today rows dim themselves in count mode so the eye lands on what's left
-        const doneCls = i.lastCounted === todayStr ? " counted-today" : "";
+        // counted-today rows dim themselves in count mode so the eye lands on what's left;
+        // weekly standing buys (2026-10-05) are never counted — no editor, a chip instead
+        const doneCls = i.lastCounted === todayStr || i.weekly ? " counted-today" : "";
+        const editor = i.weekly
+          ? `<span class="count-edit"><span class="weekly-chip">weekly buy · ${String(i.weeklyQty || "").split(/[,:(]/)[0].trim() || "every list"}</span></span>`
+          : countEditor(i);
         return `<div class="inv-row${doneCls}" data-id="${i.id}">
           <span title="${i.location}">${locIcon[i.location] || "🧊"}</span>
           <div class="inv-main">
             <div class="inv-name">${i.name}${i.qty ? ` <span style="font-weight:400;color:var(--muted)">· ${i.qty}</span>` : ""}</div>
             ${i.note ? `<div class="inv-note">${i.note}</div>` : ""}
-            ${countEditor(i)}
+            ${editor}
           </div>
           ${badge}
+          ${past ? `<button class="inv-btn" data-act="extend" title="still fine — push the date a week out">👍 Still good</button>` : ""}
           <button class="inv-btn" data-act="used">✓ Used</button>
           <button class="inv-btn" data-act="tossed">🗑 Tossed</button>
         </div>`;
@@ -525,8 +589,9 @@
       let html = items.length ? items.map(i => row(i, true)).join("")
         : `<div style="color:var(--muted);font-size:.9rem">Nothing tracked right now — add items below.</div>`;
       if (tracker.length) {
-        const stale = tracker.filter(i => i.lastCounted !== todayStr).length;
-        const below = tracker.filter(i => i.parCount != null && i.count != null && i.count < i.parCount);
+        const countable = tracker.filter(i => !i.weekly); // weekly buys never count as stale or below par
+        const stale = countable.filter(i => i.lastCounted !== todayStr).length;
+        const below = countable.filter(i => i.parCount != null && i.count != null && i.count < i.parCount);
         html += `<div class="tracker-sec">
           <h3>🧺 Non-Dinner Tracker · ${tracker.length} items${stale ? ` · ${stale} not counted today` : " · all counted today"}</h3>
           ${Object.entries({ ...TRACKER_CATS, staple: "Household Stock" }).map(([cat, label]) => {
@@ -547,7 +612,7 @@
         </details>`;
       }
       $("#inventory").innerHTML = html;
-      renderCountProgress(tracker, todayStr);
+      renderCountProgress(tracker.filter(i => !i.weekly), todayStr);
       hideBank(); // live tracker is up — the static snapshot would be a stale duplicate
     } catch {
       if (!IS_LOCAL) { remoteMode(); return; }
@@ -627,8 +692,9 @@
     const btn = e.target.closest("[data-act]");
     if (btn) {
       const id = btn.closest(".inv-row").dataset.id;
+      const msg = btn.dataset.act === "extend" ? { action: "extend", id } : { action: "status", id, status: btn.dataset.act };
       await fetch("/api/inventory", { method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action: "status", id, status: btn.dataset.act }) });
+        body: JSON.stringify(msg) });
       loadInventory();
       return;
     }
