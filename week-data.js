@@ -6,9 +6,9 @@
 // request 10/10. Prices VERIFIED on heb.com 10/10 (Chrome, logged in) except the carried weekly snack lines.
 const WEEK_DATA = {
   week: "2026-10-12",
-  title: "Week of Oct 12 — Carnitas, Honey Hog Thighs, Leftover-Pork Sandwiches, Easy-Night Hot Dogs, Korean-Glazed Pork Tenderloin & Saturday Smash Burgers",
+  title: "Week of Oct 12 — Carnitas, Korean-Glazed Pork Tenderloin, Leftover-Pork Sandwiches, Easy-Night Hot Dogs, Roasted Honey Hog Thighs & Saturday Smash Burgers",
   store: "H-E-B Irving #817 · shop Sunday Oct 11",
-  adNote: "Food-safety check 10/10: nothing active touches this menu. Avoid sprouts and raw-milk cheese. Ad cycle 10/7-10/13: whole pork tenderloin $2.47/lb (used Fri), large Hass avocados $0.97 (used Mon), Hill Country Fare boneless chicken breast $1.97/lb (not banked), wild-caught Gulf shrimp $8.97/lb, rainbow trout $6.97/lb, bacon $3.99.",
+  adNote: "Food-safety check 10/10: nothing active touches this menu. Avoid sprouts and raw-milk cheese. Ad cycle 10/7-10/13: whole pork tenderloin $2.47/lb (used Tue, moved from Fri), large Hass avocados $0.97 (used Mon), Hill Country Fare boneless chicken breast $1.97/lb (not banked), wild-caught Gulf shrimp $8.97/lb, rainbow trout $6.97/lb, bacon $3.99.",
   shopDay: "Sunday Oct 11",
   meals: [
     {
@@ -62,47 +62,48 @@ const WEEK_DATA = {
       }
     },
     {
-      id: "honeyhogthighs",
-      cost: { est: 8.99, servings: 4, note: "$7.54 NEW SPEND (one yellow onion $0.59, Bush's Best Original Baked Beans 28 oz $2.96 VERIFIED 10/11, H-E-B Original Bacon 12 oz $3.99 VERIFIED ad price — the banked can and bacon were counted out 10/11). 4 slices of the bacon ~$1.14 to this meal, the rest banks. Banked at paid price: one sealed Honey Hog bag of Hill Country Fare bone-in thighs ~2.4 lb ($2.31 at the $0.97/lb ad), ~2 lb of the 5 lb russets $0.79, Stubb's + brown sugar + mustard ~$0.70, oil + Honey Hog for the wedges ~$0.50. The S&P wild-card thigh bag stays banked. Four at the table with a teen — thin at 2.4 lb, so the beans and wedges carry it." },
-      nutrition: { serving: "1.25 thighs (~5 oz meat) + ~6 wedges + 3/4 cup baked beans", calories: 880, protein: 40, carbs: 70, fat: 46 },
+      id: "koreanpork",
+      cost: { est: 9.99, servings: 4, note: "$6.79 NEW SPEND — Fresh Whole Boneless Pork Tenderloin avg 2.32 lb $5.73 VERIFIED ($2.47/lb ad, reg $8.28 — match the ad product; the H-E-B Natural tenderloin is $7.65/lb), 2 cucumbers $1.06. Banked: about a third of the Momofuku Sweet & Savory Korean BBQ Sauce ~$1.50 (a Combo Loco bottle; valued, not $0), 2 cups jasmine ~$0.90, rice vinegar + sesame oil + garlic + soy + brown sugar ~$0.80. Rang 1.31 lb (short of the ~1.75 lb target), so no leftover loin. Moved from Fri 10/16 to Tue 10/13 (swapped with the thighs, the family 10/13)." },
+      nutrition: { serving: "~5 oz glazed pork tenderloin + 1 cup rice + 3/4 cup cucumber salad", calories: 540, protein: 40, carbs: 62, fat: 12 },
       daytime: [
-        "TUE ~12:30 PM (3 min): FROZEN Honey Hog thigh bag into a 147°F bath — ~5 hr (4 hr cook + 1 hr in-bath thaw), no pre-thaw",
-        "TUE ~5:00 PM: pull the bag, pat dry, start beans and wedges (details in the steps)"
+        "SUN evening (at the shop): trim the silver skin, seal the tenderloin (1.31 lb came in, short) with ~1/4 cup Momofuku sauce, freeze flat",
+        "TUE ~3:30 PM (2 min): FROZEN tenderloin bag straight into a 140°F bath — ~2.5 hr (about 1 hr of in-bath thaw + 1.5 hr cook); it holds in the bath through the 7:15 second round",
+        "TUE ~5:15 PM (3 min): rice cooker on; smash the cucumbers"
       ],
-      title: "Sous Vide Honey Hog Chicken Thighs (Air-Fryer Crisp) with Bacon Baked Beans & Wedges",
-      slot: "Dinner 2 · Tue Oct 13 — 2 adults + 2 kids, served in two rounds (first ~6:00, second ~7:15 after the 6-7 PM appointment)",
+      title: "Momofuku-Glazed Sous Vide Pork Tenderloin with Rice & Smashed Cucumber Salad",
+      slot: "Dinner 2 · Tue Oct 13 — 2 adults + 2 kids, served in two rounds (first ~6:00, second ~7:15 after the 6-7 PM appointment); swapped in from Friday",
       night: "2026-10-13",
       time: "~25 min active, after 5",
-      equipment: ["Sous vide", "Air fryer", "Stove"],
+      equipment: ["Sous vide", "Blackstone or skillet", "Rice cooker"],
       summary:
-        "Zero new meat: the sealed Honey Hog thigh bag from the freezer goes into a 147°F bath at lunch, then straight to the air fryer for crisp skin — the same move as the 9/13 thighs that earned a Hit. A can of Bush's gets the BBQ-plate slot, doctored with bacon, onion, Stubb's, brown sugar and mustard (a thin 1-tbsp-Stubb's version missed on 9/8). Russet wedges in the second air-fryer round. Two sit down first; the others get re-crisped thighs and reheated beans when they are back.",
+        "The ad's best meat price of the week, moved up from Friday. The tenderloin was sealed Sunday with a third of a cup of the Momofuku Korean BBQ sauce (the bottle suggests marinating) and frozen in the bag, so it goes into a 140°F bath frozen mid-afternoon, then gets a hard sear with the bag juices reduced into a glaze. Plain jasmine rice (Asian plate, no bouillon) and a smashed cucumber salad with rice vinegar, sesame oil and garlic. Half is seared at 6:00; the other half waits in the bath for the 7:15 round. Kids' slices come off before the glaze goes on.",
       links: [
-        { label: "Amazing Food Made Easy — sous vide chicken thigh guide (generic legs/thighs: 147°F, 4-8 hr)", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/chicken-thighs", tag: "technique" },
-        { label: "Southern Bite — Bacon Brown Sugar Baked Beans (the doctored-can idea)", url: "https://southernbite.com/bacon-brown-sugar-baked-beans/", tag: "recipe" },
-        { label: "Well Plated — Air Fryer Potato Wedges", url: "https://www.wellplated.com/air-fryer-potato-wedges/", tag: "recipe" }
+        { label: "Serious Eats — Sous Vide Pork Tenderloin (140°F medium, 1-4 hr)", url: "https://www.seriouseats.com/sous-vide-pork-tenderloin-recipe", tag: "technique" },
+        { label: "Momofuku — Sweet & Savory Korean BBQ Sauce (marinade use)", url: "https://shop.momofuku.com/products/sweet-savory-bbq-sauce", tag: "product" },
+        { label: "The Woks of Life — Smashed Asian Cucumber Salad", url: "https://thewoksoflife.com/smashed-asian-cucumber-salad/", tag: "recipe" }
       ],
-      swapNote: "The thigh bag was seasoned with Honey Hog when it was sealed (a bottled rub used as directed). 147°F / 4+ hr comes from the technique page above, which only gives a generic legs-and-thighs entry; the in-bath thaw adds an hour. Beans are scaled to ONE can with the bacon, onion, Stubb's, brown sugar and mustard the family approved on 9/8 rather than the linked recipe's two cans. Wedges: 2 tbsp oil per 1.5 lb, 350°F 15 min + 400°F 15 min.",
+      swapNote: "The sauce is a bottled product used as directed (marinade); the glaze is just its bag juices simmered 2 min. Cucumber salad scaled to 2 cukes: 1.5 tbsp rice vinegar, 2 tsp sesame oil, 1-2 garlic cloves, 1 tsp soy, a pinch of salt and brown sugar for the recipe's sugar. Cooked from frozen: allow about an hour of in-bath thaw on top of the technique page's 1-4 hr window. Moved to Tuesday 10/13 when the thighs moved to Friday.",
       recipe: {
         activeTime: "~25 min active, after 5",
-        cookTime: "thighs 147°F ~5 hr from frozen + 8-10 min air fry; beans 15 min; wedges 30 min",
+        cookTime: "bath 140°F ~2.5 hr from frozen; sear 4 min; rice 30 min",
         ingredients: [
-          "1 sealed bag Hill Country Fare bone-in skin-on chicken thighs with Honey Hog, ~2.4 lb, FROZEN (banked)",
-          "1 can Bush's Best Original Baked Beans, 28 oz (new)",
-          "4 slices H-E-B Original bacon from a new 12 oz pack, chopped (new; the rest banks)",
-          "1 yellow onion, diced (new)",
-          "3 tbsp Stubb's Original, 1 tbsp brown sugar, 1 tsp yellow mustard (owned)",
-          "~2 lb russet potatoes from the 5 lb bag (banked), cut into wedges",
-          "2 tbsp canola oil + 1.5 tsp Meat Church Honey Hog + salt for the wedges (owned)"
+          "1 Fresh Whole Boneless Pork Tenderloin, 1.31 lb, sealed with the sauce and FROZEN (curbside short-weighted it from 2.32 lb, ~1.75 lb was the target, so portions run lean; the rice and cucumber salad carry it)",
+          "~1/4 cup Momofuku Sweet & Savory Korean BBQ Sauce (already in the bag)",
+          "2 cups jasmine rice, 2.5 cups water (banked) — plain, no bouillon",
+          "2 fresh cucumbers (new)",
+          "1.5 tbsp rice vinegar, 2 tsp Kadoya sesame oil, 1-2 garlic cloves, 1 tsp soy sauce, pinch salt + brown sugar (owned)",
+          "1 tbsp canola oil for the sear (owned)"
         ],
         steps: [
-          "TUE ~12:30 PM: bath to 147°F; the frozen bag goes straight in — it cooks about 5 hours including the thaw.",
-          "~5:00 PM: pull the bag. Pat the thighs very dry; keep the skin side up on a rack.",
-          "Cut the russets into 8 wedges each, toss with oil, Honey Hog and salt. Air fryer 350°F 15 min, then 400°F ~15 min, tossing halfway.",
-          "Beans: chopped bacon in a saucepan medium heat 5 min until crisp; onion in the fat 5 min; the can, Stubb's, brown sugar, mustard. Simmer 15 min, stirring, until thick.",
-          "When the wedges come out, thighs into the air fryer at 400°F, 8-10 min skin side up until the skin crackles.",
-          "First round (~6:00 PM): plate thighs, wedges, beans. KID CHECKPOINT: pull plain thigh meat and wedges before any extra Stubb's goes on.",
-          "Second round (~7:15 PM): thighs and wedges 3-4 min in the air fryer, beans reheated.",
-          "Cleanup: the bag, the air fryer basket, one saucepan."
+          "SUN: trim the silver skin; slide the tenderloin (cut in half if the bag is tight) into a chamber bag with 1/4 cup of the sauce; seal and freeze flat.",
+          "TUE ~3:30 PM: bath to 140°F; the frozen bag goes straight in, about 2.5 hr.",
+          "~5:15 PM: rice cooker — rinsed jasmine, 2.5 cups water, start. Smash the cucumbers, toss with vinegar, sesame oil, garlic, soy, salt and a pinch of brown sugar; fridge.",
+          "~5:50 PM: pull the bag; pour the juices into a small pan and simmer 2 min until syrupy. Take out half the pork for the first round; put the other half in a zip bag, press out the air, and return it to the bath for 7:15.",
+          "KID CHECKPOINT: slice a few pieces for the kids from the cooler end before searing; they eat these plain with rice.",
+          "Pat the pork very dry. Blackstone or skillet ripping hot with the oil: sear 45-60 sec a side, brush with the reduced juices, rest 3 min, slice.",
+          "First round (~6:00 PM): slices over rice with the cucumber salad and some glaze.",
+          "Second round (~7:15 PM): the held half out of the bath, patted dry, seared and glazed the same way; rice stays warm in the cooker.",
+          "Cleanup: the bags, the sear surface, one small pan."
         ]
       }
     },
@@ -172,48 +173,47 @@ const WEEK_DATA = {
       }
     },
     {
-      id: "koreanpork",
-      cost: { est: 9.99, servings: 4, note: "$6.79 NEW SPEND — Fresh Whole Boneless Pork Tenderloin avg 2.32 lb $5.73 VERIFIED ($2.47/lb ad, reg $8.28 — match the ad product; the H-E-B Natural tenderloin is $7.65/lb), 2 cucumbers $1.06. Banked: about a third of the Momofuku Sweet & Savory Korean BBQ Sauce ~$1.50 (a Combo Loco bottle; valued, not $0), 2 cups jasmine ~$0.90, rice vinegar + sesame oil + garlic + soy + brown sugar ~$0.80. Recipe need ~1.75 lb; the extra ~0.5 lb of loin is Saturday's lunch." },
-      nutrition: { serving: "~5 oz glazed pork tenderloin + 1 cup rice + 3/4 cup cucumber salad", calories: 540, protein: 40, carbs: 62, fat: 12 },
+      id: "honeyhogthighs",
+      cost: { est: 11.30, servings: 4, note: "$7.54 NEW SPEND (one yellow onion $0.59, Bush's Best Original Baked Beans 28 oz $2.96 VERIFIED 10/11, H-E-B Original Bacon 12 oz $3.99 VERIFIED ad price — the banked can and bacon were counted out 10/11). 4 slices of the bacon ~$1.14 to this meal, the rest banks. Banked at paid price: BOTH sealed bags of Hill Country Fare bone-in thighs, Honey Hog + plain S&P, 4.77 lb ($4.62 at the $0.97/lb ad), ~2 lb of the 5 lb russets $0.79, Stubb's + brown sugar + mustard ~$0.70, oil + Honey Hog for the wedges ~$0.50. Moved from Tue 10/13 to Fri 10/16 (swapped with the tenderloin, the family 10/13); using both bags fixes the thin single-bag portion." },
+      nutrition: { serving: "2 thighs (~7 oz meat) + ~6 wedges + 3/4 cup baked beans", calories: 1000, protein: 52, carbs: 70, fat: 56 },
       daytime: [
-        "SUN evening (at the shop): trim the silver skin, seal the tenderloin(s) with ~1/3 cup Momofuku sauce, freeze flat",
-        "THU evening (1 min): the tenderloin bag from freezer to fridge",
-        "FRI ~5:00 PM (2 min): thawed bag into a 140°F bath, ~1.5 hr; rice cooker on at ~6:00"
+        "THU evening (1 min): BOTH thigh bags (Honey Hog + S&P) from freezer to fridge, flat on a sheet pan",
+        "FRI ~5:00 PM: oven to 425°F; thighs out of the bags, patted dry, skin up on a rack; beans and wedges (details in the steps)"
       ],
-      title: "Momofuku-Glazed Sous Vide Pork Tenderloin with Rice & Smashed Cucumber Salad",
-      slot: "Dinner 4 · Fri Oct 16 — 2 adults + 2 kids (home by dinner)",
+      title: "Roasted Honey Hog & S&P Chicken Thighs with Bacon Baked Beans & Wedges",
+      slot: "Dinner 4 · Fri Oct 16 — 2 adults + 2 kids (home by dinner; Motorplex day); swapped in from Tuesday",
       night: "2026-10-16",
       time: "~25 min active, after 5",
-      equipment: ["Sous vide", "Blackstone or skillet", "Rice cooker"],
+      equipment: ["Oven", "Air fryer", "Stove"],
       summary:
-        "The ad's best meat price of the week. Tenderloin is sealed Sunday with a third of a cup of the Momofuku Korean BBQ sauce (the bottle suggests marinating) and frozen in the bag, so Friday is a thaw in the fridge, a 140°F bath at 5, and a hard sear with the bag juices reduced into a glaze. Plain jasmine rice (Asian plate, no bouillon) and a smashed cucumber salad with rice vinegar, sesame oil and garlic. Kids' slices come off before the glaze goes on.",
+        "Zero new meat, and now both banked thigh bags: the Honey Hog bag and the plain salt-and-pepper bag thaw in the fridge Thursday night and roast skin-up at 425°F on Friday. That's a hands-off cook for a Motorplex day, with no lunchtime bath drop, and the skin crisps without a separate step. A can of Bush's gets the BBQ-plate slot, doctored with bacon, onion, Stubb's, brown sugar and mustard (a thin 1-tbsp-Stubb's version missed on 9/8). Russet wedges go in the air fryer while the thighs roast. Two flavors on one sheet pan; the kids get the plain S&P ones.",
       links: [
-        { label: "Serious Eats — Sous Vide Pork Tenderloin (140°F medium, 1-4 hr)", url: "https://www.seriouseats.com/sous-vide-pork-tenderloin-recipe", tag: "technique" },
-        { label: "Momofuku — Sweet & Savory Korean BBQ Sauce (marinade use)", url: "https://shop.momofuku.com/products/sweet-savory-bbq-sauce", tag: "product" },
-        { label: "The Woks of Life — Smashed Asian Cucumber Salad", url: "https://thewoksoflife.com/smashed-asian-cucumber-salad/", tag: "recipe" }
+        { label: "Food Republic — the right oven temperature for chicken thighs (400-425°F, 30-40 min, 175-190°F inside)", url: "https://www.foodrepublic.com/2157801/right-oven-temp-perfect-chicken-thighs/", tag: "technique" },
+        { label: "Southern Bite — Bacon Brown Sugar Baked Beans (the doctored-can idea)", url: "https://southernbite.com/bacon-brown-sugar-baked-beans/", tag: "recipe" },
+        { label: "Well Plated — Air Fryer Potato Wedges", url: "https://www.wellplated.com/air-fryer-potato-wedges/", tag: "recipe" }
       ],
-      swapNote: "The sauce is a bottled product used as directed (marinade); the glaze is just its bag juices simmered 2 min. Cucumber salad scaled to 2 cukes: 1.5 tbsp rice vinegar, 2 tsp sesame oil, 1-2 garlic cloves, 1 tsp soy, a pinch of salt and brown sugar for the recipe's sugar. Tenderloin cooks day six from the shop, so it freezes sealed on Sunday per the shelf-life rule.",
+      swapNote: "The thigh bags were seasoned (Honey Hog, plain S&P) when they were sealed; the rub is a bottled product used as directed. Roast at 425°F to 175°F at the thickest part, away from the bone. Honey Hog has sugar in it, so tent those thighs with foil if the skin darkens before they reach temperature. If someone is home at noon, the original method still works: the frozen bags go into a 147°F bath at ~12:30 for ~5 hr, then 8-10 min in the air fryer at 400°F (Amazing Food Made Easy's legs-and-thighs guide: 147°F, 4-8 hr). If the bags are still icy Friday afternoon, put them in a sink of cold water, still sealed, for 30-45 min. Beans are scaled to ONE can with the bacon, onion, Stubb's, brown sugar and mustard the family approved on 9/8, not the linked recipe's two cans. Wedges: 2 tbsp oil per 1.5 lb, 350°F 15 min + 400°F 15 min. Moved from Tuesday 10/13 when the tenderloin moved up.",
       recipe: {
         activeTime: "~25 min active, after 5",
-        cookTime: "bath 140°F ~1.5 hr; sear 4 min; rice 30 min",
+        cookTime: "thighs 425°F oven 40-45 min; beans 15 min; wedges 30 min",
         ingredients: [
-          "1 Fresh Whole Boneless Pork Tenderloin, avg 2.32 lb (new; ~1.75 lb needed)",
-          "~1/3 cup Momofuku Sweet & Savory Korean BBQ Sauce (banked)",
-          "2 cups jasmine rice, 2.5 cups water (banked) — plain, no bouillon",
-          "2 fresh cucumbers (new)",
-          "1.5 tbsp rice vinegar, 2 tsp Kadoya sesame oil, 1-2 garlic cloves, 1 tsp soy sauce, pinch salt + brown sugar (owned)",
-          "1 tbsp canola oil for the sear (owned)"
+          "2 sealed bags Hill Country Fare bone-in skin-on chicken thighs, 4.77 lb total — one with Honey Hog, one plain S&P — thawed in the fridge Thursday night (banked)",
+          "1 can Bush's Best Original Baked Beans, 28 oz (bought 10/11)",
+          "4 slices H-E-B Original bacon from the 12 oz pack, chopped (bought 10/11; the rest banks)",
+          "1 yellow onion, diced (bought 10/11)",
+          "3 tbsp Stubb's Original, 1 tbsp brown sugar, 1 tsp yellow mustard (owned)",
+          "~2 lb russet potatoes from the 5 lb bag (banked), cut into wedges",
+          "2 tbsp canola oil + 1.5 tsp Meat Church Honey Hog + salt for the wedges (owned)"
         ],
         steps: [
-          "SUN: trim the silver skin; slide the tenderloin (cut in half if the bag is tight) into a chamber bag with 1/3 cup of the sauce; seal and freeze flat.",
-          "THU evening: bag from freezer to fridge.",
-          "FRI ~5:00 PM: bath to 140°F; the thawed bag in for ~1.5 hr (1-4 hr is the safe window).",
-          "~6:00 PM: rice cooker — rinsed jasmine, 2.5 cups water, start. Smash the cucumbers, toss with vinegar, sesame oil, garlic, soy, salt and a pinch of brown sugar; fridge.",
-          "~6:30 PM: pull the bag; pour the juices into a small pan and simmer 2 min until syrupy. Pat the pork very dry.",
-          "KID CHECKPOINT: slice a few pieces for the kids from the cooler end before searing; they eat these plain with rice.",
-          "Blackstone or skillet ripping hot with the oil: sear the tenderloin 45-60 sec a side, brush with the reduced juices, rest 3 min, slice.",
-          "Plate slices over rice with the cucumber salad and the rest of the glaze.",
-          "Cleanup: the bag, the sear surface, one small pan."
+          "THU evening: both bags from freezer to fridge, flat on a sheet pan.",
+          "FRI ~5:00 PM: oven to 425°F. Thighs out of the bags, patted very dry, skin up on a rack set in a foil-lined sheet pan, Honey Hog on one side, S&P on the other.",
+          "~5:15 PM: thighs in, 40-45 min until 175°F at the thickest part. Tent the Honey Hog side with foil if it darkens early.",
+          "Cut the russets into 8 wedges each, toss with oil, Honey Hog and salt. Air fryer 350°F 15 min, then 400°F ~15 min, tossing halfway.",
+          "Beans: chopped bacon in a saucepan, medium heat, 5 min until crisp; onion in the fat 5 min; the can, Stubb's, brown sugar, mustard. Simmer 15 min, stirring, until thick.",
+          "Rest the thighs 5 min. KID CHECKPOINT: the plain S&P thighs and wedges for the kids before any extra Stubb's goes on.",
+          "Leftover thighs (there will be some at 4.77 lb): pull the meat off the bone and fridge it for lunches.",
+          "Cleanup: the sheet pan (foil makes it a toss), the air fryer basket, one saucepan."
         ]
       }
     },
@@ -268,18 +268,18 @@ const WEEK_DATA = {
       { name: "Fresh Lime, 5 (Mon 4, spare 1)", est: 1.05, note: "$0.21 each VERIFIED" },
       { name: "Fresh Cilantro, 1 bunch (Mon)", est: 0.53, note: "$0.53 VERIFIED — stems in water" },
       { name: "Fresh White Onion, 1 (Mon)", est: 1.15, note: "$1.15 VERIFIED (avg 0.955 lb) — the coupon badge is a Brussels-sprouts Combo Loco, not applicable" },
-      { name: "Fresh Yellow Onion, 2 (Tue beans, Sat burgers)", est: 1.18, note: "$0.59 each VERIFIED (avg 0.6 lb) — the spare onion was counted out 10/11" },
-      { name: "Fresh Cucumber, 2 (Fri salad)", est: 1.06, note: "$0.53 each VERIFIED" }
+      { name: "Fresh Yellow Onion, 2 (Fri beans, Sat burgers)", est: 1.18, note: "$0.59 each VERIFIED (avg 0.6 lb) — the spare onion was counted out 10/11" },
+      { name: "Fresh Cucumber, 2 (Tue salad)", est: 1.06, note: "$0.53 each VERIFIED" }
     ]},
     { section: "Bakery", aisle: "Bakery", items: [
       { name: "Martin's Potato Sandwich Rolls, 8 ct (Sat burgers 4 + Wed sandwiches 3 — the standing burger bun)", est: 4.20, note: "$4.20 VERIFIED — H-E-B Bakery Brioche 4 ct is the fallback; do NOT buy Sara Lee Artesano" },
       { name: "Martin's Potato Long Rolls, 8 ct (Thu hot dogs)", est: 4.20, note: "$4.20 VERIFIED 10/11 — the family's swap from the H-E-B buns" }
     ]},
     { section: "Meat Market", aisle: "Meat Market", items: [
-      { name: "Fresh Whole Boneless Pork Tenderloin, avg 2.32 lb (Fri; recipe needs ~1.75 lb — ordered ~30% heavy)", est: 5.73, note: "$5.73 VERIFIED — $2.47/lb ad price, reg $8.28. Match the ad's product; H-E-B Natural Pork Tenderloin is $7.65/lb. Seal with the Momofuku sauce and FREEZE Sunday" },
+      { name: "Fresh Whole Boneless Pork Tenderloin, avg 2.32 lb (Tue, moved from Fri; recipe needs ~1.75 lb — ordered ~30% heavy)", est: 5.73, note: "RECEIPT 10/11: rang 1.31 lb, $3.23 (only 1.31 of 2.32 lb available). $5.73 VERIFIED — $2.47/lb ad price, reg $8.28. Match the ad's product; H-E-B Natural Pork Tenderloin is $7.65/lb. Seal with the Momofuku sauce and FREEZE Sunday" },
       { name: "H-E-B 100% Pure Ground Beef Chuck 80% Lean, 1 lb (Sat; the banked 0.97 lb bag supplies the rest)", est: 6.81, note: "$6.81 VERIFIED on sale (reg $7.34) — seal flat and freeze Sunday" },
       { name: "Nathan's Bun Length Skinless Beef Franks, 8 ct (Thu)", est: 5.73, note: "$5.73 VERIFIED" },
-      { name: "H-E-B Original Bacon, 12 oz (Tue beans — 4 slices; the rest banks)", est: 3.99, note: "$3.99 VERIFIED 10/11, ad price — the banked pack was counted out 10/11" }
+      { name: "H-E-B Original Bacon, 12 oz (Fri beans — 4 slices; the rest banks)", est: 3.99, note: "$3.99 VERIFIED 10/11, ad price — the banked pack was counted out 10/11" }
     ]},
     { section: "Dairy", aisle: "Dairy / right wall", items: [
       { name: "Kraft Deli Deluxe American Cheese Slices, 16 ct (Sat — 8 used, 8 bank)", est: 6.28, note: "$6.28 VERIFIED (24 ct is $7.64) — the 6-slices-per-lb rule" }
@@ -288,7 +288,7 @@ const WEEK_DATA = {
       { name: "Hill Country Fare Frozen Crinkle Cut French Fries, 32 oz (Sat; the banked bag covers Thursday)", est: 3.12, note: "$3.12 VERIFIED" }
     ]},
     { section: "Center aisles", aisle: "Condiments", items: [
-     { name: "Bush's Best Original Baked Beans, 28 oz (Tue)", est: 2.96, note: "$2.96 VERIFIED 10/11 — the banked can was counted out 10/11; its coupon badge is the Johnsonville Combo Loco, not applicable" }
+     { name: "Bush's Best Original Baked Beans, 28 oz (Fri)", est: 2.96, note: "$2.96 VERIFIED 10/11 — the banked can was counted out 10/11; its coupon badge is the Johnsonville Combo Loco, not applicable" }
     ]},
     { section: "Sunday 10/11 extra — tonight's steak dinner (the family)", aisle: "Meat Market; produce", items: [
       { name: "H-E-B Prime 1 Beef Center Cut Top Sirloin Steak Value Pack, USDA Prime, avg 2.28 lb (Sun 10/11 dinner, 4)", est: 29.62, note: "$29.62 in-store on the list 10/11 ($31.10 curbside, $13.64/lb). Sides: crispy parmesan breakfast potatoes from the freezer bag + Sartori parm (owned)" },
@@ -308,6 +308,7 @@ const WEEK_DATA = {
     { section: "Weekly standing buys", aisle: "Bakery; dairy; snack aisle; frozen not needed", items: [
       { name: "Sandwich bread, 1 loaf (teen lunch — brand is the eaters' call)", est: 3.54, note: "$3.54 VERIFIED price cut: Nature's Own Honey Wheat 20 oz (reg $3.95)" },
       { name: "Daisy Small Curd 4% Cottage Cheese, 24 oz", est: 5.22, note: "$5.22 VERIFIED" },
+      { name: "Gatorade Sports Drink, 28 oz — FREE with the Doritos 9.25 oz (Combo Loco, clipped, exp 10/20)", est: 0, note: "added to the list by the family 10/11; ~$1.87 value, rings up then comes off at checkout" },
       { name: "Cheetos Cheddar Jalapeño Crunchy, 8.5 oz (adult snack)", est: 4.17, note: "$4.17 VERIFIED price cut (reg $4.65)" },
       { name: "Salty snack trio for portioning (3 regular-size bags, one size below party): e.g. Doritos Nacho 9.25 oz + Cheetos Puffs 8 oz + Pirate's Booty 7 oz", est: 12.40, note: "CARRIED from PROFILE (~$12.40 in-store) — NOT re-verified 10/10; kids may swap flavors in the app" },
       { name: "Sweet snack trio for portioning (3 family/regular-size packages): e.g. OREO Family + Chips Ahoy! Family + Keebler Fudge Stripes 11.5 oz", est: 13.33, note: "CARRIED from PROFILE (~$13.33 in-store) — NOT re-verified 10/10" },
@@ -319,15 +320,15 @@ const WEEK_DATA = {
   // from pantry/inventory.json — sanitized: no staples ledger, no names.
   bank: [
     { name: "Boston butt carnitas, rubbed and sealed, FROZEN", qty: "~5 lb", location: "freezer", useBy: "2027-01-04", note: "MONDAY — 165°F bath Sunday evening, frozen straight in" },
-    { name: "Hill Country Fare bone-in thighs, sealed in two bags (Honey Hog + plain S&P)", qty: "4.77 lb", location: "freezer", useBy: "2027-01-04", note: "TUESDAY — the Honey Hog bag; the S&P wild card stays banked" },
+    { name: "Hill Country Fare bone-in thighs, sealed in two bags (Honey Hog + plain S&P)", qty: "4.77 lb", location: "freezer", useBy: "2027-01-04", note: "FRIDAY — both bags (swapped from Tuesday 10/13)" },
     { name: "Fresh bone-in pork butt, off the bone, salt only, sealed", qty: "4.2 lb", location: "freezer", useBy: "2027-01-04", note: "Banked — second carnitas or pulled pork" },
     { name: "H-E-B 80% ground chuck, sealed", qty: "~0.97 lb", location: "freezer", useBy: "2027-01-04", note: "SATURDAY — burgers, with 0.36 lb from a fresh pack" },
     { name: "Hill Country Fare crinkle cut fries, 32 oz", qty: "1 bag", location: "freezer", useBy: "2027-03-20", note: "THURSDAY half, SATURDAY half" },
-    { name: "Russet potatoes, 5 lb bag", qty: "~3 lb", location: "pantry", useBy: "2026-10-25", note: "TUESDAY wedges (~2 lb)" },
+    { name: "Russet potatoes, 5 lb bag", qty: "~3 lb", location: "pantry", useBy: "2026-10-25", note: "FRIDAY wedges (~2 lb)" },
     { name: "H-E-B Mexican Style Shredded Cheese Blend, 8 oz", qty: "1 bag", location: "fridge", useBy: "2026-10-17", note: "MONDAY half, WEDNESDAY half" },
     { name: "Daisy Squeeze Sour Cream, 14 oz", qty: "1 bottle", location: "fridge", useBy: "2026-10-18", note: "MONDAY and WEDNESDAY" },
-    { name: "Momofuku Sweet & Savory Korean BBQ Sauce, 16.3 oz", qty: "1 bottle", location: "pantry", useBy: "2027-08-30", note: "FRIDAY — about a third goes in the tenderloin bag" },
-    { name: "Jasmine rice", qty: "~2 lb", location: "pantry", useBy: "—", note: "MONDAY arroz rojo + FRIDAY plain rice — about 0.2 lb left after" },
+    { name: "Momofuku Sweet & Savory Korean BBQ Sauce, 16.3 oz", qty: "1 bottle", location: "pantry", useBy: "2027-08-30", note: "TUESDAY — about a third went in the tenderloin bag" },
+    { name: "Jasmine rice", qty: "~2 lb", location: "pantry", useBy: "—", note: "MONDAY arroz rojo + TUESDAY plain rice — about 0.2 lb left after" },
     { name: "H-E-B Breaded Shrimp, 2 boxes", qty: "2 boxes", location: "freezer", useBy: "2027-02-02", note: "Po'boy night — not slotted this week" }
   ]
 };
