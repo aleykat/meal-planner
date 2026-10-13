@@ -71,7 +71,7 @@ const WEEK_DATA = {
         "TUE ~5:15 PM (3 min): rice cooker on; smash the cucumbers"
       ],
       title: "Momofuku-Glazed Sous Vide Pork Tenderloin with Rice & Smashed Cucumber Salad",
-      slot: "Dinner 2 · Tue Oct 13 — 2 adults + 2 kids, served in two rounds (first ~6:00, second ~7:15 after the 6-7 PM appointment); swapped in from Friday",
+      slot: "Tue Oct 13 — SKIPPED (tenderloin banked, still frozen; re-slots in a later week)",
       night: "2026-10-13",
       time: "~25 min active, after 5",
       equipment: ["Sous vide", "Blackstone or skillet", "Rice cooker"],
