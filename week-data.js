@@ -174,8 +174,8 @@ const WEEK_DATA = {
     },
     {
       id: "honeyhogthighs",
-      cost: { est: 11.30, servings: 4, note: "$7.54 NEW SPEND (one yellow onion $0.59, Bush's Best Original Baked Beans 28 oz $2.96 VERIFIED 10/11, H-E-B Original Bacon 12 oz $3.99 VERIFIED ad price — the banked can and bacon were counted out 10/11). 4 slices of the bacon ~$1.14 to this meal, the rest banks. Banked at paid price: BOTH sealed bags of Hill Country Fare bone-in thighs, Honey Hog + plain S&P, 4.77 lb ($4.62 at the $0.97/lb ad), ~2 lb of the 5 lb russets $0.79, Stubb's + brown sugar + mustard ~$0.70, oil + Honey Hog for the wedges ~$0.50. Moved from Tue 10/13 to Fri 10/16 (swapped with the tenderloin, the family 10/13); using both bags fixes the thin single-bag portion." },
-      nutrition: { serving: "2 thighs (~7 oz meat) + ~6 wedges + 3/4 cup baked beans", calories: 1000, protein: 52, carbs: 70, fat: 56 },
+      cost: { est: 11.30, servings: 4, note: "$7.54 NEW SPEND (one yellow onion $0.59, Bush's Best Original Baked Beans 28 oz $2.96 VERIFIED 10/11, H-E-B Original Bacon 12 oz $3.99 VERIFIED ad price — the banked can and bacon were counted out 10/11). 4 slices of the bacon ~$1.14 to this meal, the rest banks. Banked at paid price: 2 cucumbers $1.06 (bought 10/11 for the skipped Tue tenderloin; moved here 10/13), cider vinegar + sugar ~$0.15, BOTH sealed bags of Hill Country Fare bone-in thighs, Honey Hog + plain S&P, 4.77 lb ($4.62 at the $0.97/lb ad), ~2 lb of the 5 lb russets $0.79, Stubb's + brown sugar + mustard ~$0.70, oil + Honey Hog for the wedges ~$0.50. Moved from Tue 10/13 to Fri 10/16 (swapped with the tenderloin, the family 10/13); using both bags fixes the thin single-bag portion." },
+      nutrition: { serving: "2 thighs (~7 oz meat) + ~6 wedges + 3/4 cup baked beans + 1/2 cup cucumber salad", calories: 1010, protein: 52, carbs: 72, fat: 56 },
       daytime: [
         "THU evening (1 min): BOTH thigh bags (Honey Hog + S&P) from freezer to fridge, flat on a sheet pan",
         "FRI ~5:00 PM: oven to 425°F; thighs out of the bags, patted dry, skin up on a rack; beans and wedges (details in the steps)"
@@ -186,7 +186,7 @@ const WEEK_DATA = {
       time: "~25 min active, after 5",
       equipment: ["Oven", "Air fryer", "Stove"],
       summary:
-        "Zero new meat, and now both banked thigh bags: the Honey Hog bag and the plain salt-and-pepper bag thaw in the fridge Thursday night and roast skin-up at 425°F on Friday. That's a hands-off cook for a Motorplex day, with no lunchtime bath drop, and the skin crisps without a separate step. A can of Bush's gets the BBQ-plate slot, doctored with bacon, onion, Stubb's, brown sugar and mustard (a thin 1-tbsp-Stubb's version missed on 9/8). Russet wedges go in the air fryer while the thighs roast. Two flavors on one sheet pan; the kids get the plain S&P ones.",
+        "Zero new meat, and now both banked thigh bags: the Honey Hog bag and the plain salt-and-pepper bag thaw in the fridge Thursday night and roast skin-up at 425°F on Friday. That's a hands-off cook for a Motorplex day, with no lunchtime bath drop, and the skin crisps without a separate step. A can of Bush's gets the BBQ-plate slot, doctored with bacon, onion, Stubb's, brown sugar and mustard (a thin 1-tbsp-Stubb's version missed on 9/8). Russet wedges go in the air fryer while the thighs roast. Two flavors on one sheet pan; the kids get the plain S&P ones. A quick vinegar cucumber salad, made with the cucumbers left from Tuesday, cuts the rich beans.",
       links: [
         { label: "Food Republic — the right oven temperature for chicken thighs (400-425°F, 30-40 min, 175-190°F inside)", url: "https://www.foodrepublic.com/2157801/right-oven-temp-perfect-chicken-thighs/", tag: "technique" },
         { label: "Southern Bite — Bacon Brown Sugar Baked Beans (the doctored-can idea)", url: "https://southernbite.com/bacon-brown-sugar-baked-beans/", tag: "recipe" },
@@ -203,6 +203,7 @@ const WEEK_DATA = {
           "1 yellow onion, diced (bought 10/11)",
           "3 tbsp Stubb's Original, 1 tbsp brown sugar, 1 tsp yellow mustard (owned)",
           "~2 lb russet potatoes from the 5 lb bag (banked), cut into wedges",
+          "2 cucumbers (bought 10/11, from the skipped Tuesday dinner), 1/4 cup cider vinegar, 2 tsp sugar, 1/2 tsp salt, black pepper (owned)",
           "2 tbsp canola oil + 1.5 tsp Meat Church Honey Hog + salt for the wedges (owned)"
         ],
         steps: [
@@ -211,6 +212,7 @@ const WEEK_DATA = {
           "~5:15 PM: thighs in, 40-45 min until 175°F at the thickest part. Tent the Honey Hog side with foil if it darkens early.",
           "Cut the russets into 8 wedges each, toss with oil, Honey Hog and salt. Air fryer 350°F 15 min, then 400°F ~15 min, tossing halfway.",
           "Beans: chopped bacon in a saucepan, medium heat, 5 min until crisp; onion in the fat 5 min; the can, Stubb's, brown sugar, mustard. Simmer 15 min, stirring, until thick.",
+          "Cucumber salad (any time after 5): slice both cucumbers thin, toss with the vinegar, sugar, salt and pepper; fridge until dinner.",
           "Rest the thighs 5 min. KID CHECKPOINT: the plain S&P thighs and wedges for the kids before any extra Stubb's goes on.",
           "Leftover thighs (there will be some at 4.77 lb): pull the meat off the bone and fridge it for lunches.",
           "Cleanup: the sheet pan (foil makes it a toss), the air fryer basket, one saucepan."
