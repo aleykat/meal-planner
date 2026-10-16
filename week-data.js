@@ -177,27 +177,27 @@ const WEEK_DATA = {
       cost: { est: 11.30, servings: 4, note: "$7.54 NEW SPEND (one yellow onion $0.59, Bush's Best Original Baked Beans 28 oz $2.96 VERIFIED 10/11, H-E-B Original Bacon 12 oz $3.99 VERIFIED ad price — the banked can and bacon were counted out 10/11). 4 slices of the bacon ~$1.14 to this meal, the rest banks. Banked at paid price: 2 cucumbers $1.06 (bought 10/11 for the skipped Tue tenderloin; moved here 10/13), cider vinegar + sugar ~$0.15, BOTH sealed bags of Hill Country Fare bone-in thighs, Honey Hog + plain S&P, 4.77 lb ($4.62 at the $0.97/lb ad), ~2 lb of the 5 lb russets $0.79, Stubb's + brown sugar + mustard ~$0.70, oil + Honey Hog for the wedges ~$0.50. Moved from Tue 10/13 to Fri 10/16 (swapped with the tenderloin, the family 10/13); using both bags fixes the thin single-bag portion." },
       nutrition: { serving: "2 thighs (~7 oz meat) + ~6 wedges + 3/4 cup baked beans + 1/2 cup cucumber salad", calories: 1010, protein: 52, carbs: 72, fat: 56 },
       daytime: [
-        "THU evening (1 min): BOTH thigh bags (Honey Hog + S&P) from freezer to fridge, flat on a sheet pan",
-        "FRI ~5:00 PM: oven to 425°F; thighs out of the bags, patted dry, skin up on a rack; beans and wedges (details in the steps)"
+        "FRI ~12:30 PM (2 min): bath to 147°F; BOTH sealed thigh bags (Honey Hog + S&P) straight in, frozen or fridge-thawed, ~5 hr",
+        "FRI ~5:00 PM: oven to 425°F for the wedges; ~5:30 thighs out of the bath, patted dry, crisped in the air fryer (details in the steps)"
       ],
       title: "Roasted Honey Hog & S&P Chicken Thighs with Bacon Baked Beans & Wedges",
       slot: "Dinner 4 · Fri Oct 16 — 2 adults + 2 kids (home by dinner; Motorplex day); swapped in from Tuesday",
       night: "2026-10-16",
       time: "~25 min active, after 5",
-      equipment: ["Oven", "Air fryer", "Stove"],
+      equipment: ["Sous vide", "Air fryer", "Oven", "Stove"],
       summary:
-        "Zero new meat, and now both banked thigh bags: the Honey Hog bag and the plain salt-and-pepper bag thaw in the fridge Thursday night and roast skin-up at 425°F on Friday. That's a hands-off cook for a Motorplex day, with no lunchtime bath drop, and the skin crisps without a separate step. A can of Bush's gets the BBQ-plate slot, doctored with bacon, onion, Stubb's, brown sugar and mustard (a thin 1-tbsp-Stubb's version missed on 9/8). Russet wedges go in the air fryer while the thighs roast. Two flavors on one sheet pan; the kids get the plain S&P ones. A quick vinegar cucumber salad, made with the cucumbers left from Tuesday, cuts the rich beans.",
+        "Zero new meat, and both banked thigh bags: the Honey Hog bag and the plain salt-and-pepper bag go into a 147°F bath at lunchtime still sealed, the way that has worked before, then the skins crisp in the air fryer at dinner. The bath does the cooking on a Motorplex day; the air fryer only has to crisp. A can of Bush's gets the BBQ-plate slot, doctored with bacon, onion, Stubb's, brown sugar and mustard (a thin 1-tbsp-Stubb's version missed on 9/8). Russet wedges roast in the oven while the thighs finish. Two flavors; the kids get the plain S&P ones. A quick vinegar cucumber salad, made with the cucumbers left from Tuesday, cuts the rich beans.",
       links: [
-        { label: "Food Republic — the right oven temperature for chicken thighs (400-425°F, 30-40 min, 175-190°F inside)", url: "https://www.foodrepublic.com/2157801/right-oven-temp-perfect-chicken-thighs/", tag: "technique" },
+        { label: "Amazing Food Made Easy — sous vide chicken thighs (147°F, 4-8 hr)", url: "https://www.amazingfoodmadeeasy.com/sous-vide-times-temperatures/how-to-sous-vide/chicken-thighs", tag: "technique" },
         { label: "Southern Bite — Bacon Brown Sugar Baked Beans (the doctored-can idea)", url: "https://southernbite.com/bacon-brown-sugar-baked-beans/", tag: "recipe" },
         { label: "Well Plated — Air Fryer Potato Wedges", url: "https://www.wellplated.com/air-fryer-potato-wedges/", tag: "recipe" }
       ],
-      swapNote: "The thigh bags were seasoned (Honey Hog, plain S&P) when they were sealed; the rub is a bottled product used as directed. Roast at 425°F to 175°F at the thickest part, away from the bone. Honey Hog has sugar in it, so tent those thighs with foil if the skin darkens before they reach temperature. If someone is home at noon, the original method still works: the frozen bags go into a 147°F bath at ~12:30 for ~5 hr, then 8-10 min in the air fryer at 400°F (Amazing Food Made Easy's legs-and-thighs guide: 147°F, 4-8 hr). If the bags are still icy Friday afternoon, put them in a sink of cold water, still sealed, for 30-45 min. Beans are scaled to ONE can with the bacon, onion, Stubb's, brown sugar and mustard the family approved on 9/8, not the linked recipe's two cans. Wedges: 2 tbsp oil per 1.5 lb, 350°F 15 min + 400°F 15 min. Moved from Tuesday 10/13 when the tenderloin moved up.",
+      swapNote: "The thigh bags were seasoned (Honey Hog, plain S&P) when they were sealed; the rub is a bottled product used as directed. 147°F for 4-8 hr per the technique page; from frozen, the first ~hour is thaw, so a 12:30 drop gives ~5 hr and dinner at 6. Bone-in thighs at 147°F are safe and tender; they read pink-ish near the bone, which is normal for sous vide. Crisping: 400°F air fryer, skin up, 8-10 min per batch (two batches for 4.77 lb); the Honey Hog skins brown faster from the sugar, so check them at 6 min. Wedges moved from the air fryer to the oven because the air fryer is busy with the thighs: 425°F, 30-35 min, flipped halfway. Beans scaled to ONE can (the 9/8 approved version), not the linked recipe's two. Switched from oven-roast to sous vide 10/16 (the family; it has worked well before).",
       recipe: {
         activeTime: "~25 min active, after 5",
-        cookTime: "thighs 425°F oven 40-45 min; beans 15 min; wedges 30 min",
+        cookTime: "thighs 147°F bath ~5 hr + air fryer 8-10 min per batch; beans 15 min; wedges 30-35 min",
         ingredients: [
-          "2 sealed bags Hill Country Fare bone-in skin-on chicken thighs, 4.77 lb total — one with Honey Hog, one plain S&P — thawed in the fridge Thursday night (banked)",
+          "2 sealed bags Hill Country Fare bone-in skin-on chicken thighs, 4.77 lb total — one with Honey Hog, one plain S&P — straight into the bath, frozen or thawed (banked)",
           "1 can Bush's Best Original Baked Beans, 28 oz (bought 10/11)",
           "4 slices H-E-B Original bacon from the 12 oz pack, chopped (bought 10/11; the rest banks)",
           "1 yellow onion, diced (bought 10/11)",
@@ -207,15 +207,15 @@ const WEEK_DATA = {
           "2 tbsp canola oil + 1.5 tsp Meat Church Honey Hog + salt for the wedges (owned)"
         ],
         steps: [
-          "THU evening: both bags from freezer to fridge, flat on a sheet pan.",
-          "FRI ~5:00 PM: oven to 425°F. Thighs out of the bags, patted very dry, skin up on a rack set in a foil-lined sheet pan, Honey Hog on one side, S&P on the other.",
-          "~5:15 PM: thighs in, 40-45 min until 175°F at the thickest part. Tent the Honey Hog side with foil if it darkens early.",
-          "Cut the russets into 8 wedges each, toss with oil, Honey Hog and salt. Air fryer 350°F 15 min, then 400°F ~15 min, tossing halfway.",
+          "FRI ~12:30 PM: bath to 147°F; both sealed bags straight in, fully under water (clip them to the side if they float). About 5 hr.",
+          "~5:00 PM: oven to 425°F. Cut the russets into 8 wedges each, toss with oil, Honey Hog and salt, spread on a sheet pan; in at ~5:05 for 30-35 min, flipped halfway.",
+          "~5:30 PM: thighs out of the bags, juices poured off, patted VERY dry. Air fryer 400°F, skin up, one layer: 8-10 min per batch until the skin crackles (check the Honey Hog batch at 6 min). Plain S&P batch first, then hold it in the warm oven.",
+          "While the thighs crisp: the beans are already simmering (next step), the wedges finish in the oven.",
           "Beans: chopped bacon in a saucepan, medium heat, 5 min until crisp; onion in the fat 5 min; the can, Stubb's, brown sugar, mustard. Simmer 15 min, stirring, until thick.",
           "Cucumber salad (any time after 5): slice both cucumbers thin, toss with the vinegar, sugar, salt and pepper; fridge until dinner.",
-          "Rest the thighs 5 min. KID CHECKPOINT: the plain S&P thighs and wedges for the kids before any extra Stubb's goes on.",
+          "No rest needed after the bath. KID CHECKPOINT: the plain S&P thighs and wedges for the kids before any extra Stubb's goes on.",
           "Leftover thighs (there will be some at 4.77 lb): pull the meat off the bone and fridge it for lunches.",
-          "Cleanup: the sheet pan (foil makes it a toss), the air fryer basket, one saucepan."
+          "Cleanup: the bags (trash), the air fryer basket, the wedge sheet pan, one saucepan."
         ]
       }
     },
