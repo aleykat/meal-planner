@@ -5,7 +5,7 @@
 // Martin's Potato Rolls with fries. The H-E-B Asian Meal Deal (orange chicken + egg rolls + 4 free
 // items) is BANKED for a later week, not cooked. Prices VERIFIED on the heb.com list 11/6 (in-store; x1.05 curbside).
 // True dinner cost ~$66.43; Sat sloppy joes (~$22.65 true) is the week's highest family meal. Added 11/6: Sun Friendsgiving
-// sous vide turkey tenderloins for 14 (~$44.02 true, $42.22 new), cooked Sat, rewarmed Sun.
+/// sous vide turkey: 2 Butterball boneless breast roasts for 14 (~$39.58 true, $37.78 new; swapped from tenders 11/6), cooked Sat, rewarmed Sun.
 const WEEK_DATA = {
   week: "2026-11-09",
   title: "Week of Nov 9 — Frozen Lasagna Night, Sous Vide Top Sirloin with Gold Potatoes & Cheesy Broccoli, Homemade Sloppy Joes, and Sous Vide Turkey for Friendsgiving (Mon fast food; Tue/Thu freezer)",
@@ -130,47 +130,47 @@ const WEEK_DATA = {
       id: "friendsgivingturkey",
       slot: "Sun Nov 15 · Friendsgiving — our dish for 14 people (cooked Saturday, rewarmed Sunday)",
       night: "2026-11-15",
-      title: "Sous Vide Herb-Butter Turkey Breast Tenderloins with Pan Gravy (Friendsgiving, serves 14)",
-      time: "Sat ~20 min hands-on + 3-4 hr bath; Sun ~30 min to rewarm, brown and slice",
-      equipment: ["Sous vide", "Big pot or cooler for the bath", "Broiler + sheet pans", "Saucepan"],
-      cost: { est: 44.02, servings: 14, note: "PLANNED: $42.22 NEW SPEND (curbside) — Frozen Turkey Breast Tenders, Avg. 0.95 lb x6 ~5.7 lb $35.88 ($5.98 each online; fixed price per pack, not weighed), Duncan Family Farms Organic Poultry Blend (fresh sage/thyme/rosemary) $2.60, H-E-B Chicken Broth 32 oz $2.08, Clabber Girl Corn Starch 6.5 oz $1.66. Banked ~$1.80: Kerrygold butter 7 tbsp, 4 garlic cloves, kosher salt, pepper. About $3.14 a person. A party dish for 14, not a family dinner." },
+      title: "Sous Vide Herb-Butter Turkey Breast Roasts with Pan Gravy (Friendsgiving, serves 14)",
+      time: "Sat ~20 min hands-on + ~5 hr bath; Sun ~30 min hands-on after a 2 hr rewarm",
+      equipment: ["Sous vide", "Big pot or cooler for the bath", "Broiler + sheet pan", "Saucepan", "Kitchen shears (netting)"],
+      cost: { est: 39.58, servings: 14, note: "PLANNED: $37.78 NEW SPEND (curbside) — Butterball Frozen Boneless Turkey Breast Roast, 3 lbs x2 = 6 lb $31.44 ($15.72 each VERIFIED 11/6; brined, 470 mg sodium per 4 oz raw), Duncan Family Farms Organic Poultry Blend (fresh sage/thyme/rosemary) $2.60, H-E-B Chicken Broth 32 oz $2.08, Clabber Girl Corn Starch 6.5 oz $1.66. Banked ~$1.80: Kerrygold butter 7 tbsp, 4 garlic cloves, pepper. About $2.83 a person. Swapped from 6 packs of turkey tenders 11/6 so it slices like a real breast. A party dish for 14, not a family dinner." },
       nutrition: { serving: "~4.5 oz cooked turkey breast with ~0.33 cup pan gravy", calories: 240, protein: 42, carbs: 4, fat: 6 },
       daytime: [
-        "SUN 11/8 (put-away): the 6 turkey packs go straight into the FREEZER (they come frozen)",
-        "THU 11/12 night (1 min): turkey packs freezer -> fridge to thaw (about 2 days)",
-        "SAT 11/14 ~11:30 AM (~20 min): herb butter, season, bag; into a 145°F bath by noon",
-        "SAT ~3:30 PM (~35 min): bags into an ice bath for 30 min, then the fridge (done well before the sloppy joes)",
-        "SUN 11/15, ~1.5 hr before leaving: bags into a 140°F bath for ~1 hr; then broil, slice, gravy"
+        "SUN 11/8 (put-away): the 2 turkey roasts go straight into the FREEZER (they come frozen)",
+        "THU 11/12 night (1 min): both roasts freezer -> fridge to thaw (about 1.5 days)",
+        "SAT 11/14 ~10:30 AM (~20 min): herb butter, bag; into a 145°F bath by 11 AM",
+        "SAT ~4:00 PM (~50 min): bags into an ice bath for 45 min, then the fridge (done before the sloppy joes)",
+        "SUN 11/15, ~2.5 hr before leaving: bags into a 140°F bath for ~2 hr; then skin off, broil, slice, gravy"
       ],
-      summary: "Skinless turkey for a crowd, with no carving and no dry meat. Tenderloins are the lean inner strip of the breast, already skinless and boneless, about the size of a small pork tenderloin. They cook Saturday at 145°F, chill in an ice bath, and rewarm Sunday at 140°F; the broiler browns them and the bag juices plus broth make the gravy. About 0.4 lb raw per person, since there are several sides.",
+      summary: "Two boneless breast roasts cooked sous vide, so the turkey slices into wide, real-looking breast slices with no carving and no dry meat. They cook Saturday at 145°F in their netting, chill in an ice bath, and rewarm Sunday at 140°F; the skin peels off, the broiler browns the tops, and the bag juices plus broth make the gravy. The roasts are pre-brined, so the meat gets no added salt. About 0.4 lb raw per person, since there are several sides.",
       swapNote: "Leftovers count from SATURDAY's cook: eat by Tue 11/17 (USDA 3-4 days for cooked poultry), or freeze sliced turkey with some gravy for up to 2-3 months. Turkey that sat out at the party more than 2 hours doesn't come home. If you'd rather not cook Saturday, Thursday also works (Sunday is still day 3), but thaw Tuesday night instead.",
       links: [
-        { label: "Thyme & Joy — Sous Vide Turkey Tenderloin: time/temperature chart, +1 hr from frozen, broiler and skillet finishes", url: "https://thymeandjoy.com/sous-vide-turkey-tenderloin/", tag: "recipe" }
+        { label: "Thyme & Joy — Sous Vide Turkey Breast (bone-in or boneless): 145°F 3-4.5 hr chart, cooking from frozen, oven/skillet finishes", url: "https://thymeandjoy.com/sous-vide-turkey-breast/", tag: "recipe" }
       ],
       recipe: {
         activeTime: "Saturday ~20 min; Sunday ~30 min",
-        cookTime: "145°F 3-4 hr (thawed); ice bath 30 min; Sunday rewarm 140°F ~1 hr; broil ~3 min a side",
+        cookTime: "145°F ~5 hr (thawed; +1.5 hr if still icy); ice bath 45 min; Sunday rewarm 140°F ~2 hr; broil ~4 min",
         ingredients: [
-          "6 packs Frozen Turkey Breast Tenders, Avg. 0.95 lb (new), ~5.7 lb, thawed",
+          "2 Butterball Frozen Boneless Turkey Breast Roasts, 3 lbs each (new), thawed, netting ON. If a gravy packet is inside, set it aside (a backup only)",
           "4 tbsp Kerrygold butter, softened (owned), for the herb butter",
           "1 pack Duncan Family Farms Organic Poultry Blend (new): ~2 tbsp chopped sage + thyme + rosemary, a few sprigs saved for the bags",
           "4 garlic cloves, minced (owned)",
-          "~5 tsp kosher salt (about 1 tsp per lb; use half if the pack says it contains a solution) + 2 tsp black pepper (owned)",
+          "NO salt on the meat (the roasts are pre-brined) + 2 tsp black pepper (owned)",
           "1 tbsp canola oil (owned), for the broiler",
-          "GRAVY: the strained bag juices, 1 carton H-E-B Chicken Broth 32 oz (new), 3 tbsp butter (owned), 3 tbsp corn starch (new) whisked into 0.33 cup cold water, salt + pepper"
+          "GRAVY: the strained bag juices, 1 carton H-E-B Chicken Broth 32 oz (new), 3 tbsp butter (owned), 3 tbsp corn starch (new) whisked into 0.33 cup cold water, pepper; taste before adding any salt (the juices are salty)"
         ],
         steps: [
-          "THU night: move the 6 packs from the freezer to the fridge to thaw.",
-          "SAT ~11:30 AM: bath to 145°F. Mash the softened butter with the chopped herbs, garlic and pepper.",
-          "Pat the tenderloins dry. Salt them all over, then rub on the herb butter. Bag them in a single layer, 2 per bag (about 3 bags), with a herb sprig in each. Seal.",
-          "Into the bath by noon, fully under water, for 3-4 hr. Thick pieces need the full 3.",
-          "~3:30 PM: straight into an ice bath (half ice, half water) for 30 min, then the fridge. Don't skip the ice: it's what makes the 3-4 day fridge clock safe.",
-          "SUN, ~1.5 hr before leaving: bath to 140°F; the cold bags go in for ~1 hr.",
-          "Pull the bags and pour all the juices through a strainer into a saucepan. Lay the tenderloins on oiled sheet pans and pat them dry.",
+          "THU night: move both roasts from the freezer to the fridge to thaw.",
+          "SAT ~10:30 AM: bath to 145°F. Mash the softened butter with the chopped herbs, garlic and pepper. Press the center of each roast: if it is still icy, plan on ~6.5 hr instead of 5.",
+          "Leave the netting and skin on. Pat the roasts dry and rub the herb butter all over (push some under the netting). One roast per bag with a herb sprig. Seal.",
+          "Into the bath by 11 AM, fully under water, for ~5 hr. The roasts are about 4 inches thick, so don't cut it short.",
+          "~4:00 PM: straight into an ice bath (half ice, half water) for 45 min, then the fridge. Don't skip the ice: it's what makes the 3-4 day fridge clock safe.",
+          "SUN, ~2.5 hr before leaving: bath to 140°F; the cold bags go in for ~2 hr (whole roasts take longer to warm through than slices).",
+          "Pull the bags and pour all the juices through a strainer into a saucepan. Snip off the netting, peel off the skin (it comes right off), and set the roasts on an oiled sheet pan. Pat dry.",
           "GRAVY: add the broth and butter to the juices and bring to a simmer. Whisk in the corn starch slurry and simmer 2 min until it coats a spoon. Season with salt and pepper. About 5 cups.",
-          "Broil the tenderloins on the top rack about 3 min a side, until browned in spots. Rest 5 min, then slice against the grain about 0.5 inch thick.",
-          "Transport: sliced turkey in a covered dish with a ladle of gravy over it so it stays moist; the rest of the gravy goes in a jar.",
-          "Cleanup: the bags, the sheet pans, the saucepan."
+          "Brush the tops with a little melted butter and broil on the top rack ~4 min, until browned in spots. Rest 5 min, then slice across the roast about 0.5 inch thick: wide, breast-shaped slices.",
+          "Transport: shingle the slices in a covered dish with a ladle of gravy over them so they stay moist, herb sprigs on top; the rest of the gravy goes in a jar.",
+          "Cleanup: the bags, the sheet pan, the saucepan."
         ]
       }
     }
@@ -195,7 +195,7 @@ const WEEK_DATA = {
       { name: "Kids' freezer: French bread pizzas, 6 (3 x Stouffer's Pepperoni French Bread 2 ct)", est: 12.51, note: "$3.97 each VERIFIED. Red Baron French bread isn't carried at #817, so Stouffer's is the match. Stouffer's $3 off 3 is clipped but didn't ring last time, so it isn't counted" },
       { name: "Kids' freezer: H-E-B Natural Southern Style Chicken Nuggets, 24 oz x1", est: 9.44, note: "$8.99 VERIFIED" },
       { name: "Frozen lunch bowls x3 (H-E-B Smoked Brisket Mac, Spaghetti and Meatballs, Chicken Alfredo)", est: 9.36, note: "$2.97 each VERIFIED" },
-      { name: "Frozen Turkey Breast Tenders, Avg. 0.95 lb x6 (Sun Friendsgiving for 14; ~5.7 lb, ~0.4 lb a person with sides)", est: 35.88, note: "$5.69 in-store / $5.98 online each VERIFIED; a fixed price per pack, not weighed. Raw, skinless, Meat Market A12. Straight into the freezer Sunday" },
+      { name: "Butterball Frozen Boneless Turkey Breast Roast, 3 lbs x2 (Sun Friendsgiving for 14; 6 lb, ~0.4 lb a person with sides)", est: 31.44, note: "$15.72 each VERIFIED 11/6; no coupon. Brined (470 mg sodium per 4 oz). Straight into the freezer Sunday" },
       { name: "H-E-B Frozen Steamable Broccoli in Cheese Sauce, 12 oz (Fri, adults)", est: 2.39, note: "$2.28 VERIFIED. Freezer" }
     ]},
     { section: "Bakery & bread", aisle: "Bread aisle", items: [
@@ -228,7 +228,7 @@ const WEEK_DATA = {
       { name: "Hill Country Fare Distilled Water, 1 gal", est: 1.44, note: "$1.37 VERIFIED" }
     ]}
   ],
-  groceryNote: "PLANNED: ~$219 curbside est before tax (the heb.com list shows 47 units). Dinners $61.98 new spend + the Friendsgiving turkey for 14 $42.22 + the Asian Meal Deal banked for later $17.01 (4 free items: jasmine rice, a steamable veg, soy sauce, +1) + weekly standing buys ~$46.03 (no lunch loaf this week) + restock ~$43.85 (French bread pizzas x6 — a NEW kids' par item, par 6 — nuggets, lunch bowls x3, tortillas, shredded cheese, Coffee mate, distilled water, cucumbers). Coupons clipped 11/6: the Asian Meal Deal, Doritos 2 for $7 (2 bags on the list; the 2nd is banked), Coffee mate $2 off 2, $1 off 2 H-E-B Organics produce. Already clipped: Stouffer's $3 off 3. Only the Meal Deal is counted; the others need a 2nd item or didn't ring last time.",
+  groceryNote: "PLANNED: ~$215 curbside est before tax (the heb.com list shows 43 units). Dinners $61.98 new spend + the Friendsgiving turkey for 14 $37.78 + the Asian Meal Deal banked for later $17.01 (4 free items: jasmine rice, a steamable veg, soy sauce, +1) + weekly standing buys ~$46.03 (no lunch loaf this week) + restock ~$43.85 (French bread pizzas x6 — a NEW kids' par item, par 6 — nuggets, lunch bowls x3, tortillas, shredded cheese, Coffee mate, distilled water, cucumbers). Coupons clipped 11/6: the Asian Meal Deal, Doritos 2 for $7 (2 bags on the list; the 2nd is banked), Coffee mate $2 off 2, $1 off 2 H-E-B Organics produce. Already clipped: Stouffer's $3 off 3. Only the Meal Deal is counted; the others need a 2nd item or didn't ring last time.",
   // Read-only "On Hand" snapshot for the public page. Sanitized: no staples ledger, no names.
   bank: [
     { name: "Bush's baked beans + bacon (4 slices) + Stubb's + half an onion", qty: "1 can + 4 slices", location: "pantry / fridge", useBy: "", note: "Unplanned (Sat beans dropped 11/6)" },
