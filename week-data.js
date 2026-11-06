@@ -140,16 +140,17 @@ const WEEK_DATA = {
         "THU 11/12 night (1 min): both roasts freezer -> fridge to thaw (about 1.5 days)",
         "SAT 11/14 ~10:30 AM (~20 min): herb butter, bag; into a 145°F bath by 11 AM",
         "SAT ~4:00 PM (~50 min): bags into an ice bath for 45 min, then the fridge (done before the sloppy joes)",
-        "SUN 11/15, ~2.5 hr before leaving: bags into a 140°F bath for ~2 hr; then skin off, broil, slice, gravy"
+        "SUN 11/15, ~2.5 hr before leaving: bags into a 145°F bath for ~2 hr; then skin off, broil, slice, gravy"
       ],
-      summary: "Two boneless breast roasts cooked sous vide, so the turkey slices into wide, real-looking breast slices with no carving and no dry meat. They cook Saturday at 145°F in their netting, chill in an ice bath, and rewarm Sunday at 140°F; the skin peels off, the broiler browns the tops, and the bag juices plus broth make the gravy. The roasts are pre-brined, so the meat gets no added salt. About 0.4 lb raw per person, since there are several sides.",
+      summary: "Two boneless breast roasts cooked sous vide, so the turkey slices into wide, real-looking breast slices with no carving and no dry meat. They cook Saturday at 145°F in their netting, chill in an ice bath, and rewarm Sunday at 145°F; the skin peels off, the broiler browns the tops, and the bag juices plus broth make the gravy. The roasts are pre-brined, so the meat gets no added salt. About 0.4 lb raw per person, since there are several sides.",
       swapNote: "Leftovers count from SATURDAY's cook: eat by Tue 11/17 (USDA 3-4 days for cooked poultry), or freeze sliced turkey with some gravy for up to 2-3 months. Turkey that sat out at the party more than 2 hours doesn't come home. If you'd rather not cook Saturday, Thursday also works (Sunday is still day 3), but thaw Tuesday night instead.",
       links: [
-        { label: "Thyme & Joy — Sous Vide Turkey Breast (bone-in or boneless): 145°F 3-4.5 hr chart, cooking from frozen, oven/skillet finishes", url: "https://thymeandjoy.com/sous-vide-turkey-breast/", tag: "recipe" }
+        { label: "Thyme & Joy — Sous Vide Turkey Breast (bone-in or boneless): 145°F 3-4.5 hr chart, cooking from frozen, oven/skillet finishes", url: "https://thymeandjoy.com/sous-vide-turkey-breast/", tag: "recipe" },
+        { label: "America's Test Kitchen — Sous Vide Boneless Turkey Breast (paywalled): 145°F 3.5-5 hr, make-ahead ice bath + 145°F reheat; skip salt for a self-basting breast", url: "https://www.americastestkitchen.com/recipes/11251-sous-vide-boneless-turkey-breast", tag: "recipe" }
       ],
       recipe: {
         activeTime: "Saturday ~20 min; Sunday ~30 min",
-        cookTime: "145°F ~5 hr (thawed; +1.5 hr if still icy); ice bath 45 min; Sunday rewarm 140°F ~2 hr; broil ~4 min",
+        cookTime: "145°F ~5 hr (thawed; +1.5 hr if still icy); ice bath 45 min; Sunday rewarm 145°F ~2 hr; broil ~4 min",
         ingredients: [
           "2 Butterball Frozen Boneless Turkey Breast Roasts, 3 lbs each (new), thawed, netting ON. If a gravy packet is inside, set it aside (a backup only)",
           "4 tbsp Kerrygold butter, softened (owned), for the herb butter",
@@ -165,7 +166,7 @@ const WEEK_DATA = {
           "Leave the netting and skin on. Pat the roasts dry and rub the herb butter all over (push some under the netting). One roast per bag with a herb sprig. Seal.",
           "Into the bath by 11 AM, fully under water, for ~5 hr. The roasts are about 4 inches thick, so don't cut it short.",
           "~4:00 PM: straight into an ice bath (half ice, half water) for 45 min, then the fridge. Don't skip the ice: it's what makes the 3-4 day fridge clock safe.",
-          "SUN, ~2.5 hr before leaving: bath to 140°F; the cold bags go in for ~2 hr (whole roasts take longer to warm through than slices).",
+          "SUN, ~2.5 hr before leaving: bath to 145°F (same as the cook, per ATK); the cold bags go in for ~2 hr (whole roasts take longer to warm through than slices).",
           "Pull the bags and pour all the juices through a strainer into a saucepan. Snip off the netting, peel off the skin (it comes right off), and set the roasts on an oiled sheet pan. Pat dry.",
           "GRAVY: add the broth and butter to the juices and bring to a simmer. Whisk in the corn starch slurry and simmer 2 min until it coats a spoon. Season with salt and pepper. About 5 cups.",
           "Brush the tops with a little melted butter and broil on the top rack ~4 min, until browned in spots. Rest 5 min, then slice across the roast about 0.5 inch thick: wide, breast-shaped slices.",
