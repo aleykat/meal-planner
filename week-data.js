@@ -1,263 +1,248 @@
-// Week of 2026-11-02 — generated 2026-10-31 (Sat) for a Sunday Nov 1 curbside shop, H-E-B Irving #817.
-// Ad cycle 10/28-11/3 (ads/ad-2026-11-01.json). Four cooked dinners (Mon fajitas, Thu ribs, Fri hot dogs, Sun 11/8
-// shrimp pasta) + Wednesday flex; Sun 11/1, Tue and Sat are kids' freezer nights (self-serve, not planned here).
-// Prices VERIFIED on heb.com 10/31 (Chrome, logged in, curbside search prices) except where a note says carried.
-// No meal at or over $22.50. One long sous vide cook (Thu ribs, frozen bags into a 165°F bath Wed ~5:30 PM).
+// Week of 2026-11-09 — generated 2026-11-06 (Fri) for a Sunday Nov 8 curbside shop, H-E-B Irving #817.
+// Ad cycle through Tue 11/10 (ads/ad-2026-11-06.json). A light week by choice: Mon is a fast food night, Tue/Thu/Sun are
+// freezer nights (Sun = Friendsgiving), and only three dinners are on the list: Wed frozen family-size lasagna (heat and
+// serve), Fri sous vide top sirloin ($4.99/lb ad) with air-fryer gold potatoes and broccoli, Sat homemade sloppy joes on
+// Martin's Potato Rolls with doctored beans and fries. The H-E-B Asian Meal Deal (orange chicken + egg rolls + 4 free
+// items) is BANKED for a later week, not cooked. Prices VERIFIED on the heb.com list 11/6 (in-store; x1.05 curbside).
+// True dinner cost ~$66.43; Sat sloppy joes (~$27.24 true) is the week's one $25+ family meal. Added 11/6: Sun Friendsgiving
+// sous vide turkey tenderloins for 14 (~$44.02 true, $42.22 new), cooked Sat, rewarmed Sun.
 const WEEK_DATA = {
-  week: "2026-11-02",
-  title: "Week of Nov 2 — Sous Vide Chicken Fajitas, St. Louis Ribs & Doctored Beans, Hot Dog Night, Shrimp Scampi Linguine (Wednesday is flex)",
-  store: "H-E-B Irving #817 · curbside Sunday Nov 1",
-  adNote: "Ad cycle 10/28-11/3 (sale prices apply Sunday). Previously Frozen St. Louis Style Pork Ribs $1.77/lb (avg 3.35 lb rack $5.93), H-E-B soft drink 12 pks 2 for $8 (digital coupon; cola stock-up to the 144-can cap), H-E-B pizzas buy 3 get 4 items free (Meal Deal). The ad's $5.97/lb jumbo shrimp is the shell-on fish-counter kind; Sunday's pasta is a week out, so the frozen bag is the buy. Food-safety check 10/31: nothing active touches this menu (a new Salmonella outbreak with no named food is on watch). Still avoid sprouts and raw-milk cheese.",
-  shopDay: "Sunday Nov 1",
+  week: "2026-11-09",
+  title: "Week of Nov 9 — Frozen Lasagna Night, Sous Vide Top Sirloin with Gold Potatoes & Broccoli, Homemade Sloppy Joes, and Sous Vide Turkey for Friendsgiving (Mon fast food; Tue/Thu freezer)",
+  store: "H-E-B Irving #817 · curbside Sunday Nov 8",
+  adNote: "Ad through Tue 11/10: H-E-B Beef Top Sirloin Steak Value Pack $4.99/lb (57% off), H-E-B Organics Gold Potatoes 2 lb $2.97, and the H-E-B Asian Meal Deal (buy 2: orange chicken + egg rolls, get 4 items free) — banked for a later week. Food-safety check: nothing active touches this menu.",
+  shopDay: "Sunday Nov 8",
   meals: [
     {
-      id: "svfajitas",
-      cost: { est: 18.17, servings: 4, note: "PLANNED: $16.13 NEW SPEND — Hill Country Fare Boneless Skinless Split Chicken Breast avg 2.79 lb $8.76 VERIFIED ($3.14/lb; ~2 lb of need x the 1.06 chicken-breast buffer = 2.1 lb, and this pack is the size that clears it; the extra is lunch leftovers), H-E-B Sunrise Bell Peppers 3 ct $3.86 VERIFIED, 2 limes $0.42 VERIFIED, Daisy Squeeze Sour Cream 14 oz $3.09 VERIFIED (half used, $1.55). Banked: ~10 flour tortillas of the 20 ct pack ~$1.57, half the H-E-B Mexican-style shredded cheese ~$1.04, 1 yellow onion ~$0.57, Bolner's Fiesta fajita seasoning + oil ~$0.40." },
-      nutrition: { serving: "~7 oz chicken + peppers and onions in 3 flour tortillas, cheese and sour cream", calories: 720, protein: 58, carbs: 62, fat: 24 },
+      id: "lasagna",
+      slot: "Dinner 1 · Wed Nov 11 — 3 adults + 1 kid incl. our guest (busy night: heat and serve)",
+      night: "2026-11-11",
+      title: "Stouffer's Family-Size Lasagna with Garlic Texas Toast & Caesar Salad Kit",
+      time: "~10 min hands-on (oven ~1 hr 40 min from frozen)",
+      equipment: ["Oven"],
+      cost: { est: 17.37, servings: 4, note: "PLANNED: $17.37 NEW SPEND (in-store list x1.05 curbside) — Stouffer's Family Size Lasagna with Meat Sauce 38 oz $9.84 VERIFIED, New York Bakery Garlic Texas Toast 8 ct $3.12 VERIFIED, Dole Ultimate Caesar Salad Kit 11.3 oz $3.58 VERIFIED. Nothing banked. The 38 oz pan serves 5-6, so expect a lunch portion left." },
+      nutrition: { serving: "~1/5 of the lasagna, 1 slice garlic Texas toast, 1/4 of the Caesar kit", calories: 640, protein: 28, carbs: 62, fat: 31 },
       daytime: [
-        "SUN 11/1 (groceries in, ~20 min): season the chicken with Bolner's fajita seasoning, oil and a lime; seal; 147°F bath 1.5-2 hr; ice bath 15 min; fridge",
-        "MON ~6:30 PM (2 min): pull the bag from the fridge; slice the peppers and onion"
+        "SUN 11/8 (put-away): lasagna and Texas toast straight into the freezer; salad kit in the fridge",
+        "WED ~4:45 PM (2 min): oven to 375°F; lasagna in from frozen per the box (about 1 hr 40 min, then 5 min rest)"
       ],
-      title: "Sous Vide Chicken Fajitas with Peppers, Onions & Warm Tortillas",
-      slot: "Dinner 1 · Mon Nov 2 — 3 adults + 1 kid (chicken cooked Sunday; finished Monday in ~15 min, dinner after 7)",
-      night: "2026-11-02",
-      time: "~15 min Monday (the chicken was cooked Sunday)",
-      equipment: ["Sous vide (Sunday)", "Blackstone or a big skillet"],
-      summary: "Cook it Sunday, finish it Monday. The chicken goes into the bath on shop day, seasoned with Bolner's Fiesta fajita seasoning, oil and lime, then gets chilled and goes into the fridge fully cooked. Monday is a 15-minute finish: char the peppers and onions, add the sliced chicken just long enough to heat and brown, warm the tortillas. Cheese and squeeze sour cream on the table.",
-      links: [
-        { label: "Serious Eats — Sous Vide Chicken Breast (temperature table; 1.5-4 hr)", url: "https://www.seriouseats.com/sous-vide-chicken-breast-recipe", tag: "technique" },
-        { label: "The Kitchn — Easy 30-Minute Chicken Fajitas (the pepper-and-onion sear)", url: "https://www.thekitchn.com/chicken-fajitas-recipe-23666785", tag: "recipe" }
-      ],
-      swapNote: "Chilled sous vide chicken keeps 3-4 days in the sealed bag, so Monday is easy (Tuesday would be fine too). The chicken is already cooked: Monday's sear is only for color and heat, 2-3 minutes. A fridge-cold bag reheats faster sliced than whole. The extra breast meat is lunch leftovers.",
-      recipe: {
-        activeTime: "Sunday ~10 min to season and bag; Monday ~15 min",
-        cookTime: "Sunday: 147°F 1.5-2 hr + 15 min ice bath. Monday: peppers 6-8 min, chicken 2-3 min",
-        ingredients: [
-          "1 Hill Country Fare Boneless Skinless Split Chicken Breast pack, avg 2.79 lb (new)",
-          "Bolner's Fiesta fajita seasoning, used as the label directs (about 1 tbsp per lb), + 2 tbsp oil + juice of 1 lime (seasoning and oil owned; lime new)",
-          "3 bell peppers (H-E-B Sunrise 3 ct: red, yellow, orange) + 1 yellow onion (onion on hand), sliced into strips",
-          "~10 flour tortillas (on hand, 20 ct pack)",
-          "H-E-B Mexican-style shredded cheese (on hand), Daisy Squeeze sour cream (new), the 2nd lime in wedges",
-          "1 tbsp oil for the sear, salt (owned)"
-        ],
-        steps: [
-          "SUN, groceries in: pat the breasts dry, coat with the fajita seasoning, oil and the juice of 1 lime; seal in a single layer (two bags if needed).",
-          "SUN: bath to 147°F; bags in 1.5-2 hr. Then 15 min in ice water, and into the fridge.",
-          "MON ~6:30 PM: slice the peppers and onion into strips. Pull the chicken bag; slice the breasts into strips and keep the bag juices.",
-          "Blackstone or the biggest skillet very hot with the oil: peppers and onion with a pinch of salt, 6-8 min, until charred at the edges but still crisp.",
-          "Push the vegetables aside; chicken strips on, 2-3 min until browned and hot through. Splash on the bag juices and toss everything together.",
-          "Warm the tortillas on the griddle or in a dry pan, 20 sec a side; wrap them in a towel.",
-          "KID CHECKPOINT: none needed — the seasoning is mild. Anyone can build their own: chicken, cheese, sour cream, and skip the peppers.",
-          "Serve with cheese, sour cream and lime wedges.",
-          "Cleanup: the bag, one griddle or skillet."
-        ]
-      }
-    },
-    {
-      id: "flex",
-      cost: { est: 0, servings: 4, note: "Flex night — nothing on the list. The freezer meals, nuggets, corn dogs and pizzas cover it." },
-      daytime: [],
-      title: "Flex Night",
-      slot: "Flex night · Wed Nov 4",
-      night: "2026-11-04",
-      time: "everyone's own call",
-      equipment: [],
-      summary: "Wednesday is open: freezer meals, leftovers, or the kids' freezer stock. (Tonight is also the ribs bag drop, see Thursday.)",
-      links: []
-    },
-    {
-      id: "svribs",
-      cost: { est: 20.41, servings: 4, note: "PLANNED: $23.55 NEW SPEND — 2 Previously Frozen St. Louis Style Pork Ribs racks avg 3.35 lb $5.93 each = $11.86 VERIFIED ($1.77/lb ad, through Tue 11/3; buy the Previously Frozen SKU, not the H-E-B Natural racks beside them), Bush's Best Original Baked Beans 28 oz $2.96 VERIFIED, H-E-B Original Bacon 12 oz $4.61 VERIFIED (4 slices used ~$1.54, the rest banks), Stubb's Original Barbecue Sauce 18 oz $4.12 VERIFIED (about half used ~$2.06). The H-E-B salad kit comes FREE with the pizza Meal Deal. Banked: Meat Church Honey Hog rub ~$1.50, half an onion ~$0.29, brown sugar + mustard ~$0.20." },
-      nutrition: { serving: "~6 St. Louis bones (~9 oz on the bone) + 3/4 cup doctored beans + 1.5 cups salad", calories: 1050, protein: 52, carbs: 58, fat: 66 },
-      daytime: [
-        "SUN 11/1 (groceries in, ~15 min): cut each rack into 3 pieces, coat with the Honey Hog rub, seal 3 bags, FREEZE flat",
-        "WED 11/4 by ~5:30 PM (5 min): bath to 165°F; the FROZEN rib bags straight in, standing on edge and apart; cover the bath",
-        "THU 11/5 ~6:30-7:30 AM (5 min): pull the bags, ice bath 15 min, fridge",
-        "THU ~5:15 PM: oven 300°F; start the beans"
-      ],
-      title: "Sous Vide St. Louis Ribs with Doctored Baked Beans & Salad",
-      slot: "Dinner 2 · Thu Nov 5 — 3 adults + 1 kid (bags into the bath Wednesday by ~5:30 PM)",
-      night: "2026-11-05",
-      time: "~25 min active, from 5:15",
-      equipment: ["Sous vide", "Oven (broiler)", "Saucepan"],
-      summary: "The 9/7 Hit method: rubbed with Meat Church Honey Hog, sealed and frozen on shop day. The frozen bags go into a 165°F bath Wednesday evening, come out Thursday morning for an ice bath and the fridge, then get brushed with Stubb's, heated through at 300°F and finished under the broiler. Bush's beans doctored with bacon, onion, Stubb's, brown sugar and mustard (the 9/8 note: more doctoring than last time). The free Meal Deal salad kit is the green.",
-      links: [
-        { label: "Serious Eats — Sous Vide Barbecue Pork Ribs (165°F 12 hr = traditional BBQ texture; finish under the broiler)", url: "https://www.seriouseats.com/sous-vide-pork-ribs-recipe-food-lab", tag: "technique" },
-        { label: "Southern Bite — Bacon Brown Sugar Baked Beans (the doctoring)", url: "https://southernbite.com/bacon-brown-sugar-baked-beans/", tag: "recipe" }
-      ],
-      swapNote: "Frozen bags add about an hour, so a ~5:30 PM Wednesday drop gives ~12 hr of cooking by 6:30-7:30 AM Thursday. Stand the bags on edge and keep them apart (a wire rack dropped in vertically, or clip each bag to the rim); cover the bath so it doesn't evaporate overnight. If the 9/7 rack-fit concern comes back with only 2 racks, it shouldn't: this is 6 pieces, not 9. Can't pull the bags Thursday morning? Set 152°F instead and leave them in until dinner (~24 hr from the Wednesday drop); Serious Eats calls that a close runner-up, a little more tender and meaty. Store-short cut: if the Previously Frozen racks are out, baby backs at the same ad price are the swap (they run smaller, so 3 racks).",
-      recipe: {
-        activeTime: "~25 min active, from 5:15 PM",
-        cookTime: "165°F ~13 hr from frozen (Wed ~5:30 PM to Thu ~7 AM); oven 300°F 25-30 min + broil 3-5 min; beans ~15 min",
-        ingredients: [
-          "2 Previously Frozen St. Louis Style Pork Ribs racks, avg 3.35 lb each (new), each cut into 3 pieces",
-          "Meat Church Honey Hog BBQ rub (on hand), used as directed",
-          "Stubb's Original Barbecue Sauce, 18 oz (new): ~1/2 cup to glaze, ~3 tbsp in the beans",
-          "Beans: 1 can Bush's Best Original Baked Beans 28 oz (new), 4 slices H-E-B bacon diced (new; the rest banks), 1/2 yellow onion diced (on hand), 2 tbsp brown sugar, 1 tbsp yellow mustard (owned)",
-          "1 H-E-B salad kit (FREE with the pizza Meal Deal)"
-        ],
-        steps: [
-          "SUN: cut each rack into thirds; rub all over; seal into 3 bags in a single layer; freeze flat.",
-          "WED by ~5:30 PM: bath to 165°F; frozen bags in, standing apart; cover the bath.",
-          "THU ~6:30-7:30 AM: bags into an ice bath 15 min, then the fridge.",
-          "5:15 PM: oven to 300°F. In a saucepan, cook the diced bacon until crisp, add the onion 4 min, then the beans, Stubb's, brown sugar and mustard; simmer ~15 min, stirring now and then.",
-          "5:25 PM: ribs out of the bags (keep a few spoonfuls of the bag juices for the beans), meat-side up on a foil-lined sheet; brush with Stubb's; 25-30 min until hot through.",
-          "Switch to BROIL: 3-5 min until the sauce bubbles and darkens. Watch it; the sugar burns fast. Rest 5 min; cut between the bones.",
-          "Toss the salad kit while the ribs rest.",
-          "KID CHECKPOINT: none needed — ribs, beans and salad are all kid-plain.",
-          "Leftover ribs: fridge up to 4 days; reheat covered at 300°F ~15 min or air fryer 350°F 6-8 min.",
-          "Cleanup: the bags, a foil-lined sheet, one saucepan."
-        ]
-      }
-    },
-    {
-      id: "hotdogs",
-      cost: { est: 10.78, servings: 4, note: "PLANNED: $0 NEW SPEND — all banked from last week's skipped hot dog night: Nathan's Bun Length Skinless Beef Franks 8 ct $5.73 + Martin's Potato Long Rolls 8 ct $4.75 (paid prices), ketchup and mustard ~$0.30 (owned). No sides (standing hot dog night)." },
-      nutrition: { serving: "2 franks in potato long rolls, ketchup and mustard", calories: 640, protein: 22, carbs: 54, fat: 34 },
-      daytime: [
-        "SUN 11/1: the long rolls (dated 11/1) go into the freezer",
-        "FRI ~4:00 PM (1 min): rolls out of the freezer onto the counter"
-      ],
-      title: "Nathan's Beef Hot Dogs on Martin's Potato Long Rolls",
-      slot: "Dinner 3 · Fri Nov 6 — 3 adults + 1 kid (the easy night)",
-      night: "2026-11-06",
-      time: "~10 min",
-      equipment: ["Blackstone griddle (or a skillet)"],
-      summary: "The zero-thought night, already bought: last week's franks and potato long rolls, two each. Roll the dogs on a hot griddle until they blister and toast the buns face-down for the last 45 seconds. Condiments on the table and nothing else to cook.",
-      links: [
-        { label: "Blackstone — Griddle Dogs with Better Buns (flat-top technique)", url: "https://blackstoneproducts.com/blogs/recipes/griddle-dogs-with-better-buns", tag: "technique" }
-      ],
-      swapNote: "The rolls are frozen Sunday (dated 11/1) and thaw on the counter in a couple of hours; a minute on the griddle brings them back. The franks stay in the fridge (good through 11/8). Skillet or air fryer (400°F, 5 min) works if the griddle isn't out.",
+      summary: "The busy-night dinner: everything is frozen or bagged, so the work is turning on the oven. The lasagna goes in frozen, the Texas toast goes in for the last few minutes while the lasagna rests, and the salad is a kit. Dinner lands around 6:30.",
+      links: [],
       recipe: {
         activeTime: "~10 min",
-        cookTime: "dogs ~6 min",
+        cookTime: "Lasagna ~1 hr 40 min at 375°F from frozen (follow the box), 5 min rest; Texas toast ~5-7 min at 425°F",
         ingredients: [
-          "8 Nathan's Bun Length Skinless Beef Franks (on hand)",
-          "8 Martin's Potato Long Rolls (on hand, frozen Sunday)",
-          "Ketchup, French's yellow mustard, pickles if wanted (owned)"
+          "1 Stouffer's Family Size Lasagna with Meat Sauce, 38 oz (new), kept frozen",
+          "1 New York Bakery Garlic Texas Toast, 8 ct (new), kept frozen — use 4-6 slices; the rest stays in the freezer",
+          "1 Dole Ultimate Caesar Salad Kit, 11.3 oz (new)"
         ],
         steps: [
-          "~4:00 PM: rolls out of the freezer.",
-          "Griddle or skillet medium-high, 2 min preheat.",
-          "Franks on; roll every 90 sec until blistered, about 6 min. (Or air fryer 400°F, 5 min.)",
-          "Last minute: buns face-down on the griddle edge, 45 sec.",
-          "KID CHECKPOINT: none needed — plain dog, plain bun.",
-          "Cleanup: a scraper."
+          "~4:45 PM: oven to 375°F. Follow the box: the film usually stays on or gets vented. Bake on a sheet pan on the center rack, about 1 hr 40 min, until it's bubbling at the center.",
+          "When it comes out, let it rest 5 min. Raise the oven to 425°F and bake the Texas toast on a sheet pan, about 5-7 min.",
+          "Toss the salad kit in a bowl.",
+          "Leftover lasagna: fridge, good for lunches through Saturday."
         ]
       }
     },
     {
-      id: "shrimpscampi",
-      cost: { est: 19.54, servings: 4, note: "PLANNED: $24.76 NEW SPEND — Great Catch Frozen Peeled Deveined Tail-Off Large Raw Shrimp 41-50 ct, 2 lb $17.82 VERIFIED (1.5 lb used = $13.37; 0.5 lb reseals and banks), H-E-B Linguine 16 oz $1.18 VERIFIED, Sutter Home Sauvignon Blanc 4 pk x 187 mL $5.76 VERIFIED (1 bottle used = $1.44; 3 bank for cooking). Banked: Kerrygold ~4 tbsp ~$1.00, ~6 garlic cloves ~$0.40, the small lemon ~$0.35, ~1.5 oz Sartori parmesan ~$1.70, red pepper flakes + salt ~$0.10. Frozen bag, not the ad's $5.97/lb counter shrimp: the counter shrimp is previously frozen and the cook is 7 days out." },
-      nutrition: { serving: "~6 oz shrimp + 1/4 lb linguine in garlic-butter-wine sauce with parmesan", calories: 760, protein: 48, carbs: 88, fat: 22 },
+      id: "svsirloin",
+      slot: "Dinner 2 · Fri Nov 13 — 2 adults + the teen + 1 kid (early dinner ~5:30; out by 6:30 for a 7 PM show)",
+      night: "2026-11-13",
+      title: "Sous Vide Top Sirloin (Butter-Garlic Sear) with Air-Fryer Gold Potatoes & Broccoli",
+      time: "~20 min at dinner (bag drop 2:30 PM)",
+      equipment: ["Sous vide", "Cast iron", "Air fryer"],
+      cost: { est: 21.82, servings: 4, note: "PLANNED: $21.02 NEW SPEND — H-E-B Beef Top Sirloin Steak Value Pack, USDA Choice, avg 2.75 lb at $4.99/lb (ad, through 11/10) ~$15.14 (packs ring ~10% over the listed avg; listed $13.72; need ~2.25 lb, ordered heavy at the 1.15 buffer), H-E-B Organics Gold Potatoes 2 lb $3.12, Fresh Broccoli Crowns x2 (~1.3 lb) ~$2.76. Banked ~$0.80: Kerrygold butter 2 tbsp, 3 garlic cloves, oil, kosher salt, pepper. Just under the $22.50 line." },
+      nutrition: { serving: "~7 oz cooked sirloin, ~7 oz gold potatoes, ~5 oz broccoli", calories: 730, protein: 56, carbs: 42, fat: 36 },
       daytime: [
-        "SAT 11/7 night (1 min): 1.5 lb of the shrimp into a bowl in the fridge to thaw (reseal the rest)",
-        "SUN 11/8 ~5:30 PM: bath to 135°F; pasta water on"
+        "SUN 11/8 (groceries in, ~10 min): salt and pepper the steaks, seal (one layer, two bags if needed), FREEZE flat — the cook is 5 days out",
+        "FRI 2:30 PM (2 min): frozen bags straight into a 129°F bath (calendar reminder)",
+        "FRI ~5:00 PM: potatoes into the air fryer; broccoli after; sear at ~5:20"
       ],
-      title: "Shrimp Scampi Linguine (Sous Vide Shrimp, Garlic-Butter-Wine Sauce)",
-      slot: "Dinner 4 · Sun Nov 8 — 3 adults + 1 kid",
-      night: "2026-11-08",
-      time: "~25 min active, from 5:30",
-      equipment: ["Sous vide", "Pasta pot", "Large skillet", "Microplane"],
-      summary: "Classic scampi: garlic in butter, a splash of white wine reduced, lemon, red pepper flakes, linguine tossed in with pasta water and grated parmesan. The shrimp go in a 135°F bath while the pasta cooks, so they come out tender every time, then get folded into the sauce off the heat. Not Cajun. Red pepper goes on the table.",
+      summary: "Frozen sous vide steak on a weeknight: the bags were salted, sealed and frozen on shop day, and go into the bath frozen at 2:30. At 5 it's a 20-minute finish: air-fryer gold potatoes, then broccoli at 365°F for 8 min, and a very hot cast-iron sear basted with butter and garlic. Dinner is on the table by 5:30.",
+      swapNote: "From frozen, add about an hour to the bath time; 1-1.25 inch steaks need about 2.5-3 hr at 129°F and hold well past that, so a late start doesn't matter. Pat the steaks VERY dry before the sear, or the crust won't form.",
       links: [
-        { label: "Simply Recipes — 15-Minute Shrimp Scampi (the sauce; scaled here to 1.5 lb shrimp + 1 lb linguine)", url: "https://www.simplyrecipes.com/recipes/shrimp_scampi/", tag: "recipe" },
-        { label: "Serious Eats — Sous Vide Poached Shrimp (135°F)", url: "https://www.seriouseats.com/sous-vide-poached-shrimp", tag: "technique" }
+        { label: "Serious Eats — Sous Vide Steak Guide (The Food Lab): temperature chart + cooking from frozen", url: "https://www.seriouseats.com/food-lab-complete-guide-to-sous-vide-steak", tag: "technique" }
       ],
-      swapNote: "No time for the bath? Sauté the shrimp in the scampi butter 1-2 min a side before the wine goes in; that's the classic method. The other 0.5 lb of shrimp reseals in the chamber sealer and banks.",
       recipe: {
-        activeTime: "~25 min active, from 5:30 PM",
-        cookTime: "shrimp 135°F 20-30 min; linguine ~10 min; sauce ~8 min",
+        activeTime: "Sunday ~10 min; Friday ~20 min",
+        cookTime: "129°F 2.5-3 hr from frozen; potatoes ~18-20 min at 400°F; broccoli 8 min at 365°F; sear 60-90 sec a side",
         ingredients: [
-          "1.5 lb Great Catch peeled, deveined, tail-off large raw shrimp, thawed (new, frozen 2 lb bag)",
-          "1 lb H-E-B linguine (new)",
-          "6 tbsp Kerrygold salted butter (on hand), 2 tbsp olive oil (owned)",
-          "6 garlic cloves, minced or microplaned (on hand)",
-          "1/2 cup dry white wine, 1 Sutter Home 187 mL bottle (new)",
-          "1 lemon, zest and juice (on hand); 1/2 tsp red pepper flakes, for the table (owned)",
-          "~1.5 oz Sartori parmesan, grated (on hand); kosher salt, black pepper (owned)"
+          "1 H-E-B Beef Top Sirloin Steak Value Pack, avg 2.75 lb (new) — about 2.25 lb is dinner; any extra is lunch",
+          "Kosher salt + black pepper (owned)",
+          "2 tbsp Kerrygold butter, 3 garlic cloves smashed (owned), 1 tbsp canola oil (owned)",
+          "~1.75 lb H-E-B Organics Gold Potatoes (new, 2 lb bag), halved; 1 tbsp oil, salt, garlic powder (owned)",
+          "~1.25 lb broccoli crowns (new), cut into florets; 1 tbsp oil, salt"
         ],
         steps: [
-          "SAT night: 1.5 lb of shrimp into the fridge to thaw. (In a hurry Sunday: the sealed bag in cold water ~30 min.)",
-          "5:30 PM: bath to 135°F; salted pasta water on.",
-          "5:45 PM: pat the shrimp dry; bag with 1 tbsp butter and a pinch of salt in a single layer; into the bath 20-30 min.",
-          "5:50 PM: linguine in; cook to just short of al dente. Save 1 cup of pasta water.",
-          "Meanwhile, in the big skillet over medium heat: 4 tbsp butter + the olive oil, then the garlic 1 min (don't brown it). Add the wine; simmer 2-3 min, down by half.",
-          "Linguine into the skillet with 1/2 cup pasta water, the lemon zest and juice and the last tbsp of butter; toss 1-2 min until glossy.",
-          "Off the heat: fold in the shrimp with their bag juices and half the parmesan. Loosen with more pasta water. Salt and pepper to taste.",
-          "KID CHECKPOINT: none needed; red pepper flakes go on the table, not in the pan.",
-          "Serve with the rest of the parmesan.",
-          "Cleanup: the pot, the skillet, the bag."
+          "SUN, groceries in: salt the steaks well on both sides, then pepper. Seal in a single layer and freeze flat.",
+          "FRI 2:30 PM: bath to 129°F; the frozen bags go straight in.",
+          "~5:00 PM: halve the potatoes and toss with oil, salt and garlic powder. Air fry at 400°F for 18-20 min, shaking halfway.",
+          "~5:10 PM: cut the broccoli into florets and toss with oil and salt. It goes in when the potatoes come out: 365°F for 8 min.",
+          "~5:15 PM: pull the steaks and pat them VERY dry. Heat the cast iron until it smokes, with the oil. Sear 60-90 sec a side. In the last 30 sec, add the butter and garlic and spoon it over the steaks.",
+          "Rest 2-3 min, slice against the grain, and pour the pan butter over.",
+          "KID CHECKPOINT: none needed. It's steak, potatoes and broccoli; anyone can skip the garlic butter.",
+          "Cleanup: the bags, the cast iron, the air fryer basket."
+        ]
+      }
+    },
+    {
+      id: "sloppyjoes",
+      slot: "Dinner 3 · Sat Nov 14 — 2 adults incl. our guest + the teen + 1 kid (the teen may be late; it holds well)",
+      night: "2026-11-14",
+      title: "Homemade Sloppy Joes on Martin's Potato Rolls with Doctored Bacon Beans & Fries",
+      time: "~30 min",
+      equipment: ["Big skillet", "Saucepan", "Oven or air fryer"],
+      cost: { est: 27.24, servings: 4, note: "PLANNED: $23.59 NEW SPEND — H-E-B 100% Pure Ground Beef Chuck 80% Lean Value Pack, avg 1.9 lb (tray, not a chub) ~$12.52 ($5.99/lb; packs ring ~10% over avg), Martin's Potato Sandwich Rolls 8 ct $4.75, 1 green bell pepper $0.53, 1 yellow onion $0.57, Lea & Perrins Worcestershire 10 oz $5.22 (staple; ~$0.30 used). Banked ~$8.57: the svribs beans leftovers (Bush's can, 4 bacon slices, half an onion, Stubb's, brown sugar, mustard ~$4.47), 1 bag of fries ~$3.50, ketchup/brown sugar/mustard for the joes ~$0.60. The week's one $25+ meal." },
+      nutrition: { serving: "1.5 sloppy joes on potato rolls, ~3/4 cup doctored beans, a handful of fries", calories: 960, protein: 44, carbs: 108, fat: 38 },
+      daytime: [
+        "SUN 11/8 (put-away): the ground beef goes in the FREEZER (the cook is 6 days out); rolls in the freezer too",
+        "FRI night (1 min): ground beef from the freezer into the fridge to thaw; rolls out Saturday afternoon"
+      ],
+      summary: "Classic homemade sloppy joes. Homemade clearly beats canned Manwich here: in 25 minutes it's beefier and less sweet, and you can tune it. It's a 2 lb batch for 8 potato rolls, so leftovers hold for the teen's late dinner. The doctored beans finally use the leftovers planned for the ribs night that got tossed.",
+      swapNote: "Homemade over Manwich: the same 25 minutes for a beefier, less-sweet sauce you can tune (more Worcestershire or mustard for tang, a pinch of red pepper for the adults). The recipe link is a 1 lb batch; this is doubled.",
+      links: [
+        { label: "Food Network Kitchen — The Best Sloppy Joes (1 lb version, 30 min; doubled here)", url: "https://www.foodnetwork.com/recipes/food-network-kitchen/the-best-sloppy-joes-7263253", tag: "recipe" },
+        { label: "Southern Bite — Bacon Brown Sugar Baked Beans (the doctored-beans method)", url: "https://southernbite.com/bacon-brown-sugar-baked-beans/", tag: "alt" }
+      ],
+      recipe: {
+        activeTime: "~30 min",
+        cookTime: "Joes ~25 min; beans ~15 min simmer; fries per the bag (~20 min)",
+        ingredients: [
+          "~1.9 lb H-E-B ground chuck 80% (new, thawed)",
+          "1 yellow onion + 1 green bell pepper, finely diced (new); 2 garlic cloves (owned)",
+          "~1.5 cups ketchup, 2 tbsp brown sugar, 1.5 tbsp yellow mustard, 2 tbsp Worcestershire (ketchup, sugar, mustard owned; Worcestershire new)",
+          "Salt, pepper; optional pinch of crushed red pepper (owned)",
+          "8 Martin's Potato Sandwich Rolls (new), toasted",
+          "BEANS: 1 can Bush's baked beans, 4 bacon slices, half an onion, ~2 tbsp Stubb's, 2 tbsp brown sugar, 1 tbsp mustard (all banked)",
+          "1 bag of frozen fries (banked)"
+        ],
+        steps: [
+          "Fries in the oven or air fryer per the bag.",
+          "BEANS: chop the bacon and render it in a saucepan. Add the half onion, diced, and cook 4 min. Stir in the beans, Stubb's, brown sugar and mustard, and simmer 15 min, stirring now and then.",
+          "JOES: brown the beef in a big skillet over medium-high, 7-8 min, breaking it up. Spoon off most of the fat.",
+          "Add the onion and pepper and cook 5 min until soft. Add the garlic for 30 sec.",
+          "Stir in the ketchup, brown sugar, mustard, Worcestershire and 1/2 cup water. Simmer 10 min until thick. Taste and adjust: more Worcestershire or mustard for tang, salt and pepper.",
+          "Toast the rolls cut side down in a dry pan or under the broiler.",
+          "KID CHECKPOINT: the base is mild; red pepper goes on the adults' sandwiches only.",
+          "The teen eats late: keep the joes covered on low with a splash of water. Leftovers go in the fridge (lunch) or the freezer.",
+          "Cleanup: the skillet, the saucepan, the sheet pan."
+        ]
+      }
+    },
+    {
+      id: "friendsgivingturkey",
+      slot: "Sun Nov 15 · Friendsgiving — our dish for 14 people (cooked Saturday, rewarmed Sunday)",
+      night: "2026-11-15",
+      title: "Sous Vide Herb-Butter Turkey Breast Tenderloins with Pan Gravy (Friendsgiving, serves 14)",
+      time: "Sat ~20 min hands-on + 3-4 hr bath; Sun ~30 min to rewarm, brown and slice",
+      equipment: ["Sous vide", "Big pot or cooler for the bath", "Broiler + sheet pans", "Saucepan"],
+      cost: { est: 44.02, servings: 14, note: "PLANNED: $42.22 NEW SPEND (curbside) — Frozen Turkey Breast Tenders, Avg. 0.95 lb x6 ~5.7 lb $35.88 ($5.98 each online; fixed price per pack, not weighed), Duncan Family Farms Organic Poultry Blend (fresh sage/thyme/rosemary) $2.60, H-E-B Chicken Broth 32 oz $2.08, Clabber Girl Corn Starch 6.5 oz $1.66. Banked ~$1.80: Kerrygold butter 7 tbsp, 4 garlic cloves, kosher salt, pepper. About $3.14 a person. A party dish for 14, not a family dinner." },
+      nutrition: { serving: "~4.5 oz cooked turkey breast with ~0.33 cup pan gravy", calories: 240, protein: 42, carbs: 4, fat: 6 },
+      daytime: [
+        "SUN 11/8 (put-away): the 6 turkey packs go straight into the FREEZER (they come frozen)",
+        "THU 11/12 night (1 min): turkey packs freezer -> fridge to thaw (about 2 days)",
+        "SAT 11/14 ~11:30 AM (~20 min): herb butter, season, bag; into a 145°F bath by noon",
+        "SAT ~3:30 PM (~35 min): bags into an ice bath for 30 min, then the fridge (done well before the sloppy joes)",
+        "SUN 11/15, ~1.5 hr before leaving: bags into a 140°F bath for ~1 hr; then broil, slice, gravy"
+      ],
+      summary: "Skinless turkey for a crowd, with no carving and no dry meat. Tenderloins are the lean inner strip of the breast, already skinless and boneless, about the size of a small pork tenderloin. They cook Saturday at 145°F, chill in an ice bath, and rewarm Sunday at 140°F; the broiler browns them and the bag juices plus broth make the gravy. About 0.4 lb raw per person, since there are several sides.",
+      swapNote: "Leftovers count from SATURDAY's cook: eat by Tue 11/17 (USDA 3-4 days for cooked poultry), or freeze sliced turkey with some gravy for up to 2-3 months. Turkey that sat out at the party more than 2 hours doesn't come home. If you'd rather not cook Saturday, Thursday also works (Sunday is still day 3), but thaw Tuesday night instead.",
+      links: [
+        { label: "Thyme & Joy — Sous Vide Turkey Tenderloin: time/temperature chart, +1 hr from frozen, broiler and skillet finishes", url: "https://thymeandjoy.com/sous-vide-turkey-tenderloin/", tag: "recipe" }
+      ],
+      recipe: {
+        activeTime: "Saturday ~20 min; Sunday ~30 min",
+        cookTime: "145°F 3-4 hr (thawed); ice bath 30 min; Sunday rewarm 140°F ~1 hr; broil ~3 min a side",
+        ingredients: [
+          "6 packs Frozen Turkey Breast Tenders, Avg. 0.95 lb (new), ~5.7 lb, thawed",
+          "4 tbsp Kerrygold butter, softened (owned), for the herb butter",
+          "1 pack Duncan Family Farms Organic Poultry Blend (new): ~2 tbsp chopped sage + thyme + rosemary, a few sprigs saved for the bags",
+          "4 garlic cloves, minced (owned)",
+          "~5 tsp kosher salt (about 1 tsp per lb; use half if the pack says it contains a solution) + 2 tsp black pepper (owned)",
+          "1 tbsp canola oil (owned), for the broiler",
+          "GRAVY: the strained bag juices, 1 carton H-E-B Chicken Broth 32 oz (new), 3 tbsp butter (owned), 3 tbsp corn starch (new) whisked into 0.33 cup cold water, salt + pepper"
+        ],
+        steps: [
+          "THU night: move the 6 packs from the freezer to the fridge to thaw.",
+          "SAT ~11:30 AM: bath to 145°F. Mash the softened butter with the chopped herbs, garlic and pepper.",
+          "Pat the tenderloins dry. Salt them all over, then rub on the herb butter. Bag them in a single layer, 2 per bag (about 3 bags), with a herb sprig in each. Seal.",
+          "Into the bath by noon, fully under water, for 3-4 hr. Thick pieces need the full 3.",
+          "~3:30 PM: straight into an ice bath (half ice, half water) for 30 min, then the fridge. Don't skip the ice: it's what makes the 3-4 day fridge clock safe.",
+          "SUN, ~1.5 hr before leaving: bath to 140°F; the cold bags go in for ~1 hr.",
+          "Pull the bags and pour all the juices through a strainer into a saucepan. Lay the tenderloins on oiled sheet pans and pat them dry.",
+          "GRAVY: add the broth and butter to the juices and bring to a simmer. Whisk in the corn starch slurry and simmer 2 min until it coats a spoon. Season with salt and pepper. About 5 cups.",
+          "Broil the tenderloins on the top rack about 3 min a side, until browned in spots. Rest 5 min, then slice against the grain about 0.5 inch thick.",
+          "Transport: sliced turkey in a covered dish with a ladle of gravy over it so it stays moist; the rest of the gravy goes in a jar.",
+          "Cleanup: the bags, the sheet pans, the saucepan."
         ]
       }
     }
   ],
   grocery: [
     { section: "Meat Market", aisle: "Meat Market", items: [
-      { name: "Previously Frozen St. Louis Style Pork Ribs, avg 3.35 lb × 2 racks (Thu; NOT the H-E-B Natural racks beside them)", est: 11.86, note: "$5.93 each VERIFIED ($1.77/lb ad, through Tue 11/3). Store-short swap: baby backs, same price, 3 racks" },
-      { name: "Hill Country Fare Boneless Skinless Split Chicken Breast, avg 2.79 lb (Mon; ~2 lb of need, ordered heavy at the 1.06 buffer)", est: 8.76, note: "$8.76 VERIFIED ($3.14/lb). Plain, not the ad's pre-seasoned fajita breasts (the family seasons them)" },
-      { name: "H-E-B Original Bacon, 12 oz (Thu beans; the rest banks)", est: 4.61, note: "$4.61 VERIFIED" }
+      { name: "H-E-B Beef Top Sirloin Steak Value Pack, USDA Choice, avg 2.75 lb (Fri; need ~2.25 lb, ordered heavy)", est: 15.14, note: "$4.99/lb ad VERIFIED (listed $13.72; packs ring ~10% over avg). Seal and freeze Sunday" },
+      { name: "H-E-B 100% Pure Ground Beef Chuck, 80% Lean, Value Pack, avg 1.9 lb (Sat; TRAY, not a chub)", est: 12.52, note: "$5.99/lb VERIFIED ($11.38 listed). Store-short cut: if it's out, 2 x the 1.1 lb ground chuck trays. Freeze Sunday" }
     ]},
     { section: "Produce", aisle: "Produce", items: [
-      { name: "H-E-B Fresh Sunrise Bell Peppers, 3 ct (Mon)", est: 3.86, note: "$3.86 VERIFIED" },
-      { name: "Fresh Lime × 2 (Mon)", est: 0.42, note: "$0.21 each VERIFIED" },
-      { name: "H-E-B Salad Kit - Classic Caesar — FREE with the 3 pizzas (Meal Deal, clipped; Thu side)", est: 0, note: "must be on the list for the freebie to fire" }
-    ]},
-    { section: "Pantry", aisle: "Canned; sauces; pasta", items: [
-      { name: "Bush's Best Original Baked Beans, 28 oz (Thu)", est: 2.96, note: "$2.96 VERIFIED" },
-      { name: "Stubb's Original Barbecue Sauce, 18 oz (Thu)", est: 4.12, note: "$4.12 VERIFIED" },
-      { name: "H-E-B Linguine, 16 oz (Sun 11/8)", est: 1.18, note: "$1.18 VERIFIED" }
-    ]},
-    { section: "Wine", aisle: "Wine", items: [
-      { name: "Sutter Home Sauvignon Blanc, 4 pk × 187 mL (Sun 11/8 scampi; 3 bank for cooking)", est: 5.76, note: "$5.76 VERIFIED" }
-    ]},
-    { section: "Bakery & bread", aisle: "Bread aisle", items: [
-      { name: "Nature's Own Honey Wheat, 20 oz (weekly lunch loaf)", est: 3.76, note: "$3.76 VERIFIED on the list (in-store); a banked loaf is also in the freezer" }
-    ]},
-    { section: "Dairy & deli", aisle: "Dairy / right wall", items: [
-      { name: "Daisy Squeeze Sour Cream, 14 oz (Mon)", est: 3.09, note: "$3.09 VERIFIED (the open bottle is dated 11/1)" },
-      { name: "Daisy Small Curd 4% Cottage Cheese, 24 oz (weekly)", est: 4.97, note: "$4.97 VERIFIED on the list (in-store)" },
-      { name: "H-E-B Whole Milk, 1/2 gal (weekly)", est: 1.94, note: "$1.94 VERIFIED on the list (in-store)" },
-      { name: "Hill Country Fare Shredded Cheese, 8 oz × 1 (lunch wraps restock; variety = the eater's pick)", est: 2.07, note: "$2.07 VERIFIED (mild or sharp cheddar)" }
+      { name: "H-E-B Organics Gold Potatoes, 2 lb bag (Fri)", est: 3.12, note: "$2.97 ad VERIFIED. $1 off 2 H-E-B Organics coupon clipped (only fires with a 2nd Organics item)" },
+      { name: "Fresh Broccoli Crowns x2 (~1.25 lb, Fri)", est: 2.76, note: "$1.99/lb VERIFIED" },
+      { name: "Fresh Green Bell Pepper x1 (Sat)", est: 0.53, note: "$0.50 VERIFIED" },
+      { name: "Fresh Yellow Onion x1 (Sat)", est: 0.57, note: "$0.90/lb VERIFIED" },
+      { name: "Dole Ultimate Caesar Salad Kit, 11.3 oz (Wed)", est: 3.76, note: "$3.58 VERIFIED" },
+      { name: "Fresh Cucumber x3 (lunches)", est: 1.58, note: "$0.50 each VERIFIED" },
+      { name: "Duncan Family Farms Organic Poultry Blend, 0.5 oz (Sun turkey)", est: 2.6, note: "$2.48 VERIFIED. Fresh sage, thyme, rosemary" }
     ]},
     { section: "Frozen", aisle: "Frozen", items: [
-      { name: "Great Catch Frozen Peeled Deveined Tail-Off Large Raw Shrimp, 41-50 ct, 2 lb (Sun 11/8; 0.5 lb banks)", est: 17.82, note: "$17.82 VERIFIED" },
-      { name: "H-E-B Rising Crust Frozen Pizza × 3: 2 Uncured Pepperoni + 1 Cheese (kids' freezer nights; swap varieties freely, any H-E-B pizza 13.25 oz+ or MightyCrust counts)", est: 14.04, note: "$4.68 each VERIFIED. Anchors the Meal Deal: FREE salad kit, TX Brewed Tea 52 oz, Bounty mega roll, H-E-B plastic forks/knives/spoons 24 ct (all 4 clipped). The Hill Country Fare buy-2-get-1 pizzas show 'products unavailable' online at #817" },
-      { name: "H-E-B Natural Southern Style Breaded Chicken Nuggets, 24 oz × 3 (restock to par)", est: 26.97, note: "$8.99 each VERIFIED on the list (in-store)" },
-      { name: "State Fair Frozen Fully Cooked Classic Corn Dogs, 22 ct (restock)", est: 14.30, note: "$14.30 VERIFIED" },
-      { name: "Adult frozen lunch meals × 6: 3 H-E-B bowls (Smoked Brisket Mac & Cheese, Spaghetti & Meatballs, Chicken Alfredo, $3.12 each) + 3 Stouffer's single-serve (Classic Meat Lasagna, Chicken Fettuccini Alfredo, Meatloaf, $3.34 each)", est: 15.93, note: "$2.97 + $3.34 each VERIFIED on the list (in-store), $18.93, minus $3 off 3 Stouffer's (clipped)" }
+      { name: "Stouffer's Family Size Lasagna with Meat Sauce, 38 oz (Wed)", est: 10.33, note: "$9.84 VERIFIED" },
+      { name: "New York Bakery Garlic Texas Toast, 8 ct (Wed)", est: 3.28, note: "$3.12 VERIFIED" },
+      { name: "H-E-B Frozen Fully Cooked Orange Chicken, 24 oz (MEAL DEAL; BANKED for a later week)", est: 7.62, note: "$7.26 VERIFIED. Meal Deal clipped: buy 2 -> 4 items FREE (exp Tue 11/10)" },
+      { name: "H-E-B Chicken Egg Rolls, 12 ct (MEAL DEAL; BANKED)", est: 9.39, note: "$8.94 VERIFIED. Pork egg rolls are the same price if preferred" },
+      { name: "Kids' freezer: French bread pizzas, 6 (3 x Stouffer's Pepperoni French Bread 2 ct)", est: 12.51, note: "$3.97 each VERIFIED. Red Baron French bread isn't carried at #817, so Stouffer's is the match. Stouffer's $3 off 3 is clipped but didn't ring last time, so it isn't counted" },
+      { name: "Kids' freezer: H-E-B Natural Southern Style Chicken Nuggets, 24 oz x1", est: 9.44, note: "$8.99 VERIFIED" },
+      { name: "Frozen lunch bowls x3 (H-E-B Smoked Brisket Mac, Spaghetti and Meatballs, Chicken Alfredo)", est: 9.36, note: "$2.97 each VERIFIED" },
+      { name: "Frozen Turkey Breast Tenders, Avg. 0.95 lb x6 (Sun Friendsgiving for 14; ~5.7 lb, ~0.4 lb a person with sides)", est: 35.88, note: "$5.69 in-store / $5.98 online each VERIFIED; a fixed price per pack, not weighed. Raw, skinless, Meat Market A12. Straight into the freezer Sunday" }
     ]},
-    { section: "Soda & water", aisle: "Soda aisle; water", items: [
-      { name: "H-E-B Zero Sugar Original Cola, 12 pk cans × 4 (stock-up to the 144-can cap)", est: 16.00, note: "2 for $8 digital coupon (already clipped, unlimited use, exp 11/3) = $4.00 per 12 pk ($0.33/can vs $0.41 for the regular $9.95 24 pk). 96 on hand, so 144 - 96 = 48 cans = 4 × 12 pk" },
-      { name: "Hill Country Fare Purified Drinking Water, 40 pk × 16.9 oz (restock)", est: 5.74, note: "$5.74 VERIFIED" },
-      { name: "H-E-B TX Brewed Sweet Iced Tea, 52 oz — FREE with the pizzas (Meal Deal)", est: 0, note: "must be on the list for the freebie to fire" }
+    { section: "Bakery & bread", aisle: "Bread aisle", items: [
+      { name: "Martin's Potato Sandwich Rolls, 8 ct (Sat)", est: 4.75, note: "$4.52 VERIFIED" },
+      { name: "H-E-B Round Top Small White Bread, 16 oz (weekly lunch loaf)", est: 2.35, note: "$2.24 VERIFIED" },
+      { name: "H-E-B Original Fajita Flour Tortillas, 20 ct (restock)", est: 2.23, note: "$2.12 VERIFIED" }
     ]},
-    { section: "Condiments", aisle: "Condiments", items: [
-      { name: "Chick-fil-A Original Sauce, 24 oz (restock)", est: 6.27, note: "$6.27 VERIFIED" }
+    { section: "Dairy", aisle: "Dairy / back wall", items: [
+      { name: "H-E-B Whole Milk, 1/2 gal (weekly)", est: 2.04, note: "$1.94 VERIFIED" },
+      { name: "Daisy Small Curd 4% Cottage Cheese, 24 oz (weekly)", est: 5.22, note: "$4.97 VERIFIED" },
+      { name: "H-E-B Mild Cheddar Shredded Cheese, 8 oz (lunch wraps)", est: 3.13, note: "$2.98 VERIFIED" },
+      { name: "Coffee mate French Vanilla, 32 oz (restock)", est: 4.18, note: "$3.98 VERIFIED. $2 off 2 clipped: buying 2 would make the second ~$1.98" },
+      { name: "Kerrygold Grass-Fed Pure Irish Salted Butter, 8 oz (restock: scampi + steak + turkey need 15 tbsp, 14 on hand)", est: 4.91, note: "$4.68 VERIFIED" }
     ]},
-    { section: "Snacks & paper", aisle: "Chips; cookies; bags; paper", items: [
-      { name: "Cheetos Cheddar Jalapeño Crunchy, 8.5 oz (weekly adult snack)", est: 3.97, note: "$3.97 VERIFIED price cut" },
-      { name: "Salty snack trio for portioning: Doritos Nacho Cheese 9.25 oz + Cheetos Puffs 8 oz + Pirate's Booty Aged White Cheddar 10 oz (weekly)", est: 14.92, note: "$3.97 + $3.97 (price cuts) + $6.98 VERIFIED on the list" },
-      { name: "Sweet snack trio for portioning: OREO Family 18.12 oz + Chips Ahoy! Family 18.2 oz + Keebler Fudge Stripes 11.5 oz (weekly)", est: 13.56, note: "$4.97 + $4.97 + $3.62 VERIFIED on the list" },
-      { name: "Ziploc Snack Bags, 108 ct (weekly)", est: 4.48, note: "$4.48 VERIFIED on the list" },
-      { name: "our goods Flexible Drinking Straws, 180 ct (carried from 10/25; missed that order)", est: 1.50, note: "$1.50 in-store" },
-      { name: "Bounty Paper Towels, 1 mega roll — FREE with the pizzas (Meal Deal)", est: 0, note: "must be on the list for the freebie to fire" },
-      { name: "H-E-B Plastic Forks - Clear, 24 ct — FREE with the pizzas (Meal Deal)", est: 0, note: "must be on the list for the freebie to fire" }
+    { section: "Pantry & condiments", aisle: "Aisle 6", items: [
+      { name: "Lea & Perrins Worcestershire Sauce, 10 oz (Sat; new staple)", est: 5.22, note: "$4.97 VERIFIED" },
+      { name: "H-E-B Chicken Broth, 32 oz (Sun gravy)", est: 2.08, note: "$1.98 VERIFIED" },
+      { name: "Clabber Girl Corn Starch, 6.5 oz (Sun gravy; new staple)", est: 1.66, note: "$1.58 VERIFIED" }
+    ]},
+    { section: "Snacks & paper", aisle: "Chips; cookies; bags", items: [
+      { name: "Kids' salty: Doritos Nacho Cheese 9.25 oz", est: 4.17, note: "$3.97 VERIFIED. 2 for $7 coupon clipped: a 2nd Doritos flavor instead of the Pirate's Booty would save ~$3.50" },
+      { name: "Kids' salty: Cheetos Puffs 8 oz", est: 4.17, note: "$3.97 price cut VERIFIED" },
+      { name: "Kids' salty: Pirate's Booty Aged White Cheddar, 10 oz", est: 7.33, note: "$6.98 VERIFIED (the 7 oz didn't come up)" },
+      { name: "Kids' sweet: OREO Family Size 18.12 oz", est: 5.22, note: "$4.97 VERIFIED" },
+      { name: "Kids' sweet: Chips Ahoy! Original Family Size 18.2 oz", est: 5.22, note: "$4.97 VERIFIED" },
+      { name: "Kids' sweet: Keebler Fudge Stripes 11.5 oz", est: 3.80, note: "$3.62 VERIFIED" },
+      { name: "Cheetos Cheddar Jalapeño 8.5 oz (weekly adult snack)", est: 4.17, note: "$3.97 price cut VERIFIED" },
+      { name: "Ziploc Snack Bags, 108 ct (weekly)", est: 4.70, note: "$4.48 VERIFIED" }
+    ]},
+    { section: "Water", aisle: "Aisle 11", items: [
+      { name: "Hill Country Fare Distilled Water, 1 gal", est: 1.44, note: "$1.37 VERIFIED" }
     ]}
   ],
-  groceryNote: "PLANNED: estimated items total ~$214.86 after coupons, before tax: dinners $64.44 new spend + weekly standing buys $47.60 + restock and ad-hoc $102.82 (nuggets x3 $26.97, adult frozen lunches x6 $15.93, cola stock-up $16.00, corn dogs $14.30, pizzas $14.04, CFA sauce, water, shredded cheese, straws). The heb.com list shows 41 lines / 49 units at $230.07 in-store BEFORE coupons; the coupons take off ~$19.73 (cola 2 for $8 -$4.00, Stouffer's $3 off 3, and the four pizza Meal Deal freebies: salad kit $3.98, Bounty $4.98, tea $2.18, forks $1.59), so ~$210.34 in-store. Proteins ordered heavy where pack sizes allow; the ribs are a store-short cut, so baby backs at the same ad price are the swap. Coupons clipped 10/31: Hill Country Fare pizzas buy 2 get 1 (products unavailable online, so not used), Stouffer's $3 off 3, H-E-B Wild Caught Fish or Shrimp $1 off (10-16 oz bags; not this week's 2 lb bag), $5 off $25 of H-E-B Meat Market items, and the 4 pizza Meal Deal freebies. Already clipped: soft drink 12 pks 2 for $8 (exp 11/3).",
-  // Read-only "On Hand" snapshot for the public page. Regenerated with each weekly plan
-  // from pantry/inventory.json — sanitized: no staples ledger, no names.
+  groceryNote: "PLANNED: ~$218 curbside est before tax (the heb.com list shows 49 units). Dinners $61.98 new spend + the Friendsgiving turkey for 14 $42.22 + the Asian Meal Deal banked for later $17.01 (4 free items: jasmine rice, a steamable veg, soy sauce, +1) + weekly standing buys ~$48.38 + restock ~$43.85 (French bread pizzas x6 — a NEW kids' par item, par 6 — nuggets, lunch bowls x3, tortillas, shredded cheese, Coffee mate, distilled water, cucumbers). Coupons clipped 11/6: the Asian Meal Deal, Doritos 2 for $7, Coffee mate $2 off 2, $1 off 2 H-E-B Organics produce. Already clipped: Stouffer's $3 off 3. Only the Meal Deal is counted; the others need a 2nd item or didn't ring last time.",
+  // Read-only "On Hand" snapshot for the public page. Sanitized: no staples ledger, no names.
   bank: [
-    { name: "Nathan's Bun Length Skinless Beef Franks", qty: "8", location: "fridge", useBy: "2026-11-08", note: "FRIDAY" },
-    { name: "Martin's Potato Long Rolls", qty: "8", location: "freezer (from Sunday)", useBy: "", note: "FRIDAY" },
-    { name: "Flour tortillas, 20 ct", qty: "1 pack", location: "pantry", useBy: "2026-11-15", note: "MONDAY, about 10" },
-    { name: "H-E-B Mexican-style shredded cheese, 8 oz", qty: "1 bag", location: "fridge", useBy: "2026-11-20", note: "MONDAY" },
-    { name: "Meat Church Honey Hog BBQ rub", qty: "1 jar", location: "pantry", useBy: "", note: "THURSDAY" },
-    { name: "Sartori parmesan wedge", qty: "1 + a quarter", location: "fridge", useBy: "2026-12-06", note: "SUNDAY 11/8" },
-    { name: "Martin's Potato Sandwich Rolls + Kraft Deluxe slices", qty: "8 rolls, ~25 slices", location: "freezer / fridge", useBy: "", note: "Next smash-burger night" },
+    { name: "Bush's baked beans + bacon (4 slices) + Stubb's + half an onion", qty: "1 can + 4 slices", location: "pantry / fridge", useBy: "", note: "SATURDAY beans" },
+    { name: "Frozen fries", qty: "2 bags", location: "freezer", useBy: "", note: "SATURDAY (1 bag)" },
+    { name: "Ketchup, brown sugar, yellow mustard", qty: "on hand", location: "pantry / fridge", useBy: "", note: "SATURDAY" },
+    { name: "Kerrygold butter + fresh garlic", qty: "~1.75 sticks, 2 heads", location: "fridge / counter", useBy: "2026-11-14", note: "FRIDAY sear" },
+    { name: "H-E-B Italian-style meatballs", qty: "2 bags", location: "freezer", useBy: "2027-04-17", note: "Freezer-night option" },
+    { name: "Corn dogs", qty: "18", location: "freezer", useBy: "2027-02-16", note: "Kids' freezer nights" },
     { name: "H-E-B Breaded Shrimp", qty: "2 boxes", location: "freezer", useBy: "2027-02-02", note: "Freezer fallback" },
-    { name: "Banked chicken breast (Cowboy Butter bag + split half)", qty: "1 bag + 1 half", location: "freezer", useBy: "2026-12-30", note: "Backup protein" },
-    { name: "Nature's Own Honey Wheat (banked loaf)", qty: "1 loaf", location: "freezer", useBy: "2026-12-17", note: "Spare lunch loaf" }
+    { name: "Banked chicken breast", qty: "1 bag", location: "freezer", useBy: "2026-12-30", note: "Backup protein" }
   ]
 };
