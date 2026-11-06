@@ -2,13 +2,13 @@
 // Ad cycle through Tue 11/10 (ads/ad-2026-11-06.json). A light week by choice: Mon is a fast food night, Tue/Thu/Sun are
 // freezer nights (Sun = Friendsgiving), and only three dinners are on the list: Wed frozen family-size lasagna (heat and
 // serve), Fri sous vide top sirloin ($4.99/lb ad) with air-fryer gold potatoes and broccoli, Sat homemade sloppy joes on
-// Martin's Potato Rolls with doctored beans and fries. The H-E-B Asian Meal Deal (orange chicken + egg rolls + 4 free
+// Martin's Potato Rolls with fries. The H-E-B Asian Meal Deal (orange chicken + egg rolls + 4 free
 // items) is BANKED for a later week, not cooked. Prices VERIFIED on the heb.com list 11/6 (in-store; x1.05 curbside).
-// True dinner cost ~$66.43; Sat sloppy joes (~$27.24 true) is the week's one $25+ family meal. Added 11/6: Sun Friendsgiving
+// True dinner cost ~$66.43; Sat sloppy joes (~$22.65 true) is the week's highest family meal. Added 11/6: Sun Friendsgiving
 // sous vide turkey tenderloins for 14 (~$44.02 true, $42.22 new), cooked Sat, rewarmed Sun.
 const WEEK_DATA = {
   week: "2026-11-09",
-  title: "Week of Nov 9 — Frozen Lasagna Night, Sous Vide Top Sirloin with Gold Potatoes & Broccoli, Homemade Sloppy Joes, and Sous Vide Turkey for Friendsgiving (Mon fast food; Tue/Thu freezer)",
+  title: "Week of Nov 9 — Frozen Lasagna Night, Sous Vide Top Sirloin with Gold Potatoes & Cheesy Broccoli, Homemade Sloppy Joes, and Sous Vide Turkey for Friendsgiving (Mon fast food; Tue/Thu freezer)",
   store: "H-E-B Irving #817 · curbside Sunday Nov 8",
   adNote: "Ad through Tue 11/10: H-E-B Beef Top Sirloin Steak Value Pack $4.99/lb (57% off), H-E-B Organics Gold Potatoes 2 lb $2.97, and the H-E-B Asian Meal Deal (buy 2: orange chicken + egg rolls, get 4 items free) — banked for a later week. Food-safety check: nothing active touches this menu.",
   shopDay: "Sunday Nov 8",
@@ -48,39 +48,39 @@ const WEEK_DATA = {
       id: "svsirloin",
       slot: "Dinner 2 · Fri Nov 13 — 2 adults + the teen + 1 kid (early dinner ~5:30; out by 6:30 for a 7 PM show)",
       night: "2026-11-13",
-      title: "Sous Vide Top Sirloin (Butter-Garlic Sear) with Air-Fryer Gold Potatoes & Broccoli",
+      title: "Sous Vide Top Sirloin (Butter-Garlic Sear) with Air-Fryer Gold Potatoes & Cheesy Broccoli",
       time: "~20 min at dinner (bag drop 2:30 PM)",
-      equipment: ["Sous vide", "Cast iron", "Air fryer"],
-      cost: { est: 21.82, servings: 4, note: "PLANNED: $21.02 NEW SPEND — H-E-B Beef Top Sirloin Steak Value Pack, USDA Choice, avg 2.75 lb at $4.99/lb (ad, through 11/10) ~$15.14 (packs ring ~10% over the listed avg; listed $13.72; need ~2.25 lb, ordered heavy at the 1.15 buffer), H-E-B Organics Gold Potatoes 2 lb $3.12, Fresh Broccoli Crowns x2 (~1.3 lb) ~$2.76. Banked ~$0.80: Kerrygold butter 2 tbsp, 3 garlic cloves, oil, kosher salt, pepper. Just under the $22.50 line." },
-      nutrition: { serving: "~7 oz cooked sirloin, ~7 oz gold potatoes, ~5 oz broccoli", calories: 730, protein: 56, carbs: 42, fat: 36 },
+      equipment: ["Sous vide", "Cast iron", "Air fryer", "Microwave"],
+      cost: { est: 21.45, servings: 4, note: "PLANNED: $20.65 NEW SPEND — H-E-B Beef Top Sirloin Steak Value Pack, USDA Choice, avg 2.75 lb at $4.99/lb (ad, through 11/10) ~$15.14 (packs ring ~10% over the listed avg; listed $13.72; need ~2.25 lb, ordered heavy at the 1.15 buffer), H-E-B Organics Gold Potatoes 2 lb $3.12, H-E-B Frozen Steamable Broccoli in Cheese Sauce 12 oz $2.39 (adults only; swapped for fresh crowns 11/6). Banked ~$0.80: Kerrygold butter 2 tbsp, 3 garlic cloves, oil, kosher salt, pepper. Just under the $22.50 line." },
+      nutrition: { serving: "~7 oz cooked sirloin, ~7 oz gold potatoes, ~6 oz cheesy broccoli (adults)", calories: 770, protein: 56, carbs: 42, fat: 36 },
       daytime: [
         "SUN 11/8 (groceries in, ~10 min): salt and pepper the steaks, seal (one layer, two bags if needed), FREEZE flat — the cook is 5 days out",
         "FRI 2:30 PM (2 min): frozen bags straight into a 129°F bath (calendar reminder)",
-        "FRI ~5:00 PM: potatoes into the air fryer; broccoli after; sear at ~5:20"
+        "FRI ~5:00 PM: potatoes into the air fryer; ~5:15 broccoli bag into the microwave; sear at ~5:15"
       ],
-      summary: "Frozen sous vide steak on a weeknight: the bags were salted, sealed and frozen on shop day, and go into the bath frozen at 2:30. At 5 it's a 20-minute finish: air-fryer gold potatoes, then broccoli at 365°F for 8 min, and a very hot cast-iron sear basted with butter and garlic. Dinner is on the table by 5:30.",
+      summary: "Frozen sous vide steak on a weeknight: the bags were salted, sealed and frozen on shop day, and go into the bath frozen at 2:30. At 5 it's a 20-minute finish: air-fryer gold potatoes, a microwave bag of broccoli in cheese sauce for the adults, and a very hot cast-iron sear basted with butter and garlic. Dinner is on the table by 5:30.",
       swapNote: "From frozen, add about an hour to the bath time; 1-1.25 inch steaks need about 2.5-3 hr at 129°F and hold well past that, so a late start doesn't matter. Pat the steaks VERY dry before the sear, or the crust won't form.",
       links: [
         { label: "Serious Eats — Sous Vide Steak Guide (The Food Lab): temperature chart + cooking from frozen", url: "https://www.seriouseats.com/food-lab-complete-guide-to-sous-vide-steak", tag: "technique" }
       ],
       recipe: {
         activeTime: "Sunday ~10 min; Friday ~20 min",
-        cookTime: "129°F 2.5-3 hr from frozen; potatoes ~18-20 min at 400°F; broccoli 8 min at 365°F; sear 60-90 sec a side",
+        cookTime: "129°F 2.5-3 hr from frozen; potatoes ~18-20 min at 400°F; broccoli bag ~5-6 min in the microwave; sear 60-90 sec a side",
         ingredients: [
           "1 H-E-B Beef Top Sirloin Steak Value Pack, avg 2.75 lb (new) — about 2.25 lb is dinner; any extra is lunch",
           "Kosher salt + black pepper (owned)",
           "2 tbsp Kerrygold butter, 3 garlic cloves smashed (owned), 1 tbsp canola oil (owned)",
           "~1.75 lb H-E-B Organics Gold Potatoes (new, 2 lb bag), halved; 1 tbsp oil, salt, garlic powder (owned)",
-          "~1.25 lb broccoli crowns (new), cut into florets; 1 tbsp oil, salt"
+          "1 bag H-E-B Frozen Steamable Broccoli in Cheese Sauce, 12 oz (new), for the 2 adults; kept frozen"
         ],
         steps: [
           "SUN, groceries in: salt the steaks well on both sides, then pepper. Seal in a single layer and freeze flat.",
           "FRI 2:30 PM: bath to 129°F; the frozen bags go straight in.",
           "~5:00 PM: halve the potatoes and toss with oil, salt and garlic powder. Air fry at 400°F for 18-20 min, shaking halfway.",
-          "~5:10 PM: cut the broccoli into florets and toss with oil and salt. It goes in when the potatoes come out: 365°F for 8 min.",
+          "~5:15 PM: broccoli bag into the microwave per the package (about 5-6 min); let it stand 1 min before opening.",
           "~5:15 PM: pull the steaks and pat them VERY dry. Heat the cast iron until it smokes, with the oil. Sear 60-90 sec a side. In the last 30 sec, add the butter and garlic and spoon it over the steaks.",
           "Rest 2-3 min, slice against the grain, and pour the pan butter over.",
-          "KID CHECKPOINT: none needed. It's steak, potatoes and broccoli; anyone can skip the garlic butter.",
+          "KID CHECKPOINT: none needed. Steak and potatoes for everyone; the broccoli is for the adults, and anyone can skip the garlic butter.",
           "Cleanup: the bags, the cast iron, the air fryer basket."
         ]
       }
@@ -89,43 +89,40 @@ const WEEK_DATA = {
       id: "sloppyjoes",
       slot: "Dinner 3 · Sat Nov 14 — 2 adults incl. our guest + the teen + 1 kid (the teen may be late; it holds well)",
       night: "2026-11-14",
-      title: "Homemade Sloppy Joes on Martin's Potato Rolls with Doctored Bacon Beans & Fries",
+      title: "Homemade Sloppy Joes on Martin's Potato Rolls with French Fries",
       time: "~30 min",
-      equipment: ["Big skillet", "Saucepan", "Oven or air fryer"],
-      cost: { est: 27.24, servings: 4, note: "PLANNED: $23.59 NEW SPEND — H-E-B 100% Pure Ground Beef Chuck 80% Lean Value Pack, avg 1.9 lb (tray, not a chub) ~$12.52 ($5.99/lb; packs ring ~10% over avg), Martin's Potato Sandwich Rolls 8 ct $4.75, 1 green bell pepper $0.53, 1 yellow onion $0.57, Lea & Perrins Worcestershire 10 oz $5.22 (staple; ~$0.30 used). Banked ~$8.57: the svribs beans leftovers (Bush's can, 4 bacon slices, half an onion, Stubb's, brown sugar, mustard ~$4.47), 1 bag of fries ~$3.50, ketchup/brown sugar/mustard for the joes ~$0.60. The week's one $25+ meal." },
-      nutrition: { serving: "1.5 sloppy joes on potato rolls, ~3/4 cup doctored beans, a handful of fries", calories: 960, protein: 44, carbs: 108, fat: 38 },
+      equipment: ["Big skillet", "Oven or air fryer"],
+      cost: { est: 22.65, servings: 4, note: "PLANNED: $23.02 NEW SPEND — H-E-B 100% Pure Ground Beef Chuck 80% Lean Value Pack, avg 1.9 lb (tray, not a chub) ~$12.52 ($5.99/lb; packs ring ~10% over avg), Martin's Potato Sandwich Rolls 8 ct $4.75, 1 green bell pepper $0.53, Lea & Perrins Worcestershire 10 oz $5.22 (staple; ~$0.30 used). Banked ~$4.55: 1 bag of fries ~$3.50, 1 banked yellow onion ~$0.45, ketchup/brown sugar/mustard ~$0.60. The doctored beans were dropped 11/6 (fries instead). Still the week's highest (over the $22.50 line)." },
+      nutrition: { serving: "1.5 sloppy joes on potato rolls, a big handful of fries", calories: 850, protein: 36, carbs: 88, fat: 39 },
       daytime: [
         "SUN 11/8 (put-away): the ground beef goes in the FREEZER (the cook is 6 days out); rolls in the freezer too",
         "FRI night (1 min): ground beef from the freezer into the fridge to thaw; rolls out Saturday afternoon"
       ],
-      summary: "Classic homemade sloppy joes. Homemade clearly beats canned Manwich here: in 25 minutes it's beefier and less sweet, and you can tune it. It's a 2 lb batch for 8 potato rolls, so leftovers hold for the teen's late dinner. The doctored beans finally use the leftovers planned for the ribs night that got tossed.",
+      summary: "Classic homemade sloppy joes. Homemade clearly beats canned Manwich here: in 25 minutes it's beefier and less sweet, and you can tune it. It's a 2 lb batch for 8 potato rolls, so leftovers hold for the teen's late dinner. French fries on the side.",
       swapNote: "Homemade over Manwich: the same 25 minutes for a beefier, less-sweet sauce you can tune (more Worcestershire or mustard for tang, a pinch of red pepper for the adults). The recipe link is a 1 lb batch; this is doubled.",
       links: [
-        { label: "Food Network Kitchen — The Best Sloppy Joes (1 lb version, 30 min; doubled here)", url: "https://www.foodnetwork.com/recipes/food-network-kitchen/the-best-sloppy-joes-7263253", tag: "recipe" },
-        { label: "Southern Bite — Bacon Brown Sugar Baked Beans (the doctored-beans method)", url: "https://southernbite.com/bacon-brown-sugar-baked-beans/", tag: "alt" }
+        { label: "Food Network Kitchen — The Best Sloppy Joes (1 lb version, 30 min; doubled here)", url: "https://www.foodnetwork.com/recipes/food-network-kitchen/the-best-sloppy-joes-7263253", tag: "recipe" }
       ],
       recipe: {
         activeTime: "~30 min",
-        cookTime: "Joes ~25 min; beans ~15 min simmer; fries per the bag (~20 min)",
+        cookTime: "Joes ~25 min; fries per the bag (~20 min)",
         ingredients: [
           "~1.9 lb H-E-B ground chuck 80% (new, thawed)",
-          "1 yellow onion + 1 green bell pepper, finely diced (new); 2 garlic cloves (owned)",
+          "1 yellow onion (owned) + 1 green bell pepper (new), finely diced; 2 garlic cloves (owned)",
           "~1.5 cups ketchup, 2 tbsp brown sugar, 1.5 tbsp yellow mustard, 2 tbsp Worcestershire (ketchup, sugar, mustard owned; Worcestershire new)",
           "Salt, pepper; optional pinch of crushed red pepper (owned)",
           "8 Martin's Potato Sandwich Rolls (new), toasted",
-          "BEANS: 1 can Bush's baked beans, 4 bacon slices, half an onion, ~2 tbsp Stubb's, 2 tbsp brown sugar, 1 tbsp mustard (all banked)",
-          "1 bag of frozen fries (banked)"
+          "1 bag of frozen fries (banked); add the 2nd bag if everyone's hungry"
         ],
         steps: [
           "Fries in the oven or air fryer per the bag.",
-          "BEANS: chop the bacon and render it in a saucepan. Add the half onion, diced, and cook 4 min. Stir in the beans, Stubb's, brown sugar and mustard, and simmer 15 min, stirring now and then.",
           "JOES: brown the beef in a big skillet over medium-high, 7-8 min, breaking it up. Spoon off most of the fat.",
           "Add the onion and pepper and cook 5 min until soft. Add the garlic for 30 sec.",
           "Stir in the ketchup, brown sugar, mustard, Worcestershire and 1/2 cup water. Simmer 10 min until thick. Taste and adjust: more Worcestershire or mustard for tang, salt and pepper.",
           "Toast the rolls cut side down in a dry pan or under the broiler.",
           "KID CHECKPOINT: the base is mild; red pepper goes on the adults' sandwiches only.",
           "The teen eats late: keep the joes covered on low with a splash of water. Leftovers go in the fridge (lunch) or the freezer.",
-          "Cleanup: the skillet, the saucepan, the sheet pan."
+          "Cleanup: the skillet, the sheet pan."
         ]
       }
     },
@@ -185,9 +182,7 @@ const WEEK_DATA = {
     ]},
     { section: "Produce", aisle: "Produce", items: [
       { name: "H-E-B Organics Gold Potatoes, 2 lb bag (Fri)", est: 3.12, note: "$2.97 ad VERIFIED. $1 off 2 H-E-B Organics coupon clipped (only fires with a 2nd Organics item)" },
-      { name: "Fresh Broccoli Crowns x2 (~1.25 lb, Fri)", est: 2.76, note: "$1.99/lb VERIFIED" },
       { name: "Fresh Green Bell Pepper x1 (Sat)", est: 0.53, note: "$0.50 VERIFIED" },
-      { name: "Fresh Yellow Onion x1 (Sat)", est: 0.57, note: "$0.90/lb VERIFIED" },
       { name: "Dole Ultimate Caesar Salad Kit, 11.3 oz (Wed)", est: 3.76, note: "$3.58 VERIFIED" },
       { name: "Fresh Cucumber x3 (lunches)", est: 1.58, note: "$0.50 each VERIFIED" },
       { name: "Duncan Family Farms Organic Poultry Blend, 0.5 oz (Sun turkey)", est: 2.6, note: "$2.48 VERIFIED. Fresh sage, thyme, rosemary" }
@@ -200,7 +195,8 @@ const WEEK_DATA = {
       { name: "Kids' freezer: French bread pizzas, 6 (3 x Stouffer's Pepperoni French Bread 2 ct)", est: 12.51, note: "$3.97 each VERIFIED. Red Baron French bread isn't carried at #817, so Stouffer's is the match. Stouffer's $3 off 3 is clipped but didn't ring last time, so it isn't counted" },
       { name: "Kids' freezer: H-E-B Natural Southern Style Chicken Nuggets, 24 oz x1", est: 9.44, note: "$8.99 VERIFIED" },
       { name: "Frozen lunch bowls x3 (H-E-B Smoked Brisket Mac, Spaghetti and Meatballs, Chicken Alfredo)", est: 9.36, note: "$2.97 each VERIFIED" },
-      { name: "Frozen Turkey Breast Tenders, Avg. 0.95 lb x6 (Sun Friendsgiving for 14; ~5.7 lb, ~0.4 lb a person with sides)", est: 35.88, note: "$5.69 in-store / $5.98 online each VERIFIED; a fixed price per pack, not weighed. Raw, skinless, Meat Market A12. Straight into the freezer Sunday" }
+      { name: "Frozen Turkey Breast Tenders, Avg. 0.95 lb x6 (Sun Friendsgiving for 14; ~5.7 lb, ~0.4 lb a person with sides)", est: 35.88, note: "$5.69 in-store / $5.98 online each VERIFIED; a fixed price per pack, not weighed. Raw, skinless, Meat Market A12. Straight into the freezer Sunday" },
+      { name: "H-E-B Frozen Steamable Broccoli in Cheese Sauce, 12 oz (Fri, adults)", est: 2.39, note: "$2.28 VERIFIED. Freezer" }
     ]},
     { section: "Bakery & bread", aisle: "Bread aisle", items: [
       { name: "Martin's Potato Sandwich Rolls, 8 ct (Sat)", est: 4.75, note: "$4.52 VERIFIED" },
@@ -233,11 +229,11 @@ const WEEK_DATA = {
       { name: "Hill Country Fare Distilled Water, 1 gal", est: 1.44, note: "$1.37 VERIFIED" }
     ]}
   ],
-  groceryNote: "PLANNED: ~$223 curbside est before tax (the heb.com list shows 50 units). Dinners $61.98 new spend + the Friendsgiving turkey for 14 $42.22 + the Asian Meal Deal banked for later $17.01 (4 free items: jasmine rice, a steamable veg, soy sauce, +1) + weekly standing buys ~$48.38 + restock ~$43.85 (French bread pizzas x6 — a NEW kids' par item, par 6 — nuggets, lunch bowls x3, tortillas, shredded cheese, Coffee mate, distilled water, cucumbers). Coupons clipped 11/6: the Asian Meal Deal, Doritos 2 for $7 (2 bags on the list; the 2nd is banked), Coffee mate $2 off 2, $1 off 2 H-E-B Organics produce. Already clipped: Stouffer's $3 off 3. Only the Meal Deal is counted; the others need a 2nd item or didn't ring last time.",
+  groceryNote: "PLANNED: ~$222 curbside est before tax (the heb.com list shows 48 units). Dinners $61.98 new spend + the Friendsgiving turkey for 14 $42.22 + the Asian Meal Deal banked for later $17.01 (4 free items: jasmine rice, a steamable veg, soy sauce, +1) + weekly standing buys ~$48.38 + restock ~$43.85 (French bread pizzas x6 — a NEW kids' par item, par 6 — nuggets, lunch bowls x3, tortillas, shredded cheese, Coffee mate, distilled water, cucumbers). Coupons clipped 11/6: the Asian Meal Deal, Doritos 2 for $7 (2 bags on the list; the 2nd is banked), Coffee mate $2 off 2, $1 off 2 H-E-B Organics produce. Already clipped: Stouffer's $3 off 3. Only the Meal Deal is counted; the others need a 2nd item or didn't ring last time.",
   // Read-only "On Hand" snapshot for the public page. Sanitized: no staples ledger, no names.
   bank: [
-    { name: "Bush's baked beans + bacon (4 slices) + Stubb's + half an onion", qty: "1 can + 4 slices", location: "pantry / fridge", useBy: "", note: "SATURDAY beans" },
-    { name: "Frozen fries", qty: "2 bags", location: "freezer", useBy: "", note: "SATURDAY (1 bag)" },
+    { name: "Bush's baked beans + bacon (4 slices) + Stubb's + half an onion", qty: "1 can + 4 slices", location: "pantry / fridge", useBy: "", note: "Unplanned (Sat beans dropped 11/6)" },
+    { name: "Frozen fries", qty: "2 bags", location: "freezer", useBy: "", note: "SATURDAY (1-2 bags)" },
     { name: "Ketchup, brown sugar, yellow mustard", qty: "on hand", location: "pantry / fridge", useBy: "", note: "SATURDAY" },
     { name: "Kerrygold butter + fresh garlic", qty: "~1.75 sticks, 2 heads", location: "fridge / counter", useBy: "2026-11-14", note: "FRIDAY sear" },
     { name: "H-E-B Italian-style meatballs", qty: "2 bags", location: "freezer", useBy: "2027-04-17", note: "Freezer-night option" },
