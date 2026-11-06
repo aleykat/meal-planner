@@ -220,7 +220,7 @@ const WEEK_DATA = {
       { name: "Clabber Girl Corn Starch, 6.5 oz (Sun gravy; new staple)", est: 1.66, note: "$1.58 VERIFIED" }
     ]},
     { section: "Snacks & paper", aisle: "Chips; cookies; bags", items: [
-      { name: "Kids' salty: Doritos Nacho Cheese 9.25 oz", est: 4.17, note: "$3.97 VERIFIED. 2 for $7 coupon clipped: a 2nd Doritos flavor instead of the Pirate's Booty would save ~$3.50" },
+      { name: "Kids' salty: Doritos Nacho Cheese 9.25 oz x2 (2nd bag BANKED for next week)", est: 8.34, note: "$3.97 each VERIFIED. 2 for $7 coupon clipped; should ring ~$0.94 less, not counted until it does" },
       { name: "Kids' salty: Cheetos Puffs 8 oz", est: 4.17, note: "$3.97 price cut VERIFIED" },
       { name: "Kids' salty: Pirate's Booty Aged White Cheddar, 10 oz", est: 7.33, note: "$6.98 VERIFIED (the 7 oz didn't come up)" },
       { name: "Kids' sweet: OREO Family Size 18.12 oz", est: 5.22, note: "$4.97 VERIFIED" },
@@ -233,7 +233,7 @@ const WEEK_DATA = {
       { name: "Hill Country Fare Distilled Water, 1 gal", est: 1.44, note: "$1.37 VERIFIED" }
     ]}
   ],
-  groceryNote: "PLANNED: ~$218 curbside est before tax (the heb.com list shows 49 units). Dinners $61.98 new spend + the Friendsgiving turkey for 14 $42.22 + the Asian Meal Deal banked for later $17.01 (4 free items: jasmine rice, a steamable veg, soy sauce, +1) + weekly standing buys ~$48.38 + restock ~$43.85 (French bread pizzas x6 — a NEW kids' par item, par 6 — nuggets, lunch bowls x3, tortillas, shredded cheese, Coffee mate, distilled water, cucumbers). Coupons clipped 11/6: the Asian Meal Deal, Doritos 2 for $7, Coffee mate $2 off 2, $1 off 2 H-E-B Organics produce. Already clipped: Stouffer's $3 off 3. Only the Meal Deal is counted; the others need a 2nd item or didn't ring last time.",
+  groceryNote: "PLANNED: ~$223 curbside est before tax (the heb.com list shows 50 units). Dinners $61.98 new spend + the Friendsgiving turkey for 14 $42.22 + the Asian Meal Deal banked for later $17.01 (4 free items: jasmine rice, a steamable veg, soy sauce, +1) + weekly standing buys ~$48.38 + restock ~$43.85 (French bread pizzas x6 — a NEW kids' par item, par 6 — nuggets, lunch bowls x3, tortillas, shredded cheese, Coffee mate, distilled water, cucumbers). Coupons clipped 11/6: the Asian Meal Deal, Doritos 2 for $7 (2 bags on the list; the 2nd is banked), Coffee mate $2 off 2, $1 off 2 H-E-B Organics produce. Already clipped: Stouffer's $3 off 3. Only the Meal Deal is counted; the others need a 2nd item or didn't ring last time.",
   // Read-only "On Hand" snapshot for the public page. Sanitized: no staples ledger, no names.
   bank: [
     { name: "Bush's baked beans + bacon (4 slices) + Stubb's + half an onion", qty: "1 can + 4 slices", location: "pantry / fridge", useBy: "", note: "SATURDAY beans" },
