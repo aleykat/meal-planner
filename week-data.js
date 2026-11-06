@@ -200,7 +200,6 @@ const WEEK_DATA = {
     ]},
     { section: "Bakery & bread", aisle: "Bread aisle", items: [
       { name: "Martin's Potato Sandwich Rolls, 8 ct (Sat)", est: 4.75, note: "$4.52 VERIFIED" },
-      { name: "H-E-B Round Top Small White Bread, 16 oz (weekly lunch loaf)", est: 2.35, note: "$2.24 VERIFIED" },
       { name: "H-E-B Original Fajita Flour Tortillas, 20 ct (restock)", est: 2.23, note: "$2.12 VERIFIED" }
     ]},
     { section: "Dairy", aisle: "Dairy / back wall", items: [
@@ -229,7 +228,7 @@ const WEEK_DATA = {
       { name: "Hill Country Fare Distilled Water, 1 gal", est: 1.44, note: "$1.37 VERIFIED" }
     ]}
   ],
-  groceryNote: "PLANNED: ~$222 curbside est before tax (the heb.com list shows 48 units). Dinners $61.98 new spend + the Friendsgiving turkey for 14 $42.22 + the Asian Meal Deal banked for later $17.01 (4 free items: jasmine rice, a steamable veg, soy sauce, +1) + weekly standing buys ~$48.38 + restock ~$43.85 (French bread pizzas x6 — a NEW kids' par item, par 6 — nuggets, lunch bowls x3, tortillas, shredded cheese, Coffee mate, distilled water, cucumbers). Coupons clipped 11/6: the Asian Meal Deal, Doritos 2 for $7 (2 bags on the list; the 2nd is banked), Coffee mate $2 off 2, $1 off 2 H-E-B Organics produce. Already clipped: Stouffer's $3 off 3. Only the Meal Deal is counted; the others need a 2nd item or didn't ring last time.",
+  groceryNote: "PLANNED: ~$219 curbside est before tax (the heb.com list shows 47 units). Dinners $61.98 new spend + the Friendsgiving turkey for 14 $42.22 + the Asian Meal Deal banked for later $17.01 (4 free items: jasmine rice, a steamable veg, soy sauce, +1) + weekly standing buys ~$46.03 (no lunch loaf this week) + restock ~$43.85 (French bread pizzas x6 — a NEW kids' par item, par 6 — nuggets, lunch bowls x3, tortillas, shredded cheese, Coffee mate, distilled water, cucumbers). Coupons clipped 11/6: the Asian Meal Deal, Doritos 2 for $7 (2 bags on the list; the 2nd is banked), Coffee mate $2 off 2, $1 off 2 H-E-B Organics produce. Already clipped: Stouffer's $3 off 3. Only the Meal Deal is counted; the others need a 2nd item or didn't ring last time.",
   // Read-only "On Hand" snapshot for the public page. Sanitized: no staples ledger, no names.
   bank: [
     { name: "Bush's baked beans + bacon (4 slices) + Stubb's + half an onion", qty: "1 can + 4 slices", location: "pantry / fridge", useBy: "", note: "Unplanned (Sat beans dropped 11/6)" },
