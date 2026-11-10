@@ -63,6 +63,12 @@
   .cook-btn:hover { border-color: var(--accent); }
   .cook-btn.sel { background: var(--accent); border-color: var(--accent); color: #fff; }
   .cook-btn.sel[data-o="cooked"] { background: var(--good); border-color: var(--good); }
+  .consume-box { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; margin: 6px 0 2px; font-size: .82rem; }
+  .consume-box .cb-title { font-weight: 600; margin-bottom: 4px; }
+  .consume-box label { display: flex; gap: 8px; align-items: flex-start; padding: 4px 0; }
+  .consume-box .cb-act { font-size: .72rem; color: var(--muted); }
+  .consume-box .cb-btns { display: flex; gap: 8px; margin-top: 6px; }
+  .inv-add-msg { flex-basis: 100%; font-size: .8rem; color: var(--accent); }
   .weekly-chip { font-size: .72rem; padding: 2px 8px; border-radius: 999px; white-space: nowrap; background: #1565c022; color: #1565c0; }
   textarea { width: 100%; min-height: 60px; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font: inherit; font-size: .9rem; background: var(--bg); color: var(--ink); resize: vertical; }
   .savebtn { margin-top: 8px; background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 8px 18px; font: inherit; font-weight: 600; cursor: pointer; }
@@ -159,6 +165,40 @@
   body.count-mode .inv-row.counted-today { opacity: .55; }
   body.count-mode .inv-row.counted-today .inv-name::after { content: " ✓"; color: var(--good); }
   .inv-add input, .inv-add select { border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; font: inherit; font-size: .85rem; background: var(--bg); color: var(--ink); }
+  /* ---- Walk mode (2026-11-10, P2): the count walk, one row per screen, zone by zone in
+     the order the house is walked. Every answer writes through /api/walk -> inv.py. ---- */
+  #walk { display: none; position: fixed; inset: 0; z-index: 50; background: var(--bg); overflow-y: auto; }
+  body.walk-on #walk { display: block; }
+  body.walk-on { overflow: hidden; }
+  #walk .wk { max-width: 520px; margin: 0 auto; padding: 14px 16px 40px; }
+  #walk .wk-top { display: flex; align-items: center; gap: 8px; }
+  #walk .wk-zone { flex: 1; font-weight: 700; font-size: 1.1rem; }
+  #walk .wk-prog { font-size: .8rem; color: var(--muted); margin: 2px 0 8px; }
+  #walk .wk-bar { height: 8px; border-radius: 999px; background: var(--line); overflow: hidden; margin-bottom: 14px; }
+  #walk .wk-fill { height: 100%; background: var(--good); width: 0; transition: width .2s; }
+  #walk .wk-card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  #walk .wk-name { font-weight: 700; font-size: 1.1rem; line-height: 1.3; }
+  #walk .wk-now { font-size: 1.4rem; font-weight: 700; margin-top: 10px; }
+  #walk .wk-src { font-size: .8rem; color: var(--muted); }
+  #walk .wk-meta { font-size: .85rem; margin-top: 8px; }
+  #walk .wk-why { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  #walk .wk-why span { background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 2px 9px; font-size: .75rem; font-weight: 600; }
+  #walk .wk-num { display: flex; gap: 8px; align-items: center; margin-top: 16px; flex-wrap: wrap; }
+  #walk .wk-num button, #walk .wk-num input { height: 52px; font-size: 1.3rem; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); font: inherit; }
+  #walk .wk-num button.st { width: 52px; font-size: 1.5rem; }
+  #walk .wk-num input.n { width: 84px; text-align: center; font-size: 1.3rem; }
+  #walk .wk-num input.u { width: 110px; padding: 0 8px; font-size: 1rem; }
+  #walk .wk-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
+  #walk .wk-btns button, #walk .wk-wide { min-height: 50px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: inherit; font-size: 1rem; cursor: pointer; }
+  #walk .wk-btns button.pri, #walk .wk-wide.pri { background: var(--good); color: #fff; border-color: var(--good); font-weight: 700; }
+  #walk .wk-wide { width: 100%; margin-top: 8px; }
+  #walk .wk-msg { min-height: 1.2em; font-size: .85rem; color: var(--accent); margin-top: 8px; }
+  #walk .wk-move { display: none; margin-top: 8px; gap: 8px; flex-wrap: wrap; }
+  #walk .wk-move.open { display: flex; }
+  #walk .wk-move button { flex: 1 1 40%; min-height: 44px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); font: inherit; }
+  #walk .wk-add input { width: 100%; height: 48px; border: 1px solid var(--line); border-radius: 10px; padding: 0 10px; font: inherit; background: var(--bg); color: var(--ink); margin-top: 8px; }
+  #walk .wk-done { font-size: .85rem; color: var(--muted); margin-top: 10px; }
+  #nav-walk { font-weight: 700; }
   footer { margin-top: 40px; color: var(--muted); font-size: .82rem; border-top: 1px solid var(--line); padding-top: 14px; }
 </style>
 </head>
@@ -180,7 +220,9 @@
     <a href="#bank-h2" id="nav-bank">🧺 On Hand</a>
     <a href="#fb-h2" id="nav-fb">⭐ Feedback</a>
     <button id="nav-count" title="Shop-day counting view: tracker items only, big buttons, progress at the top">🧮 Count</button>
+    <button id="nav-walk" title="Count walk: one item per screen, room by room">🚶 Walk</button>
   </nav>
+  <div id="walk"><div class="wk" id="wk"></div></div>
 
   <h2 id="menu-h2">This Week's Menu</h2>
   <div id="menu"></div>
@@ -215,6 +257,7 @@
       <input id="inv-days" type="number" min="1" value="5" style="width:70px" title="days until it goes bad">
       <span style="font-size:.8rem;color:var(--muted)">days left</span>
       <button class="inv-btn" id="inv-addbtn">+ Add</button>
+      <div class="inv-add-msg" id="inv-add-msg"></div>
     </div>
   </div>
 
@@ -433,7 +476,7 @@
   const IS_LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname) || location.protocol === "file:";
   function remoteMode() {
     document.body.classList.remove("count-mode"); // never leave the phone-count view on a static copy
-    ["inv-h2", "inv-card", "fb-h2", "fb-intro", "offline-warn", "feedback", "nav-inv", "nav-fb", "nav-count"].forEach(id => {
+    ["inv-h2", "inv-card", "fb-h2", "fb-intro", "offline-warn", "feedback", "nav-inv", "nav-fb", "nav-count", "nav-walk"].forEach(id => {
       const el = document.getElementById(id); if (el) el.style.display = "none";
     });
     document.querySelectorAll(".cook-row").forEach(el => el.style.display = "none"); // writes to the cook log need the server
@@ -451,8 +494,41 @@
         const last = mine[mine.length - 1];
         rowEl.querySelectorAll(".cook-btn").forEach(b => b.classList.toggle("sel", !!last && b.dataset.o === last.outcome));
         $(".cook-note", rowEl).textContent = last ? `${OUTCOME_TXT[last.outcome] || last.outcome} · ${(last.reason || "").replace(/^page /, "")}` : "";
+        // a cooked dinner whose ingredients were never marked keeps its confirm box up
+        if (last && last.outcome !== "skipped") showConsume(rowEl);
       });
     } catch { if (!IS_LOCAL) remoteMode(); }
+  }
+  // 2026-11-10: Cooked → show what comes off the inventory, one tap to confirm. Nothing
+  // used to decrement after a cook unless chat remembered to (7 misses Jul–Nov).
+  const escHtml = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  async function showConsume(rowEl) {
+    rowEl.nextElementSibling?.classList.contains("consume-box") && rowEl.nextElementSibling.remove();
+    let rows = [];
+    try {
+      const r = await (await fetch(`/api/consume?week=${encodeURIComponent(WEEK.id)}&meal=${encodeURIComponent(rowEl.dataset.meal)}`)).json();
+      rows = r.ok ? r.rows : [];
+    } catch { return; }
+    if (!rows.length) return;
+    const box = document.createElement("div");
+    box.className = "consume-box";
+    box.innerHTML = `<div class="cb-title">Mark these off the inventory? Uncheck anything you didn't use.</div>
+      ${rows.filter(r => r.act !== "SKIP").map(r => `<label><input type="checkbox" checked data-id="${escHtml(r.id)}">
+        <span>${escHtml(r.name)}<br><span class="cb-act">${r.act === "USE" ? "used up" : "some used, ask for a recount"} · ${escHtml(r.amount)}</span></span></label>`).join("")}
+      <div class="cb-btns"><button class="inv-btn cb-ok">✓ Confirm</button><button class="inv-btn cb-later">Later</button></div>`;
+    rowEl.after(box);
+    box.querySelector(".cb-later").onclick = () => box.remove();
+    box.querySelector(".cb-ok").onclick = async () => {
+      const except = [...box.querySelectorAll("input:not(:checked)")].map(x => x.dataset.id);
+      box.querySelector(".cb-title").textContent = "saving…";
+      try {
+        const res = await (await fetch("/api/consume", { method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ week: WEEK.id, meal: rowEl.dataset.meal, except, on: rowEl.dataset.night }) })).json();
+        if (!res.ok) throw new Error(res.error);
+        box.remove();
+        loadInventory();
+      } catch (err) { box.querySelector(".cb-title").textContent = "save failed: " + (err.message || "is the server running?"); }
+    };
   }
   $("#menu").addEventListener("click", async e => {
     const b = e.target.closest(".cook-btn"); if (!b) return;
@@ -463,7 +539,7 @@
       const res = await fetch("/api/cooklog", { method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ week: WEEK.id, mealId: rowEl.dataset.meal, date: rowEl.dataset.night, outcome: b.dataset.o }) });
       if (!res.ok) throw 0;
-      loadCookLog();
+      loadCookLog();  // shows the consume box for cooked / slipped
     } catch { note.textContent = "save failed — is the server running?"; }
   });
   loadCookLog();
@@ -505,14 +581,14 @@
         "adult-lunch": "Adult Lunches", "adult-snacks": "Adult Snacks", "teen-lunch": "Teen Lunch" };
       // A staple with a par is restocked by count, so it belongs in the count walk,
       // not in the collapsed accordion that count mode hides.
-      const isParStaple = i => i.category === "staple" && (i.parCount != null || i.par);
+      const isParStaple = i => i.category === "staple" && (hasPar(i) || i.par);
       const staples = onHand.filter(i => i.category === "staple" && !isParStaple(i))
         .sort((a, b) => a.name.localeCompare(b.name));
       const tracker = onHand.filter(i => i.category in TRACKER_CATS || isParStaple(i));
       const items = onHand.filter(i => i.category !== "staple" && !(i.category in TRACKER_CATS))
         .sort((a, b) => (a.useBy || "9999").localeCompare(b.useBy || "9999"));
       const today = new Date();
-      const todayStr = today.toISOString().slice(0, 10);
+      const todayStr = localDay(today);
       // Every on-hand item is count-editable — by number of units (bag, box, each…)
       // OR by weight (lb, oz), picked in the unit dropdown. Items with no saved
       // count get a guessed unit + number parsed from their qty text; the guess
@@ -532,14 +608,18 @@
         const opts = (UNITS.includes(unit) ? UNITS : [unit, ...UNITS])
           .map(u => `<option value="${u}"${u === unit ? " selected" : ""}>${u}</option>`).join("");
         let chip = "";
-        if (i.parCount != null && saved) {
-          chip = i.count < i.parCount
+        if (hasPar(i) && saved) {
+          chip = belowPar(i)
             ? `<span class="par-chip low">⚠ below par</span>`
             : `<span class="par-chip ok">✓ at par</span>`;
         }
+        // 2026-11-10: say where the number came from — a receipt bump read as "counted 11/8"
+        const md = s => s.slice(5).replace("-", "/");
         const counted = !saved ? "unsaved guess — tap ✓ to confirm"
+          : i.lastReceipt && (!i.lastCounted || i.lastReceipt > i.lastCounted)
+            ? `receipt ${md(i.lastReceipt)}${i.lastCounted ? ` on your ${md(i.lastCounted)} count` : ", not counted"}`
           : i.lastCounted
-            ? (i.lastCounted === todayStr ? "counted today" : `counted ${i.lastCounted.slice(5).replace("-", "/")}`)
+            ? (i.lastCounted === todayStr ? "counted today" : `counted ${md(i.lastCounted)}`)
             : "not yet counted";
         return `<span class="count-edit">
           <button class="count-step" data-step="-1" title="one fewer">−</button>
@@ -591,7 +671,7 @@
       if (tracker.length) {
         const countable = tracker.filter(i => !i.weekly); // weekly buys never count as stale or below par
         const stale = countable.filter(i => i.lastCounted !== todayStr).length;
-        const below = countable.filter(i => i.parCount != null && i.count != null && i.count < i.parCount);
+        const below = countable.filter(belowPar);
         html += `<div class="tracker-sec">
           <h3>🧺 Non-Dinner Tracker · ${tracker.length} items${stale ? ` · ${stale} not counted today` : " · all counted today"}</h3>
           ${Object.entries({ ...TRACKER_CATS, staple: "Household Stock" }).map(([cat, label]) => {
@@ -601,7 +681,7 @@
           }).join("")}
           ${below.length
             ? `<div class="tracker-summary">⚠ Below par: ${below.map(i =>
-                `${shortName(i)} (${i.count}/${i.parCount})`).join(" · ")} → restock lands on next week's list</div>`
+                `${shortName(i)} (${i.count}, buy up to ${i.buyUpTo ?? i.reorderAt})`).join(" · ")} → restock lands on next week's list</div>`
             : `<div class="tracker-summary allgood">✓ Everything at or above par</div>`}
         </div>`;
       }
@@ -652,6 +732,11 @@
     let s = (i.name || "").split(/,|\s[—–-]\s|\(/)[0].trim();
     return s.length > 26 ? s.slice(0, 25).trimEnd() + "…" : s;
   };
+  // Two-number par (2026-11-10): below par = count under reorderAt.
+  function hasPar(i) { return i.reorderAt != null; }
+  function belowPar(i) { return hasPar(i) && i.count != null && i.count < i.reorderAt; }
+  // Local calendar day (toISOString is UTC: evenings in Texas read as tomorrow).
+  function localDay(d) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; }
   function renderCountProgress(tracker, todayStr) {
     const el = $("#count-progress");
     if (!el) return;
@@ -659,7 +744,7 @@
     const done = tracker.filter(i => i.lastCounted === todayStr).length;
     if (!total) { el.innerHTML = `<div class="cp-line">Nothing in the tracker to count.</div>`; return; }
     const left = tracker.filter(i => i.lastCounted !== todayStr);
-    const below = tracker.filter(i => i.parCount != null && i.count != null && i.count < i.parCount);
+    const below = tracker.filter(belowPar);
     const pct = Math.round((done / total) * 100);
     el.innerHTML = `
       <div class="cp-line">${done} of ${total} counted today${done === total ? " ✓" : ""}</div>
@@ -741,9 +826,20 @@
   $("#inv-addbtn").addEventListener("click", async () => {
     const name = $("#inv-name").value.trim(); if (!name) return;
     const days = parseInt($("#inv-days").value, 10) || 5;
-    const useBy = new Date(Date.now() + days * 86400000).toISOString().slice(0, 10);
-    await fetch("/api/inventory", { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "add", item: { name, qty: $("#inv-qty").value.trim(), location: $("#inv-loc").value, useBy } }) });
+    const useBy = localDay(new Date(Date.now() + days * 86400000));
+    const msgEl = $("#inv-add-msg");
+    const force = msgEl.dataset.dupFor === name;  // second tap on the same name = add it anyway
+    const res = await (await fetch("/api/inventory", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "add", item: { name, qty: $("#inv-qty").value.trim(), location: $("#inv-loc").value, useBy, force } }) })).json();
+    if (!res.ok) {
+      // the same product already on hand is a restock, not a second row (duplicates 2026-10/11)
+      msgEl.dataset.dupFor = /same name/.test(res.error) ? name : "";
+      msgEl.textContent = /same name/.test(res.error)
+        ? "Already on the list — set its count instead. Tap + Add again if this really is a separate item."
+        : "Not saved: " + res.error;
+      return;
+    }
+    msgEl.textContent = ""; msgEl.dataset.dupFor = "";
     $("#inv-name").value = ""; $("#inv-qty").value = "";
     loadInventory();
   });
@@ -788,6 +884,158 @@
     } catch { if (!IS_LOCAL) { remoteMode(); return; } $("#offline-warn").style.display = "block"; }
   }
   loadHistory();
+
+  // ---- Walk mode (2026-11-10, P2) ------------------------------------------------
+  // The count walk: rows come from `inv.py walk --json` already in walk order; the
+  // sequence is each zone's rows, then an "anything not listed?" screen for that zone.
+  // Resume is free: rows answered today come back done and are left out.
+  const WK = { rows: [], zones: [], seq: [], idx: 0, full: false };
+  const wkEl = () => $("#wk");
+  const fmtN = n => (Math.round(n * 100) / 100).toString();
+  async function walkOpen(full = WK.full) {
+    WK.full = full;
+    document.body.classList.add("walk-on");
+    wkEl().innerHTML = `<div class="wk-prog">loading…</div>`;
+    try {
+      const r = await (await fetch("/api/walk" + (full ? "?full=1" : ""))).json();
+      if (!r.ok) throw new Error(r.error);
+      WK.rows = r.rows; WK.zones = r.zones; WK.since = r.since;
+    } catch (err) { wkEl().innerHTML = `<div class="wk-msg">Walk not available: ${escHtml(err.message || "is the server running?")}</div><button class="wk-wide" onclick="walkClose()">Close</button>`; return; }
+    WK.seq = [];
+    WK.zones.forEach(z => {
+      WK.rows.filter(w => w.zone === z.key && !w.done).forEach(w => WK.seq.push({ row: w }));
+      WK.seq.push({ end: z });
+    });
+    WK.idx = Math.max(0, WK.seq.findIndex(s => s.row));
+    walkRender();
+  }
+  function walkClose() { document.body.classList.remove("walk-on"); loadInventory(); }
+  const zoneLabel = k => (WK.zones.find(z => z.key === k) || {}).label || k;
+  function walkTop(zoneKey) {
+    const total = WK.rows.length, done = WK.rows.filter(w => w.done).length;
+    const zi = WK.zones.findIndex(z => z.key === zoneKey) + 1;
+    return `<div class="wk-top"><button class="inv-btn" id="wk-back" ${WK.idx ? "" : "disabled"}>‹ Back</button>
+        <div class="wk-zone">${escHtml(zoneLabel(zoneKey))} <span style="font-weight:400;font-size:.8rem;color:var(--muted)">room ${zi}/${WK.zones.length}</span></div>
+        <button class="inv-btn" id="wk-close">✕ Done</button></div>
+      <div class="wk-prog">${done} of ${total} looked at · ${WK.full ? "every item" : "only items that need a look"}
+        · <a href="#" id="wk-mode">${WK.full ? "short walk" : "walk everything"}</a></div>
+      <div class="wk-bar"><div class="wk-fill" style="width:${total ? Math.round(100 * done / total) : 100}%"></div></div>`;
+  }
+  function walkRender() {
+    const s = WK.seq[WK.idx];
+    if (!s) {
+      wkEl().innerHTML = walkTop(WK.zones[WK.zones.length - 1]?.key) +
+        `<div class="wk-card"><div class="wk-name">Walk finished ✓</div><div class="wk-done">Everything answered is saved. Chat picks it up at /plan.</div></div>
+         <button class="wk-wide pri" id="wk-close2">Close</button>`;
+      $("#wk-close2").onclick = walkClose;
+      walkWire();
+      return;
+    }
+    if (s.end) return walkRenderEnd(s.end);
+    const w = s.row;
+    const now = w.count != null ? `${fmtN(w.count)} ${escHtml(w.unit || "")}` : (w.narrative ? `“${escHtml(w.qty || "no number")}”` : "no number");
+    const par = w.reorderAt != null ? `Par: buy when under ${fmtN(w.reorderAt)}${w.buyUpTo != null ? `, up to ${fmtN(w.buyUpTo)}` : ""}` : (w.par ? `Par: ${escHtml(w.par)}` : "");
+    const meta = [par, w.weekly ? `Weekly buy: ${escHtml(w.weekly)}` : "", w.plans.length ? `Planned: ${escHtml(w.plans.join(", "))}` : "",
+      w.useBy ? `Use by ${escHtml(w.useBy)}` : ""].filter(Boolean).map(x => `<div>${x}</div>`).join("");
+    const unitGuess = w.unit || ((w.qty || "").match(/^\s*[\d.]+\s+([a-z][a-z ]{0,20})/i) || [])[1] || "";
+    wkEl().innerHTML = walkTop(w.zone) + `<div class="wk-card">
+        <div class="wk-name">${escHtml(w.name)}</div>
+        <div class="wk-now">${now}</div><div class="wk-src">${escHtml(w.source)}</div>
+        <div class="wk-meta">${meta}</div>
+        <div class="wk-why">${w.reasons.map(r => `<span>${escHtml(r)}</span>`).join("")}</div>
+        <div class="wk-num"><button class="st" data-d="-1">−</button>
+          <input class="n" type="number" inputmode="decimal" min="0" step="any" value="${w.count != null ? fmtN(w.count) : ""}" placeholder="#">
+          <button class="st" data-d="1">+</button>
+          <input class="u" placeholder="unit" value="${escHtml(unitGuess)}"></div>
+        <div class="wk-btns">
+          <button class="pri" data-a="count">✓ Save number</button>
+          ${w.count != null ? `<button data-a="same">Same (${fmtN(w.count)})</button>` : `<button data-a="enough">Enough</button>`}
+          ${w.count != null ? `<button data-a="enough">Enough</button>` : ""}
+          <button data-a="low">Low</button>
+          <button data-a="gone">Gone</button>
+          <button data-a="skip">Skip</button>
+          <button data-a="nothere">Not here…</button>
+        </div>
+        <div class="wk-move">${WK.zones.filter(z => z.key !== w.zone).map(z => `<button data-z="${z.key}">It's in ${escHtml(z.label)}</button>`).join("")}</div>
+        <div class="wk-msg"></div></div>`;
+    const card = $(".wk-card", wkEl()), num = $("input.n", card), unit = $("input.u", card), msg = $(".wk-msg", card);
+    card.querySelectorAll("button.st").forEach(b => b.onclick = () => {
+      num.value = fmtN(Math.max(0, (parseFloat(num.value) || 0) + Number(b.dataset.d)));
+    });
+    const send = async (body, label) => {
+      msg.textContent = "saving…";
+      try {
+        const r = await (await fetch("/api/walk", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) })).json();
+        if (!r.ok) throw new Error(r.error);
+        w.done = true; w.answer = label;
+        WK.idx++; walkRender();
+      } catch (err) { msg.textContent = "Not saved: " + (err.message || "is the server running?"); }
+    };
+    card.querySelector(".wk-btns").onclick = e => {
+      const a = e.target.closest("button")?.dataset.a; if (!a) return;
+      if (a === "count") {
+        const n = parseFloat(num.value), u = unit.value.trim();
+        if (!Number.isFinite(n) || n < 0) { msg.textContent = "Type a number first (decimals are fine: 0.5)."; return; }
+        if (!w.unit && !u) { msg.textContent = "Add a unit too (bag, jar, can, lb…)."; return; }
+        return send({ id: w.id, answer: "count", n, unit: w.unit === u ? undefined : u }, `${n} ${u}`);
+      }
+      if (a === "same") return send({ id: w.id, answer: "count", n: w.count, said: "same" }, "same");
+      if (a === "nothere") { $(".wk-move", card).classList.toggle("open"); return; }
+      send({ id: w.id, answer: a }, a);
+    };
+    $(".wk-move", card).onclick = e => {
+      const z = e.target.closest("button")?.dataset.z; if (!z) return;
+      // moved, not answered: it comes up again in that room's walk
+      fetch("/api/walk", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: w.id, answer: "move", zone: z }) })
+        .then(r => r.json()).then(r => {
+          if (!r.ok) { msg.textContent = "Not saved: " + r.error; return; }
+          w.zone = z;
+          WK.seq.splice(WK.idx, 1);
+          const endAt = WK.seq.findIndex(s => s.end && s.end.key === z);
+          if (endAt > WK.idx) WK.seq.splice(endAt, 0, { row: w });  // a room still ahead: ask it there
+          walkRender();
+        });
+    };
+    walkWire();
+  }
+  function walkRenderEnd(z) {
+    const n = WK.rows.filter(w => w.zone === z.key).length;
+    wkEl().innerHTML = walkTop(z.key) + `<div class="wk-card wk-add">
+        <div class="wk-name">Anything else in ${escHtml(z.label)} that isn't on the list?</div>
+        <div class="wk-done">${n ? `${n} item${n > 1 ? "s" : ""} looked at here.` : "Nothing tracked here yet."}</div>
+        <input class="nm" placeholder="Item (e.g. bananas)">
+        <div class="wk-num"><input class="n" type="number" inputmode="decimal" min="0" step="any" placeholder="#"><input class="u" placeholder="unit (each, bag…)"></div>
+        <button class="wk-wide" id="wk-addone">+ Add it</button>
+        <div class="wk-msg"></div></div>
+      <button class="wk-wide pri" id="wk-next">${WK.idx >= WK.seq.length - 1 ? "Finish" : "Next room →"}</button>`;
+    const card = $(".wk-card", wkEl()), msg = $(".wk-msg", card);
+    $("#wk-addone").onclick = async () => {
+      const name = $("input.nm", card).value.trim(), n = parseFloat($("input.n", card).value), unit = $("input.u", card).value.trim();
+      if (!name || !Number.isFinite(n) || !unit) { msg.textContent = "Name, number and unit, please."; return; }
+      const force = msg.dataset.dupFor === name;
+      msg.textContent = "saving…";
+      try {
+        const r = await (await fetch("/api/walk", { method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ answer: "add", name, n, unit, zone: z.key, force }) })).json();
+        if (!r.ok) {
+          msg.dataset.dupFor = /same name/.test(r.error) ? name : "";
+          msg.textContent = /same name/.test(r.error) ? "That's already on the list — count it there. Tap + Add again if it's a separate item." : "Not saved: " + r.error;
+          return;
+        }
+        msg.dataset.dupFor = "";
+        msg.textContent = `Added ${name} ✓ — anything else?`;
+        $("input.nm", card).value = ""; $("input.n", card).value = ""; $("input.u", card).value = "";
+      } catch (err) { msg.textContent = "Not saved: " + (err.message || "is the server running?"); }
+    };
+    $("#wk-next").onclick = () => { WK.idx++; walkRender(); };
+    walkWire();
+  }
+  function walkWire() {
+    $("#wk-close") && ($("#wk-close").onclick = walkClose);
+    $("#wk-back") && ($("#wk-back").onclick = () => { if (WK.idx) { WK.idx--; walkRender(); } });
+    $("#wk-mode") && ($("#wk-mode").onclick = e => { e.preventDefault(); walkOpen(!WK.full); });
+  }
+  $("#nav-walk").addEventListener("click", () => walkOpen(false));
 </script>
 </body>
 </html>
